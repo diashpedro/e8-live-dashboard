@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-07-27T14:57:03-03:00",
+  "updated_at": "2026-07-27T15:00:04-03:00",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-27T14:55:23-03:00",
+    "last_ea_event": "2026-07-27T14:59:59-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.06,
+        "bid": 41.07,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.17,
+        "bid": 75.18,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.54,
+        "bid": 42.59,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.73,
+        "bid": 15.74,
         "ok": true
       },
       {
@@ -33,22 +33,22 @@
         "ok": true
       }
     ],
-    "pendentes": 3
+    "pendentes": 10
   },
   "account": {
     "balance": 999822.51,
-    "equity": 999869.01,
+    "equity": 999863.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-27",
     "realized": 38.0,
-    "unrealized": 42.0,
-    "total": 80.0,
+    "unrealized": 38.0,
+    "total": 76.0,
     "trades": 9,
     "wins": 6,
-    "exposure": 17976.0,
+    "exposure": 17980.0,
     "open_legs": 3,
     "broker_realized": 13.98
   },
@@ -82,13 +82,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-27T13:20:46-03:00",
       "entry_price": 15.62,
-      "current_price": 15.73,
+      "current_price": 15.74,
       "qty": 400.0,
-      "notional": 6292.0,
-      "pnl": -44.0,
-      "pnl_liq_est": -46.88,
-      "pnl_pct": -0.704,
-      "minutos": 96.3
+      "notional": 6296.0,
+      "pnl": -48.0,
+      "pnl_liq_est": -50.89,
+      "pnl_pct": -0.768,
+      "minutos": 99.3
     },
     {
       "symbol": "TOTS3",
@@ -103,7 +103,7 @@
       "pnl": 42.0,
       "pnl_liq_est": 39.32,
       "pnl_pct": 0.724,
-      "minutos": 21.9
+      "minutos": 24.9
     },
     {
       "symbol": "TOTS3",
@@ -118,7 +118,7 @@
       "pnl": 44.0,
       "pnl_liq_est": 41.32,
       "pnl_pct": 0.759,
-      "minutos": 21.9
+      "minutos": 24.9
     }
   ],
   "daily_series": [
