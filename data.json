@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T15:21:03-03:00",
+  "updated_at": "2026-07-27T15:24:03-03:00",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-07-27T15:20:03-03:00",
@@ -9,12 +9,12 @@
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.0,
+        "bid": 41.01,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.15,
+        "bid": 75.18,
         "ok": true
       },
       {
@@ -24,7 +24,7 @@
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.73,
+        "bid": 15.77,
         "ok": true
       },
       {
@@ -33,22 +33,22 @@
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 3
   },
   "account": {
     "balance": 999803.26,
-    "equity": 999894.01,
+    "equity": 999877.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-27",
     "realized": 38.0,
-    "unrealized": 78.0,
-    "total": 116.0,
+    "unrealized": 62.0,
+    "total": 100.0,
     "trades": 9,
     "wins": 6,
-    "exposure": 18012.0,
+    "exposure": 18028.0,
     "open_legs": 3,
     "broker_realized": 13.98
   },
@@ -82,13 +82,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-27T13:20:46-03:00",
       "entry_price": 15.62,
-      "current_price": 15.73,
+      "current_price": 15.77,
       "qty": 400.0,
-      "notional": 6292.0,
-      "pnl": -44.0,
-      "pnl_liq_est": -46.88,
-      "pnl_pct": -0.704,
-      "minutos": 120.3
+      "notional": 6308.0,
+      "pnl": -60.0,
+      "pnl_liq_est": -62.89,
+      "pnl_pct": -0.96,
+      "minutos": 123.3
     },
     {
       "symbol": "TOTS3",
@@ -103,7 +103,7 @@
       "pnl": 60.0,
       "pnl_liq_est": 57.32,
       "pnl_pct": 1.034,
-      "minutos": 45.9
+      "minutos": 48.9
     },
     {
       "symbol": "TOTS3",
@@ -118,7 +118,7 @@
       "pnl": 62.0,
       "pnl_liq_est": 59.32,
       "pnl_pct": 1.069,
-      "minutos": 45.9
+      "minutos": 48.9
     }
   ],
   "daily_series": [
