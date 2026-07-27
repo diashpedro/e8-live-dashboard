@@ -244,7 +244,9 @@ function renderCards(d){
   const t = d.today || {}, c = d.cumulative || {};
   const cards = [
     { label:'Resultado do dia (realizado)', value:money(t.realized), cls:cls(t.realized),
-      sub:`${t.trades||0} trade(s) · ${t.wins||0} ganhador(es)` },
+      sub:`${t.trades||0} trade(s) · ${t.wins||0} ganhador(es)` +
+          (t.broker_realized != null && Math.abs((t.broker_realized||0)-(t.realized||0)) > 0.01
+            ? ` · caixa na corretora ${money(t.broker_realized)}` : '') },
     { label:'Em aberto (não realizado)', value:money(t.unrealized), cls:cls(t.unrealized),
       sub:`${t.open_legs||0} perna(s) · exposição ${money(t.exposure)}` },
     { label:'Total do dia', value:money(t.total), cls:cls(t.total),
