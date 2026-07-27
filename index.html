@@ -6,342 +6,408 @@
 <title>Estratégia 8 — Painel ao vivo</title>
 <style>
   :root{
-    --bg: #0d1117;
-    --bg-panel: #12181f;
-    --bg-panel-2: #171f28;
-    --border: #232c37;
-    --text: #dfe6ee;
-    --text-dim: #7c8894;
-    --accent: #d8a84b;
-    --accent-dim: #8a6e35;
-    --green: #3fb87f;
-    --green-dim: #1f7a52;
-    --red: #e2596b;
-    --red-dim: #8f2f3c;
+    --bg:#0d1117; --bg-panel:#12181f; --bg-panel-2:#171f28; --border:#232c37;
+    --text:#dfe6ee; --text-dim:#7c8894; --accent:#d8a84b;
+    --green:#3fb87f; --red:#e2596b; --amber:#d8a84b;
   }
   @media (prefers-color-scheme: light){
     :root{
-      --bg: #f5f3ee;
-      --bg-panel: #ffffff;
-      --bg-panel-2: #faf8f3;
-      --border: #e2ddd0;
-      --text: #21262c;
-      --text-dim: #6b7280;
-      --accent: #a97a1f;
-      --accent-dim: #c99a3f;
-      --green: #1f8a5c;
-      --green-dim: #3fb87f;
-      --red: #c2333f;
-      --red-dim: #e2596b;
+      --bg:#f5f3ee; --bg-panel:#fff; --bg-panel-2:#faf8f3; --border:#e2ddd0;
+      --text:#21262c; --text-dim:#6b7280; --accent:#a97a1f;
+      --green:#1f8a5c; --red:#c2333f; --amber:#a97a1f;
     }
   }
   :root[data-theme="dark"]{
-    --bg: #0d1117; --bg-panel: #12181f; --bg-panel-2: #171f28; --border: #232c37;
-    --text: #dfe6ee; --text-dim: #7c8894; --accent: #d8a84b; --accent-dim: #8a6e35;
-    --green: #3fb87f; --green-dim: #1f7a52; --red: #e2596b; --red-dim: #8f2f3c;
+    --bg:#0d1117; --bg-panel:#12181f; --bg-panel-2:#171f28; --border:#232c37;
+    --text:#dfe6ee; --text-dim:#7c8894; --accent:#d8a84b;
+    --green:#3fb87f; --red:#e2596b; --amber:#d8a84b;
   }
   :root[data-theme="light"]{
-    --bg: #f5f3ee; --bg-panel: #ffffff; --bg-panel-2: #faf8f3; --border: #e2ddd0;
-    --text: #21262c; --text-dim: #6b7280; --accent: #a97a1f; --accent-dim: #c99a3f;
-    --green: #1f8a5c; --green-dim: #3fb87f; --red: #c2333f; --red-dim: #e2596b;
+    --bg:#f5f3ee; --bg-panel:#fff; --bg-panel-2:#faf8f3; --border:#e2ddd0;
+    --text:#21262c; --text-dim:#6b7280; --accent:#a97a1f;
+    --green:#1f8a5c; --red:#c2333f; --amber:#a97a1f;
   }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text);
+        font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        -webkit-font-smoothing:antialiased; }
+  .num{ font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+        font-variant-numeric:tabular-nums; }
 
-  *{ box-sizing: border-box; }
-  body{
-    margin:0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  .num{ font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-variant-numeric: tabular-nums; }
+  header{ padding:24px clamp(16px,4vw,48px) 18px; border-bottom:1px solid var(--border);
+          display:flex; align-items:baseline; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+  header h1{ margin:0; font-size:1.1rem; font-weight:650; }
+  header h1 span{ color:var(--accent); }
+  #updated{ font-size:.78rem; color:var(--text-dim); }
 
-  header{
-    padding: 28px clamp(16px,4vw,48px) 20px;
-    border-bottom: 1px solid var(--border);
-    display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap;
-  }
-  header h1{
-    margin:0; font-size: 1.15rem; font-weight: 650; letter-spacing: .01em;
-  }
-  header h1 span{ color: var(--accent); }
-  #updated{ font-size: .8rem; color: var(--text-dim); }
-  #updated .dot{
-    display:inline-block; width:7px; height:7px; border-radius:50%;
-    background: var(--green); margin-right:7px; box-shadow: 0 0 6px var(--green);
-  }
+  main{ max-width:1180px; margin:0 auto; padding:22px clamp(16px,4vw,48px) 64px; }
 
-  main{ max-width: 1080px; margin: 0 auto; padding: 28px clamp(16px,4vw,48px) 64px; }
+  /* ---- faixa de saude ---- */
+  .health{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px; }
+  .chip{ display:inline-flex; align-items:center; gap:7px; padding:7px 13px;
+         background:var(--bg-panel); border:1px solid var(--border); border-radius:999px;
+         font-size:.79rem; }
+  .dot{ width:8px; height:8px; border-radius:50%; flex:none; }
+  .dot.ok{ background:var(--green); box-shadow:0 0 6px var(--green); }
+  .dot.bad{ background:var(--red); box-shadow:0 0 6px var(--red); }
+  .dot.warn{ background:var(--amber); box-shadow:0 0 6px var(--amber); }
 
-  .cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:14px; margin-bottom: 26px; }
-  .card{
-    background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px;
-    padding: 18px 20px;
-  }
-  .card .label{ font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-dim); margin-bottom: 8px; }
-  .card .value{ font-size: 1.7rem; font-weight: 650; }
-  .card .sub{ font-size: .78rem; color: var(--text-dim); margin-top: 6px; }
-  .value.pos{ color: var(--green); }
-  .value.neg{ color: var(--red); }
-  .value.zero{ color: var(--text); }
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(196px,1fr)); gap:12px; margin-bottom:22px; }
+  .card{ background:var(--bg-panel); border:1px solid var(--border); border-radius:10px; padding:16px 18px; }
+  .card .label{ font-size:.7rem; text-transform:uppercase; letter-spacing:.07em; color:var(--text-dim); margin-bottom:7px; }
+  .card .value{ font-size:1.5rem; font-weight:650; }
+  .card .sub{ font-size:.75rem; color:var(--text-dim); margin-top:5px; }
+  .pos{ color:var(--green); } .neg{ color:var(--red); }
 
-  .panel{
-    background: var(--bg-panel); border: 1px solid var(--border); border-radius: 10px;
-    margin-bottom: 22px; overflow: hidden;
-  }
-  .panel-head{
-    padding: 14px 20px; border-bottom: 1px solid var(--border);
-    font-size: .82rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: .06em;
-  }
-  #chart-wrap{ padding: 16px 20px 8px; overflow-x: auto; }
-  #chart{ display:block; width:100%; height:150px; }
+  .panel{ background:var(--bg-panel); border:1px solid var(--border); border-radius:10px;
+          margin-bottom:20px; overflow:hidden; }
+  .panel-head{ padding:13px 18px; border-bottom:1px solid var(--border); font-size:.78rem;
+               font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:.06em;
+               display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .panel-head .hint{ text-transform:none; letter-spacing:0; font-weight:400; font-size:.75rem; }
 
-  .table-wrap{ overflow-x: auto; }
-  table{ width:100%; border-collapse: collapse; font-size: .86rem; min-width: 720px; }
-  thead th{
-    text-align:left; padding: 10px 16px; font-size: .7rem; text-transform:uppercase; letter-spacing:.06em;
-    color: var(--text-dim); border-bottom: 1px solid var(--border); background: var(--bg-panel-2);
-    position: sticky; top:0;
-  }
-  tbody td{ padding: 9px 16px; border-bottom: 1px solid var(--border); white-space: nowrap; }
-  tbody tr:last-child td{ border-bottom: none; }
-  tbody tr:hover{ background: var(--bg-panel-2); }
-  td.side-long{ color: var(--green); }
-  td.side-short{ color: var(--red); }
-  td.pnl-pos{ color: var(--green); }
-  td.pnl-neg{ color: var(--red); }
-  .w-badge{
-    display:inline-block; padding: 1px 7px; border-radius: 5px; font-size: .78rem;
-    background: var(--bg-panel-2); border: 1px solid var(--border); color: var(--accent);
-  }
-  .empty{ padding: 34px 20px; text-align:center; color: var(--text-dim); font-size: .88rem; }
+  #chart-wrap{ padding:14px 18px 6px; overflow-x:auto; }
+  #chart{ display:block; width:100%; height:160px; }
 
-  footer{ text-align:center; padding: 20px; color: var(--text-dim); font-size: .74rem; }
+  .table-wrap{ overflow-x:auto; }
+  table{ width:100%; border-collapse:collapse; font-size:.845rem; }
+  thead th{ text-align:left; padding:9px 14px; font-size:.68rem; text-transform:uppercase;
+            letter-spacing:.06em; color:var(--text-dim); border-bottom:1px solid var(--border);
+            background:var(--bg-panel-2); white-space:nowrap; }
+  tbody td{ padding:8px 14px; border-bottom:1px solid var(--border); white-space:nowrap; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:hover{ background:var(--bg-panel-2); }
+  th.r, td.r{ text-align:right; }
+
+  .badge{ display:inline-block; padding:1px 7px; border-radius:5px; font-size:.76rem;
+          background:var(--bg-panel-2); border:1px solid var(--border); }
+  .badge.w{ color:var(--accent); }
+  .side-long{ color:var(--green); } .side-short{ color:var(--red); }
+  .empty{ padding:28px 18px; text-align:center; color:var(--text-dim); font-size:.85rem; }
+
+  .grid2{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+  .grid2 .panel{ margin-bottom:0; }
+
+  footer{ text-align:center; padding:18px; color:var(--text-dim); font-size:.73rem; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Estratégia <span>8</span> — resultado ao vivo</h1>
-  <div id="updated"><span class="dot"></span><span id="updated-text">carregando…</span></div>
+  <h1>Estratégia <span>8</span> — painel ao vivo</h1>
+  <div id="updated">carregando…</div>
 </header>
 
 <main>
-  <div class="cards">
-    <div class="card">
-      <div class="label" id="today-label">Resultado do dia</div>
-      <div class="value" id="today-pnl">—</div>
-      <div class="sub" id="today-sub">—</div>
+  <div class="health" id="health"></div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <span>Posições em andamento</span>
+      <span class="hint" id="open-sub"></span>
     </div>
-    <div class="card">
-      <div class="label">Resultado acumulado</div>
-      <div class="value" id="cum-pnl">—</div>
-      <div class="sub" id="cum-sub">—</div>
-    </div>
-    <div class="card">
-      <div class="label">Taxa de acerto (acum.)</div>
-      <div class="value" id="cum-winrate">—</div>
-      <div class="sub" id="cum-winrate-sub">—</div>
+    <div class="table-wrap">
+      <table id="open-table">
+        <thead><tr>
+          <th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th><th>Aberta às</th>
+          <th class="r">Tempo</th><th class="r">Preço entrada</th><th class="r">Preço atual</th>
+          <th class="r">Qtd</th><th class="r">Valor da posição</th><th class="r">Resultado</th><th class="r">%</th>
+        </tr></thead>
+        <tbody id="open-body"></tbody>
+      </table>
+      <div class="empty" id="open-empty" style="display:none;">Nenhuma posição aberta agora.</div>
     </div>
   </div>
 
   <div class="panel">
-    <div class="panel-head">Resultado diário</div>
+    <div class="panel-head"><span>Resultado acumulado</span><span class="hint">apenas trades encerrados</span></div>
     <div id="chart-wrap"><canvas id="chart"></canvas></div>
   </div>
 
   <div class="panel">
-    <div class="panel-head">Trades</div>
+    <div class="panel-head"><span>Histórico por dia</span></div>
     <div class="table-wrap">
-      <table id="trades-table">
-        <thead>
-          <tr>
-            <th>Ativo</th>
-            <th>W</th>
-            <th>Lado</th>
-            <th>Entrada</th>
-            <th>Saída</th>
-            <th>Preço entrada</th>
-            <th>Preço saída</th>
-            <th>Qtd</th>
-            <th>Resultado</th>
-          </tr>
-        </thead>
+      <table>
+        <thead><tr>
+          <th>Data</th><th class="r">Trades</th><th class="r">Acertos</th>
+          <th class="r">Taxa</th><th class="r">Resultado</th><th class="r">Acumulado</th>
+        </tr></thead>
+        <tbody id="daily-body"></tbody>
+      </table>
+      <div class="empty" id="daily-empty" style="display:none;">Nenhum dia encerrado ainda.</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <span>Trades encerrados</span>
+      <span class="hint" id="trades-sub"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th>
+          <th>Entrada</th><th>Saída</th><th class="r">Tempo</th>
+          <th class="r">Preço entrada</th><th class="r">Preço saída</th>
+          <th class="r">Qtd</th><th>Motivo</th><th class="r">Resultado</th>
+        </tr></thead>
         <tbody id="trades-body"></tbody>
       </table>
-      <div class="empty" id="trades-empty" style="display:none;">Nenhum trade registrado ainda.</div>
+      <div class="empty" id="trades-empty" style="display:none;">Nenhum trade encerrado ainda.</div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <div class="panel-head"><span>Por janela (W)</span></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>W</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
+        <tbody id="bywindow-body"></tbody>
+      </table></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><span>Por ativo</span></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Ativo</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
+        <tbody id="bysymbol-body"></tbody>
+      </table></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><span>Por perna</span><span class="hint">a pirâmide paga?</span></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Perna</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
+        <tbody id="byleg-body"></tbody>
+      </table></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><span>Por motivo de saída</span></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Motivo</th><th class="r">Trades</th><th class="r">Resultado</th></tr></thead>
+        <tbody id="byreason-body"></tbody>
+      </table></div>
     </div>
   </div>
 </main>
 
-<footer>Estratégia 8 (5 janelas × 2 direções, piramidação A/B/C) · conta demo B3 · atualizado automaticamente</footer>
+<footer>Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min</footer>
 
 <script>
-const BRL = new Intl.NumberFormat('pt-BR', { style:'currency', currency:'BRL' });
-const fmtMoney = v => BRL.format(v ?? 0);
-const fmtPrice = v => (v ?? 0).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
-const fmtQty   = v => (v ?? 0).toLocaleString('pt-BR');
+const BRL = new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+const money = v => BRL.format(v ?? 0);
+const price = v => (v ?? 0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const qty   = v => (v ?? 0).toLocaleString('pt-BR');
+const pct   = v => (v ?? 0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}) + '%';
+const cls   = v => v > 0 ? 'pos' : (v < 0 ? 'neg' : '');
 
-function fmtDateTime(iso){
-  if(!iso) return '—';
-  const d = new Date(iso);
-  if(isNaN(d)) return iso;
-  return d.toLocaleString('pt-BR', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'});
+function hhmm(iso){ if(!iso) return '—'; const d=new Date(iso); return isNaN(d)?iso:
+  d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}); }
+function dm(iso){ if(!iso) return '—'; const d=new Date(iso+(iso.length===10?'T12:00:00':''));
+  return isNaN(d)?iso:d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}); }
+function dmhm(iso){ if(!iso) return '—'; const d=new Date(iso); return isNaN(d)?iso:
+  d.toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}); }
+function dur(min){
+  if(min == null) return '—';
+  if(min < 60) return Math.round(min)+' min';
+  const h = Math.floor(min/60), m = Math.round(min%60);
+  return h+'h'+(m?String(m).padStart(2,'0'):'');
 }
-function fmtTime(iso){
-  if(!iso) return '—';
-  const d = new Date(iso);
-  if(isNaN(d)) return iso;
-  return d.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+function taxa(w,t){ return t ? (100*w/t).toLocaleString('pt-BR',{maximumFractionDigits:0})+'%' : '—'; }
+
+function chip(state, text){
+  return `<span class="chip"><span class="dot ${state}"></span>${text}</span>`;
 }
-function fmtDateShort(iso){
-  if(!iso) return '—';
-  const d = new Date(iso + 'T12:00:00');
-  if(isNaN(d)) return iso;
-  return d.toLocaleDateString('pt-BR', {day:'2-digit', month:'2-digit'});
+
+function renderHealth(d){
+  const h = d.health || {}, a = d.account || {};
+  const out = [];
+  const upd = d.updated_at ? new Date(d.updated_at) : null;
+  const mins = upd ? (Date.now() - upd.getTime())/60000 : 999;
+  out.push(chip(mins < 8 ? 'ok' : (mins < 20 ? 'warn' : 'bad'),
+    mins < 8 ? 'Dados atualizados' : `Sem atualizar há ${Math.round(mins)} min`));
+  out.push(chip(h.terminal_connected ? 'ok' : 'bad',
+    h.terminal_connected ? 'Terminal conectado' : 'Terminal DESCONECTADO'));
+  out.push(chip(h.algo_trading ? 'ok' : 'bad',
+    h.algo_trading ? 'AlgoTrading ligado' : 'AlgoTrading DESLIGADO'));
+  out.push(chip((h.errors_today||0) === 0 ? 'ok' : 'bad',
+    (h.errors_today||0) === 0 ? 'Sem erros hoje' : `${h.errors_today} erro(s) hoje`));
+  if(h.last_ea_event) out.push(chip('ok', 'Último evento do robô: ' + hhmm(h.last_ea_event)));
+  out.push(chip('ok', `${h.pendentes||0} ordem(ns) pendente(s)`));
+  const bad = (h.symbols||[]).filter(s=>!s.ok);
+  if(bad.length) out.push(chip('bad', 'Sem cotação: ' + bad.map(s=>s.symbol).join(', ')));
+  if(a.login) out.push(chip('ok', `Conta ${a.login} · saldo ${money(a.balance)}`));
+  document.getElementById('health').innerHTML = out.join('');
 }
-function pnlClass(v){ return v > 0 ? 'pos' : (v < 0 ? 'neg' : 'zero'); }
+
+function renderCards(d){
+  const t = d.today || {}, c = d.cumulative || {};
+  const cards = [
+    { label:'Resultado do dia (realizado)', value:money(t.realized), cls:cls(t.realized),
+      sub:`${t.trades||0} trade(s) · ${t.wins||0} ganhador(es)` },
+    { label:'Em aberto (não realizado)', value:money(t.unrealized), cls:cls(t.unrealized),
+      sub:`${t.open_legs||0} perna(s) · exposição ${money(t.exposure)}` },
+    { label:'Total do dia', value:money(t.total), cls:cls(t.total),
+      sub:'realizado + em aberto' },
+    { label:'Acumulado', value:money(c.pnl), cls:cls(c.pnl),
+      sub:c.since ? `desde ${dm(c.since)} · ${c.trades||0} trades` : '—' },
+    { label:'Taxa de acerto', value: c.trades ? taxa(c.wins,c.trades) : '—', cls:'',
+      sub:c.trades ? `${c.wins} de ${c.trades}` : '—' },
+    { label:'Dias positivos', value: c.days ? `${c.days_positive}/${c.days}` : '—', cls:'',
+      sub: c.best_day ? `melhor ${money(c.best_day.pnl)} · pior ${money(c.worst_day.pnl)}` : '—' },
+  ];
+  document.getElementById('cards').innerHTML = cards.map(c=>`
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value num ${c.cls}">${c.value}</div>
+      <div class="sub">${c.sub}</div>
+    </div>`).join('');
+}
+
+function renderOpen(d){
+  const rows = d.open_positions || [];
+  const body = document.getElementById('open-body');
+  const total = rows.reduce((s,r)=>s+r.pnl,0);
+  document.getElementById('open-sub').textContent =
+    rows.length ? `${rows.length} perna(s) · resultado ${money(total)}` : '';
+  document.getElementById('open-empty').style.display = rows.length ? 'none' : 'block';
+  body.innerHTML = rows.map(r=>`
+    <tr>
+      <td>${r.symbol}</td>
+      <td><span class="badge w num">W${r.w}</span></td>
+      <td><span class="badge">${r.leg}</span></td>
+      <td class="${r.side==='LONG'?'side-long':'side-short'}">${r.side==='LONG'?'Compra':'Venda'}</td>
+      <td class="num">${hhmm(r.entry_time)}</td>
+      <td class="num r">${dur(r.minutos)}</td>
+      <td class="num r">${price(r.entry_price)}</td>
+      <td class="num r">${price(r.current_price)}</td>
+      <td class="num r">${qty(r.qty)}</td>
+      <td class="num r">${money(r.notional)}</td>
+      <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td>
+      <td class="num r ${cls(r.pnl)}">${pct(r.pnl_pct)}</td>
+    </tr>`).join('');
+}
+
+function renderDaily(d){
+  const rows = (d.daily_series||[]).slice().reverse();
+  document.getElementById('daily-empty').style.display = rows.length ? 'none' : 'block';
+  document.getElementById('daily-body').innerHTML = rows.map(r=>`
+    <tr>
+      <td class="num">${dm(r.date)}</td>
+      <td class="num r">${r.trades}</td>
+      <td class="num r">${r.wins}</td>
+      <td class="num r">${taxa(r.wins,r.trades)}</td>
+      <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td>
+      <td class="num r ${cls(r.cum)}">${money(r.cum)}</td>
+    </tr>`).join('');
+}
+
+function renderTrades(d){
+  const rows = d.trades || [];
+  document.getElementById('trades-sub').textContent = rows.length ? `${rows.length} no total` : '';
+  document.getElementById('trades-empty').style.display = rows.length ? 'none' : 'block';
+  document.getElementById('trades-body').innerHTML = rows.map(r=>`
+    <tr>
+      <td>${r.symbol}</td>
+      <td><span class="badge w num">W${r.w}</span></td>
+      <td><span class="badge">${r.leg}</span></td>
+      <td class="${r.side==='LONG'?'side-long':'side-short'}">${r.side==='LONG'?'Compra':'Venda'}</td>
+      <td class="num">${dmhm(r.entry_time)}</td>
+      <td class="num">${hhmm(r.exit_time)}</td>
+      <td class="num r">${dur(r.minutos)}</td>
+      <td class="num r">${price(r.entry_price)}</td>
+      <td class="num r">${price(r.exit_price)}</td>
+      <td class="num r">${qty(r.qty)}</td>
+      <td>${r.motivo_label || r.motivo || '—'}</td>
+      <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td>
+    </tr>`).join('');
+}
+
+function renderBreakdowns(d){
+  const fill = (id, rows, key, label) => {
+    const el = document.getElementById(id);
+    if(!rows || !rows.length){ el.innerHTML = `<tr><td colspan="4" style="color:var(--text-dim)">sem dados</td></tr>`; return; }
+    el.innerHTML = rows.map(r=>`
+      <tr>
+        <td>${label ? label(r[key]) : r[key]}</td>
+        <td class="num r">${r.trades}</td>
+        ${'wins' in r ? `<td class="num r">${taxa(r.wins,r.trades)}</td>` : ''}
+        <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td>
+      </tr>`).join('');
+  };
+  fill('bywindow-body', d.by_window, 'w', v=>`<span class="badge w num">W${v}</span>`);
+  fill('bysymbol-body', d.by_symbol, 'symbol');
+  fill('byleg-body', d.by_leg, 'leg', v=>`<span class="badge">${v}</span>`);
+  // motivo nao tem coluna de taxa
+  const el = document.getElementById('byreason-body');
+  const rows = d.by_reason || [];
+  el.innerHTML = rows.length ? rows.map(r=>`
+      <tr><td>${r.reason}</td><td class="num r">${r.trades}</td>
+      <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td></tr>`).join('')
+    : `<tr><td colspan="3" style="color:var(--text-dim)">sem dados</td></tr>`;
+}
 
 function drawChart(series){
-  const canvas = document.getElementById('chart');
-  const wrap = document.getElementById('chart-wrap');
+  const canvas = document.getElementById('chart'), wrap = document.getElementById('chart-wrap');
   const dpr = window.devicePixelRatio || 1;
-  const cssW = Math.max(wrap.clientWidth, 320);
-  const cssH = 150;
-  canvas.width = cssW * dpr; canvas.height = cssH * dpr;
-  canvas.style.width = cssW + 'px'; canvas.style.height = cssH + 'px';
-  const ctx = canvas.getContext('2d');
-  ctx.scale(dpr, dpr);
-  ctx.clearRect(0,0,cssW,cssH);
+  const W = Math.max(wrap.clientWidth, 320), H = 160;
+  canvas.width = W*dpr; canvas.height = H*dpr;
+  canvas.style.width = W+'px'; canvas.style.height = H+'px';
+  const ctx = canvas.getContext('2d'); ctx.scale(dpr,dpr); ctx.clearRect(0,0,W,H);
+  const st = getComputedStyle(document.documentElement);
+  const cG = st.getPropertyValue('--green').trim(), cR = st.getPropertyValue('--red').trim();
+  const cB = st.getPropertyValue('--border').trim(), cD = st.getPropertyValue('--text-dim').trim();
 
-  const style = getComputedStyle(document.documentElement);
-  const cGreen = style.getPropertyValue('--green').trim();
-  const cRed = style.getPropertyValue('--red').trim();
-  const cBorder = style.getPropertyValue('--border').trim();
-  const cDim = style.getPropertyValue('--text-dim').trim();
-
-  if(!series || series.length === 0){
-    ctx.fillStyle = cDim;
-    ctx.font = '13px sans-serif';
-    ctx.fillText('Sem dados ainda', 16, cssH/2);
-    return;
+  if(!series || !series.length){
+    ctx.fillStyle = cD; ctx.font = '13px sans-serif';
+    ctx.fillText('Sem trades encerrados ainda', 16, H/2); return;
   }
+  const padL=8,padR=8,padT=14,padB=20;
+  const cum = series.map(d=>d.cum);
+  const maxV = Math.max(0,...cum), minV = Math.min(0,...cum), range=(maxV-minV)||1;
+  const pw = W-padL-padR, ph = H-padT-padB;
+  const x = i => padL + (series.length===1 ? pw/2 : (i/(series.length-1))*pw);
+  const y = v => padT + ph - ((v-minV)/range)*ph;
 
-  const padL = 8, padR = 8, padT = 14, padB = 20;
-  const cum = [];
-  let running = 0;
-  for(const d of series){ running += d.pnl; cum.push(running); }
-  const maxV = Math.max(0, ...cum);
-  const minV = Math.min(0, ...cum);
-  const range = (maxV - minV) || 1;
-  const plotW = cssW - padL - padR;
-  const plotH = cssH - padT - padB;
-  const x = i => padL + (series.length === 1 ? plotW/2 : (i/(series.length-1)) * plotW);
-  const y = v => padT + plotH - ((v - minV)/range) * plotH;
+  const zy = y(0);
+  ctx.strokeStyle=cB; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(padL,zy); ctx.lineTo(W-padR,zy); ctx.stroke();
 
-  // zero line
-  const zeroY = y(0);
-  ctx.strokeStyle = cBorder;
-  ctx.lineWidth = 1;
-  ctx.beginPath(); ctx.moveTo(padL, zeroY); ctx.lineTo(cssW-padR, zeroY); ctx.stroke();
-
-  // area + line
   ctx.beginPath();
-  cum.forEach((v,i)=>{ const px=x(i), py=y(v); if(i===0) ctx.moveTo(px,py); else ctx.lineTo(px,py); });
-  const last = cum[cum.length-1];
-  const lineColor = last >= 0 ? cGreen : cRed;
-  ctx.strokeStyle = lineColor;
-  ctx.lineWidth = 2;
-  ctx.lineJoin = 'round';
-  ctx.stroke();
+  cum.forEach((v,i)=>{ i? ctx.lineTo(x(i),y(v)) : ctx.moveTo(x(i),y(v)); });
+  const last = cum[cum.length-1], col = last>=0 ? cG : cR;
+  ctx.strokeStyle=col; ctx.lineWidth=2; ctx.lineJoin='round'; ctx.stroke();
+  ctx.lineTo(x(cum.length-1),zy); ctx.lineTo(x(0),zy); ctx.closePath();
+  ctx.fillStyle = col+'22'; ctx.fill();
+  ctx.beginPath(); ctx.arc(x(cum.length-1),y(last),3.5,0,Math.PI*2); ctx.fillStyle=col; ctx.fill();
 
-  ctx.lineTo(x(cum.length-1), zeroY); ctx.lineTo(x(0), zeroY); ctx.closePath();
-  ctx.fillStyle = lineColor + '22';
-  ctx.fill();
-
-  // endpoint dot
-  ctx.beginPath();
-  ctx.arc(x(cum.length-1), y(last), 3.5, 0, Math.PI*2);
-  ctx.fillStyle = lineColor;
-  ctx.fill();
-
-  // date labels (first / last)
-  ctx.fillStyle = cDim;
-  ctx.font = '11px sans-serif';
-  ctx.textAlign = 'left';
-  ctx.fillText(fmtDateShort(series[0].date), padL, cssH - 4);
-  ctx.textAlign = 'right';
-  ctx.fillText(fmtDateShort(series[series.length-1].date), cssW - padR, cssH - 4);
+  ctx.fillStyle=cD; ctx.font='11px sans-serif';
+  ctx.textAlign='left';  ctx.fillText(dm(series[0].date), padL, H-4);
+  ctx.textAlign='right'; ctx.fillText(dm(series[series.length-1].date), W-padR, H-4);
 }
 
-function render(data){
-  document.getElementById('updated-text').textContent = data.updated_at
-    ? 'atualizado em ' + fmtDateTime(data.updated_at)
-    : 'aguardando primeira atualização';
-
-  const t = data.today || {};
-  const tEl = document.getElementById('today-pnl');
-  tEl.textContent = fmtMoney(t.pnl);
-  tEl.className = 'value num ' + pnlClass(t.pnl);
-  document.getElementById('today-label').textContent = t.date ? ('Resultado do dia — ' + fmtDateShort(t.date)) : 'Resultado do dia';
-  document.getElementById('today-sub').textContent = (t.trades||0) + ' trade' + ((t.trades===1)?'':'s') + (t.trades ? ' · ' + (t.wins||0) + ' ganhador' + ((t.wins===1)?'':'es') : '');
-
-  const c = data.cumulative || {};
-  const cEl = document.getElementById('cum-pnl');
-  cEl.textContent = fmtMoney(c.pnl);
-  cEl.className = 'value num ' + pnlClass(c.pnl);
-  document.getElementById('cum-sub').textContent = c.since ? ('desde ' + fmtDateShort(c.since) + ' · ' + (c.trades||0) + ' trades') : '—';
-
-  const wr = c.trades ? (100 * (c.wins||0) / c.trades) : 0;
-  document.getElementById('cum-winrate').textContent = c.trades ? wr.toLocaleString('pt-BR',{maximumFractionDigits:1}) + '%' : '—';
-  document.getElementById('cum-winrate-sub').textContent = c.trades ? ((c.wins||0) + ' de ' + c.trades) : '—';
-
-  drawChart(data.daily_series || []);
-
-  const body = document.getElementById('trades-body');
-  const empty = document.getElementById('trades-empty');
-  const trades = (data.trades || []).slice().sort((a,b) => new Date(b.entry_time) - new Date(a.entry_time));
-  body.innerHTML = '';
-  if(trades.length === 0){
-    empty.style.display = 'block';
-  } else {
-    empty.style.display = 'none';
-    for(const tr of trades){
-      const row = document.createElement('tr');
-      const longClass = tr.side === 'LONG' ? 'side-long' : 'side-short';
-      const sideLabel = tr.side === 'LONG' ? 'Compra' : 'Venda';
-      const pnlCls = tr.pnl > 0 ? 'pnl-pos' : (tr.pnl < 0 ? 'pnl-neg' : '');
-      row.innerHTML = `
-        <td>${tr.symbol ?? '—'}</td>
-        <td><span class="w-badge num">W${tr.w ?? '?'}</span></td>
-        <td class="${longClass}">${sideLabel}</td>
-        <td class="num">${fmtDateTime(tr.entry_time)}</td>
-        <td class="num">${tr.exit_time ? fmtTime(tr.exit_time) : '—'}</td>
-        <td class="num">${fmtPrice(tr.entry_price)}</td>
-        <td class="num">${tr.exit_price != null ? fmtPrice(tr.exit_price) : '—'}</td>
-        <td class="num">${fmtQty(tr.qty)}</td>
-        <td class="num ${pnlCls}">${tr.exit_time ? fmtMoney(tr.pnl) : 'aberto'}</td>
-      `;
-      body.appendChild(row);
-    }
-  }
+let ultimo = null;
+function render(d){
+  ultimo = d;
+  document.getElementById('updated').textContent = d.updated_at
+    ? 'atualizado ' + dmhm(d.updated_at) : 'aguardando primeira atualização';
+  renderHealth(d); renderCards(d); renderOpen(d);
+  drawChart(d.daily_series||[]);
+  renderDaily(d); renderTrades(d); renderBreakdowns(d);
 }
 
 async function load(){
   try{
-    const res = await fetch('data.json?_=' + Date.now());
-    const data = await res.json();
-    render(data);
+    const r = await fetch('data.json?_='+Date.now());
+    render(await r.json());
   }catch(e){
-    document.getElementById('updated-text').textContent = 'erro ao carregar dados';
+    document.getElementById('updated').textContent = 'erro ao carregar dados';
     console.error(e);
   }
 }
-
 load();
 setInterval(load, 60000);
-window.addEventListener('resize', load);
+window.addEventListener('resize', ()=>{ if(ultimo) drawChart(ultimo.daily_series||[]); });
 </script>
-
 </body>
 </html>
