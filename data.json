@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-07-27T16:15:02-03:00",
+  "updated_at": "2026-07-27T16:18:02-03:00",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-27T16:13:22-03:00",
+    "last_ea_event": "2026-07-27T16:15:01-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.02,
+        "bid": 41.03,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.44,
+        "bid": 75.47,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.53,
+        "bid": 42.52,
         "ok": true
       },
       {
@@ -29,7 +29,7 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 29.4,
+        "bid": 29.32,
         "ok": true
       }
     ],
@@ -37,18 +37,18 @@
   },
   "account": {
     "balance": 999814.26,
-    "equity": 999902.01,
+    "equity": 999875.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-27",
     "realized": 49.0,
-    "unrealized": 78.0,
-    "total": 127.0,
+    "unrealized": 46.0,
+    "total": 95.0,
     "trades": 11,
     "wins": 8,
-    "exposure": 18092.0,
+    "exposure": 18060.0,
     "open_legs": 3,
     "broker_realized": 24.98
   },
@@ -88,7 +88,7 @@
       "pnl": -84.0,
       "pnl_liq_est": -86.89,
       "pnl_pct": -1.344,
-      "minutos": 174.3
+      "minutos": 177.3
     },
     {
       "symbol": "TOTS3",
@@ -97,13 +97,13 @@
       "side": "LONG",
       "entry_time": "2026-07-27T14:35:10-03:00",
       "entry_price": 29.0,
-      "current_price": 29.4,
+      "current_price": 29.32,
       "qty": 200.0,
-      "notional": 5880.0,
-      "pnl": 80.0,
-      "pnl_liq_est": 77.31,
-      "pnl_pct": 1.379,
-      "minutos": 99.9
+      "notional": 5864.0,
+      "pnl": 64.0,
+      "pnl_liq_est": 61.32,
+      "pnl_pct": 1.103,
+      "minutos": 102.9
     },
     {
       "symbol": "TOTS3",
@@ -112,13 +112,13 @@
       "side": "LONG",
       "entry_time": "2026-07-27T14:35:10-03:00",
       "entry_price": 28.99,
-      "current_price": 29.4,
+      "current_price": 29.32,
       "qty": 200.0,
-      "notional": 5880.0,
-      "pnl": 82.0,
-      "pnl_liq_est": 79.31,
-      "pnl_pct": 1.414,
-      "minutos": 99.9
+      "notional": 5864.0,
+      "pnl": 66.0,
+      "pnl_liq_est": 63.32,
+      "pnl_pct": 1.138,
+      "minutos": 102.9
     }
   ],
   "daily_series": [
