@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-07-28T15:09:03-03:00",
+  "updated_at": "2026-07-28T15:12:02-03:00",
   "start_date": "2026-07-28",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-28T15:05:05-03:00",
+    "last_ea_event": "2026-07-28T15:10:00-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.16,
+        "bid": 41.12,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.55,
+        "bid": 75.53,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.82,
+        "bid": 42.78,
         "ok": true
       },
       {
@@ -30,26 +30,26 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 30.04,
+        "bid": 29.94,
         "ok": true
       }
     ],
-    "pendentes": 15
+    "pendentes": 0
   },
   "account": {
     "balance": 999024.01,
-    "equity": 998986.01,
+    "equity": 999046.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-28",
     "realized": -666.0,
-    "unrealized": -38.0,
-    "total": -704.0,
+    "unrealized": 22.0,
+    "total": -644.0,
     "trades": 14,
     "wins": 1,
-    "exposure": 18024.0,
+    "exposure": 17964.0,
     "open_legs": 3,
     "broker_realized": -666.0
   },
@@ -83,13 +83,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-28T13:35:11-03:00",
       "entry_price": 29.94,
-      "current_price": 30.04,
+      "current_price": 29.94,
       "qty": 200.0,
-      "notional": 6008.0,
-      "pnl": -20.0,
-      "pnl_liq_est": -22.76,
-      "pnl_pct": -0.334,
-      "minutos": 93.9
+      "notional": 5988.0,
+      "pnl": -0.0,
+      "pnl_liq_est": -2.75,
+      "pnl_pct": -0.0,
+      "minutos": 96.9
     },
     {
       "symbol": "TOTS3",
@@ -98,13 +98,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-28T14:00:13-03:00",
       "entry_price": 29.98,
-      "current_price": 30.04,
+      "current_price": 29.94,
       "qty": 200.0,
-      "notional": 6008.0,
-      "pnl": -12.0,
-      "pnl_liq_est": -14.76,
-      "pnl_pct": -0.2,
-      "minutos": 68.8
+      "notional": 5988.0,
+      "pnl": 8.0,
+      "pnl_liq_est": 5.24,
+      "pnl_pct": 0.133,
+      "minutos": 71.8
     },
     {
       "symbol": "TOTS3",
@@ -113,13 +113,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-28T14:00:14-03:00",
       "entry_price": 30.01,
-      "current_price": 30.04,
+      "current_price": 29.94,
       "qty": 200.0,
-      "notional": 6008.0,
-      "pnl": -6.0,
-      "pnl_liq_est": -8.76,
-      "pnl_pct": -0.1,
-      "minutos": 68.8
+      "notional": 5988.0,
+      "pnl": 14.0,
+      "pnl_liq_est": 11.24,
+      "pnl_pct": 0.233,
+      "minutos": 71.8
     }
   ],
   "daily_series": [
