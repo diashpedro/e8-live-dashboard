@@ -1,55 +1,55 @@
 {
-  "updated_at": "2026-07-28T13:45:03-03:00",
+  "updated_at": "2026-07-28T13:48:02-03:00",
   "start_date": "2026-07-28",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-28T13:35:11-03:00",
+    "last_ea_event": "2026-07-28T13:45:02-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.06,
+        "bid": 41.16,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.67,
+        "bid": 75.66,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.95,
+        "bid": 42.89,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 16.25,
+        "bid": 16.23,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 29.95,
+        "bid": 29.91,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 8
   },
   "account": {
     "balance": 999051.01,
-    "equity": 999051.01,
+    "equity": 999055.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-28",
     "realized": -639.0,
-    "unrealized": -2.0,
-    "total": -641.0,
+    "unrealized": 6.0,
+    "total": -633.0,
     "trades": 11,
     "wins": 1,
-    "exposure": 5990.0,
+    "exposure": 5982.0,
     "open_legs": 1,
     "broker_realized": -639.0
   },
@@ -83,13 +83,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-28T13:35:11-03:00",
       "entry_price": 29.94,
-      "current_price": 29.95,
+      "current_price": 29.91,
       "qty": 200.0,
-      "notional": 5990.0,
-      "pnl": -2.0,
-      "pnl_liq_est": -4.75,
-      "pnl_pct": -0.033,
-      "minutos": 9.9
+      "notional": 5982.0,
+      "pnl": 6.0,
+      "pnl_liq_est": 3.25,
+      "pnl_pct": 0.1,
+      "minutos": 12.9
     }
   ],
   "daily_series": [
