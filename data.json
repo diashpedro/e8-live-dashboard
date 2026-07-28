@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-07-28T10:03:02-03:00",
+  "updated_at": "2026-07-28T10:06:03-03:00",
   "start_date": "2026-07-28",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-28T09:30:11-03:00",
+    "last_ea_event": "2026-07-28T10:03:38-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
@@ -15,7 +15,7 @@
       },
       {
         "symbol": "VALE3",
-        "bid": 75.3,
+        "bid": 76.14,
         "ok": true
       },
       {
@@ -37,37 +37,152 @@
     "pendentes": 3
   },
   "account": {
-    "balance": 999690.01,
-    "equity": 999690.01,
+    "balance": 999536.02,
+    "equity": 999536.02,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-28",
-    "realized": 0,
+    "realized": -154.0,
     "unrealized": 0,
-    "total": 0,
-    "trades": 0,
+    "total": -154.0,
+    "trades": 3,
     "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": 0
+    "broker_realized": -153.99
   },
   "cumulative": {
-    "pnl": 0,
-    "trades": 0,
+    "pnl": -154.0,
+    "trades": 3,
     "wins": 0,
-    "since": null,
-    "days": 0,
+    "since": "2026-07-28",
+    "days": 1,
     "days_positive": 0,
-    "best_day": null,
-    "worst_day": null
+    "best_day": {
+      "date": "2026-07-28",
+      "pnl": -154.0,
+      "trades": 3,
+      "wins": 0,
+      "cum": -154.0
+    },
+    "worst_day": {
+      "date": "2026-07-28",
+      "pnl": -154.0,
+      "trades": 3,
+      "wins": 0,
+      "cum": -154.0
+    }
   },
   "open_positions": [],
-  "daily_series": [],
-  "trades": [],
-  "by_window": [],
-  "by_symbol": [],
-  "by_leg": [],
-  "by_reason": []
+  "daily_series": [
+    {
+      "date": "2026-07-28",
+      "pnl": -154.0,
+      "trades": 3,
+      "wins": 0,
+      "cum": -154.0
+    }
+  ],
+  "trades": [
+    {
+      "symbol": "VALE3",
+      "w": 3,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-07-28T10:03:38-03:00",
+      "exit_time": "2026-07-28T10:03:38-03:00",
+      "entry_price": 75.55,
+      "exit_price": 76.1,
+      "qty": 100.0,
+      "pnl": -55.0,
+      "pnl_bruto": -55.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 0.0
+    },
+    {
+      "symbol": "VALE3",
+      "w": 3,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-07-28T10:03:38-03:00",
+      "exit_time": "2026-07-28T10:03:38-03:00",
+      "entry_price": 75.59,
+      "exit_price": 76.1,
+      "qty": 100.0,
+      "pnl": -51.0,
+      "pnl_bruto": -51.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 0.0
+    },
+    {
+      "symbol": "VALE3",
+      "w": 3,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-07-28T10:03:38-03:00",
+      "exit_time": "2026-07-28T10:03:38-03:00",
+      "entry_price": 75.62,
+      "exit_price": 76.1,
+      "qty": 100.0,
+      "pnl": -48.0,
+      "pnl_bruto": -48.0,
+      "motivo": "stop_safety",
+      "motivo_label": "Stop de seguranca",
+      "minutos": 0.0
+    }
+  ],
+  "by_window": [
+    {
+      "w": 3,
+      "trades": 3,
+      "wins": 0,
+      "pnl": -154.0
+    }
+  ],
+  "by_symbol": [
+    {
+      "symbol": "VALE3",
+      "trades": 3,
+      "wins": 0,
+      "pnl": -154.0
+    }
+  ],
+  "by_leg": [
+    {
+      "leg": "A",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -55.0
+    },
+    {
+      "leg": "B",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -51.0
+    },
+    {
+      "leg": "C",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -48.0
+    }
+  ],
+  "by_reason": [
+    {
+      "reason": "Stop",
+      "trades": 2,
+      "wins": 0,
+      "pnl": -106.0
+    },
+    {
+      "reason": "Stop de seguranca",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -48.0
+    }
+  ]
 }
