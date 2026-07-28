@@ -1,5 +1,6 @@
 {
-  "updated_at": "2026-07-27T18:57:02-03:00",
+  "updated_at": "2026-07-27T21:21:42-03:00",
+  "start_date": "2026-07-28",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-07-27T16:40:01-03:00",
@@ -14,22 +15,22 @@
       },
       {
         "symbol": "VALE3",
-        "bid": 75.6,
+        "bid": 75.3,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.76,
+        "bid": 42.33,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.86,
+        "bid": 15.7,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 29.35,
+        "bid": 29.01,
         "ok": true
       }
     ],
@@ -43,349 +44,30 @@
   },
   "today": {
     "date": "2026-07-27",
-    "realized": 49.0,
-    "unrealized": 46.0,
-    "total": 95.0,
-    "trades": 11,
-    "wins": 8,
-    "exposure": 18084.0,
-    "open_legs": 3,
-    "broker_realized": 24.98
+    "realized": 0,
+    "unrealized": 0,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": 0
   },
   "cumulative": {
-    "pnl": 49.0,
-    "trades": 11,
-    "wins": 8,
-    "since": "2026-07-27",
-    "days": 1,
-    "days_positive": 1,
-    "best_day": {
-      "date": "2026-07-27",
-      "pnl": 49.0,
-      "trades": 11,
-      "wins": 8,
-      "cum": 49.0
-    },
-    "worst_day": {
-      "date": "2026-07-27",
-      "pnl": 49.0,
-      "trades": 11,
-      "wins": 8,
-      "cum": 49.0
-    }
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "since": null,
+    "days": 0,
+    "days_positive": 0,
+    "best_day": null,
+    "worst_day": null
   },
-  "open_positions": [
-    {
-      "symbol": "ABEV3",
-      "w": 8,
-      "leg": "A",
-      "side": "SHORT",
-      "entry_time": "2026-07-27T13:20:46-03:00",
-      "entry_price": 15.62,
-      "current_price": 15.86,
-      "qty": 400.0,
-      "notional": 6344.0,
-      "pnl": -96.0,
-      "pnl_liq_est": -98.9,
-      "pnl_pct": -1.536,
-      "minutos": 336.3
-    },
-    {
-      "symbol": "TOTS3",
-      "w": 3,
-      "leg": "A",
-      "side": "LONG",
-      "entry_time": "2026-07-27T14:35:10-03:00",
-      "entry_price": 29.0,
-      "current_price": 29.35,
-      "qty": 200.0,
-      "notional": 5870.0,
-      "pnl": 70.0,
-      "pnl_liq_est": 67.32,
-      "pnl_pct": 1.207,
-      "minutos": 261.9
-    },
-    {
-      "symbol": "TOTS3",
-      "w": 3,
-      "leg": "B",
-      "side": "LONG",
-      "entry_time": "2026-07-27T14:35:10-03:00",
-      "entry_price": 28.99,
-      "current_price": 29.35,
-      "qty": 200.0,
-      "notional": 5870.0,
-      "pnl": 72.0,
-      "pnl_liq_est": 69.32,
-      "pnl_pct": 1.242,
-      "minutos": 261.9
-    }
-  ],
-  "daily_series": [
-    {
-      "date": "2026-07-27",
-      "pnl": 49.0,
-      "trades": 11,
-      "wins": 8,
-      "cum": 49.0
-    }
-  ],
-  "trades": [
-    {
-      "symbol": "PETR4",
-      "w": 3,
-      "leg": "B",
-      "side": "SHORT",
-      "entry_time": "2026-07-27T15:41:28-03:00",
-      "exit_time": "2026-07-27T15:49:48-03:00",
-      "entry_price": 41.05,
-      "exit_price": 40.97,
-      "qty": 100.0,
-      "pnl": 8.0,
-      "pnl_bruto": 8.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 8.3
-    },
-    {
-      "symbol": "PETR4",
-      "w": 3,
-      "leg": "A",
-      "side": "SHORT",
-      "entry_time": "2026-07-27T15:41:24-03:00",
-      "exit_time": "2026-07-27T15:41:42-03:00",
-      "entry_price": 41.03,
-      "exit_price": 41.0,
-      "qty": 100.0,
-      "pnl": 3.0,
-      "pnl_bruto": 3.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 0.3
-    },
-    {
-      "symbol": "ABEV3",
-      "w": 5,
-      "leg": "B",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:00:04-03:00",
-      "exit_time": "2026-07-27T14:53:37-03:00",
-      "entry_price": 15.63,
-      "exit_price": 15.68,
-      "qty": 400.0,
-      "pnl": 20.0,
-      "pnl_bruto": 20.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 113.5
-    },
-    {
-      "symbol": "ABEV3",
-      "w": 8,
-      "leg": "B",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:00:04-03:00",
-      "exit_time": "2026-07-27T14:53:37-03:00",
-      "entry_price": 15.63,
-      "exit_price": 15.68,
-      "qty": 400.0,
-      "pnl": 20.0,
-      "pnl_bruto": 20.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 113.5
-    },
-    {
-      "symbol": "ABEV3",
-      "w": 5,
-      "leg": "A",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:00:04-03:00",
-      "exit_time": "2026-07-27T14:48:29-03:00",
-      "entry_price": 15.63,
-      "exit_price": 15.65,
-      "qty": 400.0,
-      "pnl": 8.0,
-      "pnl_bruto": 8.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 108.4
-    },
-    {
-      "symbol": "ABEV3",
-      "w": 8,
-      "leg": "A",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:00:04-03:00",
-      "exit_time": "2026-07-27T14:48:29-03:00",
-      "entry_price": 15.63,
-      "exit_price": 15.65,
-      "qty": 400.0,
-      "pnl": 8.0,
-      "pnl_bruto": 8.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 108.4
-    },
-    {
-      "symbol": "ITUB4",
-      "w": 3,
-      "leg": "B",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:29:15-03:00",
-      "exit_time": "2026-07-27T13:33:52-03:00",
-      "entry_price": 42.49,
-      "exit_price": 42.49,
-      "qty": 100.0,
-      "pnl": 0.0,
-      "pnl_bruto": 0.0,
-      "motivo": "be",
-      "motivo_label": "Breakeven",
-      "minutos": 4.6
-    },
-    {
-      "symbol": "ITUB4",
-      "w": 3,
-      "leg": "C",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:29:27-03:00",
-      "exit_time": "2026-07-27T13:33:52-03:00",
-      "entry_price": 42.48,
-      "exit_price": 42.49,
-      "qty": 100.0,
-      "pnl": 1.0,
-      "pnl_bruto": 1.0,
-      "motivo": "be",
-      "motivo_label": "Breakeven",
-      "minutos": 4.4
-    },
-    {
-      "symbol": "ITUB4",
-      "w": 3,
-      "leg": "A",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:29:12-03:00",
-      "exit_time": "2026-07-27T13:32:21-03:00",
-      "entry_price": 42.5,
-      "exit_price": 42.55,
-      "qty": 100.0,
-      "pnl": 5.0,
-      "pnl_bruto": 5.0,
-      "motivo": "alvo",
-      "motivo_label": "Alvo",
-      "minutos": 3.1
-    },
-    {
-      "symbol": "ABEV3",
-      "w": 5,
-      "leg": "C",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:20:28-03:00",
-      "exit_time": "2026-07-27T13:21:09-03:00",
-      "entry_price": 15.62,
-      "exit_price": 15.59,
-      "qty": 400.0,
-      "pnl": -12.0,
-      "pnl_bruto": -12.0,
-      "motivo": "stop_safety",
-      "motivo_label": "Stop de seguranca",
-      "minutos": 0.7
-    },
-    {
-      "symbol": "ABEV3",
-      "w": 8,
-      "leg": "C",
-      "side": "LONG",
-      "entry_time": "2026-07-27T13:20:28-03:00",
-      "exit_time": "2026-07-27T13:21:09-03:00",
-      "entry_price": 15.62,
-      "exit_price": 15.59,
-      "qty": 400.0,
-      "pnl": -12.0,
-      "pnl_bruto": -12.0,
-      "motivo": "stop_safety",
-      "motivo_label": "Stop de seguranca",
-      "minutos": 0.7
-    }
-  ],
-  "by_window": [
-    {
-      "w": 3,
-      "trades": 5,
-      "wins": 4,
-      "pnl": 17.0
-    },
-    {
-      "w": 5,
-      "trades": 3,
-      "wins": 2,
-      "pnl": 16.0
-    },
-    {
-      "w": 8,
-      "trades": 3,
-      "wins": 2,
-      "pnl": 16.0
-    }
-  ],
-  "by_symbol": [
-    {
-      "symbol": "ABEV3",
-      "trades": 6,
-      "wins": 4,
-      "pnl": 32.0
-    },
-    {
-      "symbol": "ITUB4",
-      "trades": 3,
-      "wins": 2,
-      "pnl": 6.0
-    },
-    {
-      "symbol": "PETR4",
-      "trades": 2,
-      "wins": 2,
-      "pnl": 11.0
-    }
-  ],
-  "by_leg": [
-    {
-      "leg": "A",
-      "trades": 4,
-      "wins": 4,
-      "pnl": 24.0
-    },
-    {
-      "leg": "B",
-      "trades": 4,
-      "wins": 3,
-      "pnl": 48.0
-    },
-    {
-      "leg": "C",
-      "trades": 3,
-      "wins": 1,
-      "pnl": -23.0
-    }
-  ],
-  "by_reason": [
-    {
-      "reason": "Alvo",
-      "trades": 7,
-      "wins": 7,
-      "pnl": 72.0
-    },
-    {
-      "reason": "Breakeven",
-      "trades": 2,
-      "wins": 1,
-      "pnl": 1.0
-    },
-    {
-      "reason": "Stop de seguranca",
-      "trades": 2,
-      "wins": 0,
-      "pnl": -24.0
-    }
-  ]
+  "open_positions": [],
+  "daily_series": [],
+  "trades": [],
+  "by_window": [],
+  "by_symbol": [],
+  "by_leg": [],
+  "by_reason": []
 }

@@ -191,7 +191,10 @@
   </div>
 </main>
 
-<footer>Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min</footer>
+<footer>
+  Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min
+  <div id="start-note" style="margin-top:6px"></div>
+</footer>
 
 <script>
 const BRL = new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
@@ -393,6 +396,9 @@ function render(d){
   ultimo = d;
   document.getElementById('updated').textContent = d.updated_at
     ? 'atualizado ' + dmhm(d.updated_at) : 'aguardando primeira atualização';
+  document.getElementById('start-note').textContent = d.start_date
+    ? `Contagem iniciada em ${dm(d.start_date)} — pregões anteriores (fase de depuração) não entram no resultado.`
+    : '';
   renderHealth(d); renderCards(d); renderOpen(d);
   drawChart(d.daily_series||[]);
   renderDaily(d); renderTrades(d); renderBreakdowns(d);
