@@ -1,44 +1,44 @@
 {
-  "updated_at": "2026-07-29T11:51:02-03:00",
+  "updated_at": "2026-07-29T11:54:03-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-29T11:45:18-03:00",
+    "last_ea_event": "2026-07-29T11:53:25-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 42.16,
+        "bid": 42.23,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 74.96,
+        "bid": 74.93,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.09,
+        "bid": 42.11,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 16.11,
+        "bid": 16.1,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 29.74,
+        "bid": 29.81,
         "ok": true
       }
     ],
-    "pendentes": 6
+    "pendentes": 2
   },
   "account": {
     "balance": 999015.98,
-    "equity": 999014.98,
+    "equity": 999017.98,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
@@ -49,8 +49,8 @@
     "total": -182.0,
     "trades": 6,
     "wins": 0,
-    "exposure": 12627.0,
-    "open_legs": 3,
+    "exposure": 29477.0,
+    "open_legs": 7,
     "broker_realized": -184.02
   },
   "cumulative": {
@@ -83,13 +83,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-29T11:45:11-03:00",
       "entry_price": 42.09,
-      "current_price": 42.09,
+      "current_price": 42.11,
       "qty": 100.0,
-      "notional": 4209.0,
-      "pnl": -0.0,
-      "pnl_liq_est": -1.94,
-      "pnl_pct": -0.0,
-      "minutos": 5.9
+      "notional": 4211.0,
+      "pnl": -2.0,
+      "pnl_liq_est": -3.94,
+      "pnl_pct": -0.048,
+      "minutos": 8.9
     },
     {
       "symbol": "ITUB4",
@@ -98,13 +98,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-29T11:45:17-03:00",
       "entry_price": 42.1,
-      "current_price": 42.09,
+      "current_price": 42.11,
       "qty": 100.0,
-      "notional": 4209.0,
-      "pnl": 1.0,
-      "pnl_liq_est": -0.94,
-      "pnl_pct": 0.024,
-      "minutos": 5.8
+      "notional": 4211.0,
+      "pnl": -1.0,
+      "pnl_liq_est": -2.94,
+      "pnl_pct": -0.024,
+      "minutos": 8.8
     },
     {
       "symbol": "ITUB4",
@@ -113,13 +113,73 @@
       "side": "SHORT",
       "entry_time": "2026-07-29T11:45:17-03:00",
       "entry_price": 42.1,
-      "current_price": 42.09,
+      "current_price": 42.11,
       "qty": 100.0,
-      "notional": 4209.0,
-      "pnl": 1.0,
-      "pnl_liq_est": -0.94,
-      "pnl_pct": 0.024,
-      "minutos": 5.8
+      "notional": 4211.0,
+      "pnl": -1.0,
+      "pnl_liq_est": -2.94,
+      "pnl_pct": -0.024,
+      "minutos": 8.8
+    },
+    {
+      "symbol": "ITUB4",
+      "w": 3,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-07-29T11:52:00-03:00",
+      "entry_price": 42.11,
+      "current_price": 42.11,
+      "qty": 100.0,
+      "notional": 4211.0,
+      "pnl": -0.0,
+      "pnl_liq_est": -1.94,
+      "pnl_pct": -0.0,
+      "minutos": 2.1
+    },
+    {
+      "symbol": "ITUB4",
+      "w": 3,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-07-29T11:53:24-03:00",
+      "entry_price": 42.13,
+      "current_price": 42.11,
+      "qty": 100.0,
+      "notional": 4211.0,
+      "pnl": 2.0,
+      "pnl_liq_est": 0.06,
+      "pnl_pct": 0.047,
+      "minutos": 0.7
+    },
+    {
+      "symbol": "ITUB4",
+      "w": 5,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-07-29T11:53:24-03:00",
+      "entry_price": 42.13,
+      "current_price": 42.11,
+      "qty": 100.0,
+      "notional": 4211.0,
+      "pnl": 2.0,
+      "pnl_liq_est": 0.06,
+      "pnl_pct": 0.047,
+      "minutos": 0.7
+    },
+    {
+      "symbol": "ITUB4",
+      "w": 8,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-07-29T11:53:24-03:00",
+      "entry_price": 42.13,
+      "current_price": 42.11,
+      "qty": 100.0,
+      "notional": 4211.0,
+      "pnl": 2.0,
+      "pnl_liq_est": 0.06,
+      "pnl_pct": 0.047,
+      "minutos": 0.7
     }
   ],
   "daily_series": [
