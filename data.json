@@ -1,55 +1,55 @@
 {
-  "updated_at": "2026-07-31T13:36:02-03:00",
+  "updated_at": "2026-07-31T13:39:03-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-07-31T13:35:19-03:00",
+    "last_ea_event": "2026-07-31T13:37:45-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 43.19,
+        "bid": 43.22,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.89,
+        "bid": 76.13,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 43.09,
+        "bid": 43.07,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.93,
+        "bid": 15.98,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 31.13,
+        "bid": 31.05,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 3
   },
   "account": {
     "balance": 999028.01,
-    "equity": 999001.01,
+    "equity": 998917.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-07-31",
     "realized": -136.0,
-    "unrealized": -27.0,
-    "total": -163.0,
+    "unrealized": -99.0,
+    "total": -235.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 22767.0,
+    "exposure": 22839.0,
     "open_legs": 3,
     "broker_realized": -135.99
   },
@@ -83,13 +83,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-31T13:31:53-03:00",
       "entry_price": 75.69,
-      "current_price": 75.89,
+      "current_price": 76.13,
       "qty": 100.0,
-      "notional": 7589.0,
-      "pnl": -20.0,
-      "pnl_liq_est": -23.49,
-      "pnl_pct": -0.264,
-      "minutos": 4.2
+      "notional": 7613.0,
+      "pnl": -44.0,
+      "pnl_liq_est": -47.49,
+      "pnl_pct": -0.581,
+      "minutos": 7.2
     },
     {
       "symbol": "VALE3",
@@ -98,13 +98,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-31T13:33:33-03:00",
       "entry_price": 75.8,
-      "current_price": 75.89,
+      "current_price": 76.13,
       "qty": 100.0,
-      "notional": 7589.0,
-      "pnl": -9.0,
-      "pnl_liq_est": -12.49,
-      "pnl_pct": -0.119,
-      "minutos": 2.5
+      "notional": 7613.0,
+      "pnl": -33.0,
+      "pnl_liq_est": -36.49,
+      "pnl_pct": -0.435,
+      "minutos": 5.5
     },
     {
       "symbol": "VALE3",
@@ -113,13 +113,13 @@
       "side": "SHORT",
       "entry_time": "2026-07-31T13:35:19-03:00",
       "entry_price": 75.91,
-      "current_price": 75.89,
+      "current_price": 76.13,
       "qty": 100.0,
-      "notional": 7589.0,
-      "pnl": 2.0,
-      "pnl_liq_est": -1.49,
-      "pnl_pct": 0.026,
-      "minutos": 0.7
+      "notional": 7613.0,
+      "pnl": -22.0,
+      "pnl_liq_est": -25.5,
+      "pnl_pct": -0.29,
+      "minutos": 3.7
     }
   ],
   "daily_series": [
