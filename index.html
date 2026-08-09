@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estratégia 8 — Painel ao vivo</title>
+<title>Painel ao vivo — DAYTRADE</title>
 <style>
   :root{
     --bg:#0d1117; --bg-panel:#12181f; --bg-panel-2:#171f28; --border:#232c37;
@@ -89,12 +89,22 @@
   .grid2 .panel{ margin-bottom:0; }
 
   footer{ text-align:center; padding:18px; color:var(--text-dim); font-size:.73rem; }
+
+  .tabs{ display:flex; gap:6px; }
+  .tab{ padding:7px 15px; border-radius:8px; border:1px solid var(--border); background:var(--bg-panel);
+        color:var(--text-dim); font-size:.82rem; font-weight:600; cursor:pointer; }
+  .tab.active{ background:var(--accent); color:#1a1509; border-color:var(--accent); }
+  .hidden{ display:none !important; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Estratégia <span>8</span> — painel ao vivo</h1>
+  <h1 id="title">Estratégia <span>8</span> — painel ao vivo</h1>
+  <div class="tabs" id="tabs">
+    <button class="tab" data-src="e8">Estratégia 8</button>
+    <button class="tab" data-src="win">Portfólio WIN</button>
+  </div>
   <div id="updated">carregando…</div>
 </header>
 
@@ -110,11 +120,7 @@
     </div>
     <div class="table-wrap">
       <table id="open-table">
-        <thead><tr>
-          <th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th><th>Aberta às</th>
-          <th class="r">Tempo</th><th class="r">Preço entrada</th><th class="r">Preço atual</th>
-          <th class="r">Qtd</th><th class="r">Valor da posição</th><th class="r">Resultado</th><th class="r">%</th>
-        </tr></thead>
+        <thead id="open-head"></thead>
         <tbody id="open-body"></tbody>
       </table>
       <div class="empty" id="open-empty" style="display:none;">Nenhuma posição aberta agora.</div>
@@ -142,10 +148,10 @@
 
   <div class="grid2">
     <div class="panel">
-      <div class="panel-head"><span>Por janela (W)</span></div>
+      <div class="panel-head"><span id="bygroup1-title">Por janela (W)</span></div>
       <div class="table-wrap"><table>
-        <thead><tr><th>W</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
-        <tbody id="bywindow-body"></tbody>
+        <thead><tr><th id="bygroup1-col">W</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
+        <tbody id="bygroup1-body"></tbody>
       </table></div>
     </div>
     <div class="panel">
@@ -155,7 +161,7 @@
         <tbody id="bysymbol-body"></tbody>
       </table></div>
     </div>
-    <div class="panel">
+    <div class="panel" id="byleg-panel">
       <div class="panel-head"><span>Por perna</span><span class="hint">a pirâmide paga?</span></div>
       <div class="table-wrap"><table>
         <thead><tr><th>Perna</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
@@ -178,12 +184,7 @@
     </div>
     <div class="table-wrap">
       <table>
-        <thead><tr>
-          <th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th>
-          <th>Entrada</th><th>Saída</th><th class="r">Tempo</th>
-          <th class="r">Preço entrada</th><th class="r">Preço saída</th>
-          <th class="r">Qtd</th><th>Motivo</th><th class="r">Resultado</th>
-        </tr></thead>
+        <thead id="trades-head"></thead>
         <tbody id="trades-body"></tbody>
       </table>
       <div class="empty" id="trades-empty" style="display:none;">Nenhum trade encerrado ainda.</div>
@@ -192,7 +193,7 @@
 </main>
 
 <footer>
-  Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min
+  <span id="footer-desc">Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min</span>
   <div id="start-note" style="margin-top:6px"></div>
 </footer>
 
@@ -269,18 +270,43 @@ function renderCards(d){
     </div>`).join('');
 }
 
-function renderOpen(d){
+const OPEN_HEAD = {
+  legged: `<tr><th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th><th>Aberta às</th>
+    <th class="r">Tempo</th><th class="r">Preço entrada</th><th class="r">Preço atual</th>
+    <th class="r">Qtd</th><th class="r">Valor da posição</th><th class="r">Resultado</th><th class="r">%</th></tr>`,
+  strategy: `<tr><th>Ativo</th><th>Estratégia</th><th>Lado</th><th>Aberta às</th>
+    <th class="r">Tempo</th><th class="r">Preço entrada</th><th class="r">Preço atual</th>
+    <th class="r">Qtd</th><th class="r">Valor da posição</th><th class="r">Resultado</th><th class="r">%</th></tr>`,
+};
+const TRADES_HEAD = {
+  legged: `<tr><th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th>
+    <th>Entrada</th><th>Saída</th><th class="r">Tempo</th>
+    <th class="r">Preço entrada</th><th class="r">Preço saída</th>
+    <th class="r">Qtd</th><th>Motivo</th><th class="r">Resultado</th></tr>`,
+  strategy: `<tr><th>Ativo</th><th>Estratégia</th><th>Lado</th>
+    <th>Entrada</th><th>Saída</th><th class="r">Tempo</th>
+    <th class="r">Preço entrada</th><th class="r">Preço saída</th>
+    <th class="r">Qtd</th><th>Motivo</th><th class="r">Resultado</th></tr>`,
+};
+
+function idCell(mode, r){
+  return mode === 'legged'
+    ? `<td><span class="badge w num">W${r.w}</span></td><td><span class="badge">${r.leg}</span></td>`
+    : `<td><span class="badge w">${r.strategy_label || r.strategy}</span></td>`;
+}
+
+function renderOpen(d, mode){
+  document.getElementById('open-head').innerHTML = OPEN_HEAD[mode];
   const rows = d.open_positions || [];
   const body = document.getElementById('open-body');
   const total = rows.reduce((s,r)=>s+r.pnl,0);
   document.getElementById('open-sub').textContent =
-    rows.length ? `${rows.length} perna(s) · resultado ${money(total)}` : '';
+    rows.length ? `${rows.length} posição(ões) · resultado ${money(total)}` : '';
   document.getElementById('open-empty').style.display = rows.length ? 'none' : 'block';
   body.innerHTML = rows.map(r=>`
     <tr>
       <td>${r.symbol}</td>
-      <td><span class="badge w num">W${r.w}</span></td>
-      <td><span class="badge">${r.leg}</span></td>
+      ${idCell(mode, r)}
       <td class="${r.side==='LONG'?'side-long':'side-short'}">${r.side==='LONG'?'Compra':'Venda'}</td>
       <td class="num">${hhmm(r.entry_time)}</td>
       <td class="num r">${dur(r.minutos)}</td>
@@ -307,15 +333,15 @@ function renderDaily(d){
     </tr>`).join('');
 }
 
-function renderTrades(d){
+function renderTrades(d, mode){
+  document.getElementById('trades-head').innerHTML = TRADES_HEAD[mode];
   const rows = d.trades || [];
   document.getElementById('trades-sub').textContent = rows.length ? `${rows.length} no total` : '';
   document.getElementById('trades-empty').style.display = rows.length ? 'none' : 'block';
   document.getElementById('trades-body').innerHTML = rows.map(r=>`
     <tr>
       <td>${r.symbol}</td>
-      <td><span class="badge w num">W${r.w}</span></td>
-      <td><span class="badge">${r.leg}</span></td>
+      ${idCell(mode, r)}
       <td class="${r.side==='LONG'?'side-long':'side-short'}">${r.side==='LONG'?'Compra':'Venda'}</td>
       <td class="num">${dmhm(r.entry_time)}</td>
       <td class="num">${hhmm(r.exit_time)}</td>
@@ -328,7 +354,7 @@ function renderTrades(d){
     </tr>`).join('');
 }
 
-function renderBreakdowns(d){
+function renderBreakdowns(d, mode){
   const fill = (id, rows, key, label) => {
     const el = document.getElementById(id);
     if(!rows || !rows.length){ el.innerHTML = `<tr><td colspan="4" style="color:var(--text-dim)">sem dados</td></tr>`; return; }
@@ -340,9 +366,18 @@ function renderBreakdowns(d){
         <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td>
       </tr>`).join('');
   };
-  fill('bywindow-body', d.by_window, 'w', v=>`<span class="badge w num">W${v}</span>`);
+  document.getElementById('byleg-panel').classList.toggle('hidden', mode !== 'legged');
+  if(mode === 'legged'){
+    document.getElementById('bygroup1-title').textContent = 'Por janela (W)';
+    document.getElementById('bygroup1-col').textContent = 'W';
+    fill('bygroup1-body', d.by_window, 'w', v=>`<span class="badge w num">W${v}</span>`);
+    fill('byleg-body', d.by_leg, 'leg', v=>`<span class="badge">${v}</span>`);
+  } else {
+    document.getElementById('bygroup1-title').textContent = 'Por estratégia';
+    document.getElementById('bygroup1-col').textContent = 'Estratégia';
+    fill('bygroup1-body', d.by_strategy, 'strategy', v=>`<span class="badge w">${v}</span>`);
+  }
   fill('bysymbol-body', d.by_symbol, 'symbol');
-  fill('byleg-body', d.by_leg, 'leg', v=>`<span class="badge">${v}</span>`);
   // motivo nao tem coluna de taxa
   const el = document.getElementById('byreason-body');
   const rows = d.by_reason || [];
@@ -391,29 +426,55 @@ function drawChart(series){
   ctx.textAlign='right'; ctx.fillText(dm(series[series.length-1].date), W-padR, H-4);
 }
 
+const SOURCES = {
+  e8: {
+    file: 'data.json', mode: 'legged', title: 'Estratégia <span>8</span> — painel ao vivo',
+    footer: 'Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min',
+  },
+  win: {
+    file: 'data_win.json', mode: 'strategy', title: 'Portfólio <span>WIN</span> — painel ao vivo',
+    footer: 'VolBreak + VWAP + ORB · 1 EA, 3 módulos, magic único · WIN futuro, conta demo B3 · atualiza sozinho a cada 3 min',
+  },
+};
+let currentSrc = 'e8';
 let ultimo = null;
-function render(d){
+
+function render(d, mode){
   ultimo = d;
   document.getElementById('updated').textContent = d.updated_at
     ? 'atualizado ' + dmhm(d.updated_at) : 'aguardando primeira atualização';
   document.getElementById('start-note').textContent = d.start_date
     ? `Contagem iniciada em ${dm(d.start_date)} — pregões anteriores (fase de depuração) não entram no resultado.`
     : '';
-  renderHealth(d); renderCards(d); renderOpen(d);
+  renderHealth(d); renderCards(d); renderOpen(d, mode);
   drawChart(d.daily_series||[]);
-  renderDaily(d); renderTrades(d); renderBreakdowns(d);
+  renderDaily(d); renderTrades(d, mode); renderBreakdowns(d, mode);
 }
 
 async function load(){
+  const src = SOURCES[currentSrc];
   try{
-    const r = await fetch('data.json?_='+Date.now());
-    render(await r.json());
+    const r = await fetch(src.file+'?_='+Date.now());
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    render(await r.json(), src.mode);
   }catch(e){
     document.getElementById('updated').textContent = 'erro ao carregar dados';
     console.error(e);
   }
 }
-load();
+
+function selectSource(key){
+  currentSrc = key;
+  const src = SOURCES[key];
+  document.getElementById('title').innerHTML = src.title;
+  document.getElementById('footer-desc').textContent = src.footer;
+  document.querySelectorAll('.tab').forEach(b => b.classList.toggle('active', b.dataset.src === key));
+  document.getElementById('updated').textContent = 'carregando…';
+  load();
+}
+
+document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => selectSource(b.dataset.src)));
+selectSource('e8');
 setInterval(load, 60000);
 window.addEventListener('resize', ()=>{ if(ultimo) drawChart(ultimo.daily_series||[]); });
 </script>
