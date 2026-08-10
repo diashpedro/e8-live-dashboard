@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-08-10T12:15:06-03:00",
+  "updated_at": "2026-08-10T12:18:05-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-10T10:40:00-03:00",
+    "last_ea_event": "2026-08-10T12:15:19-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 172430.0,
+        "bid": 172395.0,
         "ok": true
       }
     ],
-    "pendentes": 1
+    "pendentes": 0
   },
   "account": {
-    "balance": 1002518.01,
-    "equity": 1002599.01,
+    "balance": 1002546.51,
+    "equity": 1002594.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-10",
     "realized": 0,
-    "unrealized": 405.0,
-    "total": 405.0,
+    "unrealized": 380.0,
+    "total": 380.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 344860.0,
-    "open_legs": 2,
-    "broker_realized": 0.0
+    "exposure": 517185.0,
+    "open_legs": 3,
+    "broker_realized": 28.5
   },
   "cumulative": {
     "pnl": 0,
@@ -51,13 +51,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-10T10:03:32-03:00",
       "entry_price": 172600.0,
-      "current_price": 172430.0,
+      "current_price": 172395.0,
       "qty": 1.0,
-      "notional": 172430.0,
-      "pnl": 170.0,
-      "pnl_liq_est": 90.64,
-      "pnl_pct": 0.098,
-      "minutos": 131.6
+      "notional": 172395.0,
+      "pnl": 205.0,
+      "pnl_liq_est": 125.65,
+      "pnl_pct": 0.119,
+      "minutos": 134.6
     },
     {
       "symbol": "WINQ26",
@@ -66,13 +66,28 @@
       "side": "SHORT",
       "entry_time": "2026-08-10T10:30:09-03:00",
       "entry_price": 172665.0,
-      "current_price": 172430.0,
+      "current_price": 172395.0,
       "qty": 1.0,
-      "notional": 172430.0,
-      "pnl": 235.0,
-      "pnl_liq_est": 155.63,
-      "pnl_pct": 0.136,
-      "minutos": 105.0
+      "notional": 172395.0,
+      "pnl": 270.0,
+      "pnl_liq_est": 190.64,
+      "pnl_pct": 0.156,
+      "minutos": 107.9
+    },
+    {
+      "symbol": "WINQ26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-08-10T12:15:19-03:00",
+      "entry_price": 172490.0,
+      "current_price": 172395.0,
+      "qty": 1.0,
+      "notional": 172395.0,
+      "pnl": -95.0,
+      "pnl_liq_est": -174.32,
+      "pnl_pct": -0.055,
+      "minutos": 2.8
     }
   ],
   "daily_series": [],
