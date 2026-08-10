@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-08-10T10:39:06-03:00",
+  "updated_at": "2026-08-10T10:42:05-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-10T10:30:10-03:00",
+    "last_ea_event": "2026-08-10T10:40:00-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 172970.0,
+        "bid": 172855.0,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 1
   },
   "account": {
     "balance": 1002518.01,
-    "equity": 1002381.01,
+    "equity": 1002427.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-10",
     "realized": 0,
-    "unrealized": -675.0,
-    "total": -675.0,
+    "unrealized": -445.0,
+    "total": -445.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 345940.0,
+    "exposure": 345710.0,
     "open_legs": 2,
     "broker_realized": 0.0
   },
@@ -51,13 +51,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-10T10:03:32-03:00",
       "entry_price": 172600.0,
-      "current_price": 172970.0,
+      "current_price": 172855.0,
       "qty": 1.0,
-      "notional": 172970.0,
-      "pnl": -370.0,
-      "pnl_liq_est": -449.48,
-      "pnl_pct": -0.214,
-      "minutos": 35.6
+      "notional": 172855.0,
+      "pnl": -255.0,
+      "pnl_liq_est": -334.45,
+      "pnl_pct": -0.148,
+      "minutos": 38.6
     },
     {
       "symbol": "WINQ26",
@@ -66,13 +66,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-10T10:30:09-03:00",
       "entry_price": 172665.0,
-      "current_price": 172970.0,
+      "current_price": 172855.0,
       "qty": 1.0,
-      "notional": 172970.0,
-      "pnl": -305.0,
-      "pnl_liq_est": -384.5,
-      "pnl_pct": -0.177,
-      "minutos": 9.0
+      "notional": 172855.0,
+      "pnl": -190.0,
+      "pnl_liq_est": -269.47,
+      "pnl_pct": -0.11,
+      "minutos": 11.9
     }
   ],
   "daily_series": [],
