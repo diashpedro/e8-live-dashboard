@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T17:57:05-03:00",
+  "updated_at": "2026-08-10T18:00:08-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
@@ -10,69 +10,77 @@
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 172290.0,
+        "bid": 172280.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 1001929.51,
-    "equity": 1001997.01,
+    "balance": 1001998.01,
+    "equity": 1001998.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-10",
-    "realized": 0,
-    "unrealized": 485.0,
+    "realized": 485.0,
+    "unrealized": 0,
     "total": 485.0,
-    "trades": 0,
-    "wins": 0,
-    "exposure": 516870.0,
-    "open_legs": 3,
-    "broker_realized": 28.5
+    "trades": 3,
+    "wins": 2,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": 97.0
   },
   "cumulative": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "since": null,
-    "days": 0,
-    "days_positive": 0,
-    "best_day": null,
-    "worst_day": null
+    "pnl": 485.0,
+    "trades": 3,
+    "wins": 2,
+    "since": "2026-08-10",
+    "days": 1,
+    "days_positive": 1,
+    "best_day": {
+      "date": "2026-08-10",
+      "pnl": 485.0,
+      "trades": 3,
+      "wins": 2,
+      "cum": 485.0
+    },
+    "worst_day": {
+      "date": "2026-08-10",
+      "pnl": 485.0,
+      "trades": 3,
+      "wins": 2,
+      "cum": 485.0
+    }
   },
-  "open_positions": [
+  "open_positions": [],
+  "daily_series": [
+    {
+      "date": "2026-08-10",
+      "pnl": 485.0,
+      "trades": 3,
+      "wins": 2,
+      "cum": 485.0
+    }
+  ],
+  "trades": [
     {
       "symbol": "WINQ26",
       "strategy": "VB",
       "strategy_label": "VolBreak",
       "side": "SHORT",
       "entry_time": "2026-08-10T10:03:32-03:00",
+      "exit_time": "2026-08-10T18:00:00-03:00",
       "entry_price": 172600.0,
-      "current_price": 172290.0,
+      "exit_price": 172285.0,
       "qty": 1.0,
-      "notional": 172290.0,
-      "pnl": 310.0,
-      "pnl_liq_est": 230.68,
-      "pnl_pct": 0.18,
-      "minutos": 473.6
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "SHORT",
-      "entry_time": "2026-08-10T10:30:09-03:00",
-      "entry_price": 172665.0,
-      "current_price": 172290.0,
-      "qty": 1.0,
-      "notional": 172290.0,
-      "pnl": 375.0,
-      "pnl_liq_est": 295.66,
-      "pnl_pct": 0.217,
-      "minutos": 446.9
+      "pnl": 315.0,
+      "pnl_bruto": 315.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 476.5
     },
     {
       "symbol": "WINQ26",
@@ -80,19 +88,67 @@
       "strategy_label": "VWAP",
       "side": "LONG",
       "entry_time": "2026-08-10T12:15:19-03:00",
+      "exit_time": "2026-08-10T18:00:00-03:00",
       "entry_price": 172490.0,
-      "current_price": 172290.0,
+      "exit_price": 172280.0,
       "qty": 1.0,
-      "notional": 172290.0,
-      "pnl": -200.0,
-      "pnl_liq_est": -279.3,
-      "pnl_pct": -0.116,
-      "minutos": 341.8
+      "pnl": -210.0,
+      "pnl_bruto": -210.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 344.7
+    },
+    {
+      "symbol": "WINQ26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "SHORT",
+      "entry_time": "2026-08-10T10:30:09-03:00",
+      "exit_time": "2026-08-10T18:00:00-03:00",
+      "entry_price": 172665.0,
+      "exit_price": 172285.0,
+      "qty": 1.0,
+      "pnl": 380.0,
+      "pnl_bruto": 380.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 449.9
     }
   ],
-  "daily_series": [],
-  "trades": [],
-  "by_strategy": [],
-  "by_symbol": [],
-  "by_reason": []
+  "by_strategy": [
+    {
+      "strategy": "ORB",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 380.0
+    },
+    {
+      "strategy": "VWAP",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -210.0
+    },
+    {
+      "strategy": "VolBreak",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 315.0
+    }
+  ],
+  "by_symbol": [
+    {
+      "symbol": "WINQ26",
+      "trades": 3,
+      "wins": 2,
+      "pnl": 485.0
+    }
+  ],
+  "by_reason": [
+    {
+      "reason": "Fim do pregao",
+      "trades": 3,
+      "wins": 2,
+      "pnl": 485.0
+    }
+  ]
 }
