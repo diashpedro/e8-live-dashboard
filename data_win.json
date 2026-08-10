@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T16:48:06-03:00",
+  "updated_at": "2026-08-10T16:51:06-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
@@ -10,7 +10,7 @@
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 172535.0,
+        "bid": 172470.0,
         "ok": true
       }
     ],
@@ -18,18 +18,18 @@
   },
   "account": {
     "balance": 1001929.51,
-    "equity": 1001949.01,
+    "equity": 1001961.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-10",
     "realized": 0,
-    "unrealized": 240.0,
-    "total": 240.0,
+    "unrealized": 305.0,
+    "total": 305.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 517605.0,
+    "exposure": 517410.0,
     "open_legs": 3,
     "broker_realized": 28.5
   },
@@ -51,13 +51,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-10T10:03:32-03:00",
       "entry_price": 172600.0,
-      "current_price": 172535.0,
+      "current_price": 172470.0,
       "qty": 1.0,
-      "notional": 172535.0,
-      "pnl": 65.0,
-      "pnl_liq_est": -14.38,
-      "pnl_pct": 0.038,
-      "minutos": 404.6
+      "notional": 172470.0,
+      "pnl": 130.0,
+      "pnl_liq_est": 50.63,
+      "pnl_pct": 0.075,
+      "minutos": 407.6
     },
     {
       "symbol": "WINQ26",
@@ -66,13 +66,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-10T10:30:09-03:00",
       "entry_price": 172665.0,
-      "current_price": 172535.0,
+      "current_price": 172470.0,
       "qty": 1.0,
-      "notional": 172535.0,
-      "pnl": 130.0,
-      "pnl_liq_est": 50.6,
-      "pnl_pct": 0.075,
-      "minutos": 378.0
+      "notional": 172470.0,
+      "pnl": 195.0,
+      "pnl_liq_est": 115.62,
+      "pnl_pct": 0.113,
+      "minutos": 381.0
     },
     {
       "symbol": "WINQ26",
@@ -81,13 +81,13 @@
       "side": "LONG",
       "entry_time": "2026-08-10T12:15:19-03:00",
       "entry_price": 172490.0,
-      "current_price": 172535.0,
+      "current_price": 172470.0,
       "qty": 1.0,
-      "notional": 172535.0,
-      "pnl": 45.0,
-      "pnl_liq_est": -34.36,
-      "pnl_pct": 0.026,
-      "minutos": 272.8
+      "notional": 172470.0,
+      "pnl": -20.0,
+      "pnl_liq_est": -99.34,
+      "pnl_pct": -0.012,
+      "minutos": 275.8
     }
   ],
   "daily_series": [],
