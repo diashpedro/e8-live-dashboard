@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-11T11:39:07-03:00",
+  "updated_at": "2026-08-11T11:42:06-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-11T11:12:53-03:00",
+    "last_ea_event": "2026-08-11T11:39:31-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 170570.0,
+        "bid": 170460.0,
         "ok": true
       }
     ],
@@ -18,18 +18,18 @@
   },
   "account": {
     "balance": 1001830.01,
-    "equity": 1002064.01,
+    "equity": 1002113.01,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-11",
     "realized": -1295.0,
-    "unrealized": 1645.0,
-    "total": 350.0,
+    "unrealized": 1885.0,
+    "total": 590.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 341140.0,
+    "exposure": 511380.0,
     "open_legs": 2,
     "broker_realized": -168.0
   },
@@ -62,14 +62,14 @@
       "strategy_label": "ORB",
       "side": "SHORT",
       "entry_time": "2026-08-11T10:30:37-03:00",
-      "entry_price": 171500.0,
-      "current_price": 170570.0,
-      "qty": 1.0,
-      "notional": 170570.0,
-      "pnl": 930.0,
-      "pnl_liq_est": 851.32,
-      "pnl_pct": 0.542,
-      "minutos": 68.5
+      "entry_price": 170990.0,
+      "current_price": 170460.0,
+      "qty": 2.0,
+      "notional": 340920.0,
+      "pnl": 1060.0,
+      "pnl_liq_est": 902.93,
+      "pnl_pct": 0.31,
+      "minutos": 71.5
     },
     {
       "symbol": "WINQ26",
@@ -78,13 +78,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-11T10:55:51-03:00",
       "entry_price": 171285.0,
-      "current_price": 170570.0,
+      "current_price": 170460.0,
       "qty": 1.0,
-      "notional": 170570.0,
-      "pnl": 715.0,
-      "pnl_liq_est": 636.37,
-      "pnl_pct": 0.417,
-      "minutos": 43.3
+      "notional": 170460.0,
+      "pnl": 825.0,
+      "pnl_liq_est": 746.4,
+      "pnl_pct": 0.482,
+      "minutos": 46.3
     }
   ],
   "daily_series": [
