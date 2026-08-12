@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T12:15:11-03:00",
+  "updated_at": "2026-08-12T12:18:07-03:00",
   "start_date": null,
   "health": {
     "errors_today": 1,
@@ -10,7 +10,7 @@
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 167675.0,
+        "bid": 167965.0,
         "ok": true
       }
     ],
@@ -18,18 +18,18 @@
   },
   "account": {
     "balance": 1004048.99,
-    "equity": 1004071.99,
+    "equity": 1003953.99,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-12",
     "realized": 0,
-    "unrealized": 25.0,
-    "total": 25.0,
+    "unrealized": -91.0,
+    "total": -91.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 67070.0,
+    "exposure": 67186.0,
     "open_legs": 2,
     "broker_realized": 0.0
   },
@@ -71,13 +71,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T10:07:21-03:00",
       "entry_price": 168035.0,
-      "current_price": 167675.0,
+      "current_price": 167965.0,
       "qty": 1.0,
-      "notional": 33535.0,
-      "pnl": 72.0,
-      "pnl_liq_est": 56.56,
-      "pnl_pct": 0.214,
-      "minutos": 127.8
+      "notional": 33593.0,
+      "pnl": 14.0,
+      "pnl_liq_est": -1.46,
+      "pnl_pct": 0.042,
+      "minutos": 130.8
     },
     {
       "symbol": "WINQ26",
@@ -86,13 +86,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T10:46:13-03:00",
       "entry_price": 167440.0,
-      "current_price": 167675.0,
+      "current_price": 167965.0,
       "qty": 1.0,
-      "notional": 33535.0,
-      "pnl": -47.0,
-      "pnl_liq_est": -62.42,
-      "pnl_pct": -0.14,
-      "minutos": 89.0
+      "notional": 33593.0,
+      "pnl": -105.0,
+      "pnl_liq_est": -120.43,
+      "pnl_pct": -0.314,
+      "minutos": 91.9
     }
   ],
   "daily_series": [
