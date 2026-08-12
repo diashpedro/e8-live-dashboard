@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-12T11:30:11-03:00",
+  "updated_at": "2026-08-12T11:33:06-03:00",
   "start_date": null,
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-08-12T10:46:14-03:00",
+    "last_ea_event": "2026-08-12T11:31:31-03:00",
     "last_error_msg": "GG\t0\t13:30:00.076\tEA_WIN_Portfolio (WINQ26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 167735.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 168205.0,
+        "bid": 168285.0,
         "ok": true
       }
     ],
@@ -18,18 +18,18 @@
   },
   "account": {
     "balance": 1003962.99,
-    "equity": 1003783.99,
+    "equity": 1003745.99,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-12",
     "realized": 0,
-    "unrealized": -187.0,
-    "total": -187.0,
+    "unrealized": -219.0,
+    "total": -219.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 67282.0,
+    "exposure": 67314.0,
     "open_legs": 2,
     "broker_realized": 0.0
   },
@@ -71,13 +71,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T10:07:21-03:00",
       "entry_price": 168035.0,
-      "current_price": 168205.0,
+      "current_price": 168285.0,
       "qty": 1.0,
-      "notional": 33641.0,
-      "pnl": -34.0,
-      "pnl_liq_est": -49.47,
-      "pnl_pct": -0.101,
-      "minutos": 82.8
+      "notional": 33657.0,
+      "pnl": -50.0,
+      "pnl_liq_est": -65.47,
+      "pnl_pct": -0.149,
+      "minutos": 85.8
     },
     {
       "symbol": "WINQ26",
@@ -86,13 +86,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T10:46:13-03:00",
       "entry_price": 167440.0,
-      "current_price": 168205.0,
+      "current_price": 168285.0,
       "qty": 1.0,
-      "notional": 33641.0,
-      "pnl": -153.0,
-      "pnl_liq_est": -168.44,
-      "pnl_pct": -0.457,
-      "minutos": 44.0
+      "notional": 33657.0,
+      "pnl": -169.0,
+      "pnl_liq_est": -184.44,
+      "pnl_pct": -0.505,
+      "minutos": 46.9
     }
   ],
   "daily_series": [
