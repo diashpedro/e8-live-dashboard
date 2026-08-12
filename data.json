@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T13:45:05-03:00",
+  "updated_at": "2026-08-12T13:48:05-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 1,
@@ -10,12 +10,12 @@
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.76,
+        "bid": 41.71,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 73.33,
+        "bid": 73.25,
         "ok": true
       },
       {
@@ -30,7 +30,7 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 29.71,
+        "bid": 29.72,
         "ok": true
       }
     ],
@@ -38,18 +38,18 @@
   },
   "account": {
     "balance": 1004048.99,
-    "equity": 1003933.99,
+    "equity": 1003963.99,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-12",
     "realized": 86.0,
-    "unrealized": 10.0,
-    "total": 96.0,
+    "unrealized": 6.0,
+    "total": 92.0,
     "trades": 3,
     "wins": 3,
-    "exposure": 11884.0,
+    "exposure": 11888.0,
     "open_legs": 2,
     "broker_realized": 86.0
   },
@@ -94,13 +94,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T13:37:17-03:00",
       "entry_price": 29.73,
-      "current_price": 29.71,
+      "current_price": 29.72,
       "qty": 200.0,
-      "notional": 5942.0,
-      "pnl": 4.0,
-      "pnl_liq_est": 1.27,
-      "pnl_pct": 0.067,
-      "minutos": 7.8
+      "notional": 5944.0,
+      "pnl": 2.0,
+      "pnl_liq_est": -0.73,
+      "pnl_pct": 0.034,
+      "minutos": 10.8
     },
     {
       "symbol": "TOTS3",
@@ -109,13 +109,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T13:37:21-03:00",
       "entry_price": 29.74,
-      "current_price": 29.71,
+      "current_price": 29.72,
       "qty": 200.0,
-      "notional": 5942.0,
-      "pnl": 6.0,
-      "pnl_liq_est": 3.27,
-      "pnl_pct": 0.101,
-      "minutos": 7.7
+      "notional": 5944.0,
+      "pnl": 4.0,
+      "pnl_liq_est": 1.26,
+      "pnl_pct": 0.067,
+      "minutos": 10.7
     }
   ],
   "daily_series": [
