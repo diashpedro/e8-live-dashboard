@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-12T10:30:14-03:00",
+  "updated_at": "2026-08-12T10:33:07-03:00",
   "start_date": null,
   "health": {
-    "errors_today": 0,
-    "last_ea_event": "2026-08-12T10:07:21-03:00",
-    "last_error_msg": null,
+    "errors_today": 1,
+    "last_ea_event": "2026-08-12T10:30:00-03:00",
+    "last_error_msg": "GG\t0\t13:30:00.076\tEA_WIN_Portfolio (WINQ26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 167735.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 167615.0,
+        "bid": 167815.0,
         "ok": true
       }
     ],
@@ -18,18 +18,18 @@
   },
   "account": {
     "balance": 1003962.99,
-    "equity": 1004044.99,
+    "equity": 1004004.99,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-12",
     "realized": 0,
-    "unrealized": 84.0,
-    "total": 84.0,
+    "unrealized": 44.0,
+    "total": 44.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 33523.0,
+    "exposure": 33563.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -71,13 +71,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T10:07:21-03:00",
       "entry_price": 168035.0,
-      "current_price": 167615.0,
+      "current_price": 167815.0,
       "qty": 1.0,
-      "notional": 33523.0,
-      "pnl": 84.0,
-      "pnl_liq_est": 68.56,
-      "pnl_pct": 0.25,
-      "minutos": 22.9
+      "notional": 33563.0,
+      "pnl": 44.0,
+      "pnl_liq_est": 28.55,
+      "pnl_pct": 0.131,
+      "minutos": 25.8
     }
   ],
   "daily_series": [
