@@ -104,6 +104,7 @@
   <div class="tabs" id="tabs">
     <button class="tab" data-src="e8">Estratégia 8</button>
     <button class="tab" data-src="win">Portfólio WIN</button>
+    <button class="tab" data-src="brooks">Brooks</button>
   </div>
   <div id="updated">carregando…</div>
 </header>
@@ -162,9 +163,9 @@
       </table></div>
     </div>
     <div class="panel" id="byleg-panel">
-      <div class="panel-head"><span>Por perna</span><span class="hint">a pirâmide paga?</span></div>
+      <div class="panel-head"><span id="byleg-title">Por perna</span><span class="hint" id="byleg-hint">a pirâmide paga?</span></div>
       <div class="table-wrap"><table>
-        <thead><tr><th>Perna</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
+        <thead><tr><th id="byleg-col">Perna</th><th class="r">Trades</th><th class="r">Taxa</th><th class="r">Resultado</th></tr></thead>
         <tbody id="byleg-body"></tbody>
       </table></div>
     </div>
@@ -277,6 +278,9 @@ const OPEN_HEAD = {
   strategy: `<tr><th>Ativo</th><th>Estratégia</th><th>Lado</th><th>Aberta às</th>
     <th class="r">Tempo</th><th class="r">Preço entrada</th><th class="r">Preço atual</th>
     <th class="r">Qtd</th><th class="r">Valor da posição</th><th class="r">Resultado</th><th class="r">%</th></tr>`,
+  brooks: `<tr><th>Ativo</th><th>Setup</th><th>Gaveta</th><th>Lado</th><th>Aberta às</th>
+    <th class="r">Tempo</th><th class="r">Preço entrada</th><th class="r">Preço atual</th>
+    <th class="r">Qtd</th><th class="r">Valor da posição</th><th class="r">Resultado</th><th class="r">%</th></tr>`,
 };
 const TRADES_HEAD = {
   legged: `<tr><th>Ativo</th><th>Janela</th><th>Perna</th><th>Lado</th>
@@ -287,12 +291,23 @@ const TRADES_HEAD = {
     <th>Entrada</th><th>Saída</th><th class="r">Tempo</th>
     <th class="r">Preço entrada</th><th class="r">Preço saída</th>
     <th class="r">Qtd</th><th>Motivo</th><th class="r">Resultado</th></tr>`,
+  brooks: `<tr><th>Ativo</th><th>Setup</th><th>Gaveta</th><th>Lado</th>
+    <th>Entrada</th><th>Saída</th><th class="r">Tempo</th>
+    <th class="r">Preço entrada</th><th class="r">Preço saída</th>
+    <th class="r">Qtd</th><th>Motivo</th><th class="r">Resultado</th></tr>`,
 };
 
 function idCell(mode, r){
-  return mode === 'legged'
-    ? `<td><span class="badge w num">W${r.w}</span></td><td><span class="badge">${r.leg}</span></td>`
-    : `<td><span class="badge w">${r.strategy_label || r.strategy}</span></td>`;
+  if(mode === 'legged')
+    return `<td><span class="badge w num">W${r.w}</span></td><td><span class="badge">${r.leg}</span></td>`;
+  // No Brooks a identidade tem dois niveis: o SETUP diz qual padrao do livro
+  // disparou, a GAVETA diz qual das variacoes de parametro dele foi. Sem os
+  // dois nao da para saber se um setup paga ou se e uma gaveta sortuda dentro
+  // dele -- que e a pergunta que 154 gavetas obrigam a fazer.
+  if(mode === 'brooks')
+    return `<td><span class="badge w">${r.setup || '?'}</span></td>`
+         + `<td><span class="badge num">${r.gaveta}</span></td>`;
+  return `<td><span class="badge w">${r.strategy_label || r.strategy}</span></td>`;
 }
 
 function renderOpen(d, mode){
@@ -366,12 +381,27 @@ function renderBreakdowns(d, mode){
         <td class="num r ${cls(r.pnl)}">${money(r.pnl)}</td>
       </tr>`).join('');
   };
-  document.getElementById('byleg-panel').classList.toggle('hidden', mode !== 'legged');
+  document.getElementById('byleg-panel').classList.toggle('hidden',
+    mode !== 'legged' && mode !== 'brooks');
   if(mode === 'legged'){
     document.getElementById('bygroup1-title').textContent = 'Por janela (W)';
     document.getElementById('bygroup1-col').textContent = 'W';
+    document.getElementById('byleg-title').textContent = 'Por perna';
+    document.getElementById('byleg-hint').textContent = 'a pirâmide paga?';
+    document.getElementById('byleg-col').textContent = 'Perna';
     fill('bygroup1-body', d.by_window, 'w', v=>`<span class="badge w num">W${v}</span>`);
     fill('byleg-body', d.by_leg, 'leg', v=>`<span class="badge">${v}</span>`);
+  } else if(mode === 'brooks'){
+    // Livro em cima, setup embaixo: e a hierarquia do proprio Brooks (Trends,
+    // Trading Ranges, Reversals) e responde primeiro qual REGIME esta pagando,
+    // depois qual padrao dentro dele.
+    document.getElementById('bygroup1-title').textContent = 'Por livro';
+    document.getElementById('bygroup1-col').textContent = 'Livro';
+    document.getElementById('byleg-title').textContent = 'Por setup';
+    document.getElementById('byleg-hint').textContent = 'quais dos 29 pagam?';
+    document.getElementById('byleg-col').textContent = 'Setup';
+    fill('bygroup1-body', d.by_livro, 'livro', v=>`<span class="badge w">${v}</span>`);
+    fill('byleg-body', d.by_setup, 'setup', v=>`<span class="badge">${v}</span>`);
   } else {
     document.getElementById('bygroup1-title').textContent = 'Por estratégia';
     document.getElementById('bygroup1-col').textContent = 'Estratégia';
@@ -434,6 +464,10 @@ const SOURCES = {
   win: {
     file: 'data_win.json', mode: 'strategy', title: 'Portfólio <span>WIN</span> — painel ao vivo',
     footer: 'VolBreak + VWAP + ORB · 1 EA, 3 módulos, magic único · WIN futuro, conta demo B3 · atualiza sozinho a cada 3 min',
+  },
+  brooks: {
+    file: 'data_brooks.json', mode: 'brooks', title: 'Al <span>Brooks</span> — painel ao vivo',
+    footer: '154 gavetas · 29 setups dos 3 livros · sinal em M15 na série contínua, ordem no contrato · WIN futuro, conta demo B3 · atualiza sozinho a cada 3 min',
   },
 };
 let currentSrc = 'e8';
