@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-08-12T10:45:13-03:00",
+  "updated_at": "2026-08-12T10:48:07-03:00",
   "start_date": null,
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-08-12T10:30:00-03:00",
+    "last_ea_event": "2026-08-12T10:46:14-03:00",
     "last_error_msg": "GG\t0\t13:30:00.076\tEA_WIN_Portfolio (WINQ26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 167735.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINQ26",
-        "bid": 167755.0,
+        "bid": 167680.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 1
   },
   "account": {
     "balance": 1003962.99,
-    "equity": 1004014.99,
+    "equity": 1003981.99,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-12",
     "realized": 0,
-    "unrealized": 56.0,
-    "total": 56.0,
+    "unrealized": 23.0,
+    "total": 23.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 33551.0,
-    "open_legs": 1,
+    "exposure": 67072.0,
+    "open_legs": 2,
     "broker_realized": 0.0
   },
   "reconciliacao": {
@@ -71,13 +71,28 @@
       "side": "SHORT",
       "entry_time": "2026-08-12T10:07:21-03:00",
       "entry_price": 168035.0,
-      "current_price": 167755.0,
+      "current_price": 167680.0,
       "qty": 1.0,
-      "notional": 33551.0,
-      "pnl": 56.0,
-      "pnl_liq_est": 40.55,
-      "pnl_pct": 0.167,
-      "minutos": 37.9
+      "notional": 33536.0,
+      "pnl": 71.0,
+      "pnl_liq_est": 55.56,
+      "pnl_pct": 0.211,
+      "minutos": 40.8
+    },
+    {
+      "symbol": "WINQ26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "SHORT",
+      "entry_time": "2026-08-12T10:46:13-03:00",
+      "entry_price": 167440.0,
+      "current_price": 167680.0,
+      "qty": 1.0,
+      "notional": 33536.0,
+      "pnl": -48.0,
+      "pnl_liq_est": -63.42,
+      "pnl_pct": -0.143,
+      "minutos": 1.9
     }
   ],
   "daily_series": [
