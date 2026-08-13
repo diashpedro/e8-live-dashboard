@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-08-12T18:57:03-03:00",
+  "updated_at": "2026-08-13T09:00:06-03:00",
   "start_date": "2026-07-29",
   "health": {
-    "errors_today": 1,
-    "last_ea_event": "2026-08-12T18:01:50-03:00",
-    "last_error_msg": "GG\t0\t13:30:00.076\tEA_WIN_Portfolio (WINQ26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 167735.00: retcode=10015 invalid price",
+    "errors_today": 0,
+    "last_ea_event": "2026-08-13T08:26:32-03:00",
+    "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.29,
+        "bid": 41.25,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 72.81,
+        "bid": 72.7,
         "ok": true
       },
       {
@@ -25,12 +25,12 @@
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.8,
+        "bid": 14.79,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 29.12,
+        "bid": 29.01,
         "ok": true
       }
     ],
@@ -43,21 +43,21 @@
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
-    "date": "2026-08-12",
-    "realized": 134.0,
+    "date": "2026-08-13",
+    "realized": 0,
     "unrealized": 0,
-    "total": 134.0,
-    "trades": 8,
-    "wins": 8,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": 134.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": 134.0,
-    "corretora": 134.0,
-    "divergencia": 0.0,
-    "tolerancia": 2.68,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
     "ok": true,
     "pernas_painel": 0,
