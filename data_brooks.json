@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-14T10:51:09-03:00",
+ "updated_at": "2026-08-14T10:54:09-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 169485.0,
+    "bid": 169425.0,
     "ok": true
    },
    {
@@ -15,31 +15,31 @@
     "ok": false
    }
   ],
-  "pendentes": 21
+  "pendentes": 17
  },
  "account": {
-  "balance": 1004284.99,
-  "equity": 1003987.99,
+  "balance": 1003920.99,
+  "equity": 1003880.99,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-14",
   "realized": 0,
-  "unrealized": -288.0,
+  "unrealized": -404.0,
   "trades": 0,
   "wins": 0,
-  "open_legs": 9,
-  "broker_realized": 0.0
+  "open_legs": 16,
+  "broker_realized": -364.0
  },
  "reconciliacao": {
   "painel": 0,
-  "corretora": 0.0,
-  "divergencia": 0.0,
-  "tolerancia": 1.0,
+  "corretora": -364.0,
+  "divergencia": 364.0,
+  "tolerancia": 7.28,
   "comparavel": false,
   "ok": null,
-  "pernas_painel": 9,
+  "pernas_painel": 16,
   "posicoes_corretora": 1,
   "saidas_sem_par": []
  },
@@ -62,10 +62,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:12:38-03:00",
    "entry_price": 169740.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": 51.0,
-   "minutos": 38.5
+   "pnl": 63.0,
+   "minutos": 41.5
   },
   {
    "symbol": "WINV26",
@@ -75,10 +75,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:12:38-03:00",
    "entry_price": 169740.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": 51.0,
-   "minutos": 38.5
+   "pnl": 63.0,
+   "minutos": 41.5
   },
   {
    "symbol": "WINV26",
@@ -88,10 +88,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:12:38-03:00",
    "entry_price": 169740.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": 51.0,
-   "minutos": 38.5
+   "pnl": 63.0,
+   "minutos": 41.5
   },
   {
    "symbol": "WINV26",
@@ -101,10 +101,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:32:40-03:00",
    "entry_price": 169030.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": -91.0,
-   "minutos": 18.5
+   "pnl": -79.0,
+   "minutos": 21.5
   },
   {
    "symbol": "WINV26",
@@ -114,10 +114,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:45:26-03:00",
    "entry_price": 169135.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": -70.0,
-   "minutos": 5.7
+   "pnl": -58.0,
+   "minutos": 8.7
   },
   {
    "symbol": "WINV26",
@@ -127,10 +127,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:45:26-03:00",
    "entry_price": 169135.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": -70.0,
-   "minutos": 5.7
+   "pnl": -58.0,
+   "minutos": 8.7
   },
   {
    "symbol": "WINV26",
@@ -140,10 +140,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:45:26-03:00",
    "entry_price": 169135.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": -70.0,
-   "minutos": 5.7
+   "pnl": -58.0,
+   "minutos": 8.7
   },
   {
    "symbol": "WINV26",
@@ -153,10 +153,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:45:26-03:00",
    "entry_price": 169135.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": -70.0,
-   "minutos": 5.7
+   "pnl": -58.0,
+   "minutos": 8.7
   },
   {
    "symbol": "WINV26",
@@ -166,10 +166,101 @@
    "side": "SHORT",
    "entry_time": "2026-08-14T10:45:26-03:00",
    "entry_price": 169135.0,
-   "current_price": 169485.0,
+   "current_price": 169425.0,
    "qty": 1.0,
-   "pnl": -70.0,
-   "minutos": 5.7
+   "pnl": -58.0,
+   "minutos": 8.7
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 1,
+   "setup": "V02_reversao_climatica",
+   "livro": "Reversals",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 2,
+   "setup": "V02_reversao_climatica",
+   "livro": "Reversals",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 3,
+   "setup": "V02_reversao_climatica",
+   "livro": "Reversals",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 82,
+   "setup": "T01_barra_reversao",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 84,
+   "setup": "T01_barra_reversao",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 86,
+   "setup": "T01_barra_reversao",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 102,
+   "setup": "T04_micro_canal",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-14T10:51:47-03:00",
+   "entry_price": 169585.0,
+   "current_price": 169425.0,
+   "qty": 1.0,
+   "pnl": -32.0,
+   "minutos": 2.4
   }
  ],
  "daily_series": [],
