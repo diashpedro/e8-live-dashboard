@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-08-14T18:57:03-03:00",
+  "updated_at": "2026-08-17T09:00:09-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-14T18:44:41-03:00",
+    "last_ea_event": null,
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 42.05,
+        "bid": 41.99,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 71.51,
+        "bid": 71.3,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 38.52,
+        "bid": 38.25,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.8,
+        "bid": 14.74,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 30.05,
+        "bid": 29.3,
         "ok": true
       }
     ],
@@ -43,21 +43,21 @@
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
-    "date": "2026-08-14",
-    "realized": 143.0,
+    "date": "2026-08-17",
+    "realized": 0,
     "unrealized": 0,
-    "total": 143.0,
-    "trades": 22,
-    "wins": 12,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": 142.98
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": 143.0,
-    "corretora": 142.98,
-    "divergencia": 0.02,
-    "tolerancia": 2.86,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
     "ok": true,
     "pernas_painel": 0,
