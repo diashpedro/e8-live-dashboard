@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-17T10:42:05-03:00",
+  "updated_at": "2026-08-17T10:45:06-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-17T10:40:32-03:00",
+    "last_ea_event": "2026-08-17T10:42:56-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 42.19,
+        "bid": 42.22,
         "ok": true
       },
       {
@@ -30,27 +30,27 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 30.32,
+        "bid": 30.26,
         "ok": true
       }
     ],
-    "pendentes": 6
+    "pendentes": 5
   },
   "account": {
     "balance": 1001168.96,
-    "equity": 1001171.96,
+    "equity": 1001176.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-17",
     "realized": -129.0,
-    "unrealized": 4.0,
-    "total": -125.0,
+    "unrealized": 12.0,
+    "total": -117.0,
     "trades": 6,
     "wins": 0,
-    "exposure": 7107.0,
-    "open_legs": 1,
+    "exposure": 12995.0,
+    "open_legs": 2,
     "broker_realized": -129.01
   },
   "reconciliacao": {
@@ -60,8 +60,8 @@
     "tolerancia": 2.58,
     "comparavel": false,
     "ok": null,
-    "pernas_painel": 1,
-    "posicoes_corretora": 1,
+    "pernas_painel": 2,
+    "posicoes_corretora": 2,
     "saidas_sem_par": []
   },
   "cumulative": {
@@ -100,7 +100,22 @@
       "pnl": 4.0,
       "pnl_liq_est": 0.73,
       "pnl_pct": 0.056,
-      "minutos": 1.6
+      "minutos": 4.6
+    },
+    {
+      "symbol": "ABEV3",
+      "w": 3,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-08-17T10:42:56-03:00",
+      "entry_price": 14.74,
+      "current_price": 14.72,
+      "qty": 400.0,
+      "notional": 5888.0,
+      "pnl": 8.0,
+      "pnl_liq_est": 5.29,
+      "pnl_pct": 0.136,
+      "minutos": 2.2
     }
   ],
   "daily_series": [
