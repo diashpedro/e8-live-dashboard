@@ -1,56 +1,56 @@
 {
-  "updated_at": "2026-08-17T11:18:05-03:00",
+  "updated_at": "2026-08-17T11:21:05-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-17T11:16:31-03:00",
+    "last_ea_event": "2026-08-17T11:20:22-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 42.32,
+        "bid": 42.36,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 71.08,
+        "bid": 71.22,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 38.52,
+        "bid": 38.59,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.68,
+        "bid": 14.66,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 30.34,
+        "bid": 30.53,
         "ok": true
       }
     ],
-    "pendentes": 3
+    "pendentes": 1
   },
   "account": {
     "balance": 1001192.96,
-    "equity": 1001116.96,
+    "equity": 1000976.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-17",
     "realized": -105.0,
-    "unrealized": 0,
-    "total": -105.0,
+    "unrealized": -6.0,
+    "total": -111.0,
     "trades": 8,
     "wins": 2,
-    "exposure": 0,
-    "open_legs": 0,
+    "exposure": 15436.0,
+    "open_legs": 2,
     "broker_realized": -105.01
   },
   "reconciliacao": {
@@ -58,10 +58,10 @@
     "corretora": -105.01,
     "divergencia": 0.01,
     "tolerancia": 2.1,
-    "comparavel": true,
-    "ok": true,
-    "pernas_painel": 0,
-    "posicoes_corretora": 0,
+    "comparavel": false,
+    "ok": null,
+    "pernas_painel": 2,
+    "posicoes_corretora": 1,
     "saidas_sem_par": []
   },
   "cumulative": {
@@ -86,7 +86,38 @@
       "cum": -362.0
     }
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "ITUB4",
+      "w": 3,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-08-17T11:20:11-03:00",
+      "entry_price": 38.56,
+      "current_price": 38.59,
+      "qty": 200.0,
+      "notional": 7718.0,
+      "pnl": -6.0,
+      "pnl_liq_est": -9.55,
+      "pnl_pct": -0.078,
+      "minutos": 0.9
+    },
+    {
+      "symbol": "ITUB4",
+      "w": 3,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-08-17T11:20:22-03:00",
+      "entry_price": 38.59,
+      "current_price": 38.59,
+      "qty": 200.0,
+      "notional": 7718.0,
+      "pnl": -0.0,
+      "pnl_liq_est": -3.55,
+      "pnl_pct": -0.0,
+      "minutos": 0.7
+    }
+  ],
   "daily_series": [
     {
       "date": "2026-07-29",
