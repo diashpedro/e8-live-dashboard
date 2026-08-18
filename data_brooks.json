@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-18T10:06:12-03:00",
+ "updated_at": "2026-08-18T10:09:08-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 169810.0,
+    "bid": 170020.0,
     "ok": true
    },
    {
@@ -15,85 +15,45 @@
     "ok": false
    }
   ],
-  "pendentes": 3
+  "pendentes": 0
  },
  "account": {
-  "balance": 999238.0,
-  "equity": 999190.0,
+  "balance": 999013.0,
+  "equity": 999013.0,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-18",
-  "realized": -222.0,
-  "unrealized": -81.0,
-  "trades": 3,
+  "realized": -480.0,
+  "unrealized": 0,
+  "trades": 6,
   "wins": 0,
-  "open_legs": 3,
-  "broker_realized": -255.0
+  "open_legs": 0,
+  "broker_realized": -480.0
  },
  "reconciliacao": {
-  "painel": -222.0,
-  "corretora": -255.0,
-  "divergencia": 33.0,
-  "tolerancia": 5.1,
-  "comparavel": false,
-  "ok": null,
-  "pernas_painel": 3,
-  "posicoes_corretora": 1,
+  "painel": -480.0,
+  "corretora": -480.0,
+  "divergencia": 0.0,
+  "tolerancia": 9.6,
+  "comparavel": true,
+  "ok": true,
+  "pernas_painel": 0,
+  "posicoes_corretora": 0,
   "saidas_sem_par": []
  },
  "cumulative": {
-  "pnl": -4741.0,
-  "trades": 56,
+  "pnl": -4999.0,
+  "trades": 59,
   "wins": 11,
   "since": "2026-08-14",
   "days": 3,
   "days_positive": 0,
-  "gavetas_ativas": 41,
+  "gavetas_ativas": 44,
   "gavetas_total": 148
  },
- "open_positions": [
-  {
-   "symbol": "WINV26",
-   "gaveta": 22,
-   "setup": "R04_gap_abertura",
-   "livro": "Trading Ranges",
-   "side": "SHORT",
-   "entry_time": "2026-08-18T10:02:00-03:00",
-   "entry_price": 169675.0,
-   "current_price": 169810.0,
-   "qty": 1.0,
-   "pnl": -27.0,
-   "minutos": 4.2
-  },
-  {
-   "symbol": "WINV26",
-   "gaveta": 24,
-   "setup": "R04_gap_abertura",
-   "livro": "Trading Ranges",
-   "side": "SHORT",
-   "entry_time": "2026-08-18T10:02:00-03:00",
-   "entry_price": 169675.0,
-   "current_price": 169810.0,
-   "qty": 1.0,
-   "pnl": -27.0,
-   "minutos": 4.2
-  },
-  {
-   "symbol": "WINV26",
-   "gaveta": 26,
-   "setup": "R04_gap_abertura",
-   "livro": "Trading Ranges",
-   "side": "SHORT",
-   "entry_time": "2026-08-18T10:02:00-03:00",
-   "entry_price": 169675.0,
-   "current_price": 169810.0,
-   "qty": 1.0,
-   "pnl": -27.0,
-   "minutos": 4.2
-  }
- ],
+ "open_positions": [],
  "daily_series": [
   {
    "date": "2026-08-14",
@@ -111,13 +71,64 @@
   },
   {
    "date": "2026-08-18",
-   "pnl": -222.0,
-   "trades": 3,
+   "pnl": -480.0,
+   "trades": 6,
    "wins": 0,
-   "cum": -4741.0
+   "cum": -4999.0
   }
  ],
  "trades": [
+  {
+   "symbol": "WINV26",
+   "gaveta": 22,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-18T10:02:00-03:00",
+   "exit_time": "2026-08-18T10:08:32-03:00",
+   "entry_price": 169675.0,
+   "exit_price": 170105.0,
+   "qty": 1.0,
+   "pnl": -86.0,
+   "pnl_bruto": -86.0,
+   "motivo": "stop",
+   "motivo_label": "Stop",
+   "minutos": 6.5
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 24,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-18T10:02:00-03:00",
+   "exit_time": "2026-08-18T10:08:32-03:00",
+   "entry_price": 169675.0,
+   "exit_price": 170105.0,
+   "qty": 1.0,
+   "pnl": -86.0,
+   "pnl_bruto": -86.0,
+   "motivo": "stop",
+   "motivo_label": "Stop",
+   "minutos": 6.5
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 26,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-18T10:02:00-03:00",
+   "exit_time": "2026-08-18T10:08:32-03:00",
+   "entry_price": 169675.0,
+   "exit_price": 170105.0,
+   "qty": 1.0,
+   "pnl": -86.0,
+   "pnl_bruto": -86.0,
+   "motivo": "stop",
+   "motivo_label": "Stop",
+   "minutos": 6.5
+  },
   {
    "symbol": "WINV26",
    "gaveta": 23,
@@ -1074,9 +1085,9 @@
  "by_livro": [
   {
    "livro": "Trading Ranges",
-   "trades": 8,
+   "trades": 11,
    "wins": 0,
-   "pnl": -672.0
+   "pnl": -930.0
   },
   {
    "livro": "Reversals",
@@ -1109,12 +1120,6 @@
    "trades": 3,
    "wins": 1,
    "pnl": -161.0
-  },
-  {
-   "setup": "R04_gap_abertura",
-   "trades": 6,
-   "wins": 0,
-   "pnl": -333.0
   },
   {
    "setup": "R01_rompimento_forte",
@@ -1151,6 +1156,12 @@
    "trades": 3,
    "wins": 0,
    "pnl": -577.0
+  },
+  {
+   "setup": "R04_gap_abertura",
+   "trades": 9,
+   "wins": 0,
+   "pnl": -591.0
   },
   {
    "setup": "T03_segunda_entrada",
@@ -1231,6 +1242,24 @@
    "trades": 1,
    "wins": 0,
    "pnl": -37.0
+  },
+  {
+   "gaveta": 22,
+   "trades": 1,
+   "wins": 0,
+   "pnl": -86.0
+  },
+  {
+   "gaveta": 24,
+   "trades": 1,
+   "wins": 0,
+   "pnl": -86.0
+  },
+  {
+   "gaveta": 26,
+   "trades": 1,
+   "wins": 0,
+   "pnl": -86.0
   },
   {
    "gaveta": 27,
@@ -1416,9 +1445,9 @@
  "by_symbol": [
   {
    "symbol": "WINV26",
-   "trades": 56,
+   "trades": 59,
    "wins": 11,
-   "pnl": -4741.0
+   "pnl": -4999.0
   }
  ],
  "by_reason": [
@@ -1436,9 +1465,9 @@
   },
   {
    "reason": "Stop",
-   "trades": 26,
+   "trades": 29,
    "wins": 0,
-   "pnl": -4208.0
+   "pnl": -4466.0
   }
  ]
 }
