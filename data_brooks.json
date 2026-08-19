@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-19T10:30:17-03:00",
+ "updated_at": "2026-08-19T10:33:13-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 172125.0,
+    "bid": 172080.0,
     "ok": true
    },
    {
@@ -15,32 +15,32 @@
     "ok": false
    }
   ],
-  "pendentes": 3
+  "pendentes": 7
  },
  "account": {
   "balance": 997772.91,
-  "equity": 997772.91,
+  "equity": 997841.91,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-19",
   "realized": 0,
-  "unrealized": 0,
+  "unrealized": 66.0,
   "trades": 0,
   "wins": 0,
-  "open_legs": 0,
-  "broker_realized": 0
+  "open_legs": 3,
+  "broker_realized": 0.0
  },
  "reconciliacao": {
   "painel": 0,
-  "corretora": 0,
-  "divergencia": 0,
+  "corretora": 0.0,
+  "divergencia": 0.0,
   "tolerancia": 1.0,
-  "comparavel": true,
-  "ok": true,
-  "pernas_painel": 0,
-  "posicoes_corretora": 0,
+  "comparavel": false,
+  "ok": null,
+  "pernas_painel": 3,
+  "posicoes_corretora": 1,
   "saidas_sem_par": []
  },
  "cumulative": {
@@ -53,7 +53,47 @@
   "gavetas_ativas": 59,
   "gavetas_total": 148
  },
- "open_positions": [],
+ "open_positions": [
+  {
+   "symbol": "WINV26",
+   "gaveta": 103,
+   "setup": "T04_micro_canal",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-19T10:30:34-03:00",
+   "entry_price": 171970.0,
+   "current_price": 172080.0,
+   "qty": 1.0,
+   "pnl": 22.0,
+   "minutos": 2.7
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 110,
+   "setup": "T05_spike_canal",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-19T10:30:35-03:00",
+   "entry_price": 171970.0,
+   "current_price": 172080.0,
+   "qty": 1.0,
+   "pnl": 22.0,
+   "minutos": 2.6
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 111,
+   "setup": "T05_spike_canal",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-19T10:30:35-03:00",
+   "entry_price": 171970.0,
+   "current_price": 172080.0,
+   "qty": 1.0,
+   "pnl": 22.0,
+   "minutos": 2.6
+  }
+ ],
  "daily_series": [
   {
    "date": "2026-08-14",
