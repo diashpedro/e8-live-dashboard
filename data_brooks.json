@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-19T17:39:10-03:00",
+ "updated_at": "2026-08-19T17:42:07-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 170870.0,
+    "bid": 170930.0,
     "ok": true
    },
    {
@@ -15,111 +15,45 @@
     "ok": false
    }
   ],
-  "pendentes": 5
+  "pendentes": 0
  },
  "account": {
-  "balance": 995027.9,
-  "equity": 995188.9,
+  "balance": 995187.9,
+  "equity": 995187.9,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-19",
-  "realized": -3388.0,
-  "unrealized": 840.0,
-  "trades": 11,
-  "wins": 0,
-  "open_legs": 5,
-  "broker_realized": -2712.0
+  "realized": -2552.0,
+  "unrealized": 0,
+  "trades": 16,
+  "wins": 4,
+  "open_legs": 0,
+  "broker_realized": -2552.0
  },
  "reconciliacao": {
-  "painel": -3388.0,
-  "corretora": -2712.0,
-  "divergencia": -676.0,
-  "tolerancia": 54.24,
-  "comparavel": false,
-  "ok": null,
-  "pernas_painel": 5,
-  "posicoes_corretora": 1,
+  "painel": -2552.0,
+  "corretora": -2552.0,
+  "divergencia": 0.0,
+  "tolerancia": 51.04,
+  "comparavel": true,
+  "ok": true,
+  "pernas_painel": 0,
+  "posicoes_corretora": 0,
   "saidas_sem_par": []
  },
  "cumulative": {
-  "pnl": -9332.0,
-  "trades": 103,
-  "wins": 26,
+  "pnl": -8496.0,
+  "trades": 108,
+  "wins": 30,
   "since": "2026-08-14",
   "days": 4,
   "days_positive": 0,
-  "gavetas_ativas": 64,
+  "gavetas_ativas": 65,
   "gavetas_total": 148
  },
- "open_positions": [
-  {
-   "symbol": "WINV26",
-   "gaveta": 103,
-   "setup": "T04_micro_canal",
-   "livro": "Trends",
-   "side": "LONG",
-   "entry_time": "2026-08-19T10:30:34-03:00",
-   "entry_price": 171970.0,
-   "current_price": 170870.0,
-   "qty": 1.0,
-   "pnl": -220.0,
-   "minutos": 428.6
-  },
-  {
-   "symbol": "WINV26",
-   "gaveta": 104,
-   "setup": "T04_micro_canal",
-   "livro": "Trends",
-   "side": "SHORT",
-   "entry_time": "2026-08-19T11:47:19-03:00",
-   "entry_price": 172785.0,
-   "current_price": 170870.0,
-   "qty": 1.0,
-   "pnl": 383.0,
-   "minutos": 351.9
-  },
-  {
-   "symbol": "WINV26",
-   "gaveta": 102,
-   "setup": "T04_micro_canal",
-   "livro": "Trends",
-   "side": "SHORT",
-   "entry_time": "2026-08-19T11:48:35-03:00",
-   "entry_price": 172705.0,
-   "current_price": 170870.0,
-   "qty": 1.0,
-   "pnl": 367.0,
-   "minutos": 350.6
-  },
-  {
-   "symbol": "WINV26",
-   "gaveta": 95,
-   "setup": "T03_segunda_entrada",
-   "livro": "Trends",
-   "side": "SHORT",
-   "entry_time": "2026-08-19T12:30:29-03:00",
-   "entry_price": 171645.0,
-   "current_price": 170870.0,
-   "qty": 1.0,
-   "pnl": 155.0,
-   "minutos": 308.7
-  },
-  {
-   "symbol": "WINV26",
-   "gaveta": 97,
-   "setup": "T03_segunda_entrada",
-   "livro": "Trends",
-   "side": "SHORT",
-   "entry_time": "2026-08-19T12:30:29-03:00",
-   "entry_price": 171645.0,
-   "current_price": 170870.0,
-   "qty": 1.0,
-   "pnl": 155.0,
-   "minutos": 308.7
-  }
- ],
+ "open_positions": [],
  "daily_series": [
   {
    "date": "2026-08-14",
@@ -144,13 +78,98 @@
   },
   {
    "date": "2026-08-19",
-   "pnl": -3388.0,
-   "trades": 11,
-   "wins": 0,
-   "cum": -9332.0
+   "pnl": -2552.0,
+   "trades": 16,
+   "wins": 4,
+   "cum": -8496.0
   }
  ],
  "trades": [
+  {
+   "symbol": "WINV26",
+   "gaveta": 103,
+   "setup": "T04_micro_canal",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-19T10:30:34-03:00",
+   "exit_time": "2026-08-19T17:40:02-03:00",
+   "entry_price": 171970.0,
+   "exit_price": 170870.0,
+   "qty": 1.0,
+   "pnl": -220.0,
+   "pnl_bruto": -220.0,
+   "motivo": "eod",
+   "motivo_label": "Fim do pregao",
+   "minutos": 429.5
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 104,
+   "setup": "T04_micro_canal",
+   "livro": "Trends",
+   "side": "SHORT",
+   "entry_time": "2026-08-19T11:47:19-03:00",
+   "exit_time": "2026-08-19T17:40:02-03:00",
+   "entry_price": 172785.0,
+   "exit_price": 170875.0,
+   "qty": 1.0,
+   "pnl": 382.0,
+   "pnl_bruto": 382.0,
+   "motivo": "eod",
+   "motivo_label": "Fim do pregao",
+   "minutos": 352.7
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 102,
+   "setup": "T04_micro_canal",
+   "livro": "Trends",
+   "side": "SHORT",
+   "entry_time": "2026-08-19T11:48:35-03:00",
+   "exit_time": "2026-08-19T17:40:02-03:00",
+   "entry_price": 172705.0,
+   "exit_price": 170875.0,
+   "qty": 1.0,
+   "pnl": 366.0,
+   "pnl_bruto": 366.0,
+   "motivo": "eod",
+   "motivo_label": "Fim do pregao",
+   "minutos": 351.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 95,
+   "setup": "T03_segunda_entrada",
+   "livro": "Trends",
+   "side": "SHORT",
+   "entry_time": "2026-08-19T12:30:29-03:00",
+   "exit_time": "2026-08-19T17:40:02-03:00",
+   "entry_price": 171645.0,
+   "exit_price": 170875.0,
+   "qty": 1.0,
+   "pnl": 154.0,
+   "pnl_bruto": 154.0,
+   "motivo": "eod",
+   "motivo_label": "Fim do pregao",
+   "minutos": 309.6
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 97,
+   "setup": "T03_segunda_entrada",
+   "livro": "Trends",
+   "side": "SHORT",
+   "entry_time": "2026-08-19T12:30:29-03:00",
+   "exit_time": "2026-08-19T17:40:02-03:00",
+   "entry_price": 171645.0,
+   "exit_price": 170875.0,
+   "qty": 1.0,
+   "pnl": 154.0,
+   "pnl_bruto": 154.0,
+   "motivo": "eod",
+   "motivo_label": "Fim do pregao",
+   "minutos": 309.6
+  },
   {
    "symbol": "WINV26",
    "gaveta": 110,
@@ -1918,9 +1937,9 @@
   },
   {
    "livro": "Trends",
-   "trades": 77,
-   "wins": 24,
-   "pnl": -6526.0
+   "trades": 82,
+   "wins": 28,
+   "pnl": -5690.0
   }
  ],
  "by_setup": [
@@ -1979,6 +1998,12 @@
    "pnl": -451.0
   },
   {
+   "setup": "T04_micro_canal",
+   "trades": 11,
+   "wins": 4,
+   "pnl": -589.0
+  },
+  {
    "setup": "R04_gap_abertura",
    "trades": 9,
    "wins": 0,
@@ -1997,12 +2022,6 @@
    "pnl": -1085.0
   },
   {
-   "setup": "T04_micro_canal",
-   "trades": 8,
-   "wins": 2,
-   "pnl": -1117.0
-  },
-  {
    "setup": "V07_primeira_hora",
    "trades": 7,
    "wins": 1,
@@ -2016,17 +2035,35 @@
   },
   {
    "setup": "T03_segunda_entrada",
-   "trades": 15,
-   "wins": 2,
-   "pnl": -2161.0
+   "trades": 17,
+   "wins": 4,
+   "pnl": -1853.0
   }
  ],
  "by_gaveta": [
   {
    "gaveta": 102,
+   "trades": 4,
+   "wins": 3,
+   "pnl": 654.0
+  },
+  {
+   "gaveta": 104,
+   "trades": 1,
+   "wins": 1,
+   "pnl": 382.0
+  },
+  {
+   "gaveta": 95,
    "trades": 3,
    "wins": 2,
-   "pnl": 288.0
+   "pnl": 286.0
+  },
+  {
+   "gaveta": 97,
+   "trades": 3,
+   "wins": 2,
+   "pnl": 286.0
   },
   {
    "gaveta": 143,
@@ -2087,18 +2124,6 @@
    "trades": 2,
    "wins": 1,
    "pnl": 167.0
-  },
-  {
-   "gaveta": 95,
-   "trades": 2,
-   "wins": 1,
-   "pnl": 132.0
-  },
-  {
-   "gaveta": 97,
-   "trades": 2,
-   "wins": 1,
-   "pnl": 132.0
   },
   {
    "gaveta": 136,
@@ -2341,12 +2366,6 @@
    "pnl": -311.0
   },
   {
-   "gaveta": 103,
-   "trades": 2,
-   "wins": 0,
-   "pnl": -352.0
-  },
-  {
    "gaveta": 107,
    "trades": 1,
    "wins": 0,
@@ -2389,6 +2408,12 @@
    "pnl": -560.0
   },
   {
+   "gaveta": 103,
+   "trades": 3,
+   "wins": 0,
+   "pnl": -572.0
+  },
+  {
    "gaveta": 91,
    "trades": 3,
    "wins": 0,
@@ -2410,17 +2435,17 @@
  "by_symbol": [
   {
    "symbol": "WINV26",
-   "trades": 103,
-   "wins": 26,
-   "pnl": -9332.0
+   "trades": 108,
+   "wins": 30,
+   "pnl": -8496.0
   }
  ],
  "by_reason": [
   {
    "reason": "Fim do pregao",
-   "trades": 40,
-   "wins": 21,
-   "pnl": 1313.0
+   "trades": 45,
+   "wins": 25,
+   "pnl": 2149.0
   },
   {
    "reason": "Alvo",
