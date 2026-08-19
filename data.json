@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T11:48:05-03:00",
+  "updated_at": "2026-08-19T11:51:05-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
@@ -10,64 +10,64 @@
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 43.92,
+        "bid": 43.88,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 73.68,
+        "bid": 73.49,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 38.52,
+        "bid": 38.44,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.85,
+        "bid": 14.83,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 32.07,
+        "bid": 32.06,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 997773.49,
-    "equity": 997684.91,
+    "balance": 997746.4,
+    "equity": 996928.9,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-19",
-    "realized": 10.0,
-    "unrealized": 16.0,
-    "total": 26.0,
-    "trades": 1,
-    "wins": 1,
-    "exposure": 14736.0,
-    "open_legs": 2,
-    "broker_realized": 13.33
+    "realized": 15.0,
+    "unrealized": 0,
+    "total": 15.0,
+    "trades": 3,
+    "wins": 3,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": 14.99
   },
   "reconciliacao": {
-    "painel": 10.0,
-    "corretora": 13.33,
-    "divergencia": -3.33,
+    "painel": 15.0,
+    "corretora": 14.99,
+    "divergencia": 0.01,
     "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "pernas_painel": 2,
-    "posicoes_corretora": 1,
+    "comparavel": true,
+    "ok": true,
+    "pernas_painel": 0,
+    "posicoes_corretora": 0,
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": 2867.0,
-    "trades": 186,
-    "wins": 103,
+    "pnl": 2872.0,
+    "trades": 188,
+    "wins": 105,
     "since": "2026-07-29",
     "days": 11,
     "days_positive": 7,
@@ -86,38 +86,7 @@
       "cum": 2857.0
     }
   },
-  "open_positions": [
-    {
-      "symbol": "VALE3",
-      "w": 3,
-      "leg": "B",
-      "side": "LONG",
-      "entry_time": "2026-08-19T11:30:39-03:00",
-      "entry_price": 73.62,
-      "current_price": 73.68,
-      "qty": 100.0,
-      "notional": 7368.0,
-      "pnl": 6.0,
-      "pnl_liq_est": 2.61,
-      "pnl_pct": 0.081,
-      "minutos": 17.4
-    },
-    {
-      "symbol": "VALE3",
-      "w": 3,
-      "leg": "C",
-      "side": "LONG",
-      "entry_time": "2026-08-19T11:30:52-03:00",
-      "entry_price": 73.58,
-      "current_price": 73.68,
-      "qty": 100.0,
-      "notional": 7368.0,
-      "pnl": 10.0,
-      "pnl_liq_est": 6.61,
-      "pnl_pct": 0.136,
-      "minutos": 17.2
-    }
-  ],
+  "open_positions": [],
   "daily_series": [
     {
       "date": "2026-07-29",
@@ -191,13 +160,45 @@
     },
     {
       "date": "2026-08-19",
-      "pnl": 10.0,
-      "trades": 1,
-      "wins": 1,
-      "cum": 2867.0
+      "pnl": 15.0,
+      "trades": 3,
+      "wins": 3,
+      "cum": 2872.0
     }
   ],
   "trades": [
+    {
+      "symbol": "VALE3",
+      "w": 3,
+      "leg": "C",
+      "side": "LONG",
+      "entry_time": "2026-08-19T11:30:52-03:00",
+      "exit_time": "2026-08-19T11:49:28-03:00",
+      "entry_price": 73.58,
+      "exit_price": 73.61,
+      "qty": 100.0,
+      "pnl": 3.0,
+      "pnl_bruto": 3.0,
+      "motivo": "be",
+      "motivo_label": "Breakeven",
+      "minutos": 18.6
+    },
+    {
+      "symbol": "VALE3",
+      "w": 3,
+      "leg": "B",
+      "side": "LONG",
+      "entry_time": "2026-08-19T11:30:39-03:00",
+      "exit_time": "2026-08-19T11:48:44-03:00",
+      "entry_price": 73.62,
+      "exit_price": 73.64,
+      "qty": 100.0,
+      "pnl": 2.0,
+      "pnl_bruto": 2.0,
+      "motivo": "be",
+      "motivo_label": "Breakeven",
+      "minutos": 18.1
+    },
     {
       "symbol": "VALE3",
       "w": 3,
@@ -3190,9 +3191,9 @@
     },
     {
       "w": 3,
-      "trades": 90,
-      "wins": 56,
-      "pnl": 236.0
+      "trades": 92,
+      "wins": 58,
+      "pnl": 241.0
     },
     {
       "w": 5,
@@ -3234,9 +3235,9 @@
     },
     {
       "symbol": "VALE3",
-      "trades": 26,
-      "wins": 20,
-      "pnl": -26.0
+      "trades": 28,
+      "wins": 22,
+      "pnl": -21.0
     }
   ],
   "by_leg": [
@@ -3248,15 +3249,15 @@
     },
     {
       "leg": "B",
-      "trades": 58,
-      "wins": 28,
-      "pnl": 978.0
+      "trades": 59,
+      "wins": 29,
+      "pnl": 980.0
     },
     {
       "leg": "C",
-      "trades": 55,
-      "wins": 27,
-      "pnl": 1046.0
+      "trades": 56,
+      "wins": 28,
+      "pnl": 1049.0
     }
   ],
   "by_reason": [
@@ -3268,9 +3269,9 @@
     },
     {
       "reason": "Breakeven",
-      "trades": 35,
-      "wins": 23,
-      "pnl": 21.0
+      "trades": 37,
+      "wins": 25,
+      "pnl": 26.0
     },
     {
       "reason": "Fim do pregao",
