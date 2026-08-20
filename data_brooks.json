@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-20T11:00:19-03:00",
+ "updated_at": "2026-08-20T11:03:09-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 170775.0,
+    "bid": 171035.0,
     "ok": true
    },
    {
@@ -15,21 +15,21 @@
     "ok": false
    }
   ],
-  "pendentes": 13
+  "pendentes": 11
  },
  "account": {
   "balance": 995089.91,
-  "equity": 995521.91,
+  "equity": 995717.91,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-20",
   "realized": 0,
-  "unrealized": 452.0,
+  "unrealized": 656.0,
   "trades": 0,
   "wins": 0,
-  "open_legs": 3,
+  "open_legs": 4,
   "broker_realized": 0.0
  },
  "reconciliacao": {
@@ -39,7 +39,7 @@
   "tolerancia": 1.0,
   "comparavel": false,
   "ok": null,
-  "pernas_painel": 3,
+  "pernas_painel": 4,
   "posicoes_corretora": 1,
   "saidas_sem_par": []
  },
@@ -62,10 +62,10 @@
    "side": "LONG",
    "entry_time": "2026-08-20T10:00:22-03:00",
    "entry_price": 170070.0,
-   "current_price": 170775.0,
+   "current_price": 171035.0,
    "qty": 1.0,
-   "pnl": 141.0,
-   "minutos": 60.0
+   "pnl": 193.0,
+   "minutos": 62.8
   },
   {
    "symbol": "WINV26",
@@ -75,10 +75,10 @@
    "side": "LONG",
    "entry_time": "2026-08-20T10:00:25-03:00",
    "entry_price": 170020.0,
-   "current_price": 170775.0,
+   "current_price": 171035.0,
    "qty": 1.0,
-   "pnl": 151.0,
-   "minutos": 59.9
+   "pnl": 203.0,
+   "minutos": 62.7
   },
   {
    "symbol": "WINV26",
@@ -88,10 +88,23 @@
    "side": "LONG",
    "entry_time": "2026-08-20T10:00:27-03:00",
    "entry_price": 169975.0,
-   "current_price": 170775.0,
+   "current_price": 171035.0,
    "qty": 1.0,
-   "pnl": 160.0,
-   "minutos": 59.9
+   "pnl": 212.0,
+   "minutos": 62.7
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 103,
+   "setup": "T04_micro_canal",
+   "livro": "Trends",
+   "side": "LONG",
+   "entry_time": "2026-08-20T11:00:29-03:00",
+   "entry_price": 170795.0,
+   "current_price": 171035.0,
+   "qty": 1.0,
+   "pnl": 48.0,
+   "minutos": 2.7
   }
  ],
  "daily_series": [
