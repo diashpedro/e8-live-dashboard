@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T11:03:05-03:00",
+  "updated_at": "2026-08-21T11:06:05-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
@@ -10,12 +10,12 @@
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 44.46,
+        "bid": 44.39,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.52,
+        "bid": 75.3,
         "ok": true
       },
       {
@@ -25,12 +25,12 @@
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.93,
+        "bid": 14.91,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 31.78,
+        "bid": 31.68,
         "ok": true
       }
     ],
@@ -38,18 +38,18 @@
   },
   "account": {
     "balance": 995199.06,
-    "equity": 996011.84,
+    "equity": 995721.84,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-21",
     "realized": 186.0,
-    "unrealized": 0.0,
-    "total": 186.0,
+    "unrealized": 16.0,
+    "total": 202.0,
     "trades": 7,
     "wins": 6,
-    "exposure": 11944.0,
+    "exposure": 11928.0,
     "open_legs": 2,
     "broker_realized": 180.67
   },
@@ -94,13 +94,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-21T10:35:14-03:00",
       "entry_price": 14.92,
-      "current_price": 14.93,
+      "current_price": 14.91,
       "qty": 400.0,
-      "notional": 5972.0,
-      "pnl": -4.0,
-      "pnl_liq_est": -6.75,
-      "pnl_pct": -0.067,
-      "minutos": 27.9
+      "notional": 5964.0,
+      "pnl": 4.0,
+      "pnl_liq_est": 1.26,
+      "pnl_pct": 0.067,
+      "minutos": 30.9
     },
     {
       "symbol": "ABEV3",
@@ -109,13 +109,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-21T10:38:29-03:00",
       "entry_price": 14.94,
-      "current_price": 14.93,
+      "current_price": 14.91,
       "qty": 400.0,
-      "notional": 5972.0,
-      "pnl": 4.0,
-      "pnl_liq_est": 1.25,
-      "pnl_pct": 0.067,
-      "minutos": 24.6
+      "notional": 5964.0,
+      "pnl": 12.0,
+      "pnl_liq_est": 9.25,
+      "pnl_pct": 0.201,
+      "minutos": 27.6
     }
   ],
   "daily_series": [
