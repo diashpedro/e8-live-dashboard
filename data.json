@@ -1,56 +1,56 @@
 {
-  "updated_at": "2026-08-21T13:21:05-03:00",
+  "updated_at": "2026-08-21T13:24:06-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-21T13:20:01-03:00",
+    "last_ea_event": "2026-08-21T13:21:53-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 44.34,
+        "bid": 44.29,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.22,
+        "bid": 75.26,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 38.49,
+        "bid": 38.48,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.97,
+        "bid": 14.96,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 32.29,
+        "bid": 32.3,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 5
   },
   "account": {
     "balance": 997253.0,
-    "equity": 998748.83,
+    "equity": 998385.83,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-21",
     "realized": 122.0,
-    "unrealized": 0,
-    "total": 122.0,
+    "unrealized": 3.0,
+    "total": 125.0,
     "trades": 9,
     "wins": 6,
-    "exposure": 0,
-    "open_legs": 0,
+    "exposure": 4429.0,
+    "open_legs": 1,
     "broker_realized": 122.01
   },
   "reconciliacao": {
@@ -58,10 +58,10 @@
     "corretora": 122.01,
     "divergencia": -0.01,
     "tolerancia": 2.44,
-    "comparavel": true,
-    "ok": true,
-    "pernas_painel": 0,
-    "posicoes_corretora": 0,
+    "comparavel": false,
+    "ok": null,
+    "pernas_painel": 1,
+    "posicoes_corretora": 1,
     "saidas_sem_par": []
   },
   "cumulative": {
@@ -86,7 +86,23 @@
       "cum": 2857.0
     }
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-08-21T13:21:53-03:00",
+      "entry_price": 44.32,
+      "current_price": 44.29,
+      "qty": 100.0,
+      "notional": 4429.0,
+      "pnl": 3.0,
+      "pnl_liq_est": 0.96,
+      "pnl_pct": 0.068,
+      "minutos": 2.2
+    }
+  ],
   "daily_series": [
     {
       "date": "2026-07-29",
