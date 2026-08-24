@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-24T10:00:15-03:00",
+ "updated_at": "2026-08-24T10:03:10-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 172515.0,
+    "bid": 172115.0,
     "ok": true
    },
    {
@@ -15,32 +15,32 @@
     "ok": false
    }
   ],
-  "pendentes": 0
+  "pendentes": 8
  },
  "account": {
   "balance": 998787.76,
-  "equity": 998787.76,
+  "equity": 998841.76,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-24",
   "realized": 0,
-  "unrealized": 0,
+  "unrealized": 57.0,
   "trades": 0,
   "wins": 0,
-  "open_legs": 0,
-  "broker_realized": 0
+  "open_legs": 3,
+  "broker_realized": 0.0
  },
  "reconciliacao": {
   "painel": 0,
-  "corretora": 0,
-  "divergencia": 0,
+  "corretora": 0.0,
+  "divergencia": 0.0,
   "tolerancia": 1.0,
-  "comparavel": true,
-  "ok": true,
-  "pernas_painel": 0,
-  "posicoes_corretora": 0,
+  "comparavel": false,
+  "ok": null,
+  "pernas_painel": 3,
+  "posicoes_corretora": 1,
   "saidas_sem_par": []
  },
  "cumulative": {
@@ -53,7 +53,47 @@
   "gavetas_ativas": 92,
   "gavetas_total": 148
  },
- "open_positions": [],
+ "open_positions": [
+  {
+   "symbol": "WINV26",
+   "gaveta": 22,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-24T10:01:50-03:00",
+   "entry_price": 172210.0,
+   "current_price": 172115.0,
+   "qty": 1.0,
+   "pnl": 19.0,
+   "minutos": 1.3
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 24,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-24T10:01:50-03:00",
+   "entry_price": 172210.0,
+   "current_price": 172115.0,
+   "qty": 1.0,
+   "pnl": 19.0,
+   "minutos": 1.3
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 26,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-24T10:01:50-03:00",
+   "entry_price": 172210.0,
+   "current_price": 172115.0,
+   "qty": 1.0,
+   "pnl": 19.0,
+   "minutos": 1.3
+  }
+ ],
  "daily_series": [
   {
    "date": "2026-08-14",
