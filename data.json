@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-24T12:54:05-03:00",
+  "updated_at": "2026-08-24T12:57:04-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-08-24T12:50:03-03:00",
+    "last_ea_event": "2026-08-24T12:55:09-03:00",
     "last_error_msg": "QI\t0\t14:35:02.804\tEA_Estrategia8 (PETR4,M5)\t[ERRO] cancelar ordem #-1783672132: invalid request",
     "terminal_connected": true,
     "algo_trading": true,
@@ -15,12 +15,12 @@
       },
       {
         "symbol": "VALE3",
-        "bid": 78.07,
+        "bid": 77.93,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 38.95,
+        "bid": 38.98,
         "ok": true
       },
       {
@@ -38,7 +38,7 @@
   },
   "account": {
     "balance": 1000062.74,
-    "equity": 1005097.73,
+    "equity": 1004925.73,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
@@ -47,7 +47,7 @@
     "realized": -665.0,
     "unrealized": -510.0,
     "total": -1175.0,
-    "trades": 49,
+    "trades": 50,
     "wins": 0,
     "exposure": 53476.0,
     "open_legs": 10,
@@ -66,7 +66,7 @@
   },
   "cumulative": {
     "pnl": 2027.0,
-    "trades": 287,
+    "trades": 288,
     "wins": 128,
     "since": "2026-07-29",
     "days": 14,
@@ -81,7 +81,7 @@
     "worst_day": {
       "date": "2026-08-24",
       "pnl": -665.0,
-      "trades": 49,
+      "trades": 50,
       "wins": 0,
       "cum": 2027.0
     }
@@ -100,7 +100,7 @@
       "pnl": -96.0,
       "pnl_liq_est": -98.79,
       "pnl_pct": -1.597,
-      "minutos": 133.9
+      "minutos": 136.8
     },
     {
       "symbol": "ABEV3",
@@ -115,7 +115,7 @@
       "pnl": -100.0,
       "pnl_liq_est": -102.79,
       "pnl_pct": -1.664,
-      "minutos": 129.0
+      "minutos": 131.9
     },
     {
       "symbol": "ABEV3",
@@ -130,7 +130,7 @@
       "pnl": -88.0,
       "pnl_liq_est": -90.79,
       "pnl_pct": -1.462,
-      "minutos": 88.9
+      "minutos": 91.9
     },
     {
       "symbol": "ABEV3",
@@ -145,7 +145,7 @@
       "pnl": -72.0,
       "pnl_liq_est": -74.79,
       "pnl_pct": -1.193,
-      "minutos": 88.9
+      "minutos": 91.9
     },
     {
       "symbol": "ABEV3",
@@ -160,7 +160,7 @@
       "pnl": -60.0,
       "pnl_liq_est": -62.8,
       "pnl_pct": -0.992,
-      "minutos": 88.9
+      "minutos": 91.9
     },
     {
       "symbol": "ABEV3",
@@ -175,7 +175,7 @@
       "pnl": -32.0,
       "pnl_liq_est": -34.8,
       "pnl_pct": -0.527,
-      "minutos": 83.9
+      "minutos": 86.9
     },
     {
       "symbol": "PETR4",
@@ -190,7 +190,7 @@
       "pnl": -23.0,
       "pnl_liq_est": -24.93,
       "pnl_pct": -0.55,
-      "minutos": 79.1
+      "minutos": 82.0
     },
     {
       "symbol": "PETR4",
@@ -205,7 +205,7 @@
       "pnl": -18.0,
       "pnl_liq_est": -19.93,
       "pnl_pct": -0.43,
-      "minutos": 19.1
+      "minutos": 22.0
     },
     {
       "symbol": "PETR4",
@@ -220,7 +220,7 @@
       "pnl": -13.0,
       "pnl_liq_est": -14.93,
       "pnl_pct": -0.31,
-      "minutos": 19.0
+      "minutos": 22.0
     },
     {
       "symbol": "PETR4",
@@ -235,7 +235,7 @@
       "pnl": -8.0,
       "pnl_liq_est": -9.93,
       "pnl_pct": -0.191,
-      "minutos": 4.1
+      "minutos": 7.1
     }
   ],
   "daily_series": [
@@ -333,12 +333,28 @@
     {
       "date": "2026-08-24",
       "pnl": -665.0,
-      "trades": 49,
+      "trades": 50,
       "wins": 0,
       "cum": 2027.0
     }
   ],
   "trades": [
+    {
+      "symbol": "VALE3",
+      "w": 3,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-08-24T12:55:08-03:00",
+      "exit_time": "2026-08-24T12:55:09-03:00",
+      "entry_price": 77.89,
+      "exit_price": 77.89,
+      "qty": 100.0,
+      "pnl": 0.0,
+      "pnl_bruto": -0.0,
+      "motivo": "alvo",
+      "motivo_label": "Alvo",
+      "minutos": 0.0
+    },
     {
       "symbol": "PETR4",
       "w": 3,
@@ -4947,7 +4963,7 @@
     },
     {
       "w": 3,
-      "trades": 133,
+      "trades": 134,
       "wins": 69,
       "pnl": -145.0
     },
@@ -4991,7 +5007,7 @@
     },
     {
       "symbol": "VALE3",
-      "trades": 37,
+      "trades": 38,
       "wins": 28,
       "pnl": 128.0
     }
@@ -4999,7 +5015,7 @@
   "by_leg": [
     {
       "leg": "A",
-      "trades": 109,
+      "trades": 110,
       "wins": 59,
       "pnl": 517.0
     },
@@ -5019,7 +5035,7 @@
   "by_reason": [
     {
       "reason": "Alvo",
-      "trades": 118,
+      "trades": 119,
       "wins": 82,
       "pnl": 4796.0
     },
