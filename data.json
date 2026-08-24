@@ -1,61 +1,61 @@
 {
-  "updated_at": "2026-08-24T10:18:05-03:00",
+  "updated_at": "2026-08-24T10:21:04-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-24T10:15:09-03:00",
+    "last_ea_event": "2026-08-24T10:20:10-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 42.24,
+        "bid": 42.15,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 75.34,
+        "bid": 75.43,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 38.33,
+        "bid": 38.27,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 14.98,
+        "bid": 14.99,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 31.51,
+        "bid": 31.49,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 998759.77,
-    "equity": 998549.77,
+    "balance": 998747.77,
+    "equity": 998678.77,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-24",
-    "realized": -28.0,
+    "realized": -40.0,
     "unrealized": 0,
-    "total": -28.0,
-    "trades": 3,
+    "total": -40.0,
+    "trades": 6,
     "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -27.99
+    "broker_realized": -39.99
   },
   "reconciliacao": {
-    "painel": -28.0,
-    "corretora": -27.99,
+    "painel": -40.0,
+    "corretora": -39.99,
     "divergencia": -0.01,
     "tolerancia": 1.0,
     "comparavel": true,
@@ -65,8 +65,8 @@
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": 2664.0,
-    "trades": 241,
+    "pnl": 2652.0,
+    "trades": 244,
     "wins": 128,
     "since": "2026-07-29",
     "days": 14,
@@ -181,13 +181,61 @@
     },
     {
       "date": "2026-08-24",
-      "pnl": -28.0,
-      "trades": 3,
+      "pnl": -40.0,
+      "trades": 6,
       "wins": 0,
-      "cum": 2664.0
+      "cum": 2652.0
     }
   ],
   "trades": [
+    {
+      "symbol": "ABEV3",
+      "w": 8,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-08-24T10:20:10-03:00",
+      "exit_time": "2026-08-24T10:20:10-03:00",
+      "entry_price": 14.97,
+      "exit_price": 14.99,
+      "qty": 400.0,
+      "pnl": -8.0,
+      "pnl_bruto": -8.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 0.0
+    },
+    {
+      "symbol": "ABEV3",
+      "w": 8,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-08-24T10:20:10-03:00",
+      "exit_time": "2026-08-24T10:20:10-03:00",
+      "entry_price": 14.98,
+      "exit_price": 14.99,
+      "qty": 400.0,
+      "pnl": -4.0,
+      "pnl_bruto": -4.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 0.0
+    },
+    {
+      "symbol": "ABEV3",
+      "w": 8,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-08-24T10:20:10-03:00",
+      "exit_time": "2026-08-24T10:20:10-03:00",
+      "entry_price": 14.99,
+      "exit_price": 14.99,
+      "qty": 400.0,
+      "pnl": 0.0,
+      "pnl_bruto": -0.0,
+      "motivo": "stop_safety",
+      "motivo_label": "Stop de seguranca",
+      "minutos": 0.0
+    },
     {
       "symbol": "ABEV3",
       "w": 5,
@@ -4072,17 +4120,17 @@
     },
     {
       "w": 8,
-      "trades": 28,
+      "trades": 31,
       "wins": 16,
-      "pnl": -302.0
+      "pnl": -314.0
     }
   ],
   "by_symbol": [
     {
       "symbol": "ABEV3",
-      "trades": 65,
+      "trades": 68,
       "wins": 21,
-      "pnl": 3200.0
+      "pnl": 3188.0
     },
     {
       "symbol": "ITUB4",
@@ -4112,19 +4160,19 @@
   "by_leg": [
     {
       "leg": "A",
-      "trades": 91,
+      "trades": 92,
       "wins": 59,
-      "pnl": 783.0
+      "pnl": 775.0
     },
     {
       "leg": "B",
-      "trades": 77,
+      "trades": 78,
       "wins": 36,
-      "pnl": 916.0
+      "pnl": 912.0
     },
     {
       "leg": "C",
-      "trades": 73,
+      "trades": 74,
       "wins": 33,
       "pnl": 965.0
     }
@@ -4150,13 +4198,13 @@
     },
     {
       "reason": "Stop",
-      "trades": 50,
+      "trades": 52,
       "wins": 0,
-      "pnl": -1799.0
+      "pnl": -1811.0
     },
     {
       "reason": "Stop de seguranca",
-      "trades": 29,
+      "trades": 30,
       "wins": 0,
       "pnl": -741.0
     },
