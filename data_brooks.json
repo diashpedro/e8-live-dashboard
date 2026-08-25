@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-25T10:12:12-03:00",
+ "updated_at": "2026-08-25T10:15:16-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 174785.0,
+    "bid": 174570.0,
     "ok": true
    },
    {
@@ -15,32 +15,32 @@
     "ok": false
    }
   ],
-  "pendentes": 5
+  "pendentes": 3
  },
  "account": {
-  "balance": 997742.89,
-  "equity": 997730.89,
+  "balance": 997548.89,
+  "equity": 997534.89,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-25",
   "realized": 0,
-  "unrealized": -150.0,
+  "unrealized": -318.0,
   "trades": 0,
   "wins": 0,
-  "open_legs": 4,
-  "broker_realized": -124.0
+  "open_legs": 6,
+  "broker_realized": -318.0
  },
  "reconciliacao": {
   "painel": 0,
-  "corretora": -124.0,
-  "divergencia": 124.0,
-  "tolerancia": 2.48,
+  "corretora": -318.0,
+  "divergencia": 318.0,
+  "tolerancia": 6.36,
   "comparavel": false,
   "ok": null,
-  "pernas_painel": 4,
-  "posicoes_corretora": 1,
+  "pernas_painel": 6,
+  "posicoes_corretora": 0,
   "saidas_sem_par": []
  },
  "cumulative": {
@@ -62,10 +62,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-25T10:01:01-03:00",
    "entry_price": 174230.0,
-   "current_price": 174785.0,
+   "current_price": 174570.0,
    "qty": 1.0,
-   "pnl": -111.0,
-   "minutos": 11.2
+   "pnl": -68.0,
+   "minutos": 14.3
   },
   {
    "symbol": "WINV26",
@@ -75,10 +75,10 @@
    "side": "LONG",
    "entry_time": "2026-08-25T10:05:47-03:00",
    "entry_price": 174850.0,
-   "current_price": 174785.0,
+   "current_price": 174570.0,
    "qty": 1.0,
-   "pnl": -13.0,
-   "minutos": 6.4
+   "pnl": -56.0,
+   "minutos": 9.5
   },
   {
    "symbol": "WINV26",
@@ -88,10 +88,10 @@
    "side": "LONG",
    "entry_time": "2026-08-25T10:05:47-03:00",
    "entry_price": 174850.0,
-   "current_price": 174785.0,
+   "current_price": 174570.0,
    "qty": 1.0,
-   "pnl": -13.0,
-   "minutos": 6.4
+   "pnl": -56.0,
+   "minutos": 9.5
   },
   {
    "symbol": "WINV26",
@@ -101,10 +101,36 @@
    "side": "LONG",
    "entry_time": "2026-08-25T10:05:47-03:00",
    "entry_price": 174850.0,
-   "current_price": 174785.0,
+   "current_price": 174570.0,
    "qty": 1.0,
-   "pnl": -13.0,
-   "minutos": 6.4
+   "pnl": -56.0,
+   "minutos": 9.5
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 24,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-25T10:15:14-03:00",
+   "entry_price": 174365.0,
+   "current_price": 174570.0,
+   "qty": 1.0,
+   "pnl": -41.0,
+   "minutos": 0.0
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 26,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "SHORT",
+   "entry_time": "2026-08-25T10:15:14-03:00",
+   "entry_price": 174365.0,
+   "current_price": 174570.0,
+   "qty": 1.0,
+   "pnl": -41.0,
+   "minutos": 0.0
   }
  ],
  "daily_series": [
