@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-25T10:03:12-03:00",
+ "updated_at": "2026-08-25T10:06:12-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 174505.0,
+    "bid": 174825.0,
     "ok": true
    },
    {
@@ -15,31 +15,31 @@
     "ok": false
    }
   ],
-  "pendentes": 0
+  "pendentes": 5
  },
  "account": {
-  "balance": 997866.89,
-  "equity": 997810.89,
+  "balance": 997742.89,
+  "equity": 997734.89,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-25",
   "realized": 0,
-  "unrealized": -55.0,
+  "unrealized": -134.0,
   "trades": 0,
   "wins": 0,
-  "open_legs": 1,
-  "broker_realized": 0.0
+  "open_legs": 4,
+  "broker_realized": -124.0
  },
  "reconciliacao": {
   "painel": 0,
-  "corretora": 0.0,
-  "divergencia": 0.0,
-  "tolerancia": 1.0,
+  "corretora": -124.0,
+  "divergencia": 124.0,
+  "tolerancia": 2.48,
   "comparavel": false,
   "ok": null,
-  "pernas_painel": 1,
+  "pernas_painel": 4,
   "posicoes_corretora": 1,
   "saidas_sem_par": []
  },
@@ -62,10 +62,49 @@
    "side": "SHORT",
    "entry_time": "2026-08-25T10:01:01-03:00",
    "entry_price": 174230.0,
-   "current_price": 174505.0,
+   "current_price": 174825.0,
    "qty": 1.0,
-   "pnl": -55.0,
-   "minutos": 2.2
+   "pnl": -119.0,
+   "minutos": 5.2
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 23,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "LONG",
+   "entry_time": "2026-08-25T10:05:47-03:00",
+   "entry_price": 174850.0,
+   "current_price": 174825.0,
+   "qty": 1.0,
+   "pnl": -5.0,
+   "minutos": 0.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 25,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "LONG",
+   "entry_time": "2026-08-25T10:05:47-03:00",
+   "entry_price": 174850.0,
+   "current_price": 174825.0,
+   "qty": 1.0,
+   "pnl": -5.0,
+   "minutos": 0.4
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 27,
+   "setup": "R04_gap_abertura",
+   "livro": "Trading Ranges",
+   "side": "LONG",
+   "entry_time": "2026-08-25T10:05:47-03:00",
+   "entry_price": 174850.0,
+   "current_price": 174825.0,
+   "qty": 1.0,
+   "pnl": -5.0,
+   "minutos": 0.4
   }
  ],
  "daily_series": [
