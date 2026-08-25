@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-08-25T13:09:04-03:00",
+  "updated_at": "2026-08-25T13:12:04-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-25T13:05:01-03:00",
+    "last_ea_event": "2026-08-25T13:10:07-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.12,
+        "bid": 41.13,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 77.9,
+        "bid": 77.99,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 39.04,
+        "bid": 39.06,
         "ok": true
       },
       {
@@ -30,34 +30,34 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 32.62,
+        "bid": 32.63,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 996299.4,
-    "equity": 997751.9,
+    "balance": 996295.4,
+    "equity": 997886.9,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-25",
-    "realized": -632.0,
-    "unrealized": -300.0,
-    "total": -932.0,
-    "trades": 50,
+    "realized": -636.0,
+    "unrealized": -316.0,
+    "total": -952.0,
+    "trades": 51,
     "wins": 2,
-    "exposure": 73596.0,
+    "exposure": 73612.0,
     "open_legs": 11,
-    "broker_realized": -653.48
+    "broker_realized": -657.48
   },
   "reconciliacao": {
-    "painel": -632.0,
-    "corretora": -653.48,
+    "painel": -636.0,
+    "corretora": -657.48,
     "divergencia": 21.48,
-    "tolerancia": 13.07,
+    "tolerancia": 13.15,
     "comparavel": false,
     "ok": null,
     "pernas_painel": 11,
@@ -65,8 +65,8 @@
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": 719.0,
-    "trades": 385,
+    "pnl": 715.0,
+    "trades": 386,
     "wins": 133,
     "since": "2026-07-29",
     "days": 15,
@@ -94,13 +94,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-25T10:15:08-03:00",
       "entry_price": 38.84,
-      "current_price": 39.04,
+      "current_price": 39.06,
       "qty": 200.0,
-      "notional": 7808.0,
-      "pnl": -40.0,
-      "pnl_liq_est": -43.58,
-      "pnl_pct": -0.515,
-      "minutos": 173.9
+      "notional": 7812.0,
+      "pnl": -44.0,
+      "pnl_liq_est": -47.58,
+      "pnl_pct": -0.566,
+      "minutos": 176.9
     },
     {
       "symbol": "ITUB4",
@@ -109,13 +109,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-25T10:15:08-03:00",
       "entry_price": 38.87,
-      "current_price": 39.04,
+      "current_price": 39.06,
       "qty": 200.0,
-      "notional": 7808.0,
-      "pnl": -34.0,
-      "pnl_liq_est": -37.58,
-      "pnl_pct": -0.437,
-      "minutos": 173.9
+      "notional": 7812.0,
+      "pnl": -38.0,
+      "pnl_liq_est": -41.58,
+      "pnl_pct": -0.489,
+      "minutos": 176.9
     },
     {
       "symbol": "ITUB4",
@@ -124,13 +124,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-25T10:25:08-03:00",
       "entry_price": 38.84,
-      "current_price": 39.04,
+      "current_price": 39.06,
       "qty": 200.0,
-      "notional": 7808.0,
-      "pnl": -40.0,
-      "pnl_liq_est": -43.58,
-      "pnl_pct": -0.515,
-      "minutos": 163.9
+      "notional": 7812.0,
+      "pnl": -44.0,
+      "pnl_liq_est": -47.58,
+      "pnl_pct": -0.566,
+      "minutos": 166.9
     },
     {
       "symbol": "ITUB4",
@@ -139,13 +139,13 @@
       "side": "SHORT",
       "entry_time": "2026-08-25T10:26:04-03:00",
       "entry_price": 38.87,
-      "current_price": 39.04,
+      "current_price": 39.06,
       "qty": 200.0,
-      "notional": 7808.0,
-      "pnl": -34.0,
-      "pnl_liq_est": -37.58,
-      "pnl_pct": -0.437,
-      "minutos": 163.0
+      "notional": 7812.0,
+      "pnl": -38.0,
+      "pnl_liq_est": -41.58,
+      "pnl_pct": -0.489,
+      "minutos": 166.0
     },
     {
       "symbol": "ABEV3",
@@ -160,7 +160,7 @@
       "pnl": -20.0,
       "pnl_liq_est": -22.78,
       "pnl_pct": -0.332,
-      "minutos": 118.3
+      "minutos": 121.3
     },
     {
       "symbol": "ABEV3",
@@ -175,7 +175,7 @@
       "pnl": -16.0,
       "pnl_liq_est": -18.78,
       "pnl_pct": -0.265,
-      "minutos": 117.9
+      "minutos": 120.9
     },
     {
       "symbol": "ABEV3",
@@ -190,7 +190,7 @@
       "pnl": -20.0,
       "pnl_liq_est": -22.78,
       "pnl_pct": -0.332,
-      "minutos": 108.8
+      "minutos": 111.8
     },
     {
       "symbol": "ABEV3",
@@ -205,7 +205,7 @@
       "pnl": -16.0,
       "pnl_liq_est": -18.78,
       "pnl_pct": -0.265,
-      "minutos": 108.0
+      "minutos": 111.0
     },
     {
       "symbol": "ABEV3",
@@ -220,7 +220,7 @@
       "pnl": -32.0,
       "pnl_liq_est": -34.78,
       "pnl_pct": -0.532,
-      "minutos": 54.0
+      "minutos": 57.0
     },
     {
       "symbol": "ABEV3",
@@ -235,7 +235,7 @@
       "pnl": -28.0,
       "pnl_liq_est": -30.78,
       "pnl_pct": -0.465,
-      "minutos": 28.8
+      "minutos": 31.8
     },
     {
       "symbol": "ABEV3",
@@ -250,7 +250,7 @@
       "pnl": -20.0,
       "pnl_liq_est": -22.78,
       "pnl_pct": -0.332,
-      "minutos": 28.8
+      "minutos": 31.8
     }
   ],
   "daily_series": [
@@ -354,13 +354,29 @@
     },
     {
       "date": "2026-08-25",
-      "pnl": -632.0,
-      "trades": 50,
+      "pnl": -636.0,
+      "trades": 51,
       "wins": 2,
-      "cum": 719.0
+      "cum": 715.0
     }
   ],
   "trades": [
+    {
+      "symbol": "PETR4",
+      "w": 5,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-08-25T13:10:07-03:00",
+      "exit_time": "2026-08-25T13:10:07-03:00",
+      "entry_price": 41.12,
+      "exit_price": 41.16,
+      "qty": 100.0,
+      "pnl": -4.0,
+      "pnl_bruto": -4.0,
+      "motivo": "alvo",
+      "motivo_label": "Alvo",
+      "minutos": 0.0
+    },
     {
       "symbol": "PETR4",
       "w": 3,
@@ -6543,9 +6559,9 @@
     },
     {
       "w": 5,
-      "trades": 112,
+      "trades": 113,
       "wins": 40,
-      "pnl": -968.0
+      "pnl": -972.0
     },
     {
       "w": 8,
@@ -6569,9 +6585,9 @@
     },
     {
       "symbol": "PETR4",
-      "trades": 106,
+      "trades": 107,
       "wins": 16,
-      "pnl": -881.0
+      "pnl": -885.0
     },
     {
       "symbol": "TOTS3",
@@ -6589,9 +6605,9 @@
   "by_leg": [
     {
       "leg": "A",
-      "trades": 149,
+      "trades": 150,
       "wins": 60,
-      "pnl": -133.0
+      "pnl": -137.0
     },
     {
       "leg": "B",
@@ -6609,9 +6625,9 @@
   "by_reason": [
     {
       "reason": "Alvo",
-      "trades": 199,
+      "trades": 200,
       "wins": 87,
-      "pnl": 4055.0
+      "pnl": 4051.0
     },
     {
       "reason": "Breakeven",
