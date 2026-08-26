@@ -1,73 +1,73 @@
 {
-  "updated_at": "2026-08-26T16:39:05-03:00",
+  "updated_at": "2026-08-26T16:42:06-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-08-26T16:35:19-03:00",
+    "last_ea_event": "2026-08-26T16:40:00-03:00",
     "last_error_msg": "HF\t0\t14:05:02.184\tEA_Estrategia8 (ABEV3,M5)\t[ERRO] cancelar ordem #-1781604248: invalid request",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 41.48,
+        "bid": 41.47,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 78.56,
+        "bid": 78.55,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 39.47,
+        "bid": 39.39,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.22,
+        "bid": 15.21,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 32.75,
+        "bid": 32.76,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 992456.65,
-    "equity": 992325.86,
+    "balance": 992487.87,
+    "equity": 992365.87,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-26",
-    "realized": -1942.0,
-    "unrealized": 128.0,
-    "total": -1814.0,
-    "trades": 169,
-    "wins": 10,
-    "exposure": 15788.0,
-    "open_legs": 2,
-    "broker_realized": -1825.21
+    "realized": -1794.0,
+    "unrealized": 0,
+    "total": -1794.0,
+    "trades": 171,
+    "wins": 12,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -1793.99
   },
   "reconciliacao": {
-    "painel": -1942.0,
-    "corretora": -1825.21,
-    "divergencia": -116.79,
-    "tolerancia": 36.5,
-    "comparavel": false,
-    "ok": null,
-    "pernas_painel": 2,
-    "posicoes_corretora": 1,
+    "painel": -1794.0,
+    "corretora": -1793.99,
+    "divergencia": -0.01,
+    "tolerancia": 35.88,
+    "comparavel": true,
+    "ok": true,
+    "pernas_painel": 0,
+    "posicoes_corretora": 0,
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": -2842.0,
-    "trades": 626,
-    "wins": 144,
+    "pnl": -2694.0,
+    "trades": 628,
+    "wins": 146,
     "since": "2026-07-29",
     "days": 16,
     "days_positive": 7,
@@ -86,38 +86,7 @@
       "cum": -900.0
     }
   },
-  "open_positions": [
-    {
-      "symbol": "ITUB4",
-      "w": 3,
-      "leg": "C",
-      "side": "SHORT",
-      "entry_time": "2026-08-26T10:15:03-03:00",
-      "entry_price": 39.74,
-      "current_price": 39.47,
-      "qty": 200.0,
-      "notional": 7894.0,
-      "pnl": 54.0,
-      "pnl_liq_est": 50.36,
-      "pnl_pct": 0.679,
-      "minutos": 384.0
-    },
-    {
-      "symbol": "ITUB4",
-      "w": 5,
-      "leg": "C",
-      "side": "SHORT",
-      "entry_time": "2026-08-26T10:30:02-03:00",
-      "entry_price": 39.84,
-      "current_price": 39.47,
-      "qty": 200.0,
-      "notional": 7894.0,
-      "pnl": 74.0,
-      "pnl_liq_est": 70.35,
-      "pnl_pct": 0.929,
-      "minutos": 369.1
-    }
-  ],
+  "open_positions": [],
   "daily_series": [
     {
       "date": "2026-07-29",
@@ -226,13 +195,45 @@
     },
     {
       "date": "2026-08-26",
-      "pnl": -1942.0,
-      "trades": 169,
-      "wins": 10,
-      "cum": -2842.0
+      "pnl": -1794.0,
+      "trades": 171,
+      "wins": 12,
+      "cum": -2694.0
     }
   ],
   "trades": [
+    {
+      "symbol": "ITUB4",
+      "w": 3,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-08-26T10:15:03-03:00",
+      "exit_time": "2026-08-26T16:40:00-03:00",
+      "entry_price": 39.74,
+      "exit_price": 39.42,
+      "qty": 200.0,
+      "pnl": 64.0,
+      "pnl_bruto": 64.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 384.9
+    },
+    {
+      "symbol": "ITUB4",
+      "w": 5,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-08-26T10:30:02-03:00",
+      "exit_time": "2026-08-26T16:40:00-03:00",
+      "entry_price": 39.84,
+      "exit_price": 39.42,
+      "qty": 200.0,
+      "pnl": 84.0,
+      "pnl_bruto": 84.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 370.0
+    },
     {
       "symbol": "ABEV3",
       "w": 3,
@@ -10265,15 +10266,15 @@
     },
     {
       "w": 3,
-      "trades": 259,
-      "wins": 76,
-      "pnl": -1589.0
+      "trades": 260,
+      "wins": 77,
+      "pnl": -1525.0
     },
     {
       "w": 5,
-      "trades": 178,
-      "wins": 42,
-      "pnl": -2027.0
+      "trades": 179,
+      "wins": 43,
+      "pnl": -1943.0
     },
     {
       "w": 8,
@@ -10291,9 +10292,9 @@
     },
     {
       "symbol": "ITUB4",
-      "trades": 81,
-      "wins": 35,
-      "pnl": -1045.0
+      "trades": 83,
+      "wins": 37,
+      "pnl": -897.0
     },
     {
       "symbol": "PETR4",
@@ -10329,9 +10330,9 @@
     },
     {
       "leg": "C",
-      "trades": 185,
-      "wins": 45,
-      "pnl": 187.0
+      "trades": 187,
+      "wins": 47,
+      "pnl": 335.0
     }
   ],
   "by_reason": [
@@ -10349,9 +10350,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 53,
-      "wins": 8,
-      "pnl": -2132.0
+      "trades": 55,
+      "wins": 10,
+      "pnl": -1984.0
     },
     {
       "reason": "Stop",
