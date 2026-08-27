@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-08-27T11:00:22-03:00",
+ "updated_at": "2026-08-27T11:03:12-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 176520.0,
+    "bid": 176720.0,
     "ok": true
    },
    {
@@ -15,21 +15,21 @@
     "ok": false
    }
   ],
-  "pendentes": 6
+  "pendentes": 10
  },
  "account": {
   "balance": 991400.01,
-  "equity": 989669.89,
+  "equity": 989288.88,
   "login": 1192108021,
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
   "date": "2026-08-27",
   "realized": -716.0,
-  "unrealized": -30.0,
+  "unrealized": -160.0,
   "trades": 6,
   "wins": 0,
-  "open_legs": 2,
+  "open_legs": 4,
   "broker_realized": -770.0
  },
  "reconciliacao": {
@@ -39,7 +39,7 @@
   "tolerancia": 15.4,
   "comparavel": false,
   "ok": null,
-  "pernas_painel": 2,
+  "pernas_painel": 4,
   "posicoes_corretora": 1,
   "saidas_sem_par": []
  },
@@ -62,10 +62,10 @@
    "side": "SHORT",
    "entry_time": "2026-08-27T10:00:23-03:00",
    "entry_price": 176490.0,
-   "current_price": 176520.0,
+   "current_price": 176720.0,
    "qty": 1.0,
-   "pnl": -6.0,
-   "minutos": 60.0
+   "pnl": -46.0,
+   "minutos": 62.8
   },
   {
    "symbol": "WINV26",
@@ -75,10 +75,36 @@
    "side": "SHORT",
    "entry_time": "2026-08-27T10:00:25-03:00",
    "entry_price": 176400.0,
-   "current_price": 176520.0,
+   "current_price": 176720.0,
    "qty": 1.0,
-   "pnl": -24.0,
-   "minutos": 60.0
+   "pnl": -64.0,
+   "minutos": 62.8
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 119,
+   "setup": "T06_trend_from_open",
+   "livro": "Trends",
+   "side": "SHORT",
+   "entry_time": "2026-08-27T11:00:41-03:00",
+   "entry_price": 176595.0,
+   "current_price": 176720.0,
+   "qty": 1.0,
+   "pnl": -25.0,
+   "minutos": 2.5
+  },
+  {
+   "symbol": "WINV26",
+   "gaveta": 120,
+   "setup": "T06_trend_from_open",
+   "livro": "Trends",
+   "side": "SHORT",
+   "entry_time": "2026-08-27T11:00:41-03:00",
+   "entry_price": 176595.0,
+   "current_price": 176720.0,
+   "qty": 1.0,
+   "pnl": -25.0,
+   "minutos": 2.5
   }
  ],
  "daily_series": [
