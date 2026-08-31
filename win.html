@@ -60,6 +60,15 @@ td.num,th.num{text-align:right}
 <h2>Conferência com a corretora</h2>
 <div class="tw"><table><tbody id="reconb"></tbody></table></div>
 
+<h2>Evidência acumulada por módulo <span style="text-transform:none;font-weight:400">— desde 31/ago/2026</span></h2>
+<div class="box info">Cada pregão daqui em diante é uma observação <b>fora da amostra de verdade</b>: não pode ser
+garimpada, porque ainda não aconteceu. Um módulo só merece confiança quando o intervalo de confiança de 95%
+<b>não contém zero</b> — o que costuma exigir 100 ou mais trades. Até lá, resultado positivo e sorte são indistinguíveis.</div>
+<div class="tw"><table>
+<thead><tr><th>Módulo</th><th class="num">Trades</th><th class="num">Acertos</th><th class="num">Soma</th>
+<th class="num">Média/trade</th><th class="num">IC 95%</th><th class="num">t</th><th>Veredito</th></tr></thead>
+<tbody id="statb"></tbody></table><div class="empty" id="state">nenhum trade encerrado ainda — a medição começa na primeira saída</div></div>
+
 <h2>Histórico diário</h2>
 <div class="tw"><table>
 <thead><tr><th>Data</th><th class="num">Trades</th><th class="num">Acertos</th>
@@ -152,6 +161,20 @@ function render(d){
   ["Realizado conferido",rc.comparavel?(rc.ok?"confere":"DIVERGE "+brl(rc.divergencia)):"—",
    rc.comparavel?`tolerância ${brl(rc.tolerancia)}`:"só comparável sem posição aberta"],
  ].map(([k,v,h])=>`<tr><td>${k}</td><td class="num"><b>${v}</b></td><td class="mut">${h}</td></tr>`).join("");
+
+ const st=d.stats_modulo||[];
+ document.getElementById("state").style.display=st.length?"none":"block";
+ document.getElementById("statb").innerHTML=st.map(x=>{
+  const concl=x.conclusivo, sinal=x.media>0;
+  const vered=!concl?`<span class="tag off">amostra insuficiente</span>`
+    :sinal?`<span class="tag on">vantagem</span>`:`<span class="tag na">desvantagem</span>`;
+  return `<tr><td>${String(x.modulo).replace(/_/g," ")}</td>
+   <td class="num">${num(x.n)}</td><td class="num">${num(x.acertos)}</td>
+   <td class="num ${cls(x.soma)}">${brl(x.soma)}</td>
+   <td class="num ${cls(x.media)}">${brl(x.media)}</td>
+   <td class="num mut">${brl(x.ic_baixo)} a ${brl(x.ic_alto)}</td>
+   <td class="num ${Math.abs(x.t)>=1.96?cls(x.t):"mut"}">${x.t}</td>
+   <td>${vered}</td></tr>`}).join("");
 
  const ds=(d.daily_series||[]).slice().reverse();
  document.getElementById("daye").style.display=ds.length?"none":"block";
