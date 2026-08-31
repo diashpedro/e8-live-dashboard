@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T10:00:16-03:00",
+  "updated_at": "2026-08-31T10:03:10-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
@@ -10,7 +10,7 @@
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 179665.0,
+        "bid": 180020.0,
         "ok": true
       },
       {
@@ -19,32 +19,32 @@
         "ok": false
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
   "account": {
     "balance": 981716.96,
-    "equity": 981716.96,
+    "equity": 981685.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-31",
     "realized": 0,
-    "unrealized": 0,
-    "total": 0,
+    "unrealized": -33.0,
+    "total": -33.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 0,
-    "open_legs": 0,
-    "broker_realized": 0
+    "exposure": 36004.0,
+    "open_legs": 1,
+    "broker_realized": 0.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0,
-    "divergencia": 0,
+    "corretora": 0.0,
+    "divergencia": 0.0,
     "tolerancia": 1.0,
-    "comparavel": true,
-    "ok": true
+    "comparavel": false,
+    "ok": null
   },
   "cumulative": {
     "pnl": 0,
@@ -58,14 +58,30 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-08-31T09:59:55",
-    "idade_s": 21,
+    "heartbeat": "2026-08-31T10:02:59",
+    "idade_s": 10,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": false
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "LONG",
+      "entry_time": "2026-08-31T10:02:23-03:00",
+      "entry_price": 180185.0,
+      "current_price": 180020.0,
+      "qty": 1.0,
+      "notional": 36004.0,
+      "pnl": -33.0,
+      "pnl_liq_est": -49.57,
+      "pnl_pct": -0.092,
+      "minutos": 0.8
+    }
+  ],
   "daily_series": [],
   "trades": [],
   "by_strategy": [],
