@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-08-28T18:57:07-03:00",
+ "updated_at": "2026-08-31T07:14:46-03:00",
  "health": {
   "terminal_connected": true,
   "algo_trading": true,
   "symbols": [
    {
     "symbol": "WINV26",
-    "bid": 177640.0,
-    "ok": true
+    "bid": 0,
+    "ok": false
    },
    {
     "symbol": "WINQ26",
@@ -24,19 +24,19 @@
   "server": "ClearInvestimentos-DEMO"
  },
  "today": {
-  "date": "2026-08-28",
-  "realized": -1115.0,
+  "date": "2026-08-31",
+  "realized": 0,
   "unrealized": 0,
-  "trades": 16,
-  "wins": 6,
+  "trades": 0,
+  "wins": 0,
   "open_legs": 0,
-  "broker_realized": -1114.96
+  "broker_realized": 0
  },
  "reconciliacao": {
-  "painel": -1115.0,
-  "corretora": -1114.96,
-  "divergencia": -0.04,
-  "tolerancia": 22.3,
+  "painel": 0,
+  "corretora": 0,
+  "divergencia": 0,
+  "tolerancia": 1.0,
   "comparavel": true,
   "ok": true,
   "pernas_painel": 0,

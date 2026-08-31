@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-28T18:57:06-03:00",
+  "updated_at": "2026-08-31T07:14:44-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-08-28T16:35:10-03:00",
+    "last_ea_event": null,
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 177640.0,
-        "ok": true
+        "bid": 0,
+        "ok": false
       },
       {
         "symbol": "WINQ26",
@@ -28,7 +28,7 @@
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
-    "date": "2026-08-28",
+    "date": "2026-08-31",
     "realized": 0,
     "unrealized": 0,
     "total": 0,
@@ -47,221 +47,19 @@
     "ok": true
   },
   "cumulative": {
-    "pnl": 8300.0,
-    "trades": 8,
-    "wins": 5,
-    "since": "2026-08-10",
-    "days": 3,
-    "days_positive": 2,
-    "best_day": {
-      "date": "2026-08-11",
-      "pnl": 7960.0,
-      "trades": 3,
-      "wins": 2,
-      "cum": 8445.0
-    },
-    "worst_day": {
-      "date": "2026-08-12",
-      "pnl": -145.0,
-      "trades": 2,
-      "wins": 1,
-      "cum": 8300.0
-    }
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "since": null,
+    "days": 0,
+    "days_positive": 0,
+    "best_day": null,
+    "worst_day": null
   },
   "open_positions": [],
-  "daily_series": [
-    {
-      "date": "2026-08-10",
-      "pnl": 485.0,
-      "trades": 3,
-      "wins": 2,
-      "cum": 485.0
-    },
-    {
-      "date": "2026-08-11",
-      "pnl": 7960.0,
-      "trades": 3,
-      "wins": 2,
-      "cum": 8445.0
-    },
-    {
-      "date": "2026-08-12",
-      "pnl": -145.0,
-      "trades": 2,
-      "wins": 1,
-      "cum": 8300.0
-    }
-  ],
-  "trades": [
-    {
-      "symbol": "WINQ26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-08-12T10:07:21-03:00",
-      "exit_time": "2026-08-12T18:01:50-03:00",
-      "entry_price": 168035.0,
-      "exit_price": 167810.0,
-      "qty": 1.0,
-      "pnl": 225.0,
-      "pnl_bruto": 225.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 474.5
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "SHORT",
-      "entry_time": "2026-08-12T10:46:13-03:00",
-      "exit_time": "2026-08-12T18:01:50-03:00",
-      "entry_price": 167440.0,
-      "exit_price": 167810.0,
-      "qty": 1.0,
-      "pnl": -370.0,
-      "pnl_bruto": -370.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 435.6
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "SHORT",
-      "entry_time": "2026-08-11T10:55:51-03:00",
-      "exit_time": "2026-08-11T18:00:00-03:00",
-      "entry_price": 171285.0,
-      "exit_price": 168000.0,
-      "qty": 1.0,
-      "pnl": 3285.0,
-      "pnl_bruto": 3285.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 424.1
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "SHORT",
-      "entry_time": "2026-08-11T10:30:37-03:00",
-      "exit_time": "2026-08-11T18:00:00-03:00",
-      "entry_price": 170990.0,
-      "exit_price": 168005.0,
-      "qty": 2.0,
-      "pnl": 5970.0,
-      "pnl_bruto": 5970.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 449.4
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "LONG",
-      "entry_time": "2026-08-11T10:07:34-03:00",
-      "exit_time": "2026-08-11T11:12:53-03:00",
-      "entry_price": 172340.0,
-      "exit_price": 171045.0,
-      "qty": 1.0,
-      "pnl": -1295.0,
-      "pnl_bruto": -1295.0,
-      "motivo": "trail",
-      "motivo_label": "Trailing",
-      "minutos": 65.3
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-08-10T10:03:32-03:00",
-      "exit_time": "2026-08-10T18:00:00-03:00",
-      "entry_price": 172600.0,
-      "exit_price": 172285.0,
-      "qty": 1.0,
-      "pnl": 315.0,
-      "pnl_bruto": 315.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 476.5
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-08-10T12:15:19-03:00",
-      "exit_time": "2026-08-10T18:00:00-03:00",
-      "entry_price": 172490.0,
-      "exit_price": 172280.0,
-      "qty": 1.0,
-      "pnl": -210.0,
-      "pnl_bruto": -210.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 344.7
-    },
-    {
-      "symbol": "WINQ26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "SHORT",
-      "entry_time": "2026-08-10T10:30:09-03:00",
-      "exit_time": "2026-08-10T18:00:00-03:00",
-      "entry_price": 172665.0,
-      "exit_price": 172285.0,
-      "qty": 1.0,
-      "pnl": 380.0,
-      "pnl_bruto": 380.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 449.9
-    }
-  ],
-  "by_strategy": [
-    {
-      "strategy": "ORB",
-      "trades": 2,
-      "wins": 2,
-      "pnl": 6350.0
-    },
-    {
-      "strategy": "VWAP",
-      "trades": 3,
-      "wins": 1,
-      "pnl": 2705.0
-    },
-    {
-      "strategy": "VolBreak",
-      "trades": 3,
-      "wins": 2,
-      "pnl": -755.0
-    }
-  ],
-  "by_symbol": [
-    {
-      "symbol": "WINQ26",
-      "trades": 8,
-      "wins": 5,
-      "pnl": 8300.0
-    }
-  ],
-  "by_reason": [
-    {
-      "reason": "Fim do pregao",
-      "trades": 7,
-      "wins": 5,
-      "pnl": 9595.0
-    },
-    {
-      "reason": "Trailing",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -1295.0
-    }
-  ]
+  "daily_series": [],
+  "trades": [],
+  "by_strategy": [],
+  "by_symbol": [],
+  "by_reason": []
 }
