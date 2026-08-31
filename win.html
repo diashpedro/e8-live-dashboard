@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfólio WIN Híbrido</title>
+<style>
+:root{--bg:#0e1116;--card:#161b22;--line:#242c37;--tx:#e6edf3;--dim:#8b949e;
+      --ok:#3fb950;--bad:#f85149;--warn:#d29922;--ac:#58a6ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+     font:14px/1.5 ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:20px;margin:0 0 2px} h1 span{color:var(--ac)}
+.sub{color:var(--dim);font-size:12px;margin-bottom:18px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.card .k{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.card .v{font-size:24px;font-weight:600;margin-top:4px;font-variant-numeric:tabular-nums}
+.pos{color:var(--ok)}.neg{color:var(--bad)}.mut{color:var(--dim)}
+.strip{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.pill{display:flex;align-items:center;gap:6px;background:var(--card);
+      border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:12px}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.d-ok{background:var(--ok)}.d-bad{background:var(--bad)}.d-warn{background:var(--warn)}
+h2{font-size:14px;margin:26px 0 10px;color:var(--dim);text-transform:uppercase;letter-spacing:.6px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--dim);font-weight:500;font-size:11px;
+   text-transform:uppercase;letter-spacing:.4px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.tag{display:inline-block;padding:2px 8px;border-radius:5px;font-size:11px;
+     background:#1f2733;color:var(--ac);border:1px solid var(--line)}
+.tag.py{color:#d2a8ff}.tag.na{color:var(--warn)}
+.empty{padding:26px;text-align:center;color:var(--dim);font-size:13px}
+.foot{margin-top:34px;color:var(--dim);font-size:11px;line-height:1.7;
+      border-top:1px solid var(--line);padding-top:14px}
+.warnbox{background:#2a1f0a;border:1px solid #5c4408;border-radius:8px;
+         padding:10px 14px;font-size:12px;color:#e3b341;margin:14px 0}
+</style></head><body><div class="wrap">
+<h1>Portfólio <span>WIN</span> Híbrido</h1>
+<div class="sub" id="sub">carregando…</div>
+<div class="strip" id="strip"></div>
+<div id="alerta"></div>
+<div class="grid" id="cards"></div>
+<h2>Os 7 módulos</h2><div class="tw"><table id="mods">
+<thead><tr><th>Módulo</th><th>Origem</th><th>TF</th><th>Trades hoje</th><th>Resultado</th><th>Validação</th></tr></thead>
+<tbody id="modsb"></tbody></table></div>
+<h2>Posições abertas</h2><div class="tw" id="openw"><table>
+<thead><tr><th>Módulo</th><th>Lado</th><th>Volume</th><th>Entrada</th><th>Atual</th><th>Resultado</th></tr></thead>
+<tbody id="openb"></tbody></table><div class="empty" id="opene">nenhuma posição aberta</div></div>
+<h2>Histórico diário</h2><div class="tw"><table>
+<thead><tr><th>Data</th><th>Trades</th><th>Acertos</th><th>Resultado</th><th>Acumulado</th></tr></thead>
+<tbody id="dayb"></tbody></table><div class="empty" id="daye">sem pregões registrados</div></div>
+<div class="foot" id="foot"></div>
+</div>
+<script>
+const MOD=[
+ ["VolBreak","nativo","M30","PF 1,35 OOS","ok"],
+ ["VWAP","nativo","M5","PF 1,20 OOS","ok"],
+ ["ORB","nativo","M30","não validado","na"],
+ ["T01 barra reversao","python","M15","6 gavetas","ok"],
+ ["T11 climax","python","M15","8 gavetas","ok"],
+ ["V02 reversao climatica","python","M15","3 gavetas","ok"],
+ ["Momentum intradiario","python","M30","p=0,0006 · 2025-26 fracos","na"]];
+const brl=v=>(v<0?"−":"")+"R$ "+Math.abs(v).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const cls=v=>v>0?"pos":v<0?"neg":"mut";
+function pill(ok,txt,warn){return `<div class="pill"><span class="dot ${warn?"d-warn":ok?"d-ok":"d-bad"}"></span>${txt}</div>`}
+function render(d){
+ const py=d.python||{},h=d.health||{},t=d.today||{},c=d.cumulative||{};
+ document.getElementById("sub").textContent=
+   `conta ${d.account?.login??"?"} · ${d.account?.server??""} · atualizado ${new Date(d.updated_at).toLocaleString("pt-BR")}`;
+ document.getElementById("strip").innerHTML=
+  pill(h.terminal_connected,"terminal")+
+  pill(h.algo_trading,"algo trading")+
+  pill(py.presente&&!py.congelado, py.presente?`ponte python · ${py.idade_s}s`:"ponte python ausente", py.presente&&py.congelado)+
+  pill(py.dados_ok,"dados do python")+
+  pill((h.errors_today||0)===0,`${h.errors_today||0} erros hoje`)+
+  pill(true,`símbolo ${py.simbolo||"—"}`);
+ document.getElementById("alerta").innerHTML = (py.congelado||!py.presente)
+  ? `<div class="warnbox"><b>Ponte Python congelada.</b> A EA parou de aceitar entradas novas dos 4 módulos Python
+     e segue gerindo o que está aberto. Os 3 módulos nativos (VolBreak, VWAP, ORB) não são afetados.</div>` : "";
+ document.getElementById("cards").innerHTML=[
+  ["Resultado hoje",brl(t.total||0),cls(t.total||0)],
+  ["Realizado",brl(t.realized||0),cls(t.realized||0)],
+  ["Em aberto",brl(t.unrealized||0),cls(t.unrealized||0)],
+  ["Trades hoje",String(t.trades||0),"mut"],
+  ["Pernas abertas",String(t.open_legs||0),"mut"],
+  ["Acumulado",brl(c.pnl||0),cls(c.pnl||0)],
+ ].map(([k,v,k2])=>`<div class="card"><div class="k">${k}</div><div class="v ${k2}">${v}</div></div>`).join("");
+ const porMod={};(d.trades||[]).forEach(x=>{const m=x.modulo||x.module||"?";
+   porMod[m]=porMod[m]||{n:0,r:0};porMod[m].n++;porMod[m].r+=(x.pnl||x.resultado||0)});
+ document.getElementById("modsb").innerHTML=MOD.map(([nome,org,tf,val,st])=>{
+   const k=Object.keys(porMod).find(x=>nome.toLowerCase().startsWith(x.toLowerCase().slice(0,4)))||nome;
+   const s=porMod[k]||{n:0,r:0};
+   return `<tr><td>${nome}</td><td><span class="tag ${org==="python"?"py":""}">${org}</span></td>
+   <td class="mut">${tf}</td><td>${s.n}</td><td class="${cls(s.r)}">${s.n?brl(s.r):"—"}</td>
+   <td><span class="tag ${st==="na"?"na":""}">${val}</span></td></tr>`}).join("");
+ const op=d.open_positions||[];
+ document.getElementById("opene").style.display=op.length?"none":"block";
+ document.getElementById("openb").innerHTML=op.map(p=>
+  `<tr><td>${p.modulo||p.module||"?"}</td><td>${p.side||p.lado||""}</td><td>${p.volume??""}</td>
+   <td>${p.entry??p.entrada??""}</td><td>${p.current??p.atual??""}</td>
+   <td class="${cls(p.pnl||0)}">${brl(p.pnl||0)}</td></tr>`).join("");
+ const ds=(d.daily_series||[]).slice().reverse();let acc=0;
+ const tot=(d.daily_series||[]).reduce((a,x)=>a+(x.pnl||x.total||0),0);acc=tot;
+ document.getElementById("daye").style.display=ds.length?"none":"block";
+ document.getElementById("dayb").innerHTML=ds.map(x=>{
+   const v=x.pnl||x.total||0;const linha=`<tr><td>${x.date||x.dia}</td><td>${x.trades||0}</td>
+   <td>${x.wins??"—"}</td><td class="${cls(v)}">${brl(v)}</td><td class="${cls(acc)}">${brl(acc)}</td></tr>`;
+   acc-=v;return linha}).join("");
+ document.getElementById("foot").innerHTML=
+  `<b>7 módulos, 1 EA, magic 881902, ativo ${py.simbolo||"WINV26"}.</b> VolBreak, VWAP e ORB são nativos em MQL5;
+   T01, T11, V02 e o momentum intradiário chegam por <code>win_sinais.json</code>, escrito pelo Python.
+   Cada módulo vive na linguagem onde sua implementação de referência foi validada — nada foi re-portado.<br>
+   A EA é a guardiã: stop, alvo, zeragem às 17:40 e o tamanho de cada perna não dependem do Python.
+   Se a ponte cair ou cegar, ela congela entradas novas em 3 min e segue gerindo o que está aberto.<br>
+   Entradas até 16:00 · zeragem 17:40 · 1 contrato por perna · conta demo B3 · atualiza a cada 3 min.`;
+}
+function carrega(){fetch("data_win.json?t="+Date.now()).then(r=>r.json()).then(render)
+ .catch(e=>document.getElementById("sub").textContent="falha ao carregar data_win.json: "+e)}
+carrega();setInterval(carrega,60000);
+</script></body></html>
