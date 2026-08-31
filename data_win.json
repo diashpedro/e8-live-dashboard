@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T17:39:09-03:00",
+  "updated_at": "2026-08-31T17:42:11-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
@@ -10,7 +10,7 @@
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 180075.0,
+        "bid": 180005.0,
         "ok": true
       },
       {
@@ -22,27 +22,27 @@
     "pendentes": 0
   },
   "account": {
-    "balance": 981974.96,
-    "equity": 981926.96,
+    "balance": 981923.96,
+    "equity": 981978.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-31",
     "realized": 0,
-    "unrealized": 179.0,
-    "total": 179.0,
+    "unrealized": 24.0,
+    "total": 24.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 252105.0,
-    "open_legs": 7,
-    "broker_realized": 0.0
+    "exposure": 216006.0,
+    "open_legs": 6,
+    "broker_realized": -51.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
+    "corretora": -51.0,
+    "divergencia": 51.0,
+    "tolerancia": 1.02,
     "comparavel": false,
     "ok": null
   },
@@ -58,8 +58,8 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-08-31T17:38:53",
-    "idade_s": 16,
+    "heartbeat": "2026-08-31T17:41:53",
+    "idade_s": 18,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -73,92 +73,92 @@
       "entry_price": 180185.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T10:02:23",
-      "current_price": 180075.0,
-      "pnl": -22.0,
-      "notional": 36015.0,
+      "current_price": 180005.0,
+      "pnl": -36.0,
+      "notional": 36001.0,
       "strategy": "VB",
       "strategy_label": "VolBreak"
     },
     {
-      "modulo": "g082a",
-      "label": "T01_barra_reversao · gaveta 82a",
-      "side": "LONG",
-      "entry_price": 179825.0,
-      "qty": 1.0,
-      "entry_time": "2026-08-31T12:17:27",
-      "current_price": 180075.0,
-      "pnl": 50.0,
-      "notional": 36015.0,
-      "strategy": "g082a",
-      "strategy_label": "T01_barra_reversao · gaveta 82a"
-    },
-    {
       "modulo": "g084a",
-      "label": "T01_barra_reversao · gaveta 84a",
-      "side": "LONG",
-      "entry_price": 179825.0,
+      "label": "t01_barra_reversao_g084a",
+      "side": "SHORT",
+      "entry_price": 180065.0,
       "qty": 1.0,
-      "entry_time": "2026-08-31T12:17:27",
-      "current_price": 180075.0,
-      "pnl": 50.0,
-      "notional": 36015.0,
+      "entry_time": "2026-08-31T17:40:00",
+      "current_price": 180005.0,
+      "pnl": 12.0,
+      "notional": 36001.0,
       "strategy": "g084a",
-      "strategy_label": "T01_barra_reversao · gaveta 84a"
+      "strategy_label": "t01_barra_reversao_g084a"
     },
     {
       "modulo": "g085a",
-      "label": "T01_barra_reversao · gaveta 85a",
-      "side": "LONG",
-      "entry_price": 179825.0,
+      "label": "t01_barra_reversao_g085a",
+      "side": "SHORT",
+      "entry_price": 180065.0,
       "qty": 1.0,
-      "entry_time": "2026-08-31T12:17:27",
-      "current_price": 180075.0,
-      "pnl": 50.0,
-      "notional": 36015.0,
+      "entry_time": "2026-08-31T17:40:00",
+      "current_price": 180005.0,
+      "pnl": 12.0,
+      "notional": 36001.0,
       "strategy": "g085a",
-      "strategy_label": "T01_barra_reversao · gaveta 85a"
+      "strategy_label": "t01_barra_reversao_g085a"
     },
     {
       "modulo": "g086a",
-      "label": "T01_barra_reversao · gaveta 86a",
-      "side": "LONG",
-      "entry_price": 179825.0,
+      "label": "t01_barra_reversao_g086a",
+      "side": "SHORT",
+      "entry_price": 180065.0,
       "qty": 1.0,
-      "entry_time": "2026-08-31T12:17:27",
-      "current_price": 180075.0,
-      "pnl": 50.0,
-      "notional": 36015.0,
+      "entry_time": "2026-08-31T17:40:00",
+      "current_price": 180005.0,
+      "pnl": 12.0,
+      "notional": 36001.0,
       "strategy": "g086a",
-      "strategy_label": "T01_barra_reversao · gaveta 86a"
+      "strategy_label": "t01_barra_reversao_g086a"
     },
     {
       "modulo": "g087a",
-      "label": "T01_barra_reversao · gaveta 87a",
-      "side": "LONG",
-      "entry_price": 179825.0,
+      "label": "t01_barra_reversao_g087a",
+      "side": "SHORT",
+      "entry_price": 180065.0,
       "qty": 1.0,
-      "entry_time": "2026-08-31T12:17:27",
-      "current_price": 180075.0,
-      "pnl": 50.0,
-      "notional": 36015.0,
+      "entry_time": "2026-08-31T17:40:01",
+      "current_price": 180005.0,
+      "pnl": 12.0,
+      "notional": 36001.0,
       "strategy": "g087a",
-      "strategy_label": "T01_barra_reversao · gaveta 87a"
+      "strategy_label": "t01_barra_reversao_g087a"
     },
     {
       "modulo": "intramom",
-      "label": "Momentum intradiario",
-      "side": "LONG",
-      "entry_price": 180320.0,
+      "label": "intramom",
+      "side": "SHORT",
+      "entry_price": 180065.0,
       "qty": 1.0,
-      "entry_time": "2026-08-31T17:00:21",
-      "current_price": 180075.0,
-      "pnl": -49.0,
-      "notional": 36015.0,
+      "entry_time": "2026-08-31T17:40:01",
+      "current_price": 180005.0,
+      "pnl": 12.0,
+      "notional": 36001.0,
       "strategy": "intramom",
-      "strategy_label": "Momentum intradiario"
+      "strategy_label": "intramom"
     }
   ],
-  "stats_modulo": [],
+  "stats_modulo": [
+    {
+      "modulo": "t01_barra_reversao_g082a",
+      "n": 1,
+      "soma": -51.0,
+      "media": -51.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -51.0,
+      "ic_alto": -51.0,
+      "acertos": 0,
+      "conclusivo": false
+    }
+  ],
   "daily_series": [],
   "trades": [],
   "by_strategy": [],
