@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-31T10:27:09-03:00",
+  "updated_at": "2026-08-31T10:30:11-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": null,
+    "last_ea_event": "2026-08-31T10:02:23-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 180695.0,
+        "bid": 180970.0,
         "ok": true
       },
       {
@@ -19,22 +19,22 @@
         "ok": false
       }
     ],
-    "pendentes": 0
+    "pendentes": 1
   },
   "account": {
     "balance": 981716.96,
-    "equity": 981818.96,
+    "equity": 981874.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-08-31",
     "realized": 0,
-    "unrealized": 102.0,
-    "total": 102.0,
+    "unrealized": 157.0,
+    "total": 157.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 36139.0,
+    "exposure": 36194.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -58,8 +58,8 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-08-31T10:27:05",
-    "idade_s": 4,
+    "heartbeat": "2026-08-31T10:30:05",
+    "idade_s": 6,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -73,13 +73,13 @@
       "side": "LONG",
       "entry_time": "2026-08-31T10:02:23-03:00",
       "entry_price": 180185.0,
-      "current_price": 180695.0,
+      "current_price": 180970.0,
       "qty": 1.0,
-      "notional": 36139.0,
-      "pnl": 102.0,
-      "pnl_liq_est": 85.4,
-      "pnl_pct": 0.283,
-      "minutos": 24.8
+      "notional": 36194.0,
+      "pnl": 157.0,
+      "pnl_liq_est": 140.39,
+      "pnl_pct": 0.436,
+      "minutos": 27.8
     }
   ],
   "daily_series": [],
