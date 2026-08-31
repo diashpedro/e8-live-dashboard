@@ -462,12 +462,12 @@ const SOURCES = {
     footer: 'Estratégia 8 · 5 janelas × 2 direções, pernas A/B/C · conta demo B3 · atualiza sozinho a cada 3 min',
   },
   win: {
-    file: 'data_win.json', mode: 'strategy', title: 'Portfólio <span>WIN</span> híbrido — painel ao vivo',
-    footer: 'VolBreak + VWAP + ORB (nativos) + T01/T11/V02 Brooks + Momentum intradiário (via Python) · 1 EA, 7 módulos, magic 881902 · WIN futuro, conta demo B3 · atualiza sozinho a cada 3 min',
+    file: 'data_win.json', mode: 'strategy', title: 'Portfólio <span>WIN</span> — painel ao vivo',
+    footer: 'VolBreak + VWAP + ORB · 1 EA, 3 módulos, magic único · WIN futuro, conta demo B3 · atualiza sozinho a cada 3 min',
   },
   brooks: {
     file: 'data_brooks.json', mode: 'brooks', title: 'Al <span>Brooks</span> — painel ao vivo',
-    footer: 'HISTÓRICO — o brooks_live autônomo (magic 881901) foi desativado em 31/ago/2026. T01, T11 e V02 migraram para o portfólio híbrido; veja a aba WIN.',
+    footer: '154 gavetas · 29 setups dos 3 livros · sinal em M15 na série contínua, ordem no contrato · WIN futuro, conta demo B3 · atualiza sozinho a cada 3 min',
   },
 };
 let currentSrc = 'e8';
