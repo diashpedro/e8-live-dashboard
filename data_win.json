@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T10:45:16-03:00",
+  "updated_at": "2026-09-01T10:48:18-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
@@ -10,7 +10,7 @@
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 181320.0,
+        "bid": 181150.0,
         "ok": true
       },
       {
@@ -19,22 +19,22 @@
         "ok": false
       }
     ],
-    "pendentes": 4
+    "pendentes": 9
   },
   "account": {
     "balance": 981314.96,
-    "equity": 981301.96,
+    "equity": 981263.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-09-01",
     "realized": -127.0,
-    "unrealized": -1273.0,
-    "total": -1400.0,
+    "unrealized": -1137.0,
+    "total": -1264.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 217584.0,
+    "exposure": 217380.0,
     "open_legs": 6,
     "broker_realized": -104.0
   },
@@ -70,11 +70,11 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-01T10:44:59",
-    "idade_s": 17,
+    "heartbeat": "2026-09-01T10:48:03",
+    "idade_s": 16,
     "dados_ok": true,
     "simbolo": "WINV26",
-    "sinais_vivos": 4,
+    "sinais_vivos": 9,
     "congelado": false
   },
   "open_positions": [
@@ -85,9 +85,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 181320.0,
-      "pnl": -251.0,
-      "notional": 36264.0,
+      "current_price": 181150.0,
+      "pnl": -217.0,
+      "notional": 36230.0,
       "strategy": "g084a",
       "strategy_label": "t01_barra_reversao_g084a"
     },
@@ -98,9 +98,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 181320.0,
-      "pnl": -251.0,
-      "notional": 36264.0,
+      "current_price": 181150.0,
+      "pnl": -217.0,
+      "notional": 36230.0,
       "strategy": "g085a",
       "strategy_label": "t01_barra_reversao_g085a"
     },
@@ -111,9 +111,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 181320.0,
-      "pnl": -251.0,
-      "notional": 36264.0,
+      "current_price": 181150.0,
+      "pnl": -217.0,
+      "notional": 36230.0,
       "strategy": "g086a",
       "strategy_label": "t01_barra_reversao_g086a"
     },
@@ -124,9 +124,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:01",
-      "current_price": 181320.0,
-      "pnl": -251.0,
-      "notional": 36264.0,
+      "current_price": 181150.0,
+      "pnl": -217.0,
+      "notional": 36230.0,
       "strategy": "g087a",
       "strategy_label": "t01_barra_reversao_g087a"
     },
@@ -137,9 +137,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:01",
-      "current_price": 181320.0,
-      "pnl": -251.0,
-      "notional": 36264.0,
+      "current_price": 181150.0,
+      "pnl": -217.0,
+      "notional": 36230.0,
       "strategy": "intramom",
       "strategy_label": "intramom"
     },
@@ -150,9 +150,9 @@
       "entry_price": 181410.0,
       "qty": 1.0,
       "entry_time": "2026-09-01T10:35:14",
-      "current_price": 181320.0,
-      "pnl": -18.0,
-      "notional": 36264.0,
+      "current_price": 181150.0,
+      "pnl": -52.0,
+      "notional": 36230.0,
       "strategy": "VB",
       "strategy_label": "VolBreak"
     }
