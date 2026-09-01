@@ -1,49 +1,49 @@
 {
-  "updated_at": "2026-08-31T18:57:05-03:00",
+  "updated_at": "2026-09-01T09:00:13-03:00",
   "start_date": "2026-07-29",
   "health": {
-    "errors_today": 2,
-    "last_ea_event": "2026-08-31T17:40:01-03:00",
-    "last_error_msg": "LP\t0\t13:30:00.018\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 180635.00: retcode=10015 invalid price",
+    "errors_today": 1,
+    "last_ea_event": "2026-09-01T08:55:00-03:00",
+    "last_error_msg": "GD\t0\t10:13:12.115\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] falha ao zerar residuo de -5: invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 45.02,
+        "bid": 44.9,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 77.65,
+        "bid": 77.52,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 39.54,
+        "bid": 39.45,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.02,
+        "bid": 15.0,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 35.44,
+        "bid": 35.01,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 981923.96,
-    "equity": 981913.96,
+    "balance": 981418.96,
+    "equity": 981418.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
-    "date": "2026-08-31",
+    "date": "2026-09-01",
     "realized": 0,
     "unrealized": 0,
     "total": 0,
