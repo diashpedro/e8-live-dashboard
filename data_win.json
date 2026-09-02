@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-02T13:03:09-03:00",
+  "updated_at": "2026-09-02T13:06:04-03:00",
   "start_date": null,
   "health": {
     "errors_today": 3,
-    "last_ea_event": "2026-09-02T12:38:31-03:00",
+    "last_ea_event": "2026-09-02T13:03:52-03:00",
     "last_error_msg": "LR\t0\t15:30:00.176\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 183415.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788364946,
+    "ea_heartbeat_epoch": 1788365126,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187305.0,
+        "bid": 187055.0,
         "ok": true
       },
       {
@@ -153,11 +153,11 @@
   "today": {
     "date": "2026-09-02",
     "realized": 0,
-    "unrealized": -6399.0,
-    "total": -6399.0,
+    "unrealized": -6303.0,
+    "total": -6303.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 299672.0,
+    "exposure": 299288.0,
     "open_legs": 8,
     "broker_realized": 0.0
   },
@@ -196,13 +196,13 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-01T12:07:32",
-    "heartbeat_epoch": 1788275252,
-    "idade_s": 89737,
+    "heartbeat": "2026-09-02T13:05:51",
+    "heartbeat_epoch": 1788365151,
+    "idade_s": 13,
     "dados_ok": true,
     "simbolo": "WINV26",
-    "sinais_vivos": 6,
-    "congelado": true
+    "sinais_vivos": 0,
+    "congelado": false
   },
   "open_positions": [
     {
@@ -212,9 +212,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187295.0,
-      "pnl": -1446.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": -1398.0,
+      "notional": 37411.0,
       "strategy": "g084a",
       "strategy_label": "t01_barra_reversao_g084a"
     },
@@ -225,9 +225,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187295.0,
-      "pnl": -1446.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": -1398.0,
+      "notional": 37411.0,
       "strategy": "g085a",
       "strategy_label": "t01_barra_reversao_g085a"
     },
@@ -238,9 +238,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187295.0,
-      "pnl": -1446.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": -1398.0,
+      "notional": 37411.0,
       "strategy": "g086a",
       "strategy_label": "t01_barra_reversao_g086a"
     },
@@ -251,9 +251,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:01",
-      "current_price": 187295.0,
-      "pnl": -1446.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": -1398.0,
+      "notional": 37411.0,
       "strategy": "g087a",
       "strategy_label": "t01_barra_reversao_g087a"
     },
@@ -264,9 +264,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:01",
-      "current_price": 187295.0,
-      "pnl": -1446.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": -1398.0,
+      "notional": 37411.0,
       "strategy": "intramom",
       "strategy_label": "intramom"
     },
@@ -277,9 +277,9 @@
       "entry_price": 183615.0,
       "qty": 1.0,
       "entry_time": "2026-09-01T11:35:37",
-      "current_price": 187295.0,
-      "pnl": 736.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": 688.0,
+      "notional": 37411.0,
       "strategy": "ORB",
       "strategy_label": "ORB"
     },
@@ -290,9 +290,9 @@
       "entry_price": 185875.0,
       "qty": 1.0,
       "entry_time": "2026-09-02T10:50:37",
-      "current_price": 187295.0,
-      "pnl": 284.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": 236.0,
+      "notional": 37411.0,
       "strategy": "VB",
       "strategy_label": "VolBreak"
     },
@@ -303,9 +303,9 @@
       "entry_price": 188240.0,
       "qty": 1.0,
       "entry_time": "2026-09-02T12:38:31",
-      "current_price": 187295.0,
-      "pnl": -189.0,
-      "notional": 37459.0,
+      "current_price": 187055.0,
+      "pnl": -237.0,
+      "notional": 37411.0,
       "strategy": "VW",
       "strategy_label": "VWAP"
     }
