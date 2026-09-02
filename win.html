@@ -1,28 +1,64 @@
 <!doctype html>
 <html lang="pt-BR"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfólio WIN Híbrido</title>
+<title id="pgtitle">Portfólio WIN Híbrido</title>
+<link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%233fb950'/%3E%3C/svg%3E">
 <style>
-:root{--bg:#0d1117;--card:#161b22;--card2:#1c232c;--line:#2a333f;--tx:#e6edf3;--dim:#8b949e;
-      --ok:#3fb950;--bad:#f85149;--warn:#d29922;--ac:#58a6ff;--py:#d2a8ff}
+:root{--bg:#0d1117;--card:#161b22;--line:#2a333f;--tx:#e6edf3;--dim:#8b949e;
+      --ok:#3fb950;--bad:#f85149;--warn:#d29922;--ac:#58a6ff;--py:#d2a8ff;
+      --sp1:4px;--sp2:8px;--sp3:12px;--sp4:16px;--sp5:24px;--sp6:32px;--rad:10px;
+      --mv:180ms cubic-bezier(.4,0,.2,1)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.55 ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif}
-.wrap{max-width:1240px;margin:0 auto;padding:22px 16px 70px}
-h1{font-size:21px;margin:0 0 3px}h1 span{color:var(--ac)}
-.sub{color:var(--dim);font-size:12px;margin-bottom:16px}
-.strip{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.pill{display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);
-      border-radius:999px;padding:6px 12px;font-size:12px;white-space:nowrap}
-.dot{width:8px;height:8px;border-radius:50%;flex:none}
-.d-ok{background:var(--ok)}.d-bad{background:var(--bad)}.d-warn{background:var(--warn)}
-.grid{display:grid;gap:11px;grid-template-columns:repeat(auto-fit,minmax(142px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px}
+.wrap{max-width:900px;margin:0 auto;padding:0 var(--sp4) 70px}
+h2{font-size:12.5px;margin:var(--sp5) 0 var(--sp2);color:var(--dim);text-transform:uppercase;letter-spacing:.7px}
+.hint{color:var(--dim);font-size:12px;margin:0 0 var(--sp2)}
+/* ---- bloco 0: veredito ---- */
+#veredito{position:sticky;top:0;z-index:10;background:var(--bg);padding:var(--sp4) 0 var(--sp3);
+  border-bottom:1px solid var(--line);margin-bottom:var(--sp4)}
+.v-top{display:flex;align-items:center;gap:var(--sp3)}
+.marker{width:18px;height:18px;flex:none}
+.mk-operando{border-radius:50%;background:var(--ok)}
+.mk-fora{border-radius:50%;border:3px solid var(--dim);background:transparent}
+.mk-atencao{width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:16px solid var(--warn)}
+.mk-falha{background-image:repeating-linear-gradient(45deg,var(--bad) 0 3px,#3a0d0b 3px 6px);
+  border-radius:3px;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+.v-word{font-size:28px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.v-word.c-falha{color:var(--bad)}.v-word.c-atencao{color:var(--warn)}
+.v-word.c-operando{color:var(--ok)}.v-word.c-fora{color:var(--dim)}
+.v-idades{font-size:14px;color:var(--dim);margin-top:var(--sp2);font-variant-numeric:tabular-nums}
+.v-causas{font-size:13px;margin-top:var(--sp1)}
+.causa{display:inline-block;background:#241313;color:#ffb4ab;border:1px solid #5c2b26;
+  border-radius:5px;padding:1px 7px;margin:2px 4px 0 0;font-size:12.5px}
+#veredito.est-atencao .causa{background:#2a1f0a;color:#e3b341;border-color:#5c4408}
+#veredito.est-fora .causa,#veredito.est-operando .causa{background:#1c232c;color:var(--dim);border-color:var(--line)}
+.causa-extra{color:var(--dim);font-size:12.5px}
+/* ---- bloco 1: dinheiro ---- */
+.grid{display:grid;gap:11px;grid-template-columns:repeat(3,1fr)}
+@media (max-width:520px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:13px}
 .card .k{color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px}
-.card .v{font-size:23px;font-weight:600;margin-top:3px;font-variant-numeric:tabular-nums}
+.card .v{margin-top:3px;font-variant-numeric:tabular-nums;transition:opacity var(--mv),color var(--mv)}
+.card.big .v{font-size:32px;font-weight:700}
+.card .v{font-size:21px;font-weight:600}
 .card .h{color:var(--dim);font-size:11px;margin-top:2px}
+.subline{color:var(--dim);font-size:12px;margin-top:var(--sp2)}
 .pos{color:var(--ok)}.neg{color:var(--bad)}.mut{color:var(--dim)}
-h2{font-size:12.5px;margin:26px 0 9px;color:var(--dim);text-transform:uppercase;letter-spacing:.7px}
-.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+/* dado velho: nunca verde de dinheiro sob faixa vermelha */
+body.is-falha .money{opacity:.45;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 4px,transparent 4px 8px)}
+body.is-falha .money.pos,body.is-falha .money.neg{color:var(--dim)!important}
+/* ---- bloco 2: exposicao ---- */
+.exp{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:var(--sp3) var(--sp4)}
+.exp-row{display:flex;justify-content:space-between;gap:var(--sp3);padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
+.exp-row:last-of-type{border-bottom:0}
+.exp-lbl{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.exp-ver{margin-top:var(--sp2);font-weight:600;font-size:13px}
+.exp-ver.ok{color:var(--ok)}.exp-ver.bad{color:var(--bad)}.exp-ver.warn{color:var(--warn)}
+.pend-list{margin-top:var(--sp3);font-size:12.5px}
+.pend-item{padding:5px 0;border-top:1px solid var(--line);color:var(--dim)}
+/* ---- bloco 3: modulos ---- */
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--rad)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{text-align:left;color:var(--dim);font-weight:500;font-size:10.5px;text-transform:uppercase;
    letter-spacing:.5px;padding:9px 11px;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -31,36 +67,64 @@ tr:last-child td{border-bottom:0}
 td.num,th.num{text-align:right}
 .tag{display:inline-block;padding:2px 7px;border-radius:5px;font-size:10.5px;
      background:#1f2733;border:1px solid var(--line);color:var(--ac)}
-.tag.py{color:var(--py)}.tag.na{color:var(--warn)}.tag.on{color:var(--ok)}.tag.off{color:var(--dim)}
-.empty{padding:24px;text-align:center;color:var(--dim);font-size:13px}
+.tag.py{color:var(--py)}.tag.on{color:var(--ok)}.tag.off{color:var(--dim)}
+.tag.warn{color:var(--warn)}.tag.bad{color:var(--bad)}
+.modcards{display:none}
+.modcard{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:var(--sp3);margin-bottom:var(--sp2)}
+.modcard .row{display:flex;justify-content:space-between;font-size:12.5px;padding:2px 0}
+@media (max-width:640px){.tw{display:none}.modcards{display:block}}
+/* ---- bloco 4: linha do tempo ---- */
+.tl{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--rad)}
+.tl li{padding:9px 12px;border-bottom:1px solid var(--line);font-size:13px;display:flex;gap:8px}
+.tl li:last-child{border-bottom:0}
+.tl .h{color:var(--dim);font-variant-numeric:tabular-nums;flex:none}
+.tl .tp{flex:none;font-size:10.5px;text-transform:uppercase;padding:1px 6px;border-radius:4px;align-self:flex-start}
+.tp-entrada{background:#0f2a17;color:var(--ok)}.tp-saida{background:#1c232c;color:var(--ac)}
+.tp-rejeicao{background:#1c232c;color:var(--dim)}.tp-erro{background:#2a1313;color:var(--bad)}
+.tp-congelamento{background:#2a1f0a;color:var(--warn)}
+.empty{padding:18px;text-align:center;color:var(--dim);font-size:13px}
+/* ---- detalhes ---- */
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);margin-top:var(--sp3)}
+summary{cursor:pointer;padding:0 var(--sp4);min-height:44px;display:flex;align-items:center;font-size:13px;font-weight:600}
+details .inner{padding:0 var(--sp4) var(--sp4)}
 .box{border-radius:8px;padding:10px 14px;font-size:12.5px;margin:12px 0;line-height:1.6}
-.box.warn{background:#2a1f0a;border:1px solid #5c4408;color:#e3b341}
 .box.info{background:#10202e;border:1px solid #1d3a52;color:#79c0ff}
-.foot{margin-top:32px;color:var(--dim);font-size:11px;line-height:1.8;border-top:1px solid var(--line);padding-top:14px}
-</style></head><body><div class="wrap">
-<h1>Portfólio <span>WIN</span> Híbrido</h1>
-<div class="sub" id="sub">carregando…</div>
-<div class="strip" id="strip"></div>
-<div id="avisos"></div>
+.foot{color:var(--dim);font-size:11.5px;line-height:1.8}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div class="wrap">
+
+<div id="veredito">
+  <div id="veredito-visual" aria-hidden="true">carregando…</div>
+  <div id="veredito-status" role="status" class="sr-only"></div>
+  <div id="veredito-alert-slot"></div>
+</div>
+
 <div class="grid" id="cards"></div>
+<div class="subline" id="subline"></div>
 
-<h2>Os 7 módulos</h2>
+<section id="bloco2" hidden>
+<h2>Exposição agora</h2>
+<div class="exp" id="exp"></div>
+</section>
+
+<section>
+<h2>7 módulos</h2>
+<p class="hint">Pernas reconstruídas do histórico de negócios; a corretora só conhece a posição líquida.</p>
 <div class="tw"><table>
-<thead><tr><th>Módulo</th><th>Origem</th><th>TF</th><th>Estado</th>
-<th class="num">Pernas</th><th class="num">Em aberto</th>
-<th class="num">Fechados</th><th class="num">Realizado</th><th>Validação</th></tr></thead>
+<thead><tr><th>Módulo</th><th>Estado</th><th class="num">Aberto</th><th class="num">Hoje</th><th>Evidência</th></tr></thead>
 <tbody id="modsb"></tbody></table></div>
+<div class="modcards" id="modscard"></div>
+</section>
 
-<h2>Pernas abertas</h2>
-<div class="tw"><table>
-<thead><tr><th>Módulo</th><th>Lado</th><th class="num">Qtd</th><th class="num">Entrada</th>
-<th class="num">Atual</th><th class="num">Resultado</th><th>Desde</th></tr></thead>
-<tbody id="openb"></tbody></table><div class="empty" id="opene">nenhuma perna aberta</div></div>
+<section>
+<h2>Linha do tempo de hoje</h2>
+<div id="timelinewrap"><ul class="tl" id="timeline"></ul><div class="empty" id="timelinee"></div></div>
+</section>
 
-<h2>Conferência com a corretora</h2>
-<div class="tw"><table><tbody id="reconb"></tbody></table></div>
-
-<h2>Evidência acumulada por módulo <span style="text-transform:none;font-weight:400">— desde 31/ago/2026</span></h2>
+<details><summary>Evidência acumulada por módulo (IC 95%)</summary><div class="inner">
 <div class="box info">Cada pregão daqui em diante é uma observação <b>fora da amostra de verdade</b>: não pode ser
 garimpada, porque ainda não aconteceu. Um módulo só merece confiança quando o intervalo de confiança de 95%
 <b>não contém zero</b> — o que costuma exigir 100 ou mais trades. Até lá, resultado positivo e sorte são indistinguíveis.</div>
@@ -68,131 +132,353 @@ garimpada, porque ainda não aconteceu. Um módulo só merece confiança quando 
 <thead><tr><th>Módulo</th><th class="num">Trades</th><th class="num">Acertos</th><th class="num">Soma</th>
 <th class="num">Média/trade</th><th class="num">IC 95%</th><th class="num">t</th><th>Veredito</th></tr></thead>
 <tbody id="statb"></tbody></table><div class="empty" id="state">nenhum trade encerrado ainda — a medição começa na primeira saída</div></div>
+</div></details>
 
-<h2>Histórico diário</h2>
+<details><summary>Histórico diário</summary><div class="inner">
 <div class="tw"><table>
 <thead><tr><th>Data</th><th class="num">Trades</th><th class="num">Acertos</th>
 <th class="num">Resultado</th></tr></thead>
 <tbody id="dayb"></tbody></table><div class="empty" id="daye">primeiro pregão — sem histórico ainda</div></div>
+</div></details>
 
-<div class="foot" id="foot"></div></div>
+<details><summary>Como funciona</summary><div class="inner foot" id="foot"></div></details>
+
+</div>
 <script>
+/* ============ funções puras (testáveis fora do navegador) ============ */
 const MODULOS=[
- {k:"VolBreak",             org:"nativo", tf:"M30", val:"PF 1,35 OOS",   st:"ok"},
- {k:"VWAP",                 org:"nativo", tf:"M5",  val:"PF 1,20 OOS",   st:"ok"},
- {k:"ORB",                  org:"nativo", tf:"M30", val:"não validado",  st:"na"},
- {k:"T01_barra_reversao",   org:"python", tf:"M15", val:"6 gavetas",     st:"ok"},
- {k:"T11_climax",           org:"python", tf:"M15", val:"8 gavetas",     st:"ok"},
- {k:"V02_reversao_climatica",org:"python",tf:"M15", val:"3 gavetas",     st:"ok"},
- {k:"Momentum intradiario", org:"python", tf:"M30", val:"2025-26 fracos",st:"na"}];
+ {id:"volbreak",           k:"VolBreak",              org:"nativo"},
+ {id:"vwap",               k:"VWAP",                  org:"nativo"},
+ {id:"orb",                k:"ORB",                   org:"nativo"},
+ {id:"t01_barra_reversao", k:"T01_barra_reversao",    org:"python"},
+ {id:"t11_climax",         k:"T11_climax",            org:"python"},
+ {id:"v02_reversao_climatica",k:"V02_reversao_climatica",org:"python"},
+ {id:"intramom",           k:"Momentum intradiario",  org:"python"}];
+
+function fmtDur(s){
+  if(s===null||s===undefined||isNaN(s)) return null;
+  s=Math.max(0,Math.round(s));
+  if(s<60) return s+"s";
+  const m=Math.floor(s/60), r=s%60;
+  return m+"m"+String(r).padStart(2,"0")+"s";
+}
+// BRT = UTC-3, sem horario de verao. Deslocamos o relogio e lemos os campos UTC
+// como se fossem os campos locais de Brasilia -- funciona em qualquer fuso do navegador.
+function brtParts(nowMs){
+  const brt=new Date(nowMs-3*3600*1000);
+  const dow=brt.getUTCDay();
+  const minutesOfDay=brt.getUTCHours()*60+brt.getUTCMinutes();
+  const dateStr=brt.toISOString().slice(0,10);
+  return {dow,minutesOfDay,dateStr};
+}
+function emJanela(nowMs){
+  const b=brtParts(nowMs);
+  return b.dow>=1 && b.dow<=5 && b.minutesOfDay>=9*60 && b.minutesOfDay<18*60+10;
+}
+const canon=l=>String(l||"").split(" · ")[0].trim();
+
+// Decisao de raiz: desconhecido nunca e verde. Todo ramo que nao prova estado
+// bom cai em FALHA ou ATENCAO -- nunca silenciosamente em OPERANDO.
+function avaliarEstado(d, nowMs, fetchFails){
+  fetchFails=fetchFails||0;
+  const falha=[], atencao=[];
+  if(fetchFails>=3) falha.push("falha ao buscar data_win.json 3x seguidas");
+  if(!d){
+    return {estado:"FALHA", causas:falha.length?falha:["sem dados carregados"], janela:false,
+      idadePubS:null, idadeEaS:null, idadePythonS:null, eaSemEA:true, pyCongelado:true};
+  }
+  const janela=emJanela(nowMs), brt=brtParts(nowMs);
+  const h=d.health||{}, py=d.python||{}, t=d.today||{}, rc=d.reconciliacao||{};
+  const op=d.open_positions||[];
+
+  let idadePubS=null;
+  const pubEpoch=Date.parse(d.updated_at);
+  if(!isNaN(pubEpoch)) idadePubS=Math.round((nowMs-pubEpoch)/1000);
+  else atencao.push("updated_at ausente ou inválido");
+  if(idadePubS!==null && janela && idadePubS>15*60) falha.push("publicação com "+fmtDur(idadePubS)+" de atraso");
+
+  if(brt.minutesOfDay>9*60+15){
+    if(!t.date) falha.push("sem data de hoje no JSON");
+    else if(t.date!==brt.dateStr) falha.push("data do JSON ("+t.date+") não é hoje");
+  }
+  if(h.terminal_connected===false) falha.push("terminal desconectado");
+  else if(h.terminal_connected===undefined) atencao.push("terminal_connected ausente");
+  if(h.algo_trading===false) falha.push("algo trading desligado");
+  else if(h.algo_trading===undefined) atencao.push("algo_trading ausente");
+  (h.symbols||[]).forEach(s=>{ if(s && s.ok===false) falha.push("símbolo "+(s.symbol||"?")+" sem cotação válida"); });
+
+  let idadeEaS=null, eaSemEA=false;
+  if(typeof h.ea_heartbeat_epoch==="number"){
+    idadeEaS=Math.round(nowMs/1000-h.ea_heartbeat_epoch);
+    if(janela && idadeEaS>30*60){ falha.push("EA sem heartbeat há "+fmtDur(idadeEaS)); eaSemEA=true; }
+  } else {
+    eaSemEA=true;
+    atencao.push("sem heartbeat da EA (campo health.ea_heartbeat_epoch ausente)");
+  }
+
+  let idadePythonS=null;
+  if(typeof py.heartbeat_epoch==="number"){
+    idadePythonS=Math.round(nowMs/1000-py.heartbeat_epoch);
+  } else if(py.presente!==false){
+    atencao.push("idade do python não calculável (campo python.heartbeat_epoch ausente)");
+  }
+  if(py.congelado) atencao.push("ponte python congelada");
+
+  if((h.errors_today||0)>0) atencao.push(h.errors_today+" erro(s) hoje");
+
+  const pendentes=h.pendentes||0;
+  if(pendentes>0 && brt.minutesOfDay>17*60+45) falha.push(pendentes+" ordem(ns) pendente(s) após a zeragem");
+  else if(pendentes>0 && brt.minutesOfDay>16*60) atencao.push(pendentes+" ordem(ns) pendente(s) após 16:00");
+
+  if(op.length>0 && brt.minutesOfDay>17*60+45) falha.push("posição aberta após a zeragem");
+
+  const temExposicao=op.length>0 || pendentes>0;
+  if(typeof rc.volume_ok==="boolean"){
+    if(!rc.volume_ok) atencao.push("volume não bate: corretora "+rc.volume_corretora+" × pernas "+rc.volume_pernas);
+  } else if(rc.comparavel===true){
+    if(rc.ok===false) atencao.push("reconciliação diverge em R$");
+  } else if(temExposicao){
+    atencao.push("reconciliação de volume indisponível com posição/pendentes em aberto");
+  }
+
+  let estado, causas;
+  if(falha.length){ estado="FALHA"; causas=falha; }
+  else if(atencao.length){ estado="ATENCAO"; causas=atencao; }
+  else if(janela){ estado="OPERANDO"; causas=[]; }
+  else { estado="FORA"; causas=["sem publicação prevista"]; }
+
+  return {estado, causas, janela, idadePubS, idadeEaS, idadePythonS, eaSemEA, pyCongelado:!!py.congelado};
+}
+
+function estadoModulo(m, agg, ctx){
+  if(agg && agg.n>0) return "posicionado";
+  if(ctx.eaSemEA) return "SEM EA";
+  if(m.org==="python" && ctx.pyCongelado) return "CONGELADO";
+  return "aguardando";
+}
+/* ============ fim das funções puras ============ */
+
 const brl=v=>(v<0?"−":"")+"R$ "+Math.abs(+v||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
 const num=v=>(+v||0).toLocaleString("pt-BR");
 const cls=v=>v>0?"pos":v<0?"neg":"mut";
-const hora=s=>s?new Date(s).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"}):"—";
-// "T01_barra_reversao · gaveta 82a" -> "T01_barra_reversao"
-const canon=l=>String(l||"").split(" · ")[0].trim();
-function pill(estado,txt){return `<div class="pill"><span class="dot d-${estado}"></span>${txt}</div>`}
+const hora=s=>{const t=Date.parse(s);return isNaN(t)?"—":new Date(t).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
-function render(d){
- const py=d.python||{},h=d.health||{},t=d.today||{},c=d.cumulative||{},ac=d.account||{};
- const op=d.open_positions||[],tr=d.trades||[];
- document.getElementById("sub").textContent =
-  `conta ${ac.login??"?"} · ${ac.server??""} · saldo ${brl(ac.balance)} · patrimônio ${brl(ac.equity)} · atualizado ${new Date(d.updated_at).toLocaleString("pt-BR")}`;
+const ESTADO_LABEL={FALHA:"FALHA",ATENCAO:"ATENÇÃO",OPERANDO:"OPERANDO",FORA:"FORA DE PREGÃO"};
+const ESTADO_CLASSE={FALHA:"falha",ATENCAO:"atencao",OPERANDO:"operando",FORA:"fora"};
 
- document.getElementById("strip").innerHTML =
-  pill(h.terminal_connected?"ok":"bad","terminal")+
-  pill(h.algo_trading?"ok":"bad","algo trading")+
-  pill(!py.presente?"bad":py.congelado?"warn":"ok",
-       py.presente?`ponte python · ${py.idade_s}s`:"ponte python ausente")+
-  pill(py.dados_ok?"ok":"bad","dados do python")+
-  pill("ok",`${num(py.sinais_vivos)} sinais vivos`)+
-  pill(h.pendentes?"warn":"ok",`${num(h.pendentes)} ordens pendentes`)+
-  pill((h.errors_today||0)?"bad":"ok",`${num(h.errors_today)} erros hoje`)+
-  pill("ok",`símbolo ${py.simbolo||"—"}`);
+let lastData=null, fetchFails=0;
 
- let av="";
- if(!py.presente||py.congelado) av+=`<div class="box warn"><b>Ponte Python congelada.</b>
-   A EA parou de aceitar entradas novas dos 4 módulos Python e segue gerindo o que está aberto.
-   Os 3 nativos (VolBreak, VWAP, ORB) não são afetados.</div>`;
- if(h.last_error_msg) av+=`<div class="box warn"><b>Último erro:</b> ${h.last_error_msg}</div>`;
- document.getElementById("avisos").innerHTML=av;
-
- const aberto=op.reduce((a,x)=>a+(+x.pnl||0),0);
- document.getElementById("cards").innerHTML=[
-  ["Resultado hoje",brl(t.total),cls(t.total),`realizado ${brl(t.realized)} + aberto ${brl(aberto)}`],
-  ["Em aberto",brl(aberto),cls(aberto),`${op.length} perna(s)`],
-  ["Realizado hoje",brl(t.realized),cls(t.realized),`${num(t.trades)} trade(s) · ${num(t.wins)} acerto(s)`],
-  ["Exposição",brl(t.exposure),"mut","nocional das pernas"],
-  ["Acumulado",brl(c.pnl),cls(c.pnl),`${num(c.days)} pregão(ões)`],
- ].map(([k,v,cl,hint])=>`<div class="card"><div class="k">${k}</div>
-    <div class="v ${cl}">${v}</div><div class="h">${hint}</div></div>`).join("");
-
- // agrega abertos e fechados por modulo canonico
- const agg={};MODULOS.forEach(m=>agg[m.k]={n:0,ab:0,nf:0,rz:0});
- op.forEach(p=>{const k=canon(p.strategy_label||p.label);
-   if(agg[k]){agg[k].n++;agg[k].ab+=(+p.pnl||0)}});
- tr.forEach(x=>{const k=canon(x.strategy_label||x.label||x.modulo);
-   if(agg[k]){agg[k].nf++;agg[k].rz+=(+x.pnl||+x.resultado||0)}});
- document.getElementById("modsb").innerHTML=MODULOS.map(m=>{
-   const a=agg[m.k],ativo=a.n>0,operou=a.n||a.nf;
-   return `<tr><td>${m.k.replace(/_/g," ")}</td>
-    <td><span class="tag ${m.org==="python"?"py":""}">${m.org}</span></td>
-    <td class="mut">${m.tf}</td>
-    <td><span class="tag ${ativo?"on":"off"}">${ativo?"posicionado":"aguardando"}</span></td>
-    <td class="num">${a.n||"—"}</td>
-    <td class="num ${cls(a.ab)}">${a.n?brl(a.ab):"—"}</td>
-    <td class="num">${a.nf||"—"}</td>
-    <td class="num ${cls(a.rz)}">${a.nf?brl(a.rz):"—"}</td>
-    <td><span class="tag ${m.st==="na"?"na":""}">${m.val}</span></td></tr>`}).join("");
-
- document.getElementById("opene").style.display=op.length?"none":"block";
- document.getElementById("openb").innerHTML=op.map(p=>
-  `<tr><td>${p.strategy_label||p.label||"?"}</td>
-   <td>${p.side==="LONG"?"compra":"venda"}</td>
-   <td class="num">${num(p.qty)}</td><td class="num">${num(p.entry_price)}</td>
-   <td class="num">${num(p.current_price)}</td>
-   <td class="num ${cls(p.pnl)}">${brl(p.pnl)}</td>
-   <td class="mut">${hora(p.entry_time)}</td></tr>`).join("");
-
- const rc=d.reconciliacao||{};
- document.getElementById("reconb").innerHTML=[
-  ["Soma das pernas (painel)",brl(aberto),"Cada perna com seu preço real de entrada"],
-  ["Posição líquida (corretora)",brl(rc.corretora),"Calculada sobre o preço MÉDIO — é o que vale para o saldo"],
-  ["Realizado conferido",rc.comparavel?(rc.ok?"confere":"DIVERGE "+brl(rc.divergencia)):"—",
-   rc.comparavel?`tolerância ${brl(rc.tolerancia)}`:"só comparável sem posição aberta"],
- ].map(([k,v,h])=>`<tr><td>${k}</td><td class="num"><b>${v}</b></td><td class="mut">${h}</td></tr>`).join("");
-
- const st=d.stats_modulo||[];
- document.getElementById("state").style.display=st.length?"none":"block";
- document.getElementById("statb").innerHTML=st.map(x=>{
-  const concl=x.conclusivo, sinal=x.media>0;
-  const vered=!concl?`<span class="tag off">amostra insuficiente</span>`
-    :sinal?`<span class="tag on">vantagem</span>`:`<span class="tag na">desvantagem</span>`;
-  return `<tr><td>${String(x.modulo).replace(/_/g," ")}</td>
-   <td class="num">${num(x.n)}</td><td class="num">${num(x.acertos)}</td>
-   <td class="num ${cls(x.soma)}">${brl(x.soma)}</td>
-   <td class="num ${cls(x.media)}">${brl(x.media)}</td>
-   <td class="num mut">${brl(x.ic_baixo)} a ${brl(x.ic_alto)}</td>
-   <td class="num ${Math.abs(x.t)>=1.96?cls(x.t):"mut"}">${x.t}</td>
-   <td>${vered}</td></tr>`}).join("");
-
- const ds=(d.daily_series||[]).slice().reverse();
- document.getElementById("daye").style.display=ds.length?"none":"block";
- document.getElementById("dayb").innerHTML=ds.map(x=>{const v=+x.pnl||+x.total||0;
-  return `<tr><td>${x.date||x.dia}</td><td class="num">${num(x.trades)}</td>
-   <td class="num">${x.wins??"—"}</td><td class="num ${cls(v)}">${brl(v)}</td></tr>`}).join("");
-
- document.getElementById("foot").innerHTML=
-  `<b>7 módulos · 1 EA · magic 881902 · ${py.simbolo||"WINV26"}.</b>
-   VolBreak, VWAP e ORB são nativos em MQL5; T01, T11, V02 e o momentum intradiário chegam por
-   <code>win_sinais.json</code>. Cada módulo vive na linguagem onde foi validado — nada foi re-portado.<br>
-   <b>A EA é a guardiã:</b> stop, alvo, zeragem às 17:40 e o tamanho de cada perna não dependem do Python.
-   Se a ponte cair ou cegar, ela congela entradas novas em 3 min e segue gerindo o que está aberto.<br>
-   <b>Conta netting:</b> existe UMA posição no símbolo. As pernas acima são reconstruídas do histórico
-   de negócios — por isso a soma delas difere do número da corretora, que usa preço médio.<br>
-   Entradas até 16:00 · zeragem 17:40 · 1 contrato por perna · conta demo B3 · atualiza a cada 3 min.`;
+function idadeTexto(s,label,semTexto){
+  if(s===null||s===undefined) return label+" "+semTexto;
+  return label+" "+fmtDur(s);
 }
-function carrega(){fetch("data_win.json?t="+Date.now()).then(r=>r.json()).then(render)
- .catch(e=>document.getElementById("sub").textContent="falha ao carregar data_win.json: "+e)}
-carrega();setInterval(carrega,60000);
-</script></body></html>
+
+function renderVeredito(d, est){
+  const c=ESTADO_CLASSE[est.estado];
+  document.body.className="is-"+c;
+  document.getElementById("veredito").className="est-"+c;
+  const idades=[
+    idadeTexto(est.idadePubS,"publicado há","desconhecida"),
+    idadeTexto(est.idadeEaS,"· EA","sem heartbeat"),
+    idadeTexto(est.idadePythonS,"· python","sem heartbeat")
+  ].join(" ");
+  const cs=est.causas.slice(0,2).map(x=>`<span class="causa">${esc(x)}</span>`).join("");
+  const extra=est.causas.length-2;
+  document.getElementById("veredito-visual").innerHTML=`<div class="v-top"><span class="marker mk-${c}" aria-hidden="true"></span>
+    <span class="v-word c-${c}">${ESTADO_LABEL[est.estado]}</span></div>
+    <div class="v-idades">${idades}</div>
+    <div class="v-causas">${cs}${extra>0?`<span class="causa-extra">+${extra}</span>`:""}</div>`;
+
+  const mensagem = ESTADO_LABEL[est.estado]+(est.causas.length?": "+est.causas.join("; "):"")+". "+idades;
+
+  // role="status" e role="alert" nunca coexistem no mesmo no, e o role="alert"
+  // nunca e obtido mutando o atributo de um no que ja existia na arvore --
+  // Safari/VoiceOver no celular (o caso de uso principal) costuma ignorar essa
+  // mutacao. O no de alerta nasce quando o estado entra em FALHA e morre
+  // quando sai; a cada pintura em FALHA ele e destruido e recriado, entao a
+  // leitura nunca depende de deteccao de mutacao de atributo ou de texto.
+  const slot=document.getElementById("veredito-alert-slot");
+  const statusEl=document.getElementById("veredito-status");
+  slot.innerHTML="";
+  if(est.estado==="FALHA"){
+    statusEl.textContent="";
+    const alertEl=document.createElement("div");
+    alertEl.setAttribute("role","alert");
+    alertEl.className="sr-only";
+    alertEl.textContent=mensagem;
+    slot.appendChild(alertEl);
+  } else {
+    statusEl.textContent=mensagem;
+  }
+
+  document.title = est.estado==="FALHA" ? "⚠ FALHA · WIN" : "Portfólio WIN Híbrido";
+  document.getElementById("favicon").href = est.estado==="FALHA"
+    ? "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23f85149'/%3E%3C/svg%3E"
+    : "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%233fb950'/%3E%3C/svg%3E";
+}
+
+function renderCards(d){
+  const t=d.today||{}, c=d.cumulative||{}, op=d.open_positions||[];
+  const aberto=op.reduce((a,x)=>a+(+x.pnl||0),0);
+  document.getElementById("cards").innerHTML=[
+    ["Resultado hoje",brl(t.total),cls(t.total),true],
+    ["Em aberto",brl(aberto),cls(aberto),false],
+    ["Exposição",brl(t.exposure),"mut",false],
+  ].map(([k,v,cl,big])=>`<div class="card${big?" big":""}"><div class="k">${k}</div>
+    <div class="v money ${cl}">${v}</div></div>`).join("");
+  document.getElementById("subline").textContent=
+    `realizado ${brl(t.realized)} · acumulado ${brl(c.pnl)} (${num(c.days)} pregão(ões))`;
+}
+
+function bloco2Data(d){
+  const rc=d.reconciliacao||{}, op=d.open_positions||[], h=d.health||{};
+  const pendentes=h.pendentes||0;
+  if(!(op.length>0 || pendentes>0)) return null;
+  const somaPernas=op.reduce((a,x)=>a+Math.abs(+x.qty||0),0);
+  let medido, reconstruido, veredito, tipo;
+  if(typeof rc.volume_corretora==="number" && typeof rc.volume_pernas==="number"){
+    medido=num(rc.volume_corretora)+" contrato(s)";
+    reconstruido=num(rc.volume_pernas)+" contrato(s)";
+    if(typeof rc.volume_ok==="boolean"){
+      veredito=rc.volume_ok?"batem":"DIVERGEM: "+num(Math.abs(rc.volume_corretora-rc.volume_pernas))+" contrato(s)";
+      tipo=rc.volume_ok?"ok":"bad";
+    } else { veredito="volume_ok ausente — não verificável"; tipo="warn"; }
+  } else {
+    medido=(typeof rc.corretora==="number")?brl(rc.corretora)+" (posição líquida, preço médio)":"indisponível (sem reconciliacao.volume_corretora)";
+    reconstruido=num(somaPernas)+" contrato(s) reconstruído(s) do histórico";
+    veredito="não verificável (campos de volume ausentes neste JSON)";
+    tipo="warn";
+  }
+  return {medido,reconstruido,veredito,tipo,pendentes,pendDet:d.pendentes_detalhe};
+}
+
+function renderBloco2(d){
+  const b=bloco2Data(d);
+  const sec=document.getElementById("bloco2");
+  if(!b){ sec.hidden=true; return; }
+  sec.hidden=false;
+  let pend="";
+  if(b.pendentes>0){
+    if(Array.isArray(b.pendDet) && b.pendDet.length){
+      pend=`<div class="pend-list">${b.pendDet.map(p=>
+        `<div class="pend-item">#${esc(p.ticket)} · ${esc(p.tipo)} · ${num(p.volume)} @ ${num(p.preco)} · ${esc(p.comment)} · ${hora(p.hora)}</div>`).join("")}</div>`;
+    } else {
+      pend=`<div class="pend-list"><div class="pend-item">${b.pendentes} pendente(s) — detalhe indisponível (campo pendentes_detalhe ausente)</div></div>`;
+    }
+  }
+  document.getElementById("exp").innerHTML=
+    `<div class="exp-row"><span class="exp-lbl">Medido (corretora)</span><span class="money">${b.medido}</span></div>
+     <div class="exp-row"><span class="exp-lbl">Reconstruído (histórico)</span><span class="money">${b.reconstruido}</span></div>
+     <div class="exp-ver ${b.tipo}">${b.veredito}</div>${pend}`;
+}
+
+function renderModulos(d, est){
+  const op=d.open_positions||[], tr=d.trades||[], st=d.stats_modulo||[];
+  const agg={}; MODULOS.forEach(m=>agg[m.k]={n:0,ab:0,nf:0,rz:0});
+  op.forEach(p=>{const k=canon(p.strategy_label||p.label); if(agg[k]){agg[k].n++;agg[k].ab+=(+p.pnl||0)}});
+  tr.forEach(x=>{const k=canon(x.strategy_label||x.label||x.modulo); if(agg[k]){agg[k].nf++;agg[k].rz+=(+x.pnl||+x.resultado||0)}});
+  const statByK={};
+  st.forEach(x=>{ const m=MODULOS.find(m=>m.id===String(x.modulo||"").toLowerCase()); if(m) statByK[m.k]=x; });
+  const ctx={eaSemEA:est.eaSemEA, pyCongelado:est.pyCongelado};
+
+  const rows=MODULOS.map(m=>{
+    const a=agg[m.k], estMod=estadoModulo(m,a,ctx);
+    const tagCls=estMod==="posicionado"?"on":estMod==="SEM EA"?"bad":estMod==="CONGELADO"?"warn":"off";
+    const s=statByK[m.k];
+    let ev="—";
+    if(s){
+      const concl=s.conclusivo, sinal=(+s.media||0)>0;
+      const v=!concl?"insuficiente":sinal?"vantagem":"desvantagem";
+      ev=`${num(s.n)} · ${v}`;
+    }
+    return {m,a,estMod,tagCls,ev};
+  });
+
+  document.getElementById("modsb").innerHTML=rows.map(({m,a,estMod,tagCls,ev})=>
+    `<tr><td>${esc(m.k.replace(/_/g," "))} <span class="tag ${m.org==="python"?"py":""}">${m.org}</span></td>
+     <td><span class="tag ${tagCls}">${estMod}</span></td>
+     <td class="num money ${a.n?cls(a.ab):"mut"}">${a.n?num(a.n)+" · "+brl(a.ab):"—"}</td>
+     <td class="num money ${a.nf?cls(a.rz):"mut"}">${a.nf?num(a.nf)+" · "+brl(a.rz):"—"}</td>
+     <td>${ev}</td></tr>`).join("");
+
+  document.getElementById("modscard").innerHTML=rows.map(({m,a,estMod,tagCls,ev})=>
+    `<div class="modcard"><div class="row"><b>${esc(m.k.replace(/_/g," "))}</b><span class="tag ${tagCls}">${estMod}</span></div>
+     <div class="row"><span>Aberto</span><span class="money ${a.n?cls(a.ab):"mut"}">${a.n?num(a.n)+" · "+brl(a.ab):"—"}</span></div>
+     <div class="row"><span>Hoje</span><span class="money ${a.nf?cls(a.rz):"mut"}">${a.nf?num(a.nf)+" · "+brl(a.rz):"—"}</span></div>
+     <div class="row"><span>Evidência</span><span>${ev}</span></div></div>`).join("");
+
+  const stt=d.stats_modulo||[];
+  document.getElementById("state").style.display=stt.length?"none":"block";
+  document.getElementById("statb").innerHTML=stt.map(x=>{
+    const concl=x.conclusivo, sinal=(+x.media||0)>0;
+    const vered=!concl?`<span class="tag off">amostra insuficiente</span>`
+      :sinal?`<span class="tag on">vantagem</span>`:`<span class="tag warn">desvantagem</span>`;
+    return `<tr><td>${esc(String(x.modulo).replace(/_/g," "))}</td>
+     <td class="num">${num(x.n)}</td><td class="num">${num(x.acertos)}</td>
+     <td class="num ${cls(x.soma)}">${brl(x.soma)}</td>
+     <td class="num ${cls(x.media)}">${brl(x.media)}</td>
+     <td class="num mut">${brl(x.ic_baixo)} a ${brl(x.ic_alto)}</td>
+     <td class="num ${Math.abs(x.t)>=1.96?cls(x.t):"mut"}">${x.t}</td>
+     <td>${vered}</td></tr>`}).join("");
+}
+
+function renderTimeline(d){
+  const ev=d.eventos_hoje;
+  const wrap=document.getElementById("timeline"), empty=document.getElementById("timelinee");
+  if(Array.isArray(ev)){
+    if(!ev.length){ wrap.innerHTML=""; empty.style.display="block"; empty.textContent="nenhum evento ainda hoje"; return; }
+    empty.style.display="none";
+    wrap.innerHTML=ev.map(e=>`<li><span class="h">${hora(e.hora)}</span>
+      <span class="tp tp-${esc(e.tipo)}">${esc(e.tipo)}</span>
+      <span>${esc(e.modulo||"")} ${esc(e.texto||"")}</span></li>`).join("");
+  } else {
+    wrap.innerHTML="";
+    empty.style.display="block";
+    const h=d.health||{};
+    empty.textContent = h.last_error_msg
+      ? "linha do tempo indisponível nesta versão do JSON (eventos_hoje ausente) — último erro do log: "+h.last_error_msg
+      : "linha do tempo indisponível nesta versão do JSON (campo eventos_hoje ausente)";
+  }
+}
+
+function renderHistorico(d){
+  const ds=(d.daily_series||[]).slice().reverse();
+  document.getElementById("daye").style.display=ds.length?"none":"block";
+  document.getElementById("dayb").innerHTML=ds.map(x=>{const v=+x.pnl||+x.total||0;
+    return `<tr><td>${esc(x.date||x.dia)}</td><td class="num">${num(x.trades)}</td>
+     <td class="num">${x.wins??"—"}</td><td class="num ${cls(v)}">${brl(v)}</td></tr>`}).join("");
+  document.getElementById("foot").innerHTML=
+    `<b>7 módulos · 1 EA · magic 881902.</b>
+     VolBreak, VWAP e ORB são nativos em MQL5; T01, T11, V02 e o momentum intradiário chegam por
+     <code>win_sinais.json</code>. Cada módulo vive na linguagem onde foi validado.<br>
+     <b>A EA é a guardiã:</b> stop, alvo, zeragem às 17:40 e o tamanho de cada perna não dependem do Python.<br>
+     <b>Conta netting:</b> existe UMA posição no símbolo. As pernas do bloco de módulos são reconstruídas do
+     histórico de negócios; só o bloco "Exposição agora" mostra o número medido pela corretora.<br>
+     Entradas até 16:00 · zeragem 17:40 · conta demo B3 · publicação a cada 3 min, idade recalculada no navegador.`;
+}
+
+function render(d, nowMs){
+  const est=avaliarEstado(d, nowMs, fetchFails);
+  renderVeredito(d||{}, est);
+  if(!d) return;
+  renderCards(d);
+  renderBloco2(d);
+  renderModulos(d, est);
+  renderTimeline(d);
+  renderHistorico(d);
+}
+
+function carrega(){
+  fetch("data_win.json?t="+Date.now()).then(r=>{
+    if(!r.ok) throw new Error("http "+r.status);
+    return r.json();
+  }).then(json=>{ fetchFails=0; lastData=json; render(lastData, Date.now()); })
+  .catch(()=>{ fetchFails++; render(lastData, Date.now()); });
+}
+
+carrega();
+setInterval(carrega,60000);
+setInterval(()=>render(lastData, Date.now()),1000);
+</script>
+</body></html>
