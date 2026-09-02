@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-02T17:24:11-03:00",
+  "updated_at": "2026-09-02T17:27:10-03:00",
   "start_date": null,
   "health": {
     "errors_today": 4,
-    "last_ea_event": "2026-09-02T17:01:17-03:00",
+    "last_ea_event": "2026-09-02T17:25:05-03:00",
     "last_error_msg": "IG\t0\t20:00:00.040\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 183415.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788380596,
+    "ea_heartbeat_epoch": 1788380776,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187940.0,
+        "bid": 187980.0,
         "ok": true
       },
       {
@@ -305,6 +305,12 @@
       "tipo": "entrada",
       "modulo": "Momentum intradiario",
       "texto": "[PY] EXECUTADO IM-20260902 | intramom long 1 a mercado | stop 181676 alvo 204152"
+    },
+    {
+      "hora": "2026-09-02T17:25:05-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.01 17:55 -> corte de HOJE (-15min): 2026.09.02 17:40"
     }
   ],
   "today": {
@@ -314,7 +320,7 @@
     "total": -5336.0,
     "trades": 2,
     "wins": 0,
-    "exposure": 300704.0,
+    "exposure": 300768.0,
     "open_legs": 8,
     "broker_realized": -393.0
   },
@@ -353,9 +359,9 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-02T17:23:44",
-    "heartbeat_epoch": 1788380624,
-    "idade_s": 28,
+    "heartbeat": "2026-09-02T17:26:44",
+    "heartbeat_epoch": 1788380804,
+    "idade_s": 26,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -369,9 +375,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187940.0,
-      "pnl": -1575.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": -1583.0,
+      "notional": 37596.0,
       "strategy": "g084a",
       "strategy_label": "t01_barra_reversao_g084a"
     },
@@ -382,9 +388,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187940.0,
-      "pnl": -1575.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": -1583.0,
+      "notional": 37596.0,
       "strategy": "g085a",
       "strategy_label": "t01_barra_reversao_g085a"
     },
@@ -395,9 +401,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187940.0,
-      "pnl": -1575.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": -1583.0,
+      "notional": 37596.0,
       "strategy": "g086a",
       "strategy_label": "t01_barra_reversao_g086a"
     },
@@ -408,9 +414,9 @@
       "entry_price": 180065.0,
       "qty": 1.0,
       "entry_time": "2026-08-31T17:40:01",
-      "current_price": 187940.0,
-      "pnl": -1575.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": -1583.0,
+      "notional": 37596.0,
       "strategy": "g087a",
       "strategy_label": "t01_barra_reversao_g087a"
     },
@@ -421,9 +427,9 @@
       "entry_price": 183615.0,
       "qty": 1.0,
       "entry_time": "2026-09-01T11:35:37",
-      "current_price": 187940.0,
-      "pnl": 865.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": 873.0,
+      "notional": 37596.0,
       "strategy": "ORB",
       "strategy_label": "ORB"
     },
@@ -434,9 +440,9 @@
       "entry_price": 185875.0,
       "qty": 1.0,
       "entry_time": "2026-09-02T10:50:37",
-      "current_price": 187940.0,
-      "pnl": 413.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": 421.0,
+      "notional": 37596.0,
       "strategy": "VB",
       "strategy_label": "VolBreak"
     },
@@ -447,9 +453,9 @@
       "entry_price": 187705.0,
       "qty": 1.0,
       "entry_time": "2026-09-02T15:57:14",
-      "current_price": 187940.0,
-      "pnl": 47.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": 55.0,
+      "notional": 37596.0,
       "strategy": "VW",
       "strategy_label": "VWAP"
     },
@@ -460,9 +466,9 @@
       "entry_price": 187780.0,
       "qty": 1.0,
       "entry_time": "2026-09-02T17:01:17",
-      "current_price": 187940.0,
-      "pnl": 32.0,
-      "notional": 37588.0,
+      "current_price": 187980.0,
+      "pnl": 40.0,
+      "notional": 37596.0,
       "strategy": "intramom",
       "strategy_label": "Momentum intradiario"
     }
