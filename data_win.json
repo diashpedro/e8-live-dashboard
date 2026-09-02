@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-02T09:00:20-03:00",
+  "updated_at": "2026-09-02T09:03:10-03:00",
   "start_date": null,
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-09-02T07:00:03-03:00",
+    "last_ea_event": "2026-09-02T09:00:01-03:00",
     "last_error_msg": "ON\t0\t10:00:03.309\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] falha ao zerar residuo de 1: invalid price",
-    "ea_heartbeat_epoch": 1788350390,
+    "ea_heartbeat_epoch": 1788350570,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -59,6 +59,18 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ERRO] falha ao zerar residuo de 1: invalid price"
+    },
+    {
+      "hora": "2026-09-02T09:00:01-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] posicao orfa de 1 zerada em WINV26"
+    },
+    {
+      "hora": "2026-09-02T09:00:01-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
     }
   ],
   "today": {
@@ -109,7 +121,7 @@
     "presente": true,
     "heartbeat": "2026-09-01T12:07:32",
     "heartbeat_epoch": 1788275252,
-    "idade_s": 75168,
+    "idade_s": 75338,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 6,
