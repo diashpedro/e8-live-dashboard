@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-02T18:57:07-03:00",
+  "updated_at": "2026-09-02T19:40:27-03:00",
   "start_date": null,
   "health": {
     "errors_today": 4,
     "last_ea_event": "2026-09-02T17:45:35-03:00",
     "last_error_msg": "IG\t0\t20:00:00.040\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 183415.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788386176,
+    "ea_heartbeat_epoch": 1788388756,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187900.0,
-        "ok": true
+        "bid": 0,
+        "ok": false
       },
       {
         "symbol": "WINQ26",
@@ -327,30 +327,30 @@
   ],
   "today": {
     "date": "2026-09-02",
-    "realized": -393.0,
-    "unrealized": -4967.0,
-    "total": -5360.0,
-    "trades": 2,
-    "wins": 0,
-    "exposure": 263060.0,
-    "open_legs": 7,
+    "realized": -358.0,
+    "unrealized": 0,
+    "total": -358.0,
+    "trades": 3,
+    "wins": 1,
+    "exposure": 0,
+    "open_legs": 0,
     "broker_realized": -358.0
   },
   "reconciliacao": {
-    "painel": -393.0,
+    "painel": -358.0,
     "corretora": -358.0,
-    "divergencia": -35.0,
+    "divergencia": 0.0,
     "tolerancia": 7.16,
-    "comparavel": false,
-    "ok": null,
+    "comparavel": true,
+    "ok": true,
     "volume_corretora": 0,
-    "volume_pernas": -1.0,
-    "volume_ok": false
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -520.0,
-    "trades": 3,
-    "wins": 0,
+    "pnl": -485.0,
+    "trades": 4,
+    "wins": 1,
     "since": "2026-09-01",
     "days": 2,
     "days_positive": 0,
@@ -363,115 +363,23 @@
     },
     "worst_day": {
       "date": "2026-09-02",
-      "pnl": -393.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -520.0
+      "pnl": -358.0,
+      "trades": 3,
+      "wins": 1,
+      "cum": -485.0
     }
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-02T18:56:49",
-    "heartbeat_epoch": 1788386209,
-    "idade_s": 18,
+    "heartbeat": "2026-09-02T19:40:21",
+    "heartbeat_epoch": 1788388821,
+    "idade_s": 6,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": false
   },
-  "open_positions": [
-    {
-      "modulo": "g084a",
-      "label": "t01_barra_reversao_g084a",
-      "side": "SHORT",
-      "entry_price": 180065.0,
-      "qty": 1.0,
-      "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187900.0,
-      "pnl": -1567.0,
-      "notional": 37580.0,
-      "strategy": "g084a",
-      "strategy_label": "t01_barra_reversao_g084a"
-    },
-    {
-      "modulo": "g085a",
-      "label": "t01_barra_reversao_g085a",
-      "side": "SHORT",
-      "entry_price": 180065.0,
-      "qty": 1.0,
-      "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187900.0,
-      "pnl": -1567.0,
-      "notional": 37580.0,
-      "strategy": "g085a",
-      "strategy_label": "t01_barra_reversao_g085a"
-    },
-    {
-      "modulo": "g086a",
-      "label": "t01_barra_reversao_g086a",
-      "side": "SHORT",
-      "entry_price": 180065.0,
-      "qty": 1.0,
-      "entry_time": "2026-08-31T17:40:00",
-      "current_price": 187900.0,
-      "pnl": -1567.0,
-      "notional": 37580.0,
-      "strategy": "g086a",
-      "strategy_label": "t01_barra_reversao_g086a"
-    },
-    {
-      "modulo": "g087a",
-      "label": "t01_barra_reversao_g087a",
-      "side": "SHORT",
-      "entry_price": 180065.0,
-      "qty": 1.0,
-      "entry_time": "2026-08-31T17:40:01",
-      "current_price": 187900.0,
-      "pnl": -1567.0,
-      "notional": 37580.0,
-      "strategy": "g087a",
-      "strategy_label": "t01_barra_reversao_g087a"
-    },
-    {
-      "modulo": "ORB",
-      "label": "ORB",
-      "side": "LONG",
-      "entry_price": 183615.0,
-      "qty": 1.0,
-      "entry_time": "2026-09-01T11:35:37",
-      "current_price": 187900.0,
-      "pnl": 857.0,
-      "notional": 37580.0,
-      "strategy": "ORB",
-      "strategy_label": "ORB"
-    },
-    {
-      "modulo": "VB",
-      "label": "VolBreak",
-      "side": "LONG",
-      "entry_price": 185875.0,
-      "qty": 1.0,
-      "entry_time": "2026-09-02T10:50:37",
-      "current_price": 187900.0,
-      "pnl": 405.0,
-      "notional": 37580.0,
-      "strategy": "VB",
-      "strategy_label": "VolBreak"
-    },
-    {
-      "modulo": "VW",
-      "label": "VWAP",
-      "side": "LONG",
-      "entry_price": 187705.0,
-      "qty": 1.0,
-      "entry_time": "2026-09-02T15:57:14",
-      "current_price": 187900.0,
-      "pnl": 39.0,
-      "notional": 37580.0,
-      "strategy": "VW",
-      "strategy_label": "VWAP"
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
@@ -544,13 +452,29 @@
     },
     {
       "date": "2026-09-02",
-      "pnl": -393.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -520.0
+      "pnl": -358.0,
+      "trades": 3,
+      "wins": 1,
+      "cum": -485.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "LONG",
+      "entry_time": "2026-09-02T17:01:17-03:00",
+      "exit_time": "2026-09-02T17:40:00-03:00",
+      "entry_price": 187780.0,
+      "exit_price": 187955.0,
+      "qty": 1.0,
+      "pnl": 35.0,
+      "pnl_bruto": 35.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 38.7
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -602,6 +526,12 @@
   ],
   "by_strategy": [
     {
+      "strategy": "Momentum intradiario",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 35.0
+    },
+    {
       "strategy": "VWAP",
       "trades": 2,
       "wins": 0,
@@ -617,12 +547,18 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 3,
-      "wins": 0,
-      "pnl": -520.0
+      "trades": 4,
+      "wins": 1,
+      "pnl": -485.0
     }
   ],
   "by_reason": [
+    {
+      "reason": "Fim do pregao",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 35.0
+    },
     {
       "reason": "Stop",
       "trades": 2,
