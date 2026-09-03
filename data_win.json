@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T11:12:09-03:00",
+  "updated_at": "2026-09-03T11:15:10-03:00",
   "start_date": null,
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-09-03T11:11:33-03:00",
+    "last_ea_event": "2026-09-03T11:14:37-03:00",
     "last_error_msg": "CR\t0\t13:30:00.028\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 190845.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788444664,
+    "ea_heartbeat_epoch": 1788444844,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189660.0,
+        "bid": 189480.0,
         "ok": true
       },
       {
@@ -20,18 +20,9 @@
         "ok": false
       }
     ],
-    "pendentes": 1
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2519161242,
-      "tipo": "sell_stop",
-      "preco": 189315.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-09-03T10:30:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-03T10:00:26-03:00",
@@ -12482,16 +12473,3334 @@
       "tipo": "rejeicao",
       "modulo": "Python (gaveta)",
       "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:52-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-03T11:11:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:11:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:12:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:38-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:39-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:40-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:41-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:42-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:43-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:44-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:45-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:46-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:47-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:48-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:49-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:50-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:51-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:52-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:53-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:54-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:55-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:56-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:57-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:58-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:13:59-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:00-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:01-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:02-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:03-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:04-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:05-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:06-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:07-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:08-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:09-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:10-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:11-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:12-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:13-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:14-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:15-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:16-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:17-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:18-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:19-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:20-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:21-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:22-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:23-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:24-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:25-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:26-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:27-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:28-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:29-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:30-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:31-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:32-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:33-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:34-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:35-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:36-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-083a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-085a recusado: posicao divergente da memoria da EA"
+    },
+    {
+      "hora": "2026-09-03T11:14:37-03:00",
+      "tipo": "rejeicao",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] BRK-20260903-087a recusado: posicao divergente da memoria da EA"
     }
   ],
   "today": {
     "date": "2026-09-03",
     "realized": -264.0,
-    "unrealized": -22.0,
-    "total": -286.0,
+    "unrealized": -25.0,
+    "total": -289.0,
     "trades": 2,
     "wins": 0,
-    "exposure": 37932.0,
+    "exposure": 75798.0,
     "open_legs": 1,
     "broker_realized": -472.0
   },
@@ -12502,8 +15811,8 @@
     "tolerancia": 9.44,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": 2.0,
+    "volume_corretora": -2.0,
+    "volume_pernas": -1.0,
     "volume_ok": false
   },
   "cumulative": {
@@ -12530,9 +15839,9 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T11:11:41",
-    "heartbeat_epoch": 1788444701,
-    "idade_s": 28,
+    "heartbeat": "2026-09-03T11:14:41",
+    "heartbeat_epoch": 1788444881,
+    "idade_s": 30,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 6,
@@ -12541,33 +15850,18 @@
   "open_positions": [
     {
       "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "LONG",
-      "entry_time": "2026-09-01T10:35:05-03:00",
-      "entry_price": 182455.0,
-      "current_price": 189660.0,
-      "qty": 2.0,
-      "notional": 75864.0,
-      "pnl": 2882.0,
-      "pnl_liq_est": 2847.77,
-      "pnl_pct": 3.949,
-      "minutos": 2917.1
-    },
-    {
-      "symbol": "WINV26",
       "strategy": "VB",
       "strategy_label": "VolBreak",
       "side": "LONG",
       "entry_time": "2026-09-03T10:02:51-03:00",
       "entry_price": 191120.0,
-      "current_price": 189660.0,
+      "current_price": 189480.0,
       "qty": 1.0,
-      "notional": 37932.0,
-      "pnl": -292.0,
-      "pnl_liq_est": -309.52,
-      "pnl_pct": -0.764,
-      "minutos": 69.3
+      "notional": 37896.0,
+      "pnl": -328.0,
+      "pnl_liq_est": -345.51,
+      "pnl_pct": -0.858,
+      "minutos": 72.3
     },
     {
       "symbol": "WINV26",
@@ -12576,13 +15870,28 @@
       "side": "SHORT",
       "entry_time": "2026-09-03T11:11:10-03:00",
       "entry_price": 189550.0,
-      "current_price": 189660.0,
+      "current_price": 189480.0,
       "qty": 1.0,
-      "notional": 37932.0,
-      "pnl": -22.0,
-      "pnl_liq_est": -39.44,
-      "pnl_pct": -0.058,
-      "minutos": 1.0
+      "notional": 37896.0,
+      "pnl": 14.0,
+      "pnl_liq_est": -3.44,
+      "pnl_pct": 0.037,
+      "minutos": 4.0
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "SHORT",
+      "entry_time": "2026-09-03T11:14:43-03:00",
+      "entry_price": 189315.0,
+      "current_price": 189480.0,
+      "qty": 1.0,
+      "notional": 37896.0,
+      "pnl": -33.0,
+      "pnl_liq_est": -50.42,
+      "pnl_pct": -0.087,
+      "minutos": 0.5
     }
   ],
   "stats_modulo": [
