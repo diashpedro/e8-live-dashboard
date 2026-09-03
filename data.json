@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-09-03T16:27:05-03:00",
+  "updated_at": "2026-09-03T16:30:09-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 4,
-    "last_ea_event": "2026-09-03T16:26:00-03:00",
+    "last_ea_event": "2026-09-03T16:29:00-03:00",
     "last_error_msg": "NK\t0\t16:30:00.056\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 189315.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 47.68,
+        "bid": 47.7,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 77.81,
+        "bid": 77.95,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 41.9,
+        "bid": 41.94,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.77,
+        "bid": 15.8,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 34.87,
+        "bid": 34.89,
         "ok": true
       }
     ],
@@ -38,18 +38,18 @@
   },
   "account": {
     "balance": 985163.62,
-    "equity": 985182.95,
+    "equity": 985221.95,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-09-03",
     "realized": 12.0,
-    "unrealized": 12.0,
-    "total": 24.0,
+    "unrealized": 14.0,
+    "total": 26.0,
     "trades": 2,
     "wins": 2,
-    "exposure": 4768.0,
+    "exposure": 4770.0,
     "open_legs": 1,
     "broker_realized": 14.66
   },
@@ -94,13 +94,13 @@
       "side": "LONG",
       "entry_time": "2026-09-03T14:40:15-03:00",
       "entry_price": 47.56,
-      "current_price": 47.68,
+      "current_price": 47.7,
       "qty": 100.0,
-      "notional": 4768.0,
-      "pnl": 12.0,
-      "pnl_liq_est": 9.81,
-      "pnl_pct": 0.252,
-      "minutos": 106.8
+      "notional": 4770.0,
+      "pnl": 14.0,
+      "pnl_liq_est": 11.81,
+      "pnl_pct": 0.294,
+      "minutos": 109.9
     }
   ],
   "daily_series": [
