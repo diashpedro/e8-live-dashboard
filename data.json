@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-09-03T14:54:05-03:00",
+  "updated_at": "2026-09-03T14:57:05-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 4,
-    "last_ea_event": "2026-09-03T14:53:00-03:00",
+    "last_ea_event": "2026-09-03T14:56:00-03:00",
     "last_error_msg": "NK\t0\t16:30:00.056\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 189315.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 47.49,
+        "bid": 47.52,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 78.42,
+        "bid": 78.33,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 41.78,
+        "bid": 41.8,
         "ok": true
       },
       {
@@ -30,7 +30,7 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 34.82,
+        "bid": 34.84,
         "ok": true
       }
     ],
@@ -38,18 +38,18 @@
   },
   "account": {
     "balance": 985148.96,
-    "equity": 985086.96,
+    "equity": 985095.96,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-09-03",
     "realized": 0,
-    "unrealized": -29.0,
-    "total": -29.0,
+    "unrealized": -20.0,
+    "total": -20.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 14247.0,
+    "exposure": 14256.0,
     "open_legs": 3,
     "broker_realized": 0.0
   },
@@ -94,13 +94,13 @@
       "side": "LONG",
       "entry_time": "2026-09-03T14:37:02-03:00",
       "entry_price": 47.61,
-      "current_price": 47.49,
+      "current_price": 47.52,
       "qty": 100.0,
-      "notional": 4749.0,
-      "pnl": -12.0,
-      "pnl_liq_est": -14.19,
-      "pnl_pct": -0.252,
-      "minutos": 17.1
+      "notional": 4752.0,
+      "pnl": -9.0,
+      "pnl_liq_est": -11.19,
+      "pnl_pct": -0.189,
+      "minutos": 20.1
     },
     {
       "symbol": "PETR4",
@@ -109,13 +109,13 @@
       "side": "LONG",
       "entry_time": "2026-09-03T14:40:02-03:00",
       "entry_price": 47.59,
-      "current_price": 47.49,
+      "current_price": 47.52,
       "qty": 100.0,
-      "notional": 4749.0,
-      "pnl": -10.0,
-      "pnl_liq_est": -12.19,
-      "pnl_pct": -0.21,
-      "minutos": 14.1
+      "notional": 4752.0,
+      "pnl": -7.0,
+      "pnl_liq_est": -9.19,
+      "pnl_pct": -0.147,
+      "minutos": 17.1
     },
     {
       "symbol": "PETR4",
@@ -124,13 +124,13 @@
       "side": "LONG",
       "entry_time": "2026-09-03T14:40:15-03:00",
       "entry_price": 47.56,
-      "current_price": 47.49,
+      "current_price": 47.52,
       "qty": 100.0,
-      "notional": 4749.0,
-      "pnl": -7.0,
-      "pnl_liq_est": -9.19,
-      "pnl_pct": -0.147,
-      "minutos": 13.8
+      "notional": 4752.0,
+      "pnl": -4.0,
+      "pnl_liq_est": -6.19,
+      "pnl_pct": -0.084,
+      "minutos": 16.8
     }
   ],
   "daily_series": [
