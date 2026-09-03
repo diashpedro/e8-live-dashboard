@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-03T20:02:36-03:00",
+  "updated_at": "2026-09-03T20:03:50-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 5,
     "last_ea_event": "2026-09-03T19:52:44-03:00",
     "last_error_msg": "LM\t0\t22:41:55.596\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] fechar COMPRA vol=1 (WEA_VB_close_eod): invalid price",
-    "ea_heartbeat_epoch": 1788476505,
+    "ea_heartbeat_epoch": 1788476565,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -129939,275 +129939,51 @@
   ],
   "today": {
     "date": "2026-09-03",
-    "realized": -264.0,
+    "realized": 0,
     "unrealized": 0,
-    "total": -264.0,
-    "trades": 2,
+    "total": 0,
+    "trades": 0,
     "wins": 0,
     "exposure": 0,
     "open_legs": 0,
     "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -264.0,
+    "painel": 0,
     "corretora": 0,
-    "divergencia": -264.0,
+    "divergencia": 0,
     "tolerancia": 1.0,
     "comparavel": true,
-    "ok": false,
+    "ok": true,
     "volume_corretora": 0,
     "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -229.0,
-    "trades": 3,
-    "wins": 1,
-    "since": "2026-09-02",
-    "days": 2,
-    "days_positive": 1,
-    "best_day": {
-      "date": "2026-09-02",
-      "pnl": 35.0,
-      "trades": 1,
-      "wins": 1,
-      "cum": 35.0
-    },
-    "worst_day": {
-      "date": "2026-09-03",
-      "pnl": -264.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -229.0
-    }
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "since": null,
+    "days": 0,
+    "days_positive": 0,
+    "best_day": null,
+    "worst_day": null
   },
   "python": {
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1305,
+    "idade_s": 1379,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
   "open_positions": [],
-  "stats_modulo": [
-    {
-      "modulo": "ORB",
-      "n": 1,
-      "soma": -104.0,
-      "media": -104.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -104.0,
-      "ic_alto": -104.0,
-      "acertos": 0,
-      "conclusivo": false
-    },
-    {
-      "modulo": "T01_barra_reversao",
-      "n": 1,
-      "soma": -208.0,
-      "media": -208.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -208.0,
-      "ic_alto": -208.0,
-      "acertos": 0,
-      "conclusivo": false
-    },
-    {
-      "modulo": "T11_climax",
-      "n": 1,
-      "soma": -74.5,
-      "media": -74.5,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -74.5,
-      "ic_alto": -74.5,
-      "acertos": 0,
-      "conclusivo": false
-    },
-    {
-      "modulo": "VWAP",
-      "n": 3,
-      "soma": -330.0,
-      "media": -110.0,
-      "ep": 94.18,
-      "t": -1.17,
-      "ic_baixo": -294.58,
-      "ic_alto": 74.58,
-      "acertos": 1,
-      "conclusivo": false
-    },
-    {
-      "modulo": "VolBreak",
-      "n": 1,
-      "soma": -1.0,
-      "media": -1.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -1.0,
-      "ic_alto": -1.0,
-      "acertos": 0,
-      "conclusivo": false
-    },
-    {
-      "modulo": "intramom",
-      "n": 1,
-      "soma": 35.0,
-      "media": 35.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": 35.0,
-      "ic_alto": 35.0,
-      "acertos": 1,
-      "conclusivo": false
-    },
-    {
-      "modulo": "t01_barra_reversao_g082a",
-      "n": 1,
-      "soma": -51.0,
-      "media": -51.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -51.0,
-      "ic_alto": -51.0,
-      "acertos": 0,
-      "conclusivo": false
-    },
-    {
-      "modulo": "t01_barra_reversao_g084a",
-      "n": 1,
-      "soma": -132.0,
-      "media": -132.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -132.0,
-      "ic_alto": -132.0,
-      "acertos": 0,
-      "conclusivo": false
-    },
-    {
-      "modulo": "t01_barra_reversao_g086a",
-      "n": 1,
-      "soma": -132.0,
-      "media": -132.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -132.0,
-      "ic_alto": -132.0,
-      "acertos": 0,
-      "conclusivo": false
-    }
-  ],
-  "daily_series": [
-    {
-      "date": "2026-09-02",
-      "pnl": 35.0,
-      "trades": 1,
-      "wins": 1,
-      "cum": 35.0
-    },
-    {
-      "date": "2026-09-03",
-      "pnl": -264.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -229.0
-    }
-  ],
-  "trades": [
-    {
-      "symbol": "WINV26",
-      "strategy": "g084a",
-      "strategy_label": "T01_barra_reversao · gaveta 84a",
-      "side": "SHORT",
-      "entry_time": "2026-09-03T10:16:38-03:00",
-      "exit_time": "2026-09-03T10:21:02-03:00",
-      "entry_price": 190080.0,
-      "exit_price": 190740.0,
-      "qty": 1.0,
-      "pnl": -132.0,
-      "pnl_bruto": -132.0,
-      "motivo": "stop",
-      "motivo_label": "Stop",
-      "minutos": 4.4
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g086a",
-      "strategy_label": "T01_barra_reversao · gaveta 86a",
-      "side": "SHORT",
-      "entry_time": "2026-09-03T10:16:38-03:00",
-      "exit_time": "2026-09-03T10:21:02-03:00",
-      "entry_price": 190080.0,
-      "exit_price": 190740.0,
-      "qty": 1.0,
-      "pnl": -132.0,
-      "pnl_bruto": -132.0,
-      "motivo": "stop",
-      "motivo_label": "Stop",
-      "minutos": 4.4
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "LONG",
-      "entry_time": "2026-09-02T17:01:17-03:00",
-      "exit_time": "2026-09-02T17:40:00-03:00",
-      "entry_price": 187780.0,
-      "exit_price": 187955.0,
-      "qty": 1.0,
-      "pnl": 35.0,
-      "pnl_bruto": 35.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 38.7
-    }
-  ],
-  "by_strategy": [
-    {
-      "strategy": "Momentum intradiario",
-      "trades": 1,
-      "wins": 1,
-      "pnl": 35.0
-    },
-    {
-      "strategy": "T01_barra_reversao · gaveta 84a",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -132.0
-    },
-    {
-      "strategy": "T01_barra_reversao · gaveta 86a",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -132.0
-    }
-  ],
-  "by_symbol": [
-    {
-      "symbol": "WINV26",
-      "trades": 3,
-      "wins": 1,
-      "pnl": -229.0
-    }
-  ],
-  "by_reason": [
-    {
-      "reason": "Fim do pregao",
-      "trades": 1,
-      "wins": 1,
-      "pnl": 35.0
-    },
-    {
-      "reason": "Stop",
-      "trades": 2,
-      "wins": 0,
-      "pnl": -264.0
-    }
-  ]
+  "stats_modulo": [],
+  "daily_series": [],
+  "trades": [],
+  "by_strategy": [],
+  "by_symbol": [],
+  "by_reason": []
 }
