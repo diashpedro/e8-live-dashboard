@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-09-03T10:30:10-03:00",
+  "updated_at": "2026-09-03T10:33:05-03:00",
   "start_date": "2026-07-29",
   "health": {
-    "errors_today": 0,
-    "last_ea_event": "2026-09-03T10:29:04-03:00",
-    "last_error_msg": null,
+    "errors_today": 1,
+    "last_ea_event": "2026-09-03T10:32:04-03:00",
+    "last_error_msg": "CR\t0\t13:30:00.028\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 190845.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 48.96,
+        "bid": 48.8,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 81.63,
+        "bid": 81.23,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.45,
+        "bid": 42.38,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.85,
+        "bid": 15.8,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 35.15,
+        "bid": 34.92,
         "ok": true
       }
     ],
