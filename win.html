@@ -128,10 +128,59 @@ body.stale .money.pos,body.stale .money.neg{color:var(--dim)!important}
        padding:22px;text-align:center;color:var(--dim);font-size:13.5px}
 .empty b{color:var(--tx);font-weight:600;display:block;margin-bottom:4px;font-size:14.5px}
 
-/* ---------- série diária ---------- */
-.spark{display:flex;align-items:flex-end;gap:3px;height:60px;margin:6px 0 4px}
-.spark i{flex:1;min-width:2px;background:var(--ok);border-radius:1px;opacity:.85}
-.spark i.dn{background:var(--bad)}
+/* ---------- BI: gráficos, filtro e estatísticas ---------- */
+.chartbox{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+          padding:16px 14px 10px}
+.chart{width:100%;height:250px;display:block;touch-action:manipulation}
+.chart .grid-l{stroke:var(--line);stroke-width:1}
+.chart .zero{stroke:#3a3c45;stroke-width:1;stroke-dasharray:3 3}
+.chart .eq-a{fill:url(#eqg)} .chart .eq-l{fill:none;stroke:var(--ac);stroke-width:2;
+             stroke-linejoin:round;stroke-linecap:round}
+.chart .eq-p{fill:var(--ac)}
+.chart .bar{cursor:pointer}
+.chart .bar rect.b{fill:var(--ok)} .chart .bar.dn rect.b{fill:var(--bad)}
+.chart .bar rect.hit{fill:transparent}
+.chart .bar:hover rect.b,.chart .bar:focus rect.b{fill:var(--ac)}
+.chart .bar.sel rect.b{fill:var(--ac)}
+.chart .bar.sel rect.hit,.chart .bar:focus rect.hit{fill:rgba(232,163,61,.10)}
+.chart .bar:focus{outline:none}
+.chart text{fill:var(--dim2);font-size:10px;font-family:var(--mono)}
+.chart .lbl-sel{fill:var(--ac)}
+.chart-cap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+           font-size:11px;color:var(--dim2);margin-top:2px}
+.chart-cap b{color:var(--dim);font-weight:500}
+
+.filtro{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#241d0f;border:1px solid #4d3d17;
+      color:var(--ac);border-radius:99px;padding:4px 6px 4px 13px;font-size:12.5px;font-weight:600}
+.chip button{background:#3a2f13;border:0;color:var(--ac);border-radius:99px;width:20px;height:20px;
+             cursor:pointer;font-size:14px;line-height:1;padding:0}
+.chip button:hover{background:var(--ac);color:#1a1206}
+.filtro-hint{font-size:12.5px;color:var(--dim2)}
+
+.kpis{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));margin-top:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--r2);padding:11px 13px}
+.kpi .k{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--dim2)}
+.kpi .v{font-family:var(--mono);font-size:19px;font-weight:600;margin-top:4px}
+.kpi .h{font-size:11px;color:var(--dim2);margin-top:2px}
+
+.brk{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:8px}
+.brk-c{background:var(--panel);border:1px solid var(--line);border-radius:var(--r2);padding:13px 15px}
+.brk-t{font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--dim2);margin-bottom:9px}
+.brk-r{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:13px}
+.brk-n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brk-b{flex:none;width:64px;height:5px;border-radius:99px;background:var(--panel2);overflow:hidden}
+.brk-b i{display:block;height:100%;background:var(--ok)}
+.brk-b i.dn{background:var(--bad)}
+.brk-v{flex:none;font-family:var(--mono);font-size:12.5px;width:88px;text-align:right}
+
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{text-align:left;font-size:10px;letter-spacing:1px;text-transform:uppercase;
+        color:var(--dim2);font-weight:600;padding:0 10px 8px 0;white-space:nowrap}
+.tbl td{padding:8px 10px 8px 0;border-top:1px solid var(--line);white-space:nowrap}
+.tbl td.n{font-family:var(--mono);text-align:right}
+.tbl-wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);
+          border-radius:var(--r2);padding:13px 15px;margin-top:8px}
 
 /* ---------- rodapé ---------- */
 details{margin-top:38px;border-top:1px solid var(--line);padding-top:14px}
@@ -176,8 +225,20 @@ summary{cursor:pointer;font-size:12px;letter-spacing:1px;text-transform:uppercas
 <h2>O que aconteceu hoje</h2>
 <div class="feed" id="feed"></div>
 
-<h2>Desde o marco zero</h2>
-<div id="acum"></div>
+<h2>Desempenho</h2>
+<p class="sub" id="biSub"></p>
+<div class="chartbox">
+  <svg class="chart" id="chart" viewBox="0 0 900 250" preserveAspectRatio="none"
+       role="img" aria-label="Curva de capital acumulada e resultado por pregão"></svg>
+  <div class="chart-cap">
+    <span><b>Acima:</b> capital acumulado desde o marco zero</span>
+    <span><b>Abaixo:</b> resultado de cada pregão — clique para filtrar</span>
+  </div>
+</div>
+<div class="filtro" id="filtro"></div>
+<div class="kpis" id="kpis"></div>
+<div class="brk" id="brk"></div>
+<div class="tbl-wrap" id="tradesWrap"></div>
 
 <details>
   <summary>Como ler este painel</summary>
@@ -271,12 +332,20 @@ function avaliarEstado(d, nowMs, fetchFails){
   else if(h.algo_trading===undefined){ atencao.push("algo_trading ausente"); if(segs.terminal!=="bad") segs.terminal="warn"; }
 
   /* --- cotação dos símbolos --- */
+  /* Fora do pregao NAO ha cotacao, e isso e o esperado -- nao uma falha.
+     Tratar bid=0 as 20h como FALHA deixava o painel vermelho toda noite; um
+     alarme que toca todo dia deixa de ser lido, inclusive no dia em que a
+     cotacao sumir DURANTE o pregao, que e quando importa de verdade. */
   const syms=h.symbols||[];
-  if(!syms.length){ atencao.push("sem estado de cotação dos símbolos"); segs.cotacao="warn"; }
-  else{
-    let ruim=false;
-    syms.forEach(s=>{ if(s && s.ok===false){ falha.push("símbolo "+(s.symbol||"?")+" sem cotação válida"); ruim=true; } });
-    segs.cotacao=ruim?"bad":"ok";
+  if(!syms.length){
+    if(janela){ atencao.push("sem estado de cotação dos símbolos"); segs.cotacao="warn"; }
+  } else {
+    const semCotacao=syms.filter(s=>s&&s.ok===false).map(s=>s.symbol||"?");
+    if(!semCotacao.length) segs.cotacao=janela?"ok":"off";
+    else if(janela){
+      semCotacao.forEach(sy=>falha.push("símbolo "+sy+" sem cotação válida"));
+      segs.cotacao="bad";
+    } else segs.cotacao="off";   // mercado fechado: sem cotação é o normal
   }
 
   /* --- heartbeat da EA: a prova de que ela está viva mesmo sem negociar --- */
@@ -329,10 +398,82 @@ function estadoModulo(mod, aberta, armadas, ctx){
   if(!ctx.janela) return {k:"fora de pregão", cls:"m-off"};
   return {k:"aguardando", cls:"m-off"};
 }
+/* -------------------------------------------------------------------------
+   ESTATÍSTICA — tudo derivado da lista de trades, para que o mesmo cálculo
+   valha no acumulado inteiro e num único pregão filtrado. Sem biblioteca:
+   são quatro somas e um máximo, e uma dependência a mais no painel seria
+   uma dependência a mais para quebrar num dia de pregão.
+   ------------------------------------------------------------------------- */
+function estatisticas(trades){
+  const n=trades.length;
+  const vazio={n:0,wins:0,losses:0,taxa:null,pnl:0,ganhoBruto:0,perdaBruta:0,
+               fatorLucro:null,expectancia:null,ganhoMedio:null,perdaMedia:null,
+               payoff:null,melhor:null,pior:null,seqG:0,seqP:0,minutosMedio:null};
+  if(!n) return vazio;
+  let pnl=0,gb=0,pb=0,wins=0,mins=0,melhor=null,pior=null;
+  let sg=0,sp=0,maxG=0,maxP=0;
+  /* streak na ordem CRONOLÓGICA de saída; a lista chega mais nova primeiro */
+  const ord=trades.slice().sort((a,b)=>String(a.exit_time).localeCompare(String(b.exit_time)));
+  for(const t of ord){
+    const v=+t.pnl||0;
+    pnl+=v; mins+=(+t.minutos||0);
+    if(v>0){ wins++; gb+=v; sg++; sp=0; if(sg>maxG) maxG=sg; }
+    else   { pb+=Math.abs(v); sp++; sg=0; if(sp>maxP) maxP=sp; }
+    if(melhor===null||v>melhor.pnl) melhor={pnl:v,mod:t.strategy_label||t.strategy,data:String(t.exit_time).slice(0,10)};
+    if(pior===null||v<pior.pnl)     pior  ={pnl:v,mod:t.strategy_label||t.strategy,data:String(t.exit_time).slice(0,10)};
+  }
+  const losses=n-wins;
+  return {n,wins,losses,
+    taxa:Math.round(100*wins/n),
+    pnl:Math.round(pnl*100)/100,
+    ganhoBruto:Math.round(gb*100)/100, perdaBruta:Math.round(pb*100)/100,
+    /* sem perda alguma, fator de lucro é infinito -- devolvemos null e a tela
+       escreve "—", em vez de imprimir Infinity ou fingir um número */
+    fatorLucro: pb>0 ? Math.round(100*gb/pb)/100 : null,
+    expectancia:Math.round(100*pnl/n)/100,
+    ganhoMedio: wins?Math.round(100*gb/wins)/100:null,
+    perdaMedia: losses?Math.round(100*pb/losses)/100:null,
+    payoff: (wins&&losses&&pb>0) ? Math.round(100*(gb/wins)/(pb/losses))/100 : null,
+    melhor,pior,seqG:maxG,seqP:maxP,
+    minutosMedio:Math.round(mins/n)};
+}
+
+/* Rebaixamento máximo sobre a curva de capital acumulada. Devolve o valor
+   (positivo) e a data do fundo -- é a pergunta "quanto o pior momento custou
+   em relação ao melhor momento anterior". */
+function rebaixamento(serie){
+  let pico=0, maxDD=0, quando=null, cum=0;
+  for(const d of serie){
+    cum += (+d.pnl||0);
+    if(cum>pico) pico=cum;
+    const dd=pico-cum;
+    if(dd>maxDD){ maxDD=dd; quando=d.date; }
+  }
+  return {valor:Math.round(maxDD*100)/100, data:quando};
+}
+
+/* Agrupa trades por uma chave e ordena pelo PnL (maior primeiro). */
+function agrupar(trades, chave){
+  const m=new Map();
+  for(const t of trades){
+    const k=String(t[chave]??"—");
+    const a=m.get(k)||{nome:k,n:0,wins:0,pnl:0};
+    a.n++; a.pnl+=(+t.pnl||0); if((+t.pnl||0)>0) a.wins++;
+    m.set(k,a);
+  }
+  return [...m.values()].map(a=>({...a,pnl:Math.round(a.pnl*100)/100}))
+                        .sort((x,y)=>y.pnl-x.pnl);
+}
+
+/* Trades de um dia (YYYY-MM-DD) ou todos, se dia for nulo. */
+function filtrarPorDia(trades, dia){
+  return dia ? trades.filter(t=>String(t.exit_time).slice(0,10)===dia) : trades.slice();
+}
 /* ===================== fim das funções puras ===================== */
 
 if(typeof module!=="undefined"&&module.exports)
-  module.exports={avaliarEstado,estadoModulo,emJanela,brtParts,fmtDur,canon,MODULOS};
+  module.exports={avaliarEstado,estadoModulo,emJanela,brtParts,fmtDur,canon,MODULOS,
+                  estatisticas,rebaixamento,agrupar,filtrarPorDia};
 </script>
 <script>
 /* =========================================================================
@@ -465,34 +606,195 @@ function renderFeed(d){
   }).join("");
 }
 
-function renderAcum(d){
-  const c=(d&&d.cumulative)||{}, serie=(d&&d.daily_series)||[];
+/* =========================================================================
+   BI — curva de capital, barras por pregão clicáveis, KPIs e quebras.
+   Desenhado à mão em SVG: são quatro somas e dois caminhos, e uma biblioteca
+   de gráfico seria mais uma coisa para quebrar no meio de um pregão.
+   ========================================================================= */
+let diaSel = null;                    // YYYY-MM-DD ou null = tudo
+
+function renderBI(d){
+  const serie=(d&&d.daily_series)||[];
+  const todos=(d&&d.trades)||[];
   const marco=(d&&d.start_date)||"—";
-  if(!serie.length){
-    $("acum").innerHTML=`<div class="empty"><b>Dia zero</b>
-      A contagem começa em ${esc(marco)}, no primeiro pregão da arquitetura 100% nativa.
+  $("biSub").textContent = serie.length
+    ? `${serie.length} pregão(ões) desde ${marco}. Clique numa barra para filtrar o dia.`
+    : `A contagem começa em ${marco}.`;
+
+  if(!serie.length && !todos.length){
+    diaSel=null;
+    $("chart").innerHTML="";
+    document.querySelector(".chartbox").hidden=true;
+    $("filtro").innerHTML="";
+    $("kpis").innerHTML="";
+    $("brk").innerHTML="";
+    $("tradesWrap").innerHTML=`<div class="empty"><b>Dia zero</b>
+      A medição começa em ${esc(marco)}, no primeiro pregão da arquitetura 100% nativa.
       O histórico anterior segue no MT5 — só deixou de entrar nas métricas, porque
-      media dois sistemas diferentes.</div>`;
+      misturava dois sistemas diferentes.</div>`;
     return;
   }
-  const max=Math.max(...serie.map(x=>Math.abs(+x.pnl||0)),1);
-  const barras=serie.map(x=>{
-    const v=+x.pnl||0, h=Math.max(3,Math.round(100*Math.abs(v)/max));
-    return `<i class="${v<0?"dn":""}" style="height:${h}%" title="${esc(x.date)}: ${brl(v)}"></i>`;
+  document.querySelector(".chartbox").hidden=false;
+
+  /* o dia selecionado pode ter saído da série (marco novo, dia sem trade) */
+  if(diaSel && !serie.some(x=>x.date===diaSel)) diaSel=null;
+
+  desenhaGrafico(serie);
+  const filtrados=filtrarPorDia(todos, diaSel);
+  renderFiltro(serie);
+  renderKpis(filtrados, serie);
+  renderQuebras(filtrados);
+  renderTrades(filtrados);
+}
+
+function desenhaGrafico(serie){
+  const svg=$("chart");
+  const W=Math.max(320, Math.round(svg.clientWidth||900)), H=250;
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const padL=8, padR=8, w=W-padL-padR;
+  const EQ_T=12, EQ_H=118;                 // painel de cima: capital acumulado
+  const BAR_T=EQ_T+EQ_H+26, BAR_H=64;      // painel de baixo: pregão a pregão
+  const BAR_0=BAR_T+BAR_H/2;               // linha do zero das barras
+
+  /* acumulado */
+  let cum=0; const pts=serie.map((x,i)=>{ cum+=(+x.pnl||0); return {i,date:x.date,cum}; });
+  const cums=pts.map(p=>p.cum).concat([0]);
+  const cMin=Math.min(...cums), cMax=Math.max(...cums);
+  const span=(cMax-cMin)||1;
+  const n=serie.length;
+  const colW=w/n;
+  const cx=i=>padL+colW*(i+0.5);
+  const cy=v=>EQ_T+EQ_H-((v-cMin)/span)*EQ_H;
+
+  /* barras */
+  const maxAbs=Math.max(...serie.map(x=>Math.abs(+x.pnl||0)),1);
+  const bw=Math.max(2, Math.min(26, colW*0.56));
+
+  const linha=pts.map((p,i)=>`${i?"L":"M"}${cx(i).toFixed(1)},${cy(p.cum).toFixed(1)}`).join("");
+  const area=n>1
+    ? `${linha}L${cx(n-1).toFixed(1)},${cy(cMin).toFixed(1)}L${cx(0).toFixed(1)},${cy(cMin).toFixed(1)}Z`
+    : "";
+
+  const barras=serie.map((x,i)=>{
+    const v=+x.pnl||0;
+    const h=Math.max(2,(Math.abs(v)/maxAbs)*(BAR_H/2-3));
+    const y=v>=0?BAR_0-h:BAR_0;
+    const sel=x.date===diaSel;
+    const dia=x.date.slice(8,10)+"/"+x.date.slice(5,7);
+    return `<g class="bar ${v<0?"dn":""} ${sel?"sel":""}" data-dia="${esc(x.date)}"
+              tabindex="0" role="button" aria-pressed="${sel}"
+              aria-label="${esc(dia)}: ${esc(brl(v))} em ${x.trades||0} trade(s)">
+       <rect class="hit" x="${(padL+colW*i).toFixed(1)}" y="${EQ_T}" width="${colW.toFixed(1)}" height="${BAR_T+BAR_H-EQ_T}" rx="3"/>
+       <rect class="b" x="${(cx(i)-bw/2).toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" rx="1.5"/>
+     </g>`;
   }).join("");
-  const pnl=+c.pnl||0;
-  $("acum").innerHTML=`
-   <div class="hero">
-     <div class="hero-main">
-       <div class="hero-lbl">Acumulado desde ${esc(marco)}</div>
-       <div class="hero-val money ${cls(pnl)}">${brl(pnl)}</div>
-       <div class="hero-sub">${c.trades||0} trades em ${c.days||0} pregão(ões) · ${c.days_positive||0} positivo(s)</div>
-     </div>
-     <div class="hero-side">
-       <div><div class="stat-k">Acerto</div><div class="stat-v">${c.trades?Math.round(100*c.wins/c.trades)+"%":"—"}</div></div>
-     </div>
-   </div>
-   <div class="spark">${barras}</div>`;
+
+  /* rótulos: no máximo ~9, para não virar borrão */
+  const passo=Math.max(1,Math.ceil(n/9));
+  const rotulos=serie.map((x,i)=>
+    (i%passo===0||x.date===diaSel)
+      ? `<text class="${x.date===diaSel?"lbl-sel":""}" x="${cx(i).toFixed(1)}" y="${BAR_T+BAR_H+16}" text-anchor="middle">${x.date.slice(8,10)}/${x.date.slice(5,7)}</text>`
+      : "").join("");
+
+  svg.innerHTML=`
+   <defs><linearGradient id="eqg" x1="0" y1="0" x2="0" y2="1">
+     <stop offset="0%" stop-color="var(--ac)" stop-opacity=".26"/>
+     <stop offset="100%" stop-color="var(--ac)" stop-opacity="0"/>
+   </linearGradient></defs>
+   <line class="grid-l" x1="${padL}" y1="${EQ_T+EQ_H}" x2="${W-padR}" y2="${EQ_T+EQ_H}"/>
+   ${cMin<0&&cMax>0?`<line class="zero" x1="${padL}" y1="${cy(0).toFixed(1)}" x2="${W-padR}" y2="${cy(0).toFixed(1)}"/>`:""}
+   ${area?`<path class="eq-a" d="${area}"/>`:""}
+   <path class="eq-l" d="${linha}"/>
+   ${n===1?`<circle class="eq-p" cx="${cx(0).toFixed(1)}" cy="${cy(pts[0].cum).toFixed(1)}" r="3.5"/>`:""}
+   <text x="${padL}" y="${EQ_T-2}">${esc(brl0(cMax))}</text>
+   <line class="zero" x1="${padL}" y1="${BAR_0}" x2="${W-padR}" y2="${BAR_0}"/>
+   ${barras}${rotulos}`;
+
+  svg.querySelectorAll(".bar").forEach(g=>{
+    const sel=()=>{ diaSel = (diaSel===g.dataset.dia) ? null : g.dataset.dia; pintar(); };
+    g.addEventListener("click", sel);
+    g.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); sel(); } });
+  });
+}
+
+function renderFiltro(serie){
+  if(!diaSel){
+    $("filtro").innerHTML=`<span class="filtro-hint">Mostrando todos os pregões desde o marco zero.</span>`;
+    return;
+  }
+  const d=serie.find(x=>x.date===diaSel)||{};
+  const dia=diaSel.slice(8,10)+"/"+diaSel.slice(5,7)+"/"+diaSel.slice(0,4);
+  $("filtro").innerHTML=
+    `<span class="chip">Pregão de ${esc(dia)}<button type="button" id="limpaFiltro"
+       aria-label="Limpar filtro de dia" title="Limpar filtro">×</button></span>
+     <span class="filtro-hint">${d.trades||0} trade(s) · ${esc(brl(d.pnl||0))}</span>`;
+  $("limpaFiltro").addEventListener("click",()=>{ diaSel=null; pintar(); });
+}
+
+function kpi(k,v,h,c){ return `<div class="kpi"><div class="k">${k}</div>
+  <div class="v ${c||""}">${v}</div><div class="h">${h||"&nbsp;"}</div></div>`; }
+
+function renderKpis(trades, serie){
+  const e=estatisticas(trades);
+  const dd=rebaixamento(diaSel?serie.filter(x=>x.date===diaSel):serie);
+  const nd=n=>n===null||n===undefined?"—":n;
+  $("kpis").innerHTML=[
+    kpi("Resultado", brl(e.pnl), `${e.n} trade(s)`, "money "+cls(e.pnl)),
+    kpi("Taxa de acerto", e.taxa===null?"—":e.taxa+"%", `${e.wins}G / ${e.losses}P`),
+    kpi("Fator de lucro", nd(e.fatorLucro),
+        e.fatorLucro===null?"sem perdas":`${brl0(e.ganhoBruto)} ÷ ${brl0(e.perdaBruta)}`,
+        e.fatorLucro===null?"":(e.fatorLucro>=1?"pos":"neg")),
+    kpi("Expectância", e.expectancia===null?"—":brl(e.expectancia), "por trade",
+        e.expectancia===null?"":cls(e.expectancia)),
+    kpi("Payoff", nd(e.payoff),
+        (e.ganhoMedio!==null&&e.perdaMedia!==null)?`${brl0(e.ganhoMedio)} × ${brl0(e.perdaMedia)}`:"ganho ÷ perda média"),
+    kpi("Rebaixamento", dd.valor?"−"+brl0(dd.valor):"—",
+        dd.data?("fundo em "+dd.data.slice(8,10)+"/"+dd.data.slice(5,7)):"nenhum", dd.valor?"neg":""),
+    kpi("Melhor trade", e.melhor?brl(e.melhor.pnl):"—", e.melhor?esc(e.melhor.mod):"", e.melhor?cls(e.melhor.pnl):""),
+    kpi("Pior trade", e.pior?brl(e.pior.pnl):"—", e.pior?esc(e.pior.mod):"", e.pior?cls(e.pior.pnl):""),
+    kpi("Sequências", e.n?`${e.seqG} / ${e.seqP}`:"—", "ganhos / perdas seguidas"),
+    kpi("Duração média", e.minutosMedio===null?"—":e.minutosMedio+" min", "posição aberta"),
+  ].join("");
+}
+
+function renderQuebras(trades){
+  const blocos=[["Por módulo","strategy_label"],["Por saída","motivo_label"],["Por lado","side"]];
+  $("brk").innerHTML=blocos.map(([titulo,chave])=>{
+    const gs=agrupar(trades,chave);
+    if(!gs.length) return `<div class="brk-c"><div class="brk-t">${titulo}</div>
+      <div class="brk-r"><span class="brk-n mut">sem trades no recorte</span></div></div>`;
+    const max=Math.max(...gs.map(g=>Math.abs(g.pnl)),1);
+    return `<div class="brk-c"><div class="brk-t">${titulo}</div>`+gs.map(g=>
+      `<div class="brk-r">
+         <span class="brk-n">${esc(g.nome)}</span>
+         <span class="brk-b"><i class="${g.pnl<0?"dn":""}" style="width:${Math.round(100*Math.abs(g.pnl)/max)}%"></i></span>
+         <span class="brk-v ${cls(g.pnl)}">${esc(brl0(g.pnl))}</span>
+       </div>`).join("")+`</div>`;
+  }).join("");
+}
+
+function renderTrades(trades){
+  if(!trades.length){
+    $("tradesWrap").innerHTML=`<div class="brk-t">Trades</div>
+      <div class="brk-r"><span class="brk-n mut">nenhum trade no recorte selecionado</span></div>`;
+    return;
+  }
+  const ord=trades.slice().sort((a,b)=>String(b.exit_time).localeCompare(String(a.exit_time)));
+  $("tradesWrap").innerHTML=`<div class="brk-t">Trades (${ord.length})</div>
+   <table class="tbl"><thead><tr>
+     <th>Saída</th><th>Módulo</th><th>Lado</th><th>Qtd</th>
+     <th style="text-align:right">Entrada</th><th style="text-align:right">Saída</th>
+     <th style="text-align:right">Min</th><th>Motivo</th><th style="text-align:right">Resultado</th>
+   </tr></thead><tbody>`+
+   ord.slice(0,300).map(t=>`<tr>
+     <td>${esc(String(t.exit_time).slice(8,10)+"/"+String(t.exit_time).slice(5,7))} ${esc(hhmm(t.exit_time))}</td>
+     <td>${esc(t.strategy_label||t.strategy)}</td>
+     <td>${esc(t.side)}</td><td class="n">${esc(t.qty)}</td>
+     <td class="n">${esc(t.entry_price)}</td><td class="n">${esc(t.exit_price)}</td>
+     <td class="n">${Math.round(+t.minutos||0)}</td>
+     <td>${esc(t.motivo_label||t.motivo||"")}</td>
+     <td class="n ${cls(t.pnl)}">${esc(brl(t.pnl))}</td>
+   </tr>`).join("")+`</tbody></table>`;
 }
 
 $("foot").innerHTML=`
@@ -517,7 +819,7 @@ function pintar(){
   const est=avaliarEstado(dados, Date.now(), fetchFails);
   renderRail(est);
   renderHoje(dados); renderExp(dados,est); renderMods(dados,est);
-  renderFeed(dados); renderAcum(dados);
+  renderFeed(dados); renderBI(dados);
 }
 async function buscar(){
   try{
@@ -528,6 +830,8 @@ async function buscar(){
   pintar();
 }
 buscar();
+let tResize=null;
+addEventListener("resize",()=>{ clearTimeout(tResize); tResize=setTimeout(pintar,150); });
 setInterval(buscar, 60000);   // arquivo novo
 setInterval(pintar,  1000);   // idade e veredito andam sozinhos
 </script>
