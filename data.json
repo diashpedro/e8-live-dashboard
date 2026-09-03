@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-03T16:21:05-03:00",
+  "updated_at": "2026-09-03T16:24:08-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 4,
-    "last_ea_event": "2026-09-03T16:20:00-03:00",
+    "last_ea_event": "2026-09-03T16:23:00-03:00",
     "last_error_msg": "NK\t0\t16:30:00.056\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 189315.00: retcode=10015 invalid price",
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 47.71,
+        "bid": 47.68,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 77.9,
+        "bid": 77.85,
         "ok": true
       },
       {
@@ -25,7 +25,7 @@
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.76,
+        "bid": 15.77,
         "ok": true
       },
       {
@@ -38,18 +38,18 @@
   },
   "account": {
     "balance": 985163.62,
-    "equity": 985192.95,
+    "equity": 985193.95,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-09-03",
     "realized": 12.0,
-    "unrealized": 15.0,
-    "total": 27.0,
+    "unrealized": 12.0,
+    "total": 24.0,
     "trades": 2,
     "wins": 2,
-    "exposure": 4771.0,
+    "exposure": 4768.0,
     "open_legs": 1,
     "broker_realized": 14.66
   },
@@ -94,13 +94,13 @@
       "side": "LONG",
       "entry_time": "2026-09-03T14:40:15-03:00",
       "entry_price": 47.56,
-      "current_price": 47.71,
+      "current_price": 47.68,
       "qty": 100.0,
-      "notional": 4771.0,
-      "pnl": 15.0,
-      "pnl_liq_est": 12.81,
-      "pnl_pct": 0.315,
-      "minutos": 100.8
+      "notional": 4768.0,
+      "pnl": 12.0,
+      "pnl_liq_est": 9.81,
+      "pnl_pct": 0.252,
+      "minutos": 103.9
     }
   ],
   "daily_series": [
