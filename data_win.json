@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T13:03:07-03:00",
+  "updated_at": "2026-09-03T13:06:11-03:00",
   "start_date": null,
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-03T13:01:00-03:00",
+    "last_ea_event": "2026-09-03T13:06:00-03:00",
     "last_error_msg": "RJ\t0\t14:14:43.782\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] cancelar ordem #2519161242: invalid request",
-    "ea_heartbeat_epoch": 1788451380,
+    "ea_heartbeat_epoch": 1788451560,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188130.0,
+        "bid": 188010.0,
         "ok": true
       },
       {
@@ -129671,6 +129671,12 @@
       "tipo": "saida",
       "modulo": "VolBreak",
       "texto": "[EXIT] VB LONG vol=1 motivo=stop"
+    },
+    {
+      "hora": "2026-09-03T13:06:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.02 16:50 -> corte de HOJE (-15min): 2026.09.03 16:35"
     }
   ],
   "today": {
@@ -129719,9 +129725,9 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T13:02:59",
-    "heartbeat_epoch": 1788451379,
-    "idade_s": 8,
+    "heartbeat": "2026-09-03T13:05:59",
+    "heartbeat_epoch": 1788451559,
+    "idade_s": 13,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
