@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T13:00:16-03:00",
+  "updated_at": "2026-09-03T13:03:07-03:00",
   "start_date": null,
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-03T12:57:14-03:00",
+    "last_ea_event": "2026-09-03T13:01:00-03:00",
     "last_error_msg": "RJ\t0\t14:14:43.782\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] cancelar ordem #2519161242: invalid request",
-    "ea_heartbeat_epoch": 1788451144,
+    "ea_heartbeat_epoch": 1788451380,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188300.0,
+        "bid": 188130.0,
         "ok": true
       },
       {
@@ -129641,29 +129641,59 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=-3 contratos, EA acha -2 (python -2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-03T13:00:59-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.02 16:50 -> corte de HOJE (-15min): 2026.09.03 16:35"
+    },
+    {
+      "hora": "2026-09-03T13:00:59-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-09-03T13:00:59-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] posicao -3, das quais 1 sao pernas legitimas (Python + nativas)"
+    },
+    {
+      "hora": "2026-09-03T13:00:59-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] posicao orfa de -4 zerada em WINV26"
+    },
+    {
+      "hora": "2026-09-03T13:00:59-03:00",
+      "tipo": "saida",
+      "modulo": "VolBreak",
+      "texto": "[EXIT] VB LONG vol=1 motivo=stop"
     }
   ],
   "today": {
     "date": "2026-09-03",
     "realized": -726.0,
-    "unrealized": 555.0,
-    "total": -171.0,
+    "unrealized": 0,
+    "total": -726.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 112980.0,
-    "open_legs": 1,
-    "broker_realized": -472.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -473.0
   },
   "reconciliacao": {
     "painel": -726.0,
-    "corretora": -472.0,
-    "divergencia": -254.0,
-    "tolerancia": 9.44,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -3.0,
-    "volume_pernas": -2.0,
-    "volume_ok": false
+    "corretora": -473.0,
+    "divergencia": -253.0,
+    "tolerancia": 9.46,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
     "pnl": -1211.0,
@@ -129689,46 +129719,15 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T13:00:07",
-    "heartbeat_epoch": 1788451207,
-    "idade_s": 10,
+    "heartbeat": "2026-09-03T13:02:59",
+    "heartbeat_epoch": 1788451379,
+    "idade_s": 8,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": false
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "SHORT",
-      "entry_time": "2026-09-03T11:11:10-03:00",
-      "entry_price": 189550.0,
-      "current_price": 188300.0,
-      "qty": 1.0,
-      "notional": 37660.0,
-      "pnl": 250.0,
-      "pnl_liq_est": 232.62,
-      "pnl_pct": 0.659,
-      "minutos": 109.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "SHORT",
-      "entry_time": "2026-09-03T11:14:43-03:00",
-      "entry_price": 189315.0,
-      "current_price": 188300.0,
-      "qty": 1.0,
-      "notional": 37660.0,
-      "pnl": 203.0,
-      "pnl_liq_est": 185.63,
-      "pnl_pct": 0.536,
-      "minutos": 105.6
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
@@ -129775,6 +129774,18 @@
       "t": -3.05,
       "ic_baixo": -322.92,
       "ic_alto": -70.08,
+      "acertos": 0,
+      "conclusivo": false
+    },
+    {
+      "modulo": "VolBreak",
+      "n": 1,
+      "soma": -1.0,
+      "media": -1.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -1.0,
+      "ic_alto": -1.0,
       "acertos": 0,
       "conclusivo": false
     },
