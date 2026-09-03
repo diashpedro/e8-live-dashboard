@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T10:57:09-03:00",
+  "updated_at": "2026-09-03T11:00:15-03:00",
   "start_date": null,
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-09-03T10:51:47-03:00",
+    "last_ea_event": "2026-09-03T10:56:48-03:00",
     "last_error_msg": "CR\t0\t13:30:00.028\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_L @ 190845.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788443764,
+    "ea_heartbeat_epoch": 1788443944,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190400.0,
+        "bid": 190295.0,
         "ok": true
       },
       {
@@ -158,6 +158,12 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-03T10:56:48-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
@@ -206,12 +212,12 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T10:57:00",
-    "heartbeat_epoch": 1788443820,
-    "idade_s": 9,
+    "heartbeat": "2026-09-03T11:00:00",
+    "heartbeat_epoch": 1788444010,
+    "idade_s": 5,
     "dados_ok": true,
     "simbolo": "WINV26",
-    "sinais_vivos": 3,
+    "sinais_vivos": 6,
     "congelado": false
   },
   "open_positions": [],
