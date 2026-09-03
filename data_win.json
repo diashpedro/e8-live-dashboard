@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T10:18:09-03:00",
+  "updated_at": "2026-09-03T10:21:10-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-03T10:16:39-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788441424,
+    "ea_heartbeat_epoch": 1788441604,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190300.0,
+        "bid": 190680.0,
         "ok": true
       },
       {
@@ -87,32 +87,32 @@
   ],
   "today": {
     "date": "2026-09-03",
-    "realized": 0,
-    "unrealized": -88.0,
-    "total": -88.0,
-    "trades": 0,
+    "realized": -264.0,
+    "unrealized": 0,
+    "total": -264.0,
+    "trades": 2,
     "wins": 0,
-    "exposure": 76120.0,
-    "open_legs": 1,
-    "broker_realized": -208.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -472.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": -208.0,
+    "painel": -264.0,
+    "corretora": -472.0,
     "divergencia": 208.0,
-    "tolerancia": 4.16,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -2.0,
-    "volume_pernas": 2.0,
-    "volume_ok": false
+    "tolerancia": 9.44,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -485.0,
-    "trades": 4,
+    "pnl": -749.0,
+    "trades": 6,
     "wins": 1,
     "since": "2026-09-01",
-    "days": 2,
+    "days": 3,
     "days_positive": 0,
     "best_day": {
       "date": "2026-09-01",
@@ -131,87 +131,15 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T10:17:53",
-    "heartbeat_epoch": 1788441473,
-    "idade_s": 16,
+    "heartbeat": "2026-09-03T10:20:53",
+    "heartbeat_epoch": 1788441653,
+    "idade_s": 17,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 3,
     "congelado": false
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "LONG",
-      "entry_time": "2026-09-01T10:35:05-03:00",
-      "entry_price": 182455.0,
-      "current_price": 190300.0,
-      "qty": 2.0,
-      "notional": 76120.0,
-      "pnl": 3138.0,
-      "pnl_liq_est": 3103.71,
-      "pnl_pct": 4.3,
-      "minutos": 2863.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-02T15:57:14-03:00",
-      "entry_price": 187705.0,
-      "current_price": 190300.0,
-      "qty": 1.0,
-      "notional": 38060.0,
-      "pnl": 519.0,
-      "pnl_liq_est": 501.61,
-      "pnl_pct": 1.382,
-      "minutos": 1100.9
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "LONG",
-      "entry_time": "2026-09-03T10:02:51-03:00",
-      "entry_price": 191120.0,
-      "current_price": 190300.0,
-      "qty": 1.0,
-      "notional": 38060.0,
-      "pnl": -164.0,
-      "pnl_liq_est": -181.55,
-      "pnl_pct": -0.429,
-      "minutos": 15.3
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g084a",
-      "strategy_label": "T01_barra_reversao · gaveta 84a",
-      "side": "SHORT",
-      "entry_time": "2026-09-03T10:16:38-03:00",
-      "entry_price": 190080.0,
-      "current_price": 190300.0,
-      "qty": 1.0,
-      "notional": 38060.0,
-      "pnl": -44.0,
-      "minutos": 1.5
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g086a",
-      "strategy_label": "T01_barra_reversao · gaveta 86a",
-      "side": "SHORT",
-      "entry_time": "2026-09-03T10:16:38-03:00",
-      "entry_price": 190080.0,
-      "current_price": 190300.0,
-      "qty": 1.0,
-      "notional": 38060.0,
-      "pnl": -44.0,
-      "minutos": 1.5
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
@@ -284,6 +212,30 @@
       "ic_alto": -51.0,
       "acertos": 0,
       "conclusivo": false
+    },
+    {
+      "modulo": "t01_barra_reversao_g084a",
+      "n": 1,
+      "soma": -132.0,
+      "media": -132.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -132.0,
+      "ic_alto": -132.0,
+      "acertos": 0,
+      "conclusivo": false
+    },
+    {
+      "modulo": "t01_barra_reversao_g086a",
+      "n": 1,
+      "soma": -132.0,
+      "media": -132.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -132.0,
+      "ic_alto": -132.0,
+      "acertos": 0,
+      "conclusivo": false
     }
   ],
   "daily_series": [
@@ -300,9 +252,48 @@
       "trades": 3,
       "wins": 1,
       "cum": -485.0
+    },
+    {
+      "date": "2026-09-03",
+      "pnl": -264.0,
+      "trades": 2,
+      "wins": 0,
+      "cum": -749.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "g084a",
+      "strategy_label": "T01_barra_reversao · gaveta 84a",
+      "side": "SHORT",
+      "entry_time": "2026-09-03T10:16:38-03:00",
+      "exit_time": "2026-09-03T10:21:02-03:00",
+      "entry_price": 190080.0,
+      "exit_price": 190740.0,
+      "qty": 1.0,
+      "pnl": -132.0,
+      "pnl_bruto": -132.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 4.4
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g086a",
+      "strategy_label": "T01_barra_reversao · gaveta 86a",
+      "side": "SHORT",
+      "entry_time": "2026-09-03T10:16:38-03:00",
+      "exit_time": "2026-09-03T10:21:02-03:00",
+      "entry_price": 190080.0,
+      "exit_price": 190740.0,
+      "qty": 1.0,
+      "pnl": -132.0,
+      "pnl_bruto": -132.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 4.4
+    },
     {
       "symbol": "WINV26",
       "strategy": "intramom",
@@ -376,6 +367,18 @@
       "pnl": 35.0
     },
     {
+      "strategy": "T01_barra_reversao · gaveta 84a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -132.0
+    },
+    {
+      "strategy": "T01_barra_reversao · gaveta 86a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -132.0
+    },
+    {
       "strategy": "VWAP",
       "trades": 2,
       "wins": 0,
@@ -391,9 +394,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 4,
+      "trades": 6,
       "wins": 1,
-      "pnl": -485.0
+      "pnl": -749.0
     }
   ],
   "by_reason": [
@@ -405,9 +408,9 @@
     },
     {
       "reason": "Stop",
-      "trades": 2,
+      "trades": 4,
       "wins": 0,
-      "pnl": -393.0
+      "pnl": -657.0
     },
     {
       "reason": "Trailing",
