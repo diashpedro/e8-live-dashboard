@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T10:21:10-03:00",
+  "updated_at": "2026-09-03T10:24:10-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-03T10:16:39-03:00",
+    "last_ea_event": "2026-09-03T10:21:40-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788441604,
+    "ea_heartbeat_epoch": 1788441784,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190680.0,
+        "bid": 191110.0,
         "ok": true
       },
       {
@@ -83,6 +83,24 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=-2 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-03T10:21:02-03:00",
+      "tipo": "saida",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] FECHADA t01_barra_reversao_g084a por stop | -660 pts | PnL py dia R$ -132.00"
+    },
+    {
+      "hora": "2026-09-03T10:21:02-03:00",
+      "tipo": "saida",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] FECHADA t01_barra_reversao_g086a por stop | -660 pts | PnL py dia R$ -264.00"
+    },
+    {
+      "hora": "2026-09-03T10:21:40-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
@@ -131,8 +149,8 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T10:20:53",
-    "heartbeat_epoch": 1788441653,
+    "heartbeat": "2026-09-03T10:23:53",
+    "heartbeat_epoch": 1788441833,
     "idade_s": 17,
     "dados_ok": true,
     "simbolo": "WINV26",
