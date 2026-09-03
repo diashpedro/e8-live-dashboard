@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-03T18:57:08-03:00",
+  "updated_at": "2026-09-03T19:46:50-03:00",
   "start_date": null,
   "health": {
-    "errors_today": 4,
-    "last_ea_event": "2026-09-03T17:40:00-03:00",
-    "last_error_msg": "NK\t0\t16:30:00.056\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 189315.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788472560,
+    "errors_today": 5,
+    "last_ea_event": "2026-09-03T19:41:55-03:00",
+    "last_error_msg": "LM\t0\t22:41:55.596\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] fechar COMPRA vol=1 (WEA_VB_close_eod): invalid price",
+    "ea_heartbeat_epoch": 1788475555,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -129821,6 +129821,114 @@
       "tipo": "saida",
       "modulo": "VWAP",
       "texto": "[EOD] VW LONG vol=1"
+    },
+    {
+      "hora": "2026-09-03T19:05:40-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.02 16:50 -> corte de HOJE (-15min): 2026.09.03 16:35"
+    },
+    {
+      "hora": "2026-09-03T19:05:40-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-09-03T19:05:41-03:00",
+      "tipo": "saida",
+      "modulo": "VolBreak",
+      "texto": "[EOD] VB LONG vol=1"
+    },
+    {
+      "hora": "2026-09-03T19:05:41-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[EOD][RESIDUO] posicao de -1 detectada -- aguardando 30s para confirmar antes de agir"
+    },
+    {
+      "hora": "2026-09-03T19:05:41-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-03T19:06:11-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[EOD][RESIDUO] posicao de -1 confirmada apos a janela -- fechando"
+    },
+    {
+      "hora": "2026-09-03T19:06:11-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
+    },
+    {
+      "hora": "2026-09-03T19:08:16-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.02 16:50 -> corte de HOJE (-15min): 2026.09.03 16:35"
+    },
+    {
+      "hora": "2026-09-03T19:08:16-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-09-03T19:08:17-03:00",
+      "tipo": "saida",
+      "modulo": "VolBreak",
+      "texto": "[EOD] VB LONG vol=1"
+    },
+    {
+      "hora": "2026-09-03T19:08:17-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[EOD][RESIDUO] posicao de -1 detectada -- aguardando 30s para confirmar antes de agir"
+    },
+    {
+      "hora": "2026-09-03T19:08:17-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-03T19:08:47-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[EOD][RESIDUO] posicao de -1 confirmada apos a janela -- fechando"
+    },
+    {
+      "hora": "2026-09-03T19:08:47-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
+    },
+    {
+      "hora": "2026-09-03T19:41:54-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-09-03T19:41:54-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.02 16:50 -> corte de HOJE (-15min): 2026.09.03 16:35"
+    },
+    {
+      "hora": "2026-09-03T19:41:55-03:00",
+      "tipo": "erro",
+      "modulo": "VolBreak",
+      "texto": "[ERRO] fechar COMPRA vol=1 (WEA_VB_close_eod): invalid price"
+    },
+    {
+      "hora": "2026-09-03T19:41:55-03:00",
+      "tipo": "saida",
+      "modulo": "VolBreak",
+      "texto": "[EOD] VB LONG vol=1"
     }
   ],
   "today": {
@@ -129832,13 +129940,13 @@
     "wins": 1,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -410.0
+    "broker_realized": -412.0
   },
   "reconciliacao": {
     "painel": -663.0,
-    "corretora": -410.0,
-    "divergencia": -253.0,
-    "tolerancia": 8.2,
+    "corretora": -412.0,
+    "divergencia": -251.0,
+    "tolerancia": 8.24,
     "comparavel": true,
     "ok": false,
     "volume_corretora": 0,
@@ -129869,13 +129977,13 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T18:56:51",
-    "heartbeat_epoch": 1788472611,
-    "idade_s": 17,
+    "heartbeat": "2026-09-03T19:40:52",
+    "heartbeat_epoch": 1788475252,
+    "idade_s": 359,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
-    "congelado": false
+    "congelado": true
   },
   "open_positions": [],
   "stats_modulo": [
