@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T10:15:14-03:00",
+  "updated_at": "2026-09-03T10:18:09-03:00",
   "start_date": null,
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-03T10:03:37-03:00",
+    "last_ea_event": "2026-09-03T10:16:39-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788441244,
+    "ea_heartbeat_epoch": 1788441424,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190435.0,
+        "bid": 190300.0,
         "ok": true
       },
       {
@@ -47,28 +47,64 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.02 16:50 -> corte de HOJE (-15min): 2026.09.03 16:35"
+    },
+    {
+      "hora": "2026-09-03T10:15:53-03:00",
+      "tipo": "entrada",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] ARMADO BRK-20260903-082a | t01_barra_reversao_g082a short 1 @ 190080 | stop 190740 alvo 187440"
+    },
+    {
+      "hora": "2026-09-03T10:15:53-03:00",
+      "tipo": "entrada",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] ARMADO BRK-20260903-084a | t01_barra_reversao_g084a short 1 @ 190080 | stop 190740 alvo 187440"
+    },
+    {
+      "hora": "2026-09-03T10:15:53-03:00",
+      "tipo": "entrada",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] ARMADO BRK-20260903-086a | t01_barra_reversao_g086a short 1 @ 190080 | stop 190740 alvo 187440"
+    },
+    {
+      "hora": "2026-09-03T10:16:39-03:00",
+      "tipo": "entrada",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] PREENCHIDO BRK-20260903-084a | t01_barra_reversao_g084a @ 190080 -- perna viva"
+    },
+    {
+      "hora": "2026-09-03T10:16:39-03:00",
+      "tipo": "entrada",
+      "modulo": "T01 barra reversao",
+      "texto": "[PY] PREENCHIDO BRK-20260903-086a | t01_barra_reversao_g086a @ 190080 -- perna viva"
+    },
+    {
+      "hora": "2026-09-03T10:16:39-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-2 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-03",
     "realized": 0,
-    "unrealized": -139.0,
-    "total": -139.0,
+    "unrealized": -88.0,
+    "total": -88.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 38085.0,
+    "exposure": 76120.0,
     "open_legs": 1,
-    "broker_realized": 0.0
+    "broker_realized": -208.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
+    "corretora": -208.0,
+    "divergencia": 208.0,
+    "tolerancia": 4.16,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 4.0,
+    "volume_corretora": -2.0,
+    "volume_pernas": 2.0,
     "volume_ok": false
   },
   "cumulative": {
@@ -95,12 +131,12 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T10:14:50",
-    "heartbeat_epoch": 1788441290,
-    "idade_s": 24,
+    "heartbeat": "2026-09-03T10:17:53",
+    "heartbeat_epoch": 1788441473,
+    "idade_s": 16,
     "dados_ok": true,
     "simbolo": "WINV26",
-    "sinais_vivos": 0,
+    "sinais_vivos": 3,
     "congelado": false
   },
   "open_positions": [
@@ -111,13 +147,13 @@
       "side": "LONG",
       "entry_time": "2026-09-01T10:35:05-03:00",
       "entry_price": 182455.0,
-      "current_price": 190435.0,
+      "current_price": 190300.0,
       "qty": 2.0,
-      "notional": 76174.0,
-      "pnl": 3192.0,
-      "pnl_liq_est": 3157.69,
-      "pnl_pct": 4.374,
-      "minutos": 2860.2
+      "notional": 76120.0,
+      "pnl": 3138.0,
+      "pnl_liq_est": 3103.71,
+      "pnl_pct": 4.3,
+      "minutos": 2863.1
     },
     {
       "symbol": "WINV26",
@@ -126,13 +162,13 @@
       "side": "LONG",
       "entry_time": "2026-09-02T15:57:14-03:00",
       "entry_price": 187705.0,
-      "current_price": 190435.0,
+      "current_price": 190300.0,
       "qty": 1.0,
-      "notional": 38087.0,
-      "pnl": 546.0,
-      "pnl_liq_est": 528.61,
-      "pnl_pct": 1.454,
-      "minutos": 1098.0
+      "notional": 38060.0,
+      "pnl": 519.0,
+      "pnl_liq_est": 501.61,
+      "pnl_pct": 1.382,
+      "minutos": 1100.9
     },
     {
       "symbol": "WINV26",
@@ -141,13 +177,39 @@
       "side": "LONG",
       "entry_time": "2026-09-03T10:02:51-03:00",
       "entry_price": 191120.0,
-      "current_price": 190435.0,
+      "current_price": 190300.0,
       "qty": 1.0,
-      "notional": 38087.0,
-      "pnl": -137.0,
-      "pnl_liq_est": -154.55,
-      "pnl_pct": -0.358,
-      "minutos": 12.4
+      "notional": 38060.0,
+      "pnl": -164.0,
+      "pnl_liq_est": -181.55,
+      "pnl_pct": -0.429,
+      "minutos": 15.3
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g084a",
+      "strategy_label": "T01_barra_reversao · gaveta 84a",
+      "side": "SHORT",
+      "entry_time": "2026-09-03T10:16:38-03:00",
+      "entry_price": 190080.0,
+      "current_price": 190300.0,
+      "qty": 1.0,
+      "notional": 38060.0,
+      "pnl": -44.0,
+      "minutos": 1.5
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g086a",
+      "strategy_label": "T01_barra_reversao · gaveta 86a",
+      "side": "SHORT",
+      "entry_time": "2026-09-03T10:16:38-03:00",
+      "entry_price": 190080.0,
+      "current_price": 190300.0,
+      "qty": 1.0,
+      "notional": 38060.0,
+      "pnl": -44.0,
+      "minutos": 1.5
     }
   ],
   "stats_modulo": [
@@ -160,6 +222,18 @@
       "t": 0.0,
       "ic_baixo": -104.0,
       "ic_alto": -104.0,
+      "acertos": 0,
+      "conclusivo": false
+    },
+    {
+      "modulo": "T01_barra_reversao",
+      "n": 1,
+      "soma": -208.0,
+      "media": -208.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -208.0,
+      "ic_alto": -208.0,
       "acertos": 0,
       "conclusivo": false
     },
