@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-03T15:57:08-03:00",
+  "updated_at": "2026-09-03T16:00:16-03:00",
   "start_date": null,
   "health": {
     "errors_today": 4,
     "last_ea_event": "2026-09-03T15:49:16-03:00",
     "last_error_msg": "NK\t0\t16:30:00.056\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_ORB_S @ 189315.00: retcode=10015 invalid price",
-    "ea_heartbeat_epoch": 1788461760,
+    "ea_heartbeat_epoch": 1788461940,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187480.0,
+        "bid": 187425.0,
         "ok": true
       },
       {
@@ -129819,11 +129819,11 @@
   "today": {
     "date": "2026-09-03",
     "realized": -726.0,
-    "unrealized": -14.0,
-    "total": -740.0,
+    "unrealized": -24.0,
+    "total": -750.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 37496.0,
+    "exposure": 37486.0,
     "open_legs": 1,
     "broker_realized": -473.0
   },
@@ -129862,9 +129862,9 @@
   },
   "python": {
     "presente": true,
-    "heartbeat": "2026-09-03T15:56:39",
-    "heartbeat_epoch": 1788461799,
-    "idade_s": 30,
+    "heartbeat": "2026-09-03T16:00:09",
+    "heartbeat_epoch": 1788462009,
+    "idade_s": 8,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -129878,13 +129878,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-03T11:14:43-03:00",
       "entry_price": 189315.0,
-      "current_price": 187480.0,
+      "current_price": 187425.0,
       "qty": 1.0,
-      "notional": 37496.0,
-      "pnl": 367.0,
-      "pnl_liq_est": 349.67,
-      "pnl_pct": 0.969,
-      "minutos": 282.4
+      "notional": 37485.0,
+      "pnl": 378.0,
+      "pnl_liq_est": 360.67,
+      "pnl_pct": 0.998,
+      "minutos": 285.6
     },
     {
       "symbol": "WINV26",
@@ -129893,13 +129893,13 @@
       "side": "LONG",
       "entry_time": "2026-09-03T14:47:08-03:00",
       "entry_price": 187550.0,
-      "current_price": 187480.0,
+      "current_price": 187425.0,
       "qty": 1.0,
-      "notional": 37496.0,
-      "pnl": -14.0,
-      "pnl_liq_est": -31.25,
-      "pnl_pct": -0.037,
-      "minutos": 70.0
+      "notional": 37485.0,
+      "pnl": -25.0,
+      "pnl_liq_est": -42.25,
+      "pnl_pct": -0.067,
+      "minutos": 73.1
     }
   ],
   "stats_modulo": [
