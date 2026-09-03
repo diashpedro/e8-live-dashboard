@@ -1,175 +1,223 @@
 <!doctype html>
 <html lang="pt-BR"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title id="pgtitle">Portfólio WIN Híbrido</title>
-<link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%233fb950'/%3E%3C/svg%3E">
+<title>Portfólio WIN</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a0a0b'/%3E%3Crect x='3' y='4' width='2.4' height='8' fill='%23e8a33d'/%3E%3Crect x='6.8' y='6' width='2.4' height='6' fill='%23e8a33d'/%3E%3Crect x='10.6' y='2.5' width='2.4' height='9.5' fill='%23e8a33d'/%3E%3C/svg%3E">
 <style>
-:root{--bg:#0d1117;--card:#161b22;--line:#2a333f;--tx:#e6edf3;--dim:#8b949e;
-      --ok:#3fb950;--bad:#f85149;--warn:#d29922;--ac:#58a6ff;--py:#d2a8ff;
-      --sp1:4px;--sp2:8px;--sp3:12px;--sp4:16px;--sp5:24px;--sp6:32px;--rad:10px;
-      --mv:180ms cubic-bezier(.4,0,.2,1)}
+/* ============================================================
+   Painel do portfólio WIN — redesenho de 03/set/2026.
+   Marco zero: 04/set, primeiro pregão da arquitetura 100% nativa.
+
+   Linguagem visual: instrumento, não página. Fundo quase preto,
+   um único acento âmbar, números em tabular monoespaçado, estado
+   comunicado por trilho lateral em vez de bolinha colorida.
+   ============================================================ */
+:root{
+  --bg:#0a0a0b; --panel:#131316; --panel2:#191a1e; --line:#26272d;
+  --tx:#eceef2; --dim:#8b8d98; --dim2:#5f6270;
+  --ac:#e8a33d;                        /* âmbar: acento único */
+  --ok:#4ec97f; --bad:#ff5f56; --warn:#e8a33d; --info:#6ea8fe;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --r:12px; --r2:8px;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.55 ui-sans-serif,-apple-system,Segoe UI,Roboto,sans-serif}
-.wrap{max-width:900px;margin:0 auto;padding:0 var(--sp4) 70px}
-h2{font-size:12.5px;margin:var(--sp5) 0 var(--sp2);color:var(--dim);text-transform:uppercase;letter-spacing:.7px}
-.hint{color:var(--dim);font-size:12px;margin:0 0 var(--sp2)}
-/* ---- bloco 0: veredito ---- */
-#veredito{position:sticky;top:0;z-index:10;background:var(--bg);padding:var(--sp4) 0 var(--sp3);
-  border-bottom:1px solid var(--line);margin-bottom:var(--sp4)}
-.v-top{display:flex;align-items:center;gap:var(--sp3)}
-.marker{width:18px;height:18px;flex:none}
-.mk-operando{border-radius:50%;background:var(--ok)}
-.mk-fora{border-radius:50%;border:3px solid var(--dim);background:transparent}
-.mk-atencao{width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:16px solid var(--warn)}
-.mk-falha{background-image:repeating-linear-gradient(45deg,var(--bad) 0 3px,#3a0d0b 3px 6px);
-  border-radius:3px;animation:pulse 1.6s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
-.v-word{font-size:28px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-.v-word.c-falha{color:var(--bad)}.v-word.c-atencao{color:var(--warn)}
-.v-word.c-operando{color:var(--ok)}.v-word.c-fora{color:var(--dim)}
-.v-idades{font-size:14px;color:var(--dim);margin-top:var(--sp2);font-variant-numeric:tabular-nums}
-.v-causas{font-size:13px;margin-top:var(--sp1)}
-.causa{display:inline-block;background:#241313;color:#ffb4ab;border:1px solid #5c2b26;
-  border-radius:5px;padding:1px 7px;margin:2px 4px 0 0;font-size:12.5px}
-#veredito.est-atencao .causa{background:#2a1f0a;color:#e3b341;border-color:#5c4408}
-#veredito.est-fora .causa,#veredito.est-operando .causa{background:#1c232c;color:var(--dim);border-color:var(--line)}
-.causa-extra{color:var(--dim);font-size:12.5px}
-/* ---- bloco 1: dinheiro ---- */
-.grid{display:grid;gap:11px;grid-template-columns:repeat(3,1fr)}
-@media (max-width:520px){.grid{grid-template-columns:1fr 1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:13px}
-.card .k{color:var(--dim);font-size:10.5px;text-transform:uppercase;letter-spacing:.6px}
-.card .v{margin-top:3px;font-variant-numeric:tabular-nums;transition:opacity var(--mv),color var(--mv)}
-.card.big .v{font-size:32px;font-weight:700}
-.card .v{font-size:21px;font-weight:600}
-.card .h{color:var(--dim);font-size:11px;margin-top:2px}
-.subline{color:var(--dim);font-size:12px;margin-top:var(--sp2)}
-.pos{color:var(--ok)}.neg{color:var(--bad)}.mut{color:var(--dim)}
-/* dado velho: nunca verde de dinheiro sob faixa vermelha */
-body.is-falha .money{opacity:.45;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 4px,transparent 4px 8px)}
-body.is-falha .money.pos,body.is-falha .money.neg{color:var(--dim)!important}
-/* ---- bloco 2: exposicao ---- */
-.exp{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:var(--sp3) var(--sp4)}
-.exp-row{display:flex;justify-content:space-between;gap:var(--sp3);padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
-.exp-row:last-of-type{border-bottom:0}
-.exp-lbl{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
-.exp-ver{margin-top:var(--sp2);font-weight:600;font-size:13px}
-.exp-ver.ok{color:var(--ok)}.exp-ver.bad{color:var(--bad)}.exp-ver.warn{color:var(--warn)}
-.pend-list{margin-top:var(--sp3);font-size:12.5px}
-.pend-item{padding:5px 0;border-top:1px solid var(--line);color:var(--dim)}
-/* ---- bloco 3: modulos ---- */
-.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--rad)}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{text-align:left;color:var(--dim);font-weight:500;font-size:10.5px;text-transform:uppercase;
-   letter-spacing:.5px;padding:9px 11px;border-bottom:1px solid var(--line);white-space:nowrap}
-td{padding:9px 11px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
-tr:last-child td{border-bottom:0}
-td.num,th.num{text-align:right}
-.tag{display:inline-block;padding:2px 7px;border-radius:5px;font-size:10.5px;
-     background:#1f2733;border:1px solid var(--line);color:var(--ac)}
-.tag.py{color:var(--py)}.tag.on{color:var(--ok)}.tag.off{color:var(--dim)}
-.tag.warn{color:var(--warn)}.tag.bad{color:var(--bad)}
-.modcards{display:none}
-.modcard{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:var(--sp3);margin-bottom:var(--sp2)}
-.modcard .row{display:flex;justify-content:space-between;font-size:12.5px;padding:2px 0}
-@media (max-width:640px){.tw{display:none}.modcards{display:block}}
-/* ---- bloco 4: linha do tempo ---- */
-.tl{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--rad)}
-.tl li{padding:9px 12px;border-bottom:1px solid var(--line);font-size:13px;display:flex;gap:8px}
-.tl li:last-child{border-bottom:0}
-.tl .h{color:var(--dim);font-variant-numeric:tabular-nums;flex:none}
-.tl .tp{flex:none;font-size:10.5px;text-transform:uppercase;padding:1px 6px;border-radius:4px;align-self:flex-start}
-.tp-entrada{background:#0f2a17;color:var(--ok)}.tp-saida{background:#1c232c;color:var(--ac)}
-.tp-rejeicao{background:#1c232c;color:var(--dim)}.tp-erro{background:#2a1313;color:var(--bad)}
-.tp-congelamento{background:#2a1f0a;color:var(--warn)}
-.empty{padding:18px;text-align:center;color:var(--dim);font-size:13px}
-/* ---- detalhes ---- */
-details{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);margin-top:var(--sp3)}
-summary{cursor:pointer;padding:0 var(--sp4);min-height:44px;display:flex;align-items:center;font-size:13px;font-weight:600}
-details .inner{padding:0 var(--sp4) var(--sp4)}
-.box{border-radius:8px;padding:10px 14px;font-size:12.5px;margin:12px 0;line-height:1.6}
-.box.info{background:#10202e;border:1px solid #1d3a52;color:#79c0ff}
-.foot{color:var(--dim);font-size:11.5px;line-height:1.8}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
-  clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--tx);font:15px/1.5 var(--sans);
+     -webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+.wrap{max-width:940px;margin:0 auto;padding:0 20px 96px}
+a{color:var(--info)}
+
+/* ---------- barra de instrumentos (topo, fixa) ---------- */
+#rail{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,var(--bg) 78%,transparent);
+      padding:14px 0 12px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+.seg-row{display:flex;gap:5px;margin-bottom:11px}
+.seg{flex:1;height:5px;border-radius:99px;background:var(--line);position:relative;
+     transition:background 240ms ease}
+.seg.s-ok{background:var(--ok)} .seg.s-bad{background:var(--bad)}
+.seg.s-warn{background:var(--warn)} .seg.s-off{background:#2f3138}
+.seg.s-bad{animation:blink 1.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+.seg-legend{display:flex;gap:5px;font-size:10px;letter-spacing:.9px;
+            text-transform:uppercase;color:var(--dim2)}
+.seg-legend span{flex:1}
+.status{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px}
+.status-word{font-size:15px;font-weight:650;letter-spacing:.3px}
+.c-ok{color:var(--ok)} .c-bad{color:var(--bad)} .c-warn{color:var(--warn)} .c-off{color:var(--dim)}
+.status-meta{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.causas{margin-top:9px;display:flex;flex-wrap:wrap;gap:6px}
+.causa{font-size:12px;padding:2.5px 9px;border-radius:99px;
+       background:#2a1614;color:#ffb3ae;border:1px solid #4d2320}
+.st-atencao .causa{background:#2a2110;color:#f0cc8a;border-color:#4d3d17}
+.st-operando .causa,.st-fora .causa{background:var(--panel2);color:var(--dim);border-color:var(--line)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- títulos de seção ---------- */
+h2{font-size:11px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;
+   color:var(--dim2);margin:38px 0 12px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.sub{color:var(--dim);font-size:13px;margin:-6px 0 14px}
+
+/* ---------- hoje: número herói ---------- */
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+      padding:22px 24px;display:flex;flex-wrap:wrap;gap:26px;align-items:flex-end}
+.hero-main{flex:1 1 240px;min-width:0}
+.hero-lbl{font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--dim2)}
+.hero-val{font-family:var(--mono);font-size:clamp(34px,8vw,52px);font-weight:600;
+          line-height:1.05;margin-top:6px;letter-spacing:-1.5px}
+.hero-sub{font-size:13px;color:var(--dim);margin-top:8px}
+.hero-side{display:flex;gap:26px;flex-wrap:wrap}
+.stat-k{font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--dim2)}
+.stat-v{font-family:var(--mono);font-size:22px;font-weight:600;margin-top:4px}
+.pos{color:var(--ok)} .neg{color:var(--bad)} .mut{color:var(--dim)}
+/* dado velho nunca aparece como dinheiro confiável */
+body.stale .money{opacity:.4}
+body.stale .money.pos,body.stale .money.neg{color:var(--dim)!important}
+
+/* ---------- linhas genéricas com trilho ---------- */
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--line);
+     border-radius:var(--r2);padding:12px 15px;display:flex;gap:14px;
+     align-items:center;flex-wrap:wrap}
+.row.r-ok{border-left-color:var(--ok)} .row.r-bad{border-left-color:var(--bad)}
+.row.r-warn{border-left-color:var(--warn)} .row.r-info{border-left-color:var(--info)}
+.row.r-idle{border-left-color:#2f3138}
+.row-main{flex:1 1 190px;min-width:0}
+.row-t{font-weight:600;font-size:14px}
+.row-d{font-size:12.5px;color:var(--dim);margin-top:2px}
+.row-n{font-family:var(--mono);font-size:15px;font-weight:600;text-align:right;white-space:nowrap}
+.row-n small{display:block;font-size:11px;font-weight:400;color:var(--dim);
+             font-family:var(--sans);margin-top:2px}
+.pill{display:inline-block;font-size:10.5px;letter-spacing:.7px;text-transform:uppercase;
+      padding:2px 7px;border-radius:4px;background:var(--panel2);color:var(--dim);
+      border:1px solid var(--line);vertical-align:1px}
+.pill.p-ok{color:var(--ok);border-color:#20402e;background:#12241a}
+.pill.p-bad{color:var(--bad);border-color:#4d2320;background:#251413}
+.pill.p-warn{color:var(--warn);border-color:#4d3d17;background:#241d0f}
+
+/* ---------- módulos ---------- */
+.mods{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(288px,1fr))}
+.mod{background:var(--panel);border:1px solid var(--line);border-left:3px solid #2f3138;
+     border-radius:var(--r2);padding:13px 15px}
+.mod.m-on{border-left-color:var(--ok)} .mod.m-off{border-left-color:#2f3138}
+.mod.m-bad{border-left-color:var(--bad)} .mod.m-armed{border-left-color:var(--ac)}
+.mod-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.mod-nm{font-weight:600;font-size:14px}
+.mod-st{font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--dim2)}
+.mod.m-on .mod-st{color:var(--ok)} .mod.m-bad .mod-st{color:var(--bad)}
+.mod.m-armed .mod-st{color:var(--ac)}
+.mod-d{font-size:12.5px;color:var(--dim);margin-top:5px}
+.mod-num{font-family:var(--mono);font-size:13px;margin-top:7px;color:var(--dim)}
+
+/* ---------- feed ---------- */
+.feed{display:flex;flex-direction:column}
+.fe{display:flex;gap:13px;padding:9px 0;border-top:1px solid var(--line);font-size:13.5px;
+    align-items:flex-start}
+.fe:first-child{border-top:0}
+.fe-h{font-family:var(--mono);font-size:12px;color:var(--dim2);flex:none;width:52px;padding-top:1px}
+.fe-b{flex:1;min-width:0}
+.fe-tag{font-size:10px;letter-spacing:.8px;text-transform:uppercase;font-weight:600;
+        margin-right:7px}
+.t-entrada{color:var(--info)} .t-saida{color:var(--ok)} .t-erro{color:var(--bad)}
+.t-rejeicao{color:var(--dim2)} .t-skip{color:var(--warn)}
+.fe-x{font-family:var(--mono);font-size:12px;color:var(--dim);word-break:break-word}
+.fe-rep{font-size:11.5px;color:var(--dim2);margin-top:2px}
+
+/* ---------- vazio ---------- */
+.empty{background:var(--panel);border:1px dashed var(--line);border-radius:var(--r2);
+       padding:22px;text-align:center;color:var(--dim);font-size:13.5px}
+.empty b{color:var(--tx);font-weight:600;display:block;margin-bottom:4px;font-size:14.5px}
+
+/* ---------- série diária ---------- */
+.spark{display:flex;align-items:flex-end;gap:3px;height:60px;margin:6px 0 4px}
+.spark i{flex:1;min-width:2px;background:var(--ok);border-radius:1px;opacity:.85}
+.spark i.dn{background:var(--bad)}
+
+/* ---------- rodapé ---------- */
+details{margin-top:38px;border-top:1px solid var(--line);padding-top:14px}
+summary{cursor:pointer;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--dim2)}
+.foot{font-size:13px;color:var(--dim);margin-top:12px}
+.foot p{margin:0 0 9px}
+.foot code{font-family:var(--mono);font-size:12px;color:var(--tx);background:var(--panel2);
+           padding:1px 5px;border-radius:3px}
+@media(max-width:560px){
+  .wrap{padding:0 14px 80px}
+  .hero{padding:18px}
+  .hero-side{gap:18px}
+  .seg-legend{font-size:9px;letter-spacing:.4px}
+}
 </style></head><body>
 <div class="wrap">
 
-<div id="veredito">
-  <div id="veredito-visual" aria-hidden="true">carregando…</div>
-  <div id="veredito-status" role="status" class="sr-only"></div>
-  <div id="veredito-alert-slot"></div>
+<div id="rail">
+  <div class="seg-row" id="segs" aria-hidden="true"></div>
+  <div class="seg-legend"><span>EA</span><span>Terminal</span><span>Cotação</span><span>Dados</span><span>Exposição</span></div>
+  <div class="status">
+    <span class="status-word" id="statusWord">carregando…</span>
+    <span class="status-meta" id="statusMeta"></span>
+  </div>
+  <div class="causas" id="causas"></div>
+  <div class="sr" role="status" id="srStatus"></div>
+  <div id="alertSlot"></div>
 </div>
 
-<div class="grid" id="cards"></div>
-<div class="subline" id="subline"></div>
+<h2>Hoje</h2>
+<div id="hoje"></div>
 
-<section id="bloco2" hidden>
-<h2>Exposição agora</h2>
-<div class="exp" id="exp"></div>
+<section id="secExp" hidden>
+  <h2>Exposição agora</h2>
+  <div class="rows" id="exp"></div>
 </section>
 
-<section>
-<h2>7 módulos</h2>
-<p class="hint">Pernas reconstruídas do histórico de negócios; a corretora só conhece a posição líquida.</p>
-<div class="tw"><table>
-<thead><tr><th>Módulo</th><th>Estado</th><th class="num">Aberto</th><th class="num">Hoje</th><th>Evidência</th></tr></thead>
-<tbody id="modsb"></tbody></table></div>
-<div class="modcards" id="modscard"></div>
-</section>
+<h2>Os sete módulos</h2>
+<p class="sub" id="modsSub"></p>
+<div class="mods" id="mods"></div>
 
-<section>
-<h2>Linha do tempo de hoje</h2>
-<div id="timelinewrap"><ul class="tl" id="timeline"></ul><div class="empty" id="timelinee"></div></div>
-</section>
+<h2>O que aconteceu hoje</h2>
+<div class="feed" id="feed"></div>
 
-<details><summary>Evidência acumulada por módulo (IC 95%)</summary><div class="inner">
-<div class="box info">Cada pregão daqui em diante é uma observação <b>fora da amostra de verdade</b>: não pode ser
-garimpada, porque ainda não aconteceu. Um módulo só merece confiança quando o intervalo de confiança de 95%
-<b>não contém zero</b> — o que costuma exigir 100 ou mais trades. Até lá, resultado positivo e sorte são indistinguíveis.</div>
-<div class="tw"><table>
-<thead><tr><th>Módulo</th><th class="num">Trades</th><th class="num">Acertos</th><th class="num">Soma</th>
-<th class="num">Média/trade</th><th class="num">IC 95%</th><th class="num">t</th><th>Veredito</th></tr></thead>
-<tbody id="statb"></tbody></table><div class="empty" id="state">nenhum trade encerrado ainda — a medição começa na primeira saída</div></div>
-</div></details>
+<h2>Desde o marco zero</h2>
+<div id="acum"></div>
 
-<details><summary>Histórico diário</summary><div class="inner">
-<div class="tw"><table>
-<thead><tr><th>Data</th><th class="num">Trades</th><th class="num">Acertos</th>
-<th class="num">Resultado</th></tr></thead>
-<tbody id="dayb"></tbody></table><div class="empty" id="daye">primeiro pregão — sem histórico ainda</div></div>
-</div></details>
-
-<details><summary>Como funciona</summary><div class="inner foot" id="foot"></div></details>
-
+<details>
+  <summary>Como ler este painel</summary>
+  <div class="foot" id="foot"></div>
+</details>
 </div>
+
 <script>
-/* ============ funções puras (testáveis fora do navegador) ============ */
+/* =========================================================================
+   FUNÇÕES PURAS — sem DOM, para poderem ser testadas fora do navegador
+   (workspace/check_painel.js roda este mesmo código no node).
+   ========================================================================= */
+
+/* Os sete módulos. Desde 03/set/2026 TODOS são nativos: o produtor Python
+   (win_sinais.py) foi aposentado e a EA calcula T01/T11/V02 e intramom
+   dentro dela. `org` deixou de existir porque deixou de haver diferença. */
 const MODULOS=[
- {id:"volbreak",           k:"VolBreak",              org:"nativo"},
- {id:"vwap",               k:"VWAP",                  org:"nativo"},
- {id:"orb",                k:"ORB",                   org:"nativo"},
- {id:"t01_barra_reversao", k:"T01_barra_reversao",    org:"python"},
- {id:"t11_climax",         k:"T11_climax",            org:"python"},
- {id:"v02_reversao_climatica",k:"V02_reversao_climatica",org:"python"},
- {id:"intramom",           k:"Momentum intradiario",  org:"python"}];
+ {id:"VB",       nome:"VolBreak",  desc:"rompimento da abertura ± ATR",         janela:"arma 10:00"},
+ {id:"VW",       nome:"VWAP",      desc:"reversão na VWAP, gatilho de 1 barra", janela:"M5, até 16:00"},
+ {id:"ORB",      nome:"ORB",       desc:"faixa de abertura de 45 min",          janela:"arma ~09:45", nota:"não validado"},
+ {id:"t01",      nome:"T01",       desc:"barra de reversão · 6 gavetas",        janela:"M15, até 16:00"},
+ {id:"t11",      nome:"T11",       desc:"clímax de sequência · 8 gavetas",      janela:"M15, até 16:00"},
+ {id:"v02",      nome:"V02",       desc:"reversão climática · 3 gavetas",       janela:"M15, até 16:00"},
+ {id:"intramom", nome:"Intramom",  desc:"momentum do dia vs. 60 pregões",       janela:"janela 17:00"}];
 
 function fmtDur(s){
   if(s===null||s===undefined||isNaN(s)) return null;
   s=Math.max(0,Math.round(s));
   if(s<60) return s+"s";
-  const m=Math.floor(s/60), r=s%60;
-  return m+"m"+String(r).padStart(2,"0")+"s";
+  const m=Math.floor(s/60);
+  if(m<60) return m+"m"+String(s%60).padStart(2,"0")+"s";
+  return Math.floor(m/60)+"h"+String(m%60).padStart(2,"0")+"m";
 }
-// BRT = UTC-3, sem horario de verao. Deslocamos o relogio e lemos os campos UTC
-// como se fossem os campos locais de Brasilia -- funciona em qualquer fuso do navegador.
+/* BRT = UTC-3 o ano inteiro (não há horário de verão no Brasil desde 2019).
+   Deslocamos o relógio e lemos os campos UTC como se fossem os de Brasília:
+   funciona em qualquer fuso do navegador, inclusive no celular em viagem. */
 function brtParts(nowMs){
-  const brt=new Date(nowMs-3*3600*1000);
-  const dow=brt.getUTCDay();
-  const minutesOfDay=brt.getUTCHours()*60+brt.getUTCMinutes();
-  const dateStr=brt.toISOString().slice(0,10);
-  return {dow,minutesOfDay,dateStr};
+  const b=new Date(nowMs-3*3600*1000);
+  return {dow:b.getUTCDay(), minutesOfDay:b.getUTCHours()*60+b.getUTCMinutes(),
+          dateStr:b.toISOString().slice(0,10)};
 }
 function emJanela(nowMs){
   const b=brtParts(nowMs);
@@ -177,308 +225,310 @@ function emJanela(nowMs){
 }
 const canon=l=>String(l||"").split(" · ")[0].trim();
 
-// Decisao de raiz: desconhecido nunca e verde. Todo ramo que nao prova estado
-// bom cai em FALHA ou ATENCAO -- nunca silenciosamente em OPERANDO.
+/* -------------------------------------------------------------------------
+   avaliarEstado — a decisão de raiz do painel.
+
+   DESCONHECIDO NUNCA É VERDE. Todo ramo que não PROVA estado bom termina em
+   FALHA ou ATENÇÃO. Em 01/set/2026 o painel mostrou verde durante 8 horas em
+   que a EA não estava carregada: campo ausente era lido como campo em ordem.
+
+   Roda no NAVEGADOR a cada segundo, sobre o JSON que pode ter até 3 min de
+   atraso. Por isso a idade é sempre recalculada aqui e nunca lida do arquivo.
+   ------------------------------------------------------------------------- */
 function avaliarEstado(d, nowMs, fetchFails){
   fetchFails=fetchFails||0;
   const falha=[], atencao=[];
-  if(fetchFails>=3) falha.push("falha ao buscar data_win.json 3x seguidas");
-  if(!d){
-    return {estado:"FALHA", causas:falha.length?falha:["sem dados carregados"], janela:false,
-      idadePubS:null, idadeEaS:null, idadePythonS:null, eaSemEA:true, pyCongelado:true};
-  }
+  if(fetchFails>=3) falha.push("falha ao buscar data_win.json 3× seguidas");
+  if(!d) return {estado:"FALHA", causas:falha.length?falha:["sem dados carregados"],
+                 janela:false, idadePubS:null, idadeEaS:null, eaSemEA:true,
+                 segs:{ea:"bad",terminal:"bad",cotacao:"bad",dados:"bad",exposicao:"off"}};
+
   const janela=emJanela(nowMs), brt=brtParts(nowMs);
-  const h=d.health||{}, py=d.python||{}, t=d.today||{}, rc=d.reconciliacao||{};
+  const h=d.health||{}, t=d.today||{}, rc=d.reconciliacao||{}, py=d.python||{};
   const op=d.open_positions||[];
+  const segs={ea:"off",terminal:"off",cotacao:"off",dados:"off",exposicao:"off"};
 
+  /* --- idade da publicação --- */
   let idadePubS=null;
-  const pubEpoch=Date.parse(d.updated_at);
-  if(!isNaN(pubEpoch)) idadePubS=Math.round((nowMs-pubEpoch)/1000);
+  const pub=Date.parse(d.updated_at);
+  if(!isNaN(pub)) idadePubS=Math.round((nowMs-pub)/1000);
   else atencao.push("updated_at ausente ou inválido");
-  if(idadePubS!==null && janela && idadePubS>15*60) falha.push("publicação com "+fmtDur(idadePubS)+" de atraso");
+  if(idadePubS===null) segs.dados="warn";
+  else if(janela && idadePubS>15*60){ falha.push("publicação com "+fmtDur(idadePubS)+" de atraso"); segs.dados="bad"; }
+  else segs.dados=(janela && idadePubS>6*60)?"warn":"ok";
 
+  /* --- o JSON é de hoje? --- */
   if(brt.minutesOfDay>9*60+15){
-    if(!t.date) falha.push("sem data de hoje no JSON");
-    else if(t.date!==brt.dateStr) falha.push("data do JSON ("+t.date+") não é hoje");
+    if(!t.date){ falha.push("sem data de hoje no JSON"); segs.dados="bad"; }
+    else if(t.date!==brt.dateStr){ falha.push("data do JSON ("+t.date+") não é hoje"); segs.dados="bad"; }
   }
-  if(h.terminal_connected===false) falha.push("terminal desconectado");
-  else if(h.terminal_connected===undefined) atencao.push("terminal_connected ausente");
-  if(h.algo_trading===false) falha.push("algo trading desligado");
-  else if(h.algo_trading===undefined) atencao.push("algo_trading ausente");
-  (h.symbols||[]).forEach(s=>{ if(s && s.ok===false) falha.push("símbolo "+(s.symbol||"?")+" sem cotação válida"); });
 
+  /* --- terminal e algo trading --- */
+  if(h.terminal_connected===false){ falha.push("terminal desconectado"); segs.terminal="bad"; }
+  else if(h.terminal_connected===undefined){ atencao.push("terminal_connected ausente"); segs.terminal="warn"; }
+  else segs.terminal="ok";
+  if(h.algo_trading===false){ falha.push("algo trading desligado"); segs.terminal="bad"; }
+  else if(h.algo_trading===undefined){ atencao.push("algo_trading ausente"); if(segs.terminal!=="bad") segs.terminal="warn"; }
+
+  /* --- cotação dos símbolos --- */
+  const syms=h.symbols||[];
+  if(!syms.length){ atencao.push("sem estado de cotação dos símbolos"); segs.cotacao="warn"; }
+  else{
+    let ruim=false;
+    syms.forEach(s=>{ if(s && s.ok===false){ falha.push("símbolo "+(s.symbol||"?")+" sem cotação válida"); ruim=true; } });
+    segs.cotacao=ruim?"bad":"ok";
+  }
+
+  /* --- heartbeat da EA: a prova de que ela está viva mesmo sem negociar --- */
   let idadeEaS=null, eaSemEA=false;
   if(typeof h.ea_heartbeat_epoch==="number"){
     idadeEaS=Math.round(nowMs/1000-h.ea_heartbeat_epoch);
-    if(janela && idadeEaS>30*60){ falha.push("EA sem heartbeat há "+fmtDur(idadeEaS)); eaSemEA=true; }
-  } else {
-    eaSemEA=true;
-    atencao.push("sem heartbeat da EA (campo health.ea_heartbeat_epoch ausente)");
-  }
+    if(janela && idadeEaS>30*60){ falha.push("EA sem heartbeat há "+fmtDur(idadeEaS)); eaSemEA=true; segs.ea="bad"; }
+    else if(janela && idadeEaS>10*60){ atencao.push("heartbeat da EA com "+fmtDur(idadeEaS)); segs.ea="warn"; }
+    else segs.ea="ok";
+  } else { eaSemEA=true; segs.ea="warn";
+           atencao.push("sem heartbeat da EA (health.ea_heartbeat_epoch ausente)"); }
 
-  let idadePythonS=null;
-  if(typeof py.heartbeat_epoch==="number"){
-    idadePythonS=Math.round(nowMs/1000-py.heartbeat_epoch);
-  } else if(py.presente!==false){
-    atencao.push("idade do python não calculável (campo python.heartbeat_epoch ausente)");
-  }
-  if(py.congelado) atencao.push("ponte python congelada");
+  /* --- a ponte Python foi aposentada em 03/set. Se ela reaparecer viva, é
+         porque alguém religou o híbrido sem avisar o painel: vale atenção. --- */
+  if(py && py.presente===true && typeof py.heartbeat_epoch==="number"
+     && Math.round(nowMs/1000-py.heartbeat_epoch)<600)
+    atencao.push("ponte Python ativa — a arquitetura em vigor é 100% nativa");
 
-  if((h.errors_today||0)>0) atencao.push(h.errors_today+" erro(s) hoje");
+  if((h.errors_today||0)>0) atencao.push(h.errors_today+" erro(s) no log hoje");
 
-  const pendentes=h.pendentes||0;
-  if(pendentes>0 && brt.minutesOfDay>17*60+45) falha.push(pendentes+" ordem(ns) pendente(s) após a zeragem");
-  else if(pendentes>0 && brt.minutesOfDay>16*60) atencao.push(pendentes+" ordem(ns) pendente(s) após 16:00");
-
+  /* --- exposição: pendentes e posições fora de hora são falha, não detalhe --- */
+  const pend=h.pendentes||0;
+  if(pend>0 && brt.minutesOfDay>17*60+45) falha.push(pend+" ordem(ns) pendente(s) após a zeragem");
+  else if(pend>0 && brt.minutesOfDay>16*60) atencao.push(pend+" ordem(ns) pendente(s) após 16:00");
   if(op.length>0 && brt.minutesOfDay>17*60+45) falha.push("posição aberta após a zeragem");
+  const temExp=op.length>0||pend>0;
+  segs.exposicao = temExp ? (brt.minutesOfDay>17*60+45?"bad":"warn") : (janela?"ok":"off");
 
-  const temExposicao=op.length>0 || pendentes>0;
+  /* --- reconciliação: a corretora é a fonte da verdade --- */
   if(typeof rc.volume_ok==="boolean"){
     if(!rc.volume_ok) atencao.push("volume não bate: corretora "+rc.volume_corretora+" × pernas "+rc.volume_pernas);
-  } else if(rc.comparavel===true){
-    if(rc.ok===false) atencao.push("reconciliação diverge em R$");
-  } else if(temExposicao){
-    atencao.push("reconciliação de volume indisponível com posição/pendentes em aberto");
-  }
+  } else if(rc.comparavel===true){ if(rc.ok===false) atencao.push("reconciliação diverge em R$"); }
+  else if(temExp) atencao.push("reconciliação de volume indisponível com posição em aberto");
 
   let estado, causas;
   if(falha.length){ estado="FALHA"; causas=falha; }
   else if(atencao.length){ estado="ATENCAO"; causas=atencao; }
   else if(janela){ estado="OPERANDO"; causas=[]; }
-  else { estado="FORA"; causas=["sem publicação prevista"]; }
+  else { estado="FORA"; causas=[]; }
+  if(!janela && !falha.length) Object.keys(segs).forEach(k=>{ if(segs[k]==="ok") segs[k]="off"; });
 
-  return {estado, causas, janela, idadePubS, idadeEaS, idadePythonS, eaSemEA, pyCongelado:!!py.congelado};
+  return {estado, causas, janela, idadePubS, idadeEaS, eaSemEA, segs};
 }
 
-function estadoModulo(m, agg, ctx){
-  if(agg && agg.n>0) return "posicionado";
-  if(ctx.eaSemEA) return "SEM EA";
-  if(m.org==="python" && ctx.pyCongelado) return "CONGELADO";
-  return "aguardando";
+/* Estado de UM módulo. Posicionado > sem EA > armado > aguardando. */
+function estadoModulo(mod, aberta, armadas, ctx){
+  if(aberta) return {k:"posicionado", cls:"m-on"};
+  if(ctx.eaSemEA) return {k:"sem EA", cls:"m-bad"};
+  if(armadas>0) return {k:"armado", cls:"m-armed"};
+  if(!ctx.janela) return {k:"fora de pregão", cls:"m-off"};
+  return {k:"aguardando", cls:"m-off"};
 }
-/* ============ fim das funções puras ============ */
+/* ===================== fim das funções puras ===================== */
 
+if(typeof module!=="undefined"&&module.exports)
+  module.exports={avaliarEstado,estadoModulo,emJanela,brtParts,fmtDur,canon,MODULOS};
+</script>
+<script>
+/* =========================================================================
+   RENDERIZAÇÃO
+   ========================================================================= */
+const $=id=>document.getElementById(id);
 const brl=v=>(v<0?"−":"")+"R$ "+Math.abs(+v||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
-const num=v=>(+v||0).toLocaleString("pt-BR");
+const brl0=v=>(v<0?"−":"")+"R$ "+Math.abs(+v||0).toLocaleString("pt-BR",{maximumFractionDigits:0});
 const cls=v=>v>0?"pos":v<0?"neg":"mut";
-const hora=s=>{const t=Date.parse(s);return isNaN(t)?"—":new Date(t).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})};
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const hhmm=s=>{const t=Date.parse(s);return isNaN(t)?"—":new Date(t-3*3600*1000).toISOString().slice(11,16)};
 
-const ESTADO_LABEL={FALHA:"FALHA",ATENCAO:"ATENÇÃO",OPERANDO:"OPERANDO",FORA:"FORA DE PREGÃO"};
-const ESTADO_CLASSE={FALHA:"falha",ATENCAO:"atencao",OPERANDO:"operando",FORA:"fora"};
+const PALAVRA={FALHA:"Falha",ATENCAO:"Atenção",OPERANDO:"Operando",FORA:"Fora de pregão"};
+const CLASSE={FALHA:"bad",ATENCAO:"warn",OPERANDO:"ok",FORA:"off"};
+const FRASE={
+  FALHA:"algo precisa de você agora",
+  ATENCAO:"funcionando, com ressalva",
+  OPERANDO:"os sete módulos no ar",
+  FORA:"nada previsto até a próxima abertura"};
 
-let lastData=null, fetchFails=0;
+let dados=null, fetchFails=0;
 
-function idadeTexto(s,label,semTexto){
-  if(s===null||s===undefined) return label+" "+semTexto;
-  return label+" "+fmtDur(s);
+function renderRail(est){
+  const ordem=["ea","terminal","cotacao","dados","exposicao"];
+  $("segs").innerHTML=ordem.map(k=>`<div class="seg s-${est.segs[k]}"></div>`).join("");
+  $("statusWord").className="status-word c-"+CLASSE[est.estado];
+  $("statusWord").textContent=PALAVRA[est.estado]+" · "+FRASE[est.estado];
+  const partes=[];
+  if(est.idadeEaS!==null) partes.push("EA "+fmtDur(est.idadeEaS));
+  else partes.push("EA sem sinal");
+  partes.push("dados "+(est.idadePubS===null?"—":fmtDur(est.idadePubS)));
+  $("statusMeta").textContent=partes.join("  ·  ");
+  $("causas").innerHTML=est.causas.map(c=>`<span class="causa">${esc(c)}</span>`).join("");
+  $("rail").className="st-"+CLASSE[est.estado];
+  document.body.classList.toggle("stale", est.estado==="FALHA");
+  $("srStatus").textContent=PALAVRA[est.estado]+". "+(est.causas.join(". ")||FRASE[est.estado]);
+
+  /* O nó de alerta é CRIADO e DESTRUÍDO, nunca reaproveitado: leitor de tela
+     só anuncia role="alert" quando o nó entra no DOM. Mudar o texto de um nó
+     que já estava lá é silêncio — defeito corrigido em 01/set/2026. */
+  const slot=$("alertSlot");
+  const precisa = est.estado==="FALHA";
+  const tem = slot.firstChild!==null;
+  if(precisa && !tem){
+    const n=document.createElement("div");
+    n.setAttribute("role","alert"); n.className="sr";
+    n.textContent="Falha no portfólio WIN. "+est.causas.join(". ");
+    slot.appendChild(n);
+  } else if(!precisa && tem){ slot.innerHTML=""; }
 }
 
-function renderVeredito(d, est){
-  const c=ESTADO_CLASSE[est.estado];
-  document.body.className="is-"+c;
-  document.getElementById("veredito").className="est-"+c;
-  const idades=[
-    idadeTexto(est.idadePubS,"publicado há","desconhecida"),
-    idadeTexto(est.idadeEaS,"· EA","sem heartbeat"),
-    idadeTexto(est.idadePythonS,"· python","sem heartbeat")
-  ].join(" ");
-  const cs=est.causas.slice(0,2).map(x=>`<span class="causa">${esc(x)}</span>`).join("");
-  const extra=est.causas.length-2;
-  document.getElementById("veredito-visual").innerHTML=`<div class="v-top"><span class="marker mk-${c}" aria-hidden="true"></span>
-    <span class="v-word c-${c}">${ESTADO_LABEL[est.estado]}</span></div>
-    <div class="v-idades">${idades}</div>
-    <div class="v-causas">${cs}${extra>0?`<span class="causa-extra">+${extra}</span>`:""}</div>`;
-
-  const mensagem = ESTADO_LABEL[est.estado]+(est.causas.length?": "+est.causas.join("; "):"")+". "+idades;
-
-  // role="status" e role="alert" nunca coexistem no mesmo no, e o role="alert"
-  // nunca e obtido mutando o atributo de um no que ja existia na arvore --
-  // Safari/VoiceOver no celular (o caso de uso principal) costuma ignorar essa
-  // mutacao. O no de alerta nasce quando o estado entra em FALHA e morre
-  // quando sai; a cada pintura em FALHA ele e destruido e recriado, entao a
-  // leitura nunca depende de deteccao de mutacao de atributo ou de texto.
-  const slot=document.getElementById("veredito-alert-slot");
-  const statusEl=document.getElementById("veredito-status");
-  slot.innerHTML="";
-  if(est.estado==="FALHA"){
-    statusEl.textContent="";
-    const alertEl=document.createElement("div");
-    alertEl.setAttribute("role","alert");
-    alertEl.className="sr-only";
-    alertEl.textContent=mensagem;
-    slot.appendChild(alertEl);
-  } else {
-    statusEl.textContent=mensagem;
-  }
-
-  document.title = est.estado==="FALHA" ? "⚠ FALHA · WIN" : "Portfólio WIN Híbrido";
-  document.getElementById("favicon").href = est.estado==="FALHA"
-    ? "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23f85149'/%3E%3C/svg%3E"
-    : "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%233fb950'/%3E%3C/svg%3E";
+function renderHoje(d){
+  const t=(d&&d.today)||{};
+  const total=+t.total||0, real=+t.realized||0, ab=+t.unrealized||0;
+  const n=+t.trades||0, w=+t.wins||0;
+  const acerto=n?Math.round(100*w/n)+"%":"—";
+  $("hoje").innerHTML=`
+   <div class="hero">
+     <div class="hero-main">
+       <div class="hero-lbl">Resultado do dia</div>
+       <div class="hero-val money ${cls(total)}">${brl(total)}</div>
+       <div class="hero-sub">${brl(real)} realizado${ab?" · "+brl(ab)+" em aberto":""}</div>
+     </div>
+     <div class="hero-side">
+       <div><div class="stat-k">Trades</div><div class="stat-v">${n}</div></div>
+       <div><div class="stat-k">Acerto</div><div class="stat-v">${acerto}</div></div>
+       <div><div class="stat-k">Pernas</div><div class="stat-v">${+t.open_legs||0}</div></div>
+     </div>
+   </div>`;
 }
 
-function renderCards(d){
-  const t=d.today||{}, c=d.cumulative||{}, op=d.open_positions||[];
-  const aberto=op.reduce((a,x)=>a+(+x.pnl||0),0);
-  document.getElementById("cards").innerHTML=[
-    ["Resultado hoje",brl(t.total),cls(t.total),true],
-    ["Em aberto",brl(aberto),cls(aberto),false],
-    ["Exposição",brl(t.exposure),"mut",false],
-  ].map(([k,v,cl,big])=>`<div class="card${big?" big":""}"><div class="k">${k}</div>
-    <div class="v money ${cl}">${v}</div></div>`).join("");
-  document.getElementById("subline").textContent=
-    `realizado ${brl(t.realized)} · acumulado ${brl(c.pnl)} (${num(c.days)} pregão(ões))`;
-}
-
-function bloco2Data(d){
-  const rc=d.reconciliacao||{}, op=d.open_positions||[], h=d.health||{};
-  const pendentes=h.pendentes||0;
-  if(!(op.length>0 || pendentes>0)) return null;
-  const somaPernas=op.reduce((a,x)=>a+Math.abs(+x.qty||0),0);
-  let medido, reconstruido, veredito, tipo;
-  if(typeof rc.volume_corretora==="number" && typeof rc.volume_pernas==="number"){
-    medido=num(rc.volume_corretora)+" contrato(s)";
-    reconstruido=num(rc.volume_pernas)+" contrato(s)";
-    if(typeof rc.volume_ok==="boolean"){
-      veredito=rc.volume_ok?"batem":"DIVERGEM: "+num(Math.abs(rc.volume_corretora-rc.volume_pernas))+" contrato(s)";
-      tipo=rc.volume_ok?"ok":"bad";
-    } else { veredito="volume_ok ausente — não verificável"; tipo="warn"; }
-  } else {
-    medido=(typeof rc.corretora==="number")?brl(rc.corretora)+" (posição líquida, preço médio)":"indisponível (sem reconciliacao.volume_corretora)";
-    reconstruido=num(somaPernas)+" contrato(s) reconstruído(s) do histórico";
-    veredito="não verificável (campos de volume ausentes neste JSON)";
-    tipo="warn";
-  }
-  return {medido,reconstruido,veredito,tipo,pendentes,pendDet:d.pendentes_detalhe};
-}
-
-function renderBloco2(d){
-  const b=bloco2Data(d);
-  const sec=document.getElementById("bloco2");
-  if(!b){ sec.hidden=true; return; }
+function renderExp(d,est){
+  const op=(d&&d.open_positions)||[], pend=(d&&d.pendentes_detalhe)||[];
+  const sec=$("secExp");
+  if(!op.length && !pend.length){ sec.hidden=true; return; }
   sec.hidden=false;
-  let pend="";
-  if(b.pendentes>0){
-    if(Array.isArray(b.pendDet) && b.pendDet.length){
-      pend=`<div class="pend-list">${b.pendDet.map(p=>
-        `<div class="pend-item">#${esc(p.ticket)} · ${esc(p.tipo)} · ${num(p.volume)} @ ${num(p.preco)} · ${esc(p.comment)} · ${hora(p.hora)}</div>`).join("")}</div>`;
-    } else {
-      pend=`<div class="pend-list"><div class="pend-item">${b.pendentes} pendente(s) — detalhe indisponível (campo pendentes_detalhe ausente)</div></div>`;
-    }
+  const linhas=op.map(p=>{
+    const v=+p.pnl||0;
+    return `<div class="row ${v<0?"r-bad":"r-ok"}">
+      <div class="row-main">
+        <div class="row-t">${esc(p.strategy_label||p.strategy)} <span class="pill">${esc(p.side)}</span></div>
+        <div class="row-d">${p.qty} @ ${esc(p.entry_price)} · ${esc(hhmm(p.entry_time))} · ${Math.round(p.minutos)} min</div>
+      </div>
+      <div class="row-n ${cls(v)}">${brl(v)}<small>agora ${esc(p.current_price)}</small></div></div>`;
+  }).concat(pend.map(o=>`<div class="row r-warn">
+      <div class="row-main"><div class="row-t">Ordem pendente <span class="pill p-warn">${esc(o.tipo||o.type||"")}</span></div>
+      <div class="row-d">${esc(o.comment||o.comentario||"")} @ ${esc(o.preco||o.price||"")}</div></div></div>`));
+  $("exp").innerHTML=linhas.join("");
+}
+
+function renderMods(d,est){
+  const op=(d&&d.open_positions)||[], stats=(d&&d.stats_modulo)||[];
+  const porMod={}; op.forEach(p=>{ porMod[canon(p.strategy)]=p; });
+  const statMod={}; stats.forEach(s=>{ statMod[canon(s.modulo)]=s; });
+  $("modsSub").textContent = est.eaSemEA
+    ? "A EA não está reportando — o estado abaixo não pode ser confirmado."
+    : "Todos calculados dentro da EA desde 03/set. Nenhum processo externo decide.";
+  $("mods").innerHTML=MODULOS.map(m=>{
+    const aberta=porMod[m.id]||porMod[m.nome]||null;
+    const st=estadoModulo(m,aberta,0,est);
+    const s=statMod[m.id]||statMod[m.nome];
+    let num="";
+    if(aberta) num=`<div class="mod-num ${cls(aberta.pnl)}">${brl(aberta.pnl)} · ${aberta.qty} ${esc(aberta.side)}</div>`;
+    else if(s&&s.n) num=`<div class="mod-num">${s.n} trade(s) · média ${brl0(s.media)}</div>`;
+    else num=`<div class="mod-num">sem trade desde o marco zero</div>`;
+    return `<div class="mod ${st.cls}">
+      <div class="mod-top"><span class="mod-nm">${esc(m.nome)}</span><span class="mod-st">${esc(st.k)}</span></div>
+      <div class="mod-d">${esc(m.desc)}${m.nota?' <span class="pill p-warn">'+esc(m.nota)+'</span>':""}</div>
+      ${num}</div>`;
+  }).join("");
+}
+
+function renderFeed(d){
+  const ev=((d&&d.eventos_hoje)||[]).slice().reverse();
+  if(!ev.length){
+    $("feed").innerHTML=`<div class="empty"><b>Nada ainda hoje</b>
+      Entradas, saídas, recusas e erros aparecem aqui na ordem em que acontecem.</div>`;
+    return;
   }
-  document.getElementById("exp").innerHTML=
-    `<div class="exp-row"><span class="exp-lbl">Medido (corretora)</span><span class="money">${b.medido}</span></div>
-     <div class="exp-row"><span class="exp-lbl">Reconstruído (histórico)</span><span class="money">${b.reconstruido}</span></div>
-     <div class="exp-ver ${b.tipo}">${b.veredito}</div>${pend}`;
+  $("feed").innerHTML=ev.slice(0,120).map(e=>{
+    const tipo=String(e.tipo||"");
+    const rep=e.repeticoes>1
+      ? `<div class="fe-rep">${e.repeticoes}× entre ${esc(hhmm(e.primeira))} e ${esc(hhmm(e.ultima))}</div>` : "";
+    return `<div class="fe">
+      <div class="fe-h">${esc(hhmm(e.hora))}</div>
+      <div class="fe-b">
+        <span class="fe-tag t-${esc(tipo)}">${esc(tipo)}</span>
+        <span class="fe-x">${esc(e.texto)}</span>${rep}
+      </div></div>`;
+  }).join("");
 }
 
-function renderModulos(d, est){
-  const op=d.open_positions||[], tr=d.trades||[], st=d.stats_modulo||[];
-  const agg={}; MODULOS.forEach(m=>agg[m.k]={n:0,ab:0,nf:0,rz:0});
-  op.forEach(p=>{const k=canon(p.strategy_label||p.label); if(agg[k]){agg[k].n++;agg[k].ab+=(+p.pnl||0)}});
-  tr.forEach(x=>{const k=canon(x.strategy_label||x.label||x.modulo); if(agg[k]){agg[k].nf++;agg[k].rz+=(+x.pnl||+x.resultado||0)}});
-  const statByK={};
-  st.forEach(x=>{ const m=MODULOS.find(m=>m.id===String(x.modulo||"").toLowerCase()); if(m) statByK[m.k]=x; });
-  const ctx={eaSemEA:est.eaSemEA, pyCongelado:est.pyCongelado};
-
-  const rows=MODULOS.map(m=>{
-    const a=agg[m.k], estMod=estadoModulo(m,a,ctx);
-    const tagCls=estMod==="posicionado"?"on":estMod==="SEM EA"?"bad":estMod==="CONGELADO"?"warn":"off";
-    const s=statByK[m.k];
-    let ev="—";
-    if(s){
-      const concl=s.conclusivo, sinal=(+s.media||0)>0;
-      const v=!concl?"insuficiente":sinal?"vantagem":"desvantagem";
-      ev=`${num(s.n)} · ${v}`;
-    }
-    return {m,a,estMod,tagCls,ev};
-  });
-
-  document.getElementById("modsb").innerHTML=rows.map(({m,a,estMod,tagCls,ev})=>
-    `<tr><td>${esc(m.k.replace(/_/g," "))} <span class="tag ${m.org==="python"?"py":""}">${m.org}</span></td>
-     <td><span class="tag ${tagCls}">${estMod}</span></td>
-     <td class="num money ${a.n?cls(a.ab):"mut"}">${a.n?num(a.n)+" · "+brl(a.ab):"—"}</td>
-     <td class="num money ${a.nf?cls(a.rz):"mut"}">${a.nf?num(a.nf)+" · "+brl(a.rz):"—"}</td>
-     <td>${ev}</td></tr>`).join("");
-
-  document.getElementById("modscard").innerHTML=rows.map(({m,a,estMod,tagCls,ev})=>
-    `<div class="modcard"><div class="row"><b>${esc(m.k.replace(/_/g," "))}</b><span class="tag ${tagCls}">${estMod}</span></div>
-     <div class="row"><span>Aberto</span><span class="money ${a.n?cls(a.ab):"mut"}">${a.n?num(a.n)+" · "+brl(a.ab):"—"}</span></div>
-     <div class="row"><span>Hoje</span><span class="money ${a.nf?cls(a.rz):"mut"}">${a.nf?num(a.nf)+" · "+brl(a.rz):"—"}</span></div>
-     <div class="row"><span>Evidência</span><span>${ev}</span></div></div>`).join("");
-
-  const stt=d.stats_modulo||[];
-  document.getElementById("state").style.display=stt.length?"none":"block";
-  document.getElementById("statb").innerHTML=stt.map(x=>{
-    const concl=x.conclusivo, sinal=(+x.media||0)>0;
-    const vered=!concl?`<span class="tag off">amostra insuficiente</span>`
-      :sinal?`<span class="tag on">vantagem</span>`:`<span class="tag warn">desvantagem</span>`;
-    return `<tr><td>${esc(String(x.modulo).replace(/_/g," "))}</td>
-     <td class="num">${num(x.n)}</td><td class="num">${num(x.acertos)}</td>
-     <td class="num ${cls(x.soma)}">${brl(x.soma)}</td>
-     <td class="num ${cls(x.media)}">${brl(x.media)}</td>
-     <td class="num mut">${brl(x.ic_baixo)} a ${brl(x.ic_alto)}</td>
-     <td class="num ${Math.abs(x.t)>=1.96?cls(x.t):"mut"}">${x.t}</td>
-     <td>${vered}</td></tr>`}).join("");
-}
-
-function renderTimeline(d){
-  const ev=d.eventos_hoje;
-  const wrap=document.getElementById("timeline"), empty=document.getElementById("timelinee");
-  if(Array.isArray(ev)){
-    if(!ev.length){ wrap.innerHTML=""; empty.style.display="block"; empty.textContent="nenhum evento ainda hoje"; return; }
-    empty.style.display="none";
-    wrap.innerHTML=ev.map(e=>`<li><span class="h">${hora(e.hora)}</span>
-      <span class="tp tp-${esc(e.tipo)}">${esc(e.tipo)}</span>
-      <span>${esc(e.modulo||"")} ${esc(e.texto||"")}</span></li>`).join("");
-  } else {
-    wrap.innerHTML="";
-    empty.style.display="block";
-    const h=d.health||{};
-    empty.textContent = h.last_error_msg
-      ? "linha do tempo indisponível nesta versão do JSON (eventos_hoje ausente) — último erro do log: "+h.last_error_msg
-      : "linha do tempo indisponível nesta versão do JSON (campo eventos_hoje ausente)";
+function renderAcum(d){
+  const c=(d&&d.cumulative)||{}, serie=(d&&d.daily_series)||[];
+  const marco=(d&&d.start_date)||"—";
+  if(!serie.length){
+    $("acum").innerHTML=`<div class="empty"><b>Dia zero</b>
+      A contagem começa em ${esc(marco)}, no primeiro pregão da arquitetura 100% nativa.
+      O histórico anterior segue no MT5 — só deixou de entrar nas métricas, porque
+      media dois sistemas diferentes.</div>`;
+    return;
   }
+  const max=Math.max(...serie.map(x=>Math.abs(+x.pnl||0)),1);
+  const barras=serie.map(x=>{
+    const v=+x.pnl||0, h=Math.max(3,Math.round(100*Math.abs(v)/max));
+    return `<i class="${v<0?"dn":""}" style="height:${h}%" title="${esc(x.date)}: ${brl(v)}"></i>`;
+  }).join("");
+  const pnl=+c.pnl||0;
+  $("acum").innerHTML=`
+   <div class="hero">
+     <div class="hero-main">
+       <div class="hero-lbl">Acumulado desde ${esc(marco)}</div>
+       <div class="hero-val money ${cls(pnl)}">${brl(pnl)}</div>
+       <div class="hero-sub">${c.trades||0} trades em ${c.days||0} pregão(ões) · ${c.days_positive||0} positivo(s)</div>
+     </div>
+     <div class="hero-side">
+       <div><div class="stat-k">Acerto</div><div class="stat-v">${c.trades?Math.round(100*c.wins/c.trades)+"%":"—"}</div></div>
+     </div>
+   </div>
+   <div class="spark">${barras}</div>`;
 }
 
-function renderHistorico(d){
-  const ds=(d.daily_series||[]).slice().reverse();
-  document.getElementById("daye").style.display=ds.length?"none":"block";
-  document.getElementById("dayb").innerHTML=ds.map(x=>{const v=+x.pnl||+x.total||0;
-    return `<tr><td>${esc(x.date||x.dia)}</td><td class="num">${num(x.trades)}</td>
-     <td class="num">${x.wins??"—"}</td><td class="num ${cls(v)}">${brl(v)}</td></tr>`}).join("");
-  document.getElementById("foot").innerHTML=
-    `<b>7 módulos · 1 EA · magic 881902.</b>
-     VolBreak, VWAP e ORB são nativos em MQL5; T01, T11, V02 e o momentum intradiário chegam por
-     <code>win_sinais.json</code>. Cada módulo vive na linguagem onde foi validado.<br>
-     <b>A EA é a guardiã:</b> stop, alvo, zeragem às 17:40 e o tamanho de cada perna não dependem do Python.<br>
-     <b>Conta netting:</b> existe UMA posição no símbolo. As pernas do bloco de módulos são reconstruídas do
-     histórico de negócios; só o bloco "Exposição agora" mostra o número medido pela corretora.<br>
-     Entradas até 16:00 · zeragem 17:40 · conta demo B3 · publicação a cada 3 min, idade recalculada no navegador.`;
-}
+$("foot").innerHTML=`
+ <p><b>A barra de cima</b> tem cinco segmentos, na ordem da legenda. Verde é
+ provado bom; cinza é fora de pregão; amarelo pede olhada; vermelho pisca e
+ quer ação. <b>Campo ausente nunca vira verde</b> — em 01/set/2026 o painel
+ ficou verde por 8 horas com a EA fora do ar porque a falta de dado era lida
+ como dado em ordem.</p>
+ <p><b>As idades são recalculadas no seu navegador</b>, a cada segundo, sobre
+ um arquivo que pode ter até 3 minutos de atraso. Por isso o relógio anda
+ mesmo quando o número do dia não muda.</p>
+ <p><b>Quem decide o que está aberto é a corretora</b>, nunca a reconstrução
+ por módulo. A reconstrução só serve para dizer de quem é cada perna.</p>
+ <p><b>Recusas repetidas aparecem agrupadas</b> com a contagem e o intervalo.
+ Em 03/set houve 21.552 recusas, a mesma gaveta 1.798 vezes — uma linha do
+ tempo com 21 mil itens não é uma linha do tempo.</p>
+ <p>Este painel é <b>somente leitura</b>: publicado a cada 3 min pelo
+ <code>publish_dashboard.sh</code>, sem nenhum caminho de volta até a
+ corretora.</p>`;
 
-function render(d, nowMs){
-  const est=avaliarEstado(d, nowMs, fetchFails);
-  renderVeredito(d||{}, est);
-  if(!d) return;
-  renderCards(d);
-  renderBloco2(d);
-  renderModulos(d, est);
-  renderTimeline(d);
-  renderHistorico(d);
+function pintar(){
+  const est=avaliarEstado(dados, Date.now(), fetchFails);
+  renderRail(est);
+  renderHoje(dados); renderExp(dados,est); renderMods(dados,est);
+  renderFeed(dados); renderAcum(dados);
 }
-
-function carrega(){
-  fetch("data_win.json?t="+Date.now()).then(r=>{
-    if(!r.ok) throw new Error("http "+r.status);
-    return r.json();
-  }).then(json=>{ fetchFails=0; lastData=json; render(lastData, Date.now()); })
-  .catch(()=>{ fetchFails++; render(lastData, Date.now()); });
+async function buscar(){
+  try{
+    const r=await fetch("data_win.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    dados=await r.json(); fetchFails=0;
+  }catch(e){ fetchFails++; }
+  pintar();
 }
-
-carrega();
-setInterval(carrega,60000);
-setInterval(()=>render(lastData, Date.now()),1000);
+buscar();
+setInterval(buscar, 60000);   // arquivo novo
+setInterval(pintar,  1000);   // idade e veredito andam sozinhos
 </script>
 </body></html>
