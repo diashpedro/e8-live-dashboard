@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-04T17:39:09-03:00",
+  "updated_at": "2026-09-04T17:42:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-04T17:37:07-03:00",
+    "last_ea_event": "2026-09-04T17:40:30-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788554325,
+    "ea_heartbeat_epoch": 1788554505,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187475.0,
+        "bid": 187445.0,
         "ok": true
       }
     ],
@@ -636,79 +636,87 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-04T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EOD] VW LONG vol=1"
+    },
+    {
+      "hora": "2026-09-04T17:40:00-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[EOD][RESIDUO] posicao de 1 detectada -- aguardando 30s para confirmar antes de agir"
+    },
+    {
+      "hora": "2026-09-04T17:40:30-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[EOD][RESIDUO] posicao de 1 confirmada apos a janela -- fechando"
+    },
+    {
+      "hora": "2026-09-04T17:40:30-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
     }
   ],
   "today": {
     "date": "2026-09-04",
-    "realized": -421.0,
-    "unrealized": -48.67,
-    "total": -469.67,
-    "trades": 2,
-    "wins": 0,
-    "exposure": 74990.0,
-    "open_legs": 1,
-    "broker_realized": -126.33
+    "realized": -321.0,
+    "unrealized": 0,
+    "total": -321.0,
+    "trades": 3,
+    "wins": 1,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -183.99
   },
   "reconciliacao": {
-    "painel": -421.0,
-    "corretora": -126.33,
-    "divergencia": -294.67,
-    "tolerancia": 2.53,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 2.0,
-    "volume_pernas": 1.0,
-    "volume_ok": false
+    "painel": -321.0,
+    "corretora": -183.99,
+    "divergencia": -137.01,
+    "tolerancia": 3.68,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -421.0,
-    "trades": 2,
-    "wins": 0,
+    "pnl": -321.0,
+    "trades": 3,
+    "wins": 1,
     "since": "2026-09-04",
     "days": 1,
     "days_positive": 0,
     "best_day": {
       "date": "2026-09-04",
-      "pnl": -421.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -421.0
+      "pnl": -321.0,
+      "trades": 3,
+      "wins": 1,
+      "cum": -321.0
     },
     "worst_day": {
       "date": "2026-09-04",
-      "pnl": -421.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -421.0
+      "pnl": -321.0,
+      "trades": 3,
+      "wins": 1,
+      "cum": -321.0
     }
   },
   "python": {
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 79097,
+    "idade_s": 79277,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-04T11:10:55-03:00",
-      "entry_price": 186965.0,
-      "current_price": 187475.0,
-      "qty": 1.0,
-      "notional": 37495.0,
-      "pnl": 102.0,
-      "pnl_liq_est": 84.78,
-      "pnl_pct": 0.273,
-      "minutos": 388.2
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
@@ -733,18 +741,46 @@
       "ic_alto": -46.0,
       "acertos": 0,
       "conclusivo": false
+    },
+    {
+      "modulo": "VWAP",
+      "n": 1,
+      "soma": -26.33,
+      "media": -26.33,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -26.33,
+      "ic_alto": -26.33,
+      "acertos": 0,
+      "conclusivo": false
     }
   ],
   "daily_series": [
     {
       "date": "2026-09-04",
-      "pnl": -421.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -421.0
+      "pnl": -321.0,
+      "trades": 3,
+      "wins": 1,
+      "cum": -321.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-04T11:10:55-03:00",
+      "exit_time": "2026-09-04T17:40:00-03:00",
+      "entry_price": 186965.0,
+      "exit_price": 187465.0,
+      "qty": 1.0,
+      "pnl": 100.0,
+      "pnl_bruto": 100.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 389.1
+    },
     {
       "symbol": "WINV26",
       "strategy": "ORB",
@@ -786,6 +822,12 @@
       "pnl": -230.0
     },
     {
+      "strategy": "VWAP",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 100.0
+    },
+    {
       "strategy": "VolBreak",
       "trades": 1,
       "wins": 0,
@@ -795,12 +837,18 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 2,
-      "wins": 0,
-      "pnl": -421.0
+      "trades": 3,
+      "wins": 1,
+      "pnl": -321.0
     }
   ],
   "by_reason": [
+    {
+      "reason": "Fim do pregao",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 100.0
+    },
     {
       "reason": "Trailing",
       "trades": 2,
