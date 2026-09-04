@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-04T11:39:08-03:00",
+  "updated_at": "2026-09-04T11:42:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-04T11:35:55-03:00",
+    "last_ea_event": "2026-09-04T11:40:56-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788532725,
+    "ea_heartbeat_epoch": 1788532905,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187955.0,
+        "bid": 187995.0,
         "ok": true
       }
     ],
@@ -177,16 +177,40 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-04T11:40:07-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=47.08 (nivel teorico 47.0846) vol=100 ticket=2520488885"
+    },
+    {
+      "hora": "2026-09-04T11:40:07-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=47.02 (nivel teorico 47.0150) vol=100 ticket=2520488887"
+    },
+    {
+      "hora": "2026-09-04T11:40:07-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=46.95 (nivel teorico 46.9454) vol=100 ticket=2520488888"
+    },
+    {
+      "hora": "2026-09-04T11:40:56-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-04",
     "realized": -191.0,
-    "unrealized": 293.0,
-    "total": 102.0,
+    "unrealized": 311.0,
+    "total": 120.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 75182.0,
+    "exposure": 75200.0,
     "open_legs": 1,
     "broker_realized": -46.0
   },
@@ -227,7 +251,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 57496,
+    "idade_s": 57677,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -241,13 +265,13 @@
       "side": "LONG",
       "entry_time": "2026-09-04T11:10:55-03:00",
       "entry_price": 186965.0,
-      "current_price": 187955.0,
+      "current_price": 187995.0,
       "qty": 1.0,
-      "notional": 37591.0,
-      "pnl": 198.0,
-      "pnl_liq_est": 180.75,
-      "pnl_pct": 0.53,
-      "minutos": 28.2
+      "notional": 37599.0,
+      "pnl": 206.0,
+      "pnl_liq_est": 188.75,
+      "pnl_pct": 0.551,
+      "minutos": 31.2
     }
   ],
   "stats_modulo": [
