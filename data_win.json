@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-04T17:06:10-03:00",
+  "updated_at": "2026-09-04T17:09:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-04T17:02:00-03:00",
+    "last_ea_event": "2026-09-04T17:07:01-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788552285,
+    "ea_heartbeat_epoch": 1788552465,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187400.0,
+        "bid": 187505.0,
         "ok": true
       }
     ],
@@ -594,16 +594,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-04T17:07:01-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-04",
     "realized": -421.0,
-    "unrealized": -78.67,
-    "total": -499.67,
+    "unrealized": -34.67,
+    "total": -455.67,
     "trades": 2,
     "wins": 0,
-    "exposure": 74960.0,
+    "exposure": 75004.0,
     "open_legs": 1,
     "broker_realized": -126.33
   },
@@ -644,7 +650,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 77118,
+    "idade_s": 77298,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -658,13 +664,13 @@
       "side": "LONG",
       "entry_time": "2026-09-04T11:10:55-03:00",
       "entry_price": 186965.0,
-      "current_price": 187400.0,
+      "current_price": 187505.0,
       "qty": 1.0,
-      "notional": 37480.0,
-      "pnl": 87.0,
-      "pnl_liq_est": 69.78,
-      "pnl_pct": 0.233,
-      "minutos": 355.3
+      "notional": 37501.0,
+      "pnl": 108.0,
+      "pnl_liq_est": 90.77,
+      "pnl_pct": 0.289,
+      "minutos": 358.3
     }
   ],
   "stats_modulo": [
