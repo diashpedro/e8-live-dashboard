@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-08T16:30:14-03:00",
+  "updated_at": "2026-09-08T16:33:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-08T15:52:35-03:00",
+    "last_ea_event": "2026-09-08T16:30:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788895725,
+    "ea_heartbeat_epoch": 1788895905,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189995.0,
+        "bid": 189900.0,
         "ok": true
       }
     ],
@@ -180,16 +180,22 @@
       "tipo": "saida",
       "modulo": "VWAP",
       "texto": "[EXIT] VW LONG vol=1 motivo=be"
+    },
+    {
+      "hora": "2026-09-08T16:30:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
     }
   ],
   "today": {
     "date": "2026-09-08",
     "realized": -315.0,
-    "unrealized": -360.19,
-    "total": -675.19,
+    "unrealized": -420.19,
+    "total": -735.19,
     "trades": 2,
     "wins": 0,
-    "exposure": 114000.0,
+    "exposure": 113940.0,
     "open_legs": 1,
     "broker_realized": -196.81
   },
@@ -230,7 +236,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 420562,
+    "idade_s": 420737,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -244,11 +250,11 @@
       "side": "LONG",
       "entry_time": "2026-09-08T09:45:02-03:00",
       "entry_price": 189695.0,
-      "current_price": 189995.0,
+      "current_price": 189900.0,
       "qty": 1.0,
-      "notional": 37999.0,
-      "pnl": 60.0,
-      "minutos": 405.2
+      "notional": 37980.0,
+      "pnl": 41.0,
+      "minutos": 408.1
     },
     {
       "symbol": "WINV26",
@@ -257,13 +263,13 @@
       "side": "LONG",
       "entry_time": "2026-09-08T10:02:01-03:00",
       "entry_price": 190680.0,
-      "current_price": 189995.0,
+      "current_price": 189900.0,
       "qty": 1.0,
-      "notional": 37999.0,
-      "pnl": -137.0,
-      "pnl_liq_est": -154.51,
-      "pnl_pct": -0.359,
-      "minutos": 388.2
+      "notional": 37980.0,
+      "pnl": -156.0,
+      "pnl_liq_est": -173.51,
+      "pnl_pct": -0.409,
+      "minutos": 391.1
     },
     {
       "symbol": "WINV26",
@@ -272,13 +278,13 @@
       "side": "LONG",
       "entry_time": "2026-09-08T10:41:30-03:00",
       "entry_price": 190835.0,
-      "current_price": 189995.0,
+      "current_price": 189900.0,
       "qty": 1.0,
-      "notional": 37999.0,
-      "pnl": -168.0,
-      "pnl_liq_est": -185.52,
-      "pnl_pct": -0.44,
-      "minutos": 348.7
+      "notional": 37980.0,
+      "pnl": -187.0,
+      "pnl_liq_est": -204.51,
+      "pnl_pct": -0.49,
+      "minutos": 351.7
     }
   ],
   "stats_modulo": [
