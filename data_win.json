@@ -1,23 +1,40 @@
 {
-  "updated_at": "2026-09-08T09:57:09-03:00",
+  "updated_at": "2026-09-08T10:00:16-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-08T09:45:04-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788872145,
+    "ea_heartbeat_epoch": 1788872325,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190415.0,
+        "bid": 190345.0,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 2
   },
-  "pendentes_detalhe": [],
+  "pendentes_detalhe": [
+    {
+      "ticket": 2521097723,
+      "tipo": "buy_stop",
+      "preco": 190680.0,
+      "volume": 1.0,
+      "comment": "WEA_VB_L",
+      "hora": "2026-09-08T10:00:00-03:00"
+    },
+    {
+      "ticket": 2521097801,
+      "tipo": "sell_stop",
+      "preco": 189780.0,
+      "volume": 1.0,
+      "comment": "WEA_VB_S",
+      "hora": "2026-09-08T10:00:00-03:00"
+    }
+  ],
   "eventos_hoje": [
     {
       "hora": "2026-09-08T09:45:00-03:00",
@@ -41,11 +58,11 @@
   "today": {
     "date": "2026-09-08",
     "realized": 0,
-    "unrealized": 150.0,
-    "total": 150.0,
+    "unrealized": 133.0,
+    "total": 133.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 38089.0,
+    "exposure": 38072.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -86,7 +103,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 396977,
+    "idade_s": 397164,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -100,11 +117,11 @@
       "side": "LONG",
       "entry_time": "2026-09-08T09:45:02-03:00",
       "entry_price": 189695.0,
-      "current_price": 190450.0,
+      "current_price": 190345.0,
       "qty": 1.0,
-      "notional": 38090.0,
-      "pnl": 151.0,
-      "minutos": 12.1
+      "notional": 38069.0,
+      "pnl": 130.0,
+      "minutos": 15.2
     }
   ],
   "stats_modulo": [
