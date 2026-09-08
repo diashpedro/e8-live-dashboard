@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-08T12:57:07-03:00",
+  "updated_at": "2026-09-08T13:00:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-08T11:25:24-03:00",
+    "last_ea_event": "2026-09-08T12:58:11-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788883005,
+    "ea_heartbeat_epoch": 1788883185,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190095.0,
+        "bid": 190070.0,
         "ok": true
       }
     ],
@@ -156,43 +156,49 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[FILL] VW LONG entry=191525.00 stop=190013.21 R=1511.79"
+    },
+    {
+      "hora": "2026-09-08T12:58:11-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EXIT] VW LONG vol=1 motivo=stop"
     }
   ],
   "today": {
     "date": "2026-09-08",
-    "realized": 0,
-    "unrealized": -471.0,
-    "total": -471.0,
-    "trades": 0,
+    "realized": -314.0,
+    "unrealized": -368.25,
+    "total": -682.25,
+    "trades": 1,
     "wins": 0,
-    "exposure": 152076.0,
+    "exposure": 114042.0,
     "open_legs": 1,
-    "broker_realized": 0.0
+    "broker_realized": -145.75
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
+    "painel": -314.0,
+    "corretora": -145.75,
+    "divergencia": -168.25,
+    "tolerancia": 2.92,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 4.0,
-    "volume_pernas": 4.0,
+    "volume_corretora": 3.0,
+    "volume_pernas": 3.0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -321.0,
-    "trades": 3,
+    "pnl": -635.0,
+    "trades": 4,
     "wins": 1,
     "since": "2026-09-04",
-    "days": 1,
+    "days": 2,
     "days_positive": 0,
     "best_day": {
-      "date": "2026-09-04",
-      "pnl": -321.0,
-      "trades": 3,
-      "wins": 1,
-      "cum": -321.0
+      "date": "2026-09-08",
+      "pnl": -314.0,
+      "trades": 1,
+      "wins": 0,
+      "cum": -635.0
     },
     "worst_day": {
       "date": "2026-09-04",
@@ -206,7 +212,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 407775,
+    "idade_s": 407963,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -220,11 +226,11 @@
       "side": "LONG",
       "entry_time": "2026-09-08T09:45:02-03:00",
       "entry_price": 189695.0,
-      "current_price": 190095.0,
+      "current_price": 190070.0,
       "qty": 1.0,
-      "notional": 38019.0,
-      "pnl": 80.0,
-      "minutos": 192.1
+      "notional": 38014.0,
+      "pnl": 75.0,
+      "minutos": 195.2
     },
     {
       "symbol": "WINV26",
@@ -233,13 +239,13 @@
       "side": "LONG",
       "entry_time": "2026-09-08T10:02:01-03:00",
       "entry_price": 190680.0,
-      "current_price": 190095.0,
+      "current_price": 190070.0,
       "qty": 1.0,
-      "notional": 38019.0,
-      "pnl": -117.0,
-      "pnl_liq_est": -134.52,
-      "pnl_pct": -0.307,
-      "minutos": 175.1
+      "notional": 38014.0,
+      "pnl": -122.0,
+      "pnl_liq_est": -139.51,
+      "pnl_pct": -0.32,
+      "minutos": 178.2
     },
     {
       "symbol": "WINV26",
@@ -248,28 +254,13 @@
       "side": "LONG",
       "entry_time": "2026-09-08T10:41:30-03:00",
       "entry_price": 190835.0,
-      "current_price": 190095.0,
+      "current_price": 190070.0,
       "qty": 1.0,
-      "notional": 38019.0,
-      "pnl": -148.0,
-      "pnl_liq_est": -165.52,
-      "pnl_pct": -0.388,
-      "minutos": 135.6
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-08T11:25:24-03:00",
-      "entry_price": 191525.0,
-      "current_price": 190095.0,
-      "qty": 1.0,
-      "notional": 38019.0,
-      "pnl": -286.0,
-      "pnl_liq_est": -303.55,
-      "pnl_pct": -0.747,
-      "minutos": 91.7
+      "notional": 38014.0,
+      "pnl": -153.0,
+      "pnl_liq_est": -170.52,
+      "pnl_pct": -0.401,
+      "minutos": 138.8
     }
   ],
   "stats_modulo": [
@@ -299,13 +290,13 @@
     },
     {
       "modulo": "VWAP",
-      "n": 1,
-      "soma": -26.33,
-      "media": -26.33,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -26.33,
-      "ic_alto": -26.33,
+      "n": 2,
+      "soma": -172.08,
+      "media": -86.04,
+      "ep": 59.71,
+      "t": -1.44,
+      "ic_baixo": -203.07,
+      "ic_alto": 30.99,
       "acertos": 0,
       "conclusivo": false
     }
@@ -317,9 +308,32 @@
       "trades": 3,
       "wins": 1,
       "cum": -321.0
+    },
+    {
+      "date": "2026-09-08",
+      "pnl": -314.0,
+      "trades": 1,
+      "wins": 0,
+      "cum": -635.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-08T11:25:24-03:00",
+      "exit_time": "2026-09-08T12:58:11-03:00",
+      "entry_price": 191525.0,
+      "exit_price": 189955.0,
+      "qty": 1.0,
+      "pnl": -314.0,
+      "pnl_bruto": -314.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 92.8
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -378,9 +392,9 @@
     },
     {
       "strategy": "VWAP",
-      "trades": 1,
+      "trades": 2,
       "wins": 1,
-      "pnl": 100.0
+      "pnl": -214.0
     },
     {
       "strategy": "VolBreak",
@@ -392,9 +406,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 3,
+      "trades": 4,
       "wins": 1,
-      "pnl": -321.0
+      "pnl": -635.0
     }
   ],
   "by_reason": [
@@ -403,6 +417,12 @@
       "trades": 1,
       "wins": 1,
       "pnl": 100.0
+    },
+    {
+      "reason": "Stop",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -314.0
     },
     {
       "reason": "Trailing",
