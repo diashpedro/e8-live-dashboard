@@ -1,32 +1,23 @@
 {
-  "updated_at": "2026-09-09T13:12:07-03:00",
+  "updated_at": "2026-09-09T13:15:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-09T13:10:00-03:00",
+    "last_ea_event": "2026-09-09T13:13:38-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788970305,
+    "ea_heartbeat_epoch": 1788970485,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187440.0,
+        "bid": 187670.0,
         "ok": true
       }
     ],
-    "pendentes": 1
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2522873545,
-      "tipo": "buy_stop",
-      "preco": 187610.0,
-      "volume": 1.0,
-      "comment": "WEA_VW_L",
-      "hora": "2026-09-09T13:10:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-09T10:00:00-03:00",
@@ -201,28 +192,34 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[ORDER] WEA_VW_L stop=187610.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-09T13:13:38-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW LONG entry=187610.00 stop=186800.00 R=810.00"
     }
   ],
   "today": {
     "date": "2026-09-09",
     "realized": 0,
-    "unrealized": 349.0,
-    "total": 349.0,
+    "unrealized": 138.67,
+    "total": 138.67,
     "trades": 0,
     "wins": 0,
-    "exposure": 112464.0,
+    "exposure": 75070.0,
     "open_legs": 1,
-    "broker_realized": 0.0
+    "broker_realized": 82.33
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
+    "corretora": 82.33,
+    "divergencia": -82.33,
+    "tolerancia": 1.65,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -3.0,
-    "volume_pernas": -3.0,
+    "volume_corretora": -2.0,
+    "volume_pernas": -2.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -251,7 +248,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 495075,
+    "idade_s": 495258,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -265,13 +262,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-09T10:34:09-03:00",
       "entry_price": 187887.5,
-      "current_price": 187440.0,
+      "current_price": 187670.0,
       "qty": 2.0,
-      "notional": 74976.0,
-      "pnl": 179.0,
-      "pnl_liq_est": 144.47,
-      "pnl_pct": 0.238,
-      "minutos": 158.0
+      "notional": 75068.0,
+      "pnl": 87.0,
+      "pnl_liq_est": 52.45,
+      "pnl_pct": 0.116,
+      "minutos": 161.0
     },
     {
       "symbol": "WINV26",
@@ -280,13 +277,28 @@
       "side": "SHORT",
       "entry_time": "2026-09-09T10:36:47-03:00",
       "entry_price": 188290.0,
-      "current_price": 187440.0,
+      "current_price": 187670.0,
       "qty": 1.0,
-      "notional": 37488.0,
-      "pnl": 170.0,
-      "pnl_liq_est": 152.72,
-      "pnl_pct": 0.451,
-      "minutos": 155.3
+      "notional": 37534.0,
+      "pnl": 124.0,
+      "pnl_liq_est": 106.71,
+      "pnl_pct": 0.329,
+      "minutos": 158.4
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-09T13:13:38-03:00",
+      "entry_price": 187610.0,
+      "current_price": 187670.0,
+      "qty": 1.0,
+      "notional": 37534.0,
+      "pnl": 12.0,
+      "pnl_liq_est": -5.26,
+      "pnl_pct": 0.032,
+      "minutos": 1.5
     }
   ],
   "stats_modulo": [
@@ -316,14 +328,14 @@
     },
     {
       "modulo": "VWAP",
-      "n": 3,
-      "soma": -223.14,
-      "media": -74.38,
-      "ep": 36.39,
-      "t": -2.04,
-      "ic_baixo": -145.71,
-      "ic_alto": -3.05,
-      "acertos": 0,
+      "n": 4,
+      "soma": -140.81,
+      "media": -35.2,
+      "ep": 46.87,
+      "t": -0.75,
+      "ic_baixo": -127.07,
+      "ic_alto": 56.67,
+      "acertos": 1,
       "conclusivo": false
     },
     {
