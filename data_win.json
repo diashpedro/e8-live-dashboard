@@ -1,239 +1,40 @@
 {
-  "updated_at": "2026-09-08T18:57:07-03:00",
+  "updated_at": "2026-09-09T09:00:19-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-08T17:40:00-03:00",
+    "last_ea_event": "2026-09-09T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1788904605,
+    "ea_heartbeat_epoch": 1788955185,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190025.0,
+        "bid": 208815.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-08T09:45:00-03:00",
-      "tipo": "entrada",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] ARMADO BRK-20260908-003a | v02_reversao_climatica_g003a long 1 @ 189695 | stop 188730 alvo 193555"
-    },
-    {
-      "hora": "2026-09-08T09:45:03-03:00",
-      "tipo": "entrada",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] PREENCHIDO BRK-20260908-003a | v02_reversao_climatica_g003a @ 189695 -- perna viva"
-    },
-    {
-      "hora": "2026-09-08T09:45:04-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.04 16:40 -> corte de HOJE (-15min): 2026.09.08 16:25"
-    },
-    {
-      "hora": "2026-09-08T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=190680.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-08T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=189780.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-08T10:02:01-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB LONG entry=190680.00 stop=188418.21 R=2261.79"
-    },
-    {
-      "hora": "2026-09-08T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=190835.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-08T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=188730.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-08T10:36:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=47.98 (nivel teorico 47.9819) vol=100 ticket=2521241041"
-    },
-    {
-      "hora": "2026-09-08T10:36:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=47.93 (nivel teorico 47.9300) vol=100 ticket=2521241042"
-    },
-    {
-      "hora": "2026-09-08T10:36:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=47.88 (nivel teorico 47.8781) vol=100 ticket=2521241043"
-    },
-    {
-      "hora": "2026-09-08T10:41:30-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[FILL] ORB LONG entry=190835.00 stop=188735.00 R=2100.00"
-    },
-    {
-      "hora": "2026-09-08T11:06:18-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.38 (nivel teorico 48.3807) vol=100 ticket=2521342672"
-    },
-    {
-      "hora": "2026-09-08T11:06:18-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=48.35 (nivel teorico 48.3500) vol=100 ticket=2521342674"
-    },
-    {
-      "hora": "2026-09-08T11:06:18-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=48.32 (nivel teorico 48.3193) vol=100 ticket=2521342675"
-    },
-    {
-      "hora": "2026-09-08T11:07:34-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 LONG perna A entry=48.3800 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-08T11:07:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 LONG perna B entry=48.3500 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-08T11:08:21-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 LONG perna C entry=48.3200 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-08T11:14:26-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 LONG perna C motivo=stop_safety vol=100"
-    },
-    {
-      "hora": "2026-09-08T11:17:50-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 LONG perna A motivo=stop vol=100"
-    },
-    {
-      "hora": "2026-09-08T11:17:50-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 LONG perna B motivo=stop vol=100"
-    },
-    {
-      "hora": "2026-09-08T11:25:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=191525.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-08T11:25:24-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=191525.00 stop=190013.21 R=1511.79"
-    },
-    {
-      "hora": "2026-09-08T12:58:11-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EXIT] VW LONG vol=1 motivo=stop"
-    },
-    {
-      "hora": "2026-09-08T15:05:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=190350.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-08T15:06:02-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=190350.00 stop=189744.64 R=605.36"
-    },
-    {
-      "hora": "2026-09-08T15:52:35-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EXIT] VW LONG vol=1 motivo=be"
-    },
-    {
-      "hora": "2026-09-08T16:30:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-08T17:00:01-03:00",
-      "tipo": "entrada",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] EXECUTADO IM-20260908 | intramom long 1 a mercado | stop 184271 alvo 207067"
-    },
-    {
-      "hora": "2026-09-08T17:03:28-03:00",
-      "tipo": "saida",
-      "modulo": "ORB",
-      "texto": "[EXIT] ORB LONG vol=1 motivo=trail"
-    },
-    {
-      "hora": "2026-09-08T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] FECHADA v02_reversao_climatica_g003a por eod | 335 pts | PnL py dia R$ 67.00"
-    },
-    {
-      "hora": "2026-09-08T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] FECHADA intramom por eod | 55 pts | PnL py dia R$ 78.00"
-    },
-    {
-      "hora": "2026-09-08T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VolBreak",
-      "texto": "[EOD] VB LONG vol=1"
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-08",
-    "realized": -564.0,
+    "date": "2026-09-09",
+    "realized": 0,
     "unrealized": 0,
-    "total": -564.0,
-    "trades": 6,
-    "wins": 2,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -564.01
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -564.0,
-    "corretora": -564.01,
-    "divergencia": 0.01,
-    "tolerancia": 11.28,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
     "ok": true,
     "volume_corretora": 0,
@@ -266,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 429375,
+    "idade_s": 479967,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
