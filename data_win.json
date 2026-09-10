@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-10T17:39:11-03:00",
+  "updated_at": "2026-09-10T17:42:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-10T17:00:02-03:00",
+    "last_ea_event": "2026-09-10T17:40:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789072725,
+    "ea_heartbeat_epoch": 1789072905,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 190290.0,
+        "bid": 190245.0,
         "ok": true
       }
     ],
@@ -234,43 +234,61 @@
       "tipo": "entrada",
       "modulo": "Momentum intradiario",
       "texto": "[PY] EXECUTADO IM-20260910 | intramom long 1 a mercado | stop 184712 alvo 207563"
+    },
+    {
+      "hora": "2026-09-10T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] FECHADA intramom por eod | -155 pts | PnL py dia R$ -31.00"
+    },
+    {
+      "hora": "2026-09-10T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EOD] VW LONG vol=1"
+    },
+    {
+      "hora": "2026-09-10T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "ORB",
+      "texto": "[EOD] ORB LONG vol=2"
     }
   ],
   "today": {
     "date": "2026-09-10",
-    "realized": -323.0,
-    "unrealized": 1021.0,
-    "total": 698.0,
-    "trades": 1,
-    "wins": 0,
-    "exposure": 152232.0,
-    "open_legs": 1,
-    "broker_realized": -176.0
+    "realized": 845.0,
+    "unrealized": 0,
+    "total": 845.0,
+    "trades": 4,
+    "wins": 2,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": 845.0
   },
   "reconciliacao": {
-    "painel": -323.0,
-    "corretora": -176.0,
-    "divergencia": -147.0,
-    "tolerancia": 3.52,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 4.0,
-    "volume_pernas": 4.0,
+    "painel": 845.0,
+    "corretora": 845.0,
+    "divergencia": 0.0,
+    "tolerancia": 16.9,
+    "comparavel": true,
+    "ok": true,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -1526.0,
-    "trades": 13,
-    "wins": 3,
+    "pnl": -358.0,
+    "trades": 16,
+    "wins": 5,
     "since": "2026-09-04",
     "days": 4,
-    "days_positive": 0,
+    "days_positive": 1,
     "best_day": {
-      "date": "2026-09-09",
-      "pnl": -318.0,
-      "trades": 3,
-      "wins": 0,
-      "cum": -1203.0
+      "date": "2026-09-10",
+      "pnl": 845.0,
+      "trades": 4,
+      "wins": 2,
+      "cum": -358.0
     },
     "worst_day": {
       "date": "2026-09-08",
@@ -284,68 +302,24 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 597499,
+    "idade_s": 597677,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-10T11:00:12-03:00",
-      "entry_price": 187655.0,
-      "current_price": 190290.0,
-      "qty": 1.0,
-      "notional": 38058.0,
-      "pnl": 527.0,
-      "pnl_liq_est": 509.61,
-      "pnl_pct": 1.404,
-      "minutos": 399.0
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "LONG",
-      "entry_time": "2026-09-10T11:02:12-03:00",
-      "entry_price": 188617.5,
-      "current_price": 190290.0,
-      "qty": 2.0,
-      "notional": 76116.0,
-      "pnl": 669.0,
-      "pnl_liq_est": 634.14,
-      "pnl_pct": 0.887,
-      "minutos": 397.0
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "LONG",
-      "entry_time": "2026-09-10T17:00:02-03:00",
-      "entry_price": 190430.0,
-      "current_price": 190290.0,
-      "qty": 1.0,
-      "notional": 38058.0,
-      "pnl": -28.0,
-      "minutos": 39.2
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
-      "n": 3,
-      "soma": -281.57,
-      "media": -93.86,
-      "ep": 12.49,
-      "t": -7.52,
-      "ic_baixo": -118.33,
-      "ic_alto": -69.38,
-      "acertos": 0,
+      "n": 4,
+      "soma": 228.93,
+      "media": 57.23,
+      "ep": 151.35,
+      "t": 0.38,
+      "ic_baixo": -239.41,
+      "ic_alto": 353.87,
+      "acertos": 1,
       "conclusivo": false
     },
     {
@@ -362,14 +336,14 @@
     },
     {
       "modulo": "VWAP",
-      "n": 5,
-      "soma": -316.81,
-      "media": -63.36,
-      "ep": 45.95,
-      "t": -1.38,
-      "ic_baixo": -153.42,
-      "ic_alto": 26.7,
-      "acertos": 1,
+      "n": 6,
+      "soma": -61.56,
+      "media": -10.26,
+      "ep": 65.02,
+      "t": -0.16,
+      "ic_baixo": -137.69,
+      "ic_alto": 117.17,
+      "acertos": 2,
       "conclusivo": false
     },
     {
@@ -386,14 +360,14 @@
     },
     {
       "modulo": "intramom",
-      "n": 2,
-      "soma": -164.24,
-      "media": -82.12,
-      "ep": 0.68,
-      "t": -120.76,
-      "ic_baixo": -83.45,
-      "ic_alto": -80.79,
-      "acertos": 0,
+      "n": 3,
+      "soma": 91.01,
+      "media": 30.34,
+      "ep": 112.46,
+      "t": 0.27,
+      "ic_baixo": -190.08,
+      "ic_alto": 250.75,
+      "acertos": 1,
       "conclusivo": false
     },
     {
@@ -433,13 +407,61 @@
     },
     {
       "date": "2026-09-10",
-      "pnl": -323.0,
-      "trades": 1,
-      "wins": 0,
-      "cum": -1526.0
+      "pnl": 845.0,
+      "trades": 4,
+      "wins": 2,
+      "cum": -358.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-10T11:00:12-03:00",
+      "exit_time": "2026-09-10T17:40:00-03:00",
+      "entry_price": 187655.0,
+      "exit_price": 190290.0,
+      "qty": 1.0,
+      "pnl": 527.0,
+      "pnl_bruto": 527.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 399.8
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "LONG",
+      "entry_time": "2026-09-10T11:02:12-03:00",
+      "exit_time": "2026-09-10T17:40:00-03:00",
+      "entry_price": 188617.5,
+      "exit_price": 190290.0,
+      "qty": 2.0,
+      "pnl": 669.0,
+      "pnl_bruto": 669.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 397.8
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "LONG",
+      "entry_time": "2026-09-10T17:00:02-03:00",
+      "exit_time": "2026-09-10T17:40:00-03:00",
+      "entry_price": 190430.0,
+      "exit_price": 190290.0,
+      "qty": 1.0,
+      "pnl": -28.0,
+      "pnl_bruto": -28.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 40.0
+    },
     {
       "symbol": "WINV26",
       "strategy": "VB",
@@ -652,15 +674,15 @@
   "by_strategy": [
     {
       "strategy": "Momentum intradiario",
-      "trades": 2,
+      "trades": 3,
       "wins": 1,
-      "pnl": -90.0
+      "pnl": -118.0
     },
     {
       "strategy": "ORB",
-      "trades": 3,
-      "wins": 0,
-      "pnl": -626.0
+      "trades": 4,
+      "wins": 1,
+      "pnl": 43.0
     },
     {
       "strategy": "V02_reversao_climatica · gaveta 3a",
@@ -670,9 +692,9 @@
     },
     {
       "strategy": "VWAP",
-      "trades": 3,
-      "wins": 1,
-      "pnl": -215.0
+      "trades": 4,
+      "wins": 2,
+      "pnl": 312.0
     },
     {
       "strategy": "VolBreak",
@@ -684,9 +706,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 13,
-      "wins": 3,
-      "pnl": -1526.0
+      "trades": 16,
+      "wins": 5,
+      "pnl": -358.0
     }
   ],
   "by_reason": [
@@ -698,9 +720,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 6,
-      "wins": 2,
-      "pnl": -337.0
+      "trades": 9,
+      "wins": 4,
+      "pnl": 831.0
     },
     {
       "reason": "Stop",
