@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-11T16:27:09-03:00",
+  "updated_at": "2026-09-11T16:30:17-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-11T14:36:03-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789154745,
+    "ea_heartbeat_epoch": 1789154925,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188775.0,
+        "bid": 188800.0,
         "ok": true
       }
     ],
@@ -215,11 +215,11 @@
   "today": {
     "date": "2026-09-11",
     "realized": -336.0,
-    "unrealized": 5.0,
-    "total": -331.0,
+    "unrealized": -3.0,
+    "total": -339.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 75512.0,
+    "exposure": 75520.0,
     "open_legs": 1,
     "broker_realized": -268.0
   },
@@ -260,7 +260,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 679577,
+    "idade_s": 679765,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -274,13 +274,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-11T10:36:27-03:00",
       "entry_price": 189120.0,
-      "current_price": 188775.0,
+      "current_price": 188800.0,
       "qty": 1.0,
-      "notional": 37755.0,
-      "pnl": 69.0,
-      "pnl_liq_est": 51.62,
-      "pnl_pct": 0.182,
-      "minutos": 350.7
+      "notional": 37760.0,
+      "pnl": 64.0,
+      "pnl_liq_est": 46.62,
+      "pnl_pct": 0.169,
+      "minutos": 353.8
     },
     {
       "symbol": "WINV26",
@@ -289,13 +289,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-11T11:01:51-03:00",
       "entry_price": 188805.0,
-      "current_price": 188775.0,
+      "current_price": 188800.0,
       "qty": 1.0,
-      "notional": 37755.0,
-      "pnl": 6.0,
-      "pnl_liq_est": -11.37,
-      "pnl_pct": 0.016,
-      "minutos": 325.3
+      "notional": 37760.0,
+      "pnl": 1.0,
+      "pnl_liq_est": -16.37,
+      "pnl_pct": 0.003,
+      "minutos": 328.4
     }
   ],
   "stats_modulo": [
