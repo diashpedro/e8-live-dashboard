@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-09-11T11:00:17-03:00",
+  "updated_at": "2026-09-11T11:03:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-11T10:40:59-03:00",
+    "last_ea_event": "2026-09-11T11:01:52-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789135185,
+    "ea_heartbeat_epoch": 1789135305,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189250.0,
+        "bid": 188830.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2524811656,
-      "tipo": "buy_stop",
-      "preco": 191350.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_L",
-      "hora": "2026-09-11T10:30:00-03:00"
-    },
-    {
-      "ticket": 2524811813,
-      "tipo": "sell_stop",
-      "preco": 188805.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-09-11T10:30:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-11T09:45:05-03:00",
@@ -143,17 +126,23 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W3 SHORT perna C motivo=trail vol=100"
+    },
+    {
+      "hora": "2026-09-11T11:01:52-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[FILL] ORB SHORT entry=188805.00 stop=191345.00 R=2540.00"
     }
   ],
   "today": {
     "date": "2026-09-11",
     "realized": 0,
-    "unrealized": 0,
-    "total": 0,
+    "unrealized": -2.0,
+    "total": -2.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 0,
-    "open_legs": 0,
+    "exposure": 37763.0,
+    "open_legs": 1,
     "broker_realized": -268.0
   },
   "reconciliacao": {
@@ -161,10 +150,10 @@
     "corretora": -268.0,
     "divergencia": 268.0,
     "tolerancia": 5.36,
-    "comparavel": true,
-    "ok": false,
-    "volume_corretora": 0,
-    "volume_pernas": 0,
+    "comparavel": false,
+    "ok": null,
+    "volume_corretora": -1.0,
+    "volume_pernas": -1.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -193,13 +182,59 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 659966,
+    "idade_s": 660137,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "LONG",
+      "entry_time": "2026-09-11T10:02:14-03:00",
+      "entry_price": 190460.0,
+      "current_price": 188830.0,
+      "qty": 1.0,
+      "notional": 37766.0,
+      "pnl": -326.0,
+      "pnl_liq_est": -343.45,
+      "pnl_pct": -0.856,
+      "minutos": 60.9
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "SHORT",
+      "entry_time": "2026-09-11T10:36:27-03:00",
+      "entry_price": 189120.0,
+      "current_price": 188830.0,
+      "qty": 1.0,
+      "notional": 37766.0,
+      "pnl": 58.0,
+      "pnl_liq_est": 40.61,
+      "pnl_pct": 0.153,
+      "minutos": 26.7
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "SHORT",
+      "entry_time": "2026-09-11T11:01:51-03:00",
+      "entry_price": 188805.0,
+      "current_price": 188830.0,
+      "qty": 1.0,
+      "notional": 37766.0,
+      "pnl": -5.0,
+      "pnl_liq_est": -22.37,
+      "pnl_pct": -0.013,
+      "minutos": 1.3
+    }
+  ],
   "stats_modulo": [
     {
       "modulo": "ORB",
