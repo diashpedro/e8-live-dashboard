@@ -1,73 +1,73 @@
 {
-  "updated_at": "2026-09-11T10:39:06-03:00",
+  "updated_at": "2026-09-11T10:42:06-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-11T10:38:45-03:00",
+    "last_ea_event": "2026-09-11T10:41:45-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 48.1,
+        "bid": 48.23,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 77.6,
+        "bid": 77.81,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.26,
+        "bid": 42.34,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.68,
+        "bid": 15.71,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 33.14,
+        "bid": 33.21,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 984605.69,
-    "equity": 984634.94,
+    "balance": 984617.94,
+    "equity": 984617.94,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-09-11",
-    "realized": 11.0,
-    "unrealized": 31.0,
-    "total": 42.0,
-    "trades": 2,
-    "wins": 2,
-    "exposure": 4810.0,
-    "open_legs": 1,
-    "broker_realized": 12.75
+    "realized": 25.0,
+    "unrealized": 0,
+    "total": 25.0,
+    "trades": 3,
+    "wins": 3,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": 25.0
   },
   "reconciliacao": {
-    "painel": 11.0,
-    "corretora": 12.75,
-    "divergencia": -1.75,
+    "painel": 25.0,
+    "corretora": 25.0,
+    "divergencia": 0.0,
     "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "pernas_painel": 1,
-    "posicoes_corretora": 1,
+    "comparavel": true,
+    "ok": true,
+    "pernas_painel": 0,
+    "posicoes_corretora": 0,
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": -9656.0,
-    "trades": 787,
-    "wins": 161,
+    "pnl": -9642.0,
+    "trades": 788,
+    "wins": 162,
     "since": "2026-07-29",
     "days": 23,
     "days_positive": 10,
@@ -86,23 +86,7 @@
       "cum": -9734.0
     }
   },
-  "open_positions": [
-    {
-      "symbol": "PETR4",
-      "w": 3,
-      "leg": "C",
-      "side": "SHORT",
-      "entry_time": "2026-09-11T10:34:12-03:00",
-      "entry_price": 48.41,
-      "current_price": 48.1,
-      "qty": 100.0,
-      "notional": 4810.0,
-      "pnl": 31.0,
-      "pnl_liq_est": 28.78,
-      "pnl_pct": 0.64,
-      "minutos": 4.9
-    }
-  ],
+  "open_positions": [],
   "daily_series": [
     {
       "date": "2026-07-29",
@@ -260,13 +244,29 @@
     },
     {
       "date": "2026-09-11",
-      "pnl": 11.0,
-      "trades": 2,
-      "wins": 2,
-      "cum": -9656.0
+      "pnl": 25.0,
+      "trades": 3,
+      "wins": 3,
+      "cum": -9642.0
     }
   ],
   "trades": [
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-09-11T10:34:12-03:00",
+      "exit_time": "2026-09-11T10:40:59-03:00",
+      "entry_price": 48.41,
+      "exit_price": 48.27,
+      "qty": 100.0,
+      "pnl": 14.0,
+      "pnl_bruto": 14.0,
+      "motivo": "trail",
+      "motivo_label": "Trailing",
+      "minutos": 6.8
+    },
     {
       "symbol": "PETR4",
       "w": 3,
@@ -12875,9 +12875,9 @@
     },
     {
       "w": 3,
-      "trades": 325,
-      "wins": 89,
-      "pnl": -3068.0
+      "trades": 326,
+      "wins": 90,
+      "pnl": -3054.0
     },
     {
       "w": 5,
@@ -12907,9 +12907,9 @@
     },
     {
       "symbol": "PETR4",
-      "trades": 237,
-      "wins": 26,
-      "pnl": -2130.0
+      "trades": 238,
+      "wins": 27,
+      "pnl": -2116.0
     },
     {
       "symbol": "TOTS3",
@@ -12939,9 +12939,9 @@
     },
     {
       "leg": "C",
-      "trades": 234,
-      "wins": 53,
-      "pnl": -1600.0
+      "trades": 235,
+      "wins": 54,
+      "pnl": -1586.0
     }
   ],
   "by_reason": [
@@ -12977,9 +12977,9 @@
     },
     {
       "reason": "Trailing",
-      "trades": 19,
-      "wins": 12,
-      "pnl": 224.0
+      "trades": 20,
+      "wins": 13,
+      "pnl": 238.0
     }
   ]
 }
