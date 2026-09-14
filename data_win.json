@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-14T11:15:14-03:00",
+  "updated_at": "2026-09-14T11:18:08-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-14T11:15:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789395285,
+    "ea_heartbeat_epoch": 1789395405,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186425.0,
+        "bid": 186310.0,
         "ok": true
       }
     ],
-    "pendentes": 4
+    "pendentes": 3
   },
   "pendentes_detalhe": [
     {
@@ -41,14 +41,6 @@
       "volume": 1.0,
       "comment": "BRK-20260914-146a",
       "hora": "2026-09-14T11:00:06-03:00"
-    },
-    {
-      "ticket": 2526217580,
-      "tipo": "buy_stop",
-      "preco": 186585.0,
-      "volume": 1.0,
-      "comment": "WEA_VW_L",
-      "hora": "2026-09-14T11:15:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -104,23 +96,23 @@
   "today": {
     "date": "2026-09-14",
     "realized": 0,
-    "unrealized": -196.0,
-    "total": -196.0,
+    "unrealized": 0,
+    "total": 0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37284.0,
-    "open_legs": 1,
-    "broker_realized": 0.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -229.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "corretora": -229.0,
+    "divergencia": 229.0,
+    "tolerancia": 4.58,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
@@ -149,29 +141,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 920062,
+    "idade_s": 920236,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-09-14T10:03:01-03:00",
-      "entry_price": 185440.0,
-      "current_price": 186425.0,
-      "qty": 1.0,
-      "notional": 37285.0,
-      "pnl": -197.0,
-      "pnl_liq_est": -214.11,
-      "pnl_pct": -0.531,
-      "minutos": 72.2
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
@@ -199,13 +175,13 @@
     },
     {
       "modulo": "VWAP",
-      "n": 8,
-      "soma": -280.56,
-      "media": -35.07,
-      "ep": 58.53,
-      "t": -0.6,
-      "ic_baixo": -149.79,
-      "ic_alto": 79.65,
+      "n": 9,
+      "soma": -509.56,
+      "media": -56.62,
+      "ep": 55.93,
+      "t": -1.01,
+      "ic_baixo": -166.25,
+      "ic_alto": 53.01,
       "acertos": 3,
       "conclusivo": false
     },
