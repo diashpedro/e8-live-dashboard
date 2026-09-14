@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-14T11:24:08-03:00",
+  "updated_at": "2026-09-14T11:27:07-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-14T11:17:15-03:00",
+    "last_ea_event": "2026-09-14T11:24:21-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789395765,
+    "ea_heartbeat_epoch": 1789395945,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186035.0,
+        "bid": 186065.0,
         "ok": true
       }
     ],
-    "pendentes": 3
+    "pendentes": 2
   },
   "pendentes_detalhe": [
     {
@@ -33,14 +33,6 @@
       "volume": 1.0,
       "comment": "WEA_ORB_S",
       "hora": "2026-09-14T10:30:00-03:00"
-    },
-    {
-      "ticket": 2526167621,
-      "tipo": "sell_stop",
-      "preco": 185970.0,
-      "volume": 1.0,
-      "comment": "BRK-20260914-146a",
-      "hora": "2026-09-14T11:00:06-03:00"
     }
   ],
   "eventos_hoje": [
@@ -97,17 +89,23 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[FILL] VW LONG entry=186585.00 stop=184793.57 R=1791.43"
+    },
+    {
+      "hora": "2026-09-14T11:24:21-03:00",
+      "tipo": "entrada",
+      "modulo": "T11 climax",
+      "texto": "[PY] PREENCHIDO BRK-20260914-146a | t11_climax_g146a @ 185970 -- perna viva"
     }
   ],
   "today": {
     "date": "2026-09-14",
     "realized": 0,
-    "unrealized": 0,
-    "total": 0,
+    "unrealized": -19.0,
+    "total": -19.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 0,
-    "open_legs": 0,
+    "exposure": 37213.0,
+    "open_legs": 1,
     "broker_realized": -229.0
   },
   "reconciliacao": {
@@ -115,10 +113,10 @@
     "corretora": -229.0,
     "divergencia": 229.0,
     "tolerancia": 4.58,
-    "comparavel": true,
-    "ok": false,
-    "volume_corretora": 0,
-    "volume_pernas": 0,
+    "comparavel": false,
+    "ok": null,
+    "volume_corretora": -1.0,
+    "volume_pernas": -1.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -147,13 +145,57 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 920596,
+    "idade_s": 920775,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "SHORT",
+      "entry_time": "2026-09-14T10:03:01-03:00",
+      "entry_price": 185440.0,
+      "current_price": 186065.0,
+      "qty": 1.0,
+      "notional": 37213.0,
+      "pnl": -125.0,
+      "pnl_liq_est": -142.09,
+      "pnl_pct": -0.337,
+      "minutos": 84.1
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-14T11:17:15-03:00",
+      "entry_price": 186585.0,
+      "current_price": 186065.0,
+      "qty": 1.0,
+      "notional": 37213.0,
+      "pnl": -104.0,
+      "pnl_liq_est": -121.14,
+      "pnl_pct": -0.279,
+      "minutos": 9.9
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g146a",
+      "strategy_label": "T11_climax · gaveta 146a",
+      "side": "SHORT",
+      "entry_time": "2026-09-14T11:24:21-03:00",
+      "entry_price": 185970.0,
+      "current_price": 186065.0,
+      "qty": 1.0,
+      "notional": 37213.0,
+      "pnl": -19.0,
+      "minutos": 2.8
+    }
+  ],
   "stats_modulo": [
     {
       "modulo": "ORB",
