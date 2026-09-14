@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-14T11:36:08-03:00",
+  "updated_at": "2026-09-14T11:39:08-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-14T11:24:21-03:00",
+    "last_ea_event": "2026-09-14T11:37:46-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789396485,
+    "ea_heartbeat_epoch": 1789396665,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186445.0,
+        "bid": 186620.0,
         "ok": true
       }
     ],
@@ -95,36 +95,42 @@
       "tipo": "entrada",
       "modulo": "T11 climax",
       "texto": "[PY] PREENCHIDO BRK-20260914-146a | t11_climax_g146a @ 185970 -- perna viva"
+    },
+    {
+      "hora": "2026-09-14T11:37:46-03:00",
+      "tipo": "saida",
+      "modulo": "T11 climax",
+      "texto": "[PY] FECHADA t11_climax_g146a por stop | -795 pts | PnL py dia R$ -159.00"
     }
   ],
   "today": {
     "date": "2026-09-14",
-    "realized": 0,
-    "unrealized": -96.0,
-    "total": -96.0,
-    "trades": 0,
+    "realized": -159.0,
+    "unrealized": 0,
+    "total": -159.0,
+    "trades": 1,
     "wins": 0,
-    "exposure": 37290.0,
-    "open_legs": 1,
-    "broker_realized": -229.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -388.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": -229.0,
+    "painel": -159.0,
+    "corretora": -388.0,
     "divergencia": 229.0,
-    "tolerancia": 4.58,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "tolerancia": 7.76,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -428.0,
-    "trades": 16,
+    "pnl": -587.0,
+    "trades": 17,
     "wins": 6,
     "since": "2026-09-04",
-    "days": 5,
+    "days": 6,
     "days_positive": 1,
     "best_day": {
       "date": "2026-09-10",
@@ -145,57 +151,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 921316,
+    "idade_s": 921496,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-09-14T10:03:01-03:00",
-      "entry_price": 185440.0,
-      "current_price": 186445.0,
-      "qty": 1.0,
-      "notional": 37289.0,
-      "pnl": -201.0,
-      "pnl_liq_est": -218.11,
-      "pnl_pct": -0.542,
-      "minutos": 93.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-14T11:17:15-03:00",
-      "entry_price": 186585.0,
-      "current_price": 186445.0,
-      "qty": 1.0,
-      "notional": 37289.0,
-      "pnl": -28.0,
-      "pnl_liq_est": -45.16,
-      "pnl_pct": -0.075,
-      "minutos": 18.9
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g146a",
-      "strategy_label": "T11_climax · gaveta 146a",
-      "side": "SHORT",
-      "entry_time": "2026-09-14T11:24:21-03:00",
-      "entry_price": 185970.0,
-      "current_price": 186445.0,
-      "qty": 1.0,
-      "notional": 37289.0,
-      "pnl": -95.0,
-      "minutos": 11.8
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "ORB",
@@ -258,6 +220,18 @@
       "conclusivo": false
     },
     {
+      "modulo": "t11_climax_g146a",
+      "n": 1,
+      "soma": -159.0,
+      "media": -159.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -159.0,
+      "ic_alto": -159.0,
+      "acertos": 0,
+      "conclusivo": false
+    },
+    {
       "modulo": "v02_reversao_climatica_g003a",
       "n": 1,
       "soma": -82.8,
@@ -305,9 +279,32 @@
       "trades": 4,
       "wins": 3,
       "cum": -428.0
+    },
+    {
+      "date": "2026-09-14",
+      "pnl": -159.0,
+      "trades": 1,
+      "wins": 0,
+      "cum": -587.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "g146a",
+      "strategy_label": "T11_climax · gaveta 146a",
+      "side": "SHORT",
+      "entry_time": "2026-09-14T11:24:21-03:00",
+      "exit_time": "2026-09-14T11:37:46-03:00",
+      "entry_price": 185970.0,
+      "exit_price": 186765.0,
+      "qty": 1.0,
+      "pnl": -159.0,
+      "pnl_bruto": -159.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 13.4
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -579,6 +576,12 @@
       "pnl": 77.0
     },
     {
+      "strategy": "T11_climax · gaveta 146a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -159.0
+    },
+    {
       "strategy": "VWAP",
       "trades": 5,
       "wins": 3,
@@ -594,9 +597,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 16,
+      "trades": 17,
       "wins": 6,
-      "pnl": -428.0
+      "pnl": -587.0
     }
   ],
   "by_reason": [
@@ -614,9 +617,9 @@
     },
     {
       "reason": "Stop",
-      "trades": 1,
+      "trades": 2,
       "wins": 0,
-      "pnl": -314.0
+      "pnl": -473.0
     },
     {
       "reason": "Trailing",
