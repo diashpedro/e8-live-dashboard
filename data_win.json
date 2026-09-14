@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-14T11:00:13-03:00",
+  "updated_at": "2026-09-14T11:03:07-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-14T10:30:00-03:00",
+    "last_ea_event": "2026-09-14T11:00:06-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789394385,
+    "ea_heartbeat_epoch": 1789394565,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186495.0,
+        "bid": 186530.0,
         "ok": true
       }
     ],
@@ -79,16 +79,22 @@
       "tipo": "entrada",
       "modulo": "ORB",
       "texto": "[ORDER] WEA_ORB_S stop=185035.00 (SHORT)"
+    },
+    {
+      "hora": "2026-09-14T11:00:06-03:00",
+      "tipo": "entrada",
+      "modulo": "T11 climax",
+      "texto": "[PY] ARMADO BRK-20260914-146a | t11_climax_g146a short 1 @ 185970 | stop 186755 alvo 182830"
     }
   ],
   "today": {
     "date": "2026-09-14",
     "realized": 0,
-    "unrealized": -209.0,
-    "total": -209.0,
+    "unrealized": -218.0,
+    "total": -218.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37297.0,
+    "exposure": 37306.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -129,7 +135,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 919161,
+    "idade_s": 919335,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -143,13 +149,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-14T10:03:01-03:00",
       "entry_price": 185440.0,
-      "current_price": 186495.0,
+      "current_price": 186530.0,
       "qty": 1.0,
-      "notional": 37299.0,
-      "pnl": -211.0,
-      "pnl_liq_est": -228.11,
-      "pnl_pct": -0.569,
-      "minutos": 57.2
+      "notional": 37306.0,
+      "pnl": -218.0,
+      "pnl_liq_est": -235.11,
+      "pnl_pct": -0.588,
+      "minutos": 60.1
     }
   ],
   "stats_modulo": [
