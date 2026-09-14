@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-14T17:39:10-03:00",
+  "updated_at": "2026-09-14T17:42:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-14T17:00:30-03:00",
+    "last_ea_event": "2026-09-14T17:40:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789418265,
+    "ea_heartbeat_epoch": 1789418445,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187305.0,
+        "bid": 187335.0,
         "ok": true
       }
     ],
@@ -336,34 +336,52 @@
       "tipo": "entrada",
       "modulo": "Momentum intradiario",
       "texto": "[PY] EXECUTADO IM-20260914 | intramom short 1 a mercado | stop 193202 alvo 170693"
+    },
+    {
+      "hora": "2026-09-14T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] FECHADA intramom por eod | 235 pts | PnL py dia R$ -112.00"
+    },
+    {
+      "hora": "2026-09-14T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EOD] VW LONG vol=1"
+    },
+    {
+      "hora": "2026-09-14T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "ORB",
+      "texto": "[EOD] ORB LONG vol=1"
     }
   ],
   "today": {
     "date": "2026-09-14",
-    "realized": -578.0,
-    "unrealized": -25.5,
-    "total": -603.5,
-    "trades": 2,
-    "wins": 0,
-    "exposure": 37462.0,
-    "open_legs": 1,
-    "broker_realized": -361.5
+    "realized": -431.0,
+    "unrealized": 0,
+    "total": -431.0,
+    "trades": 4,
+    "wins": 1,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -384.0
   },
   "reconciliacao": {
-    "painel": -578.0,
-    "corretora": -361.5,
-    "divergencia": -216.5,
-    "tolerancia": 7.23,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 2.0,
-    "volume_ok": false
+    "painel": -431.0,
+    "corretora": -384.0,
+    "divergencia": -47.0,
+    "tolerancia": 7.68,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -1090.0,
-    "trades": 17,
-    "wins": 5,
+    "pnl": -943.0,
+    "trades": 19,
+    "wins": 6,
     "since": "2026-09-04",
     "days": 6,
     "days_positive": 1,
@@ -386,44 +404,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 943098,
+    "idade_s": 943279,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-14T11:17:15-03:00",
-      "entry_price": 186585.0,
-      "current_price": 187305.0,
-      "qty": 1.0,
-      "notional": 37461.0,
-      "pnl": 144.0,
-      "pnl_liq_est": 126.8,
-      "pnl_pct": 0.386,
-      "minutos": 381.9
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "LONG",
-      "entry_time": "2026-09-14T11:46:36-03:00",
-      "entry_price": 187340.0,
-      "current_price": 187305.0,
-      "qty": 1.0,
-      "notional": 37461.0,
-      "pnl": -7.0,
-      "pnl_liq_est": -24.23,
-      "pnl_pct": -0.019,
-      "minutos": 352.6
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -439,13 +426,13 @@
     },
     {
       "modulo": "ORB",
-      "n": 5,
-      "soma": 277.93,
-      "media": 55.59,
-      "ep": 117.24,
-      "t": 0.47,
-      "ic_baixo": -174.21,
-      "ic_alto": 285.39,
+      "n": 6,
+      "soma": 266.68,
+      "media": 44.45,
+      "ep": 96.38,
+      "t": 0.46,
+      "ic_baixo": -144.45,
+      "ic_alto": 233.34,
       "acertos": 2,
       "conclusivo": false
     },
@@ -463,13 +450,13 @@
     },
     {
       "modulo": "VWAP",
-      "n": 9,
-      "soma": -509.56,
-      "media": -56.62,
-      "ep": 55.93,
-      "t": -1.01,
-      "ic_baixo": -166.25,
-      "ic_alto": 53.01,
+      "n": 10,
+      "soma": -520.81,
+      "media": -52.08,
+      "ep": 50.23,
+      "t": -1.04,
+      "ic_baixo": -150.54,
+      "ic_alto": 46.38,
       "acertos": 3,
       "conclusivo": false
     },
@@ -560,13 +547,45 @@
     },
     {
       "date": "2026-09-14",
-      "pnl": -578.0,
-      "trades": 2,
-      "wins": 0,
-      "cum": -1090.0
+      "pnl": -431.0,
+      "trades": 4,
+      "wins": 1,
+      "cum": -943.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-14T11:17:15-03:00",
+      "exit_time": "2026-09-14T17:40:00-03:00",
+      "entry_price": 186585.0,
+      "exit_price": 187330.0,
+      "qty": 1.0,
+      "pnl": 149.0,
+      "pnl_bruto": 149.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 382.8
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "LONG",
+      "entry_time": "2026-09-14T11:46:36-03:00",
+      "exit_time": "2026-09-14T17:40:00-03:00",
+      "entry_price": 187340.0,
+      "exit_price": 187330.0,
+      "qty": 1.0,
+      "pnl": -2.0,
+      "pnl_bruto": -2.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 353.4
+    },
     {
       "symbol": "WINV26",
       "strategy": "VB",
@@ -843,9 +862,9 @@
   "by_strategy": [
     {
       "strategy": "ORB",
-      "trades": 5,
+      "trades": 6,
       "wins": 2,
-      "pnl": 77.0
+      "pnl": 75.0
     },
     {
       "strategy": "T11_climax · gaveta 146a",
@@ -855,9 +874,9 @@
     },
     {
       "strategy": "VWAP",
-      "trades": 5,
-      "wins": 3,
-      "pnl": 409.0
+      "trades": 6,
+      "wins": 4,
+      "pnl": 558.0
     },
     {
       "strategy": "VolBreak",
@@ -869,9 +888,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 17,
-      "wins": 5,
-      "pnl": -1090.0
+      "trades": 19,
+      "wins": 6,
+      "pnl": -943.0
     }
   ],
   "by_reason": [
@@ -883,9 +902,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 8,
-      "wins": 5,
-      "pnl": 1080.0
+      "trades": 10,
+      "wins": 6,
+      "pnl": 1227.0
     },
     {
       "reason": "Stop",
