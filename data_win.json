@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-15T11:00:20-03:00",
+  "updated_at": "2026-09-15T11:03:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-15T10:47:07-03:00",
+    "last_ea_event": "2026-09-15T11:00:41-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789480693,
+    "ea_heartbeat_epoch": 1789480933,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187625.0,
+        "bid": 187800.0,
         "ok": true
       }
     ],
-    "pendentes": 4
+    "pendentes": 3
   },
   "pendentes_detalhe": [
     {
@@ -41,14 +41,6 @@
       "volume": 1.0,
       "comment": "WEA_ORB_S",
       "hora": "2026-09-15T10:30:01-03:00"
-    },
-    {
-      "ticket": 2527351383,
-      "tipo": "buy_stop",
-      "preco": 187945.0,
-      "volume": 1.0,
-      "comment": "WEA_VW_L",
-      "hora": "2026-09-15T11:00:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -129,6 +121,18 @@
       "tipo": "entrada",
       "modulo": "V02 reversao climatica",
       "texto": "[PY] PREENCHIDO BRK-20260915-003a | v02_reversao_climatica_g003a @ 188195 -- perna viva"
+    },
+    {
+      "hora": "2026-09-15T11:00:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_L stop=187945.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-15T11:00:41-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW LONG entry=187945.00 stop=186308.93 R=1636.07"
     }
   ],
   "today": {
@@ -138,7 +142,7 @@
     "total": -110.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37529.0,
+    "exposure": 75118.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -149,8 +153,8 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 2.0,
+    "volume_corretora": 2.0,
+    "volume_pernas": 3.0,
     "volume_ok": false
   },
   "cumulative": {
@@ -179,7 +183,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1005568,
+    "idade_s": 1005741,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -193,11 +197,11 @@
       "side": "LONG",
       "entry_time": "2026-09-14T17:40:00-03:00",
       "entry_price": 187335.0,
-      "current_price": 187625.0,
+      "current_price": 187800.0,
       "qty": 1.0,
-      "notional": 37525.0,
-      "pnl": 58.0,
-      "minutos": 1040.3
+      "notional": 37560.0,
+      "pnl": 93.0,
+      "minutos": 1043.2
     },
     {
       "symbol": "WINV26",
@@ -206,11 +210,26 @@
       "side": "LONG",
       "entry_time": "2026-09-15T10:47:06-03:00",
       "entry_price": 188195.0,
-      "current_price": 187625.0,
+      "current_price": 187800.0,
       "qty": 1.0,
-      "notional": 37525.0,
-      "pnl": -114.0,
-      "minutos": 13.2
+      "notional": 37560.0,
+      "pnl": -79.0,
+      "minutos": 16.1
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-15T11:00:40-03:00",
+      "entry_price": 187945.0,
+      "current_price": 187800.0,
+      "qty": 1.0,
+      "notional": 37560.0,
+      "pnl": -29.0,
+      "pnl_liq_est": -46.28,
+      "pnl_pct": -0.077,
+      "minutos": 2.6
     }
   ],
   "stats_modulo": [
