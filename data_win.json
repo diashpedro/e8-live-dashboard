@@ -1,379 +1,42 @@
 {
-  "updated_at": "2026-09-14T18:57:07-03:00",
+  "updated_at": "2026-09-15T09:00:24-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-14T17:40:00-03:00",
+    "last_ea_event": "2026-09-15T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789422945,
+    "ea_heartbeat_epoch": 1789473525,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187245.0,
+        "bid": 206255.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-14T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=186250.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-14T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=185440.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-14T10:03:01-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB SHORT entry=185440.00 stop=187472.50 R=2032.50"
-    },
-    {
-      "hora": "2026-09-14T10:03:46-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.11 16:50 -> corte de HOJE (-15min): 2026.09.14 16:35"
-    },
-    {
-      "hora": "2026-09-14T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=187340.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-14T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=185035.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-14T11:00:06-03:00",
-      "tipo": "entrada",
-      "modulo": "T11 climax",
-      "texto": "[PY] ARMADO BRK-20260914-146a | t11_climax_g146a short 1 @ 185970 | stop 186755 alvo 182830"
-    },
-    {
-      "hora": "2026-09-14T11:15:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=186585.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-14T11:17:15-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=186585.00 stop=184793.57 R=1791.43"
-    },
-    {
-      "hora": "2026-09-14T11:24:21-03:00",
-      "tipo": "entrada",
-      "modulo": "T11 climax",
-      "texto": "[PY] PREENCHIDO BRK-20260914-146a | t11_climax_g146a @ 185970 -- perna viva"
-    },
-    {
-      "hora": "2026-09-14T11:37:46-03:00",
-      "tipo": "saida",
-      "modulo": "T11 climax",
-      "texto": "[PY] FECHADA t11_climax_g146a por stop | -795 pts | PnL py dia R$ -159.00"
-    },
-    {
-      "hora": "2026-09-14T11:46:36-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[FILL] ORB LONG entry=187340.00 stop=185040.00 R=2300.00"
-    },
-    {
-      "hora": "2026-09-14T12:05:40-03:00",
-      "tipo": "saida",
-      "modulo": "VolBreak",
-      "texto": "[EXIT] VB SHORT vol=1 motivo=stop"
-    },
-    {
-      "hora": "2026-09-14T12:08:06-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna A limite=49.20 (nivel teorico 49.2013) vol=100 ticket=2526405523"
-    },
-    {
-      "hora": "2026-09-14T12:08:06-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna B limite=49.25 (nivel teorico 49.2450) vol=100 ticket=2526405525"
-    },
-    {
-      "hora": "2026-09-14T12:08:06-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna C limite=49.29 (nivel teorico 49.2887) vol=100 ticket=2526405526"
-    },
-    {
-      "hora": "2026-09-14T12:08:06-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 SHORT perna A limite=49.23 (nivel teorico 49.2281) vol=100 ticket=2526405527"
-    },
-    {
-      "hora": "2026-09-14T12:08:06-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 SHORT perna B limite=49.28 (nivel teorico 49.2800) vol=100 ticket=2526405529"
-    },
-    {
-      "hora": "2026-09-14T12:08:06-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 SHORT perna C limite=49.33 (nivel teorico 49.3319) vol=100 ticket=2526405530"
-    },
-    {
-      "hora": "2026-09-14T12:08:19-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna A entry=49.2000 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T12:12:08-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W5 SHORT perna A entry=49.2300 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T12:12:21-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna B entry=49.2500 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T12:12:36-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W5 SHORT perna B entry=49.2800 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T12:23:30-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna C entry=49.2900 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T12:27:54-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W5 SHORT perna C entry=49.3300 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T12:33:45-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-14T12:33:45-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W5 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-14T13:30:27-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna B motivo=be vol=100"
-    },
-    {
-      "hora": "2026-09-14T13:31:51-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W5 SHORT perna B motivo=be vol=100"
-    },
-    {
-      "hora": "2026-09-14T13:48:34-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 SHORT perna A limite=49.03 (nivel teorico 49.0317) vol=100 ticket=2526578055"
-    },
-    {
-      "hora": "2026-09-14T13:48:34-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 SHORT perna B limite=49.06 (nivel teorico 49.0600) vol=100 ticket=2526578056"
-    },
-    {
-      "hora": "2026-09-14T13:48:34-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 SHORT perna C limite=49.09 (nivel teorico 49.0883) vol=100 ticket=2526578057"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 SHORT perna A limite=48.83 (nivel teorico 48.8317) vol=100 ticket=2526722513"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 SHORT perna B limite=48.86 (nivel teorico 48.8600) vol=100 ticket=2526722516"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 SHORT perna C limite=48.89 (nivel teorico 48.8883) vol=100 ticket=2526722518"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W13 SHORT perna A limite=48.84 (nivel teorico 48.8431) vol=100 ticket=2526722522"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W13 SHORT perna B limite=48.88 (nivel teorico 48.8750) vol=100 ticket=2526722526"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W13 SHORT perna C limite=48.91 (nivel teorico 48.9069) vol=100 ticket=2526722527"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 SHORT perna A limite=48.84 (nivel teorico 48.8431) vol=100 ticket=2526722529"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 SHORT perna B limite=48.88 (nivel teorico 48.8750) vol=100 ticket=2526722534"
-    },
-    {
-      "hora": "2026-09-14T15:47:50-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 SHORT perna C limite=48.91 (nivel teorico 48.9069) vol=100 ticket=2526722537"
-    },
-    {
-      "hora": "2026-09-14T15:49:03-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W8 SHORT perna A entry=48.8300 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T15:49:03-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W13 SHORT perna A entry=48.8400 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T15:49:03-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W21 SHORT perna A entry=48.8400 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T15:49:03-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W8 SHORT perna B entry=48.8600 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-14T15:53:55-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W8 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-14T15:53:55-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W13 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-14T15:53:55-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W21 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-14T16:21:15-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W8 SHORT perna B motivo=be vol=100"
-    },
-    {
-      "hora": "2026-09-14T16:35:41-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna C motivo=trail vol=100"
-    },
-    {
-      "hora": "2026-09-14T16:35:41-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W5 SHORT perna C motivo=trail vol=100"
-    },
-    {
-      "hora": "2026-09-14T16:40:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-14T17:00:30-03:00",
-      "tipo": "entrada",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] EXECUTADO IM-20260914 | intramom short 1 a mercado | stop 193202 alvo 170693"
-    },
-    {
-      "hora": "2026-09-14T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] FECHADA intramom por eod | 235 pts | PnL py dia R$ -112.00"
-    },
-    {
-      "hora": "2026-09-14T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EOD] VW LONG vol=1"
-    },
-    {
-      "hora": "2026-09-14T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "ORB",
-      "texto": "[EOD] ORB LONG vol=1"
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-14",
-    "realized": -431.0,
+    "date": "2026-09-15",
+    "realized": 0,
     "unrealized": 0,
-    "total": -431.0,
-    "trades": 4,
-    "wins": 1,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -384.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -431.0,
-    "corretora": -384.0,
-    "divergencia": -47.0,
-    "tolerancia": 7.68,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
-    "ok": false,
+    "ok": true,
     "volume_corretora": 0,
     "volume_pernas": 0,
     "volume_ok": true
@@ -404,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 947776,
+    "idade_s": 998373,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
