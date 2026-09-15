@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-15T17:39:10-03:00",
+  "updated_at": "2026-09-15T17:42:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-15T17:00:05-03:00",
+    "last_ea_event": "2026-09-15T17:40:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789504693,
+    "ea_heartbeat_epoch": 1789504873,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188465.0,
+        "bid": 188405.0,
         "ok": true
       }
     ],
@@ -150,37 +150,67 @@
       "tipo": "entrada",
       "modulo": "Momentum intradiario",
       "texto": "[PY] EXECUTADO IM-20260915 | intramom long 1 a mercado | stop 182680 alvo 205280"
+    },
+    {
+      "hora": "2026-09-15T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "V02 reversao climatica",
+      "texto": "[PY] FECHADA v02_reversao_climatica_g003a por eod | 280 pts | PnL py dia R$ 56.00"
+    },
+    {
+      "hora": "2026-09-15T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] FECHADA intramom por eod | 160 pts | PnL py dia R$ 88.00"
+    },
+    {
+      "hora": "2026-09-15T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "VolBreak",
+      "texto": "[EOD] VB LONG vol=1"
+    },
+    {
+      "hora": "2026-09-15T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EOD] VW LONG vol=1"
+    },
+    {
+      "hora": "2026-09-15T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "ORB",
+      "texto": "[EOD] ORB LONG vol=1"
     }
   ],
   "today": {
     "date": "2026-09-15",
-    "realized": 0,
-    "unrealized": 151.0,
-    "total": 151.0,
-    "trades": 0,
-    "wins": 0,
-    "exposure": 188470.0,
-    "open_legs": 1,
-    "broker_realized": 0.0
+    "realized": 156.0,
+    "unrealized": 0,
+    "total": 156.0,
+    "trades": 5,
+    "wins": 4,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": 156.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": 0.0,
+    "painel": 156.0,
+    "corretora": 156.0,
     "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 5.0,
-    "volume_pernas": 5.0,
+    "tolerancia": 3.12,
+    "comparavel": true,
+    "ok": true,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -943.0,
-    "trades": 19,
-    "wins": 6,
+    "pnl": -787.0,
+    "trades": 24,
+    "wins": 10,
     "since": "2026-09-04",
-    "days": 6,
-    "days_positive": 1,
+    "days": 7,
+    "days_positive": 2,
     "best_day": {
       "date": "2026-09-10",
       "pnl": 873.0,
@@ -200,85 +230,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1029498,
+    "idade_s": 1029679,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "g003a",
-      "strategy_label": "V02_reversao_climatica · gaveta 3a",
-      "side": "LONG",
-      "entry_time": "2026-09-15T10:47:06-03:00",
-      "entry_price": 188195.0,
-      "current_price": 188465.0,
-      "qty": 1.0,
-      "notional": 37693.0,
-      "pnl": 54.0,
-      "minutos": 412.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-15T11:00:40-03:00",
-      "entry_price": 187945.0,
-      "current_price": 188465.0,
-      "qty": 1.0,
-      "notional": 37693.0,
-      "pnl": 104.0,
-      "pnl_liq_est": 86.69,
-      "pnl_pct": 0.277,
-      "minutos": 398.5
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "LONG",
-      "entry_time": "2026-09-15T12:20:00-03:00",
-      "entry_price": 188460.0,
-      "current_price": 188465.0,
-      "qty": 1.0,
-      "notional": 37693.0,
-      "pnl": 1.0,
-      "pnl_liq_est": -16.34,
-      "pnl_pct": 0.003,
-      "minutos": 319.2
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "LONG",
-      "entry_time": "2026-09-15T12:23:03-03:00",
-      "entry_price": 188670.0,
-      "current_price": 188465.0,
-      "qty": 1.0,
-      "notional": 37693.0,
-      "pnl": -41.0,
-      "pnl_liq_est": -58.35,
-      "pnl_pct": -0.109,
-      "minutos": 316.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "LONG",
-      "entry_time": "2026-09-15T17:00:04-03:00",
-      "entry_price": 188325.0,
-      "current_price": 188465.0,
-      "qty": 1.0,
-      "notional": 37693.0,
-      "pnl": 28.0,
-      "minutos": 39.1
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -294,14 +252,14 @@
     },
     {
       "modulo": "ORB",
-      "n": 6,
-      "soma": 266.68,
-      "media": 44.45,
-      "ep": 96.38,
-      "t": 0.46,
-      "ic_baixo": -144.45,
-      "ic_alto": 233.34,
-      "acertos": 2,
+      "n": 7,
+      "soma": 297.88,
+      "media": 42.55,
+      "ep": 81.47,
+      "t": 0.52,
+      "ic_baixo": -117.14,
+      "ic_alto": 202.24,
+      "acertos": 3,
       "conclusivo": false
     },
     {
@@ -318,38 +276,38 @@
     },
     {
       "modulo": "VWAP",
-      "n": 10,
-      "soma": -520.81,
-      "media": -52.08,
-      "ep": 50.23,
-      "t": -1.04,
-      "ic_baixo": -150.54,
-      "ic_alto": 46.38,
-      "acertos": 3,
+      "n": 11,
+      "soma": -489.61,
+      "media": -44.51,
+      "ep": 46.07,
+      "t": -0.97,
+      "ic_baixo": -134.8,
+      "ic_alto": 45.78,
+      "acertos": 4,
       "conclusivo": false
     },
     {
       "modulo": "VolBreak",
-      "n": 2,
-      "soma": -164.24,
-      "media": -82.12,
-      "ep": 0.68,
-      "t": -120.76,
-      "ic_baixo": -83.45,
-      "ic_alto": -80.79,
-      "acertos": 0,
+      "n": 3,
+      "soma": -133.04,
+      "media": -44.35,
+      "ep": 37.78,
+      "t": -1.17,
+      "ic_baixo": -118.39,
+      "ic_alto": 29.69,
+      "acertos": 1,
       "conclusivo": false
     },
     {
       "modulo": "intramom",
-      "n": 4,
-      "soma": 140.01,
-      "media": 35.0,
-      "ep": 79.66,
-      "t": 0.44,
-      "ic_baixo": -121.12,
-      "ic_alto": 191.13,
-      "acertos": 2,
+      "n": 5,
+      "soma": 171.21,
+      "media": 34.24,
+      "ep": 61.71,
+      "t": 0.55,
+      "ic_baixo": -86.7,
+      "ic_alto": 155.19,
+      "acertos": 3,
       "conclusivo": false
     },
     {
@@ -366,14 +324,14 @@
     },
     {
       "modulo": "v02_reversao_climatica_g003a",
-      "n": 1,
-      "soma": -82.8,
-      "media": -82.8,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -82.8,
-      "ic_alto": -82.8,
-      "acertos": 0,
+      "n": 2,
+      "soma": -51.6,
+      "media": -25.8,
+      "ep": 57.0,
+      "t": -0.45,
+      "ic_baixo": -137.52,
+      "ic_alto": 85.92,
+      "acertos": 1,
       "conclusivo": false
     }
   ],
@@ -419,9 +377,96 @@
       "trades": 4,
       "wins": 1,
       "cum": -943.0
+    },
+    {
+      "date": "2026-09-15",
+      "pnl": 156.0,
+      "trades": 5,
+      "wins": 4,
+      "cum": -787.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "LONG",
+      "entry_time": "2026-09-15T12:23:03-03:00",
+      "exit_time": "2026-09-15T17:40:00-03:00",
+      "entry_price": 188670.0,
+      "exit_price": 188475.0,
+      "qty": 1.0,
+      "pnl": -39.0,
+      "pnl_bruto": -39.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 316.9
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-15T11:00:40-03:00",
+      "exit_time": "2026-09-15T17:40:00-03:00",
+      "entry_price": 187945.0,
+      "exit_price": 188475.0,
+      "qty": 1.0,
+      "pnl": 106.0,
+      "pnl_bruto": 106.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 399.3
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "LONG",
+      "entry_time": "2026-09-15T12:20:00-03:00",
+      "exit_time": "2026-09-15T17:40:00-03:00",
+      "entry_price": 188460.0,
+      "exit_price": 188475.0,
+      "qty": 1.0,
+      "pnl": 3.0,
+      "pnl_bruto": 3.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 320.0
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g003a",
+      "strategy_label": "V02_reversao_climatica · gaveta 3a",
+      "side": "LONG",
+      "entry_time": "2026-09-15T10:47:06-03:00",
+      "exit_time": "2026-09-15T17:40:00-03:00",
+      "entry_price": 188195.0,
+      "exit_price": 188475.0,
+      "qty": 1.0,
+      "pnl": 56.0,
+      "pnl_bruto": 56.0,
+      "motivo": "eo",
+      "motivo_label": "eo",
+      "minutos": 412.9
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "LONG",
+      "entry_time": "2026-09-15T17:00:04-03:00",
+      "exit_time": "2026-09-15T17:40:00-03:00",
+      "entry_price": 188325.0,
+      "exit_price": 188475.0,
+      "qty": 1.0,
+      "pnl": 30.0,
+      "pnl_bruto": 30.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 39.9
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -729,10 +774,16 @@
   ],
   "by_strategy": [
     {
+      "strategy": "Momentum intradiario",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 30.0
+    },
+    {
       "strategy": "ORB",
-      "trades": 6,
-      "wins": 2,
-      "pnl": 75.0
+      "trades": 7,
+      "wins": 3,
+      "pnl": 78.0
     },
     {
       "strategy": "T11_climax · gaveta 146a",
@@ -741,24 +792,30 @@
       "pnl": -159.0
     },
     {
+      "strategy": "V02_reversao_climatica · gaveta 3a",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 56.0
+    },
+    {
       "strategy": "VWAP",
-      "trades": 6,
-      "wins": 4,
-      "pnl": 558.0
+      "trades": 7,
+      "wins": 5,
+      "pnl": 664.0
     },
     {
       "strategy": "VolBreak",
-      "trades": 6,
+      "trades": 7,
       "wins": 0,
-      "pnl": -1417.0
+      "pnl": -1456.0
     }
   ],
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 19,
-      "wins": 6,
-      "pnl": -943.0
+      "trades": 24,
+      "wins": 10,
+      "pnl": -787.0
     }
   ],
   "by_reason": [
@@ -770,9 +827,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 10,
-      "wins": 6,
-      "pnl": 1227.0
+      "trades": 14,
+      "wins": 9,
+      "pnl": 1327.0
     },
     {
       "reason": "Stop",
@@ -785,6 +842,12 @@
       "trades": 5,
       "wins": 0,
       "pnl": -1277.0
+    },
+    {
+      "reason": "eo",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 56.0
     }
   ]
 }
