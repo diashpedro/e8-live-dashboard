@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-15T11:27:09-03:00",
+  "updated_at": "2026-09-15T11:30:14-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-15T11:00:41-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789482373,
+    "ea_heartbeat_epoch": 1789482553,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187845.0,
+        "bid": 187660.0,
         "ok": true
       }
     ],
@@ -138,11 +138,11 @@
   "today": {
     "date": "2026-09-15",
     "realized": 0,
-    "unrealized": -92.0,
-    "total": -92.0,
+    "unrealized": -172.0,
+    "total": -172.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 75136.0,
+    "exposure": 75056.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -183,7 +183,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1007177,
+    "idade_s": 1007362,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -197,11 +197,11 @@
       "side": "LONG",
       "entry_time": "2026-09-14T17:40:00-03:00",
       "entry_price": 187335.0,
-      "current_price": 187845.0,
+      "current_price": 187660.0,
       "qty": 1.0,
-      "notional": 37569.0,
-      "pnl": 102.0,
-      "minutos": 1067.2
+      "notional": 37532.0,
+      "pnl": 65.0,
+      "minutos": 1070.2
     },
     {
       "symbol": "WINV26",
@@ -210,11 +210,11 @@
       "side": "LONG",
       "entry_time": "2026-09-15T10:47:06-03:00",
       "entry_price": 188195.0,
-      "current_price": 187845.0,
+      "current_price": 187660.0,
       "qty": 1.0,
-      "notional": 37569.0,
-      "pnl": -70.0,
-      "minutos": 40.1
+      "notional": 37532.0,
+      "pnl": -107.0,
+      "minutos": 43.1
     },
     {
       "symbol": "WINV26",
@@ -223,13 +223,13 @@
       "side": "LONG",
       "entry_time": "2026-09-15T11:00:40-03:00",
       "entry_price": 187945.0,
-      "current_price": 187845.0,
+      "current_price": 187660.0,
       "qty": 1.0,
-      "notional": 37569.0,
-      "pnl": -20.0,
-      "pnl_liq_est": -37.29,
-      "pnl_pct": -0.053,
-      "minutos": 26.5
+      "notional": 37532.0,
+      "pnl": -57.0,
+      "pnl_liq_est": -74.28,
+      "pnl_pct": -0.152,
+      "minutos": 29.6
     }
   ],
   "stats_modulo": [
