@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-16T17:39:08-03:00",
+  "updated_at": "2026-09-16T17:42:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-16T17:00:04-03:00",
+    "last_ea_event": "2026-09-16T17:40:05-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789591093,
+    "ea_heartbeat_epoch": 1789591273,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187340.0,
+        "bid": 187335.0,
         "ok": true
       }
     ],
@@ -186,34 +186,46 @@
       "tipo": "entrada",
       "modulo": "Momentum intradiario",
       "texto": "[PY] EXECUTADO IM-20260916 | intramom short 1 a mercado | stop 192883 alvo 170411"
+    },
+    {
+      "hora": "2026-09-16T17:40:01-03:00",
+      "tipo": "saida",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] FECHADA intramom por eod | -110 pts | PnL py dia R$ -22.00"
+    },
+    {
+      "hora": "2026-09-16T17:40:05-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EOD] VW SHORT vol=1"
     }
   ],
   "today": {
     "date": "2026-09-16",
-    "realized": -585.0,
-    "unrealized": 39.0,
-    "total": -546.0,
-    "trades": 3,
-    "wins": 0,
-    "exposure": 74936.0,
-    "open_legs": 1,
-    "broker_realized": -585.0
+    "realized": -555.0,
+    "unrealized": 0,
+    "total": -555.0,
+    "trades": 5,
+    "wins": 1,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -555.0
   },
   "reconciliacao": {
-    "painel": -585.0,
-    "corretora": -585.0,
+    "painel": -555.0,
+    "corretora": -555.0,
     "divergencia": 0.0,
-    "tolerancia": 11.7,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -2.0,
-    "volume_pernas": -2.0,
+    "tolerancia": 11.1,
+    "comparavel": true,
+    "ok": true,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -1372.0,
-    "trades": 27,
-    "wins": 10,
+    "pnl": -1342.0,
+    "trades": 29,
+    "wins": 11,
     "since": "2026-09-04",
     "days": 8,
     "days_positive": 2,
@@ -236,42 +248,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1115896,
+    "idade_s": 1116078,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "SHORT",
-      "entry_time": "2026-09-16T15:50:02-03:00",
-      "entry_price": 187600.0,
-      "current_price": 187340.0,
-      "qty": 1.0,
-      "notional": 37468.0,
-      "pnl": 52.0,
-      "pnl_liq_est": 34.75,
-      "pnl_pct": 0.139,
-      "minutos": 109.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "SHORT",
-      "entry_time": "2026-09-16T17:00:04-03:00",
-      "entry_price": 187275.0,
-      "current_price": 187340.0,
-      "qty": 1.0,
-      "notional": 37468.0,
-      "pnl": -13.0,
-      "minutos": 39.1
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -311,14 +294,14 @@
     },
     {
       "modulo": "VWAP",
-      "n": 13,
-      "soma": -856.61,
-      "media": -65.89,
-      "ep": 41.32,
-      "t": -1.59,
-      "ic_baixo": -146.89,
-      "ic_alto": 15.1,
-      "acertos": 4,
+      "n": 14,
+      "soma": -841.11,
+      "media": -60.08,
+      "ep": 38.7,
+      "t": -1.55,
+      "ic_baixo": -135.92,
+      "ic_alto": 15.77,
+      "acertos": 5,
       "conclusivo": false
     },
     {
@@ -335,14 +318,14 @@
     },
     {
       "modulo": "intramom",
-      "n": 5,
-      "soma": 171.21,
-      "media": 34.24,
-      "ep": 61.71,
-      "t": 0.55,
-      "ic_baixo": -86.7,
-      "ic_alto": 155.19,
-      "acertos": 3,
+      "n": 6,
+      "soma": 185.71,
+      "media": 30.95,
+      "ep": 50.49,
+      "t": 0.61,
+      "ic_baixo": -68.01,
+      "ic_alto": 129.91,
+      "acertos": 4,
       "conclusivo": false
     },
     {
@@ -422,13 +405,45 @@
     },
     {
       "date": "2026-09-16",
-      "pnl": -585.0,
-      "trades": 3,
-      "wins": 0,
-      "cum": -1372.0
+      "pnl": -555.0,
+      "trades": 5,
+      "wins": 1,
+      "cum": -1342.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "SHORT",
+      "entry_time": "2026-09-16T15:50:02-03:00",
+      "exit_time": "2026-09-16T17:40:04-03:00",
+      "entry_price": 187600.0,
+      "exit_price": 187360.0,
+      "qty": 1.0,
+      "pnl": 48.0,
+      "pnl_bruto": 48.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 110.0
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "SHORT",
+      "entry_time": "2026-09-16T17:00:04-03:00",
+      "exit_time": "2026-09-16T17:40:01-03:00",
+      "entry_price": 187275.0,
+      "exit_price": 187365.0,
+      "qty": 1.0,
+      "pnl": -18.0,
+      "pnl_bruto": -18.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 40.0
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -865,9 +880,9 @@
   "by_strategy": [
     {
       "strategy": "Momentum intradiario",
-      "trades": 1,
+      "trades": 2,
       "wins": 1,
-      "pnl": 30.0
+      "pnl": 12.0
     },
     {
       "strategy": "ORB",
@@ -889,9 +904,9 @@
     },
     {
       "strategy": "VWAP",
-      "trades": 9,
-      "wins": 5,
-      "pnl": 235.0
+      "trades": 10,
+      "wins": 6,
+      "pnl": 283.0
     },
     {
       "strategy": "VolBreak",
@@ -903,9 +918,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 27,
-      "wins": 10,
-      "pnl": -1372.0
+      "trades": 29,
+      "wins": 11,
+      "pnl": -1342.0
     }
   ],
   "by_reason": [
@@ -917,9 +932,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 14,
-      "wins": 9,
-      "pnl": 1327.0
+      "trades": 16,
+      "wins": 10,
+      "pnl": 1357.0
     },
     {
       "reason": "Stop",
