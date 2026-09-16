@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-16T16:57:08-03:00",
+  "updated_at": "2026-09-16T17:00:16-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-16T16:35:02-03:00",
+    "last_ea_event": "2026-09-16T17:00:04-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789588573,
+    "ea_heartbeat_epoch": 1789588753,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187245.0,
+        "bid": 187255.0,
         "ok": true
       }
     ],
@@ -180,6 +180,12 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
+    },
+    {
+      "hora": "2026-09-16T17:00:04-03:00",
+      "tipo": "entrada",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] EXECUTADO IM-20260916 | intramom short 1 a mercado | stop 192883 alvo 170411"
     }
   ],
   "today": {
@@ -189,7 +195,7 @@
     "total": -514.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 37449.0,
+    "exposure": 74904.0,
     "open_legs": 1,
     "broker_realized": -585.0
   },
@@ -200,8 +206,8 @@
     "tolerancia": 11.7,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "volume_corretora": -2.0,
+    "volume_pernas": -2.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -230,7 +236,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1113376,
+    "idade_s": 1113564,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -244,13 +250,26 @@
       "side": "SHORT",
       "entry_time": "2026-09-16T15:50:02-03:00",
       "entry_price": 187600.0,
-      "current_price": 187245.0,
+      "current_price": 187255.0,
       "qty": 1.0,
-      "notional": 37449.0,
-      "pnl": 71.0,
-      "pnl_liq_est": 53.76,
-      "pnl_pct": 0.189,
-      "minutos": 67.1
+      "notional": 37451.0,
+      "pnl": 69.0,
+      "pnl_liq_est": 51.76,
+      "pnl_pct": 0.184,
+      "minutos": 70.2
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "SHORT",
+      "entry_time": "2026-09-16T17:00:04-03:00",
+      "entry_price": 187275.0,
+      "current_price": 187255.0,
+      "qty": 1.0,
+      "notional": 37451.0,
+      "pnl": 4.0,
+      "minutos": 0.2
     }
   ],
   "stats_modulo": [
