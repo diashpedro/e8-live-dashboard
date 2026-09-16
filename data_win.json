@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-16T10:54:11-03:00",
+  "updated_at": "2026-09-16T10:57:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-16T10:30:01-03:00",
+    "last_ea_event": "2026-09-16T10:55:15-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789566793,
+    "ea_heartbeat_epoch": 1789566973,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186925.0,
+        "bid": 186915.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 3
   },
   "pendentes_detalhe": [
     {
@@ -33,6 +33,14 @@
       "volume": 1.0,
       "comment": "WEA_ORB_L",
       "hora": "2026-09-16T10:30:01-03:00"
+    },
+    {
+      "ticket": 2528628384,
+      "tipo": "sell_stop",
+      "preco": 186835.0,
+      "volume": 1.0,
+      "comment": "WEA_VW_S",
+      "hora": "2026-09-16T10:55:15-03:00"
     }
   ],
   "eventos_hoje": [
@@ -95,16 +103,22 @@
       "tipo": "entrada",
       "modulo": "ORB",
       "texto": "[ORDER] WEA_ORB_L stop=189735.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-16T10:55:15-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_S stop=186835.00 (SHORT)"
     }
   ],
   "today": {
     "date": "2026-09-16",
     "realized": 0,
-    "unrealized": 105.0,
-    "total": 105.0,
+    "unrealized": 107.0,
+    "total": 107.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37386.0,
+    "exposure": 37384.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -145,7 +159,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1091599,
+    "idade_s": 1091777,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -159,13 +173,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-16T10:02:11-03:00",
       "entry_price": 187455.0,
-      "current_price": 186925.0,
+      "current_price": 186915.0,
       "qty": 1.0,
-      "notional": 37385.0,
-      "pnl": 106.0,
-      "pnl_liq_est": 88.78,
-      "pnl_pct": 0.283,
-      "minutos": 52.0
+      "notional": 37383.0,
+      "pnl": 108.0,
+      "pnl_liq_est": 90.78,
+      "pnl_pct": 0.288,
+      "minutos": 55.0
     }
   ],
   "stats_modulo": [
