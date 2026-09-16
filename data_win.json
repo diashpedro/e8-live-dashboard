@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-16T15:33:11-03:00",
+  "updated_at": "2026-09-16T15:36:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-16T12:42:01-03:00",
+    "last_ea_event": "2026-09-16T15:33:26-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789583533,
+    "ea_heartbeat_epoch": 1789583713,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187600.0,
+        "bid": 187260.0,
         "ok": true
       }
     ],
@@ -159,33 +159,39 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[FILL] VW LONG entry=188345.00 stop=187492.14 R=852.86"
+    },
+    {
+      "hora": "2026-09-16T15:33:26-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EXIT] VW LONG vol=1 motivo=stop"
     }
   ],
   "today": {
     "date": "2026-09-16",
-    "realized": -413.0,
-    "unrealized": -147.0,
-    "total": -560.0,
-    "trades": 2,
+    "realized": -585.0,
+    "unrealized": 0,
+    "total": -585.0,
+    "trades": 3,
     "wins": 0,
-    "exposure": 37522.0,
-    "open_legs": 1,
-    "broker_realized": -413.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -585.0
   },
   "reconciliacao": {
-    "painel": -413.0,
-    "corretora": -413.0,
+    "painel": -585.0,
+    "corretora": -585.0,
     "divergencia": 0.0,
-    "tolerancia": 8.26,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 1.0,
+    "tolerancia": 11.7,
+    "comparavel": true,
+    "ok": true,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -1200.0,
-    "trades": 26,
+    "pnl": -1372.0,
+    "trades": 27,
     "wins": 10,
     "since": "2026-09-04",
     "days": 8,
@@ -209,29 +215,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1108339,
+    "idade_s": 1108518,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-16T12:42:01-03:00",
-      "entry_price": 188345.0,
-      "current_price": 187600.0,
-      "qty": 1.0,
-      "notional": 37520.0,
-      "pnl": -149.0,
-      "pnl_liq_est": -166.29,
-      "pnl_pct": -0.396,
-      "minutos": 171.2
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -271,13 +261,13 @@
     },
     {
       "modulo": "VWAP",
-      "n": 12,
-      "soma": -684.61,
-      "media": -57.05,
-      "ep": 43.88,
-      "t": -1.3,
-      "ic_baixo": -143.06,
-      "ic_alto": 28.96,
+      "n": 13,
+      "soma": -856.61,
+      "media": -65.89,
+      "ep": 41.32,
+      "t": -1.59,
+      "ic_baixo": -146.89,
+      "ic_alto": 15.1,
       "acertos": 4,
       "conclusivo": false
     },
@@ -382,13 +372,29 @@
     },
     {
       "date": "2026-09-16",
-      "pnl": -413.0,
-      "trades": 2,
+      "pnl": -585.0,
+      "trades": 3,
       "wins": 0,
-      "cum": -1200.0
+      "cum": -1372.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-16T12:42:01-03:00",
+      "exit_time": "2026-09-16T15:33:26-03:00",
+      "entry_price": 188345.0,
+      "exit_price": 187485.0,
+      "qty": 1.0,
+      "pnl": -172.0,
+      "pnl_bruto": -172.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 171.4
+    },
     {
       "symbol": "WINV26",
       "strategy": "VB",
@@ -833,9 +839,9 @@
     },
     {
       "strategy": "VWAP",
-      "trades": 8,
+      "trades": 9,
       "wins": 5,
-      "pnl": 407.0
+      "pnl": 235.0
     },
     {
       "strategy": "VolBreak",
@@ -847,9 +853,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 26,
+      "trades": 27,
       "wins": 10,
-      "pnl": -1200.0
+      "pnl": -1372.0
     }
   ],
   "by_reason": [
@@ -867,9 +873,9 @@
     },
     {
       "reason": "Stop",
-      "trades": 4,
+      "trades": 5,
       "wins": 0,
-      "pnl": -1149.0
+      "pnl": -1321.0
     },
     {
       "reason": "Trailing",
