@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-17T10:33:11-03:00",
+  "updated_at": "2026-09-17T10:36:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-09-17T10:30:01-03:00",
+    "last_ea_event": "2026-09-17T10:35:02-03:00",
     "last_error_msg": "ER\t0\t13:00:07.416\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 187445.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1789651933,
+    "ea_heartbeat_epoch": 1789652113,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186460.0,
+        "bid": 185840.0,
         "ok": true
       }
     ],
@@ -95,16 +95,28 @@
       "tipo": "entrada",
       "modulo": "ORB",
       "texto": "[ORDER] WEA_ORB_L stop=189090.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-17T10:34:19-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-17T10:35:02-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_S stop=185850.00 (SHORT)"
     }
   ],
   "today": {
     "date": "2026-09-17",
     "realized": 0,
-    "unrealized": 173.0,
-    "total": 173.0,
+    "unrealized": 333.0,
+    "total": 333.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37316.0,
+    "exposure": 74326.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -115,8 +127,8 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "volume_corretora": -2.0,
+    "volume_pernas": -2.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -145,7 +157,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1176739,
+    "idade_s": 1176917,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -159,13 +171,28 @@
       "side": "SHORT",
       "entry_time": "2026-09-17T10:04:10-03:00",
       "entry_price": 187445.0,
-      "current_price": 186460.0,
+      "current_price": 185840.0,
       "qty": 1.0,
-      "notional": 37292.0,
-      "pnl": 197.0,
-      "pnl_liq_est": 179.8,
-      "pnl_pct": 0.525,
-      "minutos": 29.0
+      "notional": 37168.0,
+      "pnl": 321.0,
+      "pnl_liq_est": 303.83,
+      "pnl_pct": 0.856,
+      "minutos": 32.0
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "SHORT",
+      "entry_time": "2026-09-17T10:36:03-03:00",
+      "entry_price": 185850.0,
+      "current_price": 185840.0,
+      "qty": 1.0,
+      "notional": 37168.0,
+      "pnl": 2.0,
+      "pnl_liq_est": -15.1,
+      "pnl_pct": 0.005,
+      "minutos": 0.1
     }
   ],
   "stats_modulo": [
