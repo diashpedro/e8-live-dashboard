@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-09-18T10:42:07-03:00",
+  "updated_at": "2026-09-18T10:45:06-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-18T10:41:13-03:00",
+    "last_ea_event": "2026-09-18T10:44:13-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 48.55,
+        "bid": 48.67,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 73.88,
+        "bid": 74.02,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.28,
+        "bid": 42.3,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.33,
+        "bid": 15.35,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 33.92,
+        "bid": 33.75,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 984463.94,
-    "equity": 984430.94,
+    "balance": 984404.94,
+    "equity": 984404.94,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-09-18",
-    "realized": 0,
-    "unrealized": -33.0,
-    "total": -33.0,
-    "trades": 0,
+    "realized": -59.0,
+    "unrealized": 0,
+    "total": -59.0,
+    "trades": 3,
     "wins": 0,
-    "exposure": 14565.0,
-    "open_legs": 3,
-    "broker_realized": 0.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -59.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": 0.0,
+    "painel": -59.0,
+    "corretora": -59.0,
     "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "pernas_painel": 3,
-    "posicoes_corretora": 1,
+    "tolerancia": 1.18,
+    "comparavel": true,
+    "ok": true,
+    "pernas_painel": 0,
+    "posicoes_corretora": 0,
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": -9526.0,
-    "trades": 798,
+    "pnl": -9585.0,
+    "trades": 801,
     "wins": 172,
     "since": "2026-07-29",
-    "days": 24,
+    "days": 25,
     "days_positive": 11,
     "best_day": {
       "date": "2026-08-10",
@@ -86,53 +86,7 @@
       "cum": -9734.0
     }
   },
-  "open_positions": [
-    {
-      "symbol": "PETR4",
-      "w": 3,
-      "leg": "A",
-      "side": "SHORT",
-      "entry_time": "2026-09-18T10:32:44-03:00",
-      "entry_price": 48.41,
-      "current_price": 48.55,
-      "qty": 100.0,
-      "notional": 4855.0,
-      "pnl": -14.0,
-      "pnl_liq_est": -16.23,
-      "pnl_pct": -0.289,
-      "minutos": 9.4
-    },
-    {
-      "symbol": "PETR4",
-      "w": 3,
-      "leg": "B",
-      "side": "SHORT",
-      "entry_time": "2026-09-18T10:32:49-03:00",
-      "entry_price": 48.44,
-      "current_price": 48.55,
-      "qty": 100.0,
-      "notional": 4855.0,
-      "pnl": -11.0,
-      "pnl_liq_est": -13.23,
-      "pnl_pct": -0.227,
-      "minutos": 9.3
-    },
-    {
-      "symbol": "PETR4",
-      "w": 3,
-      "leg": "C",
-      "side": "SHORT",
-      "entry_time": "2026-09-18T10:32:56-03:00",
-      "entry_price": 48.47,
-      "current_price": 48.55,
-      "qty": 100.0,
-      "notional": 4855.0,
-      "pnl": -8.0,
-      "pnl_liq_est": -10.23,
-      "pnl_pct": -0.165,
-      "minutos": 9.2
-    }
-  ],
+  "open_positions": [],
   "daily_series": [
     {
       "date": "2026-07-29",
@@ -301,9 +255,64 @@
       "trades": 10,
       "wins": 10,
       "cum": -9526.0
+    },
+    {
+      "date": "2026-09-18",
+      "pnl": -59.0,
+      "trades": 3,
+      "wins": 0,
+      "cum": -9585.0
     }
   ],
   "trades": [
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "A",
+      "side": "SHORT",
+      "entry_time": "2026-09-18T10:32:44-03:00",
+      "exit_time": "2026-09-18T10:43:56-03:00",
+      "entry_price": 48.41,
+      "exit_price": 48.65,
+      "qty": 100.0,
+      "pnl": -24.0,
+      "pnl_bruto": -24.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 11.2
+    },
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "B",
+      "side": "SHORT",
+      "entry_time": "2026-09-18T10:32:49-03:00",
+      "exit_time": "2026-09-18T10:43:56-03:00",
+      "entry_price": 48.44,
+      "exit_price": 48.65,
+      "qty": 100.0,
+      "pnl": -21.0,
+      "pnl_bruto": -21.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 11.1
+    },
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "C",
+      "side": "SHORT",
+      "entry_time": "2026-09-18T10:32:56-03:00",
+      "exit_time": "2026-09-18T10:42:53-03:00",
+      "entry_price": 48.47,
+      "exit_price": 48.61,
+      "qty": 100.0,
+      "pnl": -14.0,
+      "pnl_bruto": -14.0,
+      "motivo": "stop_safety",
+      "motivo_label": "Stop de seguranca",
+      "minutos": 9.9
+    },
     {
       "symbol": "PETR4",
       "w": 3,
@@ -13088,9 +13097,9 @@
     },
     {
       "w": 3,
-      "trades": 329,
+      "trades": 332,
       "wins": 93,
-      "pnl": -3015.0
+      "pnl": -3074.0
     },
     {
       "w": 5,
@@ -13120,9 +13129,9 @@
     },
     {
       "symbol": "PETR4",
-      "trades": 248,
+      "trades": 251,
       "wins": 37,
-      "pnl": -2000.0
+      "pnl": -2059.0
     },
     {
       "symbol": "TOTS3",
@@ -13140,21 +13149,21 @@
   "by_leg": [
     {
       "leg": "A",
-      "trades": 309,
+      "trades": 310,
       "wins": 69,
-      "pnl": -4658.0
+      "pnl": -4682.0
     },
     {
       "leg": "B",
-      "trades": 252,
+      "trades": 253,
       "wins": 47,
-      "pnl": -3332.0
+      "pnl": -3353.0
     },
     {
       "leg": "C",
-      "trades": 237,
+      "trades": 238,
       "wins": 56,
-      "pnl": -1536.0
+      "pnl": -1550.0
     }
   ],
   "by_reason": [
@@ -13178,15 +13187,15 @@
     },
     {
       "reason": "Stop",
-      "trades": 62,
+      "trades": 64,
       "wins": 0,
-      "pnl": -2079.0
+      "pnl": -2124.0
     },
     {
       "reason": "Stop de seguranca",
-      "trades": 36,
+      "trades": 37,
       "wins": 0,
-      "pnl": -834.0
+      "pnl": -848.0
     },
     {
       "reason": "Trailing",
