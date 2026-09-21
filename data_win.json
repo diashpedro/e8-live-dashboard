@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-21T15:45:14-03:00",
+  "updated_at": "2026-09-21T15:48:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T15:42:26-03:00",
+    "last_ea_event": "2026-09-21T15:47:26-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790016253,
+    "ea_heartbeat_epoch": 1790016433,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188420.0,
+        "bid": 188440.0,
         "ok": true
       }
     ],
@@ -702,16 +702,22 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W8 SHORT perna C motivo=stop_safety vol=100"
+    },
+    {
+      "hora": "2026-09-21T15:47:26-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-21",
     "realized": -577.0,
-    "unrealized": -114.0,
-    "total": -691.0,
+    "unrealized": -108.0,
+    "total": -685.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 75370.0,
+    "exposure": 75376.0,
     "open_legs": 1,
     "broker_realized": -430.0
   },
@@ -752,7 +758,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1541062,
+    "idade_s": 1541239,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -766,13 +772,13 @@
       "side": "LONG",
       "entry_time": "2026-09-21T13:10:53-03:00",
       "entry_price": 188320.0,
-      "current_price": 188420.0,
+      "current_price": 188440.0,
       "qty": 1.0,
-      "notional": 37684.0,
-      "pnl": 20.0,
-      "pnl_liq_est": 2.67,
-      "pnl_pct": 0.053,
-      "minutos": 154.4
+      "notional": 37688.0,
+      "pnl": 24.0,
+      "pnl_liq_est": 6.67,
+      "pnl_pct": 0.064,
+      "minutos": 157.3
     }
   ],
   "stats_modulo": [
