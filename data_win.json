@@ -1,24 +1,31 @@
 {
-  "updated_at": "2026-09-21T09:30:13-03:00",
+  "updated_at": "2026-09-21T09:33:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T00:00:00-03:00",
+    "last_ea_event": "2026-09-21T09:30:09-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789993753,
+    "ea_heartbeat_epoch": 1789993933,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188380.0,
+        "bid": 188295.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [],
+  "eventos_hoje": [
+    {
+      "hora": "2026-09-21T09:30:09-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.18 16:40 -> corte de HOJE (-15min): 2026.09.21 16:25"
+    }
+  ],
   "today": {
     "date": "2026-09-21",
     "realized": 0,
@@ -67,7 +74,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1518561,
+    "idade_s": 1518739,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
