@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-21T14:06:11-03:00",
+  "updated_at": "2026-09-21T14:09:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T14:02:04-03:00",
+    "last_ea_event": "2026-09-21T14:07:05-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790010313,
+    "ea_heartbeat_epoch": 1790010493,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188255.0,
+        "bid": 188345.0,
         "ok": true
       }
     ],
@@ -480,6 +480,48 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T14:05:56-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W3 SHORT perna B entry=48.0100 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-09-21T14:06:09-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W5 SHORT perna B entry=48.0200 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-09-21T14:06:09-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W8 SHORT perna B entry=48.0200 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-09-21T14:06:29-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W13 SHORT perna A entry=48.0400 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-09-21T14:06:29-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W21 SHORT perna A entry=48.0400 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-09-21T14:06:50-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W3 SHORT perna C entry=48.0500 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-09-21T14:07:05-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
@@ -530,7 +572,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1535119,
+    "idade_s": 1535297,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
