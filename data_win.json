@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-21T13:57:13-03:00",
+  "updated_at": "2026-09-21T14:00:21-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T13:52:02-03:00",
+    "last_ea_event": "2026-09-21T13:59:37-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790009773,
+    "ea_heartbeat_epoch": 1790009953,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187895.0,
+        "bid": 188065.0,
         "ok": true
       }
     ],
@@ -360,6 +360,108 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna A limite=47.96 (nivel teorico 47.9590) vol=100 ticket=2532631347"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna B limite=48.01 (nivel teorico 48.0050) vol=100 ticket=2532631348"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna C limite=48.05 (nivel teorico 48.0510) vol=100 ticket=2532631349"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna A limite=47.97 (nivel teorico 47.9704) vol=100 ticket=2532631350"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna B limite=48.02 (nivel teorico 48.0200) vol=100 ticket=2532631353"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna C limite=48.07 (nivel teorico 48.0696) vol=100 ticket=2532631354"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna A limite=47.97 (nivel teorico 47.9704) vol=100 ticket=2532631356"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna B limite=48.02 (nivel teorico 48.0200) vol=100 ticket=2532631357"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna C limite=48.07 (nivel teorico 48.0696) vol=100 ticket=2532631358"
+    },
+    {
+      "hora": "2026-09-21T13:56:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna A limite=48.04 (nivel teorico 48.0354) vol=100 ticket=2532631360"
+    },
+    {
+      "hora": "2026-09-21T13:56:55-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna B limite=48.11 (nivel teorico 48.1050) vol=100 ticket=2532631361"
+    },
+    {
+      "hora": "2026-09-21T13:56:55-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna C limite=48.17 (nivel teorico 48.1746) vol=100 ticket=2532631362"
+    },
+    {
+      "hora": "2026-09-21T13:56:55-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna A limite=48.04 (nivel teorico 48.0354) vol=100 ticket=2532631363"
+    },
+    {
+      "hora": "2026-09-21T13:56:55-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna B limite=48.11 (nivel teorico 48.1050) vol=100 ticket=2532631366"
+    },
+    {
+      "hora": "2026-09-21T13:56:55-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna C limite=48.17 (nivel teorico 48.1746) vol=100 ticket=2532631368"
+    },
+    {
+      "hora": "2026-09-21T13:57:03-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T13:59:37-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W3 SHORT perna A entry=47.9600 vol=100 (ordem limite executada)"
     }
   ],
   "today": {
@@ -410,7 +512,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1534581,
+    "idade_s": 1534769,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
