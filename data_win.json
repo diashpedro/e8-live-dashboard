@@ -1,218 +1,49 @@
 {
-  "updated_at": "2026-09-18T18:57:06-03:00",
+  "updated_at": "2026-09-21T09:00:24-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-18T17:40:00-03:00",
+    "last_ea_event": "2026-09-21T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789768573,
+    "ea_heartbeat_epoch": 1789991953,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187090.0,
+        "bid": 205415.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-18T09:30:08-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.17 16:45 -> corte de HOJE (-15min): 2026.09.18 16:30"
-    },
-    {
-      "hora": "2026-09-18T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=186840.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-18T10:00:01-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=185810.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-18T10:06:45-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB LONG entry=186840.00 stop=184260.00 R=2580.00"
-    },
-    {
-      "hora": "2026-09-18T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=188735.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-18T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=186240.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-18T10:30:27-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[FILL] ORB SHORT entry=186240.00 stop=188730.00 R=2490.00"
-    },
-    {
-      "hora": "2026-09-18T10:30:38-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna A limite=48.41 (nivel teorico 48.4070) vol=100 ticket=2530995295"
-    },
-    {
-      "hora": "2026-09-18T10:30:38-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna B limite=48.44 (nivel teorico 48.4400) vol=100 ticket=2530995450"
-    },
-    {
-      "hora": "2026-09-18T10:30:38-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna C limite=48.47 (nivel teorico 48.4730) vol=100 ticket=2530995519"
-    },
-    {
-      "hora": "2026-09-18T10:32:44-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna A entry=48.4100 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-18T10:32:49-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna B entry=48.4400 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-18T10:32:56-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna C entry=48.4700 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-18T10:42:10-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.45 (nivel teorico 48.4539) vol=100 ticket=2531040372"
-    },
-    {
-      "hora": "2026-09-18T10:42:10-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=48.42 (nivel teorico 48.4150) vol=100 ticket=2531040375"
-    },
-    {
-      "hora": "2026-09-18T10:42:11-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=48.38 (nivel teorico 48.3761) vol=100 ticket=2531040378"
-    },
-    {
-      "hora": "2026-09-18T10:42:53-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna C motivo=stop_safety vol=100"
-    },
-    {
-      "hora": "2026-09-18T10:43:56-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna A motivo=stop vol=100"
-    },
-    {
-      "hora": "2026-09-18T10:43:56-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna B motivo=stop vol=100"
-    },
-    {
-      "hora": "2026-09-18T11:00:01-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_S stop=186015.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-18T11:20:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_S stop=186235.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-18T11:20:03-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW SHORT entry=186235.00 stop=187388.93 R=1153.93"
-    },
-    {
-      "hora": "2026-09-18T16:35:02-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-18T17:00:12-03:00",
-      "tipo": "entrada",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] EXECUTADO IM-20260918 | intramom short 1 a mercado | stop 192347 alvo 169938"
-    },
-    {
-      "hora": "2026-09-18T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] FECHADA intramom por eod | -80 pts | PnL py dia R$ -16.00"
-    },
-    {
-      "hora": "2026-09-18T17:40:00-03:00",
-      "tipo": "erro",
-      "modulo": "VolBreak",
-      "texto": "[EOD][DIVERGENCIA] VB dada como LONG de 1, mas a posicao real do lado dela e -1 (corretora=-1) -- NAO envio ordem (abriria 1 no sentido contrario). Perna descartada."
-    },
-    {
-      "hora": "2026-09-18T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EOD] VW SHORT vol=1"
-    },
-    {
-      "hora": "2026-09-18T17:40:00-03:00",
-      "tipo": "erro",
-      "modulo": "ORB",
-      "texto": "[EOD][DIVERGENCIA] ORB dada como SHORT de 1, mas a posicao real do lado dela e -0 (corretora=0) -- NAO envio ordem (abriria 1 no sentido contrario). Perna descartada."
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-18",
-    "realized": -132.0,
+    "date": "2026-09-21",
+    "realized": 0,
     "unrealized": 0,
-    "total": -132.0,
-    "trades": 2,
+    "total": 0,
+    "trades": 0,
     "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -252.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -132.0,
-    "corretora": -252.0,
-    "divergencia": 120.0,
-    "tolerancia": 5.04,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
-    "ok": false,
+    "ok": true,
     "volume_corretora": 0,
     "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -1228.0,
-    "trades": 31,
+    "pnl": -1210.0,
+    "trades": 30,
     "wins": 11,
     "since": "2026-09-04",
     "days": 10,
@@ -236,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1293374,
+    "idade_s": 1516772,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -393,24 +224,24 @@
     },
     {
       "date": "2026-09-16",
-      "pnl": -555.0,
-      "trades": 5,
+      "pnl": -537.0,
+      "trades": 4,
       "wins": 1,
-      "cum": -1269.0
+      "cum": -1251.0
     },
     {
       "date": "2026-09-17",
       "pnl": 173.0,
       "trades": 3,
       "wins": 2,
-      "cum": -1096.0
+      "cum": -1078.0
     },
     {
       "date": "2026-09-18",
       "pnl": -132.0,
       "trades": 2,
       "wins": 0,
-      "cum": -1228.0
+      "cum": -1210.0
     }
   ],
   "trades": [
@@ -509,22 +340,6 @@
       "motivo": "eod",
       "motivo_label": "Fim do pregao",
       "minutos": 110.0
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "SHORT",
-      "entry_time": "2026-09-16T17:00:04-03:00",
-      "exit_time": "2026-09-16T17:40:01-03:00",
-      "entry_price": 187275.0,
-      "exit_price": 187365.0,
-      "qty": 1.0,
-      "pnl": -18.0,
-      "pnl_bruto": -18.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 40.0
     },
     {
       "symbol": "WINV26",
@@ -914,9 +729,9 @@
   "by_strategy": [
     {
       "strategy": "Momentum intradiario",
-      "trades": 2,
+      "trades": 1,
       "wins": 0,
-      "pnl": -33.0
+      "pnl": -15.0
     },
     {
       "strategy": "ORB",
@@ -940,9 +755,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 31,
+      "trades": 30,
       "wins": 11,
-      "pnl": -1228.0
+      "pnl": -1210.0
     }
   ],
   "by_reason": [
@@ -954,9 +769,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 19,
+      "trades": 18,
       "wins": 10,
-      "pnl": 1367.0
+      "pnl": 1385.0
     },
     {
       "reason": "Stop",
