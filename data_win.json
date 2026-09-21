@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-21T16:00:22-03:00",
+  "updated_at": "2026-09-21T16:03:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T15:57:28-03:00",
+    "last_ea_event": "2026-09-21T16:02:29-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790017153,
+    "ea_heartbeat_epoch": 1790017333,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188500.0,
+        "bid": 188330.0,
         "ok": true
       }
     ],
@@ -720,16 +720,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T16:02:29-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-21",
     "realized": -577.0,
-    "unrealized": -82.0,
-    "total": -659.0,
+    "unrealized": -146.0,
+    "total": -723.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 75402.0,
+    "exposure": 75338.0,
     "open_legs": 1,
     "broker_realized": -430.0
   },
@@ -770,7 +776,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1541970,
+    "idade_s": 1542140,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -784,13 +790,13 @@
       "side": "LONG",
       "entry_time": "2026-09-21T13:10:53-03:00",
       "entry_price": 188320.0,
-      "current_price": 188500.0,
+      "current_price": 188330.0,
       "qty": 1.0,
-      "notional": 37700.0,
-      "pnl": 36.0,
-      "pnl_liq_est": 18.67,
-      "pnl_pct": 0.096,
-      "minutos": 169.5
+      "notional": 37666.0,
+      "pnl": 2.0,
+      "pnl_liq_est": -15.33,
+      "pnl_pct": 0.005,
+      "minutos": 172.3
     }
   ],
   "stats_modulo": [
