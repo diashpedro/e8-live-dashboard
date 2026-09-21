@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-21T16:57:09-03:00",
+  "updated_at": "2026-09-21T17:00:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T16:52:39-03:00",
+    "last_ea_event": "2026-09-21T16:57:40-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790020573,
+    "ea_heartbeat_epoch": 1790020753,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188200.0,
+        "bid": 188245.0,
         "ok": true
       }
     ],
@@ -864,16 +864,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T16:57:40-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-21",
     "realized": -577.0,
-    "unrealized": -204.0,
-    "total": -781.0,
+    "unrealized": -185.0,
+    "total": -762.0,
     "trades": 3,
     "wins": 0,
-    "exposure": 75280.0,
+    "exposure": 112947.0,
     "open_legs": 1,
     "broker_realized": -430.0
   },
@@ -884,13 +890,13 @@
     "tolerancia": 8.6,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 2.0,
-    "volume_pernas": 1.0,
+    "volume_corretora": 3.0,
+    "volume_pernas": 2.0,
     "volume_ok": false
   },
   "cumulative": {
-    "pnl": -1787.0,
-    "trades": 33,
+    "pnl": -1772.0,
+    "trades": 32,
     "wins": 11,
     "since": "2026-09-04",
     "days": 11,
@@ -914,7 +920,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1545377,
+    "idade_s": 1545563,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -928,13 +934,26 @@
       "side": "LONG",
       "entry_time": "2026-09-21T13:10:53-03:00",
       "entry_price": 188320.0,
-      "current_price": 188200.0,
+      "current_price": 188245.0,
       "qty": 1.0,
-      "notional": 37640.0,
-      "pnl": -24.0,
-      "pnl_liq_est": -41.32,
-      "pnl_pct": -0.064,
-      "minutos": 226.3
+      "notional": 37649.0,
+      "pnl": -15.0,
+      "pnl_liq_est": -32.32,
+      "pnl_pct": -0.04,
+      "minutos": 229.4
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "LONG",
+      "entry_time": "2026-09-21T17:00:11-03:00",
+      "entry_price": 188240.0,
+      "current_price": 188245.0,
+      "qty": 1.0,
+      "notional": 37649.0,
+      "pnl": 1.0,
+      "minutos": 0.1
     }
   ],
   "stats_modulo": [
@@ -1125,17 +1144,17 @@
     },
     {
       "date": "2026-09-18",
-      "pnl": -132.0,
-      "trades": 2,
+      "pnl": -117.0,
+      "trades": 1,
       "wins": 0,
-      "cum": -1210.0
+      "cum": -1195.0
     },
     {
       "date": "2026-09-21",
       "pnl": -577.0,
       "trades": 3,
       "wins": 0,
-      "cum": -1787.0
+      "cum": -1772.0
     }
   ],
   "trades": [
@@ -1202,22 +1221,6 @@
       "motivo": "eod",
       "motivo_label": "Fim do pregao",
       "minutos": 380.0
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "SHORT",
-      "entry_time": "2026-09-18T17:00:12-03:00",
-      "exit_time": "2026-09-18T17:40:00-03:00",
-      "entry_price": 186745.0,
-      "exit_price": 186820.0,
-      "qty": 1.0,
-      "pnl": -15.0,
-      "pnl_bruto": -15.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 39.8
     },
     {
       "symbol": "WINV26",
@@ -1670,12 +1673,6 @@
   ],
   "by_strategy": [
     {
-      "strategy": "Momentum intradiario",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -15.0
-    },
-    {
       "strategy": "ORB",
       "trades": 8,
       "wins": 3,
@@ -1703,9 +1700,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 33,
+      "trades": 32,
       "wins": 11,
-      "pnl": -1787.0
+      "pnl": -1772.0
     }
   ],
   "by_reason": [
@@ -1717,9 +1714,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 18,
+      "trades": 17,
       "wins": 10,
-      "pnl": 1385.0
+      "pnl": 1400.0
     },
     {
       "reason": "Stop",
