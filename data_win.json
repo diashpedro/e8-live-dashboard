@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-21T10:36:10-03:00",
+  "updated_at": "2026-09-21T10:39:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T10:31:21-03:00",
+    "last_ea_event": "2026-09-21T10:37:06-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789997713,
+    "ea_heartbeat_epoch": 1789997893,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -95,6 +95,30 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T10:36:22-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T10:37:06-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna A limite=48.07 (nivel teorico 48.0690) vol=100 ticket=2532116359"
+    },
+    {
+      "hora": "2026-09-21T10:37:06-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna B limite=48.12 (nivel teorico 48.1150) vol=100 ticket=2532116360"
+    },
+    {
+      "hora": "2026-09-21T10:37:06-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna C limite=48.16 (nivel teorico 48.1610) vol=100 ticket=2532116361"
     }
   ],
   "today": {
@@ -145,7 +169,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1522518,
+    "idade_s": 1522697,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -165,7 +189,7 @@
       "pnl": -345.0,
       "pnl_liq_est": -362.21,
       "pnl_pct": -0.926,
-      "minutos": 4325.7
+      "minutos": 4328.7
     },
     {
       "symbol": "WINV26",
@@ -180,7 +204,7 @@
       "pnl": -36.0,
       "pnl_liq_est": -53.28,
       "pnl_pct": -0.096,
-      "minutos": 28.6
+      "minutos": 31.6
     },
     {
       "symbol": "WINV26",
@@ -193,7 +217,7 @@
       "qty": 1.0,
       "notional": 37593.0,
       "pnl": -80.0,
-      "minutos": 4.8
+      "minutos": 7.8
     }
   ],
   "stats_modulo": [
