@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-21T10:42:10-03:00",
+  "updated_at": "2026-09-21T10:45:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-21T10:41:23-03:00",
+    "last_ea_event": "2026-09-21T10:44:02-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1789998073,
+    "ea_heartbeat_epoch": 1789998253,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188170.0,
+        "bid": 187755.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 3
   },
   "pendentes_detalhe": [
     {
@@ -33,6 +33,14 @@
       "volume": 1.0,
       "comment": "WEA_ORB_S",
       "hora": "2026-09-21T10:30:00-03:00"
+    },
+    {
+      "ticket": 2532146845,
+      "tipo": "buy_stop",
+      "preco": 188320.0,
+      "volume": 1.0,
+      "comment": "WEA_VW_L",
+      "hora": "2026-09-21T10:45:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -125,36 +133,42 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-21T10:44:02-03:00",
+      "tipo": "saida",
+      "modulo": "T11 climax",
+      "texto": "[PY] FECHADA t11_climax_g148a por stop | -800 pts | PnL py dia R$ -160.00"
     }
   ],
   "today": {
     "date": "2026-09-21",
-    "realized": 0,
-    "unrealized": -42.0,
-    "total": -42.0,
-    "trades": 0,
+    "realized": -160.0,
+    "unrealized": 0,
+    "total": -160.0,
+    "trades": 1,
     "wins": 0,
-    "exposure": 37631.0,
-    "open_legs": 1,
-    "broker_realized": -116.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -276.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": -116.0,
+    "painel": -160.0,
+    "corretora": -276.0,
     "divergencia": 116.0,
-    "tolerancia": 2.32,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": -1.0,
-    "volume_ok": false
+    "tolerancia": 5.52,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -1210.0,
-    "trades": 30,
+    "pnl": -1370.0,
+    "trades": 31,
     "wins": 11,
     "since": "2026-09-04",
-    "days": 10,
+    "days": 11,
     "days_positive": 3,
     "best_day": {
       "date": "2026-09-10",
@@ -175,57 +189,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1522878,
+    "idade_s": 1523061,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "SHORT",
-      "entry_time": "2026-09-18T10:30:26-03:00",
-      "entry_price": 186240.0,
-      "current_price": 188170.0,
-      "qty": 1.0,
-      "notional": 37634.0,
-      "pnl": -386.0,
-      "pnl_liq_est": -403.22,
-      "pnl_pct": -1.036,
-      "minutos": 4331.7
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-09-21T10:07:36-03:00",
-      "entry_price": 187785.0,
-      "current_price": 188170.0,
-      "qty": 1.0,
-      "notional": 37634.0,
-      "pnl": -77.0,
-      "pnl_liq_est": -94.29,
-      "pnl_pct": -0.205,
-      "minutos": 34.6
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g148a",
-      "strategy_label": "T11_climax · gaveta 148a",
-      "side": "LONG",
-      "entry_time": "2026-09-21T10:31:21-03:00",
-      "entry_price": 188365.0,
-      "current_price": 188170.0,
-      "qty": 1.0,
-      "notional": 37634.0,
-      "pnl": -39.0,
-      "minutos": 10.8
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -324,6 +294,18 @@
       "conclusivo": false
     },
     {
+      "modulo": "t11_climax_g148a",
+      "n": 1,
+      "soma": -160.0,
+      "media": -160.0,
+      "ep": 0.0,
+      "t": 0.0,
+      "ic_baixo": -160.0,
+      "ic_alto": -160.0,
+      "acertos": 0,
+      "conclusivo": false
+    },
+    {
       "modulo": "v02_reversao_climatica_g003a",
       "n": 2,
       "soma": -51.6,
@@ -406,9 +388,32 @@
       "trades": 2,
       "wins": 0,
       "cum": -1210.0
+    },
+    {
+      "date": "2026-09-21",
+      "pnl": -160.0,
+      "trades": 1,
+      "wins": 0,
+      "cum": -1370.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "g148a",
+      "strategy_label": "T11_climax · gaveta 148a",
+      "side": "LONG",
+      "entry_time": "2026-09-21T10:31:21-03:00",
+      "exit_time": "2026-09-21T10:44:02-03:00",
+      "entry_price": 188365.0,
+      "exit_price": 187565.0,
+      "qty": 1.0,
+      "pnl": -160.0,
+      "pnl_bruto": -160.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 12.7
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -904,6 +909,12 @@
       "pnl": 78.0
     },
     {
+      "strategy": "T11_climax · gaveta 148a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -160.0
+    },
+    {
       "strategy": "VWAP",
       "trades": 13,
       "wins": 8,
@@ -919,9 +930,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 30,
+      "trades": 31,
       "wins": 11,
-      "pnl": -1210.0
+      "pnl": -1370.0
     }
   ],
   "by_reason": [
@@ -939,9 +950,9 @@
     },
     {
       "reason": "Stop",
-      "trades": 4,
+      "trades": 5,
       "wins": 0,
-      "pnl": -1162.0
+      "pnl": -1322.0
     },
     {
       "reason": "Trailing",
