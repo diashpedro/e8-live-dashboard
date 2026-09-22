@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-22T10:39:11-03:00",
+  "updated_at": "2026-09-22T10:42:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-22T10:37:05-03:00",
+    "last_ea_event": "2026-09-22T10:40:41-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790084293,
+    "ea_heartbeat_epoch": 1790084473,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187210.0,
+        "bid": 186915.0,
         "ok": true
       }
     ],
@@ -90,6 +90,24 @@
       "tipo": "entrada",
       "modulo": "VolBreak",
       "texto": "[FILL] VB LONG entry=187000.00 stop=184877.50 R=2122.50"
+    },
+    {
+      "hora": "2026-09-22T10:40:41-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=47.52 (nivel teorico 47.5163) vol=100 ticket=2533362350"
+    },
+    {
+      "hora": "2026-09-22T10:40:41-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=47.47 (nivel teorico 47.4750) vol=100 ticket=2533362352"
+    },
+    {
+      "hora": "2026-09-22T10:40:41-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=47.43 (nivel teorico 47.4337) vol=100 ticket=2533362353"
     }
   ],
   "today": {
@@ -140,7 +158,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1609099,
+    "idade_s": 1609279,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
