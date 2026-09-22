@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-22T16:48:14-03:00",
+  "updated_at": "2026-09-22T16:51:14-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-22T16:40:00-03:00",
+    "last_ea_event": "2026-09-22T16:49:02-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790106433,
+    "ea_heartbeat_epoch": 1790106613,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189090.0,
+        "bid": 189100.0,
         "ok": true
       }
     ],
@@ -360,16 +360,22 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
+    },
+    {
+      "hora": "2026-09-22T16:49:02-03:00",
+      "tipo": "entrada",
+      "modulo": "VolBreak",
+      "texto": "[PIR] VB carga 1 @ 189122.50 vol=2"
     }
   ],
   "today": {
     "date": "2026-09-22",
     "realized": -603.0,
-    "unrealized": 221.0,
-    "total": -382.0,
+    "unrealized": 217.0,
+    "total": -386.0,
     "trades": 2,
     "wins": 0,
-    "exposure": 37818.0,
+    "exposure": 75642.0,
     "open_legs": 1,
     "broker_realized": -406.0
   },
@@ -380,8 +386,8 @@
     "tolerancia": 8.12,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 1.0,
+    "volume_corretora": 2.0,
+    "volume_pernas": 2.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -410,7 +416,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1631242,
+    "idade_s": 1631422,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -423,14 +429,14 @@
       "strategy_label": "VolBreak",
       "side": "LONG",
       "entry_time": "2026-09-22T10:37:05-03:00",
-      "entry_price": 187000.0,
-      "current_price": 189090.0,
-      "qty": 1.0,
-      "notional": 37818.0,
-      "pnl": 418.0,
-      "pnl_liq_est": 400.7,
-      "pnl_pct": 1.118,
-      "minutos": 371.2
+      "entry_price": 188070.0,
+      "current_price": 189100.0,
+      "qty": 2.0,
+      "notional": 75640.0,
+      "pnl": 412.0,
+      "pnl_liq_est": 377.3,
+      "pnl_pct": 0.548,
+      "minutos": 374.2
     }
   ],
   "stats_modulo": [
