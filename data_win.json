@@ -1,24 +1,37 @@
 {
-  "updated_at": "2026-09-23T10:00:23-03:00",
+  "updated_at": "2026-09-23T10:03:16-03:00",
   "start_date": "2026-09-04",
   "health": {
-    "errors_today": 0,
-    "last_ea_event": "2026-09-23T00:00:00-03:00",
-    "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790168355,
+    "errors_today": 2,
+    "last_ea_event": "2026-09-23T10:01:23-03:00",
+    "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
+    "ea_heartbeat_epoch": 1790168543,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186780.0,
+        "bid": 186655.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [],
+  "eventos_hoje": [
+    {
+      "hora": "2026-09-23T10:01:23-03:00",
+      "tipo": "erro",
+      "modulo": "VolBreak",
+      "texto": "[ERRO] enviar stop WEA_VB_L @ 187240.00: retcode=10031 no connection"
+    },
+    {
+      "hora": "2026-09-23T10:01:23-03:00",
+      "tipo": "erro",
+      "modulo": "VolBreak",
+      "texto": "[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection"
+    }
+  ],
   "today": {
     "date": "2026-09-23",
     "realized": 0,
@@ -67,7 +80,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1693171,
+    "idade_s": 1693344,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
