@@ -1,23 +1,40 @@
 {
-  "updated_at": "2026-09-23T10:57:13-03:00",
+  "updated_at": "2026-09-23T11:00:22-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-23T10:55:03-03:00",
+    "last_ea_event": "2026-09-23T11:00:00-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790171749,
+    "ea_heartbeat_epoch": 1790171989,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189365.0,
+        "bid": 189415.0,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 2
   },
-  "pendentes_detalhe": [],
+  "pendentes_detalhe": [
+    {
+      "ticket": 2534944445,
+      "tipo": "sell_stop",
+      "preco": 186370.0,
+      "volume": 1.0,
+      "comment": "WEA_VB_S",
+      "hora": "2026-09-23T11:00:00-03:00"
+    },
+    {
+      "ticket": 2534944587,
+      "tipo": "sell_stop",
+      "preco": 186360.0,
+      "volume": 1.0,
+      "comment": "WEA_ORB_S",
+      "hora": "2026-09-23T11:00:00-03:00"
+    }
+  ],
   "eventos_hoje": [
     {
       "hora": "2026-09-23T10:01:23-03:00",
@@ -84,6 +101,18 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[FILL] VW LONG entry=189380.00 stop=187142.86 R=2237.14"
+    },
+    {
+      "hora": "2026-09-23T11:00:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VolBreak",
+      "texto": "[ORDER] WEA_VB_S stop=186370.00 (SHORT)"
+    },
+    {
+      "hora": "2026-09-23T11:00:00-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_S stop=186360.00 (SHORT)"
     }
   ],
   "today": {
@@ -134,7 +163,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1696581,
+    "idade_s": 1696770,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
