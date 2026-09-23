@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-23T17:39:11-03:00",
+  "updated_at": "2026-09-23T17:42:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-23T17:00:04-03:00",
+    "last_ea_event": "2026-09-23T17:40:00-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790195869,
+    "ea_heartbeat_epoch": 1790196049,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187140.0,
+        "bid": 187145.0,
         "ok": true
       }
     ],
@@ -174,33 +174,39 @@
       "tipo": "entrada",
       "modulo": "Momentum intradiario",
       "texto": "[PY] EXECUTADO IM-20260923 | intramom short 1 a mercado | stop 192672 alvo 170225"
+    },
+    {
+      "hora": "2026-09-23T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] FECHADA intramom por eod | -90 pts | PnL py dia R$ -190.00"
     }
   ],
   "today": {
     "date": "2026-09-23",
-    "realized": -450.0,
-    "unrealized": -17.0,
-    "total": -467.0,
-    "trades": 1,
+    "realized": -468.0,
+    "unrealized": 0,
+    "total": -468.0,
+    "trades": 2,
     "wins": 0,
-    "exposure": 37428.0,
-    "open_legs": 1,
-    "broker_realized": -622.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -640.0
   },
   "reconciliacao": {
-    "painel": -450.0,
-    "corretora": -622.0,
+    "painel": -468.0,
+    "corretora": -640.0,
     "divergencia": 172.0,
-    "tolerancia": 12.44,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": 0.0,
-    "volume_ok": false
+    "tolerancia": 12.8,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -2487.0,
-    "trades": 38,
+    "pnl": -2505.0,
+    "trades": 39,
     "wins": 14,
     "since": "2026-09-04",
     "days": 13,
@@ -224,40 +230,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1720699,
+    "idade_s": 1720879,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "g003a",
-      "strategy_label": "v02_reversao_climatica_g003a",
-      "side": "LONG",
-      "entry_time": "2026-09-23T11:06:27-03:00",
-      "entry_price": 189750.0,
-      "current_price": 187140.0,
-      "qty": 1.0,
-      "notional": 37428.0,
-      "pnl": -522.0,
-      "minutos": 392.7
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "SHORT",
-      "entry_time": "2026-09-23T17:00:04-03:00",
-      "entry_price": 187055.0,
-      "current_price": 187140.0,
-      "qty": 1.0,
-      "notional": 37428.0,
-      "pnl": -17.0,
-      "minutos": 39.1
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -333,13 +312,13 @@
     },
     {
       "modulo": "intramom",
-      "n": 8,
-      "soma": 88.04,
-      "media": 11.0,
-      "ep": 39.33,
-      "t": 0.28,
-      "ic_baixo": -66.08,
-      "ic_alto": 88.09,
+      "n": 9,
+      "soma": 70.04,
+      "media": 7.78,
+      "ep": 34.83,
+      "t": 0.22,
+      "ic_baixo": -60.49,
+      "ic_alto": 76.06,
       "acertos": 4,
       "conclusivo": false
     },
@@ -467,13 +446,29 @@
     },
     {
       "date": "2026-09-23",
-      "pnl": -450.0,
-      "trades": 1,
+      "pnl": -468.0,
+      "trades": 2,
       "wins": 0,
-      "cum": -2487.0
+      "cum": -2505.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "SHORT",
+      "entry_time": "2026-09-23T17:00:04-03:00",
+      "exit_time": "2026-09-23T17:40:00-03:00",
+      "entry_price": 187055.0,
+      "exit_price": 187145.0,
+      "qty": 1.0,
+      "pnl": -18.0,
+      "pnl_bruto": -18.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 39.9
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -1086,9 +1081,9 @@
   "by_strategy": [
     {
       "strategy": "Momentum intradiario",
-      "trades": 1,
+      "trades": 2,
       "wins": 1,
-      "pnl": 31.0
+      "pnl": 13.0
     },
     {
       "strategy": "ORB",
@@ -1118,9 +1113,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 38,
+      "trades": 39,
       "wins": 14,
-      "pnl": -2487.0
+      "pnl": -2505.0
     }
   ],
   "by_reason": [
@@ -1132,9 +1127,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 20,
+      "trades": 21,
       "wins": 13,
-      "pnl": 1738.0
+      "pnl": 1720.0
     },
     {
       "reason": "Stop",
