@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-23T16:39:12-03:00",
+  "updated_at": "2026-09-23T16:42:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-23T14:39:02-03:00",
+    "last_ea_event": "2026-09-23T16:40:00-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790192329,
+    "ea_heartbeat_epoch": 1790192449,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187210.0,
+        "bid": 187190.0,
         "ok": true
       }
     ],
@@ -162,6 +162,12 @@
       "tipo": "saida",
       "modulo": "VWAP",
       "texto": "[EXIT] VW LONG vol=1 motivo=stop"
+    },
+    {
+      "hora": "2026-09-23T16:40:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
     }
   ],
   "today": {
@@ -212,7 +218,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1717100,
+    "idade_s": 1717280,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
