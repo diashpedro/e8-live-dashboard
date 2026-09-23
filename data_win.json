@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-23T11:06:17-03:00",
+  "updated_at": "2026-09-23T11:09:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-23T11:00:00-03:00",
+    "last_ea_event": "2026-09-23T11:06:27-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790172289,
+    "ea_heartbeat_epoch": 1790172529,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189695.0,
+        "bid": 189675.0,
         "ok": true
       }
     ],
@@ -113,17 +113,23 @@
       "tipo": "entrada",
       "modulo": "ORB",
       "texto": "[ORDER] WEA_ORB_S stop=186360.00 (SHORT)"
+    },
+    {
+      "hora": "2026-09-23T11:06:27-03:00",
+      "tipo": "saida",
+      "modulo": "V02 reversao climatica",
+      "texto": "[PY] FECHADA v02_reversao_climatica_g003a por stop | -860 pts | PnL py dia R$ -172.00"
     }
   ],
   "today": {
     "date": "2026-09-23",
     "realized": 0,
-    "unrealized": 0,
-    "total": 0,
+    "unrealized": -13.0,
+    "total": -13.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 0,
-    "open_legs": 0,
+    "exposure": 37937.0,
+    "open_legs": 1,
     "broker_realized": -98.0
   },
   "reconciliacao": {
@@ -131,11 +137,11 @@
     "corretora": -98.0,
     "divergencia": 98.0,
     "tolerancia": 1.96,
-    "comparavel": true,
-    "ok": false,
-    "volume_corretora": 0,
-    "volume_pernas": 0,
-    "volume_ok": true
+    "comparavel": false,
+    "ok": null,
+    "volume_corretora": 1.0,
+    "volume_pernas": 2.0,
+    "volume_ok": false
   },
   "cumulative": {
     "pnl": -2037.0,
@@ -163,13 +169,42 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1697125,
+    "idade_s": 1697301,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-23T10:55:02-03:00",
+      "entry_price": 189380.0,
+      "current_price": 189675.0,
+      "qty": 1.0,
+      "notional": 37935.0,
+      "pnl": 59.0,
+      "pnl_liq_est": 41.56,
+      "pnl_pct": 0.156,
+      "minutos": 14.2
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g003a",
+      "strategy_label": "v02_reversao_climatica_g003a",
+      "side": "LONG",
+      "entry_time": "2026-09-23T11:06:27-03:00",
+      "entry_price": 189750.0,
+      "current_price": 189675.0,
+      "qty": 1.0,
+      "notional": 37935.0,
+      "pnl": -15.0,
+      "minutos": 2.8
+    }
+  ],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
