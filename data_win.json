@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-09-23T16:00:22-03:00",
+  "updated_at": "2026-09-23T16:03:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
     "last_ea_event": "2026-09-23T14:39:02-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790189929,
+    "ea_heartbeat_epoch": 1790190109,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187210.0,
+        "bid": 187140.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2534944445,
-      "tipo": "sell_stop",
-      "preco": 186370.0,
-      "volume": 1.0,
-      "comment": "WEA_VB_S",
-      "hora": "2026-09-23T11:00:00-03:00"
-    },
-    {
-      "ticket": 2534944587,
-      "tipo": "sell_stop",
-      "preco": 186360.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-09-23T11:00:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-23T10:01:23-03:00",
@@ -229,7 +212,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1714770,
+    "idade_s": 1714940,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
