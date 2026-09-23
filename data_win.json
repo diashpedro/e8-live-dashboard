@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-23T10:42:15-03:00",
+  "updated_at": "2026-09-23T10:45:17-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
     "last_ea_event": "2026-09-23T10:30:03-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790170883,
+    "ea_heartbeat_epoch": 1790171063,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189100.0,
+        "bid": 188890.0,
         "ok": true
       }
     ],
@@ -70,23 +70,23 @@
   "today": {
     "date": "2026-09-23",
     "realized": 0,
-    "unrealized": 0,
-    "total": 0,
+    "unrealized": -6.0,
+    "total": -6.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 0,
-    "open_legs": 0,
-    "broker_realized": 0
+    "exposure": 37784.0,
+    "open_legs": 1,
+    "broker_realized": 0.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0,
-    "divergencia": 0,
+    "corretora": 0.0,
+    "divergencia": 0.0,
     "tolerancia": 1.0,
-    "comparavel": true,
-    "ok": true,
-    "volume_corretora": 0,
-    "volume_pernas": 0,
+    "comparavel": false,
+    "ok": null,
+    "volume_corretora": -1.0,
+    "volume_pernas": -1.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -115,13 +115,27 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1695683,
+    "idade_s": 1695865,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "WINV26",
+      "strategy": "g003a",
+      "strategy_label": "V02_reversao_climatica · gaveta 3a",
+      "side": "SHORT",
+      "entry_time": "2026-09-23T10:45:11-03:00",
+      "entry_price": 188890.0,
+      "current_price": 188890.0,
+      "qty": 1.0,
+      "notional": 37778.0,
+      "pnl": -0.0,
+      "minutos": 0.1
+    }
+  ],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
