@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-23T10:30:19-03:00",
+  "updated_at": "2026-09-23T10:33:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-23T10:04:07-03:00",
+    "last_ea_event": "2026-09-23T10:30:03-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790170103,
+    "ea_heartbeat_epoch": 1790170343,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189765.0,
+        "bid": 189455.0,
         "ok": true
       }
     ],
@@ -53,6 +53,18 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.22 16:50 -> corte de HOJE (-15min): 2026.09.23 16:35"
+    },
+    {
+      "hora": "2026-09-23T10:30:02-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_S stop=186360.00 (SHORT)"
+    },
+    {
+      "hora": "2026-09-23T10:30:03-03:00",
+      "tipo": "entrada",
+      "modulo": "T11 climax",
+      "texto": "[PY] ARMADO BRK-20260923-148a | t11_climax_g148a short 1 @ 187345 | stop 189770 alvo 177645"
     }
   ],
   "today": {
@@ -103,7 +115,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1694968,
+    "idade_s": 1695143,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
