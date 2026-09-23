@@ -1,395 +1,40 @@
 {
-  "updated_at": "2026-09-22T18:57:07-03:00",
+  "updated_at": "2026-09-23T09:00:27-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-22T17:40:00-03:00",
+    "last_ea_event": "2026-09-23T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790114175,
+    "ea_heartbeat_epoch": 1790164755,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188560.0,
+        "bid": 207690.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-22T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=187000.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-22T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=186150.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-22T10:03:53-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.21 16:50 -> corte de HOJE (-15min): 2026.09.22 16:35"
-    },
-    {
-      "hora": "2026-09-22T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=187980.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-22T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=186325.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-22T10:30:07-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna A limite=47.47 (nivel teorico 47.4708) vol=100 ticket=2533319008"
-    },
-    {
-      "hora": "2026-09-22T10:30:07-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna B limite=47.50 (nivel teorico 47.5050) vol=100 ticket=2533319076"
-    },
-    {
-      "hora": "2026-09-22T10:30:07-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna C limite=47.54 (nivel teorico 47.5392) vol=100 ticket=2533319123"
-    },
-    {
-      "hora": "2026-09-22T10:31:31-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[FILL] ORB SHORT entry=186325.00 stop=187975.00 R=1650.00"
-    },
-    {
-      "hora": "2026-09-22T10:31:32-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna A entry=47.4700 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-22T10:32:06-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-22T10:37:05-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB LONG entry=187000.00 stop=184877.50 R=2122.50"
-    },
-    {
-      "hora": "2026-09-22T10:40:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=47.52 (nivel teorico 47.5163) vol=100 ticket=2533362350"
-    },
-    {
-      "hora": "2026-09-22T10:40:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=47.47 (nivel teorico 47.4750) vol=100 ticket=2533362352"
-    },
-    {
-      "hora": "2026-09-22T10:40:41-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=47.43 (nivel teorico 47.4337) vol=100 ticket=2533362353"
-    },
-    {
-      "hora": "2026-09-22T11:14:48-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=47.99 (nivel teorico 47.9936) vol=100 ticket=2533469230"
-    },
-    {
-      "hora": "2026-09-22T11:14:49-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=47.97 (nivel teorico 47.9700) vol=100 ticket=2533469231"
-    },
-    {
-      "hora": "2026-09-22T11:14:49-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=47.95 (nivel teorico 47.9464) vol=100 ticket=2533469232"
-    },
-    {
-      "hora": "2026-09-22T11:20:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=187205.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-22T11:35:06-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_S stop=186525.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-22T11:35:18-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW SHORT entry=186525.00 stop=187804.29 R=1279.29"
-    },
-    {
-      "hora": "2026-09-22T11:42:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.00 (nivel teorico 47.9983) vol=100 ticket=2533534810"
-    },
-    {
-      "hora": "2026-09-22T11:42:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=47.97 (nivel teorico 47.9700) vol=100 ticket=2533534816"
-    },
-    {
-      "hora": "2026-09-22T11:42:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=47.94 (nivel teorico 47.9417) vol=100 ticket=2533534819"
-    },
-    {
-      "hora": "2026-09-22T12:32:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.18 (nivel teorico 48.1789) vol=100 ticket=2533681486"
-    },
-    {
-      "hora": "2026-09-22T12:32:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=48.16 (nivel teorico 48.1600) vol=100 ticket=2533681491"
-    },
-    {
-      "hora": "2026-09-22T12:32:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=48.14 (nivel teorico 48.1411) vol=100 ticket=2533681492"
-    },
-    {
-      "hora": "2026-09-22T12:32:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna A limite=48.16 (nivel teorico 48.1560) vol=100 ticket=2533681493"
-    },
-    {
-      "hora": "2026-09-22T12:32:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna B limite=48.13 (nivel teorico 48.1300) vol=100 ticket=2533681495"
-    },
-    {
-      "hora": "2026-09-22T12:32:47-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna C limite=48.10 (nivel teorico 48.1040) vol=100 ticket=2533681497"
-    },
-    {
-      "hora": "2026-09-22T13:02:42-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.22 (nivel teorico 48.2242) vol=100 ticket=2533738227"
-    },
-    {
-      "hora": "2026-09-22T13:02:42-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=48.21 (nivel teorico 48.2100) vol=100 ticket=2533738228"
-    },
-    {
-      "hora": "2026-09-22T13:02:42-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=48.20 (nivel teorico 48.1958) vol=100 ticket=2533738229"
-    },
-    {
-      "hora": "2026-09-22T13:02:42-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna A limite=48.22 (nivel teorico 48.2242) vol=100 ticket=2533738230"
-    },
-    {
-      "hora": "2026-09-22T13:02:42-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna B limite=48.21 (nivel teorico 48.2100) vol=100 ticket=2533738231"
-    },
-    {
-      "hora": "2026-09-22T13:02:42-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna C limite=48.20 (nivel teorico 48.1958) vol=100 ticket=2533738232"
-    },
-    {
-      "hora": "2026-09-22T13:02:46-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 LONG perna A limite=47.91 (nivel teorico 47.9118) vol=100 ticket=2533738309"
-    },
-    {
-      "hora": "2026-09-22T13:02:46-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 LONG perna B limite=47.80 (nivel teorico 47.7950) vol=100 ticket=2533738310"
-    },
-    {
-      "hora": "2026-09-22T13:02:46-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 LONG perna C limite=47.68 (nivel teorico 47.6782) vol=100 ticket=2533738311"
-    },
-    {
-      "hora": "2026-09-22T13:30:48-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EXIT] VW SHORT vol=1 motivo=stop"
-    },
-    {
-      "hora": "2026-09-22T14:51:55-03:00",
-      "tipo": "saida",
-      "modulo": "ORB",
-      "texto": "[EXIT] ORB SHORT vol=1 motivo=stop"
-    },
-    {
-      "hora": "2026-09-22T15:58:54-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.27 (nivel teorico 48.2651) vol=100 ticket=2533988878"
-    },
-    {
-      "hora": "2026-09-22T15:58:54-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=48.25 (nivel teorico 48.2450) vol=100 ticket=2533988880"
-    },
-    {
-      "hora": "2026-09-22T15:58:54-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=48.22 (nivel teorico 48.2249) vol=100 ticket=2533988881"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna A limite=48.26 (nivel teorico 48.2612) vol=100 ticket=2533988882"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna B limite=48.24 (nivel teorico 48.2400) vol=100 ticket=2533988883"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna C limite=48.22 (nivel teorico 48.2188) vol=100 ticket=2533988884"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 LONG perna A limite=48.26 (nivel teorico 48.2612) vol=100 ticket=2533988885"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 LONG perna B limite=48.24 (nivel teorico 48.2400) vol=100 ticket=2533988886"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 LONG perna C limite=48.22 (nivel teorico 48.2188) vol=100 ticket=2533988887"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W13 LONG perna A limite=48.21 (nivel teorico 48.2116) vol=100 ticket=2533988888"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W13 LONG perna B limite=48.18 (nivel teorico 48.1750) vol=100 ticket=2533988889"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W13 LONG perna C limite=48.14 (nivel teorico 48.1384) vol=100 ticket=2533988890"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 LONG perna A limite=48.21 (nivel teorico 48.2116) vol=100 ticket=2533988891"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 LONG perna B limite=48.18 (nivel teorico 48.1750) vol=100 ticket=2533988892"
-    },
-    {
-      "hora": "2026-09-22T15:58:55-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W21 LONG perna C limite=48.14 (nivel teorico 48.1384) vol=100 ticket=2533988894"
-    },
-    {
-      "hora": "2026-09-22T16:40:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-22T16:49:02-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[PIR] VB carga 1 @ 189122.50 vol=2"
-    },
-    {
-      "hora": "2026-09-22T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VolBreak",
-      "texto": "[EOD] VB LONG vol=2"
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-22",
-    "realized": -311.0,
+    "date": "2026-09-23",
+    "realized": 0,
     "unrealized": 0,
-    "total": -311.0,
-    "trades": 3,
-    "wins": 1,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -311.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -311.0,
-    "corretora": -311.0,
-    "divergencia": 0.0,
-    "tolerancia": 6.22,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
     "ok": true,
     "volume_corretora": 0,
@@ -422,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1638975,
+    "idade_s": 1689575,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
