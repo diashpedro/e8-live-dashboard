@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-23T10:54:14-03:00",
+  "updated_at": "2026-09-23T10:57:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-09-23T10:50:49-03:00",
+    "last_ea_event": "2026-09-23T10:55:03-03:00",
     "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790171629,
+    "ea_heartbeat_epoch": 1790171749,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189185.0,
+        "bid": 189365.0,
         "ok": true
       }
     ],
@@ -66,28 +66,46 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[RESIDUO] posicao -1, das quais -1 sao pernas legitimas (Python + nativas)"
+    },
+    {
+      "hora": "2026-09-23T10:55:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_L stop=189380.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-23T10:55:01-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.22 16:50 -> corte de HOJE (-15min): 2026.09.23 16:35"
+    },
+    {
+      "hora": "2026-09-23T10:55:03-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW LONG entry=189380.00 stop=187142.86 R=2237.14"
     }
   ],
   "today": {
     "date": "2026-09-23",
     "realized": 0,
-    "unrealized": -59.0,
-    "total": -59.0,
+    "unrealized": 0,
+    "total": 0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37837.0,
-    "open_legs": 1,
-    "broker_realized": 0.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -98.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "corretora": -98.0,
+    "divergencia": 98.0,
+    "tolerancia": 1.96,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
@@ -116,27 +134,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1696402,
+    "idade_s": 1696581,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "g003a",
-      "strategy_label": "V02_reversao_climatica · gaveta 3a",
-      "side": "SHORT",
-      "entry_time": "2026-09-23T10:45:11-03:00",
-      "entry_price": 188890.0,
-      "current_price": 189185.0,
-      "qty": 1.0,
-      "notional": 37837.0,
-      "pnl": -59.0,
-      "minutos": 9.1
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -188,13 +192,13 @@
     },
     {
       "modulo": "VWAP",
-      "n": 20,
-      "soma": -1117.28,
-      "media": -55.86,
-      "ep": 32.29,
-      "t": -1.73,
-      "ic_baixo": -119.16,
-      "ic_alto": 7.43,
+      "n": 21,
+      "soma": -1215.28,
+      "media": -57.87,
+      "ep": 30.78,
+      "t": -1.88,
+      "ic_baixo": -118.21,
+      "ic_alto": 2.47,
       "acertos": 7,
       "conclusivo": false
     },
