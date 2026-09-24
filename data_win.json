@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-24T11:15:16-03:00",
+  "updated_at": "2026-09-24T11:18:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-24T11:00:00-03:00",
+    "last_ea_event": "2026-09-24T11:17:28-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790259229,
+    "ea_heartbeat_epoch": 1790259409,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186735.0,
+        "bid": 186600.0,
         "ok": true
       }
     ],
@@ -117,6 +117,48 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[ORDER] WEA_VW_L stop=187345.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-24T11:15:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_L stop=187045.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-24T11:17:28-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=50.02 (nivel teorico 50.0198) vol=100 ticket=2536342407"
+    },
+    {
+      "hora": "2026-09-24T11:17:28-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=50.00 (nivel teorico 49.9950) vol=100 ticket=2536342408"
+    },
+    {
+      "hora": "2026-09-24T11:17:28-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=49.97 (nivel teorico 49.9702) vol=100 ticket=2536342409"
+    },
+    {
+      "hora": "2026-09-24T11:17:28-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna A limite=50.02 (nivel teorico 50.0198) vol=100 ticket=2536342410"
+    },
+    {
+      "hora": "2026-09-24T11:17:28-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna B limite=50.00 (nivel teorico 49.9950) vol=100 ticket=2536342411"
+    },
+    {
+      "hora": "2026-09-24T11:17:28-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna C limite=49.97 (nivel teorico 49.9702) vol=100 ticket=2536342412"
     }
   ],
   "today": {
@@ -167,7 +209,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1784064,
+    "idade_s": 1784241,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
