@@ -1,205 +1,42 @@
 {
-  "updated_at": "2026-09-23T18:57:12-03:00",
+  "updated_at": "2026-09-24T09:00:27-03:00",
   "start_date": "2026-09-04",
   "health": {
-    "errors_today": 2,
-    "last_ea_event": "2026-09-23T17:40:00-03:00",
-    "last_error_msg": "FK\t0\t13:01:23.593\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection",
-    "ea_heartbeat_epoch": 1790200549,
+    "errors_today": 0,
+    "last_ea_event": "2026-09-24T00:00:00-03:00",
+    "last_error_msg": null,
+    "ea_heartbeat_epoch": 1790251189,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186680.0,
+        "bid": 205745.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-23T10:01:23-03:00",
-      "tipo": "erro",
-      "modulo": "VolBreak",
-      "texto": "[ERRO] enviar stop WEA_VB_L @ 187240.00: retcode=10031 no connection"
-    },
-    {
-      "hora": "2026-09-23T10:01:23-03:00",
-      "tipo": "erro",
-      "modulo": "VolBreak",
-      "texto": "[ERRO] enviar stop WEA_VB_S @ 186370.00: retcode=10031 no connection"
-    },
-    {
-      "hora": "2026-09-23T10:04:07-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.22 16:50 -> corte de HOJE (-15min): 2026.09.23 16:35"
-    },
-    {
-      "hora": "2026-09-23T10:30:02-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=186360.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-23T10:30:03-03:00",
-      "tipo": "entrada",
-      "modulo": "T11 climax",
-      "texto": "[PY] ARMADO BRK-20260923-148a | t11_climax_g148a short 1 @ 187345 | stop 189770 alvo 177645"
-    },
-    {
-      "hora": "2026-09-23T10:50:43-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-09-23T10:50:48-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.22 16:50 -> corte de HOJE (-15min): 2026.09.23 16:35"
-    },
-    {
-      "hora": "2026-09-23T10:50:49-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] posicao -1, das quais -1 sao pernas legitimas (Python + nativas)"
-    },
-    {
-      "hora": "2026-09-23T10:55:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=189380.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-23T10:55:01-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.22 16:50 -> corte de HOJE (-15min): 2026.09.23 16:35"
-    },
-    {
-      "hora": "2026-09-23T10:55:03-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=189380.00 stop=187142.86 R=2237.14"
-    },
-    {
-      "hora": "2026-09-23T11:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=186370.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-23T11:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=186360.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-23T11:06:27-03:00",
-      "tipo": "saida",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] FECHADA v02_reversao_climatica_g003a por stop | -860 pts | PnL py dia R$ -172.00"
-    },
-    {
-      "hora": "2026-09-23T11:25:00-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna A limite=49.84 (nivel teorico 49.8440) vol=100 ticket=2535132755"
-    },
-    {
-      "hora": "2026-09-23T11:25:01-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna B limite=49.87 (nivel teorico 49.8700) vol=100 ticket=2535132906"
-    },
-    {
-      "hora": "2026-09-23T11:25:02-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna C limite=49.90 (nivel teorico 49.8960) vol=100 ticket=2535132931"
-    },
-    {
-      "hora": "2026-09-23T11:27:01-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna A entry=49.8400 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-23T11:27:48-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna B entry=49.8700 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-23T11:27:59-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[FILL] W3 SHORT perna C entry=49.9000 vol=100 (ordem limite executada)"
-    },
-    {
-      "hora": "2026-09-23T11:31:26-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna A motivo=alvo vol=100"
-    },
-    {
-      "hora": "2026-09-23T11:34:22-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna B motivo=be vol=100"
-    },
-    {
-      "hora": "2026-09-23T11:35:59-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EXIT] W3 SHORT perna C motivo=be vol=100"
-    },
-    {
-      "hora": "2026-09-23T14:39:02-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EXIT] VW LONG vol=1 motivo=stop"
-    },
-    {
-      "hora": "2026-09-23T16:40:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-23T17:00:04-03:00",
-      "tipo": "entrada",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] EXECUTADO IM-20260923 | intramom short 1 a mercado | stop 192672 alvo 170225"
-    },
-    {
-      "hora": "2026-09-23T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] FECHADA intramom por eod | -90 pts | PnL py dia R$ -190.00"
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-23",
-    "realized": -468.0,
+    "date": "2026-09-24",
+    "realized": 0,
     "unrealized": 0,
-    "total": -468.0,
-    "trades": 2,
+    "total": 0,
+    "trades": 0,
     "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -640.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -468.0,
-    "corretora": -640.0,
-    "divergencia": 172.0,
-    "tolerancia": 12.8,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
-    "ok": false,
+    "ok": true,
     "volume_corretora": 0,
     "volume_pernas": 0,
     "volume_ok": true
@@ -230,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1725380,
+    "idade_s": 1775976,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
