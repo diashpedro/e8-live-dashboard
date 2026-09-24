@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-09-24T10:30:17-03:00",
+  "updated_at": "2026-09-24T10:33:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-24T10:08:48-03:00",
+    "last_ea_event": "2026-09-24T10:31:16-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790256529,
+    "ea_heartbeat_epoch": 1790256709,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186980.0,
+        "bid": 187060.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2536165040,
-      "tipo": "buy_stop",
-      "preco": 187325.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_L",
-      "hora": "2026-09-24T10:30:00-03:00"
-    },
-    {
-      "ticket": 2536165166,
-      "tipo": "sell_stop",
-      "preco": 185725.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-09-24T10:30:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-24T10:00:00-03:00",
@@ -59,33 +42,51 @@
       "tipo": "entrada",
       "modulo": "VolBreak",
       "texto": "[FILL] VB SHORT entry=186665.00 stop=189573.93 R=2908.93"
+    },
+    {
+      "hora": "2026-09-24T10:30:00-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_L stop=187325.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-24T10:30:00-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_S stop=185725.00 (SHORT)"
+    },
+    {
+      "hora": "2026-09-24T10:31:16-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[FILL] ORB LONG entry=187325.00 stop=185730.00 R=1595.00"
     }
   ],
   "today": {
     "date": "2026-09-24",
     "realized": 0,
-    "unrealized": -64.0,
-    "total": -64.0,
+    "unrealized": 0,
+    "total": 0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37397.0,
-    "open_legs": 1,
-    "broker_realized": 0.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -132.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": 0.0,
-    "volume_ok": false
+    "corretora": -132.0,
+    "divergencia": 132.0,
+    "tolerancia": 2.64,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -2505.0,
-    "trades": 39,
+    "pnl": -2345.0,
+    "trades": 38,
     "wins": 14,
     "since": "2026-09-04",
     "days": 13,
@@ -109,42 +110,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1781365,
+    "idade_s": 1781538,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "g003a",
-      "strategy_label": "v02_reversao_climatica_g003a",
-      "side": "LONG",
-      "entry_time": "2026-09-23T11:06:27-03:00",
-      "entry_price": 189750.0,
-      "current_price": 186980.0,
-      "qty": 1.0,
-      "notional": 37396.0,
-      "pnl": -554.0,
-      "minutos": 1403.8
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-09-24T10:08:47-03:00",
-      "entry_price": 186665.0,
-      "current_price": 186980.0,
-      "qty": 1.0,
-      "notional": 37396.0,
-      "pnl": -63.0,
-      "pnl_liq_est": -80.19,
-      "pnl_pct": -0.169,
-      "minutos": 21.5
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -160,13 +132,13 @@
     },
     {
       "modulo": "ORB",
-      "n": 8,
-      "soma": 177.88,
-      "media": 22.23,
-      "ep": 73.43,
-      "t": 0.3,
-      "ic_baixo": -121.68,
-      "ic_alto": 166.15,
+      "n": 9,
+      "soma": 45.88,
+      "media": 5.1,
+      "ep": 66.99,
+      "t": 0.08,
+      "ic_baixo": -126.19,
+      "ic_alto": 136.39,
       "acertos": 3,
       "conclusivo": false
     },
@@ -340,24 +312,24 @@
     },
     {
       "date": "2026-09-21",
-      "pnl": -531.0,
-      "trades": 5,
+      "pnl": -371.0,
+      "trades": 4,
       "wins": 2,
-      "cum": -1726.0
+      "cum": -1566.0
     },
     {
       "date": "2026-09-22",
       "pnl": -311.0,
       "trades": 3,
       "wins": 1,
-      "cum": -2037.0
+      "cum": -1877.0
     },
     {
       "date": "2026-09-23",
       "pnl": -468.0,
       "trades": 2,
       "wins": 0,
-      "cum": -2505.0
+      "cum": -2345.0
     }
   ],
   "trades": [
@@ -504,22 +476,6 @@
       "motivo": "trail",
       "motivo_label": "Trailing",
       "minutos": 246.9
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g148a",
-      "strategy_label": "T11_climax · gaveta 148a",
-      "side": "LONG",
-      "entry_time": "2026-09-21T10:31:21-03:00",
-      "exit_time": "2026-09-21T10:44:02-03:00",
-      "entry_price": 188365.0,
-      "exit_price": 187565.0,
-      "qty": 1.0,
-      "pnl": -160.0,
-      "pnl_bruto": -160.0,
-      "motivo": "stop",
-      "motivo_label": "Stop",
-      "minutos": 12.7
     },
     {
       "symbol": "WINV26",
@@ -1000,12 +956,6 @@
       "pnl": -497.0
     },
     {
-      "strategy": "T11_climax · gaveta 148a",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -160.0
-    },
-    {
       "strategy": "VWAP",
       "trades": 16,
       "wins": 9,
@@ -1021,9 +971,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 39,
+      "trades": 38,
       "wins": 14,
-      "pnl": -2505.0
+      "pnl": -2345.0
     }
   ],
   "by_reason": [
@@ -1041,9 +991,9 @@
     },
     {
       "reason": "Stop",
-      "trades": 8,
+      "trades": 7,
       "wins": 0,
-      "pnl": -2375.0
+      "pnl": -2215.0
     },
     {
       "reason": "Trailing",
