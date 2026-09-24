@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-24T15:39:15-03:00",
+  "updated_at": "2026-09-24T15:42:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-24T15:35:01-03:00",
+    "last_ea_event": "2026-09-24T15:39:24-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790275069,
+    "ea_heartbeat_epoch": 1790275249,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 185690.0,
+        "bid": 185275.0,
         "ok": true
       }
     ],
@@ -306,6 +306,102 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[ORDER] WEA_VW_L stop=185765.00 (LONG)"
+    },
+    {
+      "hora": "2026-09-24T15:39:05-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW LONG entry=185765.00 stop=185005.36 R=759.64"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna A limite=49.44 (nivel teorico 49.4354) vol=100 ticket=2537100702"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna B limite=49.50 (nivel teorico 49.5050) vol=100 ticket=2537100714"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna C limite=49.57 (nivel teorico 49.5746) vol=100 ticket=2537100721"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna A limite=49.44 (nivel teorico 49.4354) vol=100 ticket=2537100728"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna B limite=49.50 (nivel teorico 49.5050) vol=100 ticket=2537100729"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna C limite=49.57 (nivel teorico 49.5746) vol=100 ticket=2537100736"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna A limite=49.44 (nivel teorico 49.4354) vol=100 ticket=2537100739"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna B limite=49.50 (nivel teorico 49.5050) vol=100 ticket=2537100743"
+    },
+    {
+      "hora": "2026-09-24T15:39:23-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna C limite=49.57 (nivel teorico 49.5746) vol=100 ticket=2537100752"
+    },
+    {
+      "hora": "2026-09-24T15:39:24-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna A limite=49.44 (nivel teorico 49.4354) vol=100 ticket=2537100756"
+    },
+    {
+      "hora": "2026-09-24T15:39:24-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna B limite=49.50 (nivel teorico 49.5050) vol=100 ticket=2537100758"
+    },
+    {
+      "hora": "2026-09-24T15:39:24-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna C limite=49.57 (nivel teorico 49.5746) vol=100 ticket=2537100764"
+    },
+    {
+      "hora": "2026-09-24T15:39:24-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna A limite=49.44 (nivel teorico 49.4354) vol=100 ticket=2537100765"
+    },
+    {
+      "hora": "2026-09-24T15:39:24-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna B limite=49.50 (nivel teorico 49.5050) vol=100 ticket=2537100766"
+    },
+    {
+      "hora": "2026-09-24T15:39:24-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna C limite=49.57 (nivel teorico 49.5746) vol=100 ticket=2537100775"
     }
   ],
   "today": {
@@ -356,7 +452,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1799904,
+    "idade_s": 1800081,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
