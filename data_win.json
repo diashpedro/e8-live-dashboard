@@ -1,23 +1,40 @@
 {
-  "updated_at": "2026-09-25T10:27:10-03:00",
+  "updated_at": "2026-09-25T10:30:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-25T10:06:08-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790342809,
+    "ea_heartbeat_epoch": 1790342989,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 184345.0,
+        "bid": 183945.0,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 2
   },
-  "pendentes_detalhe": [],
+  "pendentes_detalhe": [
+    {
+      "ticket": 2537727380,
+      "tipo": "buy_stop",
+      "preco": 185405.0,
+      "volume": 1.0,
+      "comment": "WEA_ORB_L",
+      "hora": "2026-09-25T10:30:00-03:00"
+    },
+    {
+      "ticket": 2537727660,
+      "tipo": "sell_stop",
+      "preco": 183720.0,
+      "volume": 1.0,
+      "comment": "WEA_ORB_S",
+      "hora": "2026-09-25T10:30:00-03:00"
+    }
+  ],
   "eventos_hoje": [
     {
       "hora": "2026-09-25T10:00:00-03:00",
@@ -46,32 +63,32 @@
   ],
   "today": {
     "date": "2026-09-25",
-    "realized": 0,
-    "unrealized": -106.0,
-    "total": -106.0,
-    "trades": 0,
+    "realized": -1153.0,
+    "unrealized": 0,
+    "total": -1153.0,
+    "trades": 1,
     "wins": 0,
-    "exposure": 36867.0,
-    "open_legs": 1,
-    "broker_realized": 0.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -176.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 2.0,
-    "volume_ok": false
+    "painel": -1153.0,
+    "corretora": -176.0,
+    "divergencia": -977.0,
+    "tolerancia": 3.52,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -2834.0,
-    "trades": 43,
+    "pnl": -3987.0,
+    "trades": 44,
     "wins": 15,
     "since": "2026-09-04",
-    "days": 14,
+    "days": 15,
     "days_positive": 3,
     "best_day": {
       "date": "2026-09-10",
@@ -81,53 +98,24 @@
       "cum": -307.0
     },
     "worst_day": {
-      "date": "2026-09-08",
-      "pnl": -642.0,
-      "trades": 4,
+      "date": "2026-09-25",
+      "pnl": -1153.0,
+      "trades": 1,
       "wins": 0,
-      "cum": -963.0
+      "cum": -3987.0
     }
   },
   "python": {
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1867578,
+    "idade_s": 1867763,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "g003a",
-      "strategy_label": "v02_reversao_climatica_g003a",
-      "side": "LONG",
-      "entry_time": "2026-09-23T11:06:27-03:00",
-      "entry_price": 189750.0,
-      "current_price": 184345.0,
-      "qty": 1.0,
-      "notional": 36869.0,
-      "pnl": -1081.0,
-      "minutos": 2840.7
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "LONG",
-      "entry_time": "2026-09-25T10:06:08-03:00",
-      "entry_price": 184865.0,
-      "current_price": 184345.0,
-      "qty": 1.0,
-      "notional": 36869.0,
-      "pnl": -104.0,
-      "pnl_liq_est": -120.98,
-      "pnl_pct": -0.281,
-      "minutos": 21.0
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -167,13 +155,13 @@
     },
     {
       "modulo": "V02_reversao_climatica",
-      "n": 2,
-      "soma": 107.5,
-      "media": 53.75,
-      "ep": 99.75,
-      "t": 0.54,
-      "ic_baixo": -141.76,
-      "ic_alto": 249.26,
+      "n": 3,
+      "soma": -68.5,
+      "media": -22.83,
+      "ep": 95.82,
+      "t": -0.24,
+      "ic_baixo": -210.64,
+      "ic_alto": 164.98,
       "acertos": 1,
       "conclusivo": false
     },
@@ -348,9 +336,32 @@
       "trades": 6,
       "wins": 2,
       "cum": -2834.0
+    },
+    {
+      "date": "2026-09-25",
+      "pnl": -1153.0,
+      "trades": 1,
+      "wins": 0,
+      "cum": -3987.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "g003a",
+      "strategy_label": "v02_reversao_climatica_g003a",
+      "side": "LONG",
+      "entry_time": "2026-09-23T11:06:27-03:00",
+      "exit_time": "2026-09-25T10:30:14-03:00",
+      "entry_price": 189750.0,
+      "exit_price": 183985.0,
+      "qty": 1.0,
+      "pnl": -1153.0,
+      "pnl_bruto": -1153.0,
+      "motivo": "003a",
+      "motivo_label": "003a",
+      "minutos": 2843.8
+    },
     {
       "symbol": "WINV26",
       "strategy": "VB",
@@ -1064,17 +1075,29 @@
       "trades": 12,
       "wins": 2,
       "pnl": -1227.0
+    },
+    {
+      "strategy": "v02_reversao_climatica_g003a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -1153.0
     }
   ],
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 43,
+      "trades": 44,
       "wins": 15,
-      "pnl": -2834.0
+      "pnl": -3987.0
     }
   ],
   "by_reason": [
+    {
+      "reason": "003a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -1153.0
+    },
     {
       "reason": "Breakeven",
       "trades": 2,
