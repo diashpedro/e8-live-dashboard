@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-25T11:03:15-03:00",
+  "updated_at": "2026-09-25T11:06:13-03:00",
   "start_date": "2026-09-04",
   "health": {
-    "errors_today": 0,
-    "last_ea_event": "2026-09-25T10:55:19-03:00",
-    "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790344729,
+    "errors_today": 1,
+    "last_ea_event": "2026-09-25T11:05:30-03:00",
+    "last_error_msg": "NR\t0\t14:05:07.521\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] falha ao zerar residuo de -1: no connection",
+    "ea_heartbeat_epoch": 1790345107,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 183360.0,
+        "bid": 183365.0,
         "ok": true
       }
     ],
@@ -102,17 +102,59 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-25T11:04:58-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 2 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-09-25T11:05:06-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.24 16:50 -> corte de HOJE (-15min): 2026.09.25 16:35"
+    },
+    {
+      "hora": "2026-09-25T11:05:07-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-25T11:05:07-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ERRO] falha ao zerar residuo de -1: no connection"
+    },
+    {
+      "hora": "2026-09-25T11:05:09-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.24 16:50 -> corte de HOJE (-15min): 2026.09.25 16:35"
+    },
+    {
+      "hora": "2026-09-25T11:05:30-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] posicao orfa de -1 zerada em WINV26"
+    },
+    {
+      "hora": "2026-09-25T11:05:30-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
     }
   ],
   "today": {
     "date": "2026-09-25",
     "realized": -1153.0,
-    "unrealized": 71.0,
-    "total": -1082.0,
+    "unrealized": 0,
+    "total": -1153.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 36673.0,
-    "open_legs": 1,
+    "exposure": 0,
+    "open_legs": 0,
     "broker_realized": -176.0
   },
   "reconciliacao": {
@@ -120,11 +162,11 @@
     "corretora": -176.0,
     "divergencia": -977.0,
     "tolerancia": 3.52,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": 0.0,
-    "volume_ok": false
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
+    "volume_ok": true
   },
   "cumulative": {
     "pnl": -3987.0,
@@ -152,44 +194,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1869743,
+    "idade_s": 1869921,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "LONG",
-      "entry_time": "2026-09-25T10:06:08-03:00",
-      "entry_price": 184865.0,
-      "current_price": 183360.0,
-      "qty": 1.0,
-      "notional": 36672.0,
-      "pnl": -301.0,
-      "pnl_liq_est": -317.94,
-      "pnl_pct": -0.814,
-      "minutos": 57.1
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "SHORT",
-      "entry_time": "2026-09-25T10:36:20-03:00",
-      "entry_price": 183720.0,
-      "current_price": 183360.0,
-      "qty": 1.0,
-      "notional": 36672.0,
-      "pnl": 72.0,
-      "pnl_liq_est": 55.11,
-      "pnl_pct": 0.196,
-      "minutos": 26.9
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
