@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-25T11:21:11-03:00",
+  "updated_at": "2026-09-25T11:24:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-09-25T11:18:05-03:00",
+    "last_ea_event": "2026-09-25T11:22:52-03:00",
     "last_error_msg": "NR\t0\t14:05:07.521\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] falha ao zerar residuo de -1: no connection",
-    "ea_heartbeat_epoch": 1790346007,
+    "ea_heartbeat_epoch": 1790346187,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 183560.0,
+        "bid": 183785.0,
         "ok": true
       }
     ],
@@ -162,6 +162,12 @@
       "tipo": "entrada",
       "modulo": null,
       "texto": "[ORDER] W5 SHORT perna C limite=48.16 (nivel teorico 48.1616) vol=100 ticket=2537951104"
+    },
+    {
+      "hora": "2026-09-25T11:22:52-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W5 SHORT perna A entry=48.0900 vol=100 (ordem limite executada)"
     }
   ],
   "today": {
@@ -212,7 +218,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1870819,
+    "idade_s": 1870999,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
