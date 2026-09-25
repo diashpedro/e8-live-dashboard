@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-09-25T10:36:15-03:00",
+  "updated_at": "2026-09-25T10:39:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-25T10:30:14-03:00",
+    "last_ea_event": "2026-09-25T10:36:20-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790343169,
+    "ea_heartbeat_epoch": 1790343529,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 183810.0,
+        "bid": 183870.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2537727380,
-      "tipo": "buy_stop",
-      "preco": 185405.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_L",
-      "hora": "2026-09-25T10:30:00-03:00"
-    },
-    {
-      "ticket": 2537727660,
-      "tipo": "sell_stop",
-      "preco": 183720.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-09-25T10:30:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-25T10:00:00-03:00",
@@ -83,17 +66,29 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-25T10:35:15-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha 1 (python 1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-25T10:36:20-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[FILL] ORB SHORT entry=183720.00 stop=185400.00 R=1680.00"
     }
   ],
   "today": {
     "date": "2026-09-25",
     "realized": -1153.0,
-    "unrealized": 0,
-    "total": -1153.0,
+    "unrealized": -31.0,
+    "total": -1184.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 0,
-    "open_legs": 0,
+    "exposure": 36775.0,
+    "open_legs": 1,
     "broker_realized": -176.0
   },
   "reconciliacao": {
@@ -101,11 +96,11 @@
     "corretora": -176.0,
     "divergencia": -977.0,
     "tolerancia": 3.52,
-    "comparavel": true,
-    "ok": false,
-    "volume_corretora": 0,
-    "volume_pernas": 0,
-    "volume_ok": true
+    "comparavel": false,
+    "ok": null,
+    "volume_corretora": -1.0,
+    "volume_pernas": 0.0,
+    "volume_ok": false
   },
   "cumulative": {
     "pnl": -3987.0,
@@ -133,13 +128,44 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1868123,
+    "idade_s": 1868298,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [],
+  "open_positions": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "LONG",
+      "entry_time": "2026-09-25T10:06:08-03:00",
+      "entry_price": 184865.0,
+      "current_price": 183870.0,
+      "qty": 1.0,
+      "notional": 36774.0,
+      "pnl": -199.0,
+      "pnl_liq_est": -215.96,
+      "pnl_pct": -0.538,
+      "minutos": 33.0
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "SHORT",
+      "entry_time": "2026-09-25T10:36:20-03:00",
+      "entry_price": 183720.0,
+      "current_price": 183870.0,
+      "qty": 1.0,
+      "notional": 36774.0,
+      "pnl": -30.0,
+      "pnl_liq_est": -46.91,
+      "pnl_pct": -0.082,
+      "minutos": 2.8
+    }
+  ],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
