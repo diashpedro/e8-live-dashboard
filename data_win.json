@@ -1,23 +1,32 @@
 {
-  "updated_at": "2026-09-25T11:33:12-03:00",
+  "updated_at": "2026-09-25T11:36:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 1,
-    "last_ea_event": "2026-09-25T11:30:00-03:00",
+    "last_ea_event": "2026-09-25T11:35:00-03:00",
     "last_error_msg": "NR\t0\t14:05:07.521\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] falha ao zerar residuo de -1: no connection",
-    "ea_heartbeat_epoch": 1790346727,
+    "ea_heartbeat_epoch": 1790346907,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 183525.0,
+        "bid": 183470.0,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 1
   },
-  "pendentes_detalhe": [],
+  "pendentes_detalhe": [
+    {
+      "ticket": 2538021773,
+      "tipo": "sell_stop",
+      "preco": 183325.0,
+      "volume": 1.0,
+      "comment": "WEA_VW_S",
+      "hora": "2026-09-25T11:35:00-03:00"
+    }
+  ],
   "eventos_hoje": [
     {
       "hora": "2026-09-25T10:00:00-03:00",
@@ -174,6 +183,12 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W5 SHORT perna A motivo=alvo vol=100"
+    },
+    {
+      "hora": "2026-09-25T11:35:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_S stop=183325.00 (SHORT)"
     }
   ],
   "today": {
@@ -224,7 +239,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 1871541,
+    "idade_s": 1871719,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
