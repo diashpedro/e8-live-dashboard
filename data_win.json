@@ -1,32 +1,23 @@
 {
-  "updated_at": "2026-09-28T11:45:12-03:00",
+  "updated_at": "2026-09-28T11:48:08-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-28T11:40:10-03:00",
+    "last_ea_event": "2026-09-28T11:46:40-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790606647,
+    "ea_heartbeat_epoch": 1790606827,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 184525.0,
+        "bid": 184355.0,
         "ok": true
       }
     ],
-    "pendentes": 1
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2539385325,
-      "tipo": "sell_stop",
-      "preco": 184440.0,
-      "volume": 1.0,
-      "comment": "BRK-20260928-003a",
-      "hora": "2026-09-28T11:45:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-28T10:00:00-03:00",
@@ -231,29 +222,47 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-28T11:45:00-03:00",
+      "tipo": "entrada",
+      "modulo": "V02 reversao climatica",
+      "texto": "[PY] ARMADO BRK-20260928-003a | v02_reversao_climatica_g003a short 1 @ 184440 | stop 184900 alvo 182600"
+    },
+    {
+      "hora": "2026-09-28T11:45:11-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-28T11:46:40-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
     }
   ],
   "today": {
     "date": "2026-09-28",
     "realized": -261.0,
-    "unrealized": 205.0,
-    "total": -56.0,
+    "unrealized": 60.67,
+    "total": -200.33,
     "trades": 1,
     "wins": 0,
-    "exposure": 110721.0,
+    "exposure": 73738.0,
     "open_legs": 1,
-    "broker_realized": -89.0
+    "broker_realized": -39.67
   },
   "reconciliacao": {
     "painel": -261.0,
-    "corretora": -89.0,
-    "divergencia": -172.0,
-    "tolerancia": 1.78,
+    "corretora": -39.67,
+    "divergencia": -221.33,
+    "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 3.0,
+    "volume_corretora": 2.0,
     "volume_pernas": 2.0,
-    "volume_ok": false
+    "volume_ok": true
   },
   "cumulative": {
     "pnl": -3300.0,
@@ -281,7 +290,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2131460,
+    "idade_s": 2131636,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -295,13 +304,13 @@
       "side": "LONG",
       "entry_time": "2026-09-28T11:08:19-03:00",
       "entry_price": 183585.0,
-      "current_price": 184525.0,
+      "current_price": 184355.0,
       "qty": 1.0,
-      "notional": 36905.0,
-      "pnl": 188.0,
-      "pnl_liq_est": 171.07,
-      "pnl_pct": 0.512,
-      "minutos": 36.9
+      "notional": 36871.0,
+      "pnl": 154.0,
+      "pnl_liq_est": 137.07,
+      "pnl_pct": 0.419,
+      "minutos": 39.8
     },
     {
       "symbol": "WINV26",
@@ -310,13 +319,13 @@
       "side": "LONG",
       "entry_time": "2026-09-28T11:22:19-03:00",
       "entry_price": 184430.0,
-      "current_price": 184525.0,
+      "current_price": 184355.0,
       "qty": 1.0,
-      "notional": 36905.0,
-      "pnl": 19.0,
-      "pnl_liq_est": 2.03,
-      "pnl_pct": 0.052,
-      "minutos": 22.9
+      "notional": 36871.0,
+      "pnl": -15.0,
+      "pnl_liq_est": -31.96,
+      "pnl_pct": -0.041,
+      "minutos": 25.8
     }
   ],
   "stats_modulo": [
@@ -358,14 +367,14 @@
     },
     {
       "modulo": "V02_reversao_climatica",
-      "n": 3,
-      "soma": -68.5,
-      "media": -22.83,
-      "ep": 95.82,
-      "t": -0.24,
-      "ic_baixo": -210.64,
-      "ic_alto": 164.98,
-      "acertos": 1,
+      "n": 4,
+      "soma": -19.17,
+      "media": -4.79,
+      "ep": 70.12,
+      "t": -0.07,
+      "ic_baixo": -142.22,
+      "ic_alto": 132.64,
+      "acertos": 2,
       "conclusivo": false
     },
     {
