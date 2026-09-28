@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-28T17:39:10-03:00",
+  "updated_at": "2026-09-28T17:42:07-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-28T16:40:01-03:00",
+    "last_ea_event": "2026-09-28T17:40:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790627887,
+    "ea_heartbeat_epoch": 1790628067,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 184075.0,
+        "bid": 184030.0,
         "ok": true
       }
     ],
@@ -264,34 +264,46 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
+    },
+    {
+      "hora": "2026-09-28T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "VWAP",
+      "texto": "[EOD] VW LONG vol=1"
+    },
+    {
+      "hora": "2026-09-28T17:40:00-03:00",
+      "tipo": "saida",
+      "modulo": "ORB",
+      "texto": "[EOD] ORB LONG vol=1"
     }
   ],
   "today": {
     "date": "2026-09-28",
-    "realized": -261.0,
-    "unrealized": -47.33,
-    "total": -308.33,
-    "trades": 1,
-    "wins": 0,
-    "exposure": 73630.0,
-    "open_legs": 1,
-    "broker_realized": -39.67
+    "realized": -242.0,
+    "unrealized": 0,
+    "total": -242.0,
+    "trades": 3,
+    "wins": 1,
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -95.01
   },
   "reconciliacao": {
-    "painel": -261.0,
-    "corretora": -39.67,
-    "divergencia": -221.33,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 2.0,
-    "volume_pernas": 2.0,
+    "painel": -242.0,
+    "corretora": -95.01,
+    "divergencia": -146.99,
+    "tolerancia": 1.9,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -3300.0,
-    "trades": 45,
-    "wins": 15,
+    "pnl": -3281.0,
+    "trades": 47,
+    "wins": 16,
     "since": "2026-09-04",
     "days": 16,
     "days_positive": 3,
@@ -314,44 +326,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2152698,
+    "idade_s": 2152876,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "LONG",
-      "entry_time": "2026-09-28T11:08:19-03:00",
-      "entry_price": 183585.0,
-      "current_price": 184075.0,
-      "qty": 1.0,
-      "notional": 36815.0,
-      "pnl": 98.0,
-      "pnl_liq_est": 81.09,
-      "pnl_pct": 0.267,
-      "minutos": 390.9
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "ORB",
-      "strategy_label": "ORB",
-      "side": "LONG",
-      "entry_time": "2026-09-28T11:22:19-03:00",
-      "entry_price": 184430.0,
-      "current_price": 184075.0,
-      "qty": 1.0,
-      "notional": 36815.0,
-      "pnl": -71.0,
-      "pnl_liq_est": -87.95,
-      "pnl_pct": -0.192,
-      "minutos": 376.9
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -367,13 +348,13 @@
     },
     {
       "modulo": "ORB",
-      "n": 9,
-      "soma": 45.88,
-      "media": 5.1,
-      "ep": 66.99,
-      "t": 0.08,
-      "ic_baixo": -126.19,
-      "ic_alto": 136.39,
+      "n": 10,
+      "soma": 18.21,
+      "media": 1.82,
+      "ep": 60.0,
+      "t": 0.03,
+      "ic_baixo": -115.78,
+      "ic_alto": 119.43,
       "acertos": 3,
       "conclusivo": false
     },
@@ -403,13 +384,13 @@
     },
     {
       "modulo": "VWAP",
-      "n": 26,
-      "soma": -2111.28,
-      "media": -81.2,
-      "ep": 31.78,
-      "t": -2.56,
-      "ic_baixo": -143.48,
-      "ic_alto": -18.92,
+      "n": 27,
+      "soma": -2138.95,
+      "media": -79.22,
+      "ep": 30.64,
+      "t": -2.59,
+      "ic_baixo": -139.27,
+      "ic_alto": -19.17,
       "acertos": 9,
       "conclusivo": false
     },
@@ -582,13 +563,45 @@
     },
     {
       "date": "2026-09-28",
-      "pnl": -261.0,
-      "trades": 1,
-      "wins": 0,
-      "cum": -3300.0
+      "pnl": -242.0,
+      "trades": 3,
+      "wins": 1,
+      "cum": -3281.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-09-28T11:08:19-03:00",
+      "exit_time": "2026-09-28T17:40:00-03:00",
+      "entry_price": 183585.0,
+      "exit_price": 184055.0,
+      "qty": 1.0,
+      "pnl": 94.0,
+      "pnl_bruto": 94.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 391.7
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "LONG",
+      "entry_time": "2026-09-28T11:22:19-03:00",
+      "exit_time": "2026-09-28T17:40:00-03:00",
+      "entry_price": 184430.0,
+      "exit_price": 184055.0,
+      "qty": 1.0,
+      "pnl": -75.0,
+      "pnl_bruto": -75.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 377.7
+    },
     {
       "symbol": "WINV26",
       "strategy": "VB",
@@ -1313,15 +1326,15 @@
   "by_strategy": [
     {
       "strategy": "ORB",
-      "trades": 11,
+      "trades": 12,
       "wins": 3,
-      "pnl": -1091.0
+      "pnl": -1166.0
     },
     {
       "strategy": "VWAP",
-      "trades": 20,
-      "wins": 10,
-      "pnl": -692.0
+      "trades": 21,
+      "wins": 11,
+      "pnl": -598.0
     },
     {
       "strategy": "VolBreak",
@@ -1333,9 +1346,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 45,
-      "wins": 15,
-      "pnl": -3300.0
+      "trades": 47,
+      "wins": 16,
+      "pnl": -3281.0
     }
   ],
   "by_reason": [
@@ -1347,9 +1360,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 22,
-      "wins": 14,
-      "pnl": 2170.0
+      "trades": 24,
+      "wins": 15,
+      "pnl": 2189.0
     },
     {
       "reason": "Stop",
