@@ -1,31 +1,23 @@
 {
-  "updated_at": "2026-09-28T10:33:08-03:00",
+  "updated_at": "2026-09-28T10:36:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-28T10:30:00-03:00",
+    "last_ea_event": "2026-09-28T10:34:57-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790602327,
+    "ea_heartbeat_epoch": 1790602507,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 183330.0,
+        "bid": 183580.0,
         "ok": true
       }
     ],
-    "pendentes": 3
+    "pendentes": 2
   },
   "pendentes_detalhe": [
-    {
-      "ticket": 2539033070,
-      "tipo": "buy_stop",
-      "preco": 183705.0,
-      "volume": 1.0,
-      "comment": "BRK-20260928-148a",
-      "hora": "2026-09-28T10:15:00-03:00"
-    },
     {
       "ticket": 2539095836,
       "tipo": "buy_stop",
@@ -85,28 +77,34 @@
       "tipo": "entrada",
       "modulo": "ORB",
       "texto": "[ORDER] WEA_ORB_S stop=182730.00 (SHORT)"
+    },
+    {
+      "hora": "2026-09-28T10:34:57-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-28",
     "realized": 0,
-    "unrealized": -13.0,
-    "total": -13.0,
+    "unrealized": 0,
+    "total": 0,
     "trades": 0,
     "wins": 0,
-    "exposure": 36665.0,
-    "open_legs": 1,
-    "broker_realized": 0.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -89.0
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "corretora": -89.0,
+    "divergencia": 89.0,
+    "tolerancia": 1.78,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
@@ -135,29 +133,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2127137,
+    "idade_s": 2127317,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-09-28T10:02:12-03:00",
-      "entry_price": 183260.0,
-      "current_price": 183330.0,
-      "qty": 1.0,
-      "notional": 36666.0,
-      "pnl": -14.0,
-      "pnl_liq_est": -30.86,
-      "pnl_pct": -0.038,
-      "minutos": 30.9
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -185,13 +167,13 @@
     },
     {
       "modulo": "T11_climax",
-      "n": 1,
-      "soma": -116.0,
-      "media": -116.0,
-      "ep": 0.0,
-      "t": 0.0,
-      "ic_baixo": -116.0,
-      "ic_alto": -116.0,
+      "n": 2,
+      "soma": -205.0,
+      "media": -102.5,
+      "ep": 13.5,
+      "t": -7.59,
+      "ic_baixo": -128.96,
+      "ic_alto": -76.04,
       "acertos": 0,
       "conclusivo": false
     },
