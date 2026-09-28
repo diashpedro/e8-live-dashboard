@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-09-25T18:57:06-03:00",
+  "updated_at": "2026-09-28T09:00:15-03:00",
   "start_date": "2026-07-29",
   "health": {
-    "errors_today": 1,
-    "last_ea_event": "2026-09-25T18:56:07-03:00",
-    "last_error_msg": "NR\t0\t14:05:07.521\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] falha ao zerar residuo de -1: no connection",
+    "errors_today": 0,
+    "last_ea_event": "2026-09-28T09:00:07-03:00",
+    "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 47.97,
+        "bid": 47.93,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 70.77,
+        "bid": 70.41,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 42.09,
+        "bid": 42.0,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.35,
+        "bid": 15.21,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 34.88,
+        "bid": 34.8,
         "ok": true
       }
     ],
@@ -43,20 +43,20 @@
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
-    "date": "2026-09-25",
-    "realized": 12.0,
+    "date": "2026-09-28",
+    "realized": 0,
     "unrealized": 0,
-    "total": 12.0,
-    "trades": 1,
-    "wins": 1,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": 12.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": 12.0,
-    "corretora": 12.0,
-    "divergencia": 0.0,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
     "tolerancia": 1.0,
     "comparavel": true,
     "ok": true,
