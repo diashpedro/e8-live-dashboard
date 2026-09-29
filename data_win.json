@@ -1,301 +1,42 @@
 {
-  "updated_at": "2026-09-28T18:57:08-03:00",
+  "updated_at": "2026-09-29T09:00:20-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-28T17:40:00-03:00",
+    "last_ea_event": "2026-09-29T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790632567,
+    "ea_heartbeat_epoch": 1790683147,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 183855.0,
+        "bid": 202400.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-28T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=183995.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-28T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=183260.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-28T10:02:12-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB SHORT entry=183260.00 stop=185097.50 R=1837.50"
-    },
-    {
-      "hora": "2026-09-28T10:09:33-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.25 16:50 -> corte de HOJE (-15min): 2026.09.28 16:35"
-    },
-    {
-      "hora": "2026-09-28T10:15:00-03:00",
-      "tipo": "entrada",
-      "modulo": "T11 climax",
-      "texto": "[PY] ARMADO BRK-20260928-148a | t11_climax_g148a long 1 @ 183705 | stop 182900 alvo 186925"
-    },
-    {
-      "hora": "2026-09-28T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=184430.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-28T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=182730.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-28T10:34:57-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T10:39:57-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T10:44:58-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T10:49:59-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T10:50:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=183585.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-28T10:55:00-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:00:01-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:05:02-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=0 contratos, EA acha -1 (python -1 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:08:19-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=183585.00 stop=182056.07 R=1528.93"
-    },
-    {
-      "hora": "2026-09-28T11:10:03-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:15:04-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:20:05-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=1 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:22:19-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[FILL] ORB LONG entry=184430.00 stop=182735.00 R=1695.00"
-    },
-    {
-      "hora": "2026-09-28T11:23:26-03:00",
-      "tipo": "saida",
-      "modulo": "VolBreak",
-      "texto": "[EXIT] VB SHORT vol=1 motivo=trail"
-    },
-    {
-      "hora": "2026-09-28T11:25:07-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:25:20-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=48.67 (nivel teorico 48.6725) vol=100 ticket=2539321295"
-    },
-    {
-      "hora": "2026-09-28T11:25:21-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=48.63 (nivel teorico 48.6300) vol=100 ticket=2539321319"
-    },
-    {
-      "hora": "2026-09-28T11:25:21-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=48.59 (nivel teorico 48.5875) vol=100 ticket=2539321325"
-    },
-    {
-      "hora": "2026-09-28T11:25:22-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna A limite=48.67 (nivel teorico 48.6725) vol=100 ticket=2539321345"
-    },
-    {
-      "hora": "2026-09-28T11:25:22-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna B limite=48.63 (nivel teorico 48.6300) vol=100 ticket=2539321349"
-    },
-    {
-      "hora": "2026-09-28T11:25:22-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 LONG perna C limite=48.59 (nivel teorico 48.5875) vol=100 ticket=2539321360"
-    },
-    {
-      "hora": "2026-09-28T11:25:23-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 LONG perna A limite=48.67 (nivel teorico 48.6725) vol=100 ticket=2539321368"
-    },
-    {
-      "hora": "2026-09-28T11:25:23-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 LONG perna B limite=48.63 (nivel teorico 48.6300) vol=100 ticket=2539321375"
-    },
-    {
-      "hora": "2026-09-28T11:25:23-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W8 LONG perna C limite=48.59 (nivel teorico 48.5875) vol=100 ticket=2539321387"
-    },
-    {
-      "hora": "2026-09-28T11:30:08-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:35:09-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:40:10-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:45:00-03:00",
-      "tipo": "entrada",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] ARMADO BRK-20260928-003a | v02_reversao_climatica_g003a short 1 @ 184440 | stop 184900 alvo 182600"
-    },
-    {
-      "hora": "2026-09-28T11:45:11-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] DIVERGENCIA: corretora=3 contratos, EA acha 2 (python 2 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
-    },
-    {
-      "hora": "2026-09-28T11:46:40-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[ALARME] divergencia resolvida -- entradas liberadas"
-    },
-    {
-      "hora": "2026-09-28T12:21:36-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=49.15 (nivel teorico 49.1498) vol=100 ticket=2539521600"
-    },
-    {
-      "hora": "2026-09-28T12:21:36-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=49.13 (nivel teorico 49.1250) vol=100 ticket=2539521602"
-    },
-    {
-      "hora": "2026-09-28T12:21:36-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=49.10 (nivel teorico 49.1002) vol=100 ticket=2539521603"
-    },
-    {
-      "hora": "2026-09-28T16:40:01-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-28T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EOD] VW LONG vol=1"
-    },
-    {
-      "hora": "2026-09-28T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "ORB",
-      "texto": "[EOD] ORB LONG vol=1"
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-28",
-    "realized": -242.0,
+    "date": "2026-09-29",
+    "realized": 0,
     "unrealized": 0,
-    "total": -242.0,
-    "trades": 3,
-    "wins": 1,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -95.01
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -242.0,
-    "corretora": -95.01,
-    "divergencia": -146.99,
-    "tolerancia": 1.9,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
-    "ok": false,
+    "ok": true,
     "volume_corretora": 0,
     "volume_pernas": 0,
     "volume_ok": true
@@ -326,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2157376,
+    "idade_s": 2207968,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
