@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-09-30T16:00:14-03:00",
+  "updated_at": "2026-09-30T16:03:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-30T15:56:03-03:00",
+    "last_ea_event": "2026-09-30T16:01:04-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790794747,
+    "ea_heartbeat_epoch": 1790794927,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187840.0,
+        "bid": 187785.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2542222582,
-      "tipo": "buy_stop",
-      "preco": 188865.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_L",
-      "hora": "2026-09-30T10:30:00-03:00"
-    },
-    {
-      "ticket": 2542222717,
-      "tipo": "sell_stop",
-      "preco": 184495.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-09-30T10:30:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-09-30T10:00:00-03:00",
@@ -551,16 +534,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-30T16:01:04-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-30",
     "realized": -396.0,
-    "unrealized": 215.0,
-    "total": -181.0,
+    "unrealized": 197.0,
+    "total": -199.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 75134.0,
+    "exposure": 75116.0,
     "open_legs": 1,
     "broker_realized": -50.99
   },
@@ -601,7 +590,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2319562,
+    "idade_s": 2319737,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -615,11 +604,11 @@
       "side": "SHORT",
       "entry_time": "2026-09-30T10:09:15-03:00",
       "entry_price": 187590.0,
-      "current_price": 187840.0,
+      "current_price": 187785.0,
       "qty": 1.0,
-      "notional": 37568.0,
-      "pnl": -50.0,
-      "minutos": 351.0
+      "notional": 37557.0,
+      "pnl": -39.0,
+      "minutos": 353.9
     },
     {
       "symbol": "WINV26",
@@ -628,13 +617,13 @@
       "side": "LONG",
       "entry_time": "2026-09-30T11:45:16-03:00",
       "entry_price": 187030.0,
-      "current_price": 187840.0,
+      "current_price": 187785.0,
       "qty": 1.0,
-      "notional": 37568.0,
-      "pnl": 162.0,
-      "pnl_liq_est": 144.76,
-      "pnl_pct": 0.433,
-      "minutos": 255.0
+      "notional": 37557.0,
+      "pnl": 151.0,
+      "pnl_liq_est": 133.76,
+      "pnl_pct": 0.404,
+      "minutos": 257.9
     }
   ],
   "stats_modulo": [
