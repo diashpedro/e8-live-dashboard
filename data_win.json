@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-30T16:09:10-03:00",
+  "updated_at": "2026-09-30T16:12:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-30T16:06:05-03:00",
+    "last_ea_event": "2026-09-30T16:11:06-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790795287,
+    "ea_heartbeat_epoch": 1790795467,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -546,6 +546,12 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-30T16:11:06-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
@@ -596,7 +602,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2320098,
+    "idade_s": 2320279,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -614,7 +620,7 @@
       "qty": 1.0,
       "notional": 37578.0,
       "pnl": -60.0,
-      "minutos": 359.9
+      "minutos": 362.9
     },
     {
       "symbol": "WINV26",
@@ -629,7 +635,7 @@
       "pnl": 172.0,
       "pnl_liq_est": 154.75,
       "pnl_pct": 0.46,
-      "minutos": 263.9
+      "minutos": 266.9
     }
   ],
   "stats_modulo": [
