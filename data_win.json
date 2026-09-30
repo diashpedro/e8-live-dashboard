@@ -1,118 +1,39 @@
 {
-  "updated_at": "2026-09-29T18:57:06-03:00",
+  "updated_at": "2026-09-30T09:00:21-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-29T17:40:00-03:00",
+    "last_ea_event": "2026-09-30T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790718967,
+    "ea_heartbeat_epoch": 1790769547,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 184940.0,
+        "bid": 203220.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-09-29T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=183580.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-29T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=182670.00 (SHORT)"
-    },
-    {
-      "hora": "2026-09-29T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "T11 climax",
-      "texto": "[PY] ARMADO BRK-20260929-148a | t11_climax_g148a long 1 @ 183590 | stop 183030 alvo 185830"
-    },
-    {
-      "hora": "2026-09-29T10:03:56-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.28 16:50 -> corte de HOJE (-15min): 2026.09.29 16:35"
-    },
-    {
-      "hora": "2026-09-29T10:28:37-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB SHORT entry=182670.00 stop=184956.43 R=2286.43"
-    },
-    {
-      "hora": "2026-09-29T10:30:00-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=185120.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-29T12:15:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=183435.00 (LONG)"
-    },
-    {
-      "hora": "2026-09-29T12:36:19-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=183435.00 stop=182715.00 R=720.00"
-    },
-    {
-      "hora": "2026-09-29T14:37:03-03:00",
-      "tipo": "saida",
-      "modulo": "VolBreak",
-      "texto": "[EXIT] VB SHORT vol=1 motivo=trail"
-    },
-    {
-      "hora": "2026-09-29T16:40:01-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-09-29T17:00:03-03:00",
-      "tipo": "entrada",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] EXECUTADO IM-20260929 | intramom long 1 a mercado | stop 179368 alvo 201557"
-    },
-    {
-      "hora": "2026-09-29T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "Momentum intradiario",
-      "texto": "[PY] FECHADA intramom por eod | -135 pts | PnL py dia R$ -27.00"
-    },
-    {
-      "hora": "2026-09-29T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VWAP",
-      "texto": "[EOD] VW LONG vol=1"
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-09-29",
-    "realized": 6.0,
+    "date": "2026-09-30",
+    "realized": 0,
     "unrealized": 0,
-    "total": 6.0,
-    "trades": 3,
-    "wins": 1,
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": 6.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": 6.0,
-    "corretora": 6.0,
-    "divergencia": 0.0,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
     "tolerancia": 1.0,
     "comparavel": true,
     "ok": true,
@@ -146,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2243774,
+    "idade_s": 2294369,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
