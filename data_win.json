@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-30T10:03:12-03:00",
+  "updated_at": "2026-09-30T10:06:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-30T10:00:00-03:00",
+    "last_ea_event": "2026-09-30T10:03:55-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790773327,
+    "ea_heartbeat_epoch": 1790773507,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188035.0,
+        "bid": 187975.0,
         "ok": true
       }
     ],
@@ -61,6 +61,12 @@
       "tipo": "entrada",
       "modulo": "V02 reversao climatica",
       "texto": "[PY] ARMADO BRK-20260930-003a | v02_reversao_climatica_g003a short 1 @ 187590 | stop 188865 alvo 182490"
+    },
+    {
+      "hora": "2026-09-30T10:03:55-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.09.29 16:50 -> corte de HOJE (-15min): 2026.09.30 16:35"
     }
   ],
   "today": {
@@ -111,7 +117,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2298140,
+    "idade_s": 2298319,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
