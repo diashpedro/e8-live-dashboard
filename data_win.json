@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-30T13:21:10-03:00",
+  "updated_at": "2026-09-30T13:24:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-09-30T13:20:03-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790785207,
+    "ea_heartbeat_epoch": 1790785387,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187035.0,
+        "bid": 187195.0,
         "ok": true
       }
     ],
@@ -280,11 +280,11 @@
   "today": {
     "date": "2026-09-30",
     "realized": -396.0,
-    "unrealized": -105.0,
-    "total": -501.0,
+    "unrealized": -39.0,
+    "total": -435.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 74814.0,
+    "exposure": 74880.0,
     "open_legs": 1,
     "broker_realized": -50.99
   },
@@ -325,7 +325,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2310018,
+    "idade_s": 2310197,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -339,11 +339,11 @@
       "side": "SHORT",
       "entry_time": "2026-09-30T10:09:15-03:00",
       "entry_price": 187590.0,
-      "current_price": 187035.0,
+      "current_price": 187195.0,
       "qty": 1.0,
-      "notional": 37407.0,
-      "pnl": 111.0,
-      "minutos": 191.9
+      "notional": 37439.0,
+      "pnl": 79.0,
+      "minutos": 194.9
     },
     {
       "symbol": "WINV26",
@@ -352,13 +352,13 @@
       "side": "LONG",
       "entry_time": "2026-09-30T11:45:16-03:00",
       "entry_price": 187030.0,
-      "current_price": 187035.0,
+      "current_price": 187195.0,
       "qty": 1.0,
-      "notional": 37407.0,
-      "pnl": 1.0,
-      "pnl_liq_est": -16.21,
-      "pnl_pct": 0.003,
-      "minutos": 95.9
+      "notional": 37439.0,
+      "pnl": 33.0,
+      "pnl_liq_est": 15.79,
+      "pnl_pct": 0.088,
+      "minutos": 98.9
     }
   ],
   "stats_modulo": [
