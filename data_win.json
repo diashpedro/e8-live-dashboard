@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-30T14:24:08-03:00",
+  "updated_at": "2026-09-30T14:27:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-30T14:20:16-03:00",
+    "last_ea_event": "2026-09-30T14:25:16-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790788987,
+    "ea_heartbeat_epoch": 1790789167,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187750.0,
+        "bid": 187675.0,
         "ok": true
       }
     ],
@@ -347,16 +347,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-09-30T14:25:16-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=2 contratos, EA acha 0 (python 0 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-30",
     "realized": -396.0,
-    "unrealized": 181.0,
-    "total": -215.0,
+    "unrealized": 151.0,
+    "total": -245.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 75100.0,
+    "exposure": 75070.0,
     "open_legs": 1,
     "broker_realized": -50.99
   },
@@ -397,7 +403,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2313796,
+    "idade_s": 2313977,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -411,11 +417,11 @@
       "side": "SHORT",
       "entry_time": "2026-09-30T10:09:15-03:00",
       "entry_price": 187590.0,
-      "current_price": 187750.0,
+      "current_price": 187675.0,
       "qty": 1.0,
-      "notional": 37550.0,
-      "pnl": -32.0,
-      "minutos": 254.9
+      "notional": 37535.0,
+      "pnl": -17.0,
+      "minutos": 257.9
     },
     {
       "symbol": "WINV26",
@@ -424,13 +430,13 @@
       "side": "LONG",
       "entry_time": "2026-09-30T11:45:16-03:00",
       "entry_price": 187030.0,
-      "current_price": 187750.0,
+      "current_price": 187675.0,
       "qty": 1.0,
-      "notional": 37550.0,
-      "pnl": 144.0,
-      "pnl_liq_est": 126.76,
-      "pnl_pct": 0.385,
-      "minutos": 158.9
+      "notional": 37535.0,
+      "pnl": 129.0,
+      "pnl_liq_est": 111.76,
+      "pnl_pct": 0.345,
+      "minutos": 161.9
     }
   ],
   "stats_modulo": [
