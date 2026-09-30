@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-30T11:12:11-03:00",
+  "updated_at": "2026-09-30T11:15:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-09-30T10:45:00-03:00",
+    "last_ea_event": "2026-09-30T11:14:38-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790777467,
+    "ea_heartbeat_epoch": 1790777647,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 186565.0,
+        "bid": 186740.0,
         "ok": true
       }
     ],
-    "pendentes": 4
+    "pendentes": 2
   },
   "pendentes_detalhe": [
     {
@@ -33,22 +33,6 @@
       "volume": 1.0,
       "comment": "WEA_ORB_S",
       "hora": "2026-09-30T10:30:00-03:00"
-    },
-    {
-      "ticket": 2542342845,
-      "tipo": "buy_stop",
-      "preco": 186715.0,
-      "volume": 1.0,
-      "comment": "BRK-20260930-146a",
-      "hora": "2026-09-30T10:45:00-03:00"
-    },
-    {
-      "ticket": 2542342959,
-      "tipo": "buy_stop",
-      "preco": 186715.0,
-      "volume": 1.0,
-      "comment": "BRK-20260930-148a",
-      "hora": "2026-09-30T10:45:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -117,29 +101,35 @@
       "tipo": "entrada",
       "modulo": "T11 climax",
       "texto": "[PY] ARMADO BRK-20260930-148a | t11_climax_g148a long 1 @ 186715 | stop 185525 alvo 191475"
+    },
+    {
+      "hora": "2026-09-30T11:14:38-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-1 contratos, EA acha -3 (python -3 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-09-30",
     "realized": 0,
-    "unrealized": 215.0,
-    "total": 215.0,
+    "unrealized": 34.67,
+    "total": 34.67,
     "trades": 0,
     "wins": 0,
-    "exposure": 111933.0,
+    "exposure": 37348.0,
     "open_legs": 1,
-    "broker_realized": 0.0
+    "broker_realized": 79.34
   },
   "reconciliacao": {
     "painel": 0,
-    "corretora": 0.0,
-    "divergencia": 0.0,
-    "tolerancia": 1.0,
+    "corretora": 79.34,
+    "divergencia": -79.34,
+    "tolerancia": 1.59,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -3.0,
+    "volume_corretora": -1.0,
     "volume_pernas": -3.0,
-    "volume_ok": true
+    "volume_ok": false
   },
   "cumulative": {
     "pnl": -3275.0,
@@ -167,7 +157,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2302279,
+    "idade_s": 2302460,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -181,11 +171,11 @@
       "side": "SHORT",
       "entry_time": "2026-09-30T10:09:15-03:00",
       "entry_price": 187590.0,
-      "current_price": 186565.0,
+      "current_price": 186740.0,
       "qty": 1.0,
-      "notional": 37313.0,
-      "pnl": 205.0,
-      "minutos": 62.9
+      "notional": 37348.0,
+      "pnl": 170.0,
+      "minutos": 65.9
     },
     {
       "symbol": "WINV26",
@@ -194,13 +184,13 @@
       "side": "SHORT",
       "entry_time": "2026-09-30T10:09:18-03:00",
       "entry_price": 186575.0,
-      "current_price": 186565.0,
+      "current_price": 186740.0,
       "qty": 2.0,
-      "notional": 74626.0,
-      "pnl": 4.0,
-      "pnl_liq_est": -30.33,
-      "pnl_pct": 0.005,
-      "minutos": 62.9
+      "notional": 74696.0,
+      "pnl": -66.0,
+      "pnl_liq_est": -100.34,
+      "pnl_pct": -0.088,
+      "minutos": 65.9
     }
   ],
   "stats_modulo": [
@@ -230,14 +220,14 @@
     },
     {
       "modulo": "T11_climax",
-      "n": 2,
-      "soma": -205.0,
-      "media": -102.5,
-      "ep": 13.5,
-      "t": -7.59,
-      "ic_baixo": -128.96,
-      "ic_alto": -76.04,
-      "acertos": 0,
+      "n": 4,
+      "soma": -125.66,
+      "media": -31.41,
+      "ep": 41.41,
+      "t": -0.76,
+      "ic_baixo": -112.58,
+      "ic_alto": 49.75,
+      "acertos": 2,
       "conclusivo": false
     },
     {
