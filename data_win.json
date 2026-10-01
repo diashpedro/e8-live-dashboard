@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-01T14:54:11-03:00",
+  "updated_at": "2026-10-01T14:57:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-01T14:25:06-03:00",
+    "last_ea_event": "2026-10-01T14:56:48-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790877189,
+    "ea_heartbeat_epoch": 1790877369,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187535.0,
+        "bid": 187480.0,
         "ok": true
       }
     ],
@@ -174,6 +174,96 @@
       "tipo": "saida",
       "modulo": "ORB",
       "texto": "[EXIT] ORB SHORT vol=2 motivo=trail"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=49.78 (nivel teorico 49.7772) vol=100 ticket=2544226717"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=49.73 (nivel teorico 49.7300) vol=100 ticket=2544226719"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=49.68 (nivel teorico 49.6828) vol=100 ticket=2544226720"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna A limite=49.75 (nivel teorico 49.7466) vol=100 ticket=2544226723"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna B limite=49.69 (nivel teorico 49.6900) vol=100 ticket=2544226724"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna C limite=49.63 (nivel teorico 49.6334) vol=100 ticket=2544226726"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 LONG perna A limite=49.74 (nivel teorico 49.7352) vol=100 ticket=2544226728"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 LONG perna B limite=49.68 (nivel teorico 49.6750) vol=100 ticket=2544226730"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 LONG perna C limite=49.61 (nivel teorico 49.6148) vol=100 ticket=2544226732"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 LONG perna A limite=49.74 (nivel teorico 49.7352) vol=100 ticket=2544226733"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 LONG perna B limite=49.68 (nivel teorico 49.6750) vol=100 ticket=2544226734"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 LONG perna C limite=49.61 (nivel teorico 49.6148) vol=100 ticket=2544226736"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 LONG perna A limite=49.74 (nivel teorico 49.7352) vol=100 ticket=2544226737"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 LONG perna B limite=49.68 (nivel teorico 49.6750) vol=100 ticket=2544226739"
+    },
+    {
+      "hora": "2026-10-01T14:56:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 LONG perna C limite=49.61 (nivel teorico 49.6148) vol=100 ticket=2544226741"
     }
   ],
   "today": {
@@ -224,7 +314,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2401999,
+    "idade_s": 2402178,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
