@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-01T12:00:19-03:00",
+  "updated_at": "2026-10-01T12:03:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-01T11:24:25-03:00",
+    "last_ea_event": "2026-10-01T12:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790866749,
+    "ea_heartbeat_epoch": 1790866929,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 185995.0,
+        "bid": 185795.0,
         "ok": true
       }
     ],
@@ -153,16 +153,22 @@
       "tipo": "entrada",
       "modulo": null,
       "texto": "[ORDER] W5 LONG perna C limite=49.63 (nivel teorico 49.6290) vol=100 ticket=2543728011"
+    },
+    {
+      "hora": "2026-10-01T12:00:00-03:00",
+      "tipo": "entrada",
+      "modulo": "T11 climax",
+      "texto": "[PY] ARMADO BRK-20261001-146a | t11_climax_g146a long 1 @ 187010 | stop 185855 alvo 191630"
     }
   ],
   "today": {
     "date": "2026-10-01",
     "realized": 0,
-    "unrealized": 772.0,
-    "total": 772.0,
+    "unrealized": 889.0,
+    "total": 889.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 111597.0,
+    "exposure": 111480.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -203,7 +209,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2391567,
+    "idade_s": 2391741,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -217,13 +223,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:04:25-03:00",
       "entry_price": 187415.0,
-      "current_price": 185995.0,
+      "current_price": 185795.0,
       "qty": 1.0,
-      "notional": 37199.0,
-      "pnl": 284.0,
-      "pnl_liq_est": 266.82,
-      "pnl_pct": 0.758,
-      "minutos": 115.9
+      "notional": 37159.0,
+      "pnl": 324.0,
+      "pnl_liq_est": 306.83,
+      "pnl_pct": 0.864,
+      "minutos": 118.8
     },
     {
       "symbol": "WINV26",
@@ -232,13 +238,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:30:01-03:00",
       "entry_price": 187235.0,
-      "current_price": 185995.0,
+      "current_price": 185795.0,
       "qty": 1.0,
-      "notional": 37199.0,
-      "pnl": 248.0,
-      "pnl_liq_est": 230.83,
-      "pnl_pct": 0.662,
-      "minutos": 90.3
+      "notional": 37159.0,
+      "pnl": 288.0,
+      "pnl_liq_est": 270.84,
+      "pnl_pct": 0.769,
+      "minutos": 93.2
     },
     {
       "symbol": "WINV26",
@@ -247,13 +253,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:38:13-03:00",
       "entry_price": 187195.0,
-      "current_price": 185995.0,
+      "current_price": 185795.0,
       "qty": 1.0,
-      "notional": 37199.0,
-      "pnl": 240.0,
-      "pnl_liq_est": 222.83,
-      "pnl_pct": 0.641,
-      "minutos": 82.1
+      "notional": 37159.0,
+      "pnl": 280.0,
+      "pnl_liq_est": 262.84,
+      "pnl_pct": 0.748,
+      "minutos": 85.0
     }
   ],
   "stats_modulo": [
