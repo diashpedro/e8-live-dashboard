@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-01T10:48:09-03:00",
+  "updated_at": "2026-10-01T10:51:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-01T10:38:13-03:00",
+    "last_ea_event": "2026-10-01T10:49:19-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790862429,
+    "ea_heartbeat_epoch": 1790862609,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187865.0,
+        "bid": 187890.0,
         "ok": true
       }
     ],
@@ -72,16 +72,52 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[FILL] VW SHORT entry=187195.00 stop=188516.07 R=1321.07"
+    },
+    {
+      "hora": "2026-10-01T10:49:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=49.56 (nivel teorico 49.5564) vol=100 ticket=2543582908"
+    },
+    {
+      "hora": "2026-10-01T10:49:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=49.48 (nivel teorico 49.4750) vol=100 ticket=2543582912"
+    },
+    {
+      "hora": "2026-10-01T10:49:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=49.39 (nivel teorico 49.3936) vol=100 ticket=2543582915"
+    },
+    {
+      "hora": "2026-10-01T10:49:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna A limite=49.56 (nivel teorico 49.5564) vol=100 ticket=2543582916"
+    },
+    {
+      "hora": "2026-10-01T10:49:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna B limite=49.48 (nivel teorico 49.4750) vol=100 ticket=2543582917"
+    },
+    {
+      "hora": "2026-10-01T10:49:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna C limite=49.39 (nivel teorico 49.3936) vol=100 ticket=2543582918"
     }
   ],
   "today": {
     "date": "2026-10-01",
     "realized": 0,
-    "unrealized": -356.0,
-    "total": -356.0,
+    "unrealized": -365.0,
+    "total": -365.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 112725.0,
+    "exposure": 112734.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -122,7 +158,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2387237,
+    "idade_s": 2387417,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -136,13 +172,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:04:25-03:00",
       "entry_price": 187415.0,
-      "current_price": 187865.0,
+      "current_price": 187890.0,
       "qty": 1.0,
-      "notional": 37573.0,
-      "pnl": -90.0,
-      "pnl_liq_est": -107.26,
-      "pnl_pct": -0.24,
-      "minutos": 43.7
+      "notional": 37578.0,
+      "pnl": -95.0,
+      "pnl_liq_est": -112.26,
+      "pnl_pct": -0.253,
+      "minutos": 46.7
     },
     {
       "symbol": "WINV26",
@@ -151,13 +187,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:30:01-03:00",
       "entry_price": 187235.0,
-      "current_price": 187865.0,
+      "current_price": 187890.0,
       "qty": 1.0,
-      "notional": 37573.0,
-      "pnl": -126.0,
-      "pnl_liq_est": -143.25,
-      "pnl_pct": -0.336,
-      "minutos": 18.1
+      "notional": 37578.0,
+      "pnl": -131.0,
+      "pnl_liq_est": -148.26,
+      "pnl_pct": -0.35,
+      "minutos": 21.1
     },
     {
       "symbol": "WINV26",
@@ -166,13 +202,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:38:13-03:00",
       "entry_price": 187195.0,
-      "current_price": 187865.0,
+      "current_price": 187890.0,
       "qty": 1.0,
-      "notional": 37573.0,
-      "pnl": -134.0,
-      "pnl_liq_est": -151.25,
-      "pnl_pct": -0.358,
-      "minutos": 9.9
+      "notional": 37578.0,
+      "pnl": -139.0,
+      "pnl_liq_est": -156.25,
+      "pnl_pct": -0.371,
+      "minutos": 12.9
     }
   ],
   "stats_modulo": [
