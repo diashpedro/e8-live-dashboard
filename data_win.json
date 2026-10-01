@@ -1,32 +1,23 @@
 {
-  "updated_at": "2026-10-01T10:36:08-03:00",
+  "updated_at": "2026-10-01T10:39:08-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-01T10:35:00-03:00",
+    "last_ea_event": "2026-10-01T10:38:13-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790861709,
+    "ea_heartbeat_epoch": 1790861889,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 187725.0,
+        "bid": 187215.0,
         "ok": true
       }
     ],
-    "pendentes": 1
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2543508520,
-      "tipo": "sell_stop",
-      "preco": 187195.0,
-      "volume": 1.0,
-      "comment": "WEA_VW_S",
-      "hora": "2026-10-01T10:35:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-10-01T10:00:05-03:00",
@@ -75,16 +66,22 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[ORDER] WEA_VW_S stop=187195.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-01T10:38:13-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW SHORT entry=187195.00 stop=188516.07 R=1321.07"
     }
   ],
   "today": {
     "date": "2026-10-01",
     "realized": 0,
-    "unrealized": -158.0,
-    "total": -158.0,
+    "unrealized": 31.0,
+    "total": 31.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 75088.0,
+    "exposure": 112338.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -95,8 +92,8 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -2.0,
-    "volume_pernas": -2.0,
+    "volume_corretora": -3.0,
+    "volume_pernas": -3.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -125,7 +122,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2386517,
+    "idade_s": 2386696,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -139,13 +136,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:04:25-03:00",
       "entry_price": 187415.0,
-      "current_price": 187725.0,
+      "current_price": 187215.0,
       "qty": 1.0,
-      "notional": 37545.0,
-      "pnl": -62.0,
-      "pnl_liq_est": -79.26,
-      "pnl_pct": -0.165,
-      "minutos": 31.7
+      "notional": 37443.0,
+      "pnl": 40.0,
+      "pnl_liq_est": 22.77,
+      "pnl_pct": 0.107,
+      "minutos": 34.7
     },
     {
       "symbol": "WINV26",
@@ -154,13 +151,28 @@
       "side": "SHORT",
       "entry_time": "2026-10-01T10:30:01-03:00",
       "entry_price": 187235.0,
-      "current_price": 187725.0,
+      "current_price": 187215.0,
       "qty": 1.0,
-      "notional": 37545.0,
-      "pnl": -98.0,
-      "pnl_liq_est": -115.25,
-      "pnl_pct": -0.262,
-      "minutos": 6.1
+      "notional": 37443.0,
+      "pnl": 4.0,
+      "pnl_liq_est": -13.22,
+      "pnl_pct": 0.011,
+      "minutos": 9.1
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "SHORT",
+      "entry_time": "2026-10-01T10:38:13-03:00",
+      "entry_price": 187195.0,
+      "current_price": 187215.0,
+      "qty": 1.0,
+      "notional": 37443.0,
+      "pnl": -4.0,
+      "pnl_liq_est": -21.22,
+      "pnl_pct": -0.011,
+      "minutos": 0.9
     }
   ],
   "stats_modulo": [
