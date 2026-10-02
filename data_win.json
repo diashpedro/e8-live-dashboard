@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-02T10:03:10-03:00",
+  "updated_at": "2026-10-02T10:06:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-02T10:00:00-03:00",
+    "last_ea_event": "2026-10-02T10:05:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790946129,
+    "ea_heartbeat_epoch": 1790946309,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 191205.0,
+        "bid": 191130.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 3
   },
   "pendentes_detalhe": [
     {
@@ -33,6 +33,14 @@
       "volume": 1.0,
       "comment": "WEA_VB_S",
       "hora": "2026-10-02T10:00:00-03:00"
+    },
+    {
+      "ticket": 2545138340,
+      "tipo": "buy_stop",
+      "preco": 191480.0,
+      "volume": 1.0,
+      "comment": "WEA_VW_L",
+      "hora": "2026-10-02T10:05:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -53,6 +61,12 @@
       "tipo": "entrada",
       "modulo": "VolBreak",
       "texto": "[ORDER] WEA_VB_S stop=190695.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-02T10:05:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_L stop=191480.00 (LONG)"
     }
   ],
   "today": {
@@ -103,7 +117,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2470938,
+    "idade_s": 2471118,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
