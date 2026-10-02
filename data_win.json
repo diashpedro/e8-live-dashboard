@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-02T10:39:11-03:00",
+  "updated_at": "2026-10-02T10:42:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-02T10:36:56-03:00",
+    "last_ea_event": "2026-10-02T10:40:11-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790948216,
+    "ea_heartbeat_epoch": 1790948456,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188425.0,
+        "bid": 188570.0,
         "ok": true
       }
     ],
@@ -66,16 +66,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[RESIDUO] posicao -1, das quais -1 sao pernas legitimas (Python + nativas)"
+    },
+    {
+      "hora": "2026-10-02T10:40:11-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.01 16:50 -> corte de HOJE (-15min): 2026.10.02 16:35"
     }
   ],
   "today": {
     "date": "2026-10-02",
     "realized": 0,
-    "unrealized": 449.0,
-    "total": 449.0,
+    "unrealized": 426.0,
+    "total": 426.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37690.0,
+    "exposure": 37713.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -116,7 +122,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2473099,
+    "idade_s": 2473279,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -130,13 +136,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-02T10:10:52-03:00",
       "entry_price": 190695.0,
-      "current_price": 188425.0,
+      "current_price": 188570.0,
       "qty": 1.0,
-      "notional": 37685.0,
-      "pnl": 454.0,
-      "pnl_liq_est": 436.56,
-      "pnl_pct": 1.19,
-      "minutos": 28.3
+      "notional": 37714.0,
+      "pnl": 425.0,
+      "pnl_liq_est": 407.55,
+      "pnl_pct": 1.114,
+      "minutos": 31.3
     }
   ],
   "stats_modulo": [
