@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-02T15:21:06-03:00",
+  "updated_at": "2026-10-02T15:24:08-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-02T15:20:56-03:00",
+    "last_ea_event": "2026-10-02T15:23:08-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
@@ -15,42 +15,42 @@
       },
       {
         "symbol": "VALE3",
-        "bid": 71.0,
+        "bid": 70.96,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 44.33,
+        "bid": 44.36,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 15.61,
+        "bid": 15.62,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 34.82,
+        "bid": 34.83,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 1
   },
   "account": {
     "balance": 981618.94,
-    "equity": 981620.94,
+    "equity": 981624.94,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-10-02",
     "realized": 0,
-    "unrealized": 1.0,
-    "total": 1.0,
+    "unrealized": 4.0,
+    "total": 4.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 5084.0,
-    "open_legs": 1,
+    "exposure": 10168.0,
+    "open_legs": 2,
     "broker_realized": 0.0
   },
   "reconciliacao": {
@@ -60,7 +60,7 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "pernas_painel": 1,
+    "pernas_painel": 2,
     "posicoes_corretora": 1,
     "saidas_sem_par": []
   },
@@ -100,7 +100,22 @@
       "pnl": 1.0,
       "pnl_liq_est": -1.34,
       "pnl_pct": 0.02,
-      "minutos": 0.6
+      "minutos": 3.7
+    },
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "B",
+      "side": "LONG",
+      "entry_time": "2026-10-02T15:23:07-03:00",
+      "entry_price": 50.81,
+      "current_price": 50.84,
+      "qty": 100.0,
+      "notional": 5084.0,
+      "pnl": 3.0,
+      "pnl_liq_est": 0.66,
+      "pnl_pct": 0.059,
+      "minutos": 1.0
     }
   ],
   "daily_series": [
