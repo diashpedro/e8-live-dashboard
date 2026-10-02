@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-02T10:51:09-03:00",
+  "updated_at": "2026-10-02T10:54:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-02T10:45:00-03:00",
+    "last_ea_event": "2026-10-02T10:53:41-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790948996,
+    "ea_heartbeat_epoch": 1790949176,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 188195.0,
+        "bid": 187840.0,
         "ok": true
       }
     ],
@@ -87,16 +87,22 @@
       "tipo": "entrada",
       "modulo": "T11 climax",
       "texto": "[PY] ARMADO BRK-20261002-148a | t11_climax_g148a long 1 @ 189795 | stop 188280 alvo 195855"
+    },
+    {
+      "hora": "2026-10-02T10:53:41-03:00",
+      "tipo": "entrada",
+      "modulo": "VolBreak",
+      "texto": "[PIR] VB carga 1 @ 188091.43 vol=2"
     }
   ],
   "today": {
     "date": "2026-10-02",
     "realized": 0,
-    "unrealized": 499.0,
-    "total": 499.0,
+    "unrealized": 612.0,
+    "total": 612.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 37640.0,
+    "exposure": 75140.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -107,8 +113,8 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -1.0,
-    "volume_pernas": -1.0,
+    "volume_corretora": -2.0,
+    "volume_pernas": -2.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -137,7 +143,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2473817,
+    "idade_s": 2473999,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -150,14 +156,14 @@
       "strategy_label": "VolBreak",
       "side": "SHORT",
       "entry_time": "2026-10-02T10:10:52-03:00",
-      "entry_price": 190695.0,
-      "current_price": 188195.0,
-      "qty": 1.0,
-      "notional": 37639.0,
-      "pnl": 500.0,
-      "pnl_liq_est": 482.57,
-      "pnl_pct": 1.311,
-      "minutos": 40.3
+      "entry_price": 189380.0,
+      "current_price": 187840.0,
+      "qty": 2.0,
+      "notional": 75136.0,
+      "pnl": 616.0,
+      "pnl_liq_est": 581.3,
+      "pnl_pct": 0.813,
+      "minutos": 43.3
     }
   ],
   "stats_modulo": [
