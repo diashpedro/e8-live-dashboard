@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-02T14:06:13-03:00",
+  "updated_at": "2026-10-02T14:09:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-02T13:44:34-03:00",
+    "last_ea_event": "2026-10-02T14:08:33-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1790960696,
+    "ea_heartbeat_epoch": 1790960876,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 189520.0,
+        "bid": 189645.0,
         "ok": true
       }
     ],
@@ -252,33 +252,75 @@
       "tipo": "saida",
       "modulo": "VWAP",
       "texto": "[EXIT] VW SHORT vol=1 motivo=stop"
+    },
+    {
+      "hora": "2026-10-02T14:06:04-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=50.37 (nivel teorico 50.3698) vol=100 ticket=2546202060"
+    },
+    {
+      "hora": "2026-10-02T14:06:04-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=50.35 (nivel teorico 50.3450) vol=100 ticket=2546202065"
+    },
+    {
+      "hora": "2026-10-02T14:06:05-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=50.32 (nivel teorico 50.3202) vol=100 ticket=2546202101"
+    },
+    {
+      "hora": "2026-10-02T14:06:05-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna A limite=50.37 (nivel teorico 50.3698) vol=100 ticket=2546202105"
+    },
+    {
+      "hora": "2026-10-02T14:06:05-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna B limite=50.35 (nivel teorico 50.3450) vol=100 ticket=2546202111"
+    },
+    {
+      "hora": "2026-10-02T14:06:05-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna C limite=50.32 (nivel teorico 50.3202) vol=100 ticket=2546202113"
+    },
+    {
+      "hora": "2026-10-02T14:08:33-03:00",
+      "tipo": "saida",
+      "modulo": "VolBreak",
+      "texto": "[EXIT] VB SHORT vol=2 motivo=trail"
     }
   ],
   "today": {
     "date": "2026-10-02",
-    "realized": -308.0,
-    "unrealized": -633.75,
-    "total": -941.75,
-    "trades": 1,
+    "realized": -394.0,
+    "unrealized": -235.25,
+    "total": -629.25,
+    "trades": 2,
     "wins": 0,
-    "exposure": 113715.0,
+    "exposure": 37929.0,
     "open_legs": 1,
-    "broker_realized": -113.25
+    "broker_realized": -563.75
   },
   "reconciliacao": {
-    "painel": -308.0,
-    "corretora": -113.25,
-    "divergencia": -194.75,
-    "tolerancia": 2.27,
+    "painel": -394.0,
+    "corretora": -563.75,
+    "divergencia": 169.75,
+    "tolerancia": 11.28,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": -3.0,
-    "volume_pernas": -3.0,
+    "volume_corretora": -1.0,
+    "volume_pernas": -1.0,
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -4111.0,
-    "trades": 58,
+    "pnl": -4197.0,
+    "trades": 59,
     "wins": 20,
     "since": "2026-09-04",
     "days": 20,
@@ -302,7 +344,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2485521,
+    "idade_s": 2485700,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -311,33 +353,18 @@
   "open_positions": [
     {
       "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-10-02T10:10:52-03:00",
-      "entry_price": 189380.0,
-      "current_price": 189520.0,
-      "qty": 2.0,
-      "notional": 75808.0,
-      "pnl": -56.0,
-      "pnl_liq_est": -90.86,
-      "pnl_pct": -0.074,
-      "minutos": 235.4
-    },
-    {
-      "symbol": "WINV26",
       "strategy": "ORB",
       "strategy_label": "ORB",
       "side": "SHORT",
       "entry_time": "2026-10-02T11:00:11-03:00",
       "entry_price": 187620.0,
-      "current_price": 189520.0,
+      "current_price": 189645.0,
       "qty": 1.0,
-      "notional": 37904.0,
-      "pnl": -380.0,
-      "pnl_liq_est": -397.35,
-      "pnl_pct": -1.013,
-      "minutos": 186.0
+      "notional": 37929.0,
+      "pnl": -405.0,
+      "pnl_liq_est": -422.35,
+      "pnl_pct": -1.079,
+      "minutos": 189.0
     }
   ],
   "stats_modulo": [
@@ -403,13 +430,13 @@
     },
     {
       "modulo": "VolBreak",
-      "n": 11,
-      "soma": -526.37,
-      "media": -47.85,
-      "ep": 32.37,
-      "t": -1.48,
-      "ic_baixo": -111.31,
-      "ic_alto": 15.6,
+      "n": 12,
+      "soma": -976.87,
+      "media": -81.41,
+      "ep": 44.71,
+      "t": -1.82,
+      "ic_baixo": -169.04,
+      "ic_alto": 6.23,
       "acertos": 5,
       "conclusivo": false
     },
@@ -598,13 +625,29 @@
     },
     {
       "date": "2026-10-02",
-      "pnl": -308.0,
-      "trades": 1,
+      "pnl": -394.0,
+      "trades": 2,
       "wins": 0,
-      "cum": -4111.0
+      "cum": -4197.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "SHORT",
+      "entry_time": "2026-10-02T10:10:52-03:00",
+      "exit_time": "2026-10-02T14:08:33-03:00",
+      "entry_price": 189380.0,
+      "exit_price": 189595.0,
+      "qty": 2.0,
+      "pnl": -86.0,
+      "pnl_bruto": -86.0,
+      "motivo": "trail",
+      "motivo_label": "Trailing",
+      "minutos": 237.7
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -1555,17 +1598,17 @@
     },
     {
       "strategy": "VolBreak",
-      "trades": 17,
+      "trades": 18,
       "wins": 2,
-      "pnl": -2199.0
+      "pnl": -2285.0
     }
   ],
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 58,
+      "trades": 59,
       "wins": 20,
-      "pnl": -4111.0
+      "pnl": -4197.0
     }
   ],
   "by_reason": [
@@ -1589,9 +1632,9 @@
     },
     {
       "reason": "Trailing",
-      "trades": 14,
+      "trades": 15,
       "wins": 0,
-      "pnl": -3557.0
+      "pnl": -3643.0
     }
   ]
 }
