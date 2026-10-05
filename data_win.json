@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-05T11:54:44-03:00",
+  "updated_at": "2026-10-05T11:57:14-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-05T11:30:00-03:00",
+    "last_ea_event": "2026-10-05T11:55:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791211712,
+    "ea_heartbeat_epoch": 1791212206,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -15,18 +15,9 @@
         "ok": true
       }
     ],
-    "pendentes": 1
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2548541744,
-      "tipo": "sell_stop",
-      "preco": 206995.0,
-      "volume": 1.0,
-      "comment": "WEA_VW_S",
-      "hora": "2026-10-05T11:50:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-10-05T09:30:36-03:00",
@@ -177,6 +168,42 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
+    },
+    {
+      "hora": "2026-10-05T11:54:44-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 2 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-10-05T11:54:46-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
+    },
+    {
+      "hora": "2026-10-05T11:54:46-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] pendente orfa #2548549989 cancelada em PETR4"
+    },
+    {
+      "hora": "2026-10-05T11:54:46-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] pendente orfa #2548549986 cancelada em PETR4"
+    },
+    {
+      "hora": "2026-10-05T11:54:46-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] pendente orfa #2548549983 cancelada em PETR4"
+    },
+    {
+      "hora": "2026-10-05T11:55:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
     }
   ],
   "today": {
@@ -227,7 +254,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2736832,
+    "idade_s": 2736982,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
