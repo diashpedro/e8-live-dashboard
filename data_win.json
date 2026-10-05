@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-05T16:18:14-03:00",
+  "updated_at": "2026-10-05T16:21:14-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-05T15:36:37-03:00",
+    "last_ea_event": "2026-10-05T16:19:17-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791227811,
+    "ea_heartbeat_epoch": 1791228051,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 209515.0,
+        "bid": 209510.0,
         "ok": true
       }
     ],
@@ -294,16 +294,52 @@
       "tipo": "entrada",
       "modulo": null,
       "texto": "[ORDER] W3 SHORT perna C limite=56.52 (nivel teorico 56.5208) vol=100 ticket=2549787820"
+    },
+    {
+      "hora": "2026-10-05T16:19:17-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna A limite=56.20 (nivel teorico 56.2017) vol=100 ticket=2549926589"
+    },
+    {
+      "hora": "2026-10-05T16:19:17-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna B limite=56.23 (nivel teorico 56.2300) vol=100 ticket=2549926591"
+    },
+    {
+      "hora": "2026-10-05T16:19:17-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna C limite=56.26 (nivel teorico 56.2583) vol=100 ticket=2549926593"
+    },
+    {
+      "hora": "2026-10-05T16:19:17-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna A limite=56.22 (nivel teorico 56.2170) vol=100 ticket=2549926600"
+    },
+    {
+      "hora": "2026-10-05T16:19:17-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna B limite=56.25 (nivel teorico 56.2500) vol=100 ticket=2549926601"
+    },
+    {
+      "hora": "2026-10-05T16:19:17-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna C limite=56.28 (nivel teorico 56.2830) vol=100 ticket=2549926604"
     }
   ],
   "today": {
     "date": "2026-10-05",
     "realized": -230.0,
-    "unrealized": 53.0,
-    "total": -177.0,
+    "unrealized": 50.0,
+    "total": -180.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 41903.0,
+    "exposure": 41900.0,
     "open_legs": 1,
     "broker_realized": -611.0
   },
@@ -344,7 +380,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2752642,
+    "idade_s": 2752822,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -358,13 +394,13 @@
       "side": "LONG",
       "entry_time": "2026-10-05T10:03:38-03:00",
       "entry_price": 209145.0,
-      "current_price": 209515.0,
+      "current_price": 209510.0,
       "qty": 1.0,
-      "notional": 41903.0,
-      "pnl": 74.0,
-      "pnl_liq_est": 54.74,
-      "pnl_pct": 0.177,
-      "minutos": 374.6
+      "notional": 41902.0,
+      "pnl": 73.0,
+      "pnl_liq_est": 53.74,
+      "pnl_pct": 0.175,
+      "minutos": 377.6
     },
     {
       "symbol": "WINV26",
@@ -373,13 +409,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-05T11:21:51-03:00",
       "entry_price": 207240.0,
-      "current_price": 209515.0,
+      "current_price": 209510.0,
       "qty": 1.0,
-      "notional": 41903.0,
-      "pnl": -455.0,
-      "pnl_liq_est": -474.17,
-      "pnl_pct": -1.098,
-      "minutos": 296.4
+      "notional": 41902.0,
+      "pnl": -454.0,
+      "pnl_liq_est": -473.17,
+      "pnl_pct": -1.095,
+      "minutos": 299.4
     },
     {
       "symbol": "WINV26",
@@ -388,13 +424,13 @@
       "side": "LONG",
       "entry_time": "2026-10-05T12:45:09-03:00",
       "entry_price": 209250.0,
-      "current_price": 209515.0,
+      "current_price": 209510.0,
       "qty": 1.0,
-      "notional": 41903.0,
-      "pnl": 53.0,
-      "pnl_liq_est": 33.74,
-      "pnl_pct": 0.127,
-      "minutos": 213.1
+      "notional": 41902.0,
+      "pnl": 52.0,
+      "pnl_liq_est": 32.74,
+      "pnl_pct": 0.124,
+      "minutos": 216.1
     }
   ],
   "stats_modulo": [
