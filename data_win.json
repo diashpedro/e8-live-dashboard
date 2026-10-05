@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-05T15:30:18-03:00",
+  "updated_at": "2026-10-05T15:33:17-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-10-05T15:15:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791224931,
+    "ea_heartbeat_epoch": 1791224991,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 209940.0,
+        "bid": 209245.0,
         "ok": true
       }
     ],
@@ -281,11 +281,11 @@
   "today": {
     "date": "2026-10-05",
     "realized": -230.0,
-    "unrealized": 138.0,
-    "total": -92.0,
+    "unrealized": 1.0,
+    "total": -229.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 41988.0,
+    "exposure": 41851.0,
     "open_legs": 1,
     "broker_realized": -611.0
   },
@@ -326,7 +326,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2749766,
+    "idade_s": 2749945,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -340,13 +340,13 @@
       "side": "LONG",
       "entry_time": "2026-10-05T10:03:38-03:00",
       "entry_price": 209145.0,
-      "current_price": 209940.0,
+      "current_price": 209245.0,
       "qty": 1.0,
-      "notional": 41988.0,
-      "pnl": 159.0,
-      "pnl_liq_est": 139.72,
-      "pnl_pct": 0.38,
-      "minutos": 326.7
+      "notional": 41849.0,
+      "pnl": 20.0,
+      "pnl_liq_est": 0.75,
+      "pnl_pct": 0.048,
+      "minutos": 329.7
     },
     {
       "symbol": "WINV26",
@@ -355,13 +355,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-05T11:21:51-03:00",
       "entry_price": 207240.0,
-      "current_price": 209940.0,
+      "current_price": 209245.0,
       "qty": 1.0,
-      "notional": 41988.0,
-      "pnl": -540.0,
-      "pnl_liq_est": -559.19,
-      "pnl_pct": -1.303,
-      "minutos": 248.5
+      "notional": 41849.0,
+      "pnl": -401.0,
+      "pnl_liq_est": -420.16,
+      "pnl_pct": -0.967,
+      "minutos": 251.4
     },
     {
       "symbol": "WINV26",
@@ -370,13 +370,13 @@
       "side": "LONG",
       "entry_time": "2026-10-05T12:45:09-03:00",
       "entry_price": 209250.0,
-      "current_price": 209940.0,
+      "current_price": 209245.0,
       "qty": 1.0,
-      "notional": 41988.0,
-      "pnl": 138.0,
-      "pnl_liq_est": 118.72,
-      "pnl_pct": 0.33,
-      "minutos": 165.2
+      "notional": 41849.0,
+      "pnl": -1.0,
+      "pnl_liq_est": -20.25,
+      "pnl_pct": -0.002,
+      "minutos": 168.1
     }
   ],
   "stats_modulo": [
