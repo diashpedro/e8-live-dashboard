@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-05T11:12:13-03:00",
+  "updated_at": "2026-10-05T11:15:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-05T10:45:21-03:00",
+    "last_ea_event": "2026-10-05T11:10:36-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791208417,
+    "ea_heartbeat_epoch": 1791209616,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 209890.0,
+        "bid": 209700.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 3
   },
   "pendentes_detalhe": [
     {
@@ -33,6 +33,14 @@
       "volume": 1.0,
       "comment": "WEA_ORB_S",
       "hora": "2026-10-05T11:10:36-03:00"
+    },
+    {
+      "ticket": 2548252479,
+      "tipo": "buy_stop",
+      "preco": 210070.0,
+      "volume": 1.0,
+      "comment": "WEA_VW_L",
+      "hora": "2026-10-05T11:15:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -125,16 +133,46 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
+    },
+    {
+      "hora": "2026-10-05T11:10:35-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-10-05T11:10:36-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] posicao 1, das quais 1 sao pernas legitimas (Python + nativas)"
+    },
+    {
+      "hora": "2026-10-05T11:10:36-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_L stop=211120.00 (LONG)"
+    },
+    {
+      "hora": "2026-10-05T11:10:36-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_S stop=207240.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-05T11:10:36-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
     }
   ],
   "today": {
     "date": "2026-10-05",
     "realized": -230.0,
-    "unrealized": 221.0,
-    "total": -9.0,
+    "unrealized": 182.0,
+    "total": -48.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 41979.0,
+    "exposure": 41940.0,
     "open_legs": 1,
     "broker_realized": -301.0
   },
@@ -175,7 +213,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2734281,
+    "idade_s": 2734464,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -189,13 +227,13 @@
       "side": "LONG",
       "entry_time": "2026-10-05T10:03:38-03:00",
       "entry_price": 209145.0,
-      "current_price": 209890.0,
+      "current_price": 209700.0,
       "qty": 1.0,
-      "notional": 41978.0,
-      "pnl": 149.0,
-      "pnl_liq_est": 129.72,
-      "pnl_pct": 0.356,
-      "minutos": 68.6
+      "notional": 41940.0,
+      "pnl": 111.0,
+      "pnl_liq_est": 91.73,
+      "pnl_pct": 0.265,
+      "minutos": 71.6
     }
   ],
   "stats_modulo": [
