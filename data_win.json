@@ -1,48 +1,23 @@
 {
-  "updated_at": "2026-10-05T11:21:12-03:00",
+  "updated_at": "2026-10-05T11:24:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-05T11:15:00-03:00",
+    "last_ea_event": "2026-10-05T11:22:32-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791209796,
+    "ea_heartbeat_epoch": 1791210152,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 207675.0,
+        "bid": 207265.0,
         "ok": true
       }
     ],
-    "pendentes": 3
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2548206815,
-      "tipo": "buy_stop",
-      "preco": 211120.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_L",
-      "hora": "2026-10-05T11:10:36-03:00"
-    },
-    {
-      "ticket": 2548206819,
-      "tipo": "sell_stop",
-      "preco": 207240.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-10-05T11:10:36-03:00"
-    },
-    {
-      "ticket": 2548252479,
-      "tipo": "buy_stop",
-      "preco": 210070.0,
-      "volume": 1.0,
-      "comment": "WEA_VW_L",
-      "hora": "2026-10-05T11:15:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-10-05T09:30:36-03:00",
@@ -175,28 +150,40 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
+    },
+    {
+      "hora": "2026-10-05T11:22:31-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 2 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-10-05T11:22:32-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
     }
   ],
   "today": {
     "date": "2026-10-05",
     "realized": -230.0,
-    "unrealized": -223.0,
-    "total": -453.0,
+    "unrealized": 0,
+    "total": -230.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 41535.0,
-    "open_legs": 1,
-    "broker_realized": -301.0
+    "exposure": 0,
+    "open_legs": 0,
+    "broker_realized": -611.0
   },
   "reconciliacao": {
     "painel": -230.0,
-    "corretora": -301.0,
-    "divergencia": 71.0,
-    "tolerancia": 6.02,
-    "comparavel": false,
-    "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 1.0,
+    "corretora": -611.0,
+    "divergencia": 381.0,
+    "tolerancia": 12.22,
+    "comparavel": true,
+    "ok": false,
+    "volume_corretora": 0,
+    "volume_pernas": 0,
     "volume_ok": true
   },
   "cumulative": {
@@ -225,29 +212,13 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2734820,
+    "idade_s": 2735000,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
     "congelado": true
   },
-  "open_positions": [
-    {
-      "symbol": "WINV26",
-      "strategy": "VB",
-      "strategy_label": "VolBreak",
-      "side": "LONG",
-      "entry_time": "2026-10-05T10:03:38-03:00",
-      "entry_price": 209145.0,
-      "current_price": 207675.0,
-      "qty": 1.0,
-      "notional": 41535.0,
-      "pnl": -294.0,
-      "pnl_liq_est": -313.17,
-      "pnl_pct": -0.703,
-      "minutos": 77.6
-    }
-  ],
+  "open_positions": [],
   "stats_modulo": [
     {
       "modulo": "Momentum intradiario",
@@ -263,13 +234,13 @@
     },
     {
       "modulo": "ORB",
-      "n": 12,
-      "soma": -545.04,
-      "media": -45.42,
-      "ep": 59.03,
-      "t": -0.77,
-      "ic_baixo": -161.13,
-      "ic_alto": 70.29,
+      "n": 13,
+      "soma": -855.04,
+      "media": -65.77,
+      "ep": 57.99,
+      "t": -1.13,
+      "ic_baixo": -179.44,
+      "ic_alto": 47.89,
       "acertos": 3,
       "conclusivo": false
     },
