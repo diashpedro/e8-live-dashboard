@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-05T10:24:48-03:00",
+  "updated_at": "2026-10-05T10:27:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-05T10:12:37-03:00",
+    "last_ea_event": "2026-10-05T10:25:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791206336,
+    "ea_heartbeat_epoch": 1791206753,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 207175.0,
+        "bid": 206855.0,
         "ok": true
       }
     ],
@@ -60,36 +60,60 @@
       "tipo": "saida",
       "modulo": "V02 reversao climatica",
       "texto": "[PY] FECHADA v02_reversao_climatica_g003a por stop | -1150 pts | PnL py dia R$ -230.00"
+    },
+    {
+      "hora": "2026-10-05T10:24:48-03:00",
+      "tipo": "entrada",
+      "modulo": "Python (gaveta)",
+      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
+    },
+    {
+      "hora": "2026-10-05T10:24:51-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
+    },
+    {
+      "hora": "2026-10-05T10:24:53-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[RESIDUO] posicao 1, das quais 1 sao pernas legitimas (Python + nativas)"
+    },
+    {
+      "hora": "2026-10-05T10:25:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
     }
   ],
   "today": {
     "date": "2026-10-05",
-    "realized": 0,
-    "unrealized": -320.0,
-    "total": -320.0,
-    "trades": 0,
+    "realized": -230.0,
+    "unrealized": -380.0,
+    "total": -610.0,
+    "trades": 1,
     "wins": 0,
-    "exposure": 41438.0,
+    "exposure": 41378.0,
     "open_legs": 1,
-    "broker_realized": 0
+    "broker_realized": -301.0
   },
   "reconciliacao": {
-    "painel": 0,
-    "corretora": 0,
-    "divergencia": 0,
-    "tolerancia": 1.0,
+    "painel": -230.0,
+    "corretora": -301.0,
+    "divergencia": 71.0,
+    "tolerancia": 6.02,
     "comparavel": false,
     "ok": null,
     "volume_corretora": 1.0,
-    "volume_pernas": -1.0,
-    "volume_ok": false
+    "volume_pernas": 1.0,
+    "volume_ok": true
   },
   "cumulative": {
-    "pnl": -3880.0,
-    "trades": 55,
-    "wins": 19,
+    "pnl": -4836.0,
+    "trades": 60,
+    "wins": 20,
     "since": "2026-09-04",
-    "days": 19,
+    "days": 21,
     "days_positive": 4,
     "best_day": {
       "date": "2026-09-10",
@@ -99,18 +123,18 @@
       "cum": -307.0
     },
     "worst_day": {
-      "date": "2026-09-08",
-      "pnl": -642.0,
+      "date": "2026-10-02",
+      "pnl": -726.0,
       "trades": 4,
-      "wins": 0,
-      "cum": -963.0
+      "wins": 1,
+      "cum": -4606.0
     }
   },
   "python": {
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2731436,
+    "idade_s": 2731578,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -121,16 +145,16 @@
       "symbol": "WINV26",
       "strategy": "VB",
       "strategy_label": "VolBreak",
-      "side": "SHORT",
-      "entry_time": "2026-10-02T10:10:52-03:00",
-      "entry_price": 190695.0,
-      "current_price": 207175.0,
+      "side": "LONG",
+      "entry_time": "2026-10-05T10:03:38-03:00",
+      "entry_price": 209145.0,
+      "current_price": 206855.0,
       "qty": 1.0,
-      "notional": 41435.0,
-      "pnl": -3296.0,
-      "pnl_liq_est": -3314.3,
-      "pnl_pct": -8.642,
-      "minutos": 4333.9
+      "notional": 41371.0,
+      "pnl": -458.0,
+      "pnl_liq_est": -477.14,
+      "pnl_pct": -1.095,
+      "minutos": 23.5
     }
   ],
   "stats_modulo": [
@@ -148,13 +172,13 @@
     },
     {
       "modulo": "ORB",
-      "n": 11,
-      "soma": -295.79,
-      "media": -26.89,
-      "ep": 61.4,
-      "t": -0.44,
-      "ic_baixo": -147.24,
-      "ic_alto": 93.46,
+      "n": 12,
+      "soma": -545.04,
+      "media": -45.42,
+      "ep": 59.03,
+      "t": -0.77,
+      "ic_baixo": -161.13,
+      "ic_alto": 70.29,
       "acertos": 3,
       "conclusivo": false
     },
@@ -184,38 +208,38 @@
     },
     {
       "modulo": "VWAP",
-      "n": 32,
-      "soma": -2049.78,
-      "media": -64.06,
-      "ep": 27.66,
-      "t": -2.32,
-      "ic_baixo": -118.27,
-      "ic_alto": -9.84,
+      "n": 33,
+      "soma": -2163.03,
+      "media": -65.55,
+      "ep": 26.85,
+      "t": -2.44,
+      "ic_baixo": -118.17,
+      "ic_alto": -12.92,
       "acertos": 12,
       "conclusivo": true
     },
     {
       "modulo": "VolBreak",
-      "n": 11,
-      "soma": -526.37,
-      "media": -47.85,
-      "ep": 32.37,
-      "t": -1.48,
-      "ic_baixo": -111.31,
-      "ic_alto": 15.6,
+      "n": 12,
+      "soma": -976.87,
+      "media": -81.41,
+      "ep": 44.71,
+      "t": -1.82,
+      "ic_baixo": -169.04,
+      "ic_alto": 6.23,
       "acertos": 5,
       "conclusivo": false
     },
     {
       "modulo": "intramom",
-      "n": 12,
-      "soma": 329.21,
-      "media": 27.43,
-      "ep": 28.43,
-      "t": 0.96,
-      "ic_baixo": -28.29,
-      "ic_alto": 83.16,
-      "acertos": 7,
+      "n": 13,
+      "soma": 416.21,
+      "media": 32.02,
+      "ep": 26.55,
+      "t": 1.21,
+      "ic_baixo": -20.03,
+      "ic_alto": 84.06,
+      "acertos": 8,
       "conclusivo": false
     },
     {
@@ -244,13 +268,13 @@
     },
     {
       "modulo": "v02_reversao_climatica_g003a",
-      "n": 2,
-      "soma": -51.6,
-      "media": -25.8,
-      "ep": 57.0,
-      "t": -0.45,
-      "ic_baixo": -137.52,
-      "ic_alto": 85.92,
+      "n": 3,
+      "soma": -352.6,
+      "media": -117.53,
+      "ep": 97.46,
+      "t": -1.21,
+      "ic_baixo": -308.55,
+      "ic_alto": 73.48,
       "acertos": 1,
       "conclusivo": false
     }
@@ -388,9 +412,103 @@
       "trades": 4,
       "wins": 1,
       "cum": -3880.0
+    },
+    {
+      "date": "2026-10-02",
+      "pnl": -726.0,
+      "trades": 4,
+      "wins": 1,
+      "cum": -4606.0
+    },
+    {
+      "date": "2026-10-05",
+      "pnl": -230.0,
+      "trades": 1,
+      "wins": 0,
+      "cum": -4836.0
     }
   ],
   "trades": [
+    {
+      "symbol": "WINV26",
+      "strategy": "g003a",
+      "strategy_label": "V02_reversao_climatica · gaveta 3a",
+      "side": "LONG",
+      "entry_time": "2026-10-05T10:00:05-03:00",
+      "exit_time": "2026-10-05T10:12:37-03:00",
+      "entry_price": 208435.0,
+      "exit_price": 207285.0,
+      "qty": 1.0,
+      "pnl": -230.0,
+      "pnl_bruto": -230.0,
+      "motivo": "st",
+      "motivo_label": "st",
+      "minutos": 12.5
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "intramom",
+      "strategy_label": "Momentum intradiario",
+      "side": "LONG",
+      "entry_time": "2026-10-02T17:00:01-03:00",
+      "exit_time": "2026-10-02T17:40:00-03:00",
+      "entry_price": 192925.0,
+      "exit_price": 193360.0,
+      "qty": 1.0,
+      "pnl": 87.0,
+      "pnl_bruto": 87.0,
+      "motivo": "eod",
+      "motivo_label": "Fim do pregao",
+      "minutos": 40.0
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "SHORT",
+      "entry_time": "2026-10-02T11:00:11-03:00",
+      "exit_time": "2026-10-02T14:09:37-03:00",
+      "entry_price": 187620.0,
+      "exit_price": 189715.0,
+      "qty": 1.0,
+      "pnl": -419.0,
+      "pnl_bruto": -419.0,
+      "motivo": "trail",
+      "motivo_label": "Trailing",
+      "minutos": 189.4
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VB",
+      "strategy_label": "VolBreak",
+      "side": "SHORT",
+      "entry_time": "2026-10-02T10:10:52-03:00",
+      "exit_time": "2026-10-02T14:08:33-03:00",
+      "entry_price": 189380.0,
+      "exit_price": 189595.0,
+      "qty": 2.0,
+      "pnl": -86.0,
+      "pnl_bruto": -86.0,
+      "motivo": "trail",
+      "motivo_label": "Trailing",
+      "minutos": 237.7
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "SHORT",
+      "entry_time": "2026-10-02T11:50:22-03:00",
+      "exit_time": "2026-10-02T13:44:34-03:00",
+      "entry_price": 187495.0,
+      "exit_price": 189035.0,
+      "qty": 1.0,
+      "pnl": -308.0,
+      "pnl_bruto": -308.0,
+      "motivo": "stop",
+      "motivo_label": "Stop",
+      "minutos": 114.2
+    },
     {
       "symbol": "WINV26",
       "strategy": "VW",
@@ -1274,30 +1392,42 @@
   ],
   "by_strategy": [
     {
+      "strategy": "Momentum intradiario",
+      "trades": 1,
+      "wins": 1,
+      "pnl": 87.0
+    },
+    {
       "strategy": "ORB",
-      "trades": 13,
+      "trades": 14,
       "wins": 3,
-      "pnl": -1656.0
+      "pnl": -2075.0
+    },
+    {
+      "strategy": "V02_reversao_climatica · gaveta 3a",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -230.0
     },
     {
       "strategy": "VWAP",
-      "trades": 25,
+      "trades": 26,
       "wins": 14,
-      "pnl": -25.0
+      "pnl": -333.0
     },
     {
       "strategy": "VolBreak",
-      "trades": 17,
+      "trades": 18,
       "wins": 2,
-      "pnl": -2199.0
+      "pnl": -2285.0
     }
   ],
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 55,
-      "wins": 19,
-      "pnl": -3880.0
+      "trades": 60,
+      "wins": 20,
+      "pnl": -4836.0
     }
   ],
   "by_reason": [
@@ -1309,21 +1439,27 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 27,
-      "wins": 18,
-      "pnl": 2762.0
+      "trades": 28,
+      "wins": 19,
+      "pnl": 2849.0
     },
     {
       "reason": "Stop",
-      "trades": 11,
+      "trades": 12,
       "wins": 0,
-      "pnl": -3085.0
+      "pnl": -3393.0
     },
     {
       "reason": "Trailing",
-      "trades": 14,
+      "trades": 16,
       "wins": 0,
-      "pnl": -3557.0
+      "pnl": -4062.0
+    },
+    {
+      "reason": "st",
+      "trades": 1,
+      "wins": 0,
+      "pnl": -230.0
     }
   ]
 }
