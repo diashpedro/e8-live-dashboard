@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-06T17:12:13-03:00",
+  "updated_at": "2026-10-06T17:15:16-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-10-06T17:09:26-03:00",
+    "last_ea_event": "2026-10-06T17:14:27-03:00",
     "last_error_msg": "QH\t0\t13:18:53.796\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] cancelar pendente orfa #2550666217: no connection",
-    "ea_heartbeat_epoch": 1791317453,
+    "ea_heartbeat_epoch": 1791317693,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 206170.0,
+        "bid": 206240.0,
         "ok": true
       }
     ],
@@ -735,16 +735,22 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=-5 contratos, EA acha -4 (python -4 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-10-06T17:14:27-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-5 contratos, EA acha -4 (python -4 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
     }
   ],
   "today": {
     "date": "2026-10-06",
     "realized": 0,
-    "unrealized": 380.0,
-    "total": 380.0,
+    "unrealized": 300.0,
+    "total": 300.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 206170.0,
+    "exposure": 206250.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -785,7 +791,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2842281,
+    "idade_s": 2842464,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -799,13 +805,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T10:47:38-03:00",
       "entry_price": 206990.0,
-      "current_price": 206170.0,
+      "current_price": 206240.0,
       "qty": 1.0,
-      "notional": 41234.0,
-      "pnl": 164.0,
-      "pnl_liq_est": 144.99,
-      "pnl_pct": 0.396,
-      "minutos": 384.6
+      "notional": 41248.0,
+      "pnl": 150.0,
+      "pnl_liq_est": 130.99,
+      "pnl_pct": 0.362,
+      "minutos": 387.6
     },
     {
       "symbol": "WINV26",
@@ -814,13 +820,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T10:47:51-03:00",
       "entry_price": 206900.0,
-      "current_price": 206170.0,
+      "current_price": 206240.0,
       "qty": 1.0,
-      "notional": 41234.0,
-      "pnl": 146.0,
-      "pnl_liq_est": 127.0,
-      "pnl_pct": 0.353,
-      "minutos": 384.4
+      "notional": 41248.0,
+      "pnl": 132.0,
+      "pnl_liq_est": 113.0,
+      "pnl_pct": 0.319,
+      "minutos": 387.4
     },
     {
       "symbol": "WINV26",
@@ -829,13 +835,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T11:45:02-03:00",
       "entry_price": 205525.0,
-      "current_price": 206170.0,
+      "current_price": 206240.0,
       "qty": 1.0,
-      "notional": 41234.0,
-      "pnl": -129.0,
-      "pnl_liq_est": -147.94,
-      "pnl_pct": -0.314,
-      "minutos": 327.2
+      "notional": 41248.0,
+      "pnl": -143.0,
+      "pnl_liq_est": -161.94,
+      "pnl_pct": -0.348,
+      "minutos": 330.2
     },
     {
       "symbol": "WINV26",
@@ -844,11 +850,11 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T17:00:02-03:00",
       "entry_price": 206435.0,
-      "current_price": 206165.0,
+      "current_price": 206240.0,
       "qty": 1.0,
-      "notional": 41233.0,
-      "pnl": 54.0,
-      "minutos": 12.2
+      "notional": 41248.0,
+      "pnl": 39.0,
+      "minutos": 15.2
     }
   ],
   "stats_modulo": [
