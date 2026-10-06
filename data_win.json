@@ -1,379 +1,42 @@
 {
-  "updated_at": "2026-10-05T18:57:14-03:00",
+  "updated_at": "2026-10-06T09:00:21-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-05T17:40:00-03:00",
+    "last_ea_event": "2026-10-06T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791237351,
+    "ea_heartbeat_epoch": 1791287931,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 207685.0,
+        "bid": 228570.0,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "pendentes_detalhe": [],
-  "eventos_hoje": [
-    {
-      "hora": "2026-10-05T09:30:36-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:45 -> corte de HOJE (-15min): 2026.10.05 16:30"
-    },
-    {
-      "hora": "2026-10-05T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_L stop=209145.00 (LONG)"
-    },
-    {
-      "hora": "2026-10-05T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[ORDER] WEA_VB_S stop=207625.00 (SHORT)"
-    },
-    {
-      "hora": "2026-10-05T10:00:00-03:00",
-      "tipo": "entrada",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] ARMADO BRK-20261005-003a | v02_reversao_climatica_g003a long 1 @ 208435 | stop 207290 alvo 213015"
-    },
-    {
-      "hora": "2026-10-05T10:00:05-03:00",
-      "tipo": "entrada",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] PREENCHIDO BRK-20261005-003a | v02_reversao_climatica_g003a @ 208435 -- perna viva"
-    },
-    {
-      "hora": "2026-10-05T10:03:38-03:00",
-      "tipo": "entrada",
-      "modulo": "VolBreak",
-      "texto": "[FILL] VB LONG entry=209145.00 stop=205344.64 R=3800.36"
-    },
-    {
-      "hora": "2026-10-05T10:12:37-03:00",
-      "tipo": "saida",
-      "modulo": "V02 reversao climatica",
-      "texto": "[PY] FECHADA v02_reversao_climatica_g003a por stop | -1150 pts | PnL py dia R$ -230.00"
-    },
-    {
-      "hora": "2026-10-05T10:24:48-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-10-05T10:24:51-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T10:24:53-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] posicao 1, das quais 1 sao pernas legitimas (Python + nativas)"
-    },
-    {
-      "hora": "2026-10-05T10:25:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T10:40:36-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-10-05T10:40:37-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T10:40:37-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] posicao 1, das quais 1 sao pernas legitimas (Python + nativas)"
-    },
-    {
-      "hora": "2026-10-05T10:45:21-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T11:10:35-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 1 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-10-05T11:10:36-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] posicao 1, das quais 1 sao pernas legitimas (Python + nativas)"
-    },
-    {
-      "hora": "2026-10-05T11:10:36-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_L stop=211120.00 (LONG)"
-    },
-    {
-      "hora": "2026-10-05T11:10:36-03:00",
-      "tipo": "entrada",
-      "modulo": "ORB",
-      "texto": "[ORDER] WEA_ORB_S stop=207240.00 (SHORT)"
-    },
-    {
-      "hora": "2026-10-05T11:10:36-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T11:15:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=210070.00 (LONG)"
-    },
-    {
-      "hora": "2026-10-05T11:15:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T11:22:31-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 2 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-10-05T11:22:32-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T11:25:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T11:54:44-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 2 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-10-05T11:54:46-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T11:54:46-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] pendente orfa #2548549989 cancelada em PETR4"
-    },
-    {
-      "hora": "2026-10-05T11:54:46-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] pendente orfa #2548549986 cancelada em PETR4"
-    },
-    {
-      "hora": "2026-10-05T11:54:46-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] pendente orfa #2548549983 cancelada em PETR4"
-    },
-    {
-      "hora": "2026-10-05T11:55:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T12:35:00-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[ORDER] WEA_VW_L stop=209250.00 (LONG)"
-    },
-    {
-      "hora": "2026-10-05T12:37:02-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=55.75 (nivel teorico 55.7528) vol=100 ticket=2548941519"
-    },
-    {
-      "hora": "2026-10-05T12:37:02-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=55.70 (nivel teorico 55.6950) vol=100 ticket=2548941537"
-    },
-    {
-      "hora": "2026-10-05T12:37:02-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=55.64 (nivel teorico 55.6372) vol=100 ticket=2548941558"
-    },
-    {
-      "hora": "2026-10-05T12:45:09-03:00",
-      "tipo": "entrada",
-      "modulo": "VWAP",
-      "texto": "[FILL] VW LONG entry=209250.00 stop=206506.07 R=2743.93"
-    },
-    {
-      "hora": "2026-10-05T13:11:16-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna A limite=56.19 (nivel teorico 56.1892) vol=100 ticket=2549145033"
-    },
-    {
-      "hora": "2026-10-05T13:11:16-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna B limite=56.16 (nivel teorico 56.1550) vol=100 ticket=2549145047"
-    },
-    {
-      "hora": "2026-10-05T13:11:16-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 LONG perna C limite=56.12 (nivel teorico 56.1208) vol=100 ticket=2549145060"
-    },
-    {
-      "hora": "2026-10-05T15:10:48-03:00",
-      "tipo": "entrada",
-      "modulo": "Python (gaveta)",
-      "texto": "[PY] RESGATADAS 3 perna(s) do disco -- posicao NAO ficou orfa"
-    },
-    {
-      "hora": "2026-10-05T15:10:51-03:00",
-      "tipo": "erro",
-      "modulo": null,
-      "texto": "[RESIDUO] posicao 1, das quais 1 sao pernas legitimas (Python + nativas)"
-    },
-    {
-      "hora": "2026-10-05T15:10:52-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T15:15:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.02 16:50 -> corte de HOJE (-15min): 2026.10.05 16:35"
-    },
-    {
-      "hora": "2026-10-05T15:36:37-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna A limite=56.38 (nivel teorico 56.3792) vol=100 ticket=2549787809"
-    },
-    {
-      "hora": "2026-10-05T15:36:37-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna B limite=56.45 (nivel teorico 56.4500) vol=100 ticket=2549787819"
-    },
-    {
-      "hora": "2026-10-05T15:36:37-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna C limite=56.52 (nivel teorico 56.5208) vol=100 ticket=2549787820"
-    },
-    {
-      "hora": "2026-10-05T16:19:17-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna A limite=56.20 (nivel teorico 56.2017) vol=100 ticket=2549926589"
-    },
-    {
-      "hora": "2026-10-05T16:19:17-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna B limite=56.23 (nivel teorico 56.2300) vol=100 ticket=2549926591"
-    },
-    {
-      "hora": "2026-10-05T16:19:17-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W3 SHORT perna C limite=56.26 (nivel teorico 56.2583) vol=100 ticket=2549926593"
-    },
-    {
-      "hora": "2026-10-05T16:19:17-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 SHORT perna A limite=56.22 (nivel teorico 56.2170) vol=100 ticket=2549926600"
-    },
-    {
-      "hora": "2026-10-05T16:19:17-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 SHORT perna B limite=56.25 (nivel teorico 56.2500) vol=100 ticket=2549926601"
-    },
-    {
-      "hora": "2026-10-05T16:19:17-03:00",
-      "tipo": "entrada",
-      "modulo": null,
-      "texto": "[ORDER] W5 SHORT perna C limite=56.28 (nivel teorico 56.2830) vol=100 ticket=2549926604"
-    },
-    {
-      "hora": "2026-10-05T16:40:00-03:00",
-      "tipo": "saida",
-      "modulo": null,
-      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
-    },
-    {
-      "hora": "2026-10-05T17:40:00-03:00",
-      "tipo": "saida",
-      "modulo": "VolBreak",
-      "texto": "[EOD] VB LONG vol=1"
-    },
-    {
-      "hora": "2026-10-05T17:40:00-03:00",
-      "tipo": "erro",
-      "modulo": "VWAP",
-      "texto": "[EOD][DIVERGENCIA] VW dada como LONG de 1, mas a posicao real do lado dela e 0 (corretora=0) -- NAO envio ordem (abriria 1 no sentido contrario). Perna descartada."
-    },
-    {
-      "hora": "2026-10-05T17:40:00-03:00",
-      "tipo": "erro",
-      "modulo": "ORB",
-      "texto": "[EOD][DIVERGENCIA] ORB dada como SHORT de 1, mas a posicao real do lado dela e -0 (corretora=0) -- NAO envio ordem (abriria 1 no sentido contrario). Perna descartada."
-    }
-  ],
+  "eventos_hoje": [],
   "today": {
-    "date": "2026-10-05",
-    "realized": -519.0,
+    "date": "2026-10-06",
+    "realized": 0,
     "unrealized": 0,
-    "total": -519.0,
-    "trades": 2,
+    "total": 0,
+    "trades": 0,
     "wins": 0,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": -921.0
+    "broker_realized": 0
   },
   "reconciliacao": {
-    "painel": -519.0,
-    "corretora": -921.0,
-    "divergencia": 402.0,
-    "tolerancia": 18.42,
+    "painel": 0,
+    "corretora": 0,
+    "divergencia": 0,
+    "tolerancia": 1.0,
     "comparavel": true,
-    "ok": false,
+    "ok": true,
     "volume_corretora": 0,
     "volume_pernas": 0,
     "volume_ok": true
@@ -404,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2762182,
+    "idade_s": 2812769,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
