@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-06T14:18:14-03:00",
+  "updated_at": "2026-10-06T14:21:13-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-10-06T14:13:45-03:00",
+    "last_ea_event": "2026-10-06T14:19:58-03:00",
     "last_error_msg": "QH\t0\t13:18:53.796\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] cancelar pendente orfa #2550666217: no connection",
-    "ea_heartbeat_epoch": 1791307073,
+    "ea_heartbeat_epoch": 1791307253,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 206560.0,
+        "bid": 206825.0,
         "ok": true
       }
     ],
@@ -459,16 +459,76 @@
       "tipo": "erro",
       "modulo": null,
       "texto": "[ALARME] DIVERGENCIA: corretora=-4 contratos, EA acha -3 (python -3 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-10-06T14:18:47-03:00",
+      "tipo": "erro",
+      "modulo": null,
+      "texto": "[ALARME] DIVERGENCIA: corretora=-4 contratos, EA acha -3 (python -3 + nativos). ENTRADAS BLOQUEADAS ate reconciliar."
+    },
+    {
+      "hora": "2026-10-06T14:19:54-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna A limite=54.11 (nivel teorico 54.1087) vol=100 ticket=2552299700"
+    },
+    {
+      "hora": "2026-10-06T14:19:55-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna B limite=54.07 (nivel teorico 54.0650) vol=100 ticket=2552299717"
+    },
+    {
+      "hora": "2026-10-06T14:19:56-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna C limite=54.02 (nivel teorico 54.0213) vol=100 ticket=2552299732"
+    },
+    {
+      "hora": "2026-10-06T14:19:56-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 LONG perna A limite=54.11 (nivel teorico 54.1087) vol=100 ticket=2552299740"
+    },
+    {
+      "hora": "2026-10-06T14:19:57-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 LONG perna B limite=54.07 (nivel teorico 54.0650) vol=100 ticket=2552299757"
+    },
+    {
+      "hora": "2026-10-06T14:19:57-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 LONG perna C limite=54.02 (nivel teorico 54.0213) vol=100 ticket=2552299768"
+    },
+    {
+      "hora": "2026-10-06T14:19:57-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 LONG perna A limite=54.11 (nivel teorico 54.1087) vol=100 ticket=2552299785"
+    },
+    {
+      "hora": "2026-10-06T14:19:58-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 LONG perna B limite=54.07 (nivel teorico 54.0650) vol=100 ticket=2552299797"
+    },
+    {
+      "hora": "2026-10-06T14:19:58-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 LONG perna C limite=54.02 (nivel teorico 54.0213) vol=100 ticket=2552299800"
     }
   ],
   "today": {
     "date": "2026-10-06",
     "realized": 0,
-    "unrealized": 11.0,
-    "total": 11.0,
+    "unrealized": -197.0,
+    "total": -197.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 165252.0,
+    "exposure": 165460.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -509,7 +569,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2831843,
+    "idade_s": 2832021,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -523,13 +583,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T10:47:38-03:00",
       "entry_price": 206990.0,
-      "current_price": 206560.0,
+      "current_price": 206825.0,
       "qty": 1.0,
-      "notional": 41312.0,
-      "pnl": 86.0,
-      "pnl_liq_est": 66.98,
-      "pnl_pct": 0.208,
-      "minutos": 210.6
+      "notional": 41365.0,
+      "pnl": 33.0,
+      "pnl_liq_est": 13.96,
+      "pnl_pct": 0.08,
+      "minutos": 213.6
     },
     {
       "symbol": "WINV26",
@@ -538,13 +598,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T10:47:51-03:00",
       "entry_price": 206900.0,
-      "current_price": 206560.0,
+      "current_price": 206825.0,
       "qty": 1.0,
-      "notional": 41312.0,
-      "pnl": 68.0,
-      "pnl_liq_est": 48.98,
-      "pnl_pct": 0.164,
-      "minutos": 210.4
+      "notional": 41365.0,
+      "pnl": 15.0,
+      "pnl_liq_est": -4.03,
+      "pnl_pct": 0.036,
+      "minutos": 213.4
     },
     {
       "symbol": "WINV26",
@@ -553,13 +613,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-06T11:45:02-03:00",
       "entry_price": 205525.0,
-      "current_price": 206560.0,
+      "current_price": 206825.0,
       "qty": 1.0,
-      "notional": 41312.0,
-      "pnl": -207.0,
-      "pnl_liq_est": -225.96,
-      "pnl_pct": -0.504,
-      "minutos": 153.2
+      "notional": 41365.0,
+      "pnl": -260.0,
+      "pnl_liq_est": -278.97,
+      "pnl_pct": -0.633,
+      "minutos": 156.2
     }
   ],
   "stats_modulo": [
