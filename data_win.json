@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-06T11:45:13-03:00",
+  "updated_at": "2026-10-06T11:48:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 2,
-    "last_ea_event": "2026-10-06T11:45:00-03:00",
+    "last_ea_event": "2026-10-06T11:45:03-03:00",
     "last_error_msg": "QH\t0\t13:18:53.796\tEA_WIN_Hibrido (WINV26,M5)\t[ERRO] cancelar pendente orfa #2550666217: no connection",
-    "ea_heartbeat_epoch": 1791297893,
+    "ea_heartbeat_epoch": 1791298013,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -255,16 +255,22 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[ORDER] WEA_VW_S stop=205525.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-06T11:45:03-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW SHORT entry=205525.00 stop=207636.79 R=2111.79"
     }
   ],
   "today": {
     "date": "2026-10-06",
     "realized": 0,
-    "unrealized": 819.0,
-    "total": 819.0,
+    "unrealized": 815.0,
+    "total": 815.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 164444.0,
+    "exposure": 164448.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -305,7 +311,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2822661,
+    "idade_s": 2822839,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -325,7 +331,7 @@
       "pnl": 285.0,
       "pnl_liq_est": 266.02,
       "pnl_pct": 0.688,
-      "minutos": 57.6
+      "minutos": 60.6
     },
     {
       "symbol": "WINV26",
@@ -340,7 +346,7 @@
       "pnl": 267.0,
       "pnl_liq_est": 248.03,
       "pnl_pct": 0.645,
-      "minutos": 57.4
+      "minutos": 60.3
     },
     {
       "symbol": "WINV26",
@@ -355,7 +361,7 @@
       "pnl": -8.0,
       "pnl_liq_est": -26.91,
       "pnl_pct": -0.019,
-      "minutos": 0.2
+      "minutos": 3.2
     }
   ],
   "stats_modulo": [
