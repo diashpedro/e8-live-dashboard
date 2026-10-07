@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-07T17:00:19-03:00",
+  "updated_at": "2026-10-07T17:03:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-07T16:40:00-03:00",
+    "last_ea_event": "2026-10-07T17:00:05-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791403184,
+    "ea_heartbeat_epoch": 1791403364,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -390,16 +390,22 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
+    },
+    {
+      "hora": "2026-10-07T17:00:05-03:00",
+      "tipo": "entrada",
+      "modulo": "Momentum intradiario",
+      "texto": "[PY] EXECUTADO IM-20261007 | intramom short 1 a mercado | stop 210980 alvo 186400"
     }
   ],
   "today": {
     "date": "2026-10-07",
     "realized": -206.0,
-    "unrealized": 238.0,
-    "total": 32.0,
+    "unrealized": 241.0,
+    "total": 35.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 122913.0,
+    "exposure": 122910.0,
     "open_legs": 1,
     "broker_realized": -206.0
   },
@@ -440,7 +446,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2927967,
+    "idade_s": 2928139,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -460,7 +466,7 @@
       "pnl": 119.0,
       "pnl_liq_est": 100.13,
       "pnl_pct": 0.29,
-      "minutos": 349.7
+      "minutos": 352.6
     },
     {
       "symbol": "WINV26",
@@ -475,7 +481,7 @@
       "pnl": 119.0,
       "pnl_liq_est": 100.13,
       "pnl_pct": 0.29,
-      "minutos": 349.7
+      "minutos": 352.6
     },
     {
       "symbol": "WINV26",
@@ -488,7 +494,7 @@
       "qty": 1.0,
       "notional": 40970.0,
       "pnl": 3.0,
-      "minutos": 0.2
+      "minutos": 3.1
     }
   ],
   "stats_modulo": [
