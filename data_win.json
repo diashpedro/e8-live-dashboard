@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-07T10:39:13-03:00",
+  "updated_at": "2026-10-07T10:42:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-07T10:30:00-03:00",
+    "last_ea_event": "2026-10-07T10:40:48-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791380264,
+    "ea_heartbeat_epoch": 1791380444,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 206280.0,
+        "bid": 205875.0,
         "ok": true
       }
     ],
@@ -121,6 +121,42 @@
       "tipo": "entrada",
       "modulo": "ORB",
       "texto": "[ORDER] WEA_ORB_S stop=204500.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-07T10:40:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna A limite=54.00 (nivel teorico 54.0025) vol=100 ticket=2553705038"
+    },
+    {
+      "hora": "2026-10-07T10:40:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna B limite=54.07 (nivel teorico 54.0650) vol=100 ticket=2553705039"
+    },
+    {
+      "hora": "2026-10-07T10:40:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 SHORT perna C limite=54.13 (nivel teorico 54.1275) vol=100 ticket=2553705040"
+    },
+    {
+      "hora": "2026-10-07T10:40:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna A limite=54.00 (nivel teorico 54.0025) vol=100 ticket=2553705041"
+    },
+    {
+      "hora": "2026-10-07T10:40:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna B limite=54.07 (nivel teorico 54.0650) vol=100 ticket=2553705042"
+    },
+    {
+      "hora": "2026-10-07T10:40:48-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna C limite=54.13 (nivel teorico 54.1275) vol=100 ticket=2553705043"
     }
   ],
   "today": {
@@ -171,7 +207,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2905102,
+    "idade_s": 2905284,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
