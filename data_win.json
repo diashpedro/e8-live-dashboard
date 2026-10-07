@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-07T16:39:11-03:00",
+  "updated_at": "2026-10-07T16:42:10-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-07T16:06:23-03:00",
+    "last_ea_event": "2026-10-07T16:40:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791401924,
+    "ea_heartbeat_epoch": 1791402044,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 205195.0,
+        "bid": 205130.0,
         "ok": true
       }
     ],
@@ -384,16 +384,22 @@
       "tipo": "entrada",
       "modulo": null,
       "texto": "[ORDER] W3 LONG perna C limite=54.68 (nivel teorico 54.6758) vol=100 ticket=2554609171"
+    },
+    {
+      "hora": "2026-10-07T16:40:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
     }
   ],
   "today": {
     "date": "2026-10-07",
     "realized": -206.0,
-    "unrealized": 98.0,
-    "total": -108.0,
+    "unrealized": 126.0,
+    "total": -80.0,
     "trades": 1,
     "wins": 0,
-    "exposure": 82080.0,
+    "exposure": 82052.0,
     "open_legs": 1,
     "broker_realized": -206.0
   },
@@ -434,7 +440,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2926699,
+    "idade_s": 2926878,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -448,13 +454,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-07T11:10:35-03:00",
       "entry_price": 205445.0,
-      "current_price": 205195.0,
+      "current_price": 205130.0,
       "qty": 1.0,
-      "notional": 41039.0,
-      "pnl": 50.0,
-      "pnl_liq_est": 31.11,
-      "pnl_pct": 0.122,
-      "minutos": 328.6
+      "notional": 41026.0,
+      "pnl": 63.0,
+      "pnl_liq_est": 44.11,
+      "pnl_pct": 0.153,
+      "minutos": 331.6
     },
     {
       "symbol": "WINV26",
@@ -463,13 +469,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-07T11:10:35-03:00",
       "entry_price": 205445.0,
-      "current_price": 205195.0,
+      "current_price": 205130.0,
       "qty": 1.0,
-      "notional": 41039.0,
-      "pnl": 50.0,
-      "pnl_liq_est": 31.11,
-      "pnl_pct": 0.122,
-      "minutos": 328.6
+      "notional": 41026.0,
+      "pnl": 63.0,
+      "pnl_liq_est": 44.11,
+      "pnl_pct": 0.153,
+      "minutos": 331.6
     }
   ],
   "stats_modulo": [
