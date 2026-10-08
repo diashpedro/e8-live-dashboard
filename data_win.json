@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-08T12:27:14-03:00",
+  "updated_at": "2026-10-08T12:30:16-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-08T12:00:00-03:00",
+    "last_ea_event": "2026-10-08T12:28:57-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791473133,
+    "ea_heartbeat_epoch": 1791473373,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -168,6 +168,24 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.07 16:50 -> corte de HOJE (-15min): 2026.10.08 16:35"
+    },
+    {
+      "hora": "2026-10-08T12:28:57-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=55.47 (nivel teorico 55.4674) vol=100 ticket=2556141403"
+    },
+    {
+      "hora": "2026-10-08T12:28:57-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=55.45 (nivel teorico 55.4450) vol=100 ticket=2556141404"
+    },
+    {
+      "hora": "2026-10-08T12:28:57-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=55.42 (nivel teorico 55.4226) vol=100 ticket=2556141406"
     }
   ],
   "today": {
@@ -218,7 +236,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2997982,
+    "idade_s": 2998164,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -238,7 +256,7 @@
       "pnl": -641.0,
       "pnl_liq_est": -736.14,
       "pnl_pct": -0.309,
-      "minutos": 138.7
+      "minutos": 141.7
     },
     {
       "symbol": "WINV26",
@@ -253,7 +271,7 @@
       "pnl": -546.0,
       "pnl_liq_est": -641.12,
       "pnl_pct": -0.264,
-      "minutos": 114.1
+      "minutos": 117.2
     },
     {
       "symbol": "WINV26",
@@ -268,7 +286,7 @@
       "pnl": 168.0,
       "pnl_liq_est": 149.04,
       "pnl_pct": 0.408,
-      "minutos": 107.1
+      "minutos": 110.1
     }
   ],
   "stats_modulo": [
