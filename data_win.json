@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-10-08T10:30:20-03:00",
+  "updated_at": "2026-10-08T10:33:11-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-08T10:08:32-03:00",
+    "last_ea_event": "2026-10-08T10:31:19-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791466124,
+    "ea_heartbeat_epoch": 1791466364,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 204370.0,
+        "bid": 205105.0,
         "ok": true
       }
     ],
-    "pendentes": 2
+    "pendentes": 0
   },
-  "pendentes_detalhe": [
-    {
-      "ticket": 2555582602,
-      "tipo": "buy_stop",
-      "preco": 205180.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_L",
-      "hora": "2026-10-08T10:30:00-03:00"
-    },
-    {
-      "ticket": 2555582701,
-      "tipo": "sell_stop",
-      "preco": 203525.0,
-      "volume": 1.0,
-      "comment": "WEA_ORB_S",
-      "hora": "2026-10-08T10:30:00-03:00"
-    }
-  ],
+  "pendentes_detalhe": [],
   "eventos_hoje": [
     {
       "hora": "2026-10-08T09:40:32-03:00",
@@ -59,16 +42,46 @@
       "tipo": "entrada",
       "modulo": "VolBreak",
       "texto": "[FILL] VB LONG entry=204865.00 stop=202332.14 R=2532.86"
+    },
+    {
+      "hora": "2026-10-08T10:30:00-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_L stop=205180.00 (LONG)"
+    },
+    {
+      "hora": "2026-10-08T10:30:00-03:00",
+      "tipo": "entrada",
+      "modulo": "ORB",
+      "texto": "[ORDER] WEA_ORB_S stop=203525.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-08T10:31:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=55.36 (nivel teorico 55.3625) vol=100 ticket=2555593424"
+    },
+    {
+      "hora": "2026-10-08T10:31:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=55.32 (nivel teorico 55.3200) vol=100 ticket=2555593427"
+    },
+    {
+      "hora": "2026-10-08T10:31:19-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=55.28 (nivel teorico 55.2775) vol=100 ticket=2555593430"
     }
   ],
   "today": {
     "date": "2026-10-08",
     "realized": 0,
-    "unrealized": -100.0,
-    "total": -100.0,
+    "unrealized": 31.0,
+    "total": 31.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 40873.0,
+    "exposure": 82040.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -79,8 +92,8 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 1.0,
+    "volume_corretora": 2.0,
+    "volume_pernas": 2.0,
     "volume_ok": true
   },
   "cumulative": {
@@ -109,7 +122,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2990968,
+    "idade_s": 2991139,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -123,13 +136,28 @@
       "side": "LONG",
       "entry_time": "2026-10-08T10:08:32-03:00",
       "entry_price": 204865.0,
-      "current_price": 204370.0,
+      "current_price": 205105.0,
       "qty": 1.0,
-      "notional": 40874.0,
-      "pnl": -99.0,
-      "pnl_liq_est": -117.82,
-      "pnl_pct": -0.242,
-      "minutos": 21.8
+      "notional": 41021.0,
+      "pnl": 48.0,
+      "pnl_liq_est": 29.14,
+      "pnl_pct": 0.117,
+      "minutos": 24.7
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "ORB",
+      "strategy_label": "ORB",
+      "side": "LONG",
+      "entry_time": "2026-10-08T10:33:07-03:00",
+      "entry_price": 205180.0,
+      "current_price": 205105.0,
+      "qty": 1.0,
+      "notional": 41021.0,
+      "pnl": -15.0,
+      "pnl_liq_est": -33.87,
+      "pnl_pct": -0.037,
+      "minutos": 0.1
     }
   ],
   "stats_modulo": [
