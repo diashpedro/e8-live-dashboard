@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-08T10:09:11-03:00",
+  "updated_at": "2026-10-08T10:12:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-08T10:00:00-03:00",
+    "last_ea_event": "2026-10-08T10:08:32-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791464864,
+    "ea_heartbeat_epoch": 1791465044,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 204715.0,
+        "bid": 205220.0,
         "ok": true
       }
     ],
@@ -36,16 +36,22 @@
       "tipo": "entrada",
       "modulo": "VolBreak",
       "texto": "[ORDER] WEA_VB_S stop=203855.00 (SHORT)"
+    },
+    {
+      "hora": "2026-10-08T10:08:32-03:00",
+      "tipo": "entrada",
+      "modulo": "VolBreak",
+      "texto": "[FILL] VB LONG entry=204865.00 stop=202332.14 R=2532.86"
     }
   ],
   "today": {
     "date": "2026-10-08",
     "realized": 0,
-    "unrealized": -29.0,
-    "total": -29.0,
+    "unrealized": 74.0,
+    "total": 74.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 40944.0,
+    "exposure": 41047.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -86,7 +92,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 2989699,
+    "idade_s": 2989880,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -100,13 +106,13 @@
       "side": "LONG",
       "entry_time": "2026-10-08T10:08:32-03:00",
       "entry_price": 204865.0,
-      "current_price": 204715.0,
+      "current_price": 205220.0,
       "qty": 1.0,
-      "notional": 40943.0,
-      "pnl": -30.0,
-      "pnl_liq_est": -48.84,
-      "pnl_pct": -0.073,
-      "minutos": 0.7
+      "notional": 41044.0,
+      "pnl": 71.0,
+      "pnl_liq_est": 52.14,
+      "pnl_pct": 0.173,
+      "minutos": 3.7
     }
   ],
   "stats_modulo": [
