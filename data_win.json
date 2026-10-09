@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-09T11:18:10-03:00",
+  "updated_at": "2026-10-09T11:21:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-09T11:00:00-03:00",
+    "last_ea_event": "2026-10-09T11:20:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791555453,
+    "ea_heartbeat_epoch": 1791555573,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 208900.0,
+        "bid": 208975.0,
         "ok": true
       }
     ],
-    "pendentes": 3
+    "pendentes": 2
   },
   "pendentes_detalhe": [
     {
@@ -33,14 +33,6 @@
       "volume": 1.0,
       "comment": "WEA_ORB_S",
       "hora": "2026-10-09T10:30:05-03:00"
-    },
-    {
-      "ticket": 2558272507,
-      "tipo": "buy_stop",
-      "preco": 209100.0,
-      "volume": 1.0,
-      "comment": "BRK-20261009-003a",
-      "hora": "2026-10-09T11:00:00-03:00"
     }
   ],
   "eventos_hoje": [
@@ -139,16 +131,22 @@
       "tipo": "entrada",
       "modulo": "V02 reversao climatica",
       "texto": "[PY] ARMADO BRK-20261009-003a | v02_reversao_climatica_g003a long 1 @ 209100 | stop 207555 alvo 215280"
+    },
+    {
+      "hora": "2026-10-09T11:20:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[ORDER] WEA_VW_L stop=209060.00 (LONG)"
     }
   ],
   "today": {
     "date": "2026-10-09",
     "realized": 0,
-    "unrealized": 121.0,
-    "total": 121.0,
+    "unrealized": 88.0,
+    "total": 88.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 41783.0,
+    "exposure": 125382.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -159,9 +157,9 @@
     "tolerancia": 1.0,
     "comparavel": false,
     "ok": null,
-    "volume_corretora": 1.0,
-    "volume_pernas": 0.0,
-    "volume_ok": false
+    "volume_corretora": 3.0,
+    "volume_pernas": 3.0,
+    "volume_ok": true
   },
   "cumulative": {
     "pnl": -6447.0,
@@ -189,7 +187,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3080238,
+    "idade_s": 3080417,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -198,33 +196,46 @@
   "open_positions": [
     {
       "symbol": "WINV26",
-      "strategy": "VW",
-      "strategy_label": "VWAP",
-      "side": "SHORT",
-      "entry_time": "2026-10-08T16:00:19-03:00",
-      "entry_price": 206730.0,
-      "current_price": 208900.0,
-      "qty": 1.0,
-      "notional": 41780.0,
-      "pnl": -434.0,
-      "pnl_liq_est": -453.12,
-      "pnl_pct": -1.05,
-      "minutos": 1157.9
-    },
-    {
-      "symbol": "WINV26",
       "strategy": "VB",
       "strategy_label": "VolBreak",
       "side": "LONG",
       "entry_time": "2026-10-09T10:10:31-03:00",
       "entry_price": 208310.0,
-      "current_price": 208900.0,
+      "current_price": 208975.0,
       "qty": 1.0,
-      "notional": 41780.0,
-      "pnl": 118.0,
-      "pnl_liq_est": 98.81,
-      "pnl_pct": 0.283,
-      "minutos": 67.7
+      "notional": 41795.0,
+      "pnl": 133.0,
+      "pnl_liq_est": 113.8,
+      "pnl_pct": 0.319,
+      "minutos": 70.6
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "VW",
+      "strategy_label": "VWAP",
+      "side": "LONG",
+      "entry_time": "2026-10-09T11:20:19-03:00",
+      "entry_price": 209060.0,
+      "current_price": 208975.0,
+      "qty": 1.0,
+      "notional": 41795.0,
+      "pnl": -17.0,
+      "pnl_liq_est": -36.23,
+      "pnl_pct": -0.041,
+      "minutos": 0.8
+    },
+    {
+      "symbol": "WINV26",
+      "strategy": "g003a",
+      "strategy_label": "V02_reversao_climatica · gaveta 3a",
+      "side": "LONG",
+      "entry_time": "2026-10-09T11:20:21-03:00",
+      "entry_price": 209100.0,
+      "current_price": 208975.0,
+      "qty": 1.0,
+      "notional": 41795.0,
+      "pnl": -25.0,
+      "minutos": 0.8
     }
   ],
   "stats_modulo": [
