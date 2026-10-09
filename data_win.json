@@ -1,29 +1,58 @@
 {
-  "updated_at": "2026-10-09T09:57:09-03:00",
+  "updated_at": "2026-10-09T10:03:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-09T09:44:58-03:00",
+    "last_ea_event": "2026-10-09T10:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791550593,
+    "ea_heartbeat_epoch": 1791550893,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 207760.0,
+        "bid": 207640.0,
         "ok": true
       }
     ],
-    "pendentes": 0
+    "pendentes": 2
   },
-  "pendentes_detalhe": [],
+  "pendentes_detalhe": [
+    {
+      "ticket": 2557831822,
+      "tipo": "buy_stop",
+      "preco": 208310.0,
+      "volume": 1.0,
+      "comment": "WEA_VB_L",
+      "hora": "2026-10-09T10:00:00-03:00"
+    },
+    {
+      "ticket": 2557832062,
+      "tipo": "sell_stop",
+      "preco": 206970.0,
+      "volume": 1.0,
+      "comment": "WEA_VB_S",
+      "hora": "2026-10-09T10:00:00-03:00"
+    }
+  ],
   "eventos_hoje": [
     {
       "hora": "2026-10-09T09:44:58-03:00",
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.08 16:45 -> corte de HOJE (-15min): 2026.10.09 16:30"
+    },
+    {
+      "hora": "2026-10-09T10:00:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VolBreak",
+      "texto": "[ORDER] WEA_VB_L stop=208310.00 (LONG)"
+    },
+    {
+      "hora": "2026-10-09T10:00:00-03:00",
+      "tipo": "entrada",
+      "modulo": "VolBreak",
+      "texto": "[ORDER] WEA_VB_S stop=206970.00 (SHORT)"
     }
   ],
   "today": {
@@ -74,7 +103,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3075377,
+    "idade_s": 3075737,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
