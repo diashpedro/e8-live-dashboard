@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-09T11:21:09-03:00",
+  "updated_at": "2026-10-09T11:24:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-09T11:20:00-03:00",
+    "last_ea_event": "2026-10-09T11:20:22-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791555573,
+    "ea_heartbeat_epoch": 1791555753,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 208975.0,
+        "bid": 209040.0,
         "ok": true
       }
     ],
@@ -137,16 +137,28 @@
       "tipo": "entrada",
       "modulo": "VWAP",
       "texto": "[ORDER] WEA_VW_L stop=209060.00 (LONG)"
+    },
+    {
+      "hora": "2026-10-09T11:20:19-03:00",
+      "tipo": "entrada",
+      "modulo": "VWAP",
+      "texto": "[FILL] VW LONG entry=209060.00 stop=207258.93 R=1801.07"
+    },
+    {
+      "hora": "2026-10-09T11:20:22-03:00",
+      "tipo": "entrada",
+      "modulo": "V02 reversao climatica",
+      "texto": "[PY] PREENCHIDO BRK-20261009-003a | v02_reversao_climatica_g003a @ 209100 -- perna viva"
     }
   ],
   "today": {
     "date": "2026-10-09",
     "realized": 0,
-    "unrealized": 88.0,
-    "total": 88.0,
+    "unrealized": 139.0,
+    "total": 139.0,
     "trades": 0,
     "wins": 0,
-    "exposure": 125382.0,
+    "exposure": 125433.0,
     "open_legs": 1,
     "broker_realized": 0.0
   },
@@ -187,7 +199,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3080417,
+    "idade_s": 3080598,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -201,13 +213,13 @@
       "side": "LONG",
       "entry_time": "2026-10-09T10:10:31-03:00",
       "entry_price": 208310.0,
-      "current_price": 208975.0,
+      "current_price": 209040.0,
       "qty": 1.0,
-      "notional": 41795.0,
-      "pnl": 133.0,
-      "pnl_liq_est": 113.8,
-      "pnl_pct": 0.319,
-      "minutos": 70.6
+      "notional": 41808.0,
+      "pnl": 146.0,
+      "pnl_liq_est": 126.8,
+      "pnl_pct": 0.35,
+      "minutos": 73.6
     },
     {
       "symbol": "WINV26",
@@ -216,13 +228,13 @@
       "side": "LONG",
       "entry_time": "2026-10-09T11:20:19-03:00",
       "entry_price": 209060.0,
-      "current_price": 208975.0,
+      "current_price": 209040.0,
       "qty": 1.0,
-      "notional": 41795.0,
-      "pnl": -17.0,
-      "pnl_liq_est": -36.23,
-      "pnl_pct": -0.041,
-      "minutos": 0.8
+      "notional": 41808.0,
+      "pnl": -4.0,
+      "pnl_liq_est": -23.23,
+      "pnl_pct": -0.01,
+      "minutos": 3.8
     },
     {
       "symbol": "WINV26",
@@ -231,11 +243,11 @@
       "side": "LONG",
       "entry_time": "2026-10-09T11:20:21-03:00",
       "entry_price": 209100.0,
-      "current_price": 208975.0,
+      "current_price": 209050.0,
       "qty": 1.0,
-      "notional": 41795.0,
-      "pnl": -25.0,
-      "minutos": 0.8
+      "notional": 41810.0,
+      "pnl": -10.0,
+      "minutos": 3.8
     }
   ],
   "stats_modulo": [
