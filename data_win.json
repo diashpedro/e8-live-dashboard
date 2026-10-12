@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-12T11:18:07-03:00",
+  "updated_at": "2026-10-12T11:21:07-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-10-12T00:00:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791814593,
+    "ea_heartbeat_epoch": 1791814773,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -42,8 +42,8 @@
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -6557.0,
-    "trades": 75,
+    "pnl": -6516.0,
+    "trades": 74,
     "wins": 26,
     "since": "2026-09-04",
     "days": 25,
@@ -67,7 +67,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3339435,
+    "idade_s": 3339615,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -367,10 +367,10 @@
     },
     {
       "date": "2026-10-09",
-      "pnl": -161.0,
-      "trades": 5,
+      "pnl": -120.0,
+      "trades": 4,
       "wins": 1,
-      "cum": -6557.0
+      "cum": -6516.0
     }
   ],
   "trades": [
@@ -421,22 +421,6 @@
       "motivo": "eod",
       "motivo_label": "Fim do pregao",
       "minutos": 366.0
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "g003a",
-      "strategy_label": "V02_reversao_climatica · gaveta 3a",
-      "side": "LONG",
-      "entry_time": "2026-10-09T11:20:21-03:00",
-      "exit_time": "2026-10-09T17:40:00-03:00",
-      "entry_price": 209100.0,
-      "exit_price": 208895.0,
-      "qty": 1.0,
-      "pnl": -41.0,
-      "pnl_bruto": -41.0,
-      "motivo": "eo",
-      "motivo_label": "eo",
-      "minutos": 379.6
     },
     {
       "symbol": "WINV26",
@@ -1589,12 +1573,6 @@
       "pnl": -2690.0
     },
     {
-      "strategy": "V02_reversao_climatica · gaveta 3a",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -41.0
-    },
-    {
       "strategy": "VWAP",
       "trades": 33,
       "wins": 17,
@@ -1610,9 +1588,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 75,
+      "trades": 74,
       "wins": 26,
-      "pnl": -6557.0
+      "pnl": -6516.0
     }
   ],
   "by_reason": [
@@ -1639,12 +1617,6 @@
       "trades": 16,
       "wins": 0,
       "pnl": -4062.0
-    },
-    {
-      "reason": "eo",
-      "trades": 1,
-      "wins": 0,
-      "pnl": -41.0
     }
   ]
 }
