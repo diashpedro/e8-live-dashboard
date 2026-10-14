@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-14T14:15:20-03:00",
+  "updated_at": "2026-10-14T14:18:17-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-10-14T14:14:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1791998035,
+    "ea_heartbeat_epoch": 1791998215,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "WINV26",
-        "bid": 206690.0,
+        "bid": 206875.0,
         "ok": true
       }
     ],
@@ -257,11 +257,11 @@
   "today": {
     "date": "2026-10-14",
     "realized": -323.0,
-    "unrealized": 209.0,
-    "total": -114.0,
+    "unrealized": 285.0,
+    "total": -38.0,
     "trades": 2,
     "wins": 1,
-    "exposure": 82682.0,
+    "exposure": 82758.0,
     "open_legs": 1,
     "broker_realized": -188.0
   },
@@ -302,7 +302,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3522869,
+    "idade_s": 3523045,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -316,13 +316,13 @@
       "side": "LONG",
       "entry_time": "2026-10-14T12:15:06-03:00",
       "entry_price": 204990.0,
-      "current_price": 206690.0,
+      "current_price": 206875.0,
       "qty": 1.0,
-      "notional": 41338.0,
-      "pnl": 340.0,
-      "pnl_liq_est": 321.06,
-      "pnl_pct": 0.829,
-      "minutos": 120.2
+      "notional": 41375.0,
+      "pnl": 377.0,
+      "pnl_liq_est": 358.05,
+      "pnl_pct": 0.92,
+      "minutos": 123.2
     },
     {
       "symbol": "WINV26",
@@ -331,13 +331,13 @@
       "side": "LONG",
       "entry_time": "2026-10-14T14:13:57-03:00",
       "entry_price": 206700.0,
-      "current_price": 206690.0,
+      "current_price": 206875.0,
       "qty": 1.0,
-      "notional": 41338.0,
-      "pnl": -2.0,
-      "pnl_liq_est": -21.02,
-      "pnl_pct": -0.005,
-      "minutos": 1.4
+      "notional": 41375.0,
+      "pnl": 35.0,
+      "pnl_liq_est": 15.98,
+      "pnl_pct": 0.085,
+      "minutos": 4.3
     }
   ],
   "stats_modulo": [
