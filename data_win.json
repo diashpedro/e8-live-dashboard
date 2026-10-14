@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-14T16:39:17-03:00",
+  "updated_at": "2026-10-14T16:42:19-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-14T14:45:30-03:00",
+    "last_ea_event": "2026-10-14T16:40:05-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792006675,
+    "ea_heartbeat_epoch": 1792006855,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -282,6 +282,84 @@
       "tipo": "entrada",
       "modulo": null,
       "texto": "[FILL] W5 LONG perna C entry=57.7000 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-10-14T16:40:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W3 LONG perna A motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W3 LONG perna B motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:01-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W3 LONG perna C motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:01-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W5 LONG perna A motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:01-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W5 LONG perna B motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:02-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W5 LONG perna C motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:02-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W8 LONG perna A motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:03-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W8 LONG perna B motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:03-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W13 LONG perna A motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:03-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W13 LONG perna B motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:04-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W21 LONG perna A motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:04-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W21 LONG perna B motivo=eod vol=100"
+    },
+    {
+      "hora": "2026-10-14T16:40:05-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
     }
   ],
   "today": {
@@ -332,7 +410,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3531505,
+    "idade_s": 3531687,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -352,7 +430,7 @@
       "pnl": 339.0,
       "pnl_liq_est": 320.06,
       "pnl_pct": 0.827,
-      "minutos": 264.2
+      "minutos": 267.2
     },
     {
       "symbol": "WINV26",
@@ -367,7 +445,7 @@
       "pnl": -3.0,
       "pnl_liq_est": -22.02,
       "pnl_pct": -0.007,
-      "minutos": 145.3
+      "minutos": 148.4
     }
   ],
   "stats_modulo": [
