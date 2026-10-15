@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-15T16:30:21-03:00",
+  "updated_at": "2026-10-15T16:33:17-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-15T16:20:33-03:00",
+    "last_ea_event": "2026-10-15T16:30:16-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792092535,
+    "ea_heartbeat_epoch": 1792092715,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -180,6 +180,12 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W5 SHORT perna A motivo=alvo vol=100"
+    },
+    {
+      "hora": "2026-10-15T16:30:16-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W5 SHORT perna B motivo=alvo vol=100"
     }
   ],
   "today": {
@@ -230,7 +236,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3617370,
+    "idade_s": 3617545,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
