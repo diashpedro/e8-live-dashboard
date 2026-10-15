@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-15T14:27:08-03:00",
+  "updated_at": "2026-10-15T14:30:11-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-15T14:25:55-03:00",
+    "last_ea_event": "2026-10-15T14:28:55-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 57.64,
+        "bid": 57.65,
         "ok": true
       },
       {
@@ -20,7 +20,7 @@
       },
       {
         "symbol": "ITUB4",
-        "bid": 48.69,
+        "bid": 48.68,
         "ok": true
       },
       {
@@ -30,7 +30,7 @@
       },
       {
         "symbol": "TOTS3",
-        "bid": 40.21,
+        "bid": 40.24,
         "ok": true
       }
     ],
@@ -45,11 +45,11 @@
   "today": {
     "date": "2026-10-15",
     "realized": -128.0,
-    "unrealized": 15.0,
-    "total": -113.0,
+    "unrealized": 13.0,
+    "total": -115.0,
     "trades": 4,
     "wins": 0,
-    "exposure": 11528.0,
+    "exposure": 11530.0,
     "open_legs": 2,
     "broker_realized": -130.32
   },
@@ -94,13 +94,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-15T10:40:20-03:00",
       "entry_price": 57.68,
-      "current_price": 57.64,
+      "current_price": 57.65,
       "qty": 100.0,
-      "notional": 5764.0,
-      "pnl": 4.0,
-      "pnl_liq_est": 1.35,
-      "pnl_pct": 0.069,
-      "minutos": 226.8
+      "notional": 5765.0,
+      "pnl": 3.0,
+      "pnl_liq_est": 0.35,
+      "pnl_pct": 0.052,
+      "minutos": 229.9
     },
     {
       "symbol": "PETR4",
@@ -109,13 +109,13 @@
       "side": "SHORT",
       "entry_time": "2026-10-15T10:40:40-03:00",
       "entry_price": 57.75,
-      "current_price": 57.64,
+      "current_price": 57.65,
       "qty": 100.0,
-      "notional": 5764.0,
-      "pnl": 11.0,
-      "pnl_liq_est": 8.35,
-      "pnl_pct": 0.19,
-      "minutos": 226.5
+      "notional": 5765.0,
+      "pnl": 10.0,
+      "pnl_liq_est": 7.35,
+      "pnl_pct": 0.173,
+      "minutos": 229.5
     }
   ],
   "daily_series": [
