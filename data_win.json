@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-15T16:21:13-03:00",
+  "updated_at": "2026-10-15T16:24:16-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-15T13:18:36-03:00",
+    "last_ea_event": "2026-10-15T16:20:33-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792091995,
+    "ea_heartbeat_epoch": 1792092175,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -120,6 +120,66 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W5 SHORT perna C motivo=stop_safety vol=100"
+    },
+    {
+      "hora": "2026-10-15T16:20:30-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna A limite=57.68 (nivel teorico 57.6801) vol=100 ticket=2563828127"
+    },
+    {
+      "hora": "2026-10-15T16:20:30-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna B limite=57.75 (nivel teorico 57.7450) vol=100 ticket=2563828128"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W8 SHORT perna C limite=57.81 (nivel teorico 57.8099) vol=100 ticket=2563828129"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna A limite=57.68 (nivel teorico 57.6801) vol=100 ticket=2563828130"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna B limite=57.75 (nivel teorico 57.7450) vol=100 ticket=2563828132"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W13 SHORT perna C limite=57.81 (nivel teorico 57.8099) vol=100 ticket=2563828134"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna A limite=57.70 (nivel teorico 57.6992) vol=100 ticket=2563828138"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna B limite=57.77 (nivel teorico 57.7700) vol=100 ticket=2563828139"
+    },
+    {
+      "hora": "2026-10-15T16:20:31-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W21 SHORT perna C limite=57.84 (nivel teorico 57.8408) vol=100 ticket=2563828140"
+    },
+    {
+      "hora": "2026-10-15T16:20:33-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W5 SHORT perna A motivo=alvo vol=100"
     }
   ],
   "today": {
@@ -170,7 +230,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3616821,
+    "idade_s": 3617004,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
