@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-16T16:57:13-03:00",
+  "updated_at": "2026-10-16T17:00:18-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
     "last_ea_event": "2026-10-16T16:35:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792180555,
+    "ea_heartbeat_epoch": 1792180795,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -307,9 +307,9 @@
     "volume_ok": true
   },
   "cumulative": {
-    "pnl": -32040.0,
-    "trades": 79,
-    "wins": 30,
+    "pnl": -32105.0,
+    "trades": 78,
+    "wins": 29,
     "since": "2026-09-04",
     "days": 27,
     "days_positive": 8,
@@ -332,7 +332,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3705381,
+    "idade_s": 3705566,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
@@ -639,17 +639,17 @@
     },
     {
       "date": "2026-10-13",
-      "pnl": 85.0,
-      "trades": 2,
-      "wins": 2,
-      "cum": -32125.0
+      "pnl": 20.0,
+      "trades": 1,
+      "wins": 1,
+      "cum": -32190.0
     },
     {
       "date": "2026-10-14",
       "pnl": 85.0,
       "trades": 4,
       "wins": 2,
-      "cum": -32040.0
+      "cum": -32105.0
     }
   ],
   "trades": [
@@ -732,22 +732,6 @@
       "motivo": "eod",
       "motivo_label": "Fim do pregao",
       "minutos": 448.8
-    },
-    {
-      "symbol": "WINV26",
-      "strategy": "intramom",
-      "strategy_label": "Momentum intradiario",
-      "side": "SHORT",
-      "entry_time": "2026-10-13T17:00:04-03:00",
-      "exit_time": "2026-10-13T17:40:00-03:00",
-      "entry_price": 206845.0,
-      "exit_price": 206780.0,
-      "qty": 1.0,
-      "pnl": 65.0,
-      "pnl_bruto": 65.0,
-      "motivo": "eod",
-      "motivo_label": "Fim do pregao",
-      "minutos": 39.9
     },
     {
       "symbol": "WINV26",
@@ -1920,12 +1904,6 @@
   ],
   "by_strategy": [
     {
-      "strategy": "Momentum intradiario",
-      "trades": 1,
-      "wins": 1,
-      "pnl": 65.0
-    },
-    {
       "strategy": "ORB",
       "trades": 18,
       "wins": 4,
@@ -1947,9 +1925,9 @@
   "by_symbol": [
     {
       "symbol": "WINV26",
-      "trades": 79,
-      "wins": 30,
-      "pnl": -32040.0
+      "trades": 78,
+      "wins": 29,
+      "pnl": -32105.0
     }
   ],
   "by_reason": [
@@ -1961,9 +1939,9 @@
     },
     {
       "reason": "Fim do pregao",
-      "trades": 42,
-      "wins": 26,
-      "pnl": 8850.0
+      "trades": 41,
+      "wins": 25,
+      "pnl": 8785.0
     },
     {
       "reason": "Stop",
