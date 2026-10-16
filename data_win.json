@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-16T14:24:13-03:00",
+  "updated_at": "2026-10-16T14:27:12-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-16T13:30:40-03:00",
+    "last_ea_event": "2026-10-16T14:26:15-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792171375,
+    "ea_heartbeat_epoch": 1792171555,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -132,6 +132,42 @@
       "tipo": "entrada",
       "modulo": null,
       "texto": "[ORDER] W21 LONG perna C limite=58.02 (nivel teorico 58.0174) vol=100 ticket=2565042288"
+    },
+    {
+      "hora": "2026-10-16T14:26:15-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=58.69 (nivel teorico 58.6883) vol=100 ticket=2565201858"
+    },
+    {
+      "hora": "2026-10-16T14:26:15-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=58.66 (nivel teorico 58.6600) vol=100 ticket=2565201861"
+    },
+    {
+      "hora": "2026-10-16T14:26:15-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=58.63 (nivel teorico 58.6317) vol=100 ticket=2565201864"
+    },
+    {
+      "hora": "2026-10-16T14:26:15-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna A limite=58.69 (nivel teorico 58.6883) vol=100 ticket=2565201865"
+    },
+    {
+      "hora": "2026-10-16T14:26:15-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna B limite=58.66 (nivel teorico 58.6600) vol=100 ticket=2565201866"
+    },
+    {
+      "hora": "2026-10-16T14:26:15-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W5 LONG perna C limite=58.63 (nivel teorico 58.6317) vol=100 ticket=2565201867"
     }
   ],
   "today": {
@@ -182,7 +218,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3696201,
+    "idade_s": 3696380,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
