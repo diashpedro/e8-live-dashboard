@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-16T16:33:17-03:00",
+  "updated_at": "2026-10-16T16:36:15-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-16T16:14:51-03:00",
+    "last_ea_event": "2026-10-16T16:35:00-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792179115,
+    "ea_heartbeat_epoch": 1792179295,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -276,6 +276,12 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W3 LONG perna A motivo=alvo vol=100"
+    },
+    {
+      "hora": "2026-10-16T16:35:00-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EOD] pernas conhecidas fechadas -- conferencia de residuo em 10s"
     }
   ],
   "today": {
@@ -326,7 +332,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3703945,
+    "idade_s": 3704123,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
