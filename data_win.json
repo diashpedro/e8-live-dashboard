@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-16T11:48:12-03:00",
+  "updated_at": "2026-10-16T11:51:09-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-16T09:45:05-03:00",
+    "last_ea_event": "2026-10-16T11:48:37-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792162015,
+    "ea_heartbeat_epoch": 1792162195,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -24,6 +24,24 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EOD] ultimo candle do pregao anterior: 2026.10.15 16:45 -> corte de HOJE (-15min): 2026.10.16 16:30"
+    },
+    {
+      "hora": "2026-10-16T11:48:37-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna A limite=57.97 (nivel teorico 57.9661) vol=100 ticket=2564721691"
+    },
+    {
+      "hora": "2026-10-16T11:48:37-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna B limite=58.01 (nivel teorico 58.0050) vol=100 ticket=2564721692"
+    },
+    {
+      "hora": "2026-10-16T11:48:37-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 SHORT perna C limite=58.04 (nivel teorico 58.0439) vol=100 ticket=2564721695"
     }
   ],
   "today": {
@@ -74,7 +92,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3686840,
+    "idade_s": 3687018,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
