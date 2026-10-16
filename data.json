@@ -1,61 +1,61 @@
 {
-  "updated_at": "2026-10-16T16:12:08-03:00",
+  "updated_at": "2026-10-16T16:15:09-03:00",
   "start_date": "2026-07-29",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-16T16:11:55-03:00",
+    "last_ea_event": "2026-10-16T16:13:55-03:00",
     "last_error_msg": null,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
       {
         "symbol": "PETR4",
-        "bid": 59.19,
+        "bid": 59.25,
         "ok": true
       },
       {
         "symbol": "VALE3",
-        "bid": 66.14,
+        "bid": 66.2,
         "ok": true
       },
       {
         "symbol": "ITUB4",
-        "bid": 48.06,
+        "bid": 48.09,
         "ok": true
       },
       {
         "symbol": "ABEV3",
-        "bid": 16.72,
+        "bid": 16.73,
         "ok": true
       },
       {
         "symbol": "TOTS3",
-        "bid": 40.0,
+        "bid": 40.06,
         "ok": true
       }
     ],
     "pendentes": 0
   },
   "account": {
-    "balance": 980419.88,
-    "equity": 980419.88,
+    "balance": 980424.88,
+    "equity": 980424.88,
     "login": 1192108021,
     "server": "ClearInvestimentos-DEMO"
   },
   "today": {
     "date": "2026-10-16",
-    "realized": 12.0,
+    "realized": 17.0,
     "unrealized": 0,
-    "total": 12.0,
-    "trades": 2,
-    "wins": 2,
+    "total": 17.0,
+    "trades": 3,
+    "wins": 3,
     "exposure": 0,
     "open_legs": 0,
-    "broker_realized": 12.0
+    "broker_realized": 17.0
   },
   "reconciliacao": {
-    "painel": 12.0,
-    "corretora": 12.0,
+    "painel": 17.0,
+    "corretora": 17.0,
     "divergencia": 0.0,
     "tolerancia": 1.0,
     "comparavel": true,
@@ -65,9 +65,9 @@
     "saidas_sem_par": []
   },
   "cumulative": {
-    "pnl": -9190.0,
-    "trades": 834,
-    "wins": 203,
+    "pnl": -9185.0,
+    "trades": 835,
+    "wins": 204,
     "since": "2026-08-10",
     "days": 33,
     "days_positive": 19,
@@ -314,13 +314,29 @@
     },
     {
       "date": "2026-10-16",
-      "pnl": 12.0,
-      "trades": 2,
-      "wins": 2,
-      "cum": -9190.0
+      "pnl": 17.0,
+      "trades": 3,
+      "wins": 3,
+      "cum": -9185.0
     }
   ],
   "trades": [
+    {
+      "symbol": "PETR4",
+      "w": 3,
+      "leg": "A",
+      "side": "LONG",
+      "entry_time": "2026-10-16T16:14:16-03:00",
+      "exit_time": "2026-10-16T16:14:51-03:00",
+      "entry_price": 59.2,
+      "exit_price": 59.25,
+      "qty": 100.0,
+      "pnl": 5.0,
+      "pnl_bruto": 5.0,
+      "motivo": "alvo",
+      "motivo_label": "Alvo",
+      "minutos": 0.6
+    },
     {
       "symbol": "PETR4",
       "w": 3,
@@ -13681,9 +13697,9 @@
     },
     {
       "w": 3,
-      "trades": 332,
-      "wins": 102,
-      "pnl": -2635.0
+      "trades": 333,
+      "wins": 103,
+      "pnl": -2630.0
     },
     {
       "w": 5,
@@ -13713,9 +13729,9 @@
     },
     {
       "symbol": "PETR4",
-      "trades": 317,
-      "wins": 86,
-      "pnl": -1987.0
+      "trades": 318,
+      "wins": 87,
+      "pnl": -1982.0
     },
     {
       "symbol": "TOTS3",
@@ -13733,9 +13749,9 @@
   "by_leg": [
     {
       "leg": "A",
-      "trades": 327,
-      "wins": 84,
-      "pnl": -4527.0
+      "trades": 328,
+      "wins": 85,
+      "pnl": -4522.0
     },
     {
       "leg": "B",
@@ -13753,9 +13769,9 @@
   "by_reason": [
     {
       "reason": "Alvo",
-      "trades": 523,
-      "wins": 111,
-      "pnl": 625.0
+      "trades": 524,
+      "wins": 112,
+      "pnl": 630.0
     },
     {
       "reason": "Breakeven",

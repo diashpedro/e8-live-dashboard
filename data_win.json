@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-16T16:12:13-03:00",
+  "updated_at": "2026-10-16T16:15:14-03:00",
   "start_date": "2026-09-04",
   "health": {
     "errors_today": 0,
-    "last_ea_event": "2026-10-16T15:44:11-03:00",
+    "last_ea_event": "2026-10-16T16:14:51-03:00",
     "last_error_msg": null,
-    "ea_heartbeat_epoch": 1792177915,
+    "ea_heartbeat_epoch": 1792178095,
     "terminal_connected": true,
     "algo_trading": true,
     "symbols": [
@@ -246,6 +246,36 @@
       "tipo": "saida",
       "modulo": null,
       "texto": "[EXIT] W5 LONG perna A motivo=alvo vol=100"
+    },
+    {
+      "hora": "2026-10-16T16:13:26-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna A limite=59.20 (nivel teorico 59.2042) vol=100 ticket=2565536935"
+    },
+    {
+      "hora": "2026-10-16T16:13:26-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna B limite=59.19 (nivel teorico 59.1900) vol=100 ticket=2565536936"
+    },
+    {
+      "hora": "2026-10-16T16:13:26-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[ORDER] W3 LONG perna C limite=59.18 (nivel teorico 59.1758) vol=100 ticket=2565536938"
+    },
+    {
+      "hora": "2026-10-16T16:14:16-03:00",
+      "tipo": "entrada",
+      "modulo": null,
+      "texto": "[FILL] W3 LONG perna A entry=59.2000 vol=100 (ordem limite executada)"
+    },
+    {
+      "hora": "2026-10-16T16:14:51-03:00",
+      "tipo": "saida",
+      "modulo": null,
+      "texto": "[EXIT] W3 LONG perna A motivo=alvo vol=100"
     }
   ],
   "today": {
@@ -296,7 +326,7 @@
     "presente": true,
     "heartbeat": "2026-09-03T19:40:52",
     "heartbeat_epoch": 1788475252,
-    "idade_s": 3702681,
+    "idade_s": 3702862,
     "dados_ok": true,
     "simbolo": "WINV26",
     "sinais_vivos": 0,
