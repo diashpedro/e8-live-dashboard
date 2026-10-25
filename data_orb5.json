@@ -1,0 +1,71 @@
+{
+ "gerado": "2026-10-25T03:31:21Z",
+ "saude": {
+  "terminal": true,
+  "heartbeat_s": 35
+ },
+ "status": {
+  "atualizado": "2026.10.25 00:30:46",
+  "modo": "demo",
+  "saida": "10 min antes do call",
+  "fase": "fim de semana",
+  "call": "16:55",
+  "parado_dia": false,
+  "parado_estrategia": false,
+  "armadas": 0,
+  "abertas": 0,
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
+ },
+ "resumo": {
+  "dias": 0,
+  "operacoes": 0,
+  "operacoes_por_dia": 0,
+  "acerto_pct": null,
+  "por_operacao_pct": null,
+  "resultado": 0.0,
+  "maior_queda": 0.0,
+  "dias_negativos_seguidos": 0,
+  "escorregamento_ticks": null,
+  "escorregamento_rs": null,
+  "operacoes_demo": 0,
+  "perdidas": 0,
+  "so_na_demo": 0
+ },
+ "dias": [],
+ "operacoes": [],
+ "decisoes_ultimo_dia": {
+  "data": null,
+  "motivos": {}
+ },
+ "eventos": [
+  {
+   "quando": "2026.10.25 00:25:44",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
+  },
+  {
+   "quando": "2026.10.25 00:23:51",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
+  },
+  {
+   "quando": "2026.10.24 21:25:33",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo ENSAIO, 76 ações, magic 885005"
+  },
+  {
+   "quando": "2026.10.24 21:24:28",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo ENSAIO, 76 ações, magic 885005"
+  }
+ ],
+ "referencia": {
+  "por_operacao_pct": 0.19,
+  "ao_ano_pct": 12.1,
+  "fora_da_amostra_ao_ano_pct": -2.6,
+  "nota": "backtest 2022–26 com a mesma saída (10 min antes do call, stop de 1 ATR); fora da amostra = escolha walk-forward 2024–26"
+ }
+}
