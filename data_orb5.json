@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-26T20:03:02Z",
+ "gerado": "2026-10-26T20:06:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 38
  },
  "status": {
-  "atualizado": "2026.10.26 17:02:47",
+  "atualizado": "2026.10.26 17:05:47",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -41,6 +41,11 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.26 17:05:01",
+   "tipo": "FIM",
+   "msg": "sem pregão hoje (nenhum 1º candle)"
+  },
   {
    "quando": "2026.10.26 10:40:57",
    "tipo": "DIA",
