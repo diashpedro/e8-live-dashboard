@@ -1,22 +1,22 @@
 {
- "gerado": "2026-10-27T18:39:05Z",
+ "gerado": "2026-10-27T18:42:05Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 33
+  "heartbeat_s": 34
  },
  "status": {
-  "atualizado": "2026.10.27 15:38:38",
+  "atualizado": "2026.10.27 15:41:38",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
-  "parado_dia": false,
+  "parado_dia": true,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 5,
   "encerradas": 3,
-  "resultado_sombra": -2790.3,
-  "resultado_real": -2991.99,
+  "resultado_sombra": -2850.3,
+  "resultado_real": -3075.43,
   "operacoes": [
    {
     "ativo": "ASAI3",
@@ -266,6 +266,36 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.27 15:39:22",
+   "tipo": "ZERADA",
+   "msg": "B3SA3 -- trava do dia"
+  },
+  {
+   "quando": "2026.10.27 15:39:21",
+   "tipo": "ZERADA",
+   "msg": "CURY3 -- trava do dia"
+  },
+  {
+   "quando": "2026.10.27 15:39:20",
+   "tipo": "ZERADA",
+   "msg": "DIRR3 -- trava do dia"
+  },
+  {
+   "quando": "2026.10.27 15:39:18",
+   "tipo": "ZERADA",
+   "msg": "HAPV3 -- trava do dia"
+  },
+  {
+   "quando": "2026.10.27 15:39:15",
+   "tipo": "ZERADA",
+   "msg": "RENT3 -- trava do dia"
+  },
+  {
+   "quando": "2026.10.27 15:39:08",
+   "tipo": "TRAVA_DIA",
+   "msg": "resultado do dia R$ -3021 <= -R$ 3000 -- zerando e parando hoje"
+  },
   {
    "quando": "2026.10.27 12:10:22",
    "tipo": "LENTO",
@@ -635,36 +665,6 @@
    "quando": "2026.10.26 10:11:16",
    "tipo": "TRAVAS",
    "msg": "sem operações registradas ainda"
-  },
-  {
-   "quando": "2026.10.26 10:11:16",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.26 10:10:43",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
-  },
-  {
-   "quando": "2026.10.26 09:31:40",
-   "tipo": "DIA",
-   "msg": "pregão 2026.10.26 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.10.26 09:31:40",
-   "tipo": "TRAVAS",
-   "msg": "sem operações registradas ainda"
-  },
-  {
-   "quando": "2026.10.26 09:31:40",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.25 00:25:44",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
   }
  ],
  "referencia": {
