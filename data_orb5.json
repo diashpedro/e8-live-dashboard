@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-26T21:57:02Z",
+ "gerado": "2026-10-27T12:00:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 33
+  "heartbeat_s": 65
  },
  "status": {
-  "atualizado": "2026.10.26 18:56:52",
+  "atualizado": "2026.10.27 08:58:58",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "encerrado",
+  "fase": "antes da preparação",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -41,6 +41,21 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.27 07:08:56",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
+  },
+  {
+   "quando": "2026.10.27 07:05:41",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
+  },
+  {
+   "quando": "2026.10.27 06:55:34",
+   "tipo": "INIT",
+   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
+  },
   {
    "quando": "2026.10.26 17:05:01",
    "tipo": "FIM",
