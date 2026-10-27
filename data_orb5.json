@@ -1,23 +1,40 @@
 {
- "gerado": "2026-10-27T13:03:02Z",
+ "gerado": "2026-10-27T13:06:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 47
+  "heartbeat_s": 30
  },
  "status": {
-  "atualizado": "2026.10.27 10:02:46",
+  "atualizado": "2026.10.27 10:05:34",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 1,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
   "resultado_real": 0.0,
-  "operacoes": []
+  "operacoes": [
+   {
+    "ativo": "YDUQ3",
+    "lado": 1,
+    "gap": -0.35185,
+    "vrel": 4.25,
+    "rank": 0.855,
+    "estado": "aguardando rompimento",
+    "lote": 1000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "ordem recusada",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 0,
@@ -41,6 +58,46 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.27 10:05:32",
+   "tipo": "DECISOES",
+   "msg": "18 ações avaliadas em 31125 ms, 1 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.10.27 10:05:32",
+   "tipo": "LENTO",
+   "msg": "decisões (passo 1) levou 31125 ms"
+  },
+  {
+   "quando": "2026.10.27 10:05:32",
+   "tipo": "REJEITADA",
+   "msg": "YDUQ3 tentativa 2: retcode 10031 (no connection), envio 0 ms"
+  },
+  {
+   "quando": "2026.10.27 10:05:32",
+   "tipo": "REJEITADA",
+   "msg": "YDUQ3 tentativa 1: retcode 10031 (no connection), envio 31026 ms"
+  },
+  {
+   "quando": "2026.10.27 10:04:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 18 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.27 10:04:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 18 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.27 10:03:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 4 de 76 ações prontas, leitura em 4 ms"
+  },
+  {
+   "quando": "2026.10.27 10:03:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.27 10:02:33",
    "tipo": "AQUECE",
