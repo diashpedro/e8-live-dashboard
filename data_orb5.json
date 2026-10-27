@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-27T12:30:03Z",
+ "gerado": "2026-10-27T12:33:04Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 49
  },
  "status": {
-  "atualizado": "2026.10.27 09:28:58",
+  "atualizado": "2026.10.27 09:32:45",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -41,6 +41,21 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.27 09:32:13",
+   "tipo": "DIA",
+   "msg": "pregão 2026.10.27 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.10.27 09:32:13",
+   "tipo": "TRAVAS",
+   "msg": "sem operações registradas ainda"
+  },
+  {
+   "quando": "2026.10.27 09:32:13",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
+  },
   {
    "quando": "2026.10.27 07:08:56",
    "tipo": "INIT",
