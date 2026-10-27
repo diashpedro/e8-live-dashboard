@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-27T17:30:05Z",
+ "gerado": "2026-10-27T17:33:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 34
+  "heartbeat_s": 32
  },
  "status": {
-  "atualizado": "2026.10.27 14:29:38",
+  "atualizado": "2026.10.27 14:32:38",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -13,10 +13,10 @@
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
-  "abertas": 7,
-  "encerradas": 1,
-  "resultado_sombra": -2374.93,
-  "resultado_real": -2620.91,
+  "abertas": 6,
+  "encerradas": 2,
+  "resultado_sombra": -2401.91,
+  "resultado_real": -2590.91,
   "operacoes": [
    {
     "ativo": "ASAI3",
@@ -168,13 +168,13 @@
     "gap": -0.12369,
     "vrel": 2.23,
     "rank": 0.711,
-    "estado": "aberta",
+    "estado": "encerrada",
     "lote": 2300,
     "ent": 4.19,
     "stop": 3.99,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
+    "saida": 3.99,
+    "liq": -0.049332,
+    "motivo": "stop",
     "real": true,
     "ent_real": 4.21
    },
