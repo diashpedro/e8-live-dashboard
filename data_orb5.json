@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-27T15:09:03Z",
+ "gerado": "2026-10-27T15:12:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 32
+  "heartbeat_s": 31
  },
  "status": {
-  "atualizado": "2026.10.27 12:08:38",
+  "atualizado": "2026.10.27 12:11:38",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 8,
   "encerradas": 0,
-  "resultado_sombra": -1060.04,
-  "resultado_real": -1255.07,
+  "resultado_sombra": -1358.04,
+  "resultado_real": -1553.07,
   "operacoes": [
    {
     "ativo": "ASAI3",
@@ -266,6 +266,11 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.27 12:10:22",
+   "tipo": "LENTO",
+   "msg": "sombra (passo 3) levou 7816 ms"
+  },
   {
    "quando": "2026.10.27 10:20:40",
    "tipo": "CANCELADA",
@@ -658,11 +663,6 @@
   },
   {
    "quando": "2026.10.25 00:25:44",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
-  },
-  {
-   "quando": "2026.10.25 00:23:51",
    "tipo": "INIT",
    "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
   }
