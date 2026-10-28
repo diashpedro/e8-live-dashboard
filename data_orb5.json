@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-28T20:03:03Z",
+ "gerado": "2026-10-28T20:06:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 70
+  "heartbeat_s": 9
  },
  "status": {
-  "atualizado": "2026.10.28 17:02:54",
+  "atualizado": "2026.10.28 17:05:54",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -101,27 +101,94 @@
   ]
  },
  "resumo": {
-  "dias": 0,
-  "operacoes": 0,
-  "operacoes_por_dia": 0,
-  "acerto_pct": null,
-  "por_operacao_pct": null,
-  "resultado": 0.0,
+  "dias": 1,
+  "operacoes": 2,
+  "operacoes_por_dia": 2.0,
+  "acerto_pct": 100.0,
+  "por_operacao_pct": 3.937,
+  "resultado": 711.89,
   "maior_queda": 0.0,
   "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": null,
-  "escorregamento_rs": null,
-  "operacoes_demo": 0,
+  "escorregamento_ticks": 1.25,
+  "escorregamento_rs": -9.92,
+  "operacoes_demo": 2,
   "perdidas": 0,
   "so_na_demo": 0
  },
- "dias": [],
- "operacoes": [],
+ "dias": [
+  {
+   "data": "2026-10-28",
+   "operacoes": 2,
+   "ganhos": 2,
+   "rs": 711.89,
+   "rs_sombra": 731.72,
+   "rs_real": 711.89,
+   "modo": "demo",
+   "acumulado": 711.89
+  }
+ ],
+ "operacoes": [
+  {
+   "data": "2026-10-28",
+   "ativo": "BBAS3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 1.15,
+   "vrel": 2.192,
+   "lote": 500,
+   "entrada": 17.42,
+   "saida": 16.83,
+   "ent_real": 17.4,
+   "saida_real": 16.83,
+   "motivo": "horário",
+   "liq_pct": 3.312,
+   "liq_real_pct": 3.231,
+   "rs_sombra": 288.49,
+   "rs_real": 281.06,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 281.06
+  },
+  {
+   "data": "2026-10-28",
+   "ativo": "CYRE3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 0.42,
+   "vrel": 5.21,
+   "lote": 500,
+   "entrada": 18.58,
+   "saida": 17.68,
+   "ent_real": 18.56,
+   "saida_real": 17.69,
+   "motivo": "horário",
+   "liq_pct": 4.771,
+   "liq_real_pct": 4.643,
+   "rs_sombra": 443.23,
+   "rs_real": 430.83,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.5,
+   "rs": 430.83
+  }
+ ],
  "decisoes_ultimo_dia": {
-  "data": null,
-  "motivos": {}
+  "data": "2026-10-28",
+  "motivos": {
+   "volume": 57,
+   "volatilidade": 13,
+   "venda (gap de alta)": 2,
+   "compra (gap de baixa)": 3,
+   "gap pequeno": 1
+  }
  },
  "eventos": [
+  {
+   "quando": "2026.10.28 17:05:00",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.10.28 16:45:00",
    "tipo": "ZERADA",
@@ -516,11 +583,6 @@
    "quando": "2026.10.27 10:11:46",
    "tipo": "CANCELADA",
    "msg": "BPAC11 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.27 10:11:28",
-   "tipo": "CANCELADA",
-   "msg": "CEAB3 -- rompeu o outro lado antes"
   }
  ],
  "referencia": {
