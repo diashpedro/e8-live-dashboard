@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-28T19:42:02Z",
+ "gerado": "2026-10-28T19:45:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 70
+  "heartbeat_s": 69
  },
  "status": {
-  "atualizado": "2026.10.28 16:41:54",
+  "atualizado": "2026.10.28 16:44:54",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": 731.72,
-  "resultado_real": 715.86,
+  "resultado_sombra": 741.72,
+  "resultado_real": 725.86,
   "operacoes": [
    {
     "ativo": "BBAS3",
@@ -122,6 +122,16 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.28 16:45:00",
+   "tipo": "ZERADA",
+   "msg": "BBAS3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.10.28 16:45:00",
+   "tipo": "ZERADA",
+   "msg": "CYRE3 -- saída 10 min antes do call (tentativa 1)"
+  },
   {
    "quando": "2026.10.28 12:09:07",
    "tipo": "LENTO",
@@ -511,16 +521,6 @@
    "quando": "2026.10.27 10:11:28",
    "tipo": "CANCELADA",
    "msg": "CEAB3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.27 10:11:26",
-   "tipo": "CANCELADA",
-   "msg": "RAIL3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.27 10:10:08",
-   "tipo": "DECISOES",
-   "msg": "58 ações avaliadas em 8153 ms, 13 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
