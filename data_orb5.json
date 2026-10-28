@@ -1,22 +1,22 @@
 {
- "gerado": "2026-10-28T13:09:03Z",
+ "gerado": "2026-10-28T13:12:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 70
  },
  "status": {
-  "atualizado": "2026.10.28 10:08:53",
+  "atualizado": "2026.10.28 10:11:53",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 2,
-  "abertas": 0,
+  "armadas": 3,
+  "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 0.0,
-  "resultado_real": 23.0,
+  "resultado_sombra": 60.99,
+  "resultado_real": 80.86,
   "operacoes": [
    {
     "ativo": "BBAS3",
@@ -24,6 +24,22 @@
     "gap": 0.01151,
     "vrel": 2.19,
     "rank": 0.605,
+    "estado": "aberta",
+    "lote": 500,
+    "ent": 17.42,
+    "stop": 18.34,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 17.4
+   },
+   {
+    "ativo": "CYRE3",
+    "lado": -1,
+    "gap": 0.00421,
+    "vrel": 5.21,
+    "rank": 0.908,
     "estado": "aguardando rompimento",
     "lote": 500,
     "ent": 0.0,
@@ -32,7 +48,39 @@
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
     "real": true,
-    "ent_real": 17.4
+    "ent_real": 18.56
+   },
+   {
+    "ativo": "HAPV3",
+    "lado": 1,
+    "gap": -0.00478,
+    "vrel": 2.36,
+    "rank": 0.961,
+    "estado": "aguardando rompimento",
+    "lote": 2300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "MULT3",
+    "lado": 1,
+    "gap": -0.01017,
+    "vrel": 3.14,
+    "rank": 0.697,
+    "estado": "aguardando rompimento",
+    "lote": 300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
    },
    {
     "ativo": "SMFT3",
@@ -40,7 +88,7 @@
     "gap": -0.01118,
     "vrel": 2.15,
     "rank": 0.763,
-    "estado": "aguardando rompimento",
+    "estado": "cancelada (rompeu o outro lado)",
     "lote": 500,
     "ent": 0.0,
     "stop": 0.0,
@@ -74,6 +122,36 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.28 10:10:59",
+   "tipo": "CANCELADA",
+   "msg": "HAPV3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.28 10:10:56",
+   "tipo": "CANCELADA",
+   "msg": "MULT3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.28 10:10:01",
+   "tipo": "DECISOES",
+   "msg": "36 ações avaliadas em 129 ms, 3 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.10.28 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "MULT3 compra 300 ações, gatilho 27.49, limite 27.51, stop 25.93 (envio 39 ms)"
+  },
+  {
+   "quando": "2026.10.28 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "HAPV3 compra 2300 ações, gatilho 4.17, limite 4.19, stop 3.72 (envio 38 ms)"
+  },
+  {
+   "quando": "2026.10.28 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "CYRE3 venda 500 ações, gatilho 18.58, limite 18.56, stop 20.39 (envio 44 ms)"
+  },
   {
    "quando": "2026.10.28 10:06:02",
    "tipo": "CANCELADA",
@@ -443,36 +521,6 @@
    "quando": "2026.10.27 10:10:08",
    "tipo": "LENTO",
    "msg": "decisões (passo 1) levou 8148 ms"
-  },
-  {
-   "quando": "2026.10.27 10:10:08",
-   "tipo": "ARMADA",
-   "msg": "VAMO3 compra 3400 ações, gatilho 2.88, limite 2.90, stop 2.61 (envio 513 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:07",
-   "tipo": "ARMADA",
-   "msg": "RENT3 compra 300 ações, gatilho 32.42, limite 32.44, stop 30.45 (envio 348 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:07",
-   "tipo": "ARMADA",
-   "msg": "RAIL3 compra 600 ações, gatilho 15.65, limite 15.67, stop 14.97 (envio 349 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:07",
-   "tipo": "ARMADA",
-   "msg": "POMO4 compra 2300 ações, gatilho 4.19, limite 4.21, stop 3.99 (envio 182 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:06",
-   "tipo": "ARMADA",
-   "msg": "HAPV3 compra 2300 ações, gatilho 4.27, limite 4.29, stop 3.92 (envio 112 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:06",
-   "tipo": "ARMADA",
-   "msg": "DIRR3 compra 1000 ações, gatilho 9.23, limite 9.25, stop 8.69 (envio 1101 ms)"
   }
  ],
  "referencia": {
