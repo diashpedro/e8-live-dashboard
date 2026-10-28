@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-28T13:06:03Z",
+ "gerado": "2026-10-28T13:09:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 71
+  "heartbeat_s": 70
  },
  "status": {
-  "atualizado": "2026.10.28 10:05:53",
+  "atualizado": "2026.10.28 10:08:53",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
+  "resultado_real": 23.0,
   "operacoes": [
    {
     "ativo": "BBAS3",
@@ -31,8 +31,8 @@
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
+    "real": true,
+    "ent_real": 17.4
    },
    {
     "ativo": "SMFT3",
