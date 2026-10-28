@@ -1,232 +1,23 @@
 {
- "gerado": "2026-10-28T12:30:02Z",
+ "gerado": "2026-10-28T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 82
+  "heartbeat_s": 69
  },
  "status": {
-  "atualizado": "2026.10.28 09:25:01",
+  "atualizado": "2026.10.28 09:32:53",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "16:55",
-  "parado_dia": true,
+  "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 5,
-  "resultado_sombra": -985.12,
-  "resultado_real": -3075.43,
-  "operacoes": [
-   {
-    "ativo": "ASAI3",
-    "lado": -1,
-    "gap": 0.01906,
-    "vrel": 5.26,
-    "rank": 0.868,
-    "estado": "encerrada",
-    "lote": 0,
-    "ent": 7.78,
-    "stop": 8.29,
-    "saida": 8.0,
-    "liq": -0.028095,
-    "motivo": "horário",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "B3SA3",
-    "lado": -1,
-    "gap": 0.02455,
-    "vrel": 4.63,
-    "rank": 0.75,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 600,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "BPAC11",
-    "lado": -1,
-    "gap": 0.0155,
-    "vrel": 3.07,
-    "rank": 0.724,
-    "estado": "encerrada",
-    "lote": 0,
-    "ent": 60.37,
-    "stop": 63.42,
-    "saida": 60.16,
-    "liq": 0.003101,
-    "motivo": "horário",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "CEAB3",
-    "lado": -1,
-    "gap": 0.04677,
-    "vrel": 2.53,
-    "rank": 0.934,
-    "estado": "encerrada",
-    "lote": 0,
-    "ent": 7.48,
-    "stop": 8.03,
-    "saida": 7.42,
-    "liq": 0.006893,
-    "motivo": "horário",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "CSAN3",
-    "lado": -1,
-    "gap": 0.02888,
-    "vrel": 3.9,
-    "rank": 0.908,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 3400,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "CURY3",
-    "lado": -1,
-    "gap": 0.02917,
-    "vrel": 2.78,
-    "rank": 0.816,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "CYRE3",
-    "lado": -1,
-    "gap": 0.01987,
-    "vrel": 5.77,
-    "rank": 0.882,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 400,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "DIRR3",
-    "lado": -1,
-    "gap": 0.04442,
-    "vrel": 3.33,
-    "rank": 0.803,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1000,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "HAPV3",
-    "lado": -1,
-    "gap": 0.06784,
-    "vrel": 5.19,
-    "rank": 0.961,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "POMO4",
-    "lado": -1,
-    "gap": 0.022,
-    "vrel": 2.23,
-    "rank": 0.711,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "RENT3",
-    "lado": -1,
-    "gap": 0.01484,
-    "vrel": 3.96,
-    "rank": 0.829,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "VAMO3",
-    "lado": -1,
-    "gap": 0.02888,
-    "vrel": 3.52,
-    "rank": 0.987,
-    "estado": "encerrada",
-    "lote": 0,
-    "ent": 2.77,
-    "stop": 3.04,
-    "saida": 2.9,
-    "liq": -0.049196,
-    "motivo": "horário",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "YDUQ3",
-    "lado": -1,
-    "gap": 0.00552,
-    "vrel": 4.25,
-    "rank": 0.855,
-    "estado": "encerrada",
-    "lote": 0,
-    "ent": 8.87,
-    "stop": 9.44,
-    "saida": 9.16,
-    "liq": -0.032591,
-    "motivo": "horário",
-    "real": false,
-    "ent_real": 0.0
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 0,
@@ -250,6 +41,21 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.28 09:30:51",
+   "tipo": "DIA",
+   "msg": "pregão 2026.10.28 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.10.28 09:30:51",
+   "tipo": "TRAVAS",
+   "msg": "sem operações registradas ainda"
+  },
+  {
+   "quando": "2026.10.28 09:30:51",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
+  },
   {
    "quando": "2026.10.27 20:31:57",
    "tipo": "FIM",
@@ -632,21 +438,6 @@
   },
   {
    "quando": "2026.10.27 09:58:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.27 09:58:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.27 09:57:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.27 09:57:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
