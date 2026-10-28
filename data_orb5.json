@@ -1,23 +1,56 @@
 {
- "gerado": "2026-10-28T13:03:02Z",
+ "gerado": "2026-10-28T13:06:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 69
+  "heartbeat_s": 71
  },
  "status": {
-  "atualizado": "2026.10.28 10:02:53",
+  "atualizado": "2026.10.28 10:05:53",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 2,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
   "resultado_real": 0.0,
-  "operacoes": []
+  "operacoes": [
+   {
+    "ativo": "BBAS3",
+    "lado": -1,
+    "gap": 0.01151,
+    "vrel": 2.19,
+    "rank": 0.605,
+    "estado": "aguardando rompimento",
+    "lote": 500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "SMFT3",
+    "lado": 1,
+    "gap": -0.01118,
+    "vrel": 2.15,
+    "rank": 0.763,
+    "estado": "aguardando rompimento",
+    "lote": 500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 0,
@@ -41,6 +74,41 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.28 10:06:02",
+   "tipo": "CANCELADA",
+   "msg": "SMFT3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.28 10:05:02",
+   "tipo": "DECISOES",
+   "msg": "40 ações avaliadas em 580 ms, 2 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.10.28 10:05:02",
+   "tipo": "ARMADA",
+   "msg": "SMFT3 compra 500 ações, gatilho 16.85, limite 16.87, stop 15.76 (envio 185 ms)"
+  },
+  {
+   "quando": "2026.10.28 10:05:02",
+   "tipo": "ARMADA",
+   "msg": "BBAS3 venda 500 ações, gatilho 17.42, limite 17.40, stop 18.34 (envio 316 ms)"
+  },
+  {
+   "quando": "2026.10.28 10:04:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 40 de 76 ações prontas, leitura em 55 ms"
+  },
+  {
+   "quando": "2026.10.28 10:04:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 40 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.28 10:03:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.28 10:03:01",
    "tipo": "AQUECE",
@@ -405,41 +473,6 @@
    "quando": "2026.10.27 10:10:06",
    "tipo": "ARMADA",
    "msg": "DIRR3 compra 1000 ações, gatilho 9.23, limite 9.25, stop 8.69 (envio 1101 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:05",
-   "tipo": "ARMADA",
-   "msg": "CYRE3 compra 400 ações, gatilho 20.06, limite 20.08, stop 18.78 (envio 484 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:05",
-   "tipo": "ARMADA",
-   "msg": "CURY3 compra 300 ações, gatilho 28.27, limite 28.29, stop 26.64 (envio 296 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "CSAN3 compra 3400 ações, gatilho 2.86, limite 2.88, stop 2.66 (envio 364 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "CEAB3 compra 1300 ações, gatilho 7.64, limite 7.66, stop 7.09 (envio 200 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "BPAC11 compra 100 ações, gatilho 61.51, limite 61.53, stop 58.46 (envio 197 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "B3SA3 compra 600 ações, gatilho 15.58, limite 15.60, stop 14.75 (envio 1213 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:10:02",
-   "tipo": "ARMADA",
-   "msg": "ASAI3 compra 1200 ações, gatilho 8.05, limite 8.07, stop 7.54 (envio 2723 ms)"
   }
  ],
  "referencia": {
