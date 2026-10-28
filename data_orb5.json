@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-28T13:00:05Z",
+ "gerado": "2026-10-28T13:03:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 73
+  "heartbeat_s": 69
  },
  "status": {
-  "atualizado": "2026.10.28 09:59:53",
+  "atualizado": "2026.10.28 10:02:53",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -41,6 +41,36 @@
   "motivos": {}
  },
  "eventos": [
+  {
+   "quando": "2026.10.28 10:03:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 6 ms"
+  },
+  {
+   "quando": "2026.10.28 10:02:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.28 10:02:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.28 10:01:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.28 10:01:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.28 10:00:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.28 10:00:01",
    "tipo": "AQUECE",
@@ -410,36 +440,6 @@
    "quando": "2026.10.27 10:10:02",
    "tipo": "ARMADA",
    "msg": "ASAI3 compra 1200 ações, gatilho 8.05, limite 8.07, stop 7.54 (envio 2723 ms)"
-  },
-  {
-   "quando": "2026.10.27 10:05:32",
-   "tipo": "DECISOES",
-   "msg": "18 ações avaliadas em 31125 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.27 10:05:32",
-   "tipo": "LENTO",
-   "msg": "decisões (passo 1) levou 31125 ms"
-  },
-  {
-   "quando": "2026.10.27 10:05:32",
-   "tipo": "REJEITADA",
-   "msg": "YDUQ3 tentativa 2: retcode 10031 (no connection), envio 0 ms"
-  },
-  {
-   "quando": "2026.10.27 10:05:32",
-   "tipo": "REJEITADA",
-   "msg": "YDUQ3 tentativa 1: retcode 10031 (no connection), envio 31026 ms"
-  },
-  {
-   "quando": "2026.10.27 10:04:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 18 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.27 10:04:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 18 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
