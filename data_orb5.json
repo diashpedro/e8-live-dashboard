@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-29T12:57:02Z",
+ "gerado": "2026-10-29T13:00:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 60
+  "heartbeat_s": 61
  },
  "status": {
-  "atualizado": "2026.10.29 09:56:33",
+  "atualizado": "2026.10.29 09:59:33",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -103,6 +103,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 10:00:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:59:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:59:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:58:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:58:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:57:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.29 09:57:01",
    "tipo": "AQUECE",
@@ -472,36 +502,6 @@
    "quando": "2026.10.27 20:16:47",
    "tipo": "TRAVAS",
    "msg": "acumulado R$ -3075, queda R$ -3075, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "FECHAMENTO",
-   "msg": "76 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)"
-  },
-  {
-   "quando": "2026.10.27 20:15:17",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
-  },
-  {
-   "quando": "2026.10.27 17:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.10.27 15:39:22",
-   "tipo": "ZERADA",
-   "msg": "B3SA3 -- trava do dia"
-  },
-  {
-   "quando": "2026.10.27 15:39:21",
-   "tipo": "ZERADA",
-   "msg": "CURY3 -- trava do dia"
   }
  ],
  "referencia": {
