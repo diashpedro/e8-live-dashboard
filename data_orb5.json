@@ -1,23 +1,72 @@
 {
- "gerado": "2026-10-29T13:09:02Z",
+ "gerado": "2026-10-29T13:12:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 60
  },
  "status": {
-  "atualizado": "2026.10.29 10:08:33",
+  "atualizado": "2026.10.29 10:11:33",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 3,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": -2.26,
+  "operacoes": [
+   {
+    "ativo": "B3SA3",
+    "lado": 1,
+    "gap": -0.00681,
+    "vrel": 2.93,
+    "rank": 0.737,
+    "estado": "aguardando rompimento",
+    "lote": 600,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "CSAN3",
+    "lado": -1,
+    "gap": 0.02553,
+    "vrel": 5.63,
+    "rank": 0.908,
+    "estado": "aguardando rompimento",
+    "lote": 4200,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 2.34
+   },
+   {
+    "ativo": "CYRE3",
+    "lado": 1,
+    "gap": -0.00337,
+    "vrel": 3.35,
+    "rank": 0.895,
+    "estado": "aguardando rompimento",
+    "lote": 500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 1,
@@ -103,6 +152,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 10:10:17",
+   "tipo": "CANCELADA",
+   "msg": "B3SA3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.29 10:10:13",
+   "tipo": "CANCELADA",
+   "msg": "CYRE3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.29 10:10:02",
+   "tipo": "DECISOES",
+   "msg": "41 ações avaliadas em 845 ms, 3 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.10.29 10:10:02",
+   "tipo": "ARMADA",
+   "msg": "CYRE3 compra 500 ações, gatilho 17.76, limite 17.78, stop 16.26 (envio 321 ms)"
+  },
+  {
+   "quando": "2026.10.29 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "CSAN3 venda 4200 ações, gatilho 2.36, limite 2.34, stop 2.57 (envio 216 ms)"
+  },
+  {
+   "quando": "2026.10.29 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "B3SA3 compra 600 ações, gatilho 14.70, limite 14.72, stop 13.77 (envio 166 ms)"
+  },
   {
    "quando": "2026.10.29 10:05:01",
    "tipo": "DECISOES",
@@ -472,36 +551,6 @@
    "quando": "2026.10.27 20:31:57",
    "tipo": "TRAVAS",
    "msg": "acumulado R$ -3075, queda R$ -3075, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "FECHAMENTO",
-   "msg": "76 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)"
-  },
-  {
-   "quando": "2026.10.27 20:31:39",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "TRAVA_DIA",
-   "msg": "resultado do dia R$ -3075 <= -R$ 3000 -- zerando e parando hoje"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "DECISOES",
-   "msg": "76 ações avaliadas em 6 ms, 13 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
