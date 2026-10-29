@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-29T13:00:03Z",
+ "gerado": "2026-10-29T13:03:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 59
  },
  "status": {
-  "atualizado": "2026.10.29 09:59:33",
+  "atualizado": "2026.10.29 10:02:33",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -103,6 +103,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 10:03:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 10:02:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 4 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 10:02:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 4 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 10:01:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 10:01:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 10:00:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.29 10:00:01",
    "tipo": "AQUECE",
@@ -472,36 +502,6 @@
    "quando": "2026.10.27 20:16:47",
    "tipo": "ADOTADA",
    "msg": "DIRR3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "ADOTADA",
-   "msg": "CYRE3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "ADOTADA",
-   "msg": "CURY3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "ADOTADA",
-   "msg": "CSAN3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "ADOTADA",
-   "msg": "B3SA3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "DIA",
-   "msg": "pregão 2026.10.27 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.10.27 20:16:47",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ -3075, queda R$ -3075, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
   }
  ],
  "referencia": {
