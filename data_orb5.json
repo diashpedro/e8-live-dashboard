@@ -1,104 +1,23 @@
 {
- "gerado": "2026-10-29T12:30:02Z",
+ "gerado": "2026-10-29T12:33:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 68
+  "heartbeat_s": 61
  },
  "status": {
-  "atualizado": "2026.10.29 09:25:00",
+  "atualizado": "2026.10.29 09:32:33",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 2,
-  "resultado_sombra": 731.72,
-  "resultado_real": 711.89,
-  "operacoes": [
-   {
-    "ativo": "BBAS3",
-    "lado": -1,
-    "gap": 0.01151,
-    "vrel": 2.19,
-    "rank": 0.605,
-    "estado": "encerrada",
-    "lote": 500,
-    "ent": 17.42,
-    "stop": 18.34,
-    "saida": 16.83,
-    "liq": 0.033122,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 17.4
-   },
-   {
-    "ativo": "CYRE3",
-    "lado": -1,
-    "gap": 0.00421,
-    "vrel": 5.21,
-    "rank": 0.908,
-    "estado": "encerrada",
-    "lote": 500,
-    "ent": 18.58,
-    "stop": 20.39,
-    "saida": 17.68,
-    "liq": 0.04771,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 18.56
-   },
-   {
-    "ativo": "HAPV3",
-    "lado": 1,
-    "gap": -0.00478,
-    "vrel": 2.36,
-    "rank": 0.961,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "MULT3",
-    "lado": 1,
-    "gap": -0.01017,
-    "vrel": 3.14,
-    "rank": 0.697,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "SMFT3",
-    "lado": 1,
-    "gap": -0.01118,
-    "vrel": 2.15,
-    "rank": 0.763,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 500,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 1,
@@ -184,6 +103,21 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 09:31:01",
+   "tipo": "DIA",
+   "msg": "pregão 2026.10.29 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.10.29 09:31:01",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 712, queda R$ 0, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.10.29 09:31:01",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
+  },
   {
    "quando": "2026.10.28 17:05:00",
    "tipo": "FIM",
@@ -568,21 +502,6 @@
    "quando": "2026.10.27 12:10:22",
    "tipo": "LENTO",
    "msg": "sombra (passo 3) levou 7816 ms"
-  },
-  {
-   "quando": "2026.10.27 10:20:40",
-   "tipo": "CANCELADA",
-   "msg": "VAMO3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.27 10:12:56",
-   "tipo": "CANCELADA",
-   "msg": "ASAI3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.27 10:11:46",
-   "tipo": "CANCELADA",
-   "msg": "BPAC11 -- rompeu o outro lado antes"
   }
  ],
  "referencia": {
