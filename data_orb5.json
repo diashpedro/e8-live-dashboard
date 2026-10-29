@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-29T12:54:03Z",
+ "gerado": "2026-10-29T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 60
  },
  "status": {
-  "atualizado": "2026.10.29 09:53:33",
+  "atualizado": "2026.10.29 09:56:33",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -103,6 +103,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 09:57:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 4 ms"
+  },
+  {
+   "quando": "2026.10.29 09:56:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:56:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:55:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.29 09:55:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.29 09:31:01",
    "tipo": "DIA",
@@ -477,31 +502,6 @@
    "quando": "2026.10.27 15:39:21",
    "tipo": "ZERADA",
    "msg": "CURY3 -- trava do dia"
-  },
-  {
-   "quando": "2026.10.27 15:39:20",
-   "tipo": "ZERADA",
-   "msg": "DIRR3 -- trava do dia"
-  },
-  {
-   "quando": "2026.10.27 15:39:18",
-   "tipo": "ZERADA",
-   "msg": "HAPV3 -- trava do dia"
-  },
-  {
-   "quando": "2026.10.27 15:39:15",
-   "tipo": "ZERADA",
-   "msg": "RENT3 -- trava do dia"
-  },
-  {
-   "quando": "2026.10.27 15:39:08",
-   "tipo": "TRAVA_DIA",
-   "msg": "resultado do dia R$ -3021 <= -R$ 3000 -- zerando e parando hoje"
-  },
-  {
-   "quando": "2026.10.27 12:10:22",
-   "tipo": "LENTO",
-   "msg": "sombra (passo 3) levou 7816 ms"
   }
  ],
  "referencia": {
