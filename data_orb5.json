@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-29T20:03:04Z",
+ "gerado": "2026-10-29T20:06:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 60
  },
  "status": {
-  "atualizado": "2026.10.29 17:02:33",
+  "atualizado": "2026.10.29 17:05:33",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -69,17 +69,17 @@
   ]
  },
  "resumo": {
-  "dias": 1,
-  "operacoes": 2,
-  "operacoes_por_dia": 2.0,
+  "dias": 2,
+  "operacoes": 3,
+  "operacoes_por_dia": 1.5,
   "acerto_pct": 100.0,
-  "por_operacao_pct": 3.937,
-  "resultado": 711.89,
+  "por_operacao_pct": 3.607,
+  "resultado": 1001.44,
   "maior_queda": 0.0,
   "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 1.25,
-  "escorregamento_rs": -9.92,
-  "operacoes_demo": 2,
+  "escorregamento_ticks": 1.33,
+  "escorregamento_rs": -41.57,
+  "operacoes_demo": 3,
   "perdidas": 0,
   "so_na_demo": 0
  },
@@ -93,6 +93,16 @@
    "rs_real": 711.89,
    "modo": "demo",
    "acumulado": 711.89
+  },
+  {
+   "data": "2026-10-29",
+   "operacoes": 1,
+   "ganhos": 1,
+   "rs": 289.55,
+   "rs_sombra": 394.44,
+   "rs_real": 289.55,
+   "modo": "demo",
+   "acumulado": 1001.44
   }
  ],
  "operacoes": [
@@ -139,19 +149,45 @@
    "simulada": true,
    "escorregamento_ticks": 1.5,
    "rs": 430.83
+  },
+  {
+   "data": "2026-10-29",
+   "ativo": "CSAN3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 2.55,
+   "vrel": 5.632,
+   "lote": 4200,
+   "entrada": 2.36,
+   "saida": 2.26,
+   "ent_real": 2.34,
+   "saida_real": 2.27,
+   "motivo": "horário",
+   "liq_pct": 3.979,
+   "liq_real_pct": 2.946,
+   "rs_sombra": 394.44,
+   "rs_real": 289.55,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.5,
+   "rs": 289.55
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-10-28",
+  "data": "2026-10-29",
   "motivos": {
-   "volume": 57,
-   "volatilidade": 13,
-   "venda (gap de alta)": 2,
-   "compra (gap de baixa)": 3,
-   "gap pequeno": 1
+   "volatilidade": 10,
+   "volume": 63,
+   "compra (gap de baixa)": 2,
+   "venda (gap de alta)": 1
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 17:05:01",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.10.29 16:45:01",
    "tipo": "ZERADA",
@@ -546,11 +582,6 @@
    "quando": "2026.10.27 20:31:57",
    "tipo": "ADOTADA",
    "msg": "B3SA3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "DIA",
-   "msg": "pregão 2026.10.27 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
   }
  ],
  "referencia": {
