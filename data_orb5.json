@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-29T19:42:02Z",
+ "gerado": "2026-10-29T19:45:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 60
  },
  "status": {
-  "atualizado": "2026.10.29 16:41:33",
+  "atualizado": "2026.10.29 16:44:33",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -152,6 +152,11 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.29 16:45:01",
+   "tipo": "ZERADA",
+   "msg": "CSAN3 -- saída 10 min antes do call (tentativa 1)"
+  },
   {
    "quando": "2026.10.29 10:10:17",
    "tipo": "CANCELADA",
@@ -546,11 +551,6 @@
    "quando": "2026.10.27 20:31:57",
    "tipo": "DIA",
    "msg": "pregão 2026.10.27 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ -3075, queda R$ -3075, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
   }
  ],
  "referencia": {
