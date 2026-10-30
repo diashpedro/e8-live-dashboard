@@ -1,22 +1,22 @@
 {
- "gerado": "2026-10-30T13:09:03Z",
+ "gerado": "2026-10-30T13:12:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 77
  },
  "status": {
-  "atualizado": "2026.10.30 10:08:46",
+  "atualizado": "2026.10.30 10:11:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 1,
+  "armadas": 5,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
+  "resultado_real": -194.25,
   "operacoes": [
    {
     "ativo": "CEAB3",
@@ -24,8 +24,88 @@
     "gap": -0.00456,
     "vrel": 2.31,
     "rank": 0.921,
-    "estado": "aguardando rompimento",
+    "estado": "cancelada (rompeu o outro lado)",
     "lote": 1500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "COGN3",
+    "lado": -1,
+    "gap": 0.01242,
+    "vrel": 32.32,
+    "rank": 0.934,
+    "estado": "aguardando rompimento",
+    "lote": 6400,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 1.53
+   },
+   {
+    "ativo": "CSAN3",
+    "lado": 1,
+    "gap": -0.00889,
+    "vrel": 2.19,
+    "rank": 0.908,
+    "estado": "aguardando rompimento",
+    "lote": 4400,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "CSNA3",
+    "lado": -1,
+    "gap": 0.01415,
+    "vrel": 2.88,
+    "rank": 0.829,
+    "estado": "aguardando rompimento",
+    "lote": 2300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "USIM5",
+    "lado": 1,
+    "gap": -0.05484,
+    "vrel": 3.45,
+    "rank": 0.645,
+    "estado": "aguardando rompimento",
+    "lote": 1800,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "VAMO3",
+    "lado": 1,
+    "gap": -0.00405,
+    "vrel": 3.48,
+    "rank": 0.987,
+    "estado": "aguardando rompimento",
+    "lote": 4000,
     "ent": 0.0,
     "stop": 0.0,
     "saida": 0.0,
@@ -151,6 +231,51 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 10:10:16",
+   "tipo": "CANCELADA",
+   "msg": "CSAN3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.30 10:10:08",
+   "tipo": "CANCELADA",
+   "msg": "VAMO3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.30 10:10:07",
+   "tipo": "CANCELADA",
+   "msg": "USIM5 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.30 10:10:01",
+   "tipo": "DECISOES",
+   "msg": "43 ações avaliadas em 331 ms, 5 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.10.30 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "VAMO3 compra 4000 ações, gatilho 2.47, limite 2.49, stop 2.17 (envio 73 ms)"
+  },
+  {
+   "quando": "2026.10.30 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "USIM5 compra 1800 ações, gatilho 5.29, limite 5.31, stop 5.01 (envio 38 ms)"
+  },
+  {
+   "quando": "2026.10.30 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "CSNA3 venda 2300 ações, gatilho 4.17, limite 4.15, stop 4.49 (envio 67 ms)"
+  },
+  {
+   "quando": "2026.10.30 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "CSAN3 compra 4400 ações, gatilho 2.24, limite 2.26, stop 2.04 (envio 92 ms)"
+  },
+  {
+   "quando": "2026.10.30 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "COGN3 venda 6400 ações, gatilho 1.55, limite 1.53, stop 1.70 (envio 43 ms)"
+  },
   {
    "quando": "2026.10.30 10:05:15",
    "tipo": "CANCELADA",
@@ -505,51 +630,6 @@
    "quando": "2026.10.28 10:05:02",
    "tipo": "ARMADA",
    "msg": "SMFT3 compra 500 ações, gatilho 16.85, limite 16.87, stop 15.76 (envio 185 ms)"
-  },
-  {
-   "quando": "2026.10.28 10:05:02",
-   "tipo": "ARMADA",
-   "msg": "BBAS3 venda 500 ações, gatilho 17.42, limite 17.40, stop 18.34 (envio 316 ms)"
-  },
-  {
-   "quando": "2026.10.28 10:04:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 40 de 76 ações prontas, leitura em 55 ms"
-  },
-  {
-   "quando": "2026.10.28 10:04:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 40 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:03:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:03:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 6 ms"
-  },
-  {
-   "quando": "2026.10.28 10:02:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:02:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:01:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:01:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
