@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-30T13:12:02Z",
+ "gerado": "2026-10-30T13:15:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 77
  },
  "status": {
-  "atualizado": "2026.10.30 10:11:46",
+  "atualizado": "2026.10.30 10:14:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": -194.25,
+  "resultado_real": -2.25,
   "operacoes": [
    {
     "ativo": "CEAB3",
@@ -231,6 +231,11 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 10:15:00",
+   "tipo": "CANCELADA",
+   "msg": "CSNA3 -- rompeu o outro lado antes"
+  },
   {
    "quando": "2026.10.30 10:10:16",
    "tipo": "CANCELADA",
@@ -625,11 +630,6 @@
    "quando": "2026.10.28 10:05:02",
    "tipo": "DECISOES",
    "msg": "40 ações avaliadas em 580 ms, 2 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.28 10:05:02",
-   "tipo": "ARMADA",
-   "msg": "SMFT3 compra 500 ações, gatilho 16.85, limite 16.87, stop 15.76 (envio 185 ms)"
   }
  ],
  "referencia": {
