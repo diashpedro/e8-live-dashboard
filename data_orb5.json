@@ -1,72 +1,23 @@
 {
- "gerado": "2026-10-30T12:30:02Z",
+ "gerado": "2026-10-30T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 60
+  "heartbeat_s": 17
  },
  "status": {
-  "atualizado": "2026.10.30 09:25:01",
+  "atualizado": "2026.10.30 09:32:45",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 1,
-  "resultado_sombra": 394.44,
-  "resultado_real": 289.55,
-  "operacoes": [
-   {
-    "ativo": "B3SA3",
-    "lado": 1,
-    "gap": -0.00681,
-    "vrel": 2.93,
-    "rank": 0.737,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 600,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "CSAN3",
-    "lado": -1,
-    "gap": 0.02553,
-    "vrel": 5.63,
-    "rank": 0.908,
-    "estado": "encerrada",
-    "lote": 4200,
-    "ent": 2.36,
-    "stop": 2.57,
-    "saida": 2.26,
-    "liq": 0.039794,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 2.34
-   },
-   {
-    "ativo": "CYRE3",
-    "lado": 1,
-    "gap": -0.00337,
-    "vrel": 3.35,
-    "rank": 0.895,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 500,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 2,
@@ -183,6 +134,21 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 09:30:43",
+   "tipo": "DIA",
+   "msg": "pregão 2026.10.30 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.10.30 09:30:43",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 1001, queda R$ 0, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.10.30 09:30:43",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
+  },
   {
    "quando": "2026.10.29 17:05:01",
    "tipo": "FIM",
@@ -567,21 +533,6 @@
    "quando": "2026.10.27 20:31:57",
    "tipo": "ADOTADA",
    "msg": "CYRE3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "CURY3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "CSAN3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "B3SA3: já operada hoje"
   }
  ],
  "referencia": {
