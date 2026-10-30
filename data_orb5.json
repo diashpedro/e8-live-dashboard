@@ -1,23 +1,40 @@
 {
- "gerado": "2026-10-30T13:03:02Z",
+ "gerado": "2026-10-30T13:06:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 76
+  "heartbeat_s": 77
  },
  "status": {
-  "atualizado": "2026.10.30 10:02:46",
+  "atualizado": "2026.10.30 10:05:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 1,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
   "resultado_real": 0.0,
-  "operacoes": []
+  "operacoes": [
+   {
+    "ativo": "CEAB3",
+    "lado": 1,
+    "gap": -0.00456,
+    "vrel": 2.31,
+    "rank": 0.921,
+    "estado": "aguardando rompimento",
+    "lote": 1500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 2,
@@ -134,6 +151,41 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 10:05:15",
+   "tipo": "CANCELADA",
+   "msg": "CEAB3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.10.30 10:05:01",
+   "tipo": "DECISOES",
+   "msg": "33 ações avaliadas em 426 ms, 1 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.10.30 10:05:01",
+   "tipo": "ARMADA",
+   "msg": "CEAB3 compra 1500 ações, gatilho 6.57, limite 6.59, stop 5.97 (envio 341 ms)"
+  },
+  {
+   "quando": "2026.10.30 10:04:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 33 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 10:04:03",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 33 de 76 ações prontas, leitura em 1140 ms"
+  },
+  {
+   "quando": "2026.10.30 10:03:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 10:03:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 52 ms"
+  },
   {
    "quando": "2026.10.30 10:02:32",
    "tipo": "AQUECE",
@@ -496,41 +548,6 @@
   },
   {
    "quando": "2026.10.28 10:01:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:00:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 10:00:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 09:59:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 09:59:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 09:58:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 09:58:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.28 09:57:31",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
