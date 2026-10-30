@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-30T19:42:03Z",
+ "gerado": "2026-10-30T19:45:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 77
  },
  "status": {
-  "atualizado": "2026.10.30 16:41:46",
+  "atualizado": "2026.10.30 16:44:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -231,6 +231,11 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 16:45:00",
+   "tipo": "ZERADA",
+   "msg": "COGN3 -- saída 10 min antes do call (tentativa 1)"
+  },
   {
    "quando": "2026.10.30 10:15:00",
    "tipo": "CANCELADA",
@@ -625,11 +630,6 @@
    "quando": "2026.10.28 10:06:02",
    "tipo": "CANCELADA",
    "msg": "SMFT3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.28 10:05:02",
-   "tipo": "DECISOES",
-   "msg": "40 ações avaliadas em 580 ms, 2 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
