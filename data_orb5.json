@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-30T12:57:02Z",
+ "gerado": "2026-10-30T13:00:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 76
+  "heartbeat_s": 77
  },
  "status": {
-  "atualizado": "2026.10.30 09:56:46",
+  "atualizado": "2026.10.30 09:59:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -134,6 +134,41 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 10:00:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 10 ms"
+  },
+  {
+   "quando": "2026.10.30 09:59:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:59:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:58:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:58:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:57:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:57:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.10.30 09:56:32",
    "tipo": "AQUECE",
@@ -498,41 +533,6 @@
    "quando": "2026.10.28 09:55:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 542 ms"
-  },
-  {
-   "quando": "2026.10.28 09:30:51",
-   "tipo": "DIA",
-   "msg": "pregão 2026.10.28 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.10.28 09:30:51",
-   "tipo": "TRAVAS",
-   "msg": "sem operações registradas ainda"
-  },
-  {
-   "quando": "2026.10.28 09:30:51",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "TRAVA_DIA",
-   "msg": "resultado do dia R$ -3075 <= -R$ 3000 -- zerando e parando hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "DECISOES",
-   "msg": "76 ações avaliadas em 186 ms, 13 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "RENT3: já operada hoje"
   }
  ],
  "referencia": {
