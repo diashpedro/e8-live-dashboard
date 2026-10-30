@@ -1,14 +1,14 @@
 {
- "gerado": "2026-10-30T20:03:02Z",
+ "gerado": "2026-10-30T20:06:01Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 77
+  "heartbeat_s": 76
  },
  "status": {
-  "atualizado": "2026.10.30 17:02:46",
+  "atualizado": "2026.10.30 17:05:46",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -117,17 +117,17 @@
   ]
  },
  "resumo": {
-  "dias": 2,
-  "operacoes": 3,
-  "operacoes_por_dia": 1.5,
-  "acerto_pct": 100.0,
-  "por_operacao_pct": 3.607,
-  "resultado": 1001.44,
-  "maior_queda": 0.0,
-  "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 1.33,
-  "escorregamento_rs": -41.57,
-  "operacoes_demo": 3,
+  "dias": 3,
+  "operacoes": 4,
+  "operacoes_por_dia": 1.33,
+  "acerto_pct": 75.0,
+  "por_operacao_pct": 2.04,
+  "resultado": 740.88,
+  "maior_queda": -260.56,
+  "dias_negativos_seguidos": 1,
+  "escorregamento_ticks": 1.25,
+  "escorregamento_rs": -55.18,
+  "operacoes_demo": 4,
   "perdidas": 0,
   "so_na_demo": 0
  },
@@ -151,6 +151,16 @@
    "rs_real": 289.55,
    "modo": "demo",
    "acumulado": 1001.44
+  },
+  {
+   "data": "2026-10-30",
+   "operacoes": 1,
+   "ganhos": 0,
+   "rs": -260.56,
+   "rs_sombra": -164.56,
+   "rs_real": -260.56,
+   "modo": "demo",
+   "acumulado": 740.88
   }
  ],
  "operacoes": [
@@ -219,18 +229,46 @@
    "simulada": true,
    "escorregamento_ticks": 1.5,
    "rs": 289.55
+  },
+  {
+   "data": "2026-10-30",
+   "ativo": "COGN3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 1.24,
+   "vrel": 32.318,
+   "lote": 6400,
+   "entrada": 1.55,
+   "saida": 1.57,
+   "ent_real": 1.53,
+   "saida_real": 1.57,
+   "motivo": "horário",
+   "liq_pct": -1.659,
+   "liq_real_pct": -2.661,
+   "rs_sombra": -164.56,
+   "rs_real": -260.56,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": -260.56
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-10-29",
+  "data": "2026-10-30",
   "motivos": {
-   "volatilidade": 10,
-   "volume": 63,
-   "compra (gap de baixa)": 2,
-   "venda (gap de alta)": 1
+   "volume": 51,
+   "volatilidade": 18,
+   "compra (gap de baixa)": 4,
+   "venda (gap de alta)": 2,
+   "gap pequeno": 1
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 17:05:00",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.10.30 16:45:00",
    "tipo": "ZERADA",
@@ -625,11 +663,6 @@
    "quando": "2026.10.28 10:10:01",
    "tipo": "ARMADA",
    "msg": "CYRE3 venda 500 ações, gatilho 18.58, limite 18.56, stop 20.39 (envio 44 ms)"
-  },
-  {
-   "quando": "2026.10.28 10:06:02",
-   "tipo": "CANCELADA",
-   "msg": "SMFT3 -- rompeu o outro lado antes"
   }
  ],
  "referencia": {
