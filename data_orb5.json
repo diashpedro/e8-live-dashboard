@@ -1,11 +1,11 @@
 {
- "gerado": "2026-10-30T12:54:03Z",
+ "gerado": "2026-10-30T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 78
+  "heartbeat_s": 76
  },
  "status": {
-  "atualizado": "2026.10.30 09:53:45",
+  "atualizado": "2026.10.30 09:56:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -134,6 +134,26 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.10.30 09:56:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:56:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:55:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.10.30 09:55:04",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 3186 ms"
+  },
   {
    "quando": "2026.10.30 09:30:43",
    "tipo": "DIA",
@@ -513,26 +533,6 @@
    "quando": "2026.10.27 20:31:57",
    "tipo": "ADOTADA",
    "msg": "RENT3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "POMO4: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "HAPV3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "DIRR3: já operada hoje"
-  },
-  {
-   "quando": "2026.10.27 20:31:57",
-   "tipo": "ADOTADA",
-   "msg": "CYRE3: já operada hoje"
   }
  ],
  "referencia": {
