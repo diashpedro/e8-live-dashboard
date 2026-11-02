@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-02T12:54:02Z",
+ "gerado": "2026-11-02T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 77
+  "heartbeat_s": 16
  },
  "status": {
-  "atualizado": "2026.11.02 09:53:46",
+  "atualizado": "2026.11.02 09:56:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -167,6 +167,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.02 09:57:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 09:56:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 09:56:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 09:55:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 09:55:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.02 09:30:44",
    "tipo": "DIA",
@@ -541,31 +566,6 @@
    "quando": "2026.10.29 09:31:01",
    "tipo": "CALL",
    "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.28 17:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.10.28 16:45:00",
-   "tipo": "ZERADA",
-   "msg": "BBAS3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.10.28 16:45:00",
-   "tipo": "ZERADA",
-   "msg": "CYRE3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.10.28 12:09:07",
-   "tipo": "LENTO",
-   "msg": "sombra (passo 3) levou 5474 ms"
-  },
-  {
-   "quando": "2026.10.28 10:10:59",
-   "tipo": "CANCELADA",
-   "msg": "HAPV3 -- rompeu o outro lado antes"
   }
  ],
  "referencia": {
