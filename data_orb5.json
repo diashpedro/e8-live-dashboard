@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-02T20:03:02Z",
+ "gerado": "2026-11-02T20:06:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 76
+  "heartbeat_s": 17
  },
  "status": {
-  "atualizado": "2026.11.02 17:02:46",
+  "atualizado": "2026.11.02 17:05:46",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -167,6 +167,11 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.02 17:05:00",
+   "tipo": "FIM",
+   "msg": "sem pregão hoje (nenhum 1º candle)"
+  },
   {
    "quando": "2026.11.02 13:08:14",
    "tipo": "LENTO",
@@ -561,11 +566,6 @@
    "quando": "2026.10.29 10:02:01",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 4 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 10:01:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
