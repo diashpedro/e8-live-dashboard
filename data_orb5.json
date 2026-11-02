@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-02T13:00:02Z",
+ "gerado": "2026-11-02T13:03:01Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 16
  },
  "status": {
-  "atualizado": "2026.11.02 09:59:46",
+  "atualizado": "2026.11.02 10:02:46",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -167,6 +167,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.02 10:03:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 10:02:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 10:02:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 10:01:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 10:01:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 10:00:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.02 10:00:00",
    "tipo": "AQUECE",
@@ -534,36 +564,6 @@
   },
   {
    "quando": "2026.10.29 09:59:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:59:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:58:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:58:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:57:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:57:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 4 ms"
-  },
-  {
-   "quando": "2026.10.29 09:56:31",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
