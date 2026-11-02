@@ -1,120 +1,23 @@
 {
- "gerado": "2026-11-02T12:30:02Z",
+ "gerado": "2026-11-02T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 76
+  "heartbeat_s": 77
  },
  "status": {
-  "atualizado": "2026.11.02 09:25:00",
+  "atualizado": "2026.11.02 09:32:46",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 1,
-  "resultado_sombra": -164.56,
-  "resultado_real": -260.56,
-  "operacoes": [
-   {
-    "ativo": "CEAB3",
-    "lado": 1,
-    "gap": -0.00456,
-    "vrel": 2.31,
-    "rank": 0.921,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1500,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "COGN3",
-    "lado": -1,
-    "gap": 0.01242,
-    "vrel": 32.32,
-    "rank": 0.934,
-    "estado": "encerrada",
-    "lote": 6400,
-    "ent": 1.55,
-    "stop": 1.7,
-    "saida": 1.57,
-    "liq": -0.016589,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 1.53
-   },
-   {
-    "ativo": "CSAN3",
-    "lado": 1,
-    "gap": -0.00889,
-    "vrel": 2.19,
-    "rank": 0.908,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 4400,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "CSNA3",
-    "lado": -1,
-    "gap": 0.01415,
-    "vrel": 2.88,
-    "rank": 0.829,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "USIM5",
-    "lado": 1,
-    "gap": -0.05484,
-    "vrel": 3.45,
-    "rank": 0.645,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1800,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "VAMO3",
-    "lado": 1,
-    "gap": -0.00405,
-    "vrel": 3.48,
-    "rank": 0.987,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 4000,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 3,
@@ -264,6 +167,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.02 09:30:44",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.02 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.02 09:30:44",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 741, queda R$ -261, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.02 09:30:44",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
+  },
+  {
+   "quando": "2026.11.02 09:30:44",
+   "tipo": "CALL",
+   "msg": "calendário diz call às 17:55, o pregão anterior diz 16:55: vale o mais cedo"
+  },
+  {
+   "quando": "2026.11.02 09:30:44",
+   "tipo": "FECHAMENTO",
+   "msg": "60 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)"
+  },
   {
    "quando": "2026.10.30 17:05:00",
    "tipo": "FIM",
@@ -638,31 +566,6 @@
    "quando": "2026.10.28 10:10:59",
    "tipo": "CANCELADA",
    "msg": "HAPV3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.28 10:10:56",
-   "tipo": "CANCELADA",
-   "msg": "MULT3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.28 10:10:01",
-   "tipo": "DECISOES",
-   "msg": "36 ações avaliadas em 129 ms, 3 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.28 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "MULT3 compra 300 ações, gatilho 27.49, limite 27.51, stop 25.93 (envio 39 ms)"
-  },
-  {
-   "quando": "2026.10.28 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "HAPV3 compra 2300 ações, gatilho 4.17, limite 4.19, stop 3.72 (envio 38 ms)"
-  },
-  {
-   "quando": "2026.10.28 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "CYRE3 venda 500 ações, gatilho 18.58, limite 18.56, stop 20.39 (envio 44 ms)"
   }
  ],
  "referencia": {
