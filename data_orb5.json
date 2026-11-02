@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-02T12:57:02Z",
+ "gerado": "2026-11-02T13:00:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 16
  },
  "status": {
-  "atualizado": "2026.11.02 09:56:46",
+  "atualizado": "2026.11.02 09:59:46",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -167,6 +167,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.02 10:00:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 2 ms"
+  },
+  {
+   "quando": "2026.11.02 09:59:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
+  },
+  {
+   "quando": "2026.11.02 09:59:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 09:58:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.02 09:58:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
+  },
+  {
+   "quando": "2026.11.02 09:57:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.02 09:57:00",
    "tipo": "AQUECE",
@@ -536,36 +566,6 @@
    "quando": "2026.10.29 09:56:31",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:56:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:55:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:55:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.29 09:31:01",
-   "tipo": "DIA",
-   "msg": "pregão 2026.10.29 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.10.29 09:31:01",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 712, queda R$ 0, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.10.29 09:31:01",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
   }
  ],
  "referencia": {
