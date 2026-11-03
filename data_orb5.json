@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-03T12:54:04Z",
+ "gerado": "2026-11-03T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 55
+  "heartbeat_s": 50
  },
  "status": {
-  "atualizado": "2026.11.03 09:53:39",
+  "atualizado": "2026.11.03 09:56:42",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -167,6 +167,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.03 09:57:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:56:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:56:10",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 8405 ms"
+  },
+  {
+   "quando": "2026.11.03 09:55:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:55:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
+  },
   {
    "quando": "2026.11.03 09:31:05",
    "tipo": "DIA",
@@ -541,31 +566,6 @@
    "quando": "2026.10.29 10:10:02",
    "tipo": "DECISOES",
    "msg": "41 ações avaliadas em 845 ms, 3 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.29 10:10:02",
-   "tipo": "ARMADA",
-   "msg": "CYRE3 compra 500 ações, gatilho 17.76, limite 17.78, stop 16.26 (envio 321 ms)"
-  },
-  {
-   "quando": "2026.10.29 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "CSAN3 venda 4200 ações, gatilho 2.36, limite 2.34, stop 2.57 (envio 216 ms)"
-  },
-  {
-   "quando": "2026.10.29 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "B3SA3 compra 600 ações, gatilho 14.70, limite 14.72, stop 13.77 (envio 166 ms)"
-  },
-  {
-   "quando": "2026.10.29 10:05:01",
-   "tipo": "DECISOES",
-   "msg": "35 ações avaliadas em 0 ms, 0 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.29 10:04:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 35 de 76 ações prontas, leitura em 1 ms"
   }
  ],
  "referencia": {
