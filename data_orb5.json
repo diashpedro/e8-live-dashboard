@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-03T13:00:02Z",
+ "gerado": "2026-11-03T13:03:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 51
+  "heartbeat_s": 50
  },
  "status": {
-  "atualizado": "2026.11.03 09:59:42",
+  "atualizado": "2026.11.03 10:02:42",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -167,6 +167,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.03 10:02:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 10:02:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 10:01:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 10:01:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 10:00:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.03 10:00:02",
    "tipo": "AQUECE",
@@ -541,31 +566,6 @@
    "quando": "2026.10.30 09:56:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 09:56:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 09:55:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 09:55:04",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 3186 ms"
-  },
-  {
-   "quando": "2026.10.30 09:30:43",
-   "tipo": "DIA",
-   "msg": "pregão 2026.10.30 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.10.30 09:30:43",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 1001, queda R$ 0, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
   }
  ],
  "referencia": {
