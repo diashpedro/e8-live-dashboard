@@ -1,23 +1,104 @@
 {
- "gerado": "2026-11-03T13:09:02Z",
+ "gerado": "2026-11-03T13:12:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 51
  },
  "status": {
-  "atualizado": "2026.11.03 10:08:42",
+  "atualizado": "2026.11.03 10:11:42",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 5,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": -123.23,
+  "operacoes": [
+   {
+    "ativo": "BEEF3",
+    "lado": 1,
+    "gap": -0.01961,
+    "vrel": 2.14,
+    "rank": 0.789,
+    "estado": "aguardando rompimento",
+    "lote": 3900,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "BPAC11",
+    "lado": 1,
+    "gap": -0.00815,
+    "vrel": 24.71,
+    "rank": 0.697,
+    "estado": "aguardando rompimento",
+    "lote": 100,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "COGN3",
+    "lado": 1,
+    "gap": -0.05063,
+    "vrel": 4.86,
+    "rank": 0.947,
+    "estado": "aguardando rompimento",
+    "lote": 6500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "VAMO3",
+    "lado": 1,
+    "gap": -0.03361,
+    "vrel": 3.07,
+    "rank": 0.987,
+    "estado": "aguardando rompimento",
+    "lote": 4300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "YDUQ3",
+    "lado": 1,
+    "gap": -0.02918,
+    "vrel": 2.09,
+    "rank": 0.882,
+    "estado": "aguardando rompimento",
+    "lote": 1100,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": true,
+    "ent_real": 8.81
+   }
+  ]
  },
  "resumo": {
   "dias": 3,
@@ -167,6 +248,51 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.03 10:10:40",
+   "tipo": "CANCELADA",
+   "msg": "COGN3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.03 10:10:38",
+   "tipo": "CANCELADA",
+   "msg": "BEEF3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.03 10:10:02",
+   "tipo": "CANCELADA",
+   "msg": "BPAC11 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.03 10:10:00",
+   "tipo": "DECISOES",
+   "msg": "60 ações avaliadas em 267 ms, 5 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.03 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "YDUQ3 compra 1100 ações, gatilho 8.79, limite 8.81, stop 8.09 (envio 13 ms)"
+  },
+  {
+   "quando": "2026.11.03 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "VAMO3 compra 4300 ações, gatilho 2.31, limite 2.33, stop 2.04 (envio 18 ms)"
+  },
+  {
+   "quando": "2026.11.03 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "COGN3 compra 6500 ações, gatilho 1.52, limite 1.54, stop 1.38 (envio 14 ms)"
+  },
+  {
+   "quando": "2026.11.03 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "BPAC11 compra 100 ações, gatilho 51.11, limite 51.13, stop 48.20 (envio 24 ms)"
+  },
+  {
+   "quando": "2026.11.03 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "BEEF3 compra 3900 ações, gatilho 2.53, limite 2.55, stop 2.36 (envio 78 ms)"
+  },
   {
    "quando": "2026.11.03 10:05:00",
    "tipo": "DECISOES",
@@ -521,51 +647,6 @@
    "quando": "2026.10.30 10:03:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 10:03:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 52 ms"
-  },
-  {
-   "quando": "2026.10.30 10:02:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 5 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 10:02:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 5 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 10:01:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 10:01:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 10:00:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 26 ms"
-  },
-  {
-   "quando": "2026.10.30 10:00:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 10 ms"
-  },
-  {
-   "quando": "2026.10.30 09:59:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 09:59:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
