@@ -1,22 +1,22 @@
 {
- "gerado": "2026-11-03T13:24:03Z",
+ "gerado": "2026-11-03T13:27:01Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 111
+  "heartbeat_s": 110
  },
  "status": {
-  "atualizado": "2026.11.03 10:23:42",
+  "atualizado": "2026.11.03 10:26:42",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 1,
-  "abertas": 1,
+  "armadas": 0,
+  "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": 72.55,
-  "resultado_real": -78.53,
+  "resultado_sombra": 46.98,
+  "resultado_real": -56.53,
   "operacoes": [
    {
     "ativo": "BEEF3",
@@ -72,10 +72,10 @@
     "gap": -0.03361,
     "vrel": 3.07,
     "rank": 0.987,
-    "estado": "aguardando rompimento",
+    "estado": "aberta",
     "lote": 4300,
-    "ent": 0.0,
-    "stop": 0.0,
+    "ent": 2.31,
+    "stop": 2.04,
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "compra (gap de baixa)",
