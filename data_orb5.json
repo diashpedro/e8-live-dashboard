@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-03T19:42:03Z",
+ "gerado": "2026-11-03T19:45:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 52
+  "heartbeat_s": 51
  },
  "status": {
-  "atualizado": "2026.11.03 16:41:42",
+  "atualizado": "2026.11.03 16:44:42",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": 533.98,
-  "resultado_real": 430.47,
+  "resultado_sombra": 587.98,
+  "resultado_real": 484.47,
   "operacoes": [
    {
     "ativo": "BEEF3",
@@ -248,6 +248,16 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.03 16:45:01",
+   "tipo": "ZERADA",
+   "msg": "VAMO3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.03 16:45:01",
+   "tipo": "ZERADA",
+   "msg": "YDUQ3 -- saída 10 min antes do call (tentativa 1)"
+  },
   {
    "quando": "2026.11.03 10:10:40",
    "tipo": "CANCELADA",
@@ -637,16 +647,6 @@
    "quando": "2026.10.30 10:04:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 33 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.10.30 10:04:03",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 33 de 76 ações prontas, leitura em 1140 ms"
-  },
-  {
-   "quando": "2026.10.30 10:03:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
