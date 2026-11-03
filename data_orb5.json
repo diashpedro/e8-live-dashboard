@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-03T12:57:02Z",
+ "gerado": "2026-11-03T13:00:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 50
+  "heartbeat_s": 51
  },
  "status": {
-  "atualizado": "2026.11.03 09:56:42",
+  "atualizado": "2026.11.03 09:59:42",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -167,6 +167,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.03 10:00:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:59:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:59:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:58:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.03 09:58:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 6 ms"
+  },
+  {
+   "quando": "2026.11.03 09:57:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.03 09:57:02",
    "tipo": "AQUECE",
@@ -536,36 +566,6 @@
    "quando": "2026.10.30 09:30:43",
    "tipo": "TRAVAS",
    "msg": "acumulado R$ 1001, queda R$ 0, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.10.30 09:30:43",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.10.29 17:05:01",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.10.29 16:45:01",
-   "tipo": "ZERADA",
-   "msg": "CSAN3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.10.29 10:10:17",
-   "tipo": "CANCELADA",
-   "msg": "B3SA3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.29 10:10:13",
-   "tipo": "CANCELADA",
-   "msg": "CYRE3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.29 10:10:02",
-   "tipo": "DECISOES",
-   "msg": "41 ações avaliadas em 845 ms, 3 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
