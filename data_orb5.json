@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-03T20:03:02Z",
+ "gerado": "2026-11-03T20:06:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 51
+  "heartbeat_s": 50
  },
  "status": {
-  "atualizado": "2026.11.03 17:02:42",
+  "atualizado": "2026.11.03 17:05:42",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "16:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -101,17 +101,17 @@
   ]
  },
  "resumo": {
-  "dias": 3,
-  "operacoes": 4,
-  "operacoes_por_dia": 1.33,
-  "acerto_pct": 75.0,
-  "por_operacao_pct": 2.04,
-  "resultado": 740.88,
+  "dias": 4,
+  "operacoes": 6,
+  "operacoes_por_dia": 1.5,
+  "acerto_pct": 83.3,
+  "por_operacao_pct": 2.08,
+  "resultado": 1166.71,
   "maior_queda": -260.56,
-  "dias_negativos_seguidos": 1,
-  "escorregamento_ticks": 1.25,
-  "escorregamento_rs": -55.18,
-  "operacoes_demo": 4,
+  "dias_negativos_seguidos": 0,
+  "escorregamento_ticks": 1.17,
+  "escorregamento_rs": -52.15,
+  "operacoes_demo": 6,
   "perdidas": 0,
   "so_na_demo": 0
  },
@@ -145,6 +145,16 @@
    "rs_real": -260.56,
    "modo": "demo",
    "acumulado": 740.88
+  },
+  {
+   "data": "2026-11-03",
+   "operacoes": 2,
+   "ganhos": 2,
+   "rs": 425.83,
+   "rs_sombra": 517.98,
+   "rs_real": 425.83,
+   "modo": "demo",
+   "acumulado": 1166.71
   }
  ],
  "operacoes": [
@@ -235,19 +245,66 @@
    "simulada": true,
    "escorregamento_ticks": 1.0,
    "rs": -260.56
+  },
+  {
+   "data": "2026-11-03",
+   "ativo": "VAMO3",
+   "lado": 1,
+   "modo": "demo",
+   "gap_pct": -3.36,
+   "vrel": 3.072,
+   "lote": 4300,
+   "entrada": 2.31,
+   "saida": 2.38,
+   "ent_real": 2.33,
+   "saida_real": 2.38,
+   "motivo": "horário",
+   "liq_pct": 2.768,
+   "liq_real_pct": 2.099,
+   "rs_sombra": 274.93,
+   "rs_real": 210.34,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 210.34
+  },
+  {
+   "data": "2026-11-03",
+   "ativo": "YDUQ3",
+   "lado": 1,
+   "modo": "demo",
+   "gap_pct": -2.92,
+   "vrel": 2.09,
+   "lote": 1100,
+   "entrada": 8.79,
+   "saida": 9.01,
+   "ent_real": 8.81,
+   "saida_real": 9.01,
+   "motivo": "horário",
+   "liq_pct": 2.514,
+   "liq_real_pct": 2.224,
+   "rs_sombra": 243.05,
+   "rs_real": 215.49,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 215.49
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-10-30",
+  "data": "2026-11-03",
   "motivos": {
-   "volume": 51,
-   "volatilidade": 18,
-   "compra (gap de baixa)": 4,
-   "venda (gap de alta)": 2,
-   "gap pequeno": 1
+   "volatilidade": 21,
+   "volume": 50,
+   "compra (gap de baixa)": 5
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.03 17:05:00",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.11.03 16:45:01",
    "tipo": "ZERADA",
@@ -642,11 +699,6 @@
    "quando": "2026.10.30 10:05:01",
    "tipo": "ARMADA",
    "msg": "CEAB3 compra 1500 ações, gatilho 6.57, limite 6.59, stop 5.97 (envio 341 ms)"
-  },
-  {
-   "quando": "2026.10.30 10:04:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 33 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
