@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-04T13:12:02Z",
+ "gerado": "2026-11-04T13:15:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 63
+  "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.04 10:11:59",
+  "atualizado": "2026.11.04 10:14:59",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 51.91,
+  "resultado_real": -80.09,
   "operacoes": [
    {
     "ativo": "COGN3",
@@ -252,6 +252,16 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.04 10:15:01",
+   "tipo": "DECISOES",
+   "msg": "2 ações avaliadas em 214 ms, 1 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.04 10:15:01",
+   "tipo": "ARMADA",
+   "msg": "POMO4 compra 2800 ações, gatilho 3.45, limite 3.47, stop 3.26 (envio 211 ms)"
+  },
   {
    "quando": "2026.11.04 10:10:01",
    "tipo": "DECISOES",
@@ -641,16 +651,6 @@
    "quando": "2026.11.02 10:00:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 2 ms"
-  },
-  {
-   "quando": "2026.11.02 09:59:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
-  },
-  {
-   "quando": "2026.11.02 09:59:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
