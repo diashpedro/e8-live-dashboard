@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-04T13:15:02Z",
+ "gerado": "2026-11-04T13:18:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.04 10:14:59",
+  "atualizado": "2026.11.04 10:17:59",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -13,10 +13,10 @@
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 1,
-  "abertas": 0,
+  "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 0.0,
-  "resultado_real": -80.09,
+  "resultado_sombra": 79.82,
+  "resultado_real": 95.68,
   "operacoes": [
    {
     "ativo": "COGN3",
@@ -35,15 +35,31 @@
     "ent_real": 0.0
    },
    {
+    "ativo": "POMO4",
+    "lado": 1,
+    "gap": -0.03922,
+    "vrel": 10.45,
+    "rank": 0.671,
+    "estado": "aguardando rompimento",
+    "lote": 2800,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": true,
+    "ent_real": 3.47
+   },
+   {
     "ativo": "RADL3",
     "lado": -1,
     "gap": 0.03096,
     "vrel": 2.01,
     "rank": 0.711,
-    "estado": "aguardando rompimento",
+    "estado": "aberta",
     "lote": 600,
-    "ent": 0.0,
-    "stop": 0.0,
+    "ent": 15.13,
+    "stop": 16.0,
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
