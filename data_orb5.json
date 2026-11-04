@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-04T12:57:02Z",
+ "gerado": "2026-11-04T13:00:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.04 09:56:58",
+  "atualizado": "2026.11.04 09:59:59",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -219,6 +219,36 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.04 10:00:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:59:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:59:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:58:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:58:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:57:35",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 4992 ms"
+  },
   {
    "quando": "2026.11.04 09:57:00",
    "tipo": "AQUECE",
@@ -588,36 +618,6 @@
    "quando": "2026.10.30 17:05:00",
    "tipo": "FIM",
    "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.10.30 16:45:00",
-   "tipo": "ZERADA",
-   "msg": "COGN3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.10.30 10:15:00",
-   "tipo": "CANCELADA",
-   "msg": "CSNA3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.30 10:10:16",
-   "tipo": "CANCELADA",
-   "msg": "CSAN3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.30 10:10:08",
-   "tipo": "CANCELADA",
-   "msg": "VAMO3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.30 10:10:07",
-   "tipo": "CANCELADA",
-   "msg": "USIM5 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.30 10:10:01",
-   "tipo": "DECISOES",
-   "msg": "43 ações avaliadas em 331 ms, 5 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
