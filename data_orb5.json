@@ -1,104 +1,23 @@
 {
- "gerado": "2026-11-04T12:30:03Z",
+ "gerado": "2026-11-04T12:33:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 52
+  "heartbeat_s": 65
  },
  "status": {
-  "atualizado": "2026.11.04 09:25:00",
+  "atualizado": "2026.11.04 09:32:58",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
-  "call": "16:55",
+  "fase": "pré-abertura",
+  "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 2,
-  "resultado_sombra": 517.98,
-  "resultado_real": 425.83,
-  "operacoes": [
-   {
-    "ativo": "BEEF3",
-    "lado": 1,
-    "gap": -0.01961,
-    "vrel": 2.14,
-    "rank": 0.789,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 3900,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "BPAC11",
-    "lado": 1,
-    "gap": -0.00815,
-    "vrel": 24.71,
-    "rank": 0.697,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 100,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "COGN3",
-    "lado": 1,
-    "gap": -0.05063,
-    "vrel": 4.86,
-    "rank": 0.947,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 6500,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "VAMO3",
-    "lado": 1,
-    "gap": -0.03361,
-    "vrel": 3.07,
-    "rank": 0.987,
-    "estado": "encerrada",
-    "lote": 4300,
-    "ent": 2.31,
-    "stop": 2.04,
-    "saida": 2.38,
-    "liq": 0.027679,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 2.33
-   },
-   {
-    "ativo": "YDUQ3",
-    "lado": 1,
-    "gap": -0.02918,
-    "vrel": 2.09,
-    "rank": 0.882,
-    "estado": "encerrada",
-    "lote": 1100,
-    "ent": 8.79,
-    "stop": 8.09,
-    "saida": 9.01,
-    "liq": 0.025137,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 8.81
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 4,
@@ -300,6 +219,21 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.04 09:30:56",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.04 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.04 09:30:56",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 1167, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.04 09:30:56",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
   {
    "quando": "2026.11.03 17:05:00",
    "tipo": "FIM",
@@ -684,21 +618,6 @@
    "quando": "2026.10.30 10:10:00",
    "tipo": "ARMADA",
    "msg": "COGN3 venda 6400 ações, gatilho 1.55, limite 1.53, stop 1.70 (envio 43 ms)"
-  },
-  {
-   "quando": "2026.10.30 10:05:15",
-   "tipo": "CANCELADA",
-   "msg": "CEAB3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.10.30 10:05:01",
-   "tipo": "DECISOES",
-   "msg": "33 ações avaliadas em 426 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.30 10:05:01",
-   "tipo": "ARMADA",
-   "msg": "CEAB3 compra 1500 ações, gatilho 6.57, limite 6.59, stop 5.97 (envio 341 ms)"
   }
  ],
  "referencia": {
