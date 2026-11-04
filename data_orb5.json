@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-04T12:54:02Z",
+ "gerado": "2026-11-04T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.04 09:53:58",
+  "atualizado": "2026.11.04 09:56:58",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -219,6 +219,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.04 09:57:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:56:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:56:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:55:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.04 09:55:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.04 09:30:56",
    "tipo": "DIA",
@@ -593,31 +618,6 @@
    "quando": "2026.10.30 10:10:01",
    "tipo": "DECISOES",
    "msg": "43 ações avaliadas em 331 ms, 5 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.10.30 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "VAMO3 compra 4000 ações, gatilho 2.47, limite 2.49, stop 2.17 (envio 73 ms)"
-  },
-  {
-   "quando": "2026.10.30 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "USIM5 compra 1800 ações, gatilho 5.29, limite 5.31, stop 5.01 (envio 38 ms)"
-  },
-  {
-   "quando": "2026.10.30 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "CSNA3 venda 2300 ações, gatilho 4.17, limite 4.15, stop 4.49 (envio 67 ms)"
-  },
-  {
-   "quando": "2026.10.30 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "CSAN3 compra 4400 ações, gatilho 2.24, limite 2.26, stop 2.04 (envio 92 ms)"
-  },
-  {
-   "quando": "2026.10.30 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "COGN3 venda 6400 ações, gatilho 1.55, limite 1.53, stop 1.70 (envio 43 ms)"
   }
  ],
  "referencia": {
