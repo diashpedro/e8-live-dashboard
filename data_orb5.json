@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-04T20:42:05Z",
+ "gerado": "2026-11-04T20:45:01Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": 63
  },
  "status": {
-  "atualizado": "2026.11.04 17:41:59",
+  "atualizado": "2026.11.04 17:44:59",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": 177.38,
-  "resultado_real": 113.68,
+  "resultado_sombra": 165.38,
+  "resultado_real": 101.68,
   "operacoes": [
    {
     "ativo": "COGN3",
@@ -268,6 +268,16 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.04 17:45:01",
+   "tipo": "ZERADA",
+   "msg": "RADL3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.04 17:45:01",
+   "tipo": "ZERADA",
+   "msg": "POMO4 -- saída 10 min antes do call (tentativa 1)"
+  },
   {
    "quando": "2026.11.04 10:15:01",
    "tipo": "DECISOES",
@@ -657,16 +667,6 @@
    "quando": "2026.11.02 10:01:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.02 10:00:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.02 10:00:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 2 ms"
   }
  ],
  "referencia": {
