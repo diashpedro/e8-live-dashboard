@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-05T12:57:02Z",
+ "gerado": "2026-11-05T13:00:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 62
+  "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.05 09:56:50",
+  "atualizado": "2026.11.05 09:59:50",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -274,6 +274,41 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.05 10:00:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 09:59:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 09:59:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 09:58:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 09:58:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 09:57:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
+  },
+  {
+   "quando": "2026.11.05 09:57:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.05 09:56:32",
    "tipo": "AQUECE",
@@ -638,41 +673,6 @@
    "quando": "2026.11.03 09:55:01",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
-  },
-  {
-   "quando": "2026.11.03 09:31:05",
-   "tipo": "DIA",
-   "msg": "pregão 2026.11.03 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.03 09:31:05",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 741, queda R$ -261, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.03 09:31:05",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 16:55: saída 16:45, última entrada 16:25"
-  },
-  {
-   "quando": "2026.11.03 09:31:05",
-   "tipo": "CALL",
-   "msg": "calendário diz call às 17:55, o pregão anterior diz 16:55: vale o mais cedo"
-  },
-  {
-   "quando": "2026.11.02 18:06:22",
-   "tipo": "LENTO",
-   "msg": "decisões (passo 1) levou 38322 ms"
-  },
-  {
-   "quando": "2026.11.02 17:05:00",
-   "tipo": "FIM",
-   "msg": "sem pregão hoje (nenhum 1º candle)"
-  },
-  {
-   "quando": "2026.11.02 13:08:14",
-   "tipo": "LENTO",
-   "msg": "decisões (passo 1) levou 38088 ms"
   }
  ],
  "referencia": {
