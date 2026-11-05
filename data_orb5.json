@@ -1,23 +1,56 @@
 {
- "gerado": "2026-11-05T13:09:01Z",
+ "gerado": "2026-11-05T13:12:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 62
+  "heartbeat_s": 63
  },
  "status": {
-  "atualizado": "2026.11.05 10:08:50",
+  "atualizado": "2026.11.05 10:11:50",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 2,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
   "resultado_real": 0.0,
-  "operacoes": []
+  "operacoes": [
+   {
+    "ativo": "CSAN3",
+    "lado": -1,
+    "gap": 0.03347,
+    "vrel": 2.27,
+    "rank": 0.934,
+    "estado": "aguardando rompimento",
+    "lote": 4000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "SMFT3",
+    "lado": -1,
+    "gap": 0.05122,
+    "vrel": 14.99,
+    "rank": 0.789,
+    "estado": "aguardando rompimento",
+    "lote": 500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 5,
@@ -274,6 +307,26 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.05 10:10:28",
+   "tipo": "CANCELADA",
+   "msg": "CSAN3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.05 10:10:00",
+   "tipo": "DECISOES",
+   "msg": "33 ações avaliadas em 541 ms, 2 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.05 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "SMFT3 venda 500 ações, gatilho 17.49, limite 17.47, stop 18.72 (envio 119 ms)"
+  },
+  {
+   "quando": "2026.11.05 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "CSAN3 venda 4000 ações, gatilho 2.45, limite 2.43, stop 2.69 (envio 398 ms)"
+  },
   {
    "quando": "2026.11.05 10:05:00",
    "tipo": "DECISOES",
@@ -651,26 +704,6 @@
   },
   {
    "quando": "2026.11.03 10:02:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:01:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:01:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:00:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:00:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
