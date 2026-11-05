@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-05T13:03:01Z",
+ "gerado": "2026-11-05T13:06:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 62
  },
  "status": {
-  "atualizado": "2026.11.05 10:02:50",
+  "atualizado": "2026.11.05 10:05:50",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -274,6 +274,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.05 10:05:00",
+   "tipo": "DECISOES",
+   "msg": "42 ações avaliadas em 2 ms, 0 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.05 10:04:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 42 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 10:04:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 42 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 10:03:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 11 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.05 10:03:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 9 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.05 10:02:32",
    "tipo": "AQUECE",
@@ -646,31 +671,6 @@
   },
   {
    "quando": "2026.11.03 10:00:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 09:59:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 09:59:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 09:58:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 09:58:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 6 ms"
-  },
-  {
-   "quando": "2026.11.03 09:57:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
