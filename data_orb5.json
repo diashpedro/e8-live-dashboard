@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-05T13:12:02Z",
+ "gerado": "2026-11-05T13:15:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 63
  },
  "status": {
-  "atualizado": "2026.11.05 10:11:50",
+  "atualizado": "2026.11.05 10:14:50",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -307,6 +307,16 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.05 10:15:00",
+   "tipo": "DECISOES",
+   "msg": "1 ações avaliadas em 259 ms, 1 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.05 10:15:00",
+   "tipo": "ARMADA",
+   "msg": "TEND3 compra 500 ações, gatilho 18.36, limite 18.38, stop 17.11 (envio 258 ms)"
+  },
   {
    "quando": "2026.11.05 10:10:28",
    "tipo": "CANCELADA",
@@ -696,16 +706,6 @@
    "quando": "2026.11.03 10:03:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:02:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:02:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
