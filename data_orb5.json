@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-05T13:15:03Z",
+ "gerado": "2026-11-05T13:18:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 63
  },
  "status": {
-  "atualizado": "2026.11.05 10:14:50",
+  "atualizado": "2026.11.05 10:17:50",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -24,7 +24,7 @@
     "gap": 0.03347,
     "vrel": 2.27,
     "rank": 0.934,
-    "estado": "aguardando rompimento",
+    "estado": "cancelada (rompeu o outro lado)",
     "lote": 4000,
     "ent": 0.0,
     "stop": 0.0,
@@ -47,6 +47,22 @@
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "TEND3",
+    "lado": 1,
+    "gap": -0.07089,
+    "vrel": 18.19,
+    "rank": 0.776,
+    "estado": "aguardando rompimento",
+    "lote": 500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
     "real": false,
     "ent_real": 0.0
    }
