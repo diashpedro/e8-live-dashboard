@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-05T13:27:03Z",
+ "gerado": "2026-11-05T13:30:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.05 10:26:50",
+  "atualizado": "2026.11.05 10:29:50",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -323,6 +323,11 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.05 10:27:06",
+   "tipo": "CANCELADA",
+   "msg": "SMFT3 -- rompeu o outro lado antes"
+  },
   {
    "quando": "2026.11.05 10:18:06",
    "tipo": "CANCELADA",
@@ -717,11 +722,6 @@
    "quando": "2026.11.03 10:04:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 16 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.03 10:03:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
