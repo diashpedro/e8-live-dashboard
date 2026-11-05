@@ -1,72 +1,23 @@
 {
- "gerado": "2026-11-05T12:30:02Z",
+ "gerado": "2026-11-05T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 63
+  "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.05 09:25:01",
+  "atualizado": "2026.11.05 09:32:49",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 2,
-  "resultado_sombra": 142.38,
-  "resultado_real": 63.26,
-  "operacoes": [
-   {
-    "ativo": "COGN3",
-    "lado": -1,
-    "gap": 0.01449,
-    "vrel": 2.67,
-    "rank": 0.947,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 7200,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "POMO4",
-    "lado": 1,
-    "gap": -0.03922,
-    "vrel": 10.45,
-    "rank": 0.671,
-    "estado": "encerrada",
-    "lote": 2800,
-    "ent": 3.45,
-    "stop": 3.26,
-    "saida": 3.56,
-    "liq": 0.032873,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 3.47
-   },
-   {
-    "ativo": "RADL3",
-    "lado": -1,
-    "gap": 0.03096,
-    "vrel": 2.01,
-    "rank": 0.711,
-    "estado": "encerrada",
-    "lote": 600,
-    "ent": 15.13,
-    "stop": 16.0,
-    "saida": 15.42,
-    "liq": -0.019297,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 15.11
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 5,
@@ -323,6 +274,21 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.05 09:30:47",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.05 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.05 09:30:47",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 1230, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.05 09:30:47",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
   {
    "quando": "2026.11.04 18:05:01",
    "tipo": "FIM",
@@ -705,21 +671,6 @@
   },
   {
    "quando": "2026.11.02 10:03:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.02 10:02:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.02 10:02:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.02 10:01:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
