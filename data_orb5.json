@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-06T13:00:04Z",
+ "gerado": "2026-11-06T13:03:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 68
+  "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.06 09:59:57",
+  "atualizado": "2026.11.06 10:02:58",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -275,6 +275,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.06 10:02:33",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 291 ms"
+  },
+  {
+   "quando": "2026.11.06 10:02:03",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 959 ms"
+  },
+  {
+   "quando": "2026.11.06 10:01:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 11 de 76 ações prontas, leitura em 190 ms"
+  },
+  {
+   "quando": "2026.11.06 10:01:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 11 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.06 10:00:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 161 ms"
+  },
   {
    "quando": "2026.11.06 10:00:04",
    "tipo": "AQUECE",
@@ -647,31 +672,6 @@
   },
   {
    "quando": "2026.11.04 09:59:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 09:59:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 09:58:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 09:58:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 09:57:35",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 4992 ms"
-  },
-  {
-   "quando": "2026.11.04 09:57:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
