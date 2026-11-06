@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-06T12:54:02Z",
+ "gerado": "2026-11-06T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": 65
  },
  "status": {
-  "atualizado": "2026.11.06 09:53:57",
+  "atualizado": "2026.11.06 09:56:57",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -275,6 +275,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.06 09:57:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.06 09:56:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.06 09:56:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.06 09:55:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.06 09:55:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 295 ms"
+  },
   {
    "quando": "2026.11.06 09:30:55",
    "tipo": "DIA",
@@ -649,31 +674,6 @@
    "quando": "2026.11.04 09:30:56",
    "tipo": "TRAVAS",
    "msg": "acumulado R$ 1167, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.04 09:30:56",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.03 17:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.03 16:45:01",
-   "tipo": "ZERADA",
-   "msg": "VAMO3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.03 16:45:01",
-   "tipo": "ZERADA",
-   "msg": "YDUQ3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.03 10:10:40",
-   "tipo": "CANCELADA",
-   "msg": "COGN3 -- rompeu o outro lado antes"
   }
  ],
  "referencia": {
