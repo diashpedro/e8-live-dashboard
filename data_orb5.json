@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-06T21:03:02Z",
+ "gerado": "2026-11-06T21:06:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 65
  },
  "status": {
-  "atualizado": "2026.11.06 18:02:58",
+  "atualizado": "2026.11.06 18:05:58",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -101,17 +101,17 @@
   ]
  },
  "resumo": {
-  "dias": 5,
-  "operacoes": 8,
-  "operacoes_por_dia": 1.6,
+  "dias": 6,
+  "operacoes": 12,
+  "operacoes_por_dia": 2.0,
   "acerto_pct": 75.0,
-  "por_operacao_pct": 1.625,
-  "resultado": 1229.97,
+  "por_operacao_pct": 2.017,
+  "resultado": 2300.8,
   "maior_queda": -260.56,
   "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 1.06,
-  "escorregamento_rs": -49.0,
-  "operacoes_demo": 8,
+  "escorregamento_ticks": 1.0,
+  "escorregamento_rs": -38.02,
+  "operacoes_demo": 12,
   "perdidas": 0,
   "so_na_demo": 0
  },
@@ -165,6 +165,16 @@
    "rs_real": 63.26,
    "modo": "demo",
    "acumulado": 1229.97
+  },
+  {
+   "data": "2026-11-06",
+   "operacoes": 4,
+   "ganhos": 3,
+   "rs": 1070.83,
+   "rs_sombra": 1135.14,
+   "rs_real": 1070.83,
+   "modo": "demo",
+   "acumulado": 2300.8
   }
  ],
  "operacoes": [
@@ -343,19 +353,111 @@
    "simulada": true,
    "escorregamento_ticks": 0.5,
    "rs": -184.21
+  },
+  {
+   "data": "2026-11-06",
+   "ativo": "ASAI3",
+   "lado": 1,
+   "modo": "demo",
+   "gap_pct": -0.47,
+   "vrel": 2.519,
+   "lote": 1100,
+   "entrada": 8.65,
+   "saida": 8.8,
+   "ent_real": 8.67,
+   "saida_real": 8.8,
+   "motivo": "horário",
+   "liq_pct": 1.746,
+   "liq_real_pct": 1.453,
+   "rs_sombra": 166.12,
+   "rs_real": 138.58,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 138.58
+  },
+  {
+   "data": "2026-11-06",
+   "ativo": "LREN3",
+   "lado": 1,
+   "modo": "demo",
+   "gap_pct": -5.77,
+   "vrel": 12.061,
+   "lote": 1000,
+   "entrada": 9.2,
+   "saida": 9.88,
+   "ent_real": 9.22,
+   "saida_real": 9.89,
+   "motivo": "horário",
+   "liq_pct": 7.4,
+   "liq_real_pct": 7.219,
+   "rs_sombra": 680.77,
+   "rs_real": 665.6,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 0.5,
+   "rs": 665.6
+  },
+  {
+   "data": "2026-11-06",
+   "ativo": "TEND3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 0.74,
+   "vrel": 2.68,
+   "lote": 600,
+   "entrada": 16.19,
+   "saida": 17.0,
+   "ent_real": 16.17,
+   "saida_real": 17.0,
+   "motivo": "stop",
+   "liq_pct": -5.046,
+   "liq_real_pct": -5.18,
+   "rs_sombra": -490.17,
+   "rs_real": -502.58,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": -502.58
+  },
+  {
+   "data": "2026-11-06",
+   "ativo": "VIVA3",
+   "lado": 1,
+   "modo": "demo",
+   "gap_pct": -8.86,
+   "vrel": 25.678,
+   "lote": 600,
+   "entrada": 16.6,
+   "saida": 17.91,
+   "ent_real": 16.62,
+   "saida_real": 17.91,
+   "motivo": "horário",
+   "liq_pct": 7.815,
+   "liq_real_pct": 7.714,
+   "rs_sombra": 778.42,
+   "rs_real": 769.23,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 769.23
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-11-05",
+  "data": "2026-11-06",
   "motivos": {
-   "volatilidade": 5,
-   "volume": 67,
-   "venda (gap de alta)": 2,
-   "gap pequeno": 1,
-   "compra (gap de baixa)": 1
+   "volume": 64,
+   "volatilidade": 7,
+   "compra (gap de baixa)": 3,
+   "venda (gap de alta)": 2
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.06 18:05:00",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.11.06 17:45:06",
    "tipo": "ZERADA",
@@ -750,11 +852,6 @@
    "quando": "2026.11.04 17:45:01",
    "tipo": "ZERADA",
    "msg": "RADL3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.04 17:45:01",
-   "tipo": "ZERADA",
-   "msg": "POMO4 -- saída 10 min antes do call (tentativa 1)"
   }
  ],
  "referencia": {
