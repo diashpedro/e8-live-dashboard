@@ -1,38 +1,102 @@
 {
- "gerado": "2026-11-06T13:09:02Z",
+ "gerado": "2026-11-06T13:12:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 66
  },
  "status": {
-  "atualizado": "2026.11.06 10:08:58",
+  "atualizado": "2026.11.06 10:11:58",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 1,
-  "abertas": 0,
+  "armadas": 4,
+  "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 0.0,
-  "resultado_real": -14.23,
+  "resultado_sombra": 55.53,
+  "resultado_real": -24.55,
   "operacoes": [
+   {
+    "ativo": "ASAI3",
+    "lado": 1,
+    "gap": -0.00473,
+    "vrel": 2.52,
+    "rank": 0.842,
+    "estado": "aguardando rompimento",
+    "lote": 1100,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": true,
+    "ent_real": 8.67
+   },
+   {
+    "ativo": "CSAN3",
+    "lado": -1,
+    "gap": 0.04,
+    "vrel": 5.36,
+    "rank": 0.947,
+    "estado": "aguardando rompimento",
+    "lote": 3900,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "LREN3",
+    "lado": 1,
+    "gap": -0.05771,
+    "vrel": 12.06,
+    "rank": 0.789,
+    "estado": "aguardando rompimento",
+    "lote": 1000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": true,
+    "ent_real": 9.22
+   },
    {
     "ativo": "TEND3",
     "lado": -1,
     "gap": 0.00738,
     "vrel": 2.68,
     "rank": 0.855,
+    "estado": "aberta",
+    "lote": 600,
+    "ent": 16.19,
+    "stop": 17.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 16.17
+   },
+   {
+    "ativo": "VIVA3",
+    "lado": 1,
+    "gap": -0.08856,
+    "vrel": 25.68,
+    "rank": 0.737,
     "estado": "aguardando rompimento",
     "lote": 600,
     "ent": 0.0,
     "stop": 0.0,
     "saida": 0.0,
     "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": true,
-    "ent_real": 16.17
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
    }
   ]
  },
@@ -292,6 +356,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.06 10:10:03",
+   "tipo": "DECISOES",
+   "msg": "26 ações avaliadas em 3032 ms, 4 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.06 10:10:03",
+   "tipo": "ARMADA",
+   "msg": "VIVA3 compra 600 ações, gatilho 16.60, limite 16.62, stop 15.92 (envio 1495 ms)"
+  },
+  {
+   "quando": "2026.11.06 10:10:02",
+   "tipo": "ARMADA",
+   "msg": "LREN3 compra 1000 ações, gatilho 9.20, limite 9.22, stop 8.75 (envio 743 ms)"
+  },
+  {
+   "quando": "2026.11.06 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "CSAN3 venda 3900 ações, gatilho 2.56, limite 2.54, stop 2.69 (envio 271 ms)"
+  },
+  {
+   "quando": "2026.11.06 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "ASAI3 compra 1100 ações, gatilho 8.65, limite 8.67, stop 8.25 (envio 503 ms)"
+  },
   {
    "quando": "2026.11.06 10:05:01",
    "tipo": "DECISOES",
@@ -666,31 +755,6 @@
    "quando": "2026.11.04 10:05:02",
    "tipo": "ARMADA",
    "msg": "COGN3 venda 7200 ações, gatilho 1.38, limite 1.36, stop 1.52 (envio 217 ms)"
-  },
-  {
-   "quando": "2026.11.04 10:04:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 26 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 10:04:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 26 de 76 ações prontas, leitura em 17 ms"
-  },
-  {
-   "quando": "2026.11.04 10:03:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 9 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 10:03:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 9 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.04 10:02:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 4 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
