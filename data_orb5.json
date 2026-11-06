@@ -1,22 +1,22 @@
 {
- "gerado": "2026-11-06T20:45:02Z",
+ "gerado": "2026-11-06T20:48:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 4
+  "heartbeat_s": 65
  },
  "status": {
-  "atualizado": "2026.11.06 17:44:58",
+  "atualizado": "2026.11.06 17:47:58",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pregão (só saídas)",
+  "fase": "saída",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 3,
   "encerradas": 1,
-  "resultado_sombra": 1148.64,
-  "resultado_real": 1088.81,
+  "resultado_sombra": 1189.64,
+  "resultado_real": 1070.84,
   "operacoes": [
    {
     "ativo": "ASAI3",
@@ -356,6 +356,26 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.06 17:45:06",
+   "tipo": "ZERADA",
+   "msg": "ASAI3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.06 17:45:06",
+   "tipo": "ZERADA",
+   "msg": "LREN3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.06 17:45:06",
+   "tipo": "ZERADA",
+   "msg": "VIVA3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.06 17:45:06",
+   "tipo": "LENTO",
+   "msg": "sombra (passo 3) levou 6519 ms"
+  },
   {
    "quando": "2026.11.06 14:45:08",
    "tipo": "LENTO",
@@ -735,26 +755,6 @@
    "quando": "2026.11.04 17:45:01",
    "tipo": "ZERADA",
    "msg": "POMO4 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.04 10:15:01",
-   "tipo": "DECISOES",
-   "msg": "2 ações avaliadas em 214 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.04 10:15:01",
-   "tipo": "ARMADA",
-   "msg": "POMO4 compra 2800 ações, gatilho 3.45, limite 3.47, stop 3.26 (envio 211 ms)"
-  },
-  {
-   "quando": "2026.11.04 10:10:01",
-   "tipo": "DECISOES",
-   "msg": "48 ações avaliadas em 27 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.04 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "RADL3 venda 600 ações, gatilho 15.13, limite 15.11, stop 16.00 (envio 26 ms)"
   }
  ],
  "referencia": {
