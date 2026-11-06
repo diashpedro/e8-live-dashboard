@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-06T17:45:03Z",
+ "gerado": "2026-11-06T17:48:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 5
  },
  "status": {
-  "atualizado": "2026.11.06 14:44:58",
+  "atualizado": "2026.11.06 14:47:58",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 3,
   "encerradas": 1,
-  "resultado_sombra": 1549.64,
-  "resultado_real": 1489.81,
+  "resultado_sombra": 1617.64,
+  "resultado_real": 1557.81,
   "operacoes": [
    {
     "ativo": "ASAI3",
@@ -356,6 +356,11 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.06 14:45:08",
+   "tipo": "LENTO",
+   "msg": "sombra (passo 3) levou 7481 ms"
+  },
   {
    "quando": "2026.11.06 12:10:06",
    "tipo": "LENTO",
@@ -750,11 +755,6 @@
    "quando": "2026.11.04 10:10:01",
    "tipo": "ARMADA",
    "msg": "RADL3 venda 600 ações, gatilho 15.13, limite 15.11, stop 16.00 (envio 26 ms)"
-  },
-  {
-   "quando": "2026.11.04 10:07:09",
-   "tipo": "CANCELADA",
-   "msg": "COGN3 -- rompeu o outro lado antes"
   }
  ],
  "referencia": {
