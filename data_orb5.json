@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-06T13:06:02Z",
+ "gerado": "2026-11-06T13:09:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 64
+  "heartbeat_s": 65
  },
  "status": {
-  "atualizado": "2026.11.06 10:05:58",
+  "atualizado": "2026.11.06 10:08:58",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
+  "resultado_real": -14.23,
   "operacoes": [
    {
     "ativo": "TEND3",
@@ -31,8 +31,8 @@
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
+    "real": true,
+    "ent_real": 16.17
    }
   ]
  },
