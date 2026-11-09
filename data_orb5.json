@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-09T13:12:03Z",
+ "gerado": "2026-11-09T13:15:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 63
  },
  "status": {
-  "atualizado": "2026.11.09 10:11:57",
+  "atualizado": "2026.11.09 10:14:57",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": -23.21,
+  "resultado_real": 18.79,
   "operacoes": [
    {
     "ativo": "CSNA3",
@@ -389,6 +389,16 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.09 10:15:02",
+   "tipo": "DECISOES",
+   "msg": "3 ações avaliadas em 552 ms, 1 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.09 10:15:02",
+   "tipo": "ARMADA",
+   "msg": "LREN3 venda 1000 ações, gatilho 9.84, limite 9.82, stop 10.33 (envio 539 ms)"
+  },
   {
    "quando": "2026.11.09 10:10:02",
    "tipo": "DECISOES",
@@ -778,16 +788,6 @@
    "quando": "2026.11.05 10:10:00",
    "tipo": "DECISOES",
    "msg": "33 ações avaliadas em 541 ms, 2 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.05 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "SMFT3 venda 500 ações, gatilho 17.49, limite 17.47, stop 18.72 (envio 119 ms)"
-  },
-  {
-   "quando": "2026.11.05 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "CSAN3 venda 4000 ações, gatilho 2.45, limite 2.43, stop 2.69 (envio 398 ms)"
   }
  ],
  "referencia": {
