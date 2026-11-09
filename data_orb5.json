@@ -1,23 +1,40 @@
 {
- "gerado": "2026-11-09T13:09:02Z",
+ "gerado": "2026-11-09T13:12:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 63
  },
  "status": {
-  "atualizado": "2026.11.09 10:08:57",
+  "atualizado": "2026.11.09 10:11:57",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 1,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": -23.21,
+  "operacoes": [
+   {
+    "ativo": "CSNA3",
+    "lado": -1,
+    "gap": 0.0771,
+    "vrel": 5.85,
+    "rank": 0.895,
+    "estado": "aguardando rompimento",
+    "lote": 2100,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 4.58
+   }
+  ]
  },
  "resumo": {
   "dias": 6,
@@ -372,6 +389,16 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.09 10:10:02",
+   "tipo": "DECISOES",
+   "msg": "18 ações avaliadas em 589 ms, 1 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.09 10:10:02",
+   "tipo": "ARMADA",
+   "msg": "CSNA3 venda 2100 ações, gatilho 4.60, limite 4.58, stop 4.83 (envio 541 ms)"
+  },
   {
    "quando": "2026.11.09 10:05:01",
    "tipo": "DECISOES",
@@ -761,16 +788,6 @@
    "quando": "2026.11.05 10:10:00",
    "tipo": "ARMADA",
    "msg": "CSAN3 venda 4000 ações, gatilho 2.45, limite 2.43, stop 2.69 (envio 398 ms)"
-  },
-  {
-   "quando": "2026.11.05 10:05:00",
-   "tipo": "DECISOES",
-   "msg": "42 ações avaliadas em 2 ms, 0 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.05 10:04:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 42 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
