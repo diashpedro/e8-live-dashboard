@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-09T20:48:02Z",
+ "gerado": "2026-11-09T20:51:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 62
  },
  "status": {
-  "atualizado": "2026.11.09 17:47:57",
+  "atualizado": "2026.11.09 17:50:57",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "saída",
@@ -13,9 +13,9 @@
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
-  "abertas": 2,
-  "encerradas": 0,
-  "resultado_sombra": -2.97,
+  "abertas": 0,
+  "encerradas": 2,
+  "resultado_sombra": -28.47,
   "resultado_real": -95.96,
   "operacoes": [
    {
@@ -24,13 +24,13 @@
     "gap": 0.0771,
     "vrel": 5.85,
     "rank": 0.895,
-    "estado": "aberta",
+    "estado": "encerrada",
     "lote": 2100,
     "ent": 4.6,
     "stop": 4.83,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
+    "saida": 4.45,
+    "liq": 0.033236,
+    "motivo": "horário",
     "real": true,
     "ent_real": 4.58
    },
@@ -40,13 +40,13 @@
     "gap": 0.00906,
     "vrel": 3.5,
     "rank": 0.829,
-    "estado": "aberta",
+    "estado": "encerrada",
     "lote": 1000,
     "ent": 9.84,
     "stop": 10.33,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
+    "saida": 10.19,
+    "liq": -0.035521,
+    "motivo": "horário",
     "real": true,
     "ent_real": 9.82
    }
