@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-09T12:54:03Z",
+ "gerado": "2026-11-09T12:57:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.09 09:53:55",
+  "atualizado": "2026.11.09 09:56:55",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -372,6 +372,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.09 09:57:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 09:56:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 09:56:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 09:55:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 09:55:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 871 ms"
+  },
   {
    "quando": "2026.11.09 09:30:53",
    "tipo": "DIA",
@@ -746,31 +771,6 @@
    "quando": "2026.11.05 09:56:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.05 09:56:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 8 ms"
-  },
-  {
-   "quando": "2026.11.05 09:55:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.05 09:55:10",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 8417 ms"
-  },
-  {
-   "quando": "2026.11.05 09:30:47",
-   "tipo": "DIA",
-   "msg": "pregão 2026.11.05 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.05 09:30:47",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 1230, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
   }
  ],
  "referencia": {
