@@ -1,104 +1,23 @@
 {
- "gerado": "2026-11-09T12:30:02Z",
+ "gerado": "2026-11-09T12:33:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 64
  },
  "status": {
-  "atualizado": "2026.11.09 09:25:00",
+  "atualizado": "2026.11.09 09:32:55",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 4,
-  "resultado_sombra": 1135.14,
-  "resultado_real": 1070.84,
-  "operacoes": [
-   {
-    "ativo": "ASAI3",
-    "lado": 1,
-    "gap": -0.00473,
-    "vrel": 2.52,
-    "rank": 0.842,
-    "estado": "encerrada",
-    "lote": 1100,
-    "ent": 8.65,
-    "stop": 8.25,
-    "saida": 8.8,
-    "liq": 0.017459,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 8.67
-   },
-   {
-    "ativo": "CSAN3",
-    "lado": -1,
-    "gap": 0.04,
-    "vrel": 5.36,
-    "rank": 0.947,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 3900,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "LREN3",
-    "lado": 1,
-    "gap": -0.05771,
-    "vrel": 12.06,
-    "rank": 0.789,
-    "estado": "encerrada",
-    "lote": 1000,
-    "ent": 9.2,
-    "stop": 8.75,
-    "saida": 9.88,
-    "liq": 0.073997,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 9.22
-   },
-   {
-    "ativo": "TEND3",
-    "lado": -1,
-    "gap": 0.00738,
-    "vrel": 2.68,
-    "rank": 0.855,
-    "estado": "encerrada",
-    "lote": 600,
-    "ent": 16.19,
-    "stop": 17.0,
-    "saida": 17.0,
-    "liq": -0.05046,
-    "motivo": "stop",
-    "real": true,
-    "ent_real": 16.17
-   },
-   {
-    "ativo": "VIVA3",
-    "lado": 1,
-    "gap": -0.08856,
-    "vrel": 25.68,
-    "rank": 0.737,
-    "estado": "encerrada",
-    "lote": 600,
-    "ent": 16.6,
-    "stop": 15.92,
-    "saida": 17.91,
-    "liq": 0.078154,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 16.62
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 6,
@@ -453,6 +372,21 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.09 09:30:53",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.09 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.09 09:30:53",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 2301, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.09 09:30:53",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
   {
    "quando": "2026.11.06 18:05:00",
    "tipo": "FIM",
@@ -837,21 +771,6 @@
    "quando": "2026.11.05 09:30:47",
    "tipo": "TRAVAS",
    "msg": "acumulado R$ 1230, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.05 09:30:47",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.04 18:05:01",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.04 17:45:01",
-   "tipo": "ZERADA",
-   "msg": "RADL3 -- saída 10 min antes do call (tentativa 1)"
   }
  ],
  "referencia": {
