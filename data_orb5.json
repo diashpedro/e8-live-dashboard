@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-09T20:42:03Z",
+ "gerado": "2026-11-09T20:45:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 63
+  "heartbeat_s": 61
  },
  "status": {
-  "atualizado": "2026.11.09 17:41:57",
+  "atualizado": "2026.11.09 17:44:57",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": -23.97,
-  "resultado_real": -81.47,
+  "resultado_sombra": -2.97,
+  "resultado_real": -60.47,
   "operacoes": [
    {
     "ativo": "CSNA3",
@@ -406,6 +406,16 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.09 17:45:02",
+   "tipo": "ZERADA",
+   "msg": "CSNA3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.09 17:45:02",
+   "tipo": "ZERADA",
+   "msg": "LREN3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
    "quando": "2026.11.09 10:15:02",
    "tipo": "DECISOES",
    "msg": "3 ações avaliadas em 552 ms, 1 com sinal (ordens enviadas na mesma passada)"
@@ -794,16 +804,6 @@
    "quando": "2026.11.05 10:15:00",
    "tipo": "ARMADA",
    "msg": "TEND3 compra 500 ações, gatilho 18.36, limite 18.38, stop 17.11 (envio 258 ms)"
-  },
-  {
-   "quando": "2026.11.05 10:10:28",
-   "tipo": "CANCELADA",
-   "msg": "CSAN3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.05 10:10:00",
-   "tipo": "DECISOES",
-   "msg": "33 ações avaliadas em 541 ms, 2 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
