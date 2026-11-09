@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-09T21:03:02Z",
+ "gerado": "2026-11-09T21:06:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 62
  },
  "status": {
-  "atualizado": "2026.11.09 18:02:57",
+  "atualizado": "2026.11.09 18:05:57",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -53,17 +53,17 @@
   ]
  },
  "resumo": {
-  "dias": 6,
-  "operacoes": 12,
+  "dias": 7,
+  "operacoes": 14,
   "operacoes_por_dia": 2.0,
-  "acerto_pct": 75.0,
-  "por_operacao_pct": 2.017,
-  "resultado": 2300.8,
+  "acerto_pct": 71.4,
+  "por_operacao_pct": 1.663,
+  "resultado": 2204.84,
   "maior_queda": -260.56,
-  "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 1.0,
-  "escorregamento_rs": -38.02,
-  "operacoes_demo": 12,
+  "dias_negativos_seguidos": 1,
+  "escorregamento_ticks": 0.96,
+  "escorregamento_rs": -37.41,
+  "operacoes_demo": 14,
   "perdidas": 0,
   "so_na_demo": 0
  },
@@ -127,6 +127,16 @@
    "rs_real": 1070.83,
    "modo": "demo",
    "acumulado": 2300.8
+  },
+  {
+   "data": "2026-11-09",
+   "operacoes": 2,
+   "ganhos": 1,
+   "rs": -95.96,
+   "rs_sombra": -28.47,
+   "rs_real": -95.96,
+   "modo": "demo",
+   "acumulado": 2204.84
   }
  ],
  "operacoes": [
@@ -393,18 +403,66 @@
    "simulada": true,
    "escorregamento_ticks": 1.0,
    "rs": 769.23
+  },
+  {
+   "data": "2026-11-09",
+   "ativo": "CSNA3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 7.71,
+   "vrel": 5.845,
+   "lote": 2100,
+   "entrada": 4.6,
+   "saida": 4.45,
+   "ent_real": 4.58,
+   "saida_real": 4.45,
+   "motivo": "horário",
+   "liq_pct": 3.324,
+   "liq_real_pct": 2.793,
+   "rs_sombra": 321.06,
+   "rs_real": 268.64,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 268.64
+  },
+  {
+   "data": "2026-11-09",
+   "ativo": "LREN3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 0.91,
+   "vrel": 3.499,
+   "lote": 1000,
+   "entrada": 9.84,
+   "saida": 10.19,
+   "ent_real": 9.82,
+   "saida_real": 10.18,
+   "motivo": "horário",
+   "liq_pct": -3.552,
+   "liq_real_pct": -3.713,
+   "rs_sombra": -349.53,
+   "rs_real": -364.6,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 0.5,
+   "rs": -364.6
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-11-06",
+  "data": "2026-11-09",
   "motivos": {
-   "volume": 64,
-   "volatilidade": 7,
-   "compra (gap de baixa)": 3,
-   "venda (gap de alta)": 2
+   "volume": 70,
+   "venda (gap de alta)": 2,
+   "volatilidade": 4
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.09 18:05:01",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.11.09 17:45:02",
    "tipo": "ZERADA",
@@ -799,11 +857,6 @@
    "quando": "2026.11.05 10:15:00",
    "tipo": "DECISOES",
    "msg": "1 ações avaliadas em 259 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.05 10:15:00",
-   "tipo": "ARMADA",
-   "msg": "TEND3 compra 500 ações, gatilho 18.36, limite 18.38, stop 17.11 (envio 258 ms)"
   }
  ],
  "referencia": {
