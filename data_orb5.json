@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-09T13:00:03Z",
+ "gerado": "2026-11-09T13:03:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 62
  },
  "status": {
-  "atualizado": "2026.11.09 09:59:56",
+  "atualizado": "2026.11.09 10:02:56",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -372,6 +372,31 @@
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.09 10:02:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 10:02:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 10:01:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 10:01:02",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.09 10:00:32",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
   {
    "quando": "2026.11.09 10:00:02",
    "tipo": "AQUECE",
@@ -746,31 +771,6 @@
    "quando": "2026.11.05 10:02:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 9 de 76 ações prontas, leitura em 2 ms"
-  },
-  {
-   "quando": "2026.11.05 10:01:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.05 10:01:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.05 10:00:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.05 10:00:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.05 09:59:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
