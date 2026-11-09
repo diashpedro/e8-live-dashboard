@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-09T13:15:03Z",
+ "gerado": "2026-11-09T13:18:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 63
+  "heartbeat_s": 62
  },
  "status": {
-  "atualizado": "2026.11.09 10:14:57",
+  "atualizado": "2026.11.09 10:17:57",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -13,10 +13,10 @@
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 1,
-  "abertas": 0,
+  "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 0.0,
-  "resultado_real": 18.79,
+  "resultado_sombra": -88.44,
+  "resultado_real": -128.21,
   "operacoes": [
    {
     "ativo": "CSNA3",
@@ -24,15 +24,31 @@
     "gap": 0.0771,
     "vrel": 5.85,
     "rank": 0.895,
-    "estado": "aguardando rompimento",
+    "estado": "aberta",
     "lote": 2100,
-    "ent": 0.0,
-    "stop": 0.0,
+    "ent": 4.6,
+    "stop": 4.83,
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
     "real": true,
     "ent_real": 4.58
+   },
+   {
+    "ativo": "LREN3",
+    "lado": -1,
+    "gap": 0.00906,
+    "vrel": 3.5,
+    "rank": 0.829,
+    "estado": "aguardando rompimento",
+    "lote": 1000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
    }
   ]
  },
