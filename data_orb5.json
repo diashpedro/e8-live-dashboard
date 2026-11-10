@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-10T12:54:03Z",
+ "gerado": "2026-11-10T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 61
+  "heartbeat_s": 60
  },
  "status": {
-  "atualizado": "2026.11.10 09:54:00",
+  "atualizado": "2026.11.10 09:57:00",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -426,6 +426,31 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.10 09:57:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.10 09:56:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.10 09:56:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.10 09:55:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
+  },
+  {
+   "quando": "2026.11.10 09:55:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 474 ms"
+  },
+  {
    "quando": "2026.11.10 09:30:58",
    "tipo": "DIA",
    "msg": "pregão 2026.11.10 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
@@ -799,31 +824,6 @@
    "quando": "2026.11.05 20:02:54",
    "tipo": "DIA",
    "msg": "pregão 2026.11.05 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.05 20:02:54",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 1230, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.05 20:02:54",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.05 20:02:26",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
-  },
-  {
-   "quando": "2026.11.05 20:01:44",
-   "tipo": "INIT",
-   "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada"
-  },
-  {
-   "quando": "2026.11.05 18:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
   }
  ],
  "referencia": {
