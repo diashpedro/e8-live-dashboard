@@ -1,22 +1,22 @@
 {
- "gerado": "2026-11-10T20:42:03Z",
+ "gerado": "2026-11-10T20:45:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 62
+  "heartbeat_s": 61
  },
  "status": {
-  "atualizado": "2026.11.10 17:42:00",
+  "atualizado": "2026.11.10 17:45:00",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pregão (só saídas)",
+  "fase": "saída",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 205.7,
-  "resultado_real": 187.86,
+  "resultado_sombra": 195.7,
+  "resultado_real": 175.75,
   "operacoes": [
    {
     "ativo": "DIRR3",
@@ -459,6 +459,11 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.10 17:45:00",
+   "tipo": "ZERADA",
+   "msg": "DIRR3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
    "quando": "2026.11.10 10:10:10",
    "tipo": "CANCELADA",
    "msg": "MGLU3 -- rompeu o outro lado antes"
@@ -852,11 +857,6 @@
    "quando": "2026.11.06 10:02:33",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 291 ms"
-  },
-  {
-   "quando": "2026.11.06 10:02:03",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 959 ms"
   }
  ],
  "referencia": {
