@@ -1,23 +1,56 @@
 {
- "gerado": "2026-11-10T13:09:02Z",
+ "gerado": "2026-11-10T13:12:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 61
  },
  "status": {
-  "atualizado": "2026.11.10 10:09:00",
+  "atualizado": "2026.11.10 10:12:00",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 2,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": 17.86,
+  "operacoes": [
+   {
+    "ativo": "DIRR3",
+    "lado": -1,
+    "gap": 0.04213,
+    "vrel": 3.36,
+    "rank": 0.737,
+    "estado": "aguardando rompimento",
+    "lote": 1000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 9.32
+   },
+   {
+    "ativo": "MGLU3",
+    "lado": -1,
+    "gap": 0.04452,
+    "vrel": 4.39,
+    "rank": 0.987,
+    "estado": "aguardando rompimento",
+    "lote": 1600,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 7,
@@ -426,6 +459,26 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.10 10:10:10",
+   "tipo": "CANCELADA",
+   "msg": "MGLU3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.10 10:10:00",
+   "tipo": "DECISOES",
+   "msg": "20 ações avaliadas em 184 ms, 2 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.10 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "MGLU3 venda 1600 ações, gatilho 6.09, limite 6.07, stop 6.39 (envio 29 ms)"
+  },
+  {
+   "quando": "2026.11.10 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "DIRR3 venda 1000 ações, gatilho 9.34, limite 9.32, stop 9.81 (envio 128 ms)"
+  },
+  {
    "quando": "2026.11.10 10:05:00",
    "tipo": "DECISOES",
    "msg": "56 ações avaliadas em 2 ms, 0 com sinal (ordens enviadas na mesma passada)"
@@ -804,26 +857,6 @@
    "quando": "2026.11.06 10:02:03",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 959 ms"
-  },
-  {
-   "quando": "2026.11.06 10:01:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 11 de 76 ações prontas, leitura em 190 ms"
-  },
-  {
-   "quando": "2026.11.06 10:01:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 11 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.06 10:00:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 161 ms"
-  },
-  {
-   "quando": "2026.11.06 10:00:04",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 3268 ms"
   }
  ],
  "referencia": {
