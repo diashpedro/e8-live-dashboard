@@ -1,56 +1,23 @@
 {
- "gerado": "2026-11-10T12:30:02Z",
+ "gerado": "2026-11-10T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 62
+  "heartbeat_s": 60
  },
  "status": {
-  "atualizado": "2026.11.10 09:25:01",
+  "atualizado": "2026.11.10 09:33:00",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 2,
-  "resultado_sombra": -28.47,
-  "resultado_real": -95.96,
-  "operacoes": [
-   {
-    "ativo": "CSNA3",
-    "lado": -1,
-    "gap": 0.0771,
-    "vrel": 5.85,
-    "rank": 0.895,
-    "estado": "encerrada",
-    "lote": 2100,
-    "ent": 4.6,
-    "stop": 4.83,
-    "saida": 4.45,
-    "liq": 0.033236,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 4.58
-   },
-   {
-    "ativo": "LREN3",
-    "lado": -1,
-    "gap": 0.00906,
-    "vrel": 3.5,
-    "rank": 0.829,
-    "estado": "encerrada",
-    "lote": 1000,
-    "ent": 9.84,
-    "stop": 10.33,
-    "saida": 10.19,
-    "liq": -0.035521,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 9.82
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 7,
@@ -459,6 +426,21 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.10 09:30:58",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.10 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.10 09:30:58",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 2205, queda R$ -261, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.10 09:30:58",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
+  {
    "quando": "2026.11.09 18:05:01",
    "tipo": "FIM",
    "msg": "pregão encerrado"
@@ -842,21 +824,6 @@
    "quando": "2026.11.05 18:05:00",
    "tipo": "FIM",
    "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.05 10:27:06",
-   "tipo": "CANCELADA",
-   "msg": "SMFT3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.05 10:18:06",
-   "tipo": "CANCELADA",
-   "msg": "TEND3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.05 10:15:00",
-   "tipo": "DECISOES",
-   "msg": "1 ações avaliadas em 259 ms, 1 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
