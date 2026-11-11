@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-11T13:09:02Z",
+ "gerado": "2026-11-11T13:12:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.11 10:08:55",
+  "atualizado": "2026.11.11 10:11:55",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -13,10 +13,10 @@
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 2,
-  "abertas": 0,
+  "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 0.0,
-  "resultado_real": 213.87,
+  "resultado_sombra": 163.73,
+  "resultado_real": 243.91,
   "operacoes": [
    {
     "ativo": "AURE3",
@@ -24,10 +24,10 @@
     "gap": 0.00851,
     "vrel": 3.43,
     "rank": 0.605,
-    "estado": "aguardando rompimento",
+    "estado": "aberta",
     "lote": 800,
-    "ent": 0.0,
-    "stop": 0.0,
+    "ent": 11.61,
+    "stop": 12.03,
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
@@ -35,13 +35,45 @@
     "ent_real": 11.59
    },
    {
+    "ativo": "CURY3",
+    "lado": -1,
+    "gap": 0.05281,
+    "vrel": 3.88,
+    "rank": 0.632,
+    "estado": "aguardando rompimento",
+    "lote": 300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 28.41
+   },
+   {
     "ativo": "HAPV3",
     "lado": -1,
     "gap": 0.00941,
     "vrel": 2.06,
     "rank": 0.974,
-    "estado": "aguardando rompimento",
+    "estado": "cancelada (rompeu o outro lado)",
     "lote": 2300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "MGLU3",
+    "lado": -1,
+    "gap": 0.03681,
+    "vrel": 2.26,
+    "rank": 1.0,
+    "estado": "aguardando rompimento",
+    "lote": 1400,
     "ent": 0.0,
     "stop": 0.0,
     "saida": 0.0,
@@ -491,6 +523,21 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 10:10:02",
+   "tipo": "DECISOES",
+   "msg": "22 ações avaliadas em 370 ms, 2 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.11 10:10:02",
+   "tipo": "ARMADA",
+   "msg": "MGLU3 venda 1400 ações, gatilho 6.74, limite 6.72, stop 7.08 (envio 217 ms)"
+  },
+  {
+   "quando": "2026.11.11 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "CURY3 venda 300 ações, gatilho 28.43, limite 28.41, stop 29.73 (envio 141 ms)"
+  },
+  {
    "quando": "2026.11.11 10:06:27",
    "tipo": "CANCELADA",
    "msg": "HAPV3 -- rompeu o outro lado antes"
@@ -874,21 +921,6 @@
    "quando": "2026.11.09 09:59:01",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:58:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:58:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:57:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
   }
  ],
  "referencia": {
