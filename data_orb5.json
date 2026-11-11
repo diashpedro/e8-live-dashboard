@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-11T21:03:03Z",
+ "gerado": "2026-11-11T21:06:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.11 18:02:55",
+  "atualizado": "2026.11.11 18:05:55",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -85,17 +85,17 @@
   ]
  },
  "resumo": {
-  "dias": 8,
-  "operacoes": 15,
-  "operacoes_por_dia": 1.88,
-  "acerto_pct": 73.3,
-  "por_operacao_pct": 1.678,
-  "resultado": 2380.59,
-  "maior_queda": -260.56,
-  "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 0.97,
-  "escorregamento_rs": -36.58,
-  "operacoes_demo": 15,
+  "dias": 9,
+  "operacoes": 17,
+  "operacoes_por_dia": 1.89,
+  "acerto_pct": 64.7,
+  "por_operacao_pct": 1.246,
+  "resultado": 2028.33,
+  "maior_queda": -352.26,
+  "dias_negativos_seguidos": 1,
+  "escorregamento_ticks": 0.94,
+  "escorregamento_rs": -33.25,
+  "operacoes_demo": 17,
   "perdidas": 0,
   "so_na_demo": 0
  },
@@ -179,6 +179,16 @@
    "rs_real": 175.75,
    "modo": "demo",
    "acumulado": 2380.59
+  },
+  {
+   "data": "2026-11-11",
+   "operacoes": 2,
+   "ganhos": 0,
+   "rs": -352.26,
+   "rs_sombra": -335.69,
+   "rs_real": -352.26,
+   "modo": "demo",
+   "acumulado": 2028.33
   }
  ],
  "operacoes": [
@@ -511,17 +521,66 @@
    "simulada": true,
    "escorregamento_ticks": 1.0,
    "rs": 175.75
+  },
+  {
+   "data": "2026-11-11",
+   "ativo": "AURE3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 0.85,
+   "vrel": 3.432,
+   "lote": 800,
+   "entrada": 11.61,
+   "saida": 11.79,
+   "ent_real": 11.59,
+   "saida_real": 11.78,
+   "motivo": "horário",
+   "liq_pct": -1.553,
+   "liq_real_pct": -1.686,
+   "rs_sombra": -144.27,
+   "rs_real": -156.3,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 0.5,
+   "rs": -156.3
+  },
+  {
+   "data": "2026-11-11",
+   "ativo": "CURY3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 5.28,
+   "vrel": 3.876,
+   "lote": 300,
+   "entrada": 28.43,
+   "saida": 29.05,
+   "ent_real": 28.41,
+   "saida_real": 29.05,
+   "motivo": "horário",
+   "liq_pct": -2.244,
+   "liq_real_pct": -2.299,
+   "rs_sombra": -191.42,
+   "rs_real": -195.96,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": -195.96
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-11-10",
+  "data": "2026-11-11",
   "motivos": {
-   "volume": 67,
-   "volatilidade": 7,
-   "venda (gap de alta)": 2
+   "volume": 59,
+   "venda (gap de alta)": 4,
+   "volatilidade": 13
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.11 18:05:01",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.11.11 17:45:02",
    "tipo": "ZERADA",
@@ -916,11 +975,6 @@
    "quando": "2026.11.09 10:01:02",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:00:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
