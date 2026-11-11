@@ -1,56 +1,23 @@
 {
- "gerado": "2026-11-11T12:30:04Z",
+ "gerado": "2026-11-11T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 62
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.11 09:25:00",
+  "atualizado": "2026.11.11 09:32:54",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 1,
-  "resultado_sombra": 200.7,
-  "resultado_real": 175.75,
-  "operacoes": [
-   {
-    "ativo": "DIRR3",
-    "lado": -1,
-    "gap": 0.04213,
-    "vrel": 3.36,
-    "rank": 0.737,
-    "estado": "encerrada",
-    "lote": 1000,
-    "ent": 9.34,
-    "stop": 9.81,
-    "saida": 9.14,
-    "liq": 0.021489,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 9.32
-   },
-   {
-    "ativo": "MGLU3",
-    "lado": -1,
-    "gap": 0.04452,
-    "vrel": 4.39,
-    "rank": 0.987,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1600,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 8,
@@ -491,6 +458,21 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 09:30:54",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.11 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.11 09:30:54",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 2381, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.11 09:30:54",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
+  {
    "quando": "2026.11.10 18:05:00",
    "tipo": "FIM",
    "msg": "pregão encerrado"
@@ -874,21 +856,6 @@
    "quando": "2026.11.06 10:04:33",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 50 de 76 ações prontas, leitura em 285 ms"
-  },
-  {
-   "quando": "2026.11.06 10:04:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 50 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.06 10:03:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 26 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.06 10:03:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 25 de 76 ações prontas, leitura em 18 ms"
   }
  ],
  "referencia": {
