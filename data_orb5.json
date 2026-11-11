@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-11T12:54:03Z",
+ "gerado": "2026-11-11T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 9
+  "heartbeat_s": 8
  },
  "status": {
-  "atualizado": "2026.11.11 09:53:54",
+  "atualizado": "2026.11.11 09:56:54",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -458,6 +458,31 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 09:57:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:56:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:56:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:55:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:55:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.11 09:30:54",
    "tipo": "DIA",
    "msg": "pregão 2026.11.11 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
@@ -831,31 +856,6 @@
    "quando": "2026.11.06 10:10:02",
    "tipo": "ARMADA",
    "msg": "LREN3 compra 1000 ações, gatilho 9.20, limite 9.22, stop 8.75 (envio 743 ms)"
-  },
-  {
-   "quando": "2026.11.06 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "CSAN3 venda 3900 ações, gatilho 2.56, limite 2.54, stop 2.69 (envio 271 ms)"
-  },
-  {
-   "quando": "2026.11.06 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "ASAI3 compra 1100 ações, gatilho 8.65, limite 8.67, stop 8.25 (envio 503 ms)"
-  },
-  {
-   "quando": "2026.11.06 10:05:01",
-   "tipo": "DECISOES",
-   "msg": "50 ações avaliadas em 777 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.06 10:05:01",
-   "tipo": "ARMADA",
-   "msg": "TEND3 venda 600 ações, gatilho 16.19, limite 16.17, stop 17.00 (envio 317 ms)"
-  },
-  {
-   "quando": "2026.11.06 10:04:33",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 50 de 76 ações prontas, leitura em 285 ms"
   }
  ],
  "referencia": {
