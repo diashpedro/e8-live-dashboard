@@ -1,23 +1,56 @@
 {
- "gerado": "2026-11-11T13:03:01Z",
+ "gerado": "2026-11-11T13:06:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.11 10:02:55",
+  "atualizado": "2026.11.11 10:05:55",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 2,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": 29.87,
+  "operacoes": [
+   {
+    "ativo": "AURE3",
+    "lado": -1,
+    "gap": 0.00851,
+    "vrel": 3.43,
+    "rank": 0.605,
+    "estado": "aguardando rompimento",
+    "lote": 800,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 11.59
+   },
+   {
+    "ativo": "HAPV3",
+    "lado": -1,
+    "gap": 0.00941,
+    "vrel": 2.06,
+    "rank": 0.974,
+    "estado": "aguardando rompimento",
+    "lote": 2300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 8,
@@ -458,6 +491,36 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 10:05:01",
+   "tipo": "DECISOES",
+   "msg": "54 ações avaliadas em 137 ms, 2 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.11 10:05:01",
+   "tipo": "ARMADA",
+   "msg": "HAPV3 venda 2300 ações, gatilho 4.27, limite 4.25, stop 4.48 (envio 28 ms)"
+  },
+  {
+   "quando": "2026.11.11 10:05:01",
+   "tipo": "ARMADA",
+   "msg": "AURE3 venda 800 ações, gatilho 11.61, limite 11.59, stop 12.03 (envio 99 ms)"
+  },
+  {
+   "quando": "2026.11.11 10:04:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 1 ms"
+  },
+  {
+   "quando": "2026.11.11 10:04:01",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 10:03:31",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 29 de 76 ações prontas, leitura em 1 ms"
+  },
+  {
    "quando": "2026.11.11 10:03:01",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 27 de 76 ações prontas, leitura em 0 ms"
@@ -826,36 +889,6 @@
    "quando": "2026.11.09 09:57:01",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:56:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:56:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:55:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:55:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 871 ms"
-  },
-  {
-   "quando": "2026.11.09 09:30:53",
-   "tipo": "DIA",
-   "msg": "pregão 2026.11.09 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.09 09:30:53",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 2301, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
   }
  ],
  "referencia": {
