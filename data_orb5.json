@@ -1,22 +1,22 @@
 {
- "gerado": "2026-11-11T13:15:03Z",
+ "gerado": "2026-11-11T13:18:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 69
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.11 10:14:55",
+  "atualizado": "2026.11.11 10:17:55",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 2,
-  "abertas": 1,
+  "armadas": 1,
+  "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": 19.73,
-  "resultado_real": 36.91,
+  "resultado_sombra": 146.8,
+  "resultado_real": 128.91,
   "operacoes": [
    {
     "ativo": "AURE3",
@@ -40,10 +40,10 @@
     "gap": 0.05281,
     "vrel": 3.88,
     "rank": 0.632,
-    "estado": "aguardando rompimento",
+    "estado": "aberta",
     "lote": 300,
-    "ent": 0.0,
-    "stop": 0.0,
+    "ent": 28.43,
+    "stop": 29.73,
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
@@ -523,6 +523,11 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 10:15:19",
+   "tipo": "CANCELADA",
+   "msg": "MGLU3 -- rompeu o outro lado antes"
+  },
+  {
    "quando": "2026.11.11 10:10:02",
    "tipo": "DECISOES",
    "msg": "22 ações avaliadas em 370 ms, 2 com sinal (ordens enviadas na mesma passada)"
@@ -916,11 +921,6 @@
    "quando": "2026.11.09 09:59:36",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 4802 ms"
-  },
-  {
-   "quando": "2026.11.09 09:59:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
