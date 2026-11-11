@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-11T20:42:02Z",
+ "gerado": "2026-11-11T20:45:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 8
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.11 17:41:55",
+  "atualizado": "2026.11.11 17:44:55",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 2,
   "encerradas": 0,
-  "resultado_sombra": -296.2,
-  "resultado_real": -314.09,
+  "resultado_sombra": -319.2,
+  "resultado_real": -337.09,
   "operacoes": [
    {
     "ativo": "AURE3",
@@ -523,6 +523,16 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 17:45:02",
+   "tipo": "ZERADA",
+   "msg": "AURE3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.11 17:45:01",
+   "tipo": "ZERADA",
+   "msg": "CURY3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
    "quando": "2026.11.11 10:15:19",
    "tipo": "CANCELADA",
    "msg": "MGLU3 -- rompeu o outro lado antes"
@@ -911,16 +921,6 @@
    "quando": "2026.11.09 10:00:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:00:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 09:59:36",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 4802 ms"
   }
  ],
  "referencia": {
