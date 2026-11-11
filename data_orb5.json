@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-11T12:57:02Z",
+ "gerado": "2026-11-11T13:00:05Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 8
+  "heartbeat_s": 72
  },
  "status": {
-  "atualizado": "2026.11.11 09:56:54",
+  "atualizado": "2026.11.11 09:59:54",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -458,6 +458,36 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.11 10:00:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:59:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:59:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:58:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:58:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.11 09:57:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.11 09:57:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
@@ -826,36 +856,6 @@
    "quando": "2026.11.06 17:45:06",
    "tipo": "LENTO",
    "msg": "sombra (passo 3) levou 6519 ms"
-  },
-  {
-   "quando": "2026.11.06 14:45:08",
-   "tipo": "LENTO",
-   "msg": "sombra (passo 3) levou 7481 ms"
-  },
-  {
-   "quando": "2026.11.06 12:10:06",
-   "tipo": "LENTO",
-   "msg": "sombra (passo 3) levou 5996 ms"
-  },
-  {
-   "quando": "2026.11.06 10:29:16",
-   "tipo": "CANCELADA",
-   "msg": "CSAN3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.06 10:10:03",
-   "tipo": "DECISOES",
-   "msg": "26 ações avaliadas em 3032 ms, 4 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.06 10:10:03",
-   "tipo": "ARMADA",
-   "msg": "VIVA3 compra 600 ações, gatilho 16.60, limite 16.62, stop 15.92 (envio 1495 ms)"
-  },
-  {
-   "quando": "2026.11.06 10:10:02",
-   "tipo": "ARMADA",
-   "msg": "LREN3 compra 1000 ações, gatilho 9.20, limite 9.22, stop 8.75 (envio 743 ms)"
   }
  ],
  "referencia": {
