@@ -1,88 +1,23 @@
 {
- "gerado": "2026-11-12T12:30:04Z",
+ "gerado": "2026-11-12T12:33:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 69
+  "heartbeat_s": 66
  },
  "status": {
-  "atualizado": "2026.11.12 09:25:01",
+  "atualizado": "2026.11.12 09:32:52",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "antes da preparação",
+  "fase": "pré-abertura",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
   "armadas": 0,
   "abertas": 0,
-  "encerradas": 2,
-  "resultado_sombra": -335.7,
-  "resultado_real": -352.26,
-  "operacoes": [
-   {
-    "ativo": "AURE3",
-    "lado": -1,
-    "gap": 0.00851,
-    "vrel": 3.43,
-    "rank": 0.605,
-    "estado": "encerrada",
-    "lote": 800,
-    "ent": 11.61,
-    "stop": 12.03,
-    "saida": 11.79,
-    "liq": -0.015533,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 11.59
-   },
-   {
-    "ativo": "CURY3",
-    "lado": -1,
-    "gap": 0.05281,
-    "vrel": 3.88,
-    "rank": 0.632,
-    "estado": "encerrada",
-    "lote": 300,
-    "ent": 28.43,
-    "stop": 29.73,
-    "saida": 29.05,
-    "liq": -0.022444,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 28.41
-   },
-   {
-    "ativo": "HAPV3",
-    "lado": -1,
-    "gap": 0.00941,
-    "vrel": 2.06,
-    "rank": 0.974,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2300,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "MGLU3",
-    "lado": -1,
-    "gap": 0.03681,
-    "vrel": 2.26,
-    "rank": 1.0,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1400,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
-   }
-  ]
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
  },
  "resumo": {
   "dias": 9,
@@ -577,6 +512,21 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 09:30:52",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.12 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.12 09:30:52",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 2028, queda R$ -352, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.12 09:30:52",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
+  {
    "quando": "2026.11.11 18:05:01",
    "tipo": "FIM",
    "msg": "pregão encerrado"
@@ -960,21 +910,6 @@
    "quando": "2026.11.09 10:02:32",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:02:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:01:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:01:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
