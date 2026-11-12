@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-12T12:57:02Z",
+ "gerado": "2026-11-12T13:00:04Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 67
+  "heartbeat_s": 69
  },
  "status": {
-  "atualizado": "2026.11.12 09:56:52",
+  "atualizado": "2026.11.12 09:59:52",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -512,6 +512,36 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 10:00:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:59:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:59:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:58:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:58:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:57:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.12 09:57:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
@@ -880,36 +910,6 @@
    "quando": "2026.11.09 17:45:02",
    "tipo": "ZERADA",
    "msg": "CSNA3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.09 17:45:02",
-   "tipo": "ZERADA",
-   "msg": "LREN3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.09 10:15:02",
-   "tipo": "DECISOES",
-   "msg": "3 ações avaliadas em 552 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.09 10:15:02",
-   "tipo": "ARMADA",
-   "msg": "LREN3 venda 1000 ações, gatilho 9.84, limite 9.82, stop 10.33 (envio 539 ms)"
-  },
-  {
-   "quando": "2026.11.09 10:10:02",
-   "tipo": "DECISOES",
-   "msg": "18 ações avaliadas em 589 ms, 1 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.09 10:10:02",
-   "tipo": "ARMADA",
-   "msg": "CSNA3 venda 2100 ações, gatilho 4.60, limite 4.58, stop 4.83 (envio 541 ms)"
-  },
-  {
-   "quando": "2026.11.09 10:05:01",
-   "tipo": "DECISOES",
-   "msg": "55 ações avaliadas em 5 ms, 0 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
