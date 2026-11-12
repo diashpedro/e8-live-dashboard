@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-12T13:00:04Z",
+ "gerado": "2026-11-12T13:03:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 69
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.12 09:59:52",
+  "atualizado": "2026.11.12 10:02:52",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "pré-abertura",
+  "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -512,6 +512,36 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 10:03:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 15 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 10:02:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 10:02:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 10:01:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 12 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 10:01:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 10:00:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.12 10:00:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
@@ -880,36 +910,6 @@
    "quando": "2026.11.10 09:55:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
-  },
-  {
-   "quando": "2026.11.10 09:55:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 474 ms"
-  },
-  {
-   "quando": "2026.11.10 09:30:58",
-   "tipo": "DIA",
-   "msg": "pregão 2026.11.10 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.10 09:30:58",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 2205, queda R$ -261, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.10 09:30:58",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.09 18:05:01",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.09 17:45:02",
-   "tipo": "ZERADA",
-   "msg": "CSNA3 -- saída 10 min antes do call (tentativa 1)"
   }
  ],
  "referencia": {
