@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-12T20:42:02Z",
+ "gerado": "2026-11-12T20:45:04Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 67
+  "heartbeat_s": 68
  },
  "status": null,
  "resumo": {
@@ -498,6 +498,16 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 17:45:00",
+   "tipo": "ZERADA",
+   "msg": "BEEF3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.12 17:45:00",
+   "tipo": "ZERADA",
+   "msg": "MRVE3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
    "quando": "2026.11.12 10:15:00",
    "tipo": "DECISOES",
    "msg": "2 ações avaliadas em 4 ms, 0 com sinal (ordens enviadas na mesma passada)"
@@ -886,16 +896,6 @@
    "quando": "2026.11.10 10:01:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 16 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 10:01:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 4 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 10:00:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 112 ms"
   }
  ],
  "referencia": {
