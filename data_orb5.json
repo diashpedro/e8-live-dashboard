@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-12T12:54:01Z",
+ "gerado": "2026-11-12T12:57:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 6
+  "heartbeat_s": 67
  },
  "status": {
-  "atualizado": "2026.11.12 09:53:52",
+  "atualizado": "2026.11.12 09:56:52",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -512,6 +512,31 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 09:57:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:56:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:56:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:55:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.12 09:55:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.12 09:30:52",
    "tipo": "DIA",
    "msg": "pregão 2026.11.12 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
@@ -885,31 +910,6 @@
    "quando": "2026.11.09 10:05:01",
    "tipo": "DECISOES",
    "msg": "55 ações avaliadas em 5 ms, 0 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.09 10:04:33",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 55 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:04:09",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 55 de 76 ações prontas, leitura em 7080 ms"
-  },
-  {
-   "quando": "2026.11.09 10:03:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.09 10:03:02",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 7 ms"
-  },
-  {
-   "quando": "2026.11.09 10:02:32",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
