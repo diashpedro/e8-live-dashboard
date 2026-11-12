@@ -1,23 +1,72 @@
 {
- "gerado": "2026-11-12T13:09:01Z",
+ "gerado": "2026-11-12T13:12:02Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 65
+  "heartbeat_s": 66
  },
  "status": {
-  "atualizado": "2026.11.12 10:08:52",
+  "atualizado": "2026.11.12 10:11:52",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 3,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": -118.49,
+  "operacoes": [
+   {
+    "ativo": "BEEF3",
+    "lado": 1,
+    "gap": -0.05648,
+    "vrel": 7.95,
+    "rank": 0.816,
+    "estado": "aguardando rompimento",
+    "lote": 3400,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": true,
+    "ent_real": 2.92
+   },
+   {
+    "ativo": "HAPV3",
+    "lado": -1,
+    "gap": 0.05616,
+    "vrel": 6.04,
+    "rank": 0.961,
+    "estado": "aguardando rompimento",
+    "lote": 2000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "MRVE3",
+    "lado": -1,
+    "gap": 0.05061,
+    "vrel": 11.31,
+    "rank": 0.947,
+    "estado": "aguardando rompimento",
+    "lote": 1900,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 5.04
+   }
+  ]
  },
  "resumo": {
   "dias": 9,
@@ -512,6 +561,26 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 10:10:01",
+   "tipo": "DECISOES",
+   "msg": "20 ações avaliadas em 1418 ms, 3 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.12 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "MRVE3 venda 1900 ações, gatilho 5.06, limite 5.04, stop 5.31 (envio 312 ms)"
+  },
+  {
+   "quando": "2026.11.12 10:10:01",
+   "tipo": "ARMADA",
+   "msg": "HAPV3 venda 2000 ações, gatilho 4.81, limite 4.79, stop 5.05 (envio 902 ms)"
+  },
+  {
+   "quando": "2026.11.12 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "BEEF3 compra 3400 ações, gatilho 2.90, limite 2.92, stop 2.76 (envio 192 ms)"
+  },
+  {
    "quando": "2026.11.12 10:05:00",
    "tipo": "DECISOES",
    "msg": "54 ações avaliadas em 6 ms, 0 com sinal (ordens enviadas na mesma passada)"
@@ -890,26 +959,6 @@
    "quando": "2026.11.10 09:59:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
-  },
-  {
-   "quando": "2026.11.10 09:59:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 09:58:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 09:58:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 15 ms"
-  },
-  {
-   "quando": "2026.11.10 09:57:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
