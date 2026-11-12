@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-12T13:12:02Z",
+ "gerado": "2026-11-12T13:15:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.12 10:11:52",
+  "atualizado": "2026.11.12 10:14:52",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": -118.49,
+  "resultado_real": 299.51,
   "operacoes": [
    {
     "ativo": "BEEF3",
@@ -561,6 +561,16 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.12 10:15:00",
+   "tipo": "DECISOES",
+   "msg": "2 ações avaliadas em 4 ms, 0 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.12 10:15:00",
+   "tipo": "GAP",
+   "msg": "BBAS3: gap de -11.2% acima da trava de 10% (abertura 15.00, fechamento de ontem 16.89) -- conferir os dados"
+  },
+  {
    "quando": "2026.11.12 10:10:01",
    "tipo": "DECISOES",
    "msg": "20 ações avaliadas em 1418 ms, 3 com sinal (ordens enviadas na mesma passada)"
@@ -949,16 +959,6 @@
    "quando": "2026.11.10 10:00:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 3 de 76 ações prontas, leitura em 112 ms"
-  },
-  {
-   "quando": "2026.11.10 10:00:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 09:59:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms"
   }
  ],
  "referencia": {
