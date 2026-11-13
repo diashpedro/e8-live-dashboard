@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-13T12:57:01Z",
+ "gerado": "2026-11-13T13:00:06Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": 72
  },
  "status": {
-  "atualizado": "2026.11.13 09:56:56",
+  "atualizado": "2026.11.13 09:59:56",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pré-abertura",
@@ -590,6 +590,36 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.13 10:00:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 09:59:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 09:59:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 09:58:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 09:58:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 09:57:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.13 09:57:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
@@ -958,36 +988,6 @@
    "quando": "2026.11.11 09:30:54",
    "tipo": "TRAVAS",
    "msg": "acumulado R$ 2381, queda R$ -261, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.11 09:30:54",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.10 18:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.10 17:45:00",
-   "tipo": "ZERADA",
-   "msg": "DIRR3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.10 10:10:10",
-   "tipo": "CANCELADA",
-   "msg": "MGLU3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.10 10:10:00",
-   "tipo": "DECISOES",
-   "msg": "20 ações avaliadas em 184 ms, 2 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.10 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "MGLU3 venda 1600 ações, gatilho 6.09, limite 6.07, stop 6.39 (envio 29 ms)"
   }
  ],
  "referencia": {
