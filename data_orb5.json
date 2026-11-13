@@ -1,10 +1,24 @@
 {
- "gerado": "2026-11-13T12:30:02Z",
+ "gerado": "2026-11-13T12:33:02Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 67
  },
- "status": null,
+ "status": {
+  "atualizado": "2026.11.13 09:32:56",
+  "modo": "demo",
+  "saida": "10 min antes do call",
+  "fase": "pré-abertura",
+  "call": "17:55",
+  "parado_dia": false,
+  "parado_estrategia": false,
+  "armadas": 0,
+  "abertas": 0,
+  "encerradas": 0,
+  "resultado_sombra": 0.0,
+  "resultado_real": 0.0,
+  "operacoes": []
+ },
  "resumo": {
   "dias": 10,
   "operacoes": 20,
@@ -576,6 +590,21 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.13 09:30:54",
+   "tipo": "DIA",
+   "msg": "pregão 2026.11.13 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
+  },
+  {
+   "quando": "2026.11.13 09:30:54",
+   "tipo": "TRAVAS",
+   "msg": "acumulado R$ 2715, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
+  },
+  {
+   "quando": "2026.11.13 09:30:53",
+   "tipo": "CALL",
+   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
+  },
+  {
    "quando": "2026.11.12 18:05:00",
    "tipo": "FIM",
    "msg": "pregão encerrado"
@@ -959,21 +988,6 @@
    "quando": "2026.11.10 10:03:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 27 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 10:03:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 23 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 10:02:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 20 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.10 10:02:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 17 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
