@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-13T20:42:03Z",
+ "gerado": "2026-11-13T20:45:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": 67
  },
  "status": {
-  "atualizado": "2026.11.13 17:41:56",
+  "atualizado": "2026.11.13 17:44:56",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (só saídas)",
@@ -15,8 +15,8 @@
   "armadas": 0,
   "abertas": 4,
   "encerradas": 0,
-  "resultado_sombra": 681.43,
-  "resultado_real": 362.89,
+  "resultado_sombra": 653.43,
+  "resultado_real": 314.89,
   "operacoes": [
    {
     "ativo": "ALOS3",
@@ -719,6 +719,21 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.13 17:45:00",
+   "tipo": "ZERADA",
+   "msg": "ALOS3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.13 17:45:00",
+   "tipo": "ZERADA",
+   "msg": "B3SA3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
+   "quando": "2026.11.13 17:45:00",
+   "tipo": "ZERADA",
+   "msg": "NATU3 -- saída 10 min antes do call (tentativa 1)"
+  },
+  {
    "quando": "2026.11.13 17:25:01",
    "tipo": "CANCELADA",
    "msg": "MBRF3 -- fim do horário de entrada"
@@ -1102,21 +1117,6 @@
    "quando": "2026.11.11 10:10:02",
    "tipo": "ARMADA",
    "msg": "MGLU3 venda 1400 ações, gatilho 6.74, limite 6.72, stop 7.08 (envio 217 ms)"
-  },
-  {
-   "quando": "2026.11.11 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "CURY3 venda 300 ações, gatilho 28.43, limite 28.41, stop 29.73 (envio 141 ms)"
-  },
-  {
-   "quando": "2026.11.11 10:06:27",
-   "tipo": "CANCELADA",
-   "msg": "HAPV3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.11 10:05:01",
-   "tipo": "DECISOES",
-   "msg": "54 ações avaliadas em 137 ms, 2 com sinal (ordens enviadas na mesma passada)"
   }
  ],
  "referencia": {
