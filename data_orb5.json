@@ -1,11 +1,11 @@
 {
- "gerado": "2026-11-13T13:06:03Z",
+ "gerado": "2026-11-13T13:09:01Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 67
+  "heartbeat_s": 66
  },
  "status": {
-  "atualizado": "2026.11.13 10:05:56",
+  "atualizado": "2026.11.13 10:08:56",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
@@ -16,7 +16,7 @@
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": -4.84,
+  "resultado_real": -34.84,
   "operacoes": [
    {
     "ativo": "ALOS3",
@@ -639,6 +639,11 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.13 10:06:24",
+   "tipo": "CANCELADA",
+   "msg": "CMIN3 -- rompeu o outro lado antes"
+  },
+  {
    "quando": "2026.11.13 10:05:02",
    "tipo": "DECISOES",
    "msg": "56 ações avaliadas em 1997 ms, 3 com sinal (ordens enviadas na mesma passada)"
@@ -1030,11 +1035,6 @@
   },
   {
    "quando": "2026.11.11 10:01:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 10:00:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
   }
