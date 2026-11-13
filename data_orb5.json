@@ -1,23 +1,72 @@
 {
- "gerado": "2026-11-13T13:03:02Z",
+ "gerado": "2026-11-13T13:06:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": 67
  },
  "status": {
-  "atualizado": "2026.11.13 10:02:56",
+  "atualizado": "2026.11.13 10:05:56",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 0,
+  "armadas": 3,
   "abertas": 0,
   "encerradas": 0,
   "resultado_sombra": 0.0,
-  "resultado_real": 0.0,
-  "operacoes": []
+  "resultado_real": -4.84,
+  "operacoes": [
+   {
+    "ativo": "ALOS3",
+    "lado": -1,
+    "gap": 0.00637,
+    "vrel": 7.78,
+    "rank": 0.632,
+    "estado": "aguardando rompimento",
+    "lote": 300,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 26.69
+   },
+   {
+    "ativo": "CMIN3",
+    "lado": 1,
+    "gap": -0.01452,
+    "vrel": 5.44,
+    "rank": 0.737,
+    "estado": "aguardando rompimento",
+    "lote": 2100,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "HAPV3",
+    "lado": 1,
+    "gap": -0.00376,
+    "vrel": 2.26,
+    "rank": 0.974,
+    "estado": "aguardando rompimento",
+    "lote": 1800,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   }
+  ]
  },
  "resumo": {
   "dias": 10,
@@ -590,6 +639,41 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.13 10:05:02",
+   "tipo": "DECISOES",
+   "msg": "56 ações avaliadas em 1997 ms, 3 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.13 10:05:02",
+   "tipo": "ARMADA",
+   "msg": "HAPV3 compra 1800 ações, gatilho 5.33, limite 5.35, stop 5.06 (envio 296 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:05:01",
+   "tipo": "ARMADA",
+   "msg": "CMIN3 compra 2100 ações, gatilho 4.76, limite 4.78, stop 4.52 (envio 907 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:05:00",
+   "tipo": "ARMADA",
+   "msg": "ALOS3 venda 300 ações, gatilho 26.71, limite 26.69, stop 27.73 (envio 785 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:04:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 56 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 10:04:00",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
+   "quando": "2026.11.13 10:03:30",
+   "tipo": "AQUECE",
+   "msg": "barras de hoje: 28 de 76 ações prontas, leitura em 0 ms"
+  },
+  {
    "quando": "2026.11.13 10:03:00",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 19 de 76 ações prontas, leitura em 0 ms"
@@ -953,41 +1037,6 @@
    "quando": "2026.11.11 10:00:30",
    "tipo": "AQUECE",
    "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 10:00:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 09:59:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 09:59:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 09:58:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 09:58:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 09:57:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 09:57:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
