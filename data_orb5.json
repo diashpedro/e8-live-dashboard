@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-13T15:39:03Z",
+ "gerado": "2026-11-13T15:39:22Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 68
+  "heartbeat_s": 86
  },
  "status": {
   "atualizado": "2026.11.13 12:38:56",
@@ -157,8 +157,8 @@
   "resultado": 2714.82,
   "maior_queda": -352.26,
   "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": -Infinity,
-  "escorregamento_rs": Infinity,
+  "escorregamento_ticks": 0.95,
+  "escorregamento_rs": -35.15,
   "operacoes_demo": 20,
   "perdidas": 0,
   "so_na_demo": 0
@@ -259,7 +259,7 @@
    "operacoes": 3,
    "ganhos": 2,
    "rs": 686.49,
-   "rs_sombra": -Infinity,
+   "rs_sombra": 824.11,
    "rs_real": 686.49,
    "modo": "demo",
    "acumulado": 2714.82
@@ -693,17 +693,17 @@
    "vrel": 11.315,
    "lote": 1900,
    "entrada": 5.06,
-   "saida": 1.7976931348623157e+308,
+   "saida": 4.72,
    "ent_real": 5.04,
    "saida_real": 4.72,
-   "motivo": "stop",
-   "liq_pct": -Infinity,
+   "motivo": "horário",
+   "liq_pct": 6.772,
    "liq_real_pct": 6.305,
-   "rs_sombra": -Infinity,
+   "rs_sombra": 651.08,
    "rs_real": 603.73,
    "executada": true,
    "simulada": true,
-   "escorregamento_ticks": -Infinity,
+   "escorregamento_ticks": 1.0,
    "rs": 603.73
   }
  ],
