@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-13T21:03:03Z",
+ "gerado": "2026-11-13T21:06:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 67
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.13 18:02:56",
+  "atualizado": "2026.11.13 18:05:56",
   "modo": "demo",
   "saida": "10 min antes do call",
-  "fase": "saída",
+  "fase": "encerrado",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
@@ -149,18 +149,18 @@
   ]
  },
  "resumo": {
-  "dias": 10,
-  "operacoes": 20,
-  "operacoes_por_dia": 2.0,
-  "acerto_pct": 65.0,
-  "por_operacao_pct": 1.407,
-  "resultado": 2714.82,
+  "dias": 11,
+  "operacoes": 23,
+  "operacoes_por_dia": 2.09,
+  "acerto_pct": 60.9,
+  "por_operacao_pct": 1.323,
+  "resultado": 2981.66,
   "maior_queda": -352.26,
   "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 0.95,
-  "escorregamento_rs": -35.15,
-  "operacoes_demo": 20,
-  "perdidas": 0,
+  "escorregamento_ticks": 0.93,
+  "escorregamento_rs": -33.23,
+  "operacoes_demo": 23,
+  "perdidas": 1,
   "so_na_demo": 0
  },
  "dias": [
@@ -263,6 +263,16 @@
    "rs_real": 686.49,
    "modo": "demo",
    "acumulado": 2714.82
+  },
+  {
+   "data": "2026-11-13",
+   "operacoes": 4,
+   "ganhos": 1,
+   "rs": 266.84,
+   "rs_sombra": 621.42,
+   "rs_real": 266.84,
+   "modo": "demo",
+   "acumulado": 2981.66
   }
  ],
  "operacoes": [
@@ -705,19 +715,112 @@
    "simulada": true,
    "escorregamento_ticks": 1.0,
    "rs": 603.73
+  },
+  {
+   "data": "2026-11-13",
+   "ativo": "ALOS3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 0.64,
+   "vrel": 7.779,
+   "lote": 300,
+   "entrada": 26.71,
+   "saida": 27.02,
+   "ent_real": 26.69,
+   "saida_real": 27.02,
+   "motivo": "horário",
+   "liq_pct": -1.188,
+   "liq_real_pct": -1.283,
+   "rs_sombra": -95.19,
+   "rs_real": -102.71,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": -102.71
+  },
+  {
+   "data": "2026-11-13",
+   "ativo": "B3SA3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 0.61,
+   "vrel": 10.657,
+   "lote": 600,
+   "entrada": 14.62,
+   "saida": 14.85,
+   "ent_real": 14.6,
+   "saida_real": 14.84,
+   "motivo": "horário",
+   "liq_pct": -1.585,
+   "liq_real_pct": -1.69,
+   "rs_sombra": -139.04,
+   "rs_real": -148.06,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 0.5,
+   "rs": -148.06
+  },
+  {
+   "data": "2026-11-13",
+   "ativo": "MBRF3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 4.3,
+   "vrel": 4.219,
+   "lote": 500,
+   "entrada": 18.8,
+   "saida": 18.2,
+   "ent_real": 0.0,
+   "saida_real": 0.0,
+   "motivo": "horário",
+   "liq_pct": 3.119,
+   "liq_real_pct": 0.0,
+   "rs_sombra": 293.18,
+   "rs_real": 0.0,
+   "executada": false,
+   "simulada": true,
+   "escorregamento_ticks": null,
+   "rs": 0.0
+  },
+  {
+   "data": "2026-11-13",
+   "ativo": "NATU3",
+   "lado": -1,
+   "modo": "demo",
+   "gap_pct": 4.5,
+   "vrel": 6.55,
+   "lote": 1800,
+   "entrada": 5.47,
+   "saida": 5.16,
+   "ent_real": 5.45,
+   "saida_real": 5.16,
+   "motivo": "horário",
+   "liq_pct": 5.713,
+   "liq_real_pct": 5.276,
+   "rs_sombra": 562.47,
+   "rs_real": 517.61,
+   "executada": true,
+   "simulada": true,
+   "escorregamento_ticks": 1.0,
+   "rs": 517.61
   }
  ],
  "decisoes_ultimo_dia": {
-  "data": "2026-11-12",
+  "data": "2026-11-13",
   "motivos": {
-   "volume": 64,
-   "gap de -11.2% acima da trava de 10%": 1,
-   "volatilidade": 8,
-   "compra (gap de baixa)": 1,
-   "venda (gap de alta)": 2
+   "volume": 53,
+   "venda (gap de alta)": 5,
+   "volatilidade": 14,
+   "compra (gap de baixa)": 3,
+   "gap pequeno": 1
   }
  },
  "eventos": [
+  {
+   "quando": "2026.11.13 18:05:00",
+   "tipo": "FIM",
+   "msg": "pregão encerrado"
+  },
   {
    "quando": "2026.11.13 17:45:00",
    "tipo": "ZERADA",
@@ -1112,11 +1215,6 @@
    "quando": "2026.11.11 10:10:02",
    "tipo": "DECISOES",
    "msg": "22 ações avaliadas em 370 ms, 2 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.11 10:10:02",
-   "tipo": "ARMADA",
-   "msg": "MGLU3 venda 1400 ações, gatilho 6.74, limite 6.72, stop 7.08 (envio 217 ms)"
   }
  ],
  "referencia": {
