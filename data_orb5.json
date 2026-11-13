@@ -1,22 +1,22 @@
 {
- "gerado": "2026-11-13T13:09:01Z",
+ "gerado": "2026-11-13T13:12:03Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": 68
  },
  "status": {
-  "atualizado": "2026.11.13 10:08:56",
+  "atualizado": "2026.11.13 10:11:56",
   "modo": "demo",
   "saida": "10 min antes do call",
   "fase": "pregão (entradas abertas)",
   "call": "17:55",
   "parado_dia": false,
   "parado_estrategia": false,
-  "armadas": 3,
-  "abertas": 0,
+  "armadas": 6,
+  "abertas": 1,
   "encerradas": 0,
-  "resultado_sombra": 0.0,
-  "resultado_real": -34.84,
+  "resultado_sombra": -45.69,
+  "resultado_real": -99.86,
   "operacoes": [
    {
     "ativo": "ALOS3",
@@ -24,10 +24,10 @@
     "gap": 0.00637,
     "vrel": 7.78,
     "rank": 0.632,
-    "estado": "aguardando rompimento",
+    "estado": "aberta",
     "lote": 300,
-    "ent": 0.0,
-    "stop": 0.0,
+    "ent": 26.71,
+    "stop": 27.73,
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "venda (gap de alta)",
@@ -35,13 +35,45 @@
     "ent_real": 26.69
    },
    {
+    "ativo": "B3SA3",
+    "lado": -1,
+    "gap": 0.0061,
+    "vrel": 10.66,
+    "rank": 0.75,
+    "estado": "aguardando rompimento",
+    "lote": 600,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": true,
+    "ent_real": 14.6
+   },
+   {
     "ativo": "CMIN3",
     "lado": 1,
     "gap": -0.01452,
     "vrel": 5.44,
     "rank": 0.737,
-    "estado": "aguardando rompimento",
+    "estado": "cancelada (rompeu o outro lado)",
     "lote": 2100,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "CSNA3",
+    "lado": 1,
+    "gap": -0.04019,
+    "vrel": 3.39,
+    "rank": 0.895,
+    "estado": "aguardando rompimento",
+    "lote": 2400,
     "ent": 0.0,
     "stop": 0.0,
     "saida": 0.0,
@@ -63,6 +95,54 @@
     "saida": 0.0,
     "liq": 0.0,
     "motivo": "compra (gap de baixa)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "MBRF3",
+    "lado": -1,
+    "gap": 0.04302,
+    "vrel": 4.22,
+    "rank": 0.645,
+    "estado": "aguardando rompimento",
+    "lote": 500,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "NATU3",
+    "lado": -1,
+    "gap": 0.04503,
+    "vrel": 6.55,
+    "rank": 0.855,
+    "estado": "aguardando rompimento",
+    "lote": 1800,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
+    "real": false,
+    "ent_real": 0.0
+   },
+   {
+    "ativo": "YDUQ3",
+    "lado": -1,
+    "gap": 0.00533,
+    "vrel": 4.87,
+    "rank": 0.776,
+    "estado": "aguardando rompimento",
+    "lote": 1000,
+    "ent": 0.0,
+    "stop": 0.0,
+    "saida": 0.0,
+    "liq": 0.0,
+    "motivo": "venda (gap de alta)",
     "real": false,
     "ent_real": 0.0
    }
@@ -639,6 +719,51 @@
  },
  "eventos": [
   {
+   "quando": "2026.11.13 10:10:38",
+   "tipo": "CANCELADA",
+   "msg": "YDUQ3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.13 10:10:16",
+   "tipo": "CANCELADA",
+   "msg": "HAPV3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.13 10:10:07",
+   "tipo": "CANCELADA",
+   "msg": "CSNA3 -- rompeu o outro lado antes"
+  },
+  {
+   "quando": "2026.11.13 10:10:04",
+   "tipo": "DECISOES",
+   "msg": "20 ações avaliadas em 4691 ms, 5 com sinal (ordens enviadas na mesma passada)"
+  },
+  {
+   "quando": "2026.11.13 10:10:04",
+   "tipo": "ARMADA",
+   "msg": "YDUQ3 venda 1000 ações, gatilho 9.33, limite 9.31, stop 9.80 (envio 312 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:10:04",
+   "tipo": "ARMADA",
+   "msg": "NATU3 venda 1800 ações, gatilho 5.47, limite 5.45, stop 5.74 (envio 322 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:10:04",
+   "tipo": "ARMADA",
+   "msg": "MBRF3 venda 500 ações, gatilho 18.80, limite 18.78, stop 19.69 (envio 1326 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:10:02",
+   "tipo": "ARMADA",
+   "msg": "CSNA3 compra 2400 ações, gatilho 4.12, limite 4.14, stop 3.91 (envio 2175 ms)"
+  },
+  {
+   "quando": "2026.11.13 10:10:00",
+   "tipo": "ARMADA",
+   "msg": "B3SA3 venda 600 ações, gatilho 14.62, limite 14.60, stop 15.28 (envio 487 ms)"
+  },
+  {
    "quando": "2026.11.13 10:06:24",
    "tipo": "CANCELADA",
    "msg": "CMIN3 -- rompeu o outro lado antes"
@@ -992,51 +1117,6 @@
    "quando": "2026.11.11 10:05:01",
    "tipo": "ARMADA",
    "msg": "HAPV3 venda 2300 ações, gatilho 4.27, limite 4.25, stop 4.48 (envio 28 ms)"
-  },
-  {
-   "quando": "2026.11.11 10:05:01",
-   "tipo": "ARMADA",
-   "msg": "AURE3 venda 800 ações, gatilho 11.61, limite 11.59, stop 12.03 (envio 99 ms)"
-  },
-  {
-   "quando": "2026.11.11 10:04:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 1 ms"
-  },
-  {
-   "quando": "2026.11.11 10:04:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 10:03:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 29 de 76 ações prontas, leitura em 1 ms"
-  },
-  {
-   "quando": "2026.11.11 10:03:01",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 27 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 10:02:31",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 20 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 10:02:11",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 20 de 76 ações prontas, leitura em 11173 ms"
-  },
-  {
-   "quando": "2026.11.11 10:01:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.11 10:01:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
   }
  ],
  "referencia": {
