@@ -1,19 +1,20 @@
 {
- "gerado": "2026-11-15T00:01:40Z",
+ "gerado": "2026-11-15T00:34:17Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 15,
-   "gaplim": 16
+   "orb5": 26,
+   "gaplim": 27
   }
  },
  "estrategias": {
   "orb5": {
    "nome": "ORB 5 min",
    "descricao": "Rompimento do 1º candle de 5 min contra o gap, em ações voláteis e com volume alto · saída 10 min antes do call · stop: ATR mediano, no máximo 5%",
-   "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil, 10 dias negativos ou escorregamento acima de 0,5 tick",
+   "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
+   "medida": "demo",
    "status": {
-    "atualizado": "2026.11.14 21:01:25",
+    "atualizado": "2026.11.14 21:33:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "fim de semana",
@@ -175,7 +176,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 281.06
+     "usa_demo": true,
+     "rs": 281.06,
+     "conta": true
     },
     {
      "data": "2026-10-28",
@@ -197,7 +200,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.5,
-     "rs": 430.83
+     "usa_demo": true,
+     "rs": 430.83,
+     "conta": true
     },
     {
      "data": "2026-10-29",
@@ -219,7 +224,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.5,
-     "rs": 289.55
+     "usa_demo": true,
+     "rs": 289.55,
+     "conta": true
     },
     {
      "data": "2026-10-30",
@@ -241,7 +248,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": -260.56
+     "usa_demo": true,
+     "rs": -260.56,
+     "conta": true
     },
     {
      "data": "2026-11-03",
@@ -263,7 +272,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 210.34
+     "usa_demo": true,
+     "rs": 210.34,
+     "conta": true
     },
     {
      "data": "2026-11-03",
@@ -285,7 +296,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 215.49
+     "usa_demo": true,
+     "rs": 215.49,
+     "conta": true
     },
     {
      "data": "2026-11-04",
@@ -307,7 +320,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 247.47
+     "usa_demo": true,
+     "rs": 247.47,
+     "conta": true
     },
     {
      "data": "2026-11-04",
@@ -329,7 +344,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 0.5,
-     "rs": -184.21
+     "usa_demo": true,
+     "rs": -184.21,
+     "conta": true
     },
     {
      "data": "2026-11-06",
@@ -351,7 +368,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 138.58
+     "usa_demo": true,
+     "rs": 138.58,
+     "conta": true
     },
     {
      "data": "2026-11-06",
@@ -373,7 +392,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 0.5,
-     "rs": 665.6
+     "usa_demo": true,
+     "rs": 665.6,
+     "conta": true
     },
     {
      "data": "2026-11-06",
@@ -395,7 +416,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": -502.58
+     "usa_demo": true,
+     "rs": -502.58,
+     "conta": true
     },
     {
      "data": "2026-11-06",
@@ -417,7 +440,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 769.23
+     "usa_demo": true,
+     "rs": 769.23,
+     "conta": true
     },
     {
      "data": "2026-11-09",
@@ -439,7 +464,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 268.64
+     "usa_demo": true,
+     "rs": 268.64,
+     "conta": true
     },
     {
      "data": "2026-11-09",
@@ -461,7 +488,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 0.5,
-     "rs": -364.6
+     "usa_demo": true,
+     "rs": -364.6,
+     "conta": true
     },
     {
      "data": "2026-11-10",
@@ -483,7 +512,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 175.75
+     "usa_demo": true,
+     "rs": 175.75,
+     "conta": true
     },
     {
      "data": "2026-11-11",
@@ -505,7 +536,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 0.5,
-     "rs": -156.3
+     "usa_demo": true,
+     "rs": -156.3,
+     "conta": true
     },
     {
      "data": "2026-11-11",
@@ -527,7 +560,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": -195.96
+     "usa_demo": true,
+     "rs": -195.96,
+     "conta": true
     },
     {
      "data": "2026-11-12",
@@ -549,7 +584,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 607.29
+     "usa_demo": true,
+     "rs": 607.29,
+     "conta": true
     },
     {
      "data": "2026-11-12",
@@ -571,7 +608,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": -524.53
+     "usa_demo": true,
+     "rs": -524.53,
+     "conta": true
     },
     {
      "data": "2026-11-12",
@@ -593,7 +632,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 603.73
+     "usa_demo": true,
+     "rs": 603.73,
+     "conta": true
     },
     {
      "data": "2026-11-13",
@@ -615,7 +656,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": -102.71
+     "usa_demo": true,
+     "rs": -102.71,
+     "conta": true
     },
     {
      "data": "2026-11-13",
@@ -637,7 +680,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 0.5,
-     "rs": -148.06
+     "usa_demo": true,
+     "rs": -148.06,
+     "conta": true
     },
     {
      "data": "2026-11-13",
@@ -659,7 +704,9 @@
      "executada": false,
      "simulada": true,
      "escorregamento_ticks": null,
-     "rs": 0.0
+     "usa_demo": true,
+     "rs": 0.0,
+     "conta": false
     },
     {
      "data": "2026-11-13",
@@ -681,7 +728,9 @@
      "executada": true,
      "simulada": true,
      "escorregamento_ticks": 1.0,
-     "rs": 517.61
+     "usa_demo": true,
+     "rs": 517.61,
+     "conta": true
     }
    ],
    "decisoes_ultimo_dia": {
@@ -695,6 +744,12 @@
     }
    },
    "eventos": [
+    {
+     "quando": "2026.11.14 21:28:49",
+     "tipo": "INIT",
+     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
+     "estrategia": "orb5"
+    },
     {
      "quando": "2026.11.14 20:56:23",
      "tipo": "INIT",
@@ -1168,12 +1223,6 @@
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 09:30:52",
-     "tipo": "DIA",
-     "msg": "pregão 2026.11.12 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1186,9 +1235,10 @@
   "gaplim": {
    "nome": "Gap limitado no leilão",
    "descricao": "Às 9h45, compra e venda limitadas em volta da abertura esperada (fechamento de ontem corrigido pelo WIN); executa no leilão de abertura, cancela o resto, sai 10 min antes do call · sem stop",
-   "travas": "zera a −R$ 5.000 no dia; para com queda de R$ 15 mil ou 10 dias negativos",
+   "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
+   "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.14 21:01:24",
+    "atualizado": "2026.11.14 21:33:50",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "fim de semana",
@@ -1226,6 +1276,12 @@
     "motivos": {}
    },
    "eventos": [
+    {
+     "quando": "2026.11.14 21:28:49",
+     "tipo": "INIT",
+     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
+     "estrategia": "gaplim"
+    },
     {
      "quando": "2026.11.14 20:56:23",
      "tipo": "INIT",

@@ -99,6 +99,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&
 const cartao = (rot, num, nota = "", c = "") => `<div class="cartao"><div class="rot">${rot}</div><div class="num ${c}">${num}</div><div class="nota">${nota}</div></div>`;
 const check = (estado, rot, txt) => `<div class="cartao"><div class="icone ${estado}">${estado === "ok" ? "✓" : estado === "aviso" ? "!" : "✗"}</div><div><div><b>${rot}</b></div><div class="nota">${txt}</div></div></div>`;
 const chave = k => `<i class="chave" style="background:${COR[k]}"></i>`;
+const medida = E => E && E.medida === "simulacao" ? "simulação" : "conta demo";
 let DADOS = null, SEL = "todas";
 
 const htmlTabela = (cab, linhas, vazio) => linhas.length
@@ -162,7 +163,7 @@ function hojeGap(E) {
 
 function cartoesEstrategia(E) {
   const rs = E.resumo || {}, ref = E.referencia || {};
-  return cartao("Resultado acumulado", R$(rs.resultado || 0), `${rs.dias || 0} dias · ${rs.operacoes || 0} operações (${rs.operacoes_por_dia || 0}/dia)`, cls(rs.resultado || 0)) +
+  return cartao(`Resultado acumulado (${medida(E)})`, R$(rs.resultado || 0), `${rs.dias || 0} dias · ${rs.operacoes || 0} operações (${rs.operacoes_por_dia || 0}/dia)`, cls(rs.resultado || 0)) +
     cartao("Acerto", rs.acerto_pct == null ? "—" : rs.acerto_pct.toLocaleString("pt-BR") + "%", "operações com resultado positivo") +
     cartao("Ganho por operação", rs.por_operacao_pct == null ? "—" : pct(rs.por_operacao_pct, 3), `backtest: ${pct(ref.por_operacao_pct || 0, 2)}`, cls(rs.por_operacao_pct || 0)) +
     cartao("Maior queda", R$(rs.maior_queda || 0), esc(E.travas || ""), (rs.maior_queda || 0) < 0 ? "neg" : "") +
@@ -176,7 +177,7 @@ function render() {
   const D = DADOS, sa = D.saude || {}, ests = D.estrategias || {}, sel = SEL === "todas" ? CHAVES : [SEL], nome = k => esc(ests[k]?.nome || k);
   document.querySelectorAll(".filtro button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.sel === SEL)));
   document.getElementById("subtitulo").innerHTML = SEL === "todas"
-    ? "As duas estratégias na mesma conta demo (netting), lado a lado: na mesma ação e do mesmo lado as posições se somam; do lado oposto o ORB pula."
+    ? "As duas estratégias na mesma conta demo (netting), lado a lado: na mesma ação e do mesmo lado as posições se somam; do lado oposto o ORB pula. Resultado: o ORB pela conta demo; o gap limitado pela simulação, porque a demo não reproduz o leilão da B3 (a conta demo dele aparece ao lado)."
     : esc(ests[SEL]?.descricao || "");
   document.getElementById("topo").innerHTML = sel.map(k => { const st = ests[k]?.status || {};
       return `<span class="pilula">${chave(k)} ${nome(k)}: <b>${st.modo === "demo" ? "DEMO" : st.modo === "ensaio" ? "ENSAIO" : "—"}</b> · ${esc(st.fase || "—")} · status ${esc(st.atualizado || "—")}</span>`; }).join("") +
@@ -193,7 +194,7 @@ function render() {
     document.getElementById("acum").innerHTML =
       cartao("Resultado acumulado, as duas", R$(rs.resultado || 0), `${rs.dias || 0} dias · ${rs.operacoes || 0} operações`, cls(rs.resultado || 0)) +
       CHAVES.map(k => { const r = ests[k]?.resumo || {};
-        return cartao(`${chave(k)} ${nome(k)}`, R$(r.resultado || 0), `${r.operacoes || 0} operações · acerto ${r.acerto_pct == null ? "—" : r.acerto_pct.toLocaleString("pt-BR") + "%"}`, cls(r.resultado || 0)); }).join("") +
+        return cartao(`${chave(k)} ${nome(k)} (${medida(ests[k])})`, R$(r.resultado || 0), `${r.operacoes || 0} operações · acerto ${r.acerto_pct == null ? "—" : r.acerto_pct.toLocaleString("pt-BR") + "%"}`, cls(r.resultado || 0)); }).join("") +
       cartao("Maior queda, as duas", R$(rs.maior_queda || 0), "na soma diária", (rs.maior_queda || 0) < 0 ? "neg" : "") +
       cartao("Dias positivos", rs.dias_positivos_pct == null ? "—" : rs.dias_positivos_pct.toLocaleString("pt-BR") + "%", `${rs.dias_negativos_seguidos ?? 0} dia(s) negativo(s) seguidos agora`);
     const a = {orb5: 0, gaplim: 0};
