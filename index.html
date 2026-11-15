@@ -3,27 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Painel ORB 5 min</title>
+<title>Painel day trade B3</title>
 <style>
   :root {
     --fundo: #fcfcfb; --cartao: #ffffff; --borda: #e6e5e1; --txt: #0b0b0b; --txt2: #52514e; --mudo: #8a8984;
-    --serie: #2a78d6; --pos: #2a78d6; --neg: #e34948; --bom: #0ca30c; --alerta: #b7791f; --critico: #d03b3b; --grade: #ecebe7;
+    --orb: #2a78d6; --gap: #eb6834; --total: #52514e; --pos: #2a78d6; --neg: #e34948; --bom: #0ca30c; --alerta: #b7791f; --critico: #d03b3b; --grade: #ecebe7;
   }
   @media (prefers-color-scheme: dark) {
     :root { --fundo: #1a1a19; --cartao: #232322; --borda: #383835; --txt: #f0efec; --txt2: #c3c2b7; --mudo: #8f8e88;
-            --serie: #3987e5; --pos: #3987e5; --neg: #e66767; --grade: #2e2e2c; }
+            --orb: #3987e5; --gap: #d95926; --total: #c3c2b7; --pos: #3987e5; --neg: #e66767; --grade: #2e2e2c; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--fundo); color: var(--txt); font: 14px/1.45 -apple-system, "Segoe UI", Arial, sans-serif; }
   main { max-width: 1180px; margin: 0 auto; padding: 20px 16px 40px; }
   h1 { font-size: 22px; margin: 0 0 4px; }
   h2 { font-size: 16px; margin: 28px 0 10px; }
-  .sub { color: var(--txt2); margin: 0 0 14px; }
+  h3 { font-size: 14px; margin: 14px 0 8px; color: var(--txt2); display: flex; gap: 6px; align-items: center; }
+  .sub { color: var(--txt2); margin: 0 0 12px; }
   .linha { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .pilula { border: 1px solid var(--borda); border-radius: 999px; padding: 3px 10px; font-size: 12px; color: var(--txt2); background: var(--cartao); }
+  .pilula { border: 1px solid var(--borda); border-radius: 999px; padding: 3px 10px; font-size: 12px; color: var(--txt2); background: var(--cartao); display: inline-flex; gap: 6px; align-items: center; }
+  .filtro { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--borda); border-radius: 10px; overflow: hidden; background: var(--cartao); margin: 4px 0 14px; }
+  .filtro button { border: 0; background: transparent; color: var(--txt2); font: inherit; padding: 8px 14px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; min-height: 36px; }
+  .filtro button + button { border-left: 1px solid var(--borda); }
+  .filtro button[aria-pressed="true"] { background: var(--grade); color: var(--txt); font-weight: 600; }
+  .filtro button:focus-visible { outline: 2px solid var(--orb); outline-offset: -2px; }
+  .chave { width: 10px; height: 10px; border-radius: 3px; display: inline-block; flex: none; }
   .grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
   .cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px; padding: 12px 14px; }
-  .rot { color: var(--txt2); font-size: 12px; }
+  .rot { color: var(--txt2); font-size: 12px; display: flex; gap: 6px; align-items: center; }
   .num { font-size: 24px; font-weight: 700; margin-top: 4px; font-variant-numeric: tabular-nums; }
   .nota { color: var(--mudo); font-size: 12px; margin-top: 4px; }
   .saude .cartao { display: flex; gap: 10px; align-items: flex-start; }
@@ -33,37 +40,46 @@
   th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--grade); white-space: nowrap; }
   th { color: var(--txt2); font-weight: 600; font-size: 12px; }
   td.n, th.n { text-align: right; }
+  td .chave { margin-right: 4px; }
   .rolagem { overflow-x: auto; background: var(--cartao); border: 1px solid var(--borda); border-radius: 10px; }
   .vazio { color: var(--mudo); padding: 14px; }
   .pos { color: var(--pos); } .neg { color: var(--neg); }
   svg text { fill: var(--txt2); font-size: 11px; }
+  .legenda { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--txt2); margin: 4px 0 2px; }
+  .legenda span { display: inline-flex; align-items: center; gap: 6px; }
+  .legenda i { width: 16px; height: 2px; display: inline-block; }
   .duas { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   @media (max-width: 760px) { .duas { grid-template-columns: 1fr; } }
   footer { color: var(--mudo); font-size: 12px; margin-top: 30px; }
+  footer p { margin: 0 0 6px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>ORB 5 min — acompanhamento diário</h1>
-  <p class="sub">Rompimento do 1º candle de 5 min contra o gap, em ações voláteis e com volume alto · saída 10 min antes do call · stop: ATR mediano, no máximo 5%</p>
+  <h1>Day trade na B3 — acompanhamento diário</h1>
+  <p class="sub" id="subtitulo"></p>
+  <div class="filtro" role="group" aria-label="Estratégia">
+    <button type="button" data-sel="todas">Todas</button>
+    <button type="button" data-sel="orb5"><i class="chave" style="background:var(--orb)"></i>ORB 5 min</button>
+    <button type="button" data-sel="gaplim"><i class="chave" style="background:var(--gap)"></i>Gap limitado no leilão</button>
+  </div>
   <div class="linha" id="topo"></div>
 
   <h2>Saúde do sistema</h2>
   <div class="grade saude" id="saude"></div>
 
   <h2>Hoje</h2>
-  <div class="grade" id="hoje"></div>
-  <div class="rolagem" style="margin-top:10px"><table id="tab-hoje"></table></div>
+  <div id="hoje"></div>
 
   <h2>Acumulado</h2>
   <div class="grade" id="acum"></div>
   <div class="duas" style="margin-top:10px">
-    <div class="cartao"><div class="rot">Resultado acumulado (R$)</div><svg id="curva" width="100%" height="200"></svg></div>
-    <div class="cartao"><div class="rot">Resultado por dia (R$)</div><svg id="barras" width="100%" height="200"></svg></div>
+    <div class="cartao"><div class="rot">Resultado acumulado (R$)</div><div class="legenda" id="legenda"></div><svg id="curva" width="100%" height="200" role="img" aria-label="Resultado acumulado"></svg></div>
+    <div class="cartao"><div class="rot" id="rot-barras">Resultado por dia (R$)</div><svg id="barras" width="100%" height="200" role="img" aria-label="Resultado por dia"></svg></div>
   </div>
 
   <h2>Decisões do último pregão</h2>
-  <div class="cartao" id="decisoes"></div>
+  <div id="decisoes"></div>
 
   <h2>Últimas operações</h2>
   <div class="rolagem"><table id="tab-ops"></table></div>
@@ -74,34 +90,40 @@
   <footer id="rodape"></footer>
 </main>
 <script>
+const CHAVES = ["orb5", "gaplim"], COR = {orb5: "var(--orb)", gaplim: "var(--gap)", total: "var(--total)"};
 const R$ = v => (v < 0 ? "−" : "") + "R$ " + Math.abs(v).toLocaleString("pt-BR", {maximumFractionDigits: 0});
 const pct = (v, c = 2) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c}) + "%";
+const px = v => v ? v.toLocaleString("pt-BR", {minimumFractionDigits: 2, maximumFractionDigits: 2}) : "—";
 const cls = v => v > 0 ? "pos" : v < 0 ? "neg" : "";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const cartao = (rot, num, nota = "", c = "") => `<div class="cartao"><div class="rot">${rot}</div><div class="num ${c}">${num}</div><div class="nota">${nota}</div></div>`;
 const check = (estado, rot, txt) => `<div class="cartao"><div class="icone ${estado}">${estado === "ok" ? "✓" : estado === "aviso" ? "!" : "✗"}</div><div><div><b>${rot}</b></div><div class="nota">${txt}</div></div></div>`;
+const chave = k => `<i class="chave" style="background:${COR[k]}"></i>`;
+let DADOS = null, SEL = "todas";
 
-function tabela(el, cab, linhas, vazio) {
-  document.getElementById(el).innerHTML = linhas.length
-    ? `<tr>${cab.map(([t, n]) => `<th class="${n ? "n" : ""}">${t}</th>`).join("")}</tr>` + linhas.map(l => `<tr>${l.map((v, i) => `<td class="${cab[i][1] ? "n" : ""}">${v}</td>`).join("")}</tr>`).join("")
-    : `<tr><td class="vazio">${vazio}</td></tr>`;
-}
+const htmlTabela = (cab, linhas, vazio) => linhas.length
+  ? `<tr>${cab.map(([t, n]) => `<th class="${n ? "n" : ""}">${t}</th>`).join("")}</tr>` + linhas.map(l => `<tr>${l.map((v, i) => `<td class="${cab[i][1] ? "n" : ""}">${v}</td>`).join("")}</tr>`).join("")
+  : `<tr><td class="vazio">${vazio}</td></tr>`;
+const tabela = (el, cab, linhas, vazio) => { document.getElementById(el).innerHTML = htmlTabela(cab, linhas, vazio); };
 
-function curva(dias) {
-  const svg = document.getElementById("curva"), W = svg.clientWidth || 500, H = 200, m = {l: 54, r: 10, t: 10, b: 24};
-  if (!dias.length) { svg.innerHTML = `<text x="10" y="30">sem dias registrados ainda</text>`; return; }
-  const ys = [0, ...dias.map(d => d.acumulado)], lo = Math.min(...ys), hi = Math.max(...ys), sp = (hi - lo) || 1;
-  const x = i => m.l + (W - m.l - m.r) * (dias.length === 1 ? 0.5 : i / (dias.length - 1)), y = v => m.t + (H - m.t - m.b) * (1 - (v - lo) / sp);
-  const pts = dias.map((d, i) => `${x(i)},${y(d.acumulado)}`).join(" ");
+// séries = [{nome, cor, pontos: [{data, v}]}], todas nas mesmas datas
+function curva(series) {
+  const svg = document.getElementById("curva"), W = svg.clientWidth || 500, H = 200, m = {l: 58, r: 10, t: 10, b: 24};
+  document.getElementById("legenda").innerHTML = series.length > 1 ? series.map(s => `<span><i style="background:${s.cor}"></i>${esc(s.nome)}</span>`).join("") : "";
+  const n = series.length ? series[0].pontos.length : 0;
+  if (!n) { svg.innerHTML = `<text x="10" y="30">sem dias registrados ainda</text>`; return; }
+  const ys = [0, ...series.flatMap(s => s.pontos.map(p => p.v))], lo = Math.min(...ys), hi = Math.max(...ys), sp = (hi - lo) || 1;
+  const x = i => m.l + (W - m.l - m.r) * (n === 1 ? 0.5 : i / (n - 1)), y = v => m.t + (H - m.t - m.b) * (1 - (v - lo) / sp);
+  const datas = series[0].pontos.map(p => p.data);
   svg.innerHTML = `<line x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}" stroke="var(--borda)"/>
     <text x="${m.l - 6}" y="${y(hi) + 4}" text-anchor="end">${R$(hi)}</text><text x="${m.l - 6}" y="${y(lo) + 4}" text-anchor="end">${R$(lo)}</text>
-    <text x="${m.l}" y="${H - 6}">${dias[0].data}</text><text x="${W - m.r}" y="${H - 6}" text-anchor="end">${dias[dias.length - 1].data}</text>
-    <polyline points="${pts}" fill="none" stroke="var(--serie)" stroke-width="2"/>
-    ${dias.map((d, i) => `<circle cx="${x(i)}" cy="${y(d.acumulado)}" r="3" fill="var(--serie)"><title>${d.data}: ${R$(d.acumulado)} acumulado</title></circle>`).join("")}`;
+    <text x="${m.l}" y="${H - 6}">${datas[0]}</text><text x="${W - m.r}" y="${H - 6}" text-anchor="end">${datas[n - 1]}</text>` +
+    series.map(s => `<polyline points="${s.pontos.map((p, i) => `${x(i)},${y(p.v)}`).join(" ")}" fill="none" stroke="${s.cor}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>` +
+      s.pontos.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.v)}" r="3" fill="${s.cor}" stroke="var(--cartao)" stroke-width="1.5"><title>${esc(s.nome)} · ${p.data}: ${R$(p.v)} acumulado</title></circle>`).join("")).join("");
 }
 
 function barras(dias) {
-  const svg = document.getElementById("barras"), W = svg.clientWidth || 500, H = 200, m = {l: 54, r: 10, t: 10, b: 24};
+  const svg = document.getElementById("barras"), W = svg.clientWidth || 500, H = 200, m = {l: 58, r: 10, t: 10, b: 24};
   const ds = dias.slice(-60);
   if (!ds.length) { svg.innerHTML = `<text x="10" y="30">sem dias registrados ainda</text>`; return; }
   const ys = [0, ...ds.map(d => d.rs)], lo = Math.min(...ys), hi = Math.max(...ys), sp = (hi - lo) || 1;
@@ -109,61 +131,115 @@ function barras(dias) {
   svg.innerHTML = `<line x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}" stroke="var(--borda)"/>
     <text x="${m.l - 6}" y="${y(hi) + 4}" text-anchor="end">${R$(hi)}</text><text x="${m.l - 6}" y="${y(lo) + 4}" text-anchor="end">${R$(lo)}</text>
     ${ds.map((d, i) => { const x = m.l + i * ((W - m.l - m.r) / ds.length); const a = y(Math.max(d.rs, 0)), b = y(Math.min(d.rs, 0));
-      return `<rect x="${x}" y="${a}" width="${bw}" height="${Math.max(1, b - a)}" rx="2" fill="${d.rs >= 0 ? "var(--pos)" : "var(--neg)"}"><title>${d.data}: ${R$(d.rs)} em ${d.operacoes} operação(ões)</title></rect>`; }).join("")}`;
+      const det = d.orb5 !== undefined ? ` (ORB ${R$(d.orb5)}, gap limitado ${R$(d.gaplim)})` : "";
+      return `<rect x="${x}" y="${a}" width="${bw}" height="${Math.max(1, b - a)}" rx="2" fill="${d.rs >= 0 ? "var(--pos)" : "var(--neg)"}"><title>${d.data}: ${R$(d.rs)}${det} em ${d.operacoes} operação(ões)</title></rect>`; }).join("")}`;
 }
 
-function render(D) {
-  const st = D.status || {}, sa = D.saude || {}, rs = D.resumo || {}, ref = D.referencia || {};
-  const demo = st.modo === "demo";
-  document.getElementById("topo").innerHTML = `<span class="pilula">Modo: <b>${demo ? "DEMO (ordens na conta demo)" : "ENSAIO (sem ordens)"}</b></span>
-    <span class="pilula">Fase: ${esc(st.fase || "—")}</span><span class="pilula">Call previsto: ${esc(st.call || "—")}</span>
-    <span class="pilula">Status da EA: ${esc(st.atualizado || "—")} (horário de Brasília)</span><span class="pilula">Painel gerado: ${new Date(D.gerado).toLocaleString("pt-BR")}</span>`;
-  const hb = sa.heartbeat_s;
-  document.getElementById("saude").innerHTML =
-    check(sa.terminal ? "ok" : "erro", "Terminal MT5", sa.terminal ? "no ar" : "fora do ar") +
-    check(hb == null ? "aviso" : hb <= 180 ? "ok" : hb <= 300 ? "aviso" : "erro", "Sinal de vida da EA", hb == null ? "nenhum hoje ainda" : `há ${hb} s (o watchdog relança acima de 300 s)`) +
-    check(st.parado_dia ? "erro" : "ok", "Trava do dia", st.parado_dia ? "acionada: sem operações hoje" : "livre (zera tudo a −R$ 3.000)") +
-    check(st.parado_estrategia ? "erro" : "ok", "Travas da estratégia", st.parado_estrategia ? "PARADA — revisar" : "livres (queda de R$ 10 mil, 10 dias negativos ou escorregamento acima de 0,5 tick)");
-  const opsHoje = st.operacoes || [];
-  document.getElementById("hoje").innerHTML =
-    cartao("Operações do dia", opsHoje.length, `${st.armadas || 0} aguardando · ${st.abertas || 0} abertas · ${st.encerradas || 0} encerradas`) +
+function hojeOrb(E) {
+  const st = E.status || {}, demo = st.modo === "demo", ops = st.operacoes || [];
+  return `<div class="grade">` +
+    cartao("Operações do dia", ops.length, `${st.armadas || 0} aguardando · ${st.abertas || 0} abertas · ${st.encerradas || 0} encerradas`) +
     cartao("Resultado do dia (simulação)", R$(st.resultado_sombra || 0), "a conta do backtest sobre as barras de hoje", cls(st.resultado_sombra || 0)) +
-    cartao("Resultado do dia (conta demo)", demo ? R$(st.resultado_real || 0) : "—", demo ? "ordens reais na conta demo" : "só no modo DEMO", demo ? cls(st.resultado_real || 0) : "");
-  tabela("tab-hoje", [["Ação"], ["Lado"], ["Gap", 1], ["Volume 1º candle", 1], ["Situação"], ["Entrada", 1], ["Stop", 1], ["Saída", 1], ["Resultado", 1]],
-    opsHoje.map(o => [esc(o.ativo), o.lado > 0 ? "compra" : "venda", pct(100 * o.gap), o.vrel.toLocaleString("pt-BR", {maximumFractionDigits: 1}) + "×", esc(o.estado) + (o.real ? ` · executada na demo a ${o.ent_real.toFixed(2)}` : ""),
-      o.ent ? o.ent.toFixed(2) : "—", o.stop ? o.stop.toFixed(2) : "—", o.saida ? o.saida.toFixed(2) : "—",
-      o.estado === "encerrada" ? `<span class="${cls(o.liq)}">${pct(100 * o.liq)}</span>` : "—"]),
-    "nenhuma ação passou nos filtros hoje (ou o 1º candle ainda não fechou)");
-  document.getElementById("acum").innerHTML =
-    cartao("Resultado acumulado", R$(rs.resultado || 0), `${rs.dias || 0} dias · ${rs.operacoes || 0} operações (${rs.operacoes_por_dia || 0}/dia)`, cls(rs.resultado || 0)) +
+    cartao("Resultado do dia (conta demo)", demo ? R$(st.resultado_real || 0) : "—", demo ? "ordens na conta demo" : "só no modo DEMO", demo ? cls(st.resultado_real || 0) : "") + `</div>` +
+    `<div class="rolagem" style="margin-top:10px"><table>` + htmlTabela([["Ação"], ["Lado"], ["Gap", 1], ["Volume 1º candle", 1], ["Situação"], ["Entrada", 1], ["Stop", 1], ["Saída", 1], ["Resultado", 1]],
+      ops.map(o => [esc(o.ativo), o.lado > 0 ? "compra" : "venda", pct(100 * o.gap), o.vrel.toLocaleString("pt-BR", {maximumFractionDigits: 1}) + "×", esc(o.estado) + (o.real ? ` · executada na demo a ${px(o.ent_real)}` : ""),
+        px(o.ent), px(o.stop), px(o.saida), o.estado === "encerrada" ? `<span class="${cls(o.liq)}">${pct(100 * o.liq)}</span>` : "—"]),
+      "nenhuma ação passou nos filtros hoje (ou o 1º candle ainda não fechou)") + `</table></div>`;
+}
+
+function hojeGap(E) {
+  const st = E.status || {}, demo = st.modo === "demo", ops = st.operacoes || [];
+  return `<div class="grade">` +
+    cartao("Ordens executadas", st.sinais ?? 0, `simulação · ${st.ordens_enviadas || 0} ações com ordens no pré-leilão · ${st.leiloes || 0} leilões vistos · ${st.executadas || 0} executadas na demo`) +
+    cartao("Mercado às 9h45", st.mercado_pct == null ? "—" : pct(st.mercado_pct), "WIN desde o leilão de fechamento das ações de ontem") +
+    cartao("Resultado do dia (simulação)", R$(st.resultado_sombra || 0), "a conta do backtest com a abertura do leilão", cls(st.resultado_sombra || 0)) +
+    cartao("Resultado do dia (conta demo)", demo ? R$(st.resultado_real || 0) : "—", demo ? "a demo não reproduz o leilão da B3" : "só no modo DEMO", demo ? cls(st.resultado_real || 0) : "") + `</div>` +
+    `<div class="rolagem" style="margin-top:10px"><table>` + htmlTabela([["Ação"], ["Lado"], ["Referência", 1], ["Compra", 1], ["Venda", 1], ["Abertura", 1], ["Situação"], ["Saída", 1], ["Resultado", 1]],
+      ops.map(o => [esc(o.ativo), o.lado > 0 ? "compra" : o.lado < 0 ? "venda" : "—", px(o.ref), px(o.lim_c), px(o.lim_v), px(o.abertura),
+        esc(o.estado) + (o.real ? ` · executada na demo a ${px(o.ent_real)}` : ""), px(o.saida), o.estado === "encerrada" ? `<span class="${cls(o.liq)}">${pct(100 * o.liq)}</span>` : "—"]),
+      "nenhuma ordem executada hoje (ou o leilão de abertura ainda não aconteceu)") + `</table></div>`;
+}
+
+function cartoesEstrategia(E) {
+  const rs = E.resumo || {}, ref = E.referencia || {};
+  return cartao("Resultado acumulado", R$(rs.resultado || 0), `${rs.dias || 0} dias · ${rs.operacoes || 0} operações (${rs.operacoes_por_dia || 0}/dia)`, cls(rs.resultado || 0)) +
     cartao("Acerto", rs.acerto_pct == null ? "—" : rs.acerto_pct.toLocaleString("pt-BR") + "%", "operações com resultado positivo") +
-    cartao("Ganho por operação", rs.por_operacao_pct == null ? "—" : pct(rs.por_operacao_pct, 3), `backtest: ${pct(ref.por_operacao_pct || 0, 2)} (na amostra)`, cls(rs.por_operacao_pct || 0)) +
-    cartao("Maior queda", R$(rs.maior_queda || 0), "trava da estratégia em −R$ 10.000", (rs.maior_queda || 0) < 0 ? "neg" : "") +
-    cartao("Dias negativos seguidos", rs.dias_negativos_seguidos ?? 0, "trava em 10 (máximo do backtest: 7)") +
-    cartao("Escorregamento médio", rs.escorregamento_ticks == null ? "—" : rs.escorregamento_ticks.toLocaleString("pt-BR", {maximumFractionDigits: 2}) + " tick",
-      rs.operacoes_demo ? `por ordem; ${R$(rs.escorregamento_rs)} por operação (demo − simulação), em ${rs.operacoes_demo} operações · trava acima de 0,5 tick · ${rs.perdidas || 0} perdidas, ${rs.so_na_demo || 0} só na demo` : "medido no modo DEMO · trava acima de 0,5 tick",
+    cartao("Ganho por operação", rs.por_operacao_pct == null ? "—" : pct(rs.por_operacao_pct, 3), `backtest: ${pct(ref.por_operacao_pct || 0, 2)}`, cls(rs.por_operacao_pct || 0)) +
+    cartao("Maior queda", R$(rs.maior_queda || 0), esc(E.travas || ""), (rs.maior_queda || 0) < 0 ? "neg" : "") +
+    cartao("Dias negativos seguidos", rs.dias_negativos_seguidos ?? 0, "trava em 10") +
+    cartao("Demo × simulação", rs.escorregamento_ticks == null ? "—" : rs.escorregamento_ticks.toLocaleString("pt-BR", {maximumFractionDigits: 2}) + " tick",
+      rs.operacoes_demo ? `por ordem; ${R$(rs.escorregamento_rs)} por operação, em ${rs.operacoes_demo} operações · ${rs.perdidas || 0} só na simulação, ${rs.so_na_demo || 0} só na demo` : "medido no modo DEMO",
       (rs.escorregamento_ticks || 0) > 0.5 ? "neg" : "");
-  curva(D.dias || []); barras(D.dias || []);
-  const dec = D.decisoes_ultimo_dia || {}, mot = dec.motivos || {};
-  const ordem = Object.entries(mot).sort((a, b) => b[1] - a[1]);
-  document.getElementById("decisoes").innerHTML = dec.data
-    ? `<div class="rot">${dec.data} · 76 ações avaliadas</div>` + ordem.map(([k, v]) => `<div class="linha" style="margin-top:6px"><span style="min-width:220px">${esc(k)}</span><b>${v}</b></div>`).join("")
-    : `<div class="vazio">as decisões do dia são gravadas depois do call de fechamento</div>`;
-  tabela("tab-ops", [["Data"], ["Ação"], ["Lado"], ["Modo"], ["Gap", 1], ["Entrada", 1], ["Saída", 1], ["Motivo"], ["Resultado", 1], ["R$ (simulação)", 1], ["R$ (demo)", 1]],
-    (D.operacoes || []).slice(-40).reverse().map(o => [o.data, esc(o.ativo), o.lado > 0 ? "compra" : "venda", esc(o.modo), pct(o.gap_pct),
-      o.entrada ? o.entrada.toFixed(2) : "—", o.saida ? o.saida.toFixed(2) : "—", esc(o.motivo), `<span class="${cls(o.liq_pct)}">${pct(o.liq_pct, 3)}</span>`,
+}
+
+function render() {
+  const D = DADOS, sa = D.saude || {}, ests = D.estrategias || {}, sel = SEL === "todas" ? CHAVES : [SEL], nome = k => esc(ests[k]?.nome || k);
+  document.querySelectorAll(".filtro button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.sel === SEL)));
+  document.getElementById("subtitulo").innerHTML = SEL === "todas"
+    ? "As duas estratégias na mesma conta demo (netting), lado a lado: na mesma ação e do mesmo lado as posições se somam; do lado oposto o ORB pula."
+    : esc(ests[SEL]?.descricao || "");
+  document.getElementById("topo").innerHTML = sel.map(k => { const st = ests[k]?.status || {};
+      return `<span class="pilula">${chave(k)} ${nome(k)}: <b>${st.modo === "demo" ? "DEMO" : st.modo === "ensaio" ? "ENSAIO" : "—"}</b> · ${esc(st.fase || "—")} · status ${esc(st.atualizado || "—")}</span>`; }).join("") +
+    `<span class="pilula">Call previsto: ${esc((ests.orb5?.status || ests.gaplim?.status || {}).call || "—")}</span><span class="pilula">Painel gerado: ${new Date(D.gerado).toLocaleString("pt-BR")}</span>`;
+  const hb = sa.heartbeat_s || {};
+  document.getElementById("saude").innerHTML = check(sa.terminal ? "ok" : "erro", "Terminal MT5", sa.terminal ? "no ar" : "fora do ar") +
+    sel.map(k => { const h = hb[k], st = ests[k]?.status || {};
+      return check(h == null ? "aviso" : h <= 180 ? "ok" : h <= 300 ? "aviso" : "erro", `Sinal de vida · ${nome(k)}`, h == null ? "nenhum hoje ainda" : `há ${h} s (o watchdog relança acima de 300 s)`) +
+        check(st.parado_dia || st.parado_estrategia ? "erro" : "ok", `Travas · ${nome(k)}`,
+          st.parado_dia ? "trava do dia acionada: sem operações hoje" : st.parado_estrategia ? "estratégia PARADA — revisar" : "livres · " + esc(ests[k]?.travas || "")); }).join("");
+  document.getElementById("hoje").innerHTML = sel.map(k => (SEL === "todas" ? `<h3>${chave(k)} ${nome(k)}</h3>` : "") + (k === "orb5" ? hojeOrb(ests[k] || {}) : hojeGap(ests[k] || {}))).join("");
+  if (SEL === "todas") {
+    const T = D.todas || {}, rs = T.resumo || {}, dias = T.dias || [];
+    document.getElementById("acum").innerHTML =
+      cartao("Resultado acumulado, as duas", R$(rs.resultado || 0), `${rs.dias || 0} dias · ${rs.operacoes || 0} operações`, cls(rs.resultado || 0)) +
+      CHAVES.map(k => { const r = ests[k]?.resumo || {};
+        return cartao(`${chave(k)} ${nome(k)}`, R$(r.resultado || 0), `${r.operacoes || 0} operações · acerto ${r.acerto_pct == null ? "—" : r.acerto_pct.toLocaleString("pt-BR") + "%"}`, cls(r.resultado || 0)); }).join("") +
+      cartao("Maior queda, as duas", R$(rs.maior_queda || 0), "na soma diária", (rs.maior_queda || 0) < 0 ? "neg" : "") +
+      cartao("Dias positivos", rs.dias_positivos_pct == null ? "—" : rs.dias_positivos_pct.toLocaleString("pt-BR") + "%", `${rs.dias_negativos_seguidos ?? 0} dia(s) negativo(s) seguidos agora`);
+    const a = {orb5: 0, gaplim: 0};
+    const pts = dias.map(d => { CHAVES.forEach(k => { a[k] += d[k] || 0; }); return {data: d.data, orb5: a.orb5, gaplim: a.gaplim, total: d.acumulado}; });
+    curva([...CHAVES.map(k => ({nome: ests[k]?.nome || k, cor: COR[k], pontos: pts.map(p => ({data: p.data, v: p[k]}))})),
+           {nome: "As duas", cor: COR.total, pontos: pts.map(p => ({data: p.data, v: p.total}))}]);
+    document.getElementById("rot-barras").textContent = "Resultado por dia, as duas (R$)";
+    barras(dias);
+  } else {
+    const E = ests[SEL] || {};
+    document.getElementById("acum").innerHTML = cartoesEstrategia(E);
+    curva([{nome: E.nome || SEL, cor: COR[SEL], pontos: (E.dias || []).map(d => ({data: d.data, v: d.acumulado}))}]);
+    document.getElementById("rot-barras").textContent = "Resultado por dia (R$)";
+    barras(E.dias || []);
+  }
+  document.getElementById("decisoes").innerHTML = sel.map(k => { const dec = ests[k]?.decisoes_ultimo_dia || {}, mot = dec.motivos || {};
+      return `<div class="cartao" style="margin-bottom:10px">${SEL === "todas" ? `<div class="rot" style="margin-bottom:4px">${chave(k)} ${nome(k)}</div>` : ""}` + (dec.data
+        ? `<div class="rot">${dec.data} · ${Object.values(mot).reduce((x, y) => x + y, 0)} ações avaliadas</div>` +
+          Object.entries(mot).sort((p, q) => q[1] - p[1]).map(([t, v]) => `<div class="linha" style="margin-top:6px"><span style="min-width:240px">${esc(t)}</span><b>${v}</b></div>`).join("")
+        : `<div class="vazio">as decisões do dia são gravadas depois do call de fechamento</div>`) + `</div>`; }).join("");
+  const ops = sel.flatMap(k => (ests[k]?.operacoes || []).map(o => ({...o, k}))).sort((p, q) => p.data < q.data ? 1 : p.data > q.data ? -1 : 0).slice(0, 60);
+  tabela("tab-ops", [["Data"], ...(SEL === "todas" ? [["Estratégia"]] : []), ["Ação"], ["Lado"], ["Modo"], ["Gap", 1], ["Entrada", 1], ["Saída", 1], ["Motivo"], ["Resultado", 1], ["R$ (simulação)", 1], ["R$ (demo)", 1]],
+    ops.map(o => [o.data, ...(SEL === "todas" ? [`${chave(o.k)}${nome(o.k)}`] : []), esc(o.ativo), o.lado > 0 ? "compra" : "venda", esc(o.modo), pct(o.gap_pct),
+      px(o.entrada), px(o.saida), esc(o.motivo), `<span class="${cls(o.liq_pct)}">${pct(o.liq_pct, 3)}</span>`,
       `<span class="${cls(o.rs_sombra)}">${R$(o.rs_sombra)}</span>`, o.modo !== "demo" ? "—" : o.executada ? `<span class="${cls(o.rs_real)}">${R$(o.rs_real)}</span>` : "não executada"]),
     "nenhuma operação registrada ainda");
-  tabela("tab-eventos", [["Quando"], ["Tipo"], ["Mensagem"]], (D.eventos || []).slice(0, 40).map(e => [esc(e.quando), esc(e.tipo), esc(e.msg)]), "sem eventos");
-  document.getElementById("rodape").innerHTML = `Referência do backtest: ${esc(ref.nota || "")} — ${pct(ref.ao_ano_pct || 0, 1)} ao ano na amostra, ${pct(ref.fora_da_amostra_ao_ano_pct || 0, 1)} fora da amostra.
-    "Simulação" é a conta do backtest feita pela EA sobre as barras do dia; no modo DEMO, a diferença para a conta demo é o escorregamento. Este painel não mostra dados da conta.`;
+  const evs = sel.flatMap(k => ests[k]?.eventos || []).sort((p, q) => p.quando < q.quando ? 1 : p.quando > q.quando ? -1 : 0).slice(0, 60);
+  tabela("tab-eventos", [["Quando"], ...(SEL === "todas" ? [["Estratégia"]] : []), ["Tipo"], ["Mensagem"]],
+    evs.map(e => [esc(e.quando), ...(SEL === "todas" ? [`${chave(e.estrategia)}${nome(e.estrategia)}`] : []), esc(e.tipo), esc(e.msg)]), "sem eventos");
+  document.getElementById("rodape").innerHTML = sel.map(k => { const ref = ests[k]?.referencia || {};
+      return `<p>${chave(k)} <b>${nome(k)}</b> — referência do backtest: ${esc(ref.nota || "")} — ${pct(ref.ao_ano_pct || 0, 1)} ao ano${ref.fora_da_amostra_ao_ano_pct == null ? "" : `, ${pct(ref.fora_da_amostra_ao_ano_pct, 1)} fora da amostra`}.</p>`; }).join("") +
+    `<p>"Simulação" é a conta do backtest feita pela EA sobre os dados do dia; no modo DEMO, a diferença para a conta demo mede a demo. Este painel não mostra dados da conta.</p>`;
 }
 
+function escolhe(s) {
+  SEL = ["todas", ...CHAVES].includes(s) ? s : "todas";
+  if (location.hash.slice(1) !== SEL) history.replaceState(null, "", "#" + SEL);
+  if (DADOS) render();
+}
+document.querySelectorAll(".filtro button").forEach(b => b.addEventListener("click", () => escolhe(b.dataset.sel)));
+window.addEventListener("hashchange", () => escolhe(location.hash.slice(1)));
 async function carrega() {
-  try { const r = await fetch("data_orb5.json?t=" + Date.now(), {cache: "no-store"}); render(await r.json()); }
+  try { const r = await fetch("data_orb5.json?t=" + Date.now(), {cache: "no-store"}); DADOS = await r.json(); render(); }
   catch (e) { document.getElementById("topo").innerHTML = `<span class="pilula">Não foi possível ler os dados (${esc(e.message)})</span>`; }
 }
-carrega(); setInterval(carrega, 60000);
+escolhe(location.hash.slice(1)); carrega(); setInterval(carrega, 60000);
 </script>
 </body>
 </html>

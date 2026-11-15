@@ -1,1226 +1,1345 @@
 {
- "gerado": "2026-11-13T21:57:02Z",
+ "gerado": "2026-11-15T00:01:40Z",
  "saude": {
   "terminal": true,
-  "heartbeat_s": 66
+  "heartbeat_s": {
+   "orb5": 15,
+   "gaplim": 16
+  }
  },
- "status": {
-  "atualizado": "2026.11.13 18:56:56",
-  "modo": "demo",
-  "saida": "10 min antes do call",
-  "fase": "encerrado",
-  "call": "17:55",
-  "parado_dia": false,
-  "parado_estrategia": false,
-  "armadas": 0,
-  "abertas": 0,
-  "encerradas": 4,
-  "resultado_sombra": 621.43,
-  "resultado_real": 266.84,
-  "operacoes": [
-   {
-    "ativo": "ALOS3",
-    "lado": -1,
-    "gap": 0.00637,
-    "vrel": 7.78,
-    "rank": 0.632,
-    "estado": "encerrada",
-    "lote": 300,
-    "ent": 26.71,
-    "stop": 27.73,
-    "saida": 27.02,
-    "liq": -0.011879,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 26.69
+ "estrategias": {
+  "orb5": {
+   "nome": "ORB 5 min",
+   "descricao": "Rompimento do 1º candle de 5 min contra o gap, em ações voláteis e com volume alto · saída 10 min antes do call · stop: ATR mediano, no máximo 5%",
+   "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil, 10 dias negativos ou escorregamento acima de 0,5 tick",
+   "status": {
+    "atualizado": "2026.11.14 21:01:25",
+    "modo": "demo",
+    "saida": "10 min antes do call",
+    "fase": "fim de semana",
+    "call": "16:55",
+    "parado_dia": false,
+    "parado_estrategia": false,
+    "armadas": 0,
+    "abertas": 0,
+    "encerradas": 0,
+    "resultado_sombra": 0.0,
+    "resultado_real": 0.0,
+    "operacoes": []
    },
-   {
-    "ativo": "B3SA3",
-    "lado": -1,
-    "gap": 0.0061,
-    "vrel": 10.66,
-    "rank": 0.75,
-    "estado": "encerrada",
-    "lote": 600,
-    "ent": 14.62,
-    "stop": 15.28,
-    "saida": 14.85,
-    "liq": -0.01585,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 14.6
+   "resumo": {
+    "dias": 11,
+    "operacoes": 23,
+    "operacoes_por_dia": 2.09,
+    "acerto_pct": 60.9,
+    "por_operacao_pct": 1.323,
+    "resultado": 2981.66,
+    "maior_queda": -352.26,
+    "dias_negativos_seguidos": 0,
+    "escorregamento_ticks": 0.93,
+    "escorregamento_rs": -33.23,
+    "operacoes_demo": 23,
+    "perdidas": 1,
+    "so_na_demo": 0
    },
-   {
-    "ativo": "CMIN3",
-    "lado": 1,
-    "gap": -0.01452,
-    "vrel": 5.44,
-    "rank": 0.737,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2100,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
+   "dias": [
+    {
+     "data": "2026-10-28",
+     "operacoes": 2,
+     "ganhos": 2,
+     "rs": 711.89,
+     "rs_sombra": 731.72,
+     "rs_real": 711.89,
+     "modo": "demo",
+     "acumulado": 711.89
+    },
+    {
+     "data": "2026-10-29",
+     "operacoes": 1,
+     "ganhos": 1,
+     "rs": 289.55,
+     "rs_sombra": 394.44,
+     "rs_real": 289.55,
+     "modo": "demo",
+     "acumulado": 1001.44
+    },
+    {
+     "data": "2026-10-30",
+     "operacoes": 1,
+     "ganhos": 0,
+     "rs": -260.56,
+     "rs_sombra": -164.56,
+     "rs_real": -260.56,
+     "modo": "demo",
+     "acumulado": 740.88
+    },
+    {
+     "data": "2026-11-03",
+     "operacoes": 2,
+     "ganhos": 2,
+     "rs": 425.83,
+     "rs_sombra": 517.98,
+     "rs_real": 425.83,
+     "modo": "demo",
+     "acumulado": 1166.71
+    },
+    {
+     "data": "2026-11-04",
+     "operacoes": 2,
+     "ganhos": 1,
+     "rs": 63.26,
+     "rs_sombra": 142.38,
+     "rs_real": 63.26,
+     "modo": "demo",
+     "acumulado": 1229.97
+    },
+    {
+     "data": "2026-11-06",
+     "operacoes": 4,
+     "ganhos": 3,
+     "rs": 1070.83,
+     "rs_sombra": 1135.14,
+     "rs_real": 1070.83,
+     "modo": "demo",
+     "acumulado": 2300.8
+    },
+    {
+     "data": "2026-11-09",
+     "operacoes": 2,
+     "ganhos": 1,
+     "rs": -95.96,
+     "rs_sombra": -28.47,
+     "rs_real": -95.96,
+     "modo": "demo",
+     "acumulado": 2204.84
+    },
+    {
+     "data": "2026-11-10",
+     "operacoes": 1,
+     "ganhos": 1,
+     "rs": 175.75,
+     "rs_sombra": 200.7,
+     "rs_real": 175.75,
+     "modo": "demo",
+     "acumulado": 2380.59
+    },
+    {
+     "data": "2026-11-11",
+     "operacoes": 2,
+     "ganhos": 0,
+     "rs": -352.26,
+     "rs_sombra": -335.69,
+     "rs_real": -352.26,
+     "modo": "demo",
+     "acumulado": 2028.33
+    },
+    {
+     "data": "2026-11-12",
+     "operacoes": 3,
+     "ganhos": 2,
+     "rs": 686.49,
+     "rs_sombra": 824.11,
+     "rs_real": 686.49,
+     "modo": "demo",
+     "acumulado": 2714.82
+    },
+    {
+     "data": "2026-11-13",
+     "operacoes": 4,
+     "ganhos": 1,
+     "rs": 266.84,
+     "rs_sombra": 621.42,
+     "rs_real": 266.84,
+     "modo": "demo",
+     "acumulado": 2981.66
+    }
+   ],
+   "operacoes": [
+    {
+     "data": "2026-10-28",
+     "ativo": "BBAS3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 1.15,
+     "vrel": 2.192,
+     "lote": 500,
+     "entrada": 17.42,
+     "saida": 16.83,
+     "ent_real": 17.4,
+     "saida_real": 16.83,
+     "motivo": "horário",
+     "liq_pct": 3.312,
+     "liq_real_pct": 3.231,
+     "rs_sombra": 288.49,
+     "rs_real": 281.06,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 281.06
+    },
+    {
+     "data": "2026-10-28",
+     "ativo": "CYRE3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 0.42,
+     "vrel": 5.21,
+     "lote": 500,
+     "entrada": 18.58,
+     "saida": 17.68,
+     "ent_real": 18.56,
+     "saida_real": 17.69,
+     "motivo": "horário",
+     "liq_pct": 4.771,
+     "liq_real_pct": 4.643,
+     "rs_sombra": 443.23,
+     "rs_real": 430.83,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.5,
+     "rs": 430.83
+    },
+    {
+     "data": "2026-10-29",
+     "ativo": "CSAN3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 2.55,
+     "vrel": 5.632,
+     "lote": 4200,
+     "entrada": 2.36,
+     "saida": 2.26,
+     "ent_real": 2.34,
+     "saida_real": 2.27,
+     "motivo": "horário",
+     "liq_pct": 3.979,
+     "liq_real_pct": 2.946,
+     "rs_sombra": 394.44,
+     "rs_real": 289.55,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.5,
+     "rs": 289.55
+    },
+    {
+     "data": "2026-10-30",
+     "ativo": "COGN3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 1.24,
+     "vrel": 32.318,
+     "lote": 6400,
+     "entrada": 1.55,
+     "saida": 1.57,
+     "ent_real": 1.53,
+     "saida_real": 1.57,
+     "motivo": "horário",
+     "liq_pct": -1.659,
+     "liq_real_pct": -2.661,
+     "rs_sombra": -164.56,
+     "rs_real": -260.56,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": -260.56
+    },
+    {
+     "data": "2026-11-03",
+     "ativo": "VAMO3",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -3.36,
+     "vrel": 3.072,
+     "lote": 4300,
+     "entrada": 2.31,
+     "saida": 2.38,
+     "ent_real": 2.33,
+     "saida_real": 2.38,
+     "motivo": "horário",
+     "liq_pct": 2.768,
+     "liq_real_pct": 2.099,
+     "rs_sombra": 274.93,
+     "rs_real": 210.34,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 210.34
+    },
+    {
+     "data": "2026-11-03",
+     "ativo": "YDUQ3",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -2.92,
+     "vrel": 2.09,
+     "lote": 1100,
+     "entrada": 8.79,
+     "saida": 9.01,
+     "ent_real": 8.81,
+     "saida_real": 9.01,
+     "motivo": "horário",
+     "liq_pct": 2.514,
+     "liq_real_pct": 2.224,
+     "rs_sombra": 243.05,
+     "rs_real": 215.49,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 215.49
+    },
+    {
+     "data": "2026-11-04",
+     "ativo": "POMO4",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -3.92,
+     "vrel": 10.445,
+     "lote": 2800,
+     "entrada": 3.45,
+     "saida": 3.56,
+     "ent_real": 3.47,
+     "saida_real": 3.56,
+     "motivo": "horário",
+     "liq_pct": 3.287,
+     "liq_real_pct": 2.547,
+     "rs_sombra": 317.56,
+     "rs_real": 247.47,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 247.47
+    },
+    {
+     "data": "2026-11-04",
+     "ativo": "RADL3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 3.1,
+     "vrel": 2.013,
+     "lote": 600,
+     "entrada": 15.13,
+     "saida": 15.42,
+     "ent_real": 15.11,
+     "saida_real": 15.41,
+     "motivo": "horário",
+     "liq_pct": -1.93,
+     "liq_real_pct": -2.032,
+     "rs_sombra": -175.18,
+     "rs_real": -184.21,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 0.5,
+     "rs": -184.21
+    },
+    {
+     "data": "2026-11-06",
+     "ativo": "ASAI3",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -0.47,
+     "vrel": 2.519,
+     "lote": 1100,
+     "entrada": 8.65,
+     "saida": 8.8,
+     "ent_real": 8.67,
+     "saida_real": 8.8,
+     "motivo": "horário",
+     "liq_pct": 1.746,
+     "liq_real_pct": 1.453,
+     "rs_sombra": 166.12,
+     "rs_real": 138.58,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 138.58
+    },
+    {
+     "data": "2026-11-06",
+     "ativo": "LREN3",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -5.77,
+     "vrel": 12.061,
+     "lote": 1000,
+     "entrada": 9.2,
+     "saida": 9.88,
+     "ent_real": 9.22,
+     "saida_real": 9.89,
+     "motivo": "horário",
+     "liq_pct": 7.4,
+     "liq_real_pct": 7.219,
+     "rs_sombra": 680.77,
+     "rs_real": 665.6,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 0.5,
+     "rs": 665.6
+    },
+    {
+     "data": "2026-11-06",
+     "ativo": "TEND3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 0.74,
+     "vrel": 2.68,
+     "lote": 600,
+     "entrada": 16.19,
+     "saida": 17.0,
+     "ent_real": 16.17,
+     "saida_real": 17.0,
+     "motivo": "stop",
+     "liq_pct": -5.046,
+     "liq_real_pct": -5.18,
+     "rs_sombra": -490.17,
+     "rs_real": -502.58,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": -502.58
+    },
+    {
+     "data": "2026-11-06",
+     "ativo": "VIVA3",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -8.86,
+     "vrel": 25.678,
+     "lote": 600,
+     "entrada": 16.6,
+     "saida": 17.91,
+     "ent_real": 16.62,
+     "saida_real": 17.91,
+     "motivo": "horário",
+     "liq_pct": 7.815,
+     "liq_real_pct": 7.714,
+     "rs_sombra": 778.42,
+     "rs_real": 769.23,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 769.23
+    },
+    {
+     "data": "2026-11-09",
+     "ativo": "CSNA3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 7.71,
+     "vrel": 5.845,
+     "lote": 2100,
+     "entrada": 4.6,
+     "saida": 4.45,
+     "ent_real": 4.58,
+     "saida_real": 4.45,
+     "motivo": "horário",
+     "liq_pct": 3.324,
+     "liq_real_pct": 2.793,
+     "rs_sombra": 321.06,
+     "rs_real": 268.64,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 268.64
+    },
+    {
+     "data": "2026-11-09",
+     "ativo": "LREN3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 0.91,
+     "vrel": 3.499,
+     "lote": 1000,
+     "entrada": 9.84,
+     "saida": 10.19,
+     "ent_real": 9.82,
+     "saida_real": 10.18,
+     "motivo": "horário",
+     "liq_pct": -3.552,
+     "liq_real_pct": -3.713,
+     "rs_sombra": -349.53,
+     "rs_real": -364.6,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 0.5,
+     "rs": -364.6
+    },
+    {
+     "data": "2026-11-10",
+     "ativo": "DIRR3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 4.21,
+     "vrel": 3.363,
+     "lote": 1000,
+     "entrada": 9.34,
+     "saida": 9.14,
+     "ent_real": 9.32,
+     "saida_real": 9.14,
+     "motivo": "horário",
+     "liq_pct": 2.149,
+     "liq_real_pct": 1.886,
+     "rs_sombra": 200.7,
+     "rs_real": 175.75,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 175.75
+    },
+    {
+     "data": "2026-11-11",
+     "ativo": "AURE3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 0.85,
+     "vrel": 3.432,
+     "lote": 800,
+     "entrada": 11.61,
+     "saida": 11.79,
+     "ent_real": 11.59,
+     "saida_real": 11.78,
+     "motivo": "horário",
+     "liq_pct": -1.553,
+     "liq_real_pct": -1.686,
+     "rs_sombra": -144.27,
+     "rs_real": -156.3,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 0.5,
+     "rs": -156.3
+    },
+    {
+     "data": "2026-11-11",
+     "ativo": "CURY3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 5.28,
+     "vrel": 3.876,
+     "lote": 300,
+     "entrada": 28.43,
+     "saida": 29.05,
+     "ent_real": 28.41,
+     "saida_real": 29.05,
+     "motivo": "horário",
+     "liq_pct": -2.244,
+     "liq_real_pct": -2.299,
+     "rs_sombra": -191.42,
+     "rs_real": -195.96,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": -195.96
+    },
+    {
+     "data": "2026-11-12",
+     "ativo": "BEEF3",
+     "lado": 1,
+     "modo": "demo",
+     "gap_pct": -5.65,
+     "vrel": 7.952,
+     "lote": 3400,
+     "entrada": 2.9,
+     "saida": 3.1,
+     "ent_real": 2.92,
+     "saida_real": 3.1,
+     "motivo": "horário",
+     "liq_pct": 6.678,
+     "liq_real_pct": 6.117,
+     "rs_sombra": 658.46,
+     "rs_real": 607.29,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 607.29
+    },
+    {
+     "data": "2026-11-12",
+     "ativo": "HAPV3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 5.62,
+     "vrel": 6.044,
+     "lote": 2000,
+     "entrada": 4.81,
+     "saida": 5.05,
+     "ent_real": 4.79,
+     "saida_real": 5.05,
+     "motivo": "stop",
+     "liq_pct": -5.046,
+     "liq_real_pct": -5.475,
+     "rs_sombra": -485.43,
+     "rs_real": -524.53,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": -524.53
+    },
+    {
+     "data": "2026-11-12",
+     "ativo": "MRVE3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 5.06,
+     "vrel": 11.315,
+     "lote": 1900,
+     "entrada": 5.06,
+     "saida": 4.72,
+     "ent_real": 5.04,
+     "saida_real": 4.72,
+     "motivo": "horário",
+     "liq_pct": 6.772,
+     "liq_real_pct": 6.305,
+     "rs_sombra": 651.08,
+     "rs_real": 603.73,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 603.73
+    },
+    {
+     "data": "2026-11-13",
+     "ativo": "ALOS3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 0.64,
+     "vrel": 7.779,
+     "lote": 300,
+     "entrada": 26.71,
+     "saida": 27.02,
+     "ent_real": 26.69,
+     "saida_real": 27.02,
+     "motivo": "horário",
+     "liq_pct": -1.188,
+     "liq_real_pct": -1.283,
+     "rs_sombra": -95.19,
+     "rs_real": -102.71,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": -102.71
+    },
+    {
+     "data": "2026-11-13",
+     "ativo": "B3SA3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 0.61,
+     "vrel": 10.657,
+     "lote": 600,
+     "entrada": 14.62,
+     "saida": 14.85,
+     "ent_real": 14.6,
+     "saida_real": 14.84,
+     "motivo": "horário",
+     "liq_pct": -1.585,
+     "liq_real_pct": -1.69,
+     "rs_sombra": -139.04,
+     "rs_real": -148.06,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 0.5,
+     "rs": -148.06
+    },
+    {
+     "data": "2026-11-13",
+     "ativo": "MBRF3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 4.3,
+     "vrel": 4.219,
+     "lote": 500,
+     "entrada": 18.8,
+     "saida": 18.2,
+     "ent_real": 0.0,
+     "saida_real": 0.0,
+     "motivo": "horário",
+     "liq_pct": 3.119,
+     "liq_real_pct": 0.0,
+     "rs_sombra": 293.18,
+     "rs_real": 0.0,
+     "executada": false,
+     "simulada": true,
+     "escorregamento_ticks": null,
+     "rs": 0.0
+    },
+    {
+     "data": "2026-11-13",
+     "ativo": "NATU3",
+     "lado": -1,
+     "modo": "demo",
+     "gap_pct": 4.5,
+     "vrel": 6.55,
+     "lote": 1800,
+     "entrada": 5.47,
+     "saida": 5.16,
+     "ent_real": 5.45,
+     "saida_real": 5.16,
+     "motivo": "horário",
+     "liq_pct": 5.713,
+     "liq_real_pct": 5.276,
+     "rs_sombra": 562.47,
+     "rs_real": 517.61,
+     "executada": true,
+     "simulada": true,
+     "escorregamento_ticks": 1.0,
+     "rs": 517.61
+    }
+   ],
+   "decisoes_ultimo_dia": {
+    "data": "2026-11-13",
+    "motivos": {
+     "volume": 53,
+     "venda (gap de alta)": 5,
+     "volatilidade": 14,
+     "compra (gap de baixa)": 3,
+     "gap pequeno": 1
+    }
    },
-   {
-    "ativo": "CSNA3",
-    "lado": 1,
-    "gap": -0.04019,
-    "vrel": 3.39,
-    "rank": 0.895,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 2400,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "HAPV3",
-    "lado": 1,
-    "gap": -0.00376,
-    "vrel": 2.26,
-    "rank": 0.974,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1800,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "compra (gap de baixa)",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "MBRF3",
-    "lado": -1,
-    "gap": 0.04302,
-    "vrel": 4.22,
-    "rank": 0.645,
-    "estado": "encerrada",
-    "lote": 500,
-    "ent": 18.8,
-    "stop": 19.69,
-    "saida": 18.2,
-    "liq": 0.031189,
-    "motivo": "horário",
-    "real": false,
-    "ent_real": 0.0
-   },
-   {
-    "ativo": "NATU3",
-    "lado": -1,
-    "gap": 0.04503,
-    "vrel": 6.55,
-    "rank": 0.855,
-    "estado": "encerrada",
-    "lote": 1800,
-    "ent": 5.47,
-    "stop": 5.74,
-    "saida": 5.16,
-    "liq": 0.057127,
-    "motivo": "horário",
-    "real": true,
-    "ent_real": 5.45
-   },
-   {
-    "ativo": "YDUQ3",
-    "lado": -1,
-    "gap": 0.00533,
-    "vrel": 4.87,
-    "rank": 0.776,
-    "estado": "cancelada (rompeu o outro lado)",
-    "lote": 1000,
-    "ent": 0.0,
-    "stop": 0.0,
-    "saida": 0.0,
-    "liq": 0.0,
-    "motivo": "venda (gap de alta)",
-    "real": false,
-    "ent_real": 0.0
+   "eventos": [
+    {
+     "quando": "2026.11.14 20:56:23",
+     "tipo": "INIT",
+     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 19:50:23",
+     "tipo": "FIM",
+     "msg": "pregão encerrado",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 19:50:23",
+     "tipo": "DECISOES",
+     "msg": "26 ações avaliadas em 0 ms, 1 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 19:50:23",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.13 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 19:50:23",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 2982, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 19:50:23",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 19:48:42",
+     "tipo": "INIT",
+     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 18:05:00",
+     "tipo": "FIM",
+     "msg": "pregão encerrado",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 17:45:00",
+     "tipo": "ZERADA",
+     "msg": "ALOS3 -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 17:45:00",
+     "tipo": "ZERADA",
+     "msg": "B3SA3 -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 17:45:00",
+     "tipo": "ZERADA",
+     "msg": "NATU3 -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 17:25:01",
+     "tipo": "CANCELADA",
+     "msg": "MBRF3 -- fim do horário de entrada",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:38",
+     "tipo": "CANCELADA",
+     "msg": "YDUQ3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:16",
+     "tipo": "CANCELADA",
+     "msg": "HAPV3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:07",
+     "tipo": "CANCELADA",
+     "msg": "CSNA3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:04",
+     "tipo": "DECISOES",
+     "msg": "20 ações avaliadas em 4691 ms, 5 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:04",
+     "tipo": "ARMADA",
+     "msg": "YDUQ3 venda 1000 ações, gatilho 9.33, limite 9.31, stop 9.80 (envio 312 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:04",
+     "tipo": "ARMADA",
+     "msg": "NATU3 venda 1800 ações, gatilho 5.47, limite 5.45, stop 5.74 (envio 322 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:04",
+     "tipo": "ARMADA",
+     "msg": "MBRF3 venda 500 ações, gatilho 18.80, limite 18.78, stop 19.69 (envio 1326 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:02",
+     "tipo": "ARMADA",
+     "msg": "CSNA3 compra 2400 ações, gatilho 4.12, limite 4.14, stop 3.91 (envio 2175 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:10:00",
+     "tipo": "ARMADA",
+     "msg": "B3SA3 venda 600 ações, gatilho 14.62, limite 14.60, stop 15.28 (envio 487 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:06:24",
+     "tipo": "CANCELADA",
+     "msg": "CMIN3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:05:02",
+     "tipo": "DECISOES",
+     "msg": "56 ações avaliadas em 1997 ms, 3 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:05:02",
+     "tipo": "ARMADA",
+     "msg": "HAPV3 compra 1800 ações, gatilho 5.33, limite 5.35, stop 5.06 (envio 296 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:05:01",
+     "tipo": "ARMADA",
+     "msg": "CMIN3 compra 2100 ações, gatilho 4.76, limite 4.78, stop 4.52 (envio 907 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:05:00",
+     "tipo": "ARMADA",
+     "msg": "ALOS3 venda 300 ações, gatilho 26.71, limite 26.69, stop 27.73 (envio 785 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:04:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 56 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:04:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:03:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 28 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:03:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 19 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:02:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 19 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:02:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 10 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:01:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 10 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:01:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 6 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:00:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 8 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 10:00:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:59:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:59:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:58:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:58:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:57:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:57:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:56:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:56:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:55:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:55:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:30:54",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.13 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:30:54",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 2715, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.13 09:30:53",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 18:05:00",
+     "tipo": "FIM",
+     "msg": "pregão encerrado",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 17:45:00",
+     "tipo": "ZERADA",
+     "msg": "BEEF3 -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 17:45:00",
+     "tipo": "ZERADA",
+     "msg": "MRVE3 -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:15:00",
+     "tipo": "DECISOES",
+     "msg": "2 ações avaliadas em 4 ms, 0 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:15:00",
+     "tipo": "GAP",
+     "msg": "BBAS3: gap de -11.2% acima da trava de 10% (abertura 15.00, fechamento de ontem 16.89) -- conferir os dados",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:10:01",
+     "tipo": "DECISOES",
+     "msg": "20 ações avaliadas em 1418 ms, 3 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:10:01",
+     "tipo": "ARMADA",
+     "msg": "MRVE3 venda 1900 ações, gatilho 5.06, limite 5.04, stop 5.31 (envio 312 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:10:01",
+     "tipo": "ARMADA",
+     "msg": "HAPV3 venda 2000 ações, gatilho 4.81, limite 4.79, stop 5.05 (envio 902 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:10:00",
+     "tipo": "ARMADA",
+     "msg": "BEEF3 compra 3400 ações, gatilho 2.90, limite 2.92, stop 2.76 (envio 192 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:05:00",
+     "tipo": "DECISOES",
+     "msg": "54 ações avaliadas em 6 ms, 0 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:04:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:04:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:03:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:03:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 15 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:02:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:02:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:01:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 12 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:01:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:00:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 10:00:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:59:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:59:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:58:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:58:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:57:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:57:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:56:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:56:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:55:30",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:55:00",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.12 09:30:52",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.12 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "orb5"
+    }
+   ],
+   "referencia": {
+    "por_operacao_pct": 0.2,
+    "ao_ano_pct": 13.2,
+    "fora_da_amostra_ao_ano_pct": -2.0,
+    "nota": "backtest 2022–26 com a regra no ar (gap contra o último negócio de ontem, travas de gap e de pregão anterior, saída 10 min antes do call, stop pelo ATR mediano com teto de 5%; rodadas 90 e 94); fora da amostra = escolha walk-forward 2024–26"
    }
-  ]
- },
- "resumo": {
-  "dias": 11,
-  "operacoes": 23,
-  "operacoes_por_dia": 2.09,
-  "acerto_pct": 60.9,
-  "por_operacao_pct": 1.323,
-  "resultado": 2981.66,
-  "maior_queda": -352.26,
-  "dias_negativos_seguidos": 0,
-  "escorregamento_ticks": 0.93,
-  "escorregamento_rs": -33.23,
-  "operacoes_demo": 23,
-  "perdidas": 1,
-  "so_na_demo": 0
- },
- "dias": [
-  {
-   "data": "2026-10-28",
-   "operacoes": 2,
-   "ganhos": 2,
-   "rs": 711.89,
-   "rs_sombra": 731.72,
-   "rs_real": 711.89,
-   "modo": "demo",
-   "acumulado": 711.89
   },
-  {
-   "data": "2026-10-29",
-   "operacoes": 1,
-   "ganhos": 1,
-   "rs": 289.55,
-   "rs_sombra": 394.44,
-   "rs_real": 289.55,
-   "modo": "demo",
-   "acumulado": 1001.44
-  },
-  {
-   "data": "2026-10-30",
-   "operacoes": 1,
-   "ganhos": 0,
-   "rs": -260.56,
-   "rs_sombra": -164.56,
-   "rs_real": -260.56,
-   "modo": "demo",
-   "acumulado": 740.88
-  },
-  {
-   "data": "2026-11-03",
-   "operacoes": 2,
-   "ganhos": 2,
-   "rs": 425.83,
-   "rs_sombra": 517.98,
-   "rs_real": 425.83,
-   "modo": "demo",
-   "acumulado": 1166.71
-  },
-  {
-   "data": "2026-11-04",
-   "operacoes": 2,
-   "ganhos": 1,
-   "rs": 63.26,
-   "rs_sombra": 142.38,
-   "rs_real": 63.26,
-   "modo": "demo",
-   "acumulado": 1229.97
-  },
-  {
-   "data": "2026-11-06",
-   "operacoes": 4,
-   "ganhos": 3,
-   "rs": 1070.83,
-   "rs_sombra": 1135.14,
-   "rs_real": 1070.83,
-   "modo": "demo",
-   "acumulado": 2300.8
-  },
-  {
-   "data": "2026-11-09",
-   "operacoes": 2,
-   "ganhos": 1,
-   "rs": -95.96,
-   "rs_sombra": -28.47,
-   "rs_real": -95.96,
-   "modo": "demo",
-   "acumulado": 2204.84
-  },
-  {
-   "data": "2026-11-10",
-   "operacoes": 1,
-   "ganhos": 1,
-   "rs": 175.75,
-   "rs_sombra": 200.7,
-   "rs_real": 175.75,
-   "modo": "demo",
-   "acumulado": 2380.59
-  },
-  {
-   "data": "2026-11-11",
-   "operacoes": 2,
-   "ganhos": 0,
-   "rs": -352.26,
-   "rs_sombra": -335.69,
-   "rs_real": -352.26,
-   "modo": "demo",
-   "acumulado": 2028.33
-  },
-  {
-   "data": "2026-11-12",
-   "operacoes": 3,
-   "ganhos": 2,
-   "rs": 686.49,
-   "rs_sombra": 824.11,
-   "rs_real": 686.49,
-   "modo": "demo",
-   "acumulado": 2714.82
-  },
-  {
-   "data": "2026-11-13",
-   "operacoes": 4,
-   "ganhos": 1,
-   "rs": 266.84,
-   "rs_sombra": 621.42,
-   "rs_real": 266.84,
-   "modo": "demo",
-   "acumulado": 2981.66
-  }
- ],
- "operacoes": [
-  {
-   "data": "2026-10-28",
-   "ativo": "BBAS3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 1.15,
-   "vrel": 2.192,
-   "lote": 500,
-   "entrada": 17.42,
-   "saida": 16.83,
-   "ent_real": 17.4,
-   "saida_real": 16.83,
-   "motivo": "horário",
-   "liq_pct": 3.312,
-   "liq_real_pct": 3.231,
-   "rs_sombra": 288.49,
-   "rs_real": 281.06,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 281.06
-  },
-  {
-   "data": "2026-10-28",
-   "ativo": "CYRE3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 0.42,
-   "vrel": 5.21,
-   "lote": 500,
-   "entrada": 18.58,
-   "saida": 17.68,
-   "ent_real": 18.56,
-   "saida_real": 17.69,
-   "motivo": "horário",
-   "liq_pct": 4.771,
-   "liq_real_pct": 4.643,
-   "rs_sombra": 443.23,
-   "rs_real": 430.83,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.5,
-   "rs": 430.83
-  },
-  {
-   "data": "2026-10-29",
-   "ativo": "CSAN3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 2.55,
-   "vrel": 5.632,
-   "lote": 4200,
-   "entrada": 2.36,
-   "saida": 2.26,
-   "ent_real": 2.34,
-   "saida_real": 2.27,
-   "motivo": "horário",
-   "liq_pct": 3.979,
-   "liq_real_pct": 2.946,
-   "rs_sombra": 394.44,
-   "rs_real": 289.55,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.5,
-   "rs": 289.55
-  },
-  {
-   "data": "2026-10-30",
-   "ativo": "COGN3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 1.24,
-   "vrel": 32.318,
-   "lote": 6400,
-   "entrada": 1.55,
-   "saida": 1.57,
-   "ent_real": 1.53,
-   "saida_real": 1.57,
-   "motivo": "horário",
-   "liq_pct": -1.659,
-   "liq_real_pct": -2.661,
-   "rs_sombra": -164.56,
-   "rs_real": -260.56,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": -260.56
-  },
-  {
-   "data": "2026-11-03",
-   "ativo": "VAMO3",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -3.36,
-   "vrel": 3.072,
-   "lote": 4300,
-   "entrada": 2.31,
-   "saida": 2.38,
-   "ent_real": 2.33,
-   "saida_real": 2.38,
-   "motivo": "horário",
-   "liq_pct": 2.768,
-   "liq_real_pct": 2.099,
-   "rs_sombra": 274.93,
-   "rs_real": 210.34,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 210.34
-  },
-  {
-   "data": "2026-11-03",
-   "ativo": "YDUQ3",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -2.92,
-   "vrel": 2.09,
-   "lote": 1100,
-   "entrada": 8.79,
-   "saida": 9.01,
-   "ent_real": 8.81,
-   "saida_real": 9.01,
-   "motivo": "horário",
-   "liq_pct": 2.514,
-   "liq_real_pct": 2.224,
-   "rs_sombra": 243.05,
-   "rs_real": 215.49,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 215.49
-  },
-  {
-   "data": "2026-11-04",
-   "ativo": "POMO4",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -3.92,
-   "vrel": 10.445,
-   "lote": 2800,
-   "entrada": 3.45,
-   "saida": 3.56,
-   "ent_real": 3.47,
-   "saida_real": 3.56,
-   "motivo": "horário",
-   "liq_pct": 3.287,
-   "liq_real_pct": 2.547,
-   "rs_sombra": 317.56,
-   "rs_real": 247.47,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 247.47
-  },
-  {
-   "data": "2026-11-04",
-   "ativo": "RADL3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 3.1,
-   "vrel": 2.013,
-   "lote": 600,
-   "entrada": 15.13,
-   "saida": 15.42,
-   "ent_real": 15.11,
-   "saida_real": 15.41,
-   "motivo": "horário",
-   "liq_pct": -1.93,
-   "liq_real_pct": -2.032,
-   "rs_sombra": -175.18,
-   "rs_real": -184.21,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 0.5,
-   "rs": -184.21
-  },
-  {
-   "data": "2026-11-06",
-   "ativo": "ASAI3",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -0.47,
-   "vrel": 2.519,
-   "lote": 1100,
-   "entrada": 8.65,
-   "saida": 8.8,
-   "ent_real": 8.67,
-   "saida_real": 8.8,
-   "motivo": "horário",
-   "liq_pct": 1.746,
-   "liq_real_pct": 1.453,
-   "rs_sombra": 166.12,
-   "rs_real": 138.58,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 138.58
-  },
-  {
-   "data": "2026-11-06",
-   "ativo": "LREN3",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -5.77,
-   "vrel": 12.061,
-   "lote": 1000,
-   "entrada": 9.2,
-   "saida": 9.88,
-   "ent_real": 9.22,
-   "saida_real": 9.89,
-   "motivo": "horário",
-   "liq_pct": 7.4,
-   "liq_real_pct": 7.219,
-   "rs_sombra": 680.77,
-   "rs_real": 665.6,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 0.5,
-   "rs": 665.6
-  },
-  {
-   "data": "2026-11-06",
-   "ativo": "TEND3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 0.74,
-   "vrel": 2.68,
-   "lote": 600,
-   "entrada": 16.19,
-   "saida": 17.0,
-   "ent_real": 16.17,
-   "saida_real": 17.0,
-   "motivo": "stop",
-   "liq_pct": -5.046,
-   "liq_real_pct": -5.18,
-   "rs_sombra": -490.17,
-   "rs_real": -502.58,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": -502.58
-  },
-  {
-   "data": "2026-11-06",
-   "ativo": "VIVA3",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -8.86,
-   "vrel": 25.678,
-   "lote": 600,
-   "entrada": 16.6,
-   "saida": 17.91,
-   "ent_real": 16.62,
-   "saida_real": 17.91,
-   "motivo": "horário",
-   "liq_pct": 7.815,
-   "liq_real_pct": 7.714,
-   "rs_sombra": 778.42,
-   "rs_real": 769.23,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 769.23
-  },
-  {
-   "data": "2026-11-09",
-   "ativo": "CSNA3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 7.71,
-   "vrel": 5.845,
-   "lote": 2100,
-   "entrada": 4.6,
-   "saida": 4.45,
-   "ent_real": 4.58,
-   "saida_real": 4.45,
-   "motivo": "horário",
-   "liq_pct": 3.324,
-   "liq_real_pct": 2.793,
-   "rs_sombra": 321.06,
-   "rs_real": 268.64,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 268.64
-  },
-  {
-   "data": "2026-11-09",
-   "ativo": "LREN3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 0.91,
-   "vrel": 3.499,
-   "lote": 1000,
-   "entrada": 9.84,
-   "saida": 10.19,
-   "ent_real": 9.82,
-   "saida_real": 10.18,
-   "motivo": "horário",
-   "liq_pct": -3.552,
-   "liq_real_pct": -3.713,
-   "rs_sombra": -349.53,
-   "rs_real": -364.6,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 0.5,
-   "rs": -364.6
-  },
-  {
-   "data": "2026-11-10",
-   "ativo": "DIRR3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 4.21,
-   "vrel": 3.363,
-   "lote": 1000,
-   "entrada": 9.34,
-   "saida": 9.14,
-   "ent_real": 9.32,
-   "saida_real": 9.14,
-   "motivo": "horário",
-   "liq_pct": 2.149,
-   "liq_real_pct": 1.886,
-   "rs_sombra": 200.7,
-   "rs_real": 175.75,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 175.75
-  },
-  {
-   "data": "2026-11-11",
-   "ativo": "AURE3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 0.85,
-   "vrel": 3.432,
-   "lote": 800,
-   "entrada": 11.61,
-   "saida": 11.79,
-   "ent_real": 11.59,
-   "saida_real": 11.78,
-   "motivo": "horário",
-   "liq_pct": -1.553,
-   "liq_real_pct": -1.686,
-   "rs_sombra": -144.27,
-   "rs_real": -156.3,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 0.5,
-   "rs": -156.3
-  },
-  {
-   "data": "2026-11-11",
-   "ativo": "CURY3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 5.28,
-   "vrel": 3.876,
-   "lote": 300,
-   "entrada": 28.43,
-   "saida": 29.05,
-   "ent_real": 28.41,
-   "saida_real": 29.05,
-   "motivo": "horário",
-   "liq_pct": -2.244,
-   "liq_real_pct": -2.299,
-   "rs_sombra": -191.42,
-   "rs_real": -195.96,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": -195.96
-  },
-  {
-   "data": "2026-11-12",
-   "ativo": "BEEF3",
-   "lado": 1,
-   "modo": "demo",
-   "gap_pct": -5.65,
-   "vrel": 7.952,
-   "lote": 3400,
-   "entrada": 2.9,
-   "saida": 3.1,
-   "ent_real": 2.92,
-   "saida_real": 3.1,
-   "motivo": "horário",
-   "liq_pct": 6.678,
-   "liq_real_pct": 6.117,
-   "rs_sombra": 658.46,
-   "rs_real": 607.29,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 607.29
-  },
-  {
-   "data": "2026-11-12",
-   "ativo": "HAPV3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 5.62,
-   "vrel": 6.044,
-   "lote": 2000,
-   "entrada": 4.81,
-   "saida": 5.05,
-   "ent_real": 4.79,
-   "saida_real": 5.05,
-   "motivo": "stop",
-   "liq_pct": -5.046,
-   "liq_real_pct": -5.475,
-   "rs_sombra": -485.43,
-   "rs_real": -524.53,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": -524.53
-  },
-  {
-   "data": "2026-11-12",
-   "ativo": "MRVE3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 5.06,
-   "vrel": 11.315,
-   "lote": 1900,
-   "entrada": 5.06,
-   "saida": 4.72,
-   "ent_real": 5.04,
-   "saida_real": 4.72,
-   "motivo": "horário",
-   "liq_pct": 6.772,
-   "liq_real_pct": 6.305,
-   "rs_sombra": 651.08,
-   "rs_real": 603.73,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 603.73
-  },
-  {
-   "data": "2026-11-13",
-   "ativo": "ALOS3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 0.64,
-   "vrel": 7.779,
-   "lote": 300,
-   "entrada": 26.71,
-   "saida": 27.02,
-   "ent_real": 26.69,
-   "saida_real": 27.02,
-   "motivo": "horário",
-   "liq_pct": -1.188,
-   "liq_real_pct": -1.283,
-   "rs_sombra": -95.19,
-   "rs_real": -102.71,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": -102.71
-  },
-  {
-   "data": "2026-11-13",
-   "ativo": "B3SA3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 0.61,
-   "vrel": 10.657,
-   "lote": 600,
-   "entrada": 14.62,
-   "saida": 14.85,
-   "ent_real": 14.6,
-   "saida_real": 14.84,
-   "motivo": "horário",
-   "liq_pct": -1.585,
-   "liq_real_pct": -1.69,
-   "rs_sombra": -139.04,
-   "rs_real": -148.06,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 0.5,
-   "rs": -148.06
-  },
-  {
-   "data": "2026-11-13",
-   "ativo": "MBRF3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 4.3,
-   "vrel": 4.219,
-   "lote": 500,
-   "entrada": 18.8,
-   "saida": 18.2,
-   "ent_real": 0.0,
-   "saida_real": 0.0,
-   "motivo": "horário",
-   "liq_pct": 3.119,
-   "liq_real_pct": 0.0,
-   "rs_sombra": 293.18,
-   "rs_real": 0.0,
-   "executada": false,
-   "simulada": true,
-   "escorregamento_ticks": null,
-   "rs": 0.0
-  },
-  {
-   "data": "2026-11-13",
-   "ativo": "NATU3",
-   "lado": -1,
-   "modo": "demo",
-   "gap_pct": 4.5,
-   "vrel": 6.55,
-   "lote": 1800,
-   "entrada": 5.47,
-   "saida": 5.16,
-   "ent_real": 5.45,
-   "saida_real": 5.16,
-   "motivo": "horário",
-   "liq_pct": 5.713,
-   "liq_real_pct": 5.276,
-   "rs_sombra": 562.47,
-   "rs_real": 517.61,
-   "executada": true,
-   "simulada": true,
-   "escorregamento_ticks": 1.0,
-   "rs": 517.61
-  }
- ],
- "decisoes_ultimo_dia": {
-  "data": "2026-11-13",
-  "motivos": {
-   "volume": 53,
-   "venda (gap de alta)": 5,
-   "volatilidade": 14,
-   "compra (gap de baixa)": 3,
-   "gap pequeno": 1
+  "gaplim": {
+   "nome": "Gap limitado no leilão",
+   "descricao": "Às 9h45, compra e venda limitadas em volta da abertura esperada (fechamento de ontem corrigido pelo WIN); executa no leilão de abertura, cancela o resto, sai 10 min antes do call · sem stop",
+   "travas": "zera a −R$ 5.000 no dia; para com queda de R$ 15 mil ou 10 dias negativos",
+   "status": {
+    "atualizado": "2026.11.14 21:01:24",
+    "modo": "demo",
+    "saida": "10 min antes do call",
+    "fase": "fim de semana",
+    "call": "16:55",
+    "parado_dia": false,
+    "parado_estrategia": false,
+    "mercado_pct": null,
+    "ordens_enviadas": 0,
+    "leiloes": 0,
+    "sinais": 0,
+    "executadas": 0,
+    "resultado_sombra": 0.0,
+    "resultado_real": 0.0,
+    "operacoes": []
+   },
+   "resumo": {
+    "dias": 0,
+    "operacoes": 0,
+    "operacoes_por_dia": 0,
+    "acerto_pct": null,
+    "por_operacao_pct": null,
+    "resultado": 0.0,
+    "maior_queda": 0.0,
+    "dias_negativos_seguidos": 0,
+    "escorregamento_ticks": null,
+    "escorregamento_rs": null,
+    "operacoes_demo": 0,
+    "perdidas": 0,
+    "so_na_demo": 0
+   },
+   "dias": [],
+   "operacoes": [],
+   "decisoes_ultimo_dia": {
+    "data": null,
+    "motivos": {}
+   },
+   "eventos": [
+    {
+     "quando": "2026.11.14 20:56:23",
+     "tipo": "INIT",
+     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
+     "estrategia": "gaplim"
+    }
+   ],
+   "referencia": {
+    "por_operacao_pct": 0.17,
+    "ao_ano_pct": 44.1,
+    "fora_da_amostra_ao_ano_pct": null,
+    "nota": "backtest 2024–26 (rodadas 99 e 100; período já visto, sem teste fora da amostra: a demo é o primeiro), R$ 5 mil por ordem, saída 10 min antes do call, sem reinvestir; a demo não reproduz o leilão da B3"
+   }
   }
  },
- "eventos": [
-  {
-   "quando": "2026.11.13 18:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.13 17:45:00",
-   "tipo": "ZERADA",
-   "msg": "ALOS3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.13 17:45:00",
-   "tipo": "ZERADA",
-   "msg": "B3SA3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.13 17:45:00",
-   "tipo": "ZERADA",
-   "msg": "NATU3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.13 17:25:01",
-   "tipo": "CANCELADA",
-   "msg": "MBRF3 -- fim do horário de entrada"
-  },
-  {
-   "quando": "2026.11.13 10:10:38",
-   "tipo": "CANCELADA",
-   "msg": "YDUQ3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.13 10:10:16",
-   "tipo": "CANCELADA",
-   "msg": "HAPV3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.13 10:10:07",
-   "tipo": "CANCELADA",
-   "msg": "CSNA3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.13 10:10:04",
-   "tipo": "DECISOES",
-   "msg": "20 ações avaliadas em 4691 ms, 5 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.13 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "YDUQ3 venda 1000 ações, gatilho 9.33, limite 9.31, stop 9.80 (envio 312 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "NATU3 venda 1800 ações, gatilho 5.47, limite 5.45, stop 5.74 (envio 322 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:10:04",
-   "tipo": "ARMADA",
-   "msg": "MBRF3 venda 500 ações, gatilho 18.80, limite 18.78, stop 19.69 (envio 1326 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:10:02",
-   "tipo": "ARMADA",
-   "msg": "CSNA3 compra 2400 ações, gatilho 4.12, limite 4.14, stop 3.91 (envio 2175 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "B3SA3 venda 600 ações, gatilho 14.62, limite 14.60, stop 15.28 (envio 487 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:06:24",
-   "tipo": "CANCELADA",
-   "msg": "CMIN3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.13 10:05:02",
-   "tipo": "DECISOES",
-   "msg": "56 ações avaliadas em 1997 ms, 3 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.13 10:05:02",
-   "tipo": "ARMADA",
-   "msg": "HAPV3 compra 1800 ações, gatilho 5.33, limite 5.35, stop 5.06 (envio 296 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:05:01",
-   "tipo": "ARMADA",
-   "msg": "CMIN3 compra 2100 ações, gatilho 4.76, limite 4.78, stop 4.52 (envio 907 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:05:00",
-   "tipo": "ARMADA",
-   "msg": "ALOS3 venda 300 ações, gatilho 26.71, limite 26.69, stop 27.73 (envio 785 ms)"
-  },
-  {
-   "quando": "2026.11.13 10:04:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 56 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:04:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:03:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 28 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:03:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 19 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:02:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 19 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:02:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 10 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:01:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 10 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 10:01:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 6 ms"
-  },
-  {
-   "quando": "2026.11.13 10:00:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 8 ms"
-  },
-  {
-   "quando": "2026.11.13 10:00:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:59:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:59:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:58:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:58:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:57:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:57:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:56:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:56:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:55:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:55:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.13 09:30:54",
-   "tipo": "DIA",
-   "msg": "pregão 2026.11.13 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.13 09:30:54",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 2715, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.13 09:30:53",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.12 18:05:00",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.12 17:45:00",
-   "tipo": "ZERADA",
-   "msg": "BEEF3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.12 17:45:00",
-   "tipo": "ZERADA",
-   "msg": "MRVE3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.12 10:15:00",
-   "tipo": "DECISOES",
-   "msg": "2 ações avaliadas em 4 ms, 0 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.12 10:15:00",
-   "tipo": "GAP",
-   "msg": "BBAS3: gap de -11.2% acima da trava de 10% (abertura 15.00, fechamento de ontem 16.89) -- conferir os dados"
-  },
-  {
-   "quando": "2026.11.12 10:10:01",
-   "tipo": "DECISOES",
-   "msg": "20 ações avaliadas em 1418 ms, 3 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.12 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "MRVE3 venda 1900 ações, gatilho 5.06, limite 5.04, stop 5.31 (envio 312 ms)"
-  },
-  {
-   "quando": "2026.11.12 10:10:01",
-   "tipo": "ARMADA",
-   "msg": "HAPV3 venda 2000 ações, gatilho 4.81, limite 4.79, stop 5.05 (envio 902 ms)"
-  },
-  {
-   "quando": "2026.11.12 10:10:00",
-   "tipo": "ARMADA",
-   "msg": "BEEF3 compra 3400 ações, gatilho 2.90, limite 2.92, stop 2.76 (envio 192 ms)"
-  },
-  {
-   "quando": "2026.11.12 10:05:00",
-   "tipo": "DECISOES",
-   "msg": "54 ações avaliadas em 6 ms, 0 com sinal (ordens enviadas na mesma passada)"
-  },
-  {
-   "quando": "2026.11.12 10:04:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:04:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:03:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:03:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 15 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:02:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:02:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:01:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 12 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:01:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:00:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 10:00:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:59:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:59:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:58:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:58:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:57:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:57:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:56:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:56:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:55:30",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:55:00",
-   "tipo": "AQUECE",
-   "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms"
-  },
-  {
-   "quando": "2026.11.12 09:30:52",
-   "tipo": "DIA",
-   "msg": "pregão 2026.11.12 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call"
-  },
-  {
-   "quando": "2026.11.12 09:30:52",
-   "tipo": "TRAVAS",
-   "msg": "acumulado R$ 2028, queda R$ -352, dias negativos seguidos 1, escorregamento: menos de 20 pregões demo"
-  },
-  {
-   "quando": "2026.11.12 09:30:52",
-   "tipo": "CALL",
-   "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25"
-  },
-  {
-   "quando": "2026.11.11 18:05:01",
-   "tipo": "FIM",
-   "msg": "pregão encerrado"
-  },
-  {
-   "quando": "2026.11.11 17:45:02",
-   "tipo": "ZERADA",
-   "msg": "AURE3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.11 17:45:01",
-   "tipo": "ZERADA",
-   "msg": "CURY3 -- saída 10 min antes do call (tentativa 1)"
-  },
-  {
-   "quando": "2026.11.11 10:15:19",
-   "tipo": "CANCELADA",
-   "msg": "MGLU3 -- rompeu o outro lado antes"
-  },
-  {
-   "quando": "2026.11.11 10:10:02",
-   "tipo": "DECISOES",
-   "msg": "22 ações avaliadas em 370 ms, 2 com sinal (ordens enviadas na mesma passada)"
+ "todas": {
+  "dias": [
+   {
+    "data": "2026-10-28",
+    "operacoes": 2,
+    "rs": 711.89,
+    "orb5": 711.89,
+    "gaplim": 0.0,
+    "acumulado": 711.89
+   },
+   {
+    "data": "2026-10-29",
+    "operacoes": 1,
+    "rs": 289.55,
+    "orb5": 289.55,
+    "gaplim": 0.0,
+    "acumulado": 1001.44
+   },
+   {
+    "data": "2026-10-30",
+    "operacoes": 1,
+    "rs": -260.56,
+    "orb5": -260.56,
+    "gaplim": 0.0,
+    "acumulado": 740.88
+   },
+   {
+    "data": "2026-11-03",
+    "operacoes": 2,
+    "rs": 425.83,
+    "orb5": 425.83,
+    "gaplim": 0.0,
+    "acumulado": 1166.71
+   },
+   {
+    "data": "2026-11-04",
+    "operacoes": 2,
+    "rs": 63.26,
+    "orb5": 63.26,
+    "gaplim": 0.0,
+    "acumulado": 1229.97
+   },
+   {
+    "data": "2026-11-06",
+    "operacoes": 4,
+    "rs": 1070.83,
+    "orb5": 1070.83,
+    "gaplim": 0.0,
+    "acumulado": 2300.8
+   },
+   {
+    "data": "2026-11-09",
+    "operacoes": 2,
+    "rs": -95.96,
+    "orb5": -95.96,
+    "gaplim": 0.0,
+    "acumulado": 2204.84
+   },
+   {
+    "data": "2026-11-10",
+    "operacoes": 1,
+    "rs": 175.75,
+    "orb5": 175.75,
+    "gaplim": 0.0,
+    "acumulado": 2380.59
+   },
+   {
+    "data": "2026-11-11",
+    "operacoes": 2,
+    "rs": -352.26,
+    "orb5": -352.26,
+    "gaplim": 0.0,
+    "acumulado": 2028.33
+   },
+   {
+    "data": "2026-11-12",
+    "operacoes": 3,
+    "rs": 686.49,
+    "orb5": 686.49,
+    "gaplim": 0.0,
+    "acumulado": 2714.82
+   },
+   {
+    "data": "2026-11-13",
+    "operacoes": 4,
+    "rs": 266.84,
+    "orb5": 266.84,
+    "gaplim": 0.0,
+    "acumulado": 2981.66
+   }
+  ],
+  "resumo": {
+   "dias": 11,
+   "operacoes": 23,
+   "resultado": 2981.66,
+   "maior_queda": -352.26,
+   "dias_negativos_seguidos": 0,
+   "acerto_pct": 60.9,
+   "dias_positivos_pct": 72.7
   }
- ],
- "referencia": {
-  "por_operacao_pct": 0.2,
-  "ao_ano_pct": 13.2,
-  "fora_da_amostra_ao_ano_pct": -2.0,
-  "nota": "backtest 2022–26 com a regra no ar (gap contra o último negócio de ontem, travas de gap e de pregão anterior, saída 10 min antes do call, stop pelo ATR mediano com teto de 5%; rodadas 90 e 94); fora da amostra = escolha walk-forward 2024–26"
  }
 }
