@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-16T13:06:04Z",
+ "gerado": "2026-11-16T13:09:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -14,7 +14,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.16 10:05:43",
+    "atualizado": "2026.11.16 10:08:43",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
@@ -1255,7 +1255,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.16 10:05:42",
+    "atualizado": "2026.11.16 10:08:42",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1264,11 +1264,11 @@
     "parado_estrategia": false,
     "mercado_pct": -0.648,
     "ordens_enviadas": 76,
-    "leiloes": 60,
-    "sinais": 22,
-    "executadas": 38,
-    "resultado_sombra": 20.7,
-    "resultado_real": -162.14,
+    "leiloes": 76,
+    "sinais": 28,
+    "executadas": 45,
+    "resultado_sombra": 182.99,
+    "resultado_real": -127.89,
     "operacoes": [
      {
       "ativo": "ALOS3",
@@ -1297,6 +1297,20 @@
       "liq": 0.0,
       "real": true,
       "ent_real": 9.62
+     },
+     {
+      "ativo": "AURE3",
+      "lado": -1,
+      "ref": 11.96,
+      "lim_c": 11.89,
+      "lim_v": 12.03,
+      "abertura": 12.05,
+      "lote": 400,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 12.03
      },
      {
       "ativo": "AXIA3",
@@ -1453,6 +1467,20 @@
       "ent_real": 15.39
      },
      {
+      "ativo": "CSAN3",
+      "lado": -1,
+      "ref": 3.06,
+      "lim_c": 3.04,
+      "lim_v": 3.08,
+      "abertura": 3.18,
+      "lote": 1600,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 3.08
+     },
+     {
       "ativo": "CSMG3",
       "lado": 0,
       "ref": 54.81,
@@ -1479,6 +1507,20 @@
       "liq": 0.0,
       "real": true,
       "ent_real": 3.74
+     },
+     {
+      "ativo": "CURY3",
+      "lado": -1,
+      "ref": 27.84,
+      "lim_c": 27.62,
+      "lim_v": 28.05,
+      "abertura": 28.1,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 28.05
      },
      {
       "ativo": "CXSE3",
@@ -1621,6 +1663,20 @@
       "ent_real": 18.27
      },
      {
+      "ativo": "MGLU3",
+      "lado": 0,
+      "ref": 7.71,
+      "lim_c": 7.62,
+      "lim_v": 7.8,
+      "abertura": 7.65,
+      "lote": 600,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 7.62
+     },
+     {
       "ativo": "MULT3",
       "lado": -1,
       "ref": 27.01,
@@ -1675,6 +1731,34 @@
       "liq": 0.0,
       "real": true,
       "ent_real": 14.26
+     },
+     {
+      "ativo": "RDOR3",
+      "lado": -1,
+      "ref": 34.77,
+      "lim_c": 34.52,
+      "lim_v": 35.01,
+      "abertura": 35.11,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 35.01
+     },
+     {
+      "ativo": "RENT3",
+      "lado": 1,
+      "ref": 29.68,
+      "lim_c": 29.44,
+      "lim_v": 29.92,
+      "abertura": 29.35,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 29.44
      },
      {
       "ativo": "SMFT3",
@@ -1745,6 +1829,20 @@
       "liq": 0.0,
       "real": true,
       "ent_real": 32.51
+     },
+     {
+      "ativo": "VALE3",
+      "lado": 1,
+      "ref": 63.42,
+      "lim_c": 63.06,
+      "lim_v": 63.77,
+      "abertura": 62.9,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 63.06
      },
      {
       "ativo": "VIVA3",
@@ -1826,6 +1924,48 @@
     "motivos": {}
    },
    "eventos": [
+    {
+     "quando": "2026.11.16 10:08:18",
+     "tipo": "LEILOES",
+     "msg": "leilões encerrados: simulação 5 compras e 23 vendas",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:08:17",
+     "tipo": "LEILAO",
+     "msg": "VALE3 abriu 62.90 às 10:08 (limites 63.06 / 63.77): simulação compra",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:08:17",
+     "tipo": "LEILAO",
+     "msg": "RENT3 abriu 29.35 às 10:08 (limites 29.44 / 29.92): simulação compra",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:08:17",
+     "tipo": "LEILAO",
+     "msg": "RDOR3 abriu 35.11 às 10:08 (limites 34.52 / 35.01): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:08:17",
+     "tipo": "LEILAO",
+     "msg": "MGLU3 abriu 7.65 às 10:08 (limites 7.62 / 7.80): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:08:17",
+     "tipo": "LEILAO",
+     "msg": "CSAN3 abriu 3.18 às 10:08 (limites 3.04 / 3.08): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:08:17",
+     "tipo": "LEILAO",
+     "msg": "AURE3 abriu 12.05 às 10:08 (limites 11.89 / 12.03): simulação venda",
+     "estrategia": "gaplim"
+    },
     {
      "quando": "2026.11.16 10:06:01",
      "tipo": "LEILAO",
