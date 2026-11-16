@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-16T20:45:03Z",
+ "gerado": "2026-11-16T20:48:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 49,
-   "gaplim": 67
+   "orb5": 50,
+   "gaplim": 8
   }
  },
  "estrategias": {
@@ -14,10 +14,10 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.16 17:44:46",
+    "atualizado": "2026.11.16 17:47:46",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pregão (só saídas)",
+    "fase": "saída",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -25,7 +25,7 @@
     "abertas": 1,
     "encerradas": 0,
     "resultado_sombra": -4.58,
-    "resultado_real": -68.56,
+    "resultado_real": -100.57,
     "operacoes": [
      {
       "ativo": "BEEF3",
@@ -778,6 +778,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.16 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "CSAN3: 3200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.16 17:45:01",
      "tipo": "CANCELADA",
      "msg": "CSAN3 -- saída 10 min antes do call (tentativa 1)",
@@ -1250,12 +1256,6 @@
      "tipo": "DIA",
      "msg": "pregão 2026.11.13 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.13 09:30:54",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 2715, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1271,10 +1271,10 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.16 17:44:48",
+    "atualizado": "2026.11.16 17:47:48",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pregão",
+    "fase": "saída",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -1283,8 +1283,8 @@
     "leiloes": 76,
     "sinais": 28,
     "executadas": 45,
-    "resultado_sombra": 1063.99,
-    "resultado_real": 1174.63,
+    "resultado_sombra": 1052.49,
+    "resultado_real": 1111.62,
     "operacoes": [
      {
       "ativo": "ALOS3",
@@ -1294,9 +1294,9 @@
       "lim_v": 26.95,
       "abertura": 27.03,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 26.38,
+      "liq": 0.023772,
       "real": true,
       "ent_real": 26.95
      },
@@ -1322,9 +1322,9 @@
       "lim_v": 12.03,
       "abertura": 12.05,
       "lote": 400,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 11.75,
+      "liq": 0.024851,
       "real": true,
       "ent_real": 12.03
      },
@@ -1350,9 +1350,9 @@
       "lim_v": 15.03,
       "abertura": 15.08,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 14.89,
+      "liq": 0.012471,
       "real": true,
       "ent_real": 15.03
      },
@@ -1364,9 +1364,9 @@
       "lim_v": 13.42,
       "abertura": 13.44,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 13.02,
+      "liq": 0.031162,
       "real": true,
       "ent_real": 13.42
      },
@@ -1378,9 +1378,9 @@
       "lim_v": 14.47,
       "abertura": 14.49,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 14.17,
+      "liq": 0.021969,
       "real": true,
       "ent_real": 14.47
      },
@@ -1406,9 +1406,9 @@
       "lim_v": 3.42,
       "abertura": 3.45,
       "lote": 1400,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 3.44,
+      "liq": 0.003888,
       "real": true,
       "ent_real": 3.42
      },
@@ -1420,9 +1420,9 @@
       "lim_v": 53.66,
       "abertura": 53.98,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 52.68,
+      "liq": 0.023716,
       "real": true,
       "ent_real": 53.66
      },
@@ -1434,9 +1434,9 @@
       "lim_v": 18.28,
       "abertura": 17.98,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 17.12,
+      "liq": -0.048013,
       "real": true,
       "ent_real": 18.06
      },
@@ -1490,9 +1490,9 @@
       "lim_v": 3.08,
       "abertura": 3.18,
       "lote": 1600,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 3.11,
+      "liq": 0.01998,
       "real": true,
       "ent_real": 3.08
      },
@@ -1532,9 +1532,9 @@
       "lim_v": 28.05,
       "abertura": 28.1,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 27.33,
+      "liq": 0.026764,
       "real": true,
       "ent_real": 28.05
      },
@@ -1546,9 +1546,9 @@
       "lim_v": 21.37,
       "abertura": 21.22,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 21.39,
+      "liq": 0.007787,
       "real": true,
       "ent_real": 21.24
      },
@@ -1560,9 +1560,9 @@
       "lim_v": 19.61,
       "abertura": 19.68,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 19.47,
+      "liq": 0.009957,
       "real": true,
       "ent_real": 19.61
      },
@@ -1588,9 +1588,9 @@
       "lim_v": 48.15,
       "abertura": 48.66,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 48.01,
+      "liq": 0.013001,
       "real": true,
       "ent_real": 48.15
      },
@@ -1602,9 +1602,9 @@
       "lim_v": 34.2,
       "abertura": 34.25,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 33.62,
+      "liq": 0.017788,
       "real": true,
       "ent_real": 34.2
      },
@@ -1616,9 +1616,9 @@
       "lim_v": 21.15,
       "abertura": 21.2,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 20.77,
+      "liq": 0.019587,
       "real": true,
       "ent_real": 21.15
      },
@@ -1630,9 +1630,9 @@
       "lim_v": 22.43,
       "abertura": 22.46,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 22.2,
+      "liq": 0.011339,
       "real": true,
       "ent_real": 22.43
      },
@@ -1644,9 +1644,9 @@
       "lim_v": 22.4,
       "abertura": 22.51,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 22.02,
+      "liq": 0.02153,
       "real": true,
       "ent_real": 22.4
      },
@@ -1700,9 +1700,9 @@
       "lim_v": 27.15,
       "abertura": 27.33,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 26.88,
+      "liq": 0.016188,
       "real": true,
       "ent_real": 27.15
      },
@@ -1742,9 +1742,9 @@
       "lim_v": 14.26,
       "abertura": 14.29,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 14.03,
+      "liq": 0.018084,
       "real": true,
       "ent_real": 14.26
      },
@@ -1756,9 +1756,9 @@
       "lim_v": 35.01,
       "abertura": 35.11,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 35.48,
+      "liq": -0.010856,
       "real": true,
       "ent_real": 35.01
      },
@@ -1770,9 +1770,9 @@
       "lim_v": 29.92,
       "abertura": 29.35,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 29.3,
+      "liq": -0.002334,
       "real": true,
       "ent_real": 29.44
      },
@@ -1784,9 +1784,9 @@
       "lim_v": 17.6,
       "abertura": 17.71,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 17.59,
+      "liq": 0.006034,
       "real": true,
       "ent_real": 17.6
      },
@@ -1798,9 +1798,9 @@
       "lim_v": 54.98,
       "abertura": 54.05,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 55.43,
+      "liq": 0.025164,
       "real": true,
       "ent_real": 54.41
      },
@@ -1826,9 +1826,9 @@
       "lim_v": 31.36,
       "abertura": 31.55,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 31.05,
+      "liq": 0.015229,
       "real": true,
       "ent_real": 31.36
      },
@@ -1854,9 +1854,9 @@
       "lim_v": 63.77,
       "abertura": 62.9,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 60.91,
+      "liq": -0.032018,
       "real": true,
       "ent_real": 63.06
      },
@@ -1868,9 +1868,9 @@
       "lim_v": 16.81,
       "abertura": 16.86,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 16.5,
+      "liq": 0.020596,
       "real": true,
       "ent_real": 16.81
      },
@@ -1882,9 +1882,9 @@
       "lim_v": 34.1,
       "abertura": 34.28,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 34.4,
+      "liq": -0.003815,
       "real": true,
       "ent_real": 34.1
      },
@@ -1910,9 +1910,9 @@
       "lim_v": 9.42,
       "abertura": 9.46,
       "lote": 500,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 9.71,
+      "liq": -0.026359,
       "real": true,
       "ent_real": 9.42
      }
@@ -1940,6 +1940,264 @@
     "motivos": {}
    },
    "eventos": [
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "YDUQ3: 500 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "WEGE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "VIVT3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "VIVA3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "VALE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "UGPA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "TOTS3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "TAEE11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "SUZB3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "SMFT3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "RENT3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "RDOR3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "RADL3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "PSSA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "NATU3: 900 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "MULT3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "MGLU3: 600 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:08",
+     "tipo": "ZERADA",
+     "msg": "MBRF3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "ITSA4: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "IGTI11: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "HYPE3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "FLRY3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "EQTL3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "ENGI11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "ENEV3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CYRE3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CXSE3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CURY3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CSNA3: 1300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CSMG3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CSAN3: 1600 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CPLE3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CPFE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "CMIG4: 400 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "BRAP4: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "BPAC11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "BEEF3: 1400 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "BBSE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:07",
+     "tipo": "ZERADA",
+     "msg": "BBDC4: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:06",
+     "tipo": "ZERADA",
+     "msg": "BBDC3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:06",
+     "tipo": "ZERADA",
+     "msg": "BBAS3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "AXIA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "AURE3: 400 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
     {
      "quando": "2026.11.16 17:45:02",
      "tipo": "ZERADA",
@@ -2160,114 +2418,6 @@
      "quando": "2026.11.16 10:02:01",
      "tipo": "LEILAO",
      "msg": "BPAC11 abriu 53.98 às 10:02 (limites 53.06 / 53.66): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "IGTI11 abriu 22.51 às 10:01 (limites 22.10 / 22.40): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "CPLE3 abriu 15.38 às 10:01 (limites 15.24 / 15.39): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "BBSE3 abriu 37.33 às 10:01 (limites 37.11 / 37.33): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "AXIA3 abriu 48.40 às 10:01 (limites 47.79 / 48.40): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "WEGE3 abriu 51.01 às 10:01 (limites 50.96 / 51.50): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "UGPA3 abriu 32.77 às 10:01 (limites 32.51 / 32.89): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "TAEE11 abriu 42.10 às 10:01 (limites 41.80 / 42.11): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "SUZB3 abriu 54.05 às 10:01 (limites 54.41 / 54.98): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:03",
-     "tipo": "LEILAO",
-     "msg": "SMFT3 abriu 17.71 às 10:01 (limites 17.39 / 17.60): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:02",
-     "tipo": "LEILAO",
-     "msg": "RADL3 abriu 14.29 às 10:01 (limites 14.04 / 14.26): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:01:02",
-     "tipo": "LEILAO",
-     "msg": "MULT3 abriu 27.33 às 10:01 (limites 26.87 / 27.15): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 09:45:10",
-     "tipo": "ORDENS",
-     "msg": "76 de 76 ações com as duas ordens no livro (9107 ms)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 09:45:01",
-     "tipo": "SINAL",
-     "msg": "WIN às 9h45 173150, no fechamento das ações de ontem 174280: mercado -0.65%",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 09:35:47",
-     "tipo": "DIA",
-     "msg": "pregão 2026.11.16 preparado: 76 de 76 ações com histórico, 286 pregões de WIN até 2026.11.13, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 09:35:47",
-     "tipo": "TRAVAS",
-     "msg": "sem operações registradas ainda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 09:35:47",
-     "tipo": "CALL",
-     "msg": "call de fechamento previsto às 17:55: saída 17:45",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.14 21:28:49",
-     "tipo": "INIT",
-     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.14 20:56:23",
-     "tipo": "INIT",
-     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
      "estrategia": "gaplim"
     }
    ],
