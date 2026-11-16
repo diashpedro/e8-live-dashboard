@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-16T12:30:08Z",
+ "gerado": "2026-11-16T12:33:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 77,
-   "gaplim": 78
+   "orb5": 53,
+   "gaplim": 72
   }
  },
  "estrategias": {
@@ -14,11 +14,11 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.16 09:28:51",
+    "atualizado": "2026.11.16 09:32:41",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "antes da preparação",
-    "call": "16:55",
+    "fase": "pré-abertura",
+    "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
@@ -745,6 +745,30 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.16 09:31:09",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.16 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 09:31:09",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 2982, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 09:31:09",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 09:31:09",
+     "tipo": "FECHAMENTO",
+     "msg": "40 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.14 21:28:49",
      "tipo": "INIT",
      "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
@@ -1196,30 +1220,6 @@
     },
     {
      "quando": "2026.11.12 09:57:00",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 09:56:30",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 09:56:00",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 09:55:30",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 09:55:00",
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
      "estrategia": "orb5"
