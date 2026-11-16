@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-16T13:00:07Z",
+ "gerado": "2026-11-16T13:03:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 57,
-   "gaplim": 72
+   "orb5": 51,
+   "gaplim": 68
   }
  },
  "estrategias": {
@@ -14,10 +14,10 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.16 09:59:41",
+    "atualizado": "2026.11.16 10:02:43",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-abertura",
+    "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -745,6 +745,42 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.16 10:03:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 26 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 10:02:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 10:02:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 10:01:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 10:01:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 6 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.16 10:00:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.16 10:00:01",
      "tipo": "AQUECE",
      "msg": "barras de hoje: 1 de 76 ações prontas, leitura em 0 ms",
@@ -1187,42 +1223,6 @@
      "tipo": "ARMADA",
      "msg": "BEEF3 compra 3400 ações, gatilho 2.90, limite 2.92, stop 2.76 (envio 192 ms)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 10:05:00",
-     "tipo": "DECISOES",
-     "msg": "54 ações avaliadas em 6 ms, 0 com sinal (ordens enviadas na mesma passada)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 10:04:30",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 10:04:00",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 54 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 10:03:30",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 10:03:00",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 15 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.12 10:02:30",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 13 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1238,21 +1238,232 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.16 09:59:48",
+    "atualizado": "2026.11.16 10:02:42",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-leilão (ordens no livro)",
+    "fase": "pregão",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "mercado_pct": -0.648,
     "ordens_enviadas": 76,
-    "leiloes": 0,
-    "sinais": 0,
-    "executadas": 0,
-    "resultado_sombra": 0.0,
-    "resultado_real": 0.0,
-    "operacoes": []
+    "leiloes": 21,
+    "sinais": 8,
+    "executadas": 15,
+    "resultado_sombra": 154.47,
+    "resultado_real": 45.17,
+    "operacoes": [
+     {
+      "ativo": "AXIA3",
+      "lado": 0,
+      "ref": 48.09,
+      "lim_c": 47.79,
+      "lim_v": 48.4,
+      "abertura": 48.4,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 48.4
+     },
+     {
+      "ativo": "BBSE3",
+      "lado": 0,
+      "ref": 37.22,
+      "lim_c": 37.11,
+      "lim_v": 37.33,
+      "abertura": 37.33,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 37.33
+     },
+     {
+      "ativo": "BPAC11",
+      "lado": -1,
+      "ref": 53.36,
+      "lim_c": 53.06,
+      "lim_v": 53.66,
+      "abertura": 53.98,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 53.66
+     },
+     {
+      "ativo": "CPLE3",
+      "lado": 0,
+      "ref": 15.32,
+      "lim_c": 15.24,
+      "lim_v": 15.39,
+      "abertura": 15.38,
+      "lote": 300,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 15.39
+     },
+     {
+      "ativo": "CSMG3",
+      "lado": 0,
+      "ref": 54.81,
+      "lim_c": 54.53,
+      "lim_v": 55.1,
+      "abertura": 54.96,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 55.1
+     },
+     {
+      "ativo": "IGTI11",
+      "lado": -1,
+      "ref": 22.25,
+      "lim_c": 22.1,
+      "lim_v": 22.4,
+      "abertura": 22.51,
+      "lote": 200,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 22.4
+     },
+     {
+      "ativo": "MULT3",
+      "lado": -1,
+      "ref": 27.01,
+      "lim_c": 26.87,
+      "lim_v": 27.15,
+      "abertura": 27.33,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 27.15
+     },
+     {
+      "ativo": "RADL3",
+      "lado": -1,
+      "ref": 14.15,
+      "lim_c": 14.04,
+      "lim_v": 14.26,
+      "abertura": 14.29,
+      "lote": 300,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 14.26
+     },
+     {
+      "ativo": "SMFT3",
+      "lado": -1,
+      "ref": 17.49,
+      "lim_c": 17.39,
+      "lim_v": 17.6,
+      "abertura": 17.71,
+      "lote": 200,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 17.6
+     },
+     {
+      "ativo": "SUZB3",
+      "lado": 1,
+      "ref": 54.7,
+      "lim_c": 54.41,
+      "lim_v": 54.98,
+      "abertura": 54.05,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 54.41
+     },
+     {
+      "ativo": "TAEE11",
+      "lado": 0,
+      "ref": 41.96,
+      "lim_c": 41.8,
+      "lim_v": 42.11,
+      "abertura": 42.1,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 42.11
+     },
+     {
+      "ativo": "TOTS3",
+      "lado": -1,
+      "ref": 31.18,
+      "lim_c": 31.0,
+      "lim_v": 31.36,
+      "abertura": 31.55,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 31.36
+     },
+     {
+      "ativo": "UGPA3",
+      "lado": 0,
+      "ref": 32.7,
+      "lim_c": 32.51,
+      "lim_v": 32.89,
+      "abertura": 32.77,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 32.51
+     },
+     {
+      "ativo": "WEGE3",
+      "lado": 0,
+      "ref": 51.23,
+      "lim_c": 50.96,
+      "lim_v": 51.5,
+      "abertura": 51.01,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 50.96
+     },
+     {
+      "ativo": "YDUQ3",
+      "lado": -1,
+      "ref": 9.36,
+      "lim_c": 9.29,
+      "lim_v": 9.42,
+      "abertura": 9.46,
+      "lote": 500,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 9.42
+     }
+    ]
    },
    "resumo": {
     "dias": 0,
@@ -1276,6 +1487,108 @@
     "motivos": {}
    },
    "eventos": [
+    {
+     "quando": "2026.11.16 10:03:01",
+     "tipo": "LEILAO",
+     "msg": "ITSA4 abriu 13.64 às 10:03 (limites 13.52 / 13.64): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:03:01",
+     "tipo": "LEILAO",
+     "msg": "CPFE3 abriu 43.99 às 10:03 (limites 43.55 / 44.03): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:02:01",
+     "tipo": "LEILAO",
+     "msg": "YDUQ3 abriu 9.46 às 10:02 (limites 9.29 / 9.42): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:02:01",
+     "tipo": "LEILAO",
+     "msg": "TOTS3 abriu 31.55 às 10:02 (limites 31.00 / 31.36): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:02:01",
+     "tipo": "LEILAO",
+     "msg": "CSMG3 abriu 54.96 às 10:02 (limites 54.53 / 55.10): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:02:01",
+     "tipo": "LEILAO",
+     "msg": "BPAC11 abriu 53.98 às 10:02 (limites 53.06 / 53.66): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "IGTI11 abriu 22.51 às 10:01 (limites 22.10 / 22.40): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "CPLE3 abriu 15.38 às 10:01 (limites 15.24 / 15.39): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "BBSE3 abriu 37.33 às 10:01 (limites 37.11 / 37.33): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "AXIA3 abriu 48.40 às 10:01 (limites 47.79 / 48.40): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "WEGE3 abriu 51.01 às 10:01 (limites 50.96 / 51.50): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "UGPA3 abriu 32.77 às 10:01 (limites 32.51 / 32.89): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "TAEE11 abriu 42.10 às 10:01 (limites 41.80 / 42.11): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "SUZB3 abriu 54.05 às 10:01 (limites 54.41 / 54.98): simulação compra",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:03",
+     "tipo": "LEILAO",
+     "msg": "SMFT3 abriu 17.71 às 10:01 (limites 17.39 / 17.60): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:02",
+     "tipo": "LEILAO",
+     "msg": "RADL3 abriu 14.29 às 10:01 (limites 14.04 / 14.26): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.16 10:01:02",
+     "tipo": "LEILAO",
+     "msg": "MULT3 abriu 27.33 às 10:01 (limites 26.87 / 27.15): simulação venda",
+     "estrategia": "gaplim"
+    },
     {
      "quando": "2026.11.16 09:45:10",
      "tipo": "ORDENS",
