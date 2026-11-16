@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-16T12:45:04Z",
+ "gerado": "2026-11-16T12:48:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -14,7 +14,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.16 09:44:41",
+    "atualizado": "2026.11.16 09:47:41",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1238,15 +1238,15 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.16 09:44:48",
+    "atualizado": "2026.11.16 09:47:48",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-abertura",
+    "fase": "pré-leilão (ordens no livro)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "mercado_pct": null,
-    "ordens_enviadas": 0,
+    "mercado_pct": -0.648,
+    "ordens_enviadas": 76,
     "leiloes": 0,
     "sinais": 0,
     "executadas": 0,
@@ -1276,6 +1276,12 @@
     "motivos": {}
    },
    "eventos": [
+    {
+     "quando": "2026.11.16 09:45:10",
+     "tipo": "ORDENS",
+     "msg": "76 de 76 ações com as duas ordens no livro (9107 ms)",
+     "estrategia": "gaplim"
+    },
     {
      "quando": "2026.11.16 09:45:01",
      "tipo": "SINAL",
