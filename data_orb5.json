@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-17T13:09:03Z",
+ "gerado": "2026-11-17T13:12:06Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 85,
-   "gaplim": 94
+   "orb5": 88,
+   "gaplim": 97
   }
  },
  "estrategias": {
@@ -14,19 +14,52 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.17 10:08:39",
+    "atualizado": "2026.11.17 10:11:39",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "armadas": 0,
+    "armadas": 2,
     "abertas": 0,
     "encerradas": 0,
     "resultado_sombra": 0.0,
     "resultado_real": 0.0,
-    "operacoes": []
+    "operacoes": [
+     {
+      "ativo": "HAPV3",
+      "lado": -1,
+      "gap": 0.01103,
+      "vrel": 2.51,
+      "rank": 0.987,
+      "estado": "aguardando rompimento",
+      "lote": 1800,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     },
+     {
+      "ativo": "TEND3",
+      "lado": -1,
+      "gap": 0.01653,
+      "vrel": 2.99,
+      "rank": 0.842,
+      "estado": "aguardando rompimento",
+      "lote": 600,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     }
+    ]
    },
    "resumo": {
     "dias": 12,
@@ -778,6 +811,30 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.17 10:11:01",
+     "tipo": "CANCELADA",
+     "msg": "HAPV3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.17 10:10:01",
+     "tipo": "DECISOES",
+     "msg": "22 ações avaliadas em 205 ms, 2 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.17 10:10:01",
+     "tipo": "ARMADA",
+     "msg": "TEND3 venda 600 ações, gatilho 16.58, limite 16.56, stop 17.41 em ordem separada depois da execução (envio 78 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.17 10:10:01",
+     "tipo": "ARMADA",
+     "msg": "HAPV3 venda 1800 ações, gatilho 5.48, limite 5.46, stop 5.75 em ordem separada depois da execução (envio 116 ms)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.17 10:05:01",
      "tipo": "DECISOES",
      "msg": "54 ações avaliadas em 9 ms, 0 com sinal (ordens enviadas na mesma passada)",
@@ -1232,30 +1289,6 @@
      "tipo": "ARMADA",
      "msg": "NATU3 venda 1800 ações, gatilho 5.47, limite 5.45, stop 5.74 (envio 322 ms)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.13 10:10:04",
-     "tipo": "ARMADA",
-     "msg": "MBRF3 venda 500 ações, gatilho 18.80, limite 18.78, stop 19.69 (envio 1326 ms)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.13 10:10:02",
-     "tipo": "ARMADA",
-     "msg": "CSNA3 compra 2400 ações, gatilho 4.12, limite 4.14, stop 3.91 (envio 2175 ms)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.13 10:10:00",
-     "tipo": "ARMADA",
-     "msg": "B3SA3 venda 600 ações, gatilho 14.62, limite 14.60, stop 15.28 (envio 487 ms)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.13 10:06:24",
-     "tipo": "CANCELADA",
-     "msg": "CMIN3 -- rompeu o outro lado antes",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1271,7 +1304,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.17 10:09:00",
+    "atualizado": "2026.11.17 10:12:00",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1283,8 +1316,8 @@
     "leiloes": 76,
     "sinais": 16,
     "executadas": 29,
-    "resultado_sombra": -174.58,
-    "resultado_real": -347.12,
+    "resultado_sombra": -197.58,
+    "resultado_real": -531.16,
     "operacoes": [
      {
       "ativo": "ALOS3",
