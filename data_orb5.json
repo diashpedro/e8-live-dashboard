@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-17T12:45:04Z",
+ "gerado": "2026-11-17T12:48:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -14,7 +14,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.17 09:44:39",
+    "atualizado": "2026.11.17 09:47:39",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1271,15 +1271,15 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.17 09:44:38",
+    "atualizado": "2026.11.17 09:47:45",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-abertura",
+    "fase": "pré-leilão (ordens no livro)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "mercado_pct": null,
-    "ordens_enviadas": 0,
+    "mercado_pct": 0.006,
+    "ordens_enviadas": 76,
     "leiloes": 0,
     "sinais": 0,
     "executadas": 0,
@@ -2631,6 +2631,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.17 09:45:15",
+     "tipo": "ORDENS",
+     "msg": "76 de 76 ações com as duas ordens no livro (14856 ms)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.17 09:45:00",
      "tipo": "SINAL",
      "msg": "WIN às 9h45 170845, no fechamento das ações de ontem 170835: mercado +0.01%",
@@ -3102,12 +3108,6 @@
      "quando": "2026.11.16 10:03:31",
      "tipo": "LEILAO",
      "msg": "BBAS3 abriu 15.08 às 10:03 (limites 14.87 / 15.03): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 10:03:01",
-     "tipo": "LEILAO",
-     "msg": "ITSA4 abriu 13.64 às 10:03 (limites 13.52 / 13.64): simulação nada",
      "estrategia": "gaplim"
     }
    ],
