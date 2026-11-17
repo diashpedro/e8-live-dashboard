@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-17T13:15:05Z",
+ "gerado": "2026-11-17T13:18:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 86,
-   "gaplim": 95
+   "orb5": 85,
+   "gaplim": 34
   }
  },
  "estrategias": {
@@ -14,18 +14,18 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.17 10:14:39",
+    "atualizado": "2026.11.17 10:17:39",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "armadas": 2,
+    "armadas": 1,
     "abertas": 0,
     "encerradas": 0,
     "resultado_sombra": 0.0,
-    "resultado_real": 0.0,
+    "resultado_real": -28.58,
     "operacoes": [
      {
       "ativo": "HAPV3",
@@ -33,7 +33,7 @@
       "gap": 0.01103,
       "vrel": 2.51,
       "rank": 0.987,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 1800,
       "ent": 0.0,
       "stop": 0.0,
@@ -56,8 +56,8 @@
       "saida": 0.0,
       "liq": 0.0,
       "motivo": "venda (gap de alta)",
-      "real": false,
-      "ent_real": 0.0
+      "real": true,
+      "ent_real": 16.56
      }
     ]
    },
@@ -811,6 +811,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.17 10:15:21",
+     "tipo": "STOP",
+     "msg": "TEND3 stop 17.39 (limite 17.41) com 600 ações nossas",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.17 10:11:01",
      "tipo": "CANCELADA",
      "msg": "HAPV3 -- rompeu o outro lado antes",
@@ -1283,12 +1289,6 @@
      "tipo": "ARMADA",
      "msg": "YDUQ3 venda 1000 ações, gatilho 9.33, limite 9.31, stop 9.80 (envio 312 ms)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.13 10:10:04",
-     "tipo": "ARMADA",
-     "msg": "NATU3 venda 1800 ações, gatilho 5.47, limite 5.45, stop 5.74 (envio 322 ms)",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1304,7 +1304,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.17 10:15:00",
+    "atualizado": "2026.11.17 10:18:00",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1316,8 +1316,8 @@
     "leiloes": 76,
     "sinais": 16,
     "executadas": 29,
-    "resultado_sombra": -107.58,
-    "resultado_real": -398.13,
+    "resultado_sombra": -10.58,
+    "resultado_real": -153.07,
     "operacoes": [
      {
       "ativo": "ALOS3",
