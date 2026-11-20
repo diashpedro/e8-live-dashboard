@@ -182,8 +182,9 @@ function render() {
   document.getElementById("topo").innerHTML = sel.map(k => { const st = ests[k]?.status || {};
       return `<span class="pilula">${chave(k)} ${nome(k)}: <b>${st.modo === "demo" ? "DEMO" : st.modo === "ensaio" ? "ENSAIO" : "—"}</b> · ${esc(st.fase || "—")} · status ${esc(st.atualizado || "—")}</span>`; }).join("") +
     `<span class="pilula">Call previsto: ${esc((ests.orb5?.status || ests.gaplim?.status || {}).call || "—")}</span><span class="pilula">Painel gerado: ${new Date(D.gerado).toLocaleString("pt-BR")}</span>`;
-  const hb = sa.heartbeat_s || {};
-  document.getElementById("saude").innerHTML = check(sa.terminal ? "ok" : "erro", "Terminal MT5", sa.terminal ? "no ar" : "fora do ar") +
+  const hb = sa.heartbeat_s || {}, m = sa.memoria_mib;   // memória fixa do container; o watchdog reinicia o terminal acima de 2.400 MiB fora do pregão
+  const mem = m ? ` · memória ${m.fixa.toLocaleString("pt-BR")} MiB de ${(m.teto || 3072).toLocaleString("pt-BR")}` : "";
+  document.getElementById("saude").innerHTML = check(!sa.terminal ? "erro" : m && m.fixa >= 2400 ? "aviso" : "ok", "Terminal MT5", (sa.terminal ? "no ar" : "fora do ar") + mem) +
     sel.map(k => { const h = hb[k], st = ests[k]?.status || {};
       return check(h == null ? "aviso" : h <= 180 ? "ok" : h <= 300 ? "aviso" : "erro", `Sinal de vida · ${nome(k)}`, h == null ? "nenhum hoje ainda" : `há ${h} s (o watchdog relança acima de 300 s)`) +
         check(st.parado_dia || st.parado_estrategia ? "erro" : "ok", `Travas · ${nome(k)}`,
