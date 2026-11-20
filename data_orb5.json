@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-20T21:06:03Z",
+ "gerado": "2026-11-20T21:09:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
    "orb5": 85,
-   "gaplim": 85
+   "gaplim": 86
   },
   "memoria_mib": {
-   "fixa": 877,
-   "total": 3068,
+   "fixa": 900,
+   "total": 3063,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.20 18:05:44",
+    "atualizado": "2026.11.20 18:08:59",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "encerrado",
@@ -816,6 +816,18 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.20 18:08:49",
+     "tipo": "LENTO",
+     "msg": "decisões (passo 1) levou 19615 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.20 18:08:28",
+     "tipo": "LENTO",
+     "msg": "decisões (passo 1) levou 78849 ms",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.20 18:05:00",
      "tipo": "FIM",
      "msg": "sem pregão hoje (nenhum 1º candle)",
@@ -1282,18 +1294,6 @@
      "tipo": "AQUECE",
      "msg": "barras de hoje: 26 de 76 ações prontas, leitura em 0 ms",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:02:31",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:02:01",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1309,7 +1309,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.20 18:06:02",
+    "atualizado": "2026.11.20 18:09:02",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "encerrado",
