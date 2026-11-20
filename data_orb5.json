@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-20T17:03:03Z",
+ "gerado": "2026-11-20T17:06:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 135,
-   "gaplim": 135
+   "orb5": 45,
+   "gaplim": 46
   },
   "memoria_mib": {
-   "fixa": 793,
-   "total": 3063,
+   "fixa": 877,
+   "total": 3011,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.20 14:02:50",
+    "atualizado": "2026.11.20 14:05:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
@@ -1309,7 +1309,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.20 14:01:35",
+    "atualizado": "2026.11.20 14:05:47",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -3519,6 +3519,30 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.20 14:03:16",
+     "tipo": "SINAL",
+     "msg": "barra das 9h30 do WIN não chegou até 9h58 -- sem ordens hoje",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.20 14:03:16",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.20 preparado: 76 de 76 ações com histórico, 286 pregões de WIN até 2026.11.19, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.20 14:03:16",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 483, queda R$ -570, dias negativos seguidos 1",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.20 14:03:16",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.20 14:02:17",
      "tipo": "INIT",
      "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
@@ -3972,30 +3996,6 @@
      "quando": "2026.11.16 17:45:08",
      "tipo": "ZERADA",
      "msg": "VIVA3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 17:45:08",
-     "tipo": "ZERADA",
-     "msg": "VALE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 17:45:08",
-     "tipo": "ZERADA",
-     "msg": "UGPA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 17:45:08",
-     "tipo": "ZERADA",
-     "msg": "TOTS3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.16 17:45:08",
-     "tipo": "ZERADA",
-     "msg": "TAEE11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
      "estrategia": "gaplim"
     }
    ],
