@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-20T21:03:03Z",
+ "gerado": "2026-11-20T21:06:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -19,10 +19,10 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.20 18:02:44",
+    "atualizado": "2026.11.20 18:05:44",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "saída",
+    "fase": "encerrado",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -816,6 +816,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.20 18:05:00",
+     "tipo": "FIM",
+     "msg": "sem pregão hoje (nenhum 1º candle)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.20 14:28:58",
      "tipo": "DIA",
      "msg": "pregão 2026.11.20 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
@@ -1288,12 +1294,6 @@
      "tipo": "AQUECE",
      "msg": "barras de hoje: 21 de 76 ações prontas, leitura em 0 ms",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:01:31",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 14 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1309,10 +1309,10 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.20 18:03:02",
+    "atualizado": "2026.11.20 18:06:02",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "saída",
+    "fase": "encerrado",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -3519,6 +3519,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.20 18:05:00",
+     "tipo": "FIM",
+     "msg": "sem pregão hoje (nenhum leilão de abertura visto)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.20 14:30:31",
      "tipo": "SINAL",
      "msg": "barra das 9h30 do WIN não chegou até 9h58 -- sem ordens hoje",
@@ -3990,12 +3996,6 @@
      "quando": "2026.11.17 09:33:37",
      "tipo": "TRAVAS",
      "msg": "acumulado R$ 1052, queda R$ 0, dias negativos seguidos 0",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 09:33:37",
-     "tipo": "CALL",
-     "msg": "call de fechamento previsto às 17:55: saída 17:45",
      "estrategia": "gaplim"
     }
    ],
