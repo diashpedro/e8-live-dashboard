@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-23T13:33:03Z",
+ "gerado": "2026-11-23T13:36:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -19,18 +19,18 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.23 10:32:48",
+    "atualizado": "2026.11.23 10:35:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "armadas": 1,
-    "abertas": 3,
+    "armadas": 0,
+    "abertas": 4,
     "encerradas": 0,
-    "resultado_sombra": 280.95,
-    "resultado_real": 0.89,
+    "resultado_sombra": 258.2,
+    "resultado_real": -47.09,
     "operacoes": [
      {
       "ativo": "EMBJ3",
@@ -70,10 +70,10 @@
       "gap": -0.01993,
       "vrel": 4.15,
       "rank": 0.645,
-      "estado": "aguardando rompimento",
+      "estado": "aberta",
       "lote": 100,
-      "ent": 0.0,
-      "stop": 0.0,
+      "ent": 59.85,
+      "stop": 57.71,
       "saida": 0.0,
       "liq": 0.0,
       "motivo": "compra (gap de baixa)",
@@ -1406,7 +1406,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.23 10:32:51",
+    "atualizado": "2026.11.23 10:35:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1418,8 +1418,8 @@
     "leiloes": 76,
     "sinais": 38,
     "executadas": 51,
-    "resultado_sombra": 371.48,
-    "resultado_real": -385.68,
+    "resultado_sombra": 308.48,
+    "resultado_real": -434.66,
     "operacoes": [
      {
       "ativo": "ABEV3",
