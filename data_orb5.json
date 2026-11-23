@@ -1,9 +1,9 @@
 {
- "gerado": "2026-11-23T13:51:03Z",
+ "gerado": "2026-11-23T13:54:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 75,
+   "orb5": 15,
    "gaplim": 15
   },
   "memoria_mib": {
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.23 10:50:48",
+    "atualizado": "2026.11.23 10:53:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
@@ -29,8 +29,8 @@
     "armadas": 0,
     "abertas": 4,
     "encerradas": 0,
-    "resultado_sombra": 362.2,
-    "resultado_real": -7.1,
+    "resultado_sombra": 280.2,
+    "resultado_real": -41.85,
     "operacoes": [
      {
       "ativo": "EMBJ3",
@@ -77,8 +77,8 @@
       "saida": 0.0,
       "liq": 0.0,
       "motivo": "compra (gap de baixa)",
-      "real": false,
-      "ent_real": 0.0
+      "real": true,
+      "ent_real": 59.87
      },
      {
       "ativo": "SMFT3",
@@ -913,6 +913,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.23 10:52:08",
+     "tipo": "STOP",
+     "msg": "PRIO3 stop 57.73 (limite 57.71) com 100 ações nossas",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.23 10:15:00",
      "tipo": "DECISOES",
      "msg": "2 ações avaliadas em 32 ms, 1 com sinal (ordens enviadas na mesma passada)",
@@ -1385,12 +1391,6 @@
      "tipo": "CANCELADA",
      "msg": "TEND3 -- saída 10 min antes do call (tentativa 1)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.17 12:11:18",
-     "tipo": "LENTO",
-     "msg": "proteção e cancelamento (passo 2) levou 5099 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1406,7 +1406,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.23 10:50:51",
+    "atualizado": "2026.11.23 10:53:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1418,8 +1418,8 @@
     "leiloes": 76,
     "sinais": 38,
     "executadas": 51,
-    "resultado_sombra": 683.48,
-    "resultado_real": 90.17,
+    "resultado_sombra": 469.48,
+    "resultado_real": -217.72,
     "operacoes": [
      {
       "ativo": "ABEV3",
