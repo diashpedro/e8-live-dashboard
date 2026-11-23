@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-23T20:45:03Z",
+ "gerado": "2026-11-23T20:48:05Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 14,
-   "gaplim": 15
+   "orb5": 16,
+   "gaplim": 17
   },
   "memoria_mib": {
    "fixa": 1193,
@@ -19,18 +19,18 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.23 17:44:53",
+    "atualizado": "2026.11.23 17:47:53",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pregão (só saídas)",
+    "fase": "saída",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
     "abertas": 4,
     "encerradas": 0,
-    "resultado_sombra": 868.2,
-    "resultado_real": 426.04,
+    "resultado_sombra": 902.2,
+    "resultado_real": 384.05,
     "operacoes": [
      {
       "ativo": "EMBJ3",
@@ -1406,10 +1406,10 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.23 17:44:51",
+    "atualizado": "2026.11.23 17:47:51",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pregão",
+    "fase": "saída",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -1418,8 +1418,8 @@
     "leiloes": 76,
     "sinais": 38,
     "executadas": 51,
-    "resultado_sombra": 1316.48,
-    "resultado_real": 653.11,
+    "resultado_sombra": 1310.48,
+    "resultado_real": 596.12,
     "operacoes": [
      {
       "ativo": "ABEV3",
@@ -1429,9 +1429,9 @@
       "lim_v": 16.1,
       "abertura": 15.85,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 15.92,
+      "liq": 0.004272,
       "real": true,
       "ent_real": 15.97
      },
@@ -1471,9 +1471,9 @@
       "lim_v": 11.89,
       "abertura": 11.68,
       "lote": 400,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 11.62,
+      "liq": -0.005169,
       "real": true,
       "ent_real": 11.73
      },
@@ -1485,9 +1485,9 @@
       "lim_v": 14.2,
       "abertura": 13.95,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 14.24,
+      "liq": 0.020687,
       "real": true,
       "ent_real": 14.01
      },
@@ -1513,9 +1513,9 @@
       "lim_v": 36.99,
       "abertura": 36.71,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 36.46,
+      "liq": -0.007134,
       "real": true,
       "ent_real": 36.78
      },
@@ -1527,9 +1527,9 @@
       "lim_v": 3.74,
       "abertura": 3.65,
       "lote": 1300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 3.71,
+      "liq": 0.014608,
       "real": true,
       "ent_real": 3.68
      },
@@ -1541,9 +1541,9 @@
       "lim_v": 16.67,
       "abertura": 16.41,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 16.54,
+      "liq": 0.007157,
       "real": true,
       "ent_real": 16.45
      },
@@ -1555,9 +1555,9 @@
       "lim_v": 10.93,
       "abertura": 10.82,
       "lote": 400,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 10.78,
+      "liq": -0.003695,
       "real": true,
       "ent_real": 10.85
      },
@@ -1569,9 +1569,9 @@
       "lim_v": 5.04,
       "abertura": 4.94,
       "lote": 900,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 4.92,
+      "liq": -0.005521,
       "real": true,
       "ent_real": 4.96
      },
@@ -1583,9 +1583,9 @@
       "lim_v": 15.21,
       "abertura": 15.0,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 15.05,
+      "liq": 0.003207,
       "real": true,
       "ent_real": 15.05
      },
@@ -1597,9 +1597,9 @@
       "lim_v": 56.04,
       "abertura": 55.35,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 56.93,
+      "liq": 0.028176,
       "real": true,
       "ent_real": 55.48
      },
@@ -1625,9 +1625,9 @@
       "lim_v": 20.59,
       "abertura": 20.42,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 20.48,
+      "liq": 0.002233,
       "real": true,
       "ent_real": 20.46
      },
@@ -1653,9 +1653,9 @@
       "lim_v": 8.74,
       "abertura": 8.61,
       "lote": 500,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 8.96,
+      "liq": 0.040771,
       "real": true,
       "ent_real": 8.62
      },
@@ -1681,9 +1681,9 @@
       "lim_v": 110.57,
       "abertura": 108.5,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 106.94,
+      "liq": -0.014884,
       "real": true,
       "ent_real": 109.46
      },
@@ -1695,9 +1695,9 @@
       "lim_v": 26.26,
       "abertura": 25.76,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 26.14,
+      "liq": 0.014486,
       "real": true,
       "ent_real": 25.92
      },
@@ -1709,9 +1709,9 @@
       "lim_v": 48.33,
       "abertura": 48.37,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 49.08,
+      "liq": -0.015035,
       "real": true,
       "ent_real": 48.33
      },
@@ -1723,9 +1723,9 @@
       "lim_v": 21.48,
       "abertura": 21.16,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 21.69,
+      "liq": 0.024351,
       "real": true,
       "ent_real": 21.28
      },
@@ -1737,9 +1737,9 @@
       "lim_v": 26.01,
       "abertura": 25.36,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 25.45,
+      "liq": 0.002892,
       "real": true,
       "ent_real": 25.64
      },
@@ -1751,9 +1751,9 @@
       "lim_v": 11.55,
       "abertura": 11.3,
       "lote": 400,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 11.4,
+      "liq": 0.008832,
       "real": true,
       "ent_real": 11.42
      },
@@ -1779,9 +1779,9 @@
       "lim_v": 21.75,
       "abertura": 21.48,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 21.32,
+      "liq": -0.007676,
       "real": true,
       "ent_real": 21.49
      },
@@ -1793,9 +1793,9 @@
       "lim_v": 21.75,
       "abertura": 21.41,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 21.84,
+      "liq": 0.019391,
       "real": true,
       "ent_real": 21.45
      },
@@ -1807,9 +1807,9 @@
       "lim_v": 26.09,
       "abertura": 25.83,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 25.78,
+      "liq": -0.002589,
       "real": true,
       "ent_real": 25.85
      },
@@ -1821,9 +1821,9 @@
       "lim_v": 13.17,
       "abertura": 13.02,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 12.9,
+      "liq": -0.009293,
       "real": true,
       "ent_real": 13.05
      },
@@ -1849,9 +1849,9 @@
       "lim_v": 18.41,
       "abertura": 18.04,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 18.29,
+      "liq": 0.013121,
       "real": true,
       "ent_real": 18.22
      },
@@ -1863,9 +1863,9 @@
       "lim_v": 4.58,
       "abertura": 4.59,
       "lote": 1100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 4.49,
+      "liq": 0.022416,
       "real": true,
       "ent_real": 4.58
      },
@@ -1877,9 +1877,9 @@
       "lim_v": 4.49,
       "abertura": 4.39,
       "lote": 1100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 4.53,
+      "liq": 0.030292,
       "real": true,
       "ent_real": 4.41
      },
@@ -1891,9 +1891,9 @@
       "lim_v": 3.63,
       "abertura": 3.54,
       "lote": 1300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 3.6,
+      "liq": 0.017902,
       "real": true,
       "ent_real": 3.57
      },
@@ -1905,9 +1905,9 @@
       "lim_v": 60.98,
       "abertura": 59.0,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 58.29,
+      "liq": -0.012409,
       "real": true,
       "ent_real": 59.19
      },
@@ -1919,9 +1919,9 @@
       "lim_v": 44.01,
       "abertura": 43.63,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 43.11,
+      "liq": -0.012264,
       "real": true,
       "ent_real": 43.7
      },
@@ -1933,9 +1933,9 @@
       "lim_v": 16.8,
       "abertura": 16.36,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 16.89,
+      "liq": 0.032242,
       "real": true,
       "ent_real": 16.58
      },
@@ -1961,9 +1961,9 @@
       "lim_v": 28.33,
       "abertura": 27.78,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 28.16,
+      "liq": 0.013039,
       "real": true,
       "ent_real": 27.9
      },
@@ -1975,9 +1975,9 @@
       "lim_v": 27.31,
       "abertura": 26.85,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 27.62,
+      "liq": 0.028404,
       "real": true,
       "ent_real": 27.02
      },
@@ -1989,9 +1989,9 @@
       "lim_v": 17.6,
       "abertura": 17.32,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 18.04,
+      "liq": 0.040822,
       "real": true,
       "ent_real": 17.37
      },
@@ -2003,9 +2003,9 @@
       "lim_v": 55.54,
       "abertura": 56.0,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 55.16,
+      "liq": 0.014451,
       "real": true,
       "ent_real": 55.54
      },
@@ -2017,9 +2017,9 @@
       "lim_v": 40.2,
       "abertura": 39.85,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 39.49,
+      "liq": -0.009368,
       "real": true,
       "ent_real": 39.9
      },
@@ -2059,9 +2059,9 @@
       "lim_v": 31.47,
       "abertura": 31.0,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 31.52,
+      "liq": 0.016153,
       "real": true,
       "ent_real": 31.12
      },
@@ -2073,9 +2073,9 @@
       "lim_v": 5.15,
       "abertura": 5.06,
       "lote": 900,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 5.07,
+      "liq": 0.000528,
       "real": true,
       "ent_real": 5.09
      },
@@ -2087,9 +2087,9 @@
       "lim_v": 30.24,
       "abertura": 29.55,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 30.68,
+      "liq": 0.037611,
       "real": true,
       "ent_real": 29.86
      },
@@ -2129,9 +2129,9 @@
       "lim_v": 9.51,
       "abertura": 9.34,
       "lote": 500,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 9.43,
+      "liq": 0.009711,
       "real": true,
       "ent_real": 9.38
      }
@@ -4331,6 +4331,60 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.23 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "WEGE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "VIVA3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "VBBR3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "USIM5: 900 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "UGPA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "TOTS3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "TEND3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "TAEE11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "SUZB3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.23 17:45:03",
      "tipo": "ZERADA",
      "msg": "SMFT3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
@@ -4754,60 +4808,6 @@
      "quando": "2026.11.23 10:06:01",
      "tipo": "LEILAO",
      "msg": "EMBJ3 abriu 108.50 às 10:06 (limites 109.46 / 110.57): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:56",
-     "tipo": "LEILAO",
-     "msg": "PSSA3 abriu 43.63 às 10:03 (limites 43.70 / 44.01): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:54",
-     "tipo": "LEILAO",
-     "msg": "CMIG4 abriu 10.82 às 10:03 (limites 10.85 / 10.93): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:52",
-     "tipo": "LEILAO",
-     "msg": "ENGI11 abriu 48.37 às 10:03 (limites 47.59 / 48.33): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:48",
-     "tipo": "LEILAO",
-     "msg": "SANB11 abriu 27.78 às 10:03 (limites 27.90 / 28.33): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:48",
-     "tipo": "LEILAO",
-     "msg": "CYRE3 abriu 18.20 às 10:03 (limites 18.06 / 18.34): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:47",
-     "tipo": "LEILAO",
-     "msg": "TOTS3 abriu 30.74 às 10:03 (limites 30.59 / 30.95): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:45",
-     "tipo": "LEILAO",
-     "msg": "CSNA3 abriu 3.39 às 10:03 (limites 3.37 / 3.45): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:44",
-     "tipo": "LEILAO",
-     "msg": "UGPA3 abriu 31.00 às 10:03 (limites 31.12 / 31.47): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:03:43",
-     "tipo": "LEILAO",
-     "msg": "ITSA4 abriu 13.02 às 10:03 (limites 13.05 / 13.17): simulação compra",
      "estrategia": "gaplim"
     }
    ],
