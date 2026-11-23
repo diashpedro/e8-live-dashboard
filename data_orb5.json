@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-23T12:30:05Z",
+ "gerado": "2026-11-23T12:33:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 65,
-   "gaplim": 66
+   "orb5": 28,
+   "gaplim": 54
   },
   "memoria_mib": {
-   "fixa": 552,
-   "total": 2850,
+   "fixa": 882,
+   "total": 3064,
    "teto": 3072
   }
  },
@@ -19,11 +19,11 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.23 09:26:00",
+    "atualizado": "2026.11.23 09:32:35",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "antes da preparação",
-    "call": "16:55",
+    "fase": "pré-abertura",
+    "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
@@ -816,6 +816,30 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.23 09:32:33",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.23 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.23 09:32:33",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 3255, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.23 09:32:33",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.23 09:32:33",
+     "tipo": "FECHAMENTO",
+     "msg": "57 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.23 00:30:58",
      "tipo": "INIT",
      "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática BLOQUEADA",
@@ -1270,30 +1294,6 @@
      "tipo": "CANCELADA",
      "msg": "BEEF3 -- rompeu o outro lado antes",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:10:01",
-     "tipo": "DECISOES",
-     "msg": "18 ações avaliadas em 19 ms, 1 com sinal (ordens enviadas na mesma passada)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:10:01",
-     "tipo": "ARMADA",
-     "msg": "CSAN3 venda 3200 ações, gatilho 3.11, limite 3.09, stop 3.27 em ordem separada depois da execução (envio 18 ms)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:05:01",
-     "tipo": "DECISOES",
-     "msg": "58 ações avaliadas em 30 ms, 1 com sinal (ordens enviadas na mesma passada)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:05:01",
-     "tipo": "ARMADA",
-     "msg": "BEEF3 venda 2900 ações, gatilho 3.42, limite 3.40, stop 3.59 em ordem separada depois da execução (envio 26 ms)",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1309,11 +1309,11 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.23 09:25:59",
+    "atualizado": "2026.11.23 09:32:49",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "antes da preparação",
-    "call": "16:55",
+    "fase": "pré-abertura",
+    "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "mercado_pct": null,
@@ -3519,6 +3519,24 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.23 09:32:49",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.23 preparado: 76 de 76 ações com histórico, 285 pregões de WIN até 2026.11.19, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 09:32:49",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 483, queda R$ -570, dias negativos seguidos 1",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.23 09:32:49",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.23 00:30:58",
      "tipo": "INIT",
      "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática BLOQUEADA",
@@ -3978,24 +3996,6 @@
      "quando": "2026.11.17 10:01:23",
      "tipo": "LEILAO",
      "msg": "UGPA3 abriu 32.28 às 10:00 (limites 32.10 / 32.46): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 10:01:13",
-     "tipo": "LEILAO",
-     "msg": "SMFT3 abriu 17.85 às 10:01 (limites 17.64 / 17.84): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 10:00:34",
-     "tipo": "LEILAO",
-     "msg": "CSMG3 abriu 54.85 às 10:00 (limites 54.39 / 54.96): simulação nada",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 09:45:15",
-     "tipo": "ORDENS",
-     "msg": "76 de 76 ações com as duas ordens no livro (14856 ms)",
      "estrategia": "gaplim"
     }
    ],
