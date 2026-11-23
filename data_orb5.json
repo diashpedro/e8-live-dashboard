@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-20T21:57:03Z",
+ "gerado": "2026-11-23T12:00:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 24,
-   "gaplim": 25
+   "orb5": 63,
+   "gaplim": 64
   },
   "memoria_mib": {
-   "fixa": 900,
-   "total": 3063,
+   "fixa": 528,
+   "total": 2795,
    "teto": 3072
   }
  },
@@ -19,11 +19,11 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.20 18:56:59",
+    "atualizado": "2026.11.23 08:56:00",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "encerrado",
-    "call": "17:55",
+    "fase": "antes da preparação",
+    "call": "16:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
@@ -816,6 +816,30 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.23 00:30:58",
+     "tipo": "INIT",
+     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática BLOQUEADA",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.22 00:30:53",
+     "tipo": "INIT",
+     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.21 00:31:00",
+     "tipo": "INIT",
+     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.20 22:47:05",
+     "tipo": "LENTO",
+     "msg": "decisões (passo 1) levou 16635 ms",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.20 18:08:49",
      "tipo": "LENTO",
      "msg": "decisões (passo 1) levou 19615 ms",
@@ -1270,30 +1294,6 @@
      "tipo": "ARMADA",
      "msg": "BEEF3 venda 2900 ações, gatilho 3.42, limite 3.40, stop 3.59 em ordem separada depois da execução (envio 26 ms)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:04:31",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 58 de 76 ações prontas, leitura em 2 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:04:01",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 58 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:03:31",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 27 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.16 10:03:01",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 26 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1309,11 +1309,11 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.20 18:57:02",
+    "atualizado": "2026.11.23 08:55:59",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "encerrado",
-    "call": "17:55",
+    "fase": "antes da preparação",
+    "call": "16:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "mercado_pct": null,
@@ -3519,6 +3519,24 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.23 00:30:58",
+     "tipo": "INIT",
+     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática BLOQUEADA",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.22 00:30:53",
+     "tipo": "INIT",
+     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.21 00:31:00",
+     "tipo": "INIT",
+     "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.20 18:05:00",
      "tipo": "FIM",
      "msg": "sem pregão hoje (nenhum leilão de abertura visto)",
@@ -3978,24 +3996,6 @@
      "quando": "2026.11.17 09:45:15",
      "tipo": "ORDENS",
      "msg": "76 de 76 ações com as duas ordens no livro (14856 ms)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 09:45:00",
-     "tipo": "SINAL",
-     "msg": "WIN às 9h45 170845, no fechamento das ações de ontem 170835: mercado +0.01%",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 09:33:37",
-     "tipo": "DIA",
-     "msg": "pregão 2026.11.17 preparado: 76 de 76 ações com histórico, 286 pregões de WIN até 2026.11.16, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.17 09:33:37",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 1052, queda R$ 0, dias negativos seguidos 0",
      "estrategia": "gaplim"
     }
    ],
