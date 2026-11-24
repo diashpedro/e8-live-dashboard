@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-24T13:09:04Z",
+ "gerado": "2026-11-24T13:12:05Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
    "orb5": 77,
-   "gaplim": 65
+   "gaplim": 66
   },
   "memoria_mib": {
-   "fixa": 1143,
-   "total": 3063,
+   "fixa": 1144,
+   "total": 3064,
    "teto": 3072
   }
  },
@@ -19,19 +19,116 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.24 10:08:47",
+    "atualizado": "2026.11.24 10:11:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "armadas": 0,
+    "armadas": 6,
     "abertas": 0,
     "encerradas": 0,
     "resultado_sombra": 0.0,
-    "resultado_real": 0.0,
-    "operacoes": []
+    "resultado_real": -4.1,
+    "operacoes": [
+     {
+      "ativo": "ASAI3",
+      "lado": -1,
+      "gap": 0.00962,
+      "vrel": 2.81,
+      "rank": 0.75,
+      "estado": "aguardando rompimento",
+      "lote": 1000,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     },
+     {
+      "ativo": "AZZA3",
+      "lado": -1,
+      "gap": 0.02058,
+      "vrel": 2.34,
+      "rank": 0.934,
+      "estado": "aguardando rompimento",
+      "lote": 600,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": true,
+      "ent_real": 14.84
+     },
+     {
+      "ativo": "CSAN3",
+      "lado": -1,
+      "gap": 0.01911,
+      "vrel": 2.12,
+      "rank": 0.961,
+      "estado": "aguardando rompimento",
+      "lote": 3100,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     },
+     {
+      "ativo": "MGLU3",
+      "lado": -1,
+      "gap": 0.03226,
+      "vrel": 2.4,
+      "rank": 1.0,
+      "estado": "aguardando rompimento",
+      "lote": 1000,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     },
+     {
+      "ativo": "RADL3",
+      "lado": -1,
+      "gap": 0.00953,
+      "vrel": 2.36,
+      "rank": 0.724,
+      "estado": "aguardando rompimento",
+      "lote": 600,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     },
+     {
+      "ativo": "SMFT3",
+      "lado": -1,
+      "gap": 0.01393,
+      "vrel": 2.22,
+      "rank": 0.803,
+      "estado": "aguardando rompimento",
+      "lote": 500,
+      "ent": 0.0,
+      "stop": 0.0,
+      "saida": 0.0,
+      "liq": 0.0,
+      "motivo": "venda (gap de alta)",
+      "real": false,
+      "ent_real": 0.0
+     }
+    ]
    },
    "resumo": {
     "dias": 14,
@@ -924,6 +1021,78 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.24 10:11:19",
+     "tipo": "CANCELADA",
+     "msg": "SMFT3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:11:13",
+     "tipo": "STOP",
+     "msg": "AZZA3 stop 15.58 (limite 15.60) com 600 ações nossas",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:25",
+     "tipo": "CANCELADA",
+     "msg": "RADL3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:25",
+     "tipo": "CANCELADA",
+     "msg": "ASAI3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:14",
+     "tipo": "DECISOES",
+     "msg": "23 ações avaliadas em 13675 ms, 6 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:14",
+     "tipo": "LENTO",
+     "msg": "decisões (passo 1) levou 13674 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:14",
+     "tipo": "ARMADA",
+     "msg": "SMFT3 venda 500 ações, gatilho 18.14, limite 18.12, stop 19.03 em ordem separada depois da execução (envio 32 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:14",
+     "tipo": "ARMADA",
+     "msg": "RADL3 venda 600 ações, gatilho 14.78, limite 14.76, stop 15.43 em ordem separada depois da execução (envio 194 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:14",
+     "tipo": "ARMADA",
+     "msg": "MGLU3 venda 1000 ações, gatilho 9.20, limite 9.18, stop 9.66 em ordem separada depois da execução (envio 501 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:14",
+     "tipo": "ARMADA",
+     "msg": "CSAN3 venda 3100 ações, gatilho 3.19, limite 3.17, stop 3.35 em ordem separada depois da execução (envio 2258 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:11",
+     "tipo": "ARMADA",
+     "msg": "AZZA3 venda 600 ações, gatilho 14.86, limite 14.84, stop 15.60 em ordem separada depois da execução (envio 7015 ms)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:10:04",
+     "tipo": "ARMADA",
+     "msg": "ASAI3 venda 1000 ações, gatilho 9.43, limite 9.41, stop 9.81 em ordem separada depois da execução (envio 3660 ms)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.24 10:05:01",
      "tipo": "DECISOES",
      "msg": "53 ações avaliadas em 1 ms, 0 com sinal (ordens enviadas na mesma passada)",
@@ -1330,78 +1499,6 @@
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 11058 ms",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 09:32:33",
-     "tipo": "DIA",
-     "msg": "pregão 2026.11.23 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 09:32:33",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 3255, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 09:32:33",
-     "tipo": "CALL",
-     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 09:32:33",
-     "tipo": "FECHAMENTO",
-     "msg": "57 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 00:30:58",
-     "tipo": "INIT",
-     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática BLOQUEADA",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.22 00:30:53",
-     "tipo": "INIT",
-     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.21 00:31:00",
-     "tipo": "INIT",
-     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 22:47:05",
-     "tipo": "LENTO",
-     "msg": "decisões (passo 1) levou 16635 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 18:08:49",
-     "tipo": "LENTO",
-     "msg": "decisões (passo 1) levou 19615 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 18:08:28",
-     "tipo": "LENTO",
-     "msg": "decisões (passo 1) levou 78849 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 18:05:00",
-     "tipo": "FIM",
-     "msg": "sem pregão hoje (nenhum 1º candle)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:28:58",
-     "tipo": "DIA",
-     "msg": "pregão 2026.11.20 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1417,7 +1514,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.24 10:08:51",
+    "atualizado": "2026.11.24 10:11:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1429,8 +1526,8 @@
     "leiloes": 76,
     "sinais": 17,
     "executadas": 35,
-    "resultado_sombra": -5.19,
-    "resultado_real": -434.14,
+    "resultado_sombra": -21.19,
+    "resultado_real": -594.18,
     "operacoes": [
      {
       "ativo": "AZZA3",
