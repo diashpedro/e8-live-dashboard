@@ -1,13 +1,13 @@
 {
- "gerado": "2026-11-24T13:21:03Z",
+ "gerado": "2026-11-24T13:24:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 15,
-   "gaplim": 64
+   "orb5": 76,
+   "gaplim": 125
   },
   "memoria_mib": {
-   "fixa": 1145,
+   "fixa": 1146,
    "total": 3066,
    "teto": 3072
   }
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.24 10:20:48",
+    "atualizado": "2026.11.24 10:23:52",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
@@ -29,8 +29,8 @@
     "armadas": 1,
     "abertas": 2,
     "encerradas": 0,
-    "resultado_sombra": -86.33,
-    "resultado_real": -118.34,
+    "resultado_sombra": 1.67,
+    "resultado_real": -30.32,
     "operacoes": [
      {
       "ativo": "ASAI3",
@@ -1021,6 +1021,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.24 10:23:52",
+     "tipo": "CANCELADA",
+     "msg": "CSAN3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.24 10:13:20",
      "tipo": "STOP",
      "msg": "MGLU3 stop 9.64 (limite 9.66) com 1000 ações nossas",
@@ -1493,12 +1499,6 @@
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 09:55:34",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 2628 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1514,7 +1514,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.24 10:20:51",
+    "atualizado": "2026.11.24 10:23:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1526,8 +1526,8 @@
     "leiloes": 76,
     "sinais": 17,
     "executadas": 35,
-    "resultado_sombra": -220.19,
-    "resultado_real": -933.15,
+    "resultado_sombra": -274.19,
+    "resultado_real": -1222.21,
     "operacoes": [
      {
       "ativo": "AZZA3",
