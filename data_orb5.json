@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-24T12:33:06Z",
+ "gerado": "2026-11-24T12:36:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 26,
-   "gaplim": 68
+   "orb5": 24,
+   "gaplim": 65
   },
   "memoria_mib": {
-   "fixa": 786,
-   "total": 2980,
+   "fixa": 850,
+   "total": 3064,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.24 09:32:40",
+    "atualizado": "2026.11.24 09:35:40",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1417,11 +1417,11 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.24 09:25:55",
+    "atualizado": "2026.11.24 09:35:51",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "antes da preparação",
-    "call": "16:55",
+    "fase": "pré-abertura",
+    "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "mercado_pct": null,
@@ -5117,6 +5117,24 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.24 09:33:51",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.24 preparado: 76 de 76 ações com histórico, 285 pregões de WIN até 2026.11.23, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.24 09:33:51",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 1793, queda R$ -570, dias negativos seguidos 0",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.24 09:33:51",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.24 00:30:54",
      "tipo": "INIT",
      "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
@@ -5576,24 +5594,6 @@
      "quando": "2026.11.23 10:08:01",
      "tipo": "LEILAO",
      "msg": "VBBR3 abriu 29.55 às 10:08 (limites 29.86 / 30.24): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:08:01",
-     "tipo": "LEILAO",
-     "msg": "AURE3 abriu 11.68 às 10:08 (limites 11.73 / 11.89): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:07:01",
-     "tipo": "LEILAO",
-     "msg": "YDUQ3 abriu 9.34 às 10:07 (limites 9.38 / 9.51): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:07:01",
-     "tipo": "LEILAO",
-     "msg": "TAEE11 abriu 39.85 às 10:07 (limites 39.90 / 40.20): simulação compra",
      "estrategia": "gaplim"
     }
    ],
