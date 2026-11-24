@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-24T12:30:04Z",
+ "gerado": "2026-11-24T12:33:06Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 68,
-   "gaplim": 69
+   "orb5": 26,
+   "gaplim": 68
   },
   "memoria_mib": {
-   "fixa": 525,
-   "total": 2343,
+   "fixa": 786,
+   "total": 2980,
    "teto": 3072
   }
  },
@@ -19,11 +19,11 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.24 09:25:56",
+    "atualizado": "2026.11.24 09:32:40",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "antes da preparação",
-    "call": "16:55",
+    "fase": "pré-abertura",
+    "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
@@ -924,6 +924,24 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.24 09:32:38",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.24 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 09:32:38",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ 3639, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 09:32:38",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.24 00:30:54",
      "tipo": "INIT",
      "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
@@ -1383,24 +1401,6 @@
      "quando": "2026.11.20 14:02:41",
      "tipo": "DIA",
      "msg": "pregão 2026.11.20 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:02:41",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 3255, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:02:41",
-     "tipo": "CALL",
-     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:02:41",
-     "tipo": "FECHAMENTO",
-     "msg": "64 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)",
      "estrategia": "orb5"
     }
    ],
