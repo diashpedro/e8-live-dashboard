@@ -1,13 +1,13 @@
 {
- "gerado": "2026-11-24T13:15:05Z",
+ "gerado": "2026-11-24T13:18:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 78,
-   "gaplim": 67
+   "orb5": 16,
+   "gaplim": 65
   },
   "memoria_mib": {
-   "fixa": 1144,
+   "fixa": 1145,
    "total": 3065,
    "teto": 3072
   }
@@ -19,18 +19,18 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.24 10:14:48",
+    "atualizado": "2026.11.24 10:17:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "armadas": 6,
-    "abertas": 0,
+    "armadas": 1,
+    "abertas": 2,
     "encerradas": 0,
-    "resultado_sombra": 0.0,
-    "resultado_real": -66.33,
+    "resultado_sombra": -96.33,
+    "resultado_real": -128.35,
     "operacoes": [
      {
       "ativo": "ASAI3",
@@ -38,7 +38,7 @@
       "gap": 0.00962,
       "vrel": 2.81,
       "rank": 0.75,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 1000,
       "ent": 0.0,
       "stop": 0.0,
@@ -54,10 +54,10 @@
       "gap": 0.02058,
       "vrel": 2.34,
       "rank": 0.934,
-      "estado": "aguardando rompimento",
+      "estado": "aberta",
       "lote": 600,
-      "ent": 0.0,
-      "stop": 0.0,
+      "ent": 14.86,
+      "stop": 15.6,
       "saida": 0.0,
       "liq": 0.0,
       "motivo": "venda (gap de alta)",
@@ -86,10 +86,10 @@
       "gap": 0.03226,
       "vrel": 2.4,
       "rank": 1.0,
-      "estado": "aguardando rompimento",
+      "estado": "aberta",
       "lote": 1000,
-      "ent": 0.0,
-      "stop": 0.0,
+      "ent": 9.2,
+      "stop": 9.66,
       "saida": 0.0,
       "liq": 0.0,
       "motivo": "venda (gap de alta)",
@@ -102,7 +102,7 @@
       "gap": 0.00953,
       "vrel": 2.36,
       "rank": 0.724,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 600,
       "ent": 0.0,
       "stop": 0.0,
@@ -118,7 +118,7 @@
       "gap": 0.01393,
       "vrel": 2.22,
       "rank": 0.803,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 500,
       "ent": 0.0,
       "stop": 0.0,
@@ -1514,7 +1514,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.24 10:14:51",
+    "atualizado": "2026.11.24 10:17:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1526,8 +1526,8 @@
     "leiloes": 76,
     "sinais": 17,
     "executadas": 35,
-    "resultado_sombra": -81.19,
-    "resultado_real": -542.09,
+    "resultado_sombra": -150.19,
+    "resultado_real": -833.13,
     "operacoes": [
      {
       "ativo": "AZZA3",
