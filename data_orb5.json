@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-24T13:00:05Z",
+ "gerado": "2026-11-24T13:03:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 84,
-   "gaplim": 66
+   "orb5": 77,
+   "gaplim": 65
   },
   "memoria_mib": {
-   "fixa": 876,
-   "total": 3072,
+   "fixa": 1144,
+   "total": 3065,
    "teto": 3072
   }
  },
@@ -19,10 +19,10 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.24 09:59:41",
+    "atualizado": "2026.11.24 10:02:47",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-abertura",
+    "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -924,6 +924,42 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.24 10:03:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 19 de 76 ações prontas, leitura em 1 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:02:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 11 de 76 ações prontas, leitura em 8 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:02:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 8 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:01:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 6 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:01:09",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 6 de 76 ações prontas, leitura em 7710 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.24 10:00:45",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 13683 ms",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.24 10:00:01",
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
@@ -1366,42 +1402,6 @@
      "tipo": "INIT",
      "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:25:09",
-     "tipo": "LENTO",
-     "msg": "decisões (passo 1) levou 8624 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:24:16",
-     "tipo": "DIA",
-     "msg": "pregão 2026.11.20 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:24:16",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 3255, queda R$ -352, dias negativos seguidos 0, escorregamento: menos de 20 pregões demo",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:24:16",
-     "tipo": "CALL",
-     "msg": "call de fechamento previsto às 17:55: saída 17:45, última entrada 17:25",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:24:16",
-     "tipo": "FECHAMENTO",
-     "msg": "64 ações: o pregão anterior ficou fora da regra (abertura depois das 10h10)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.20 14:23:43",
-     "tipo": "INIT",
-     "msg": "EA_ORB5 iniciada: modo DEMO, 76 ações, magic 885005, negociação automática liberada",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1417,21 +1417,92 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.24 09:59:51",
+    "atualizado": "2026.11.24 10:02:51",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-leilão (ordens no livro)",
+    "fase": "pregão",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "mercado_pct": 0.494,
     "ordens_enviadas": 76,
-    "leiloes": 0,
-    "sinais": 0,
-    "executadas": 0,
-    "resultado_sombra": 0.0,
-    "resultado_real": 0.0,
-    "operacoes": []
+    "leiloes": 11,
+    "sinais": 1,
+    "executadas": 5,
+    "resultado_sombra": 24.57,
+    "resultado_real": 10.52,
+    "operacoes": [
+     {
+      "ativo": "ENGI11",
+      "lado": 0,
+      "ref": 49.32,
+      "lim_c": 48.92,
+      "lim_v": 49.71,
+      "abertura": 49.0,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 49.71
+     },
+     {
+      "ativo": "PETR3",
+      "lado": 0,
+      "ref": 47.15,
+      "lim_c": 46.67,
+      "lim_v": 47.63,
+      "abertura": 46.9,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 46.67
+     },
+     {
+      "ativo": "TIMS3",
+      "lado": 0,
+      "ref": 21.97,
+      "lim_c": 21.9,
+      "lim_v": 22.05,
+      "abertura": 21.91,
+      "lote": 200,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 21.9
+     },
+     {
+      "ativo": "TOTS3",
+      "lado": 1,
+      "ref": 31.35,
+      "lim_c": 31.17,
+      "lim_v": 31.54,
+      "abertura": 31.11,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 31.17
+     },
+     {
+      "ativo": "VIVT3",
+      "lado": 0,
+      "ref": 35.04,
+      "lim_c": 34.9,
+      "lim_v": 35.19,
+      "abertura": 35.19,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 35.19
+     }
+    ]
    },
    "resumo": {
     "dias": 3,
@@ -5117,6 +5188,36 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.24 10:02:05",
+     "tipo": "LEILAO",
+     "msg": "VIVT3 abriu 35.19 às 10:02 (limites 34.90 / 35.19): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.24 10:02:04",
+     "tipo": "LEILAO",
+     "msg": "PETR3 abriu 46.90 às 10:02 (limites 46.67 / 47.63): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.24 10:01:07",
+     "tipo": "LEILAO",
+     "msg": "ENGI11 abriu 49.00 às 10:01 (limites 48.92 / 49.71): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.24 10:01:07",
+     "tipo": "LEILAO",
+     "msg": "TOTS3 abriu 31.11 às 10:01 (limites 31.17 / 31.54): simulação compra",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.24 10:01:07",
+     "tipo": "LEILAO",
+     "msg": "TIMS3 abriu 21.91 às 10:01 (limites 21.90 / 22.05): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.24 09:45:20",
      "tipo": "ORDENS",
      "msg": "76 de 76 ações com as duas ordens no livro (18853 ms)",
@@ -5564,36 +5665,6 @@
      "quando": "2026.11.23 10:09:22",
      "tipo": "LEILAO",
      "msg": "GGBR4 abriu 25.36 às 10:09 (limites 25.64 / 26.01): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:09:22",
-     "tipo": "LEILAO",
-     "msg": "FLRY3 abriu 21.16 às 10:09 (limites 21.28 / 21.48): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:09:22",
-     "tipo": "LEILAO",
-     "msg": "ENEV3 abriu 25.76 às 10:09 (limites 25.92 / 26.26): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:09:22",
-     "tipo": "LEILAO",
-     "msg": "CMIN3 abriu 4.94 às 10:09 (limites 4.96 / 5.04): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:09:22",
-     "tipo": "LEILAO",
-     "msg": "BEEF3 abriu 3.65 às 10:09 (limites 3.68 / 3.74): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.23 10:09:22",
-     "tipo": "LEILAO",
-     "msg": "B3SA3 abriu 13.95 às 10:09 (limites 14.01 / 14.20): simulação compra",
      "estrategia": "gaplim"
     }
    ],
