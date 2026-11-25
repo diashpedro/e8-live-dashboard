@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-25T12:42:03Z",
+ "gerado": "2026-11-25T12:45:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 76,
-   "gaplim": 61
+   "orb5": 77,
+   "gaplim": 62
   },
   "memoria_mib": {
-   "fixa": 846,
-   "total": 3064,
+   "fixa": 848,
+   "total": 3063,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.25 09:41:47",
+    "atualizado": "2026.11.25 09:44:47",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1474,7 +1474,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.25 09:41:41",
+    "atualizado": "2026.11.25 09:44:41",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -6199,6 +6199,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.25 09:45:02",
+     "tipo": "SINAL",
+     "msg": "WIN às 9h45 165480, no fechamento das ações de ontem 165470: mercado +0.01%",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.25 09:34:40",
      "tipo": "DIA",
      "msg": "pregão 2026.11.25 preparado: 76 de 76 ações com histórico, 285 pregões de WIN até 2026.11.24, modo DEMO (ordens), saída 10 min antes do call",
@@ -6670,12 +6676,6 @@
      "quando": "2026.11.24 09:33:51",
      "tipo": "DIA",
      "msg": "pregão 2026.11.24 preparado: 76 de 76 ações com histórico, 285 pregões de WIN até 2026.11.23, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 09:33:51",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 1793, queda R$ -570, dias negativos seguidos 0",
      "estrategia": "gaplim"
     }
    ],
