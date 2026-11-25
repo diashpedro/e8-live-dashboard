@@ -1,13 +1,13 @@
 {
- "gerado": "2026-11-25T12:57:03Z",
+ "gerado": "2026-11-25T13:00:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 75,
-   "gaplim": 61
+   "orb5": 76,
+   "gaplim": 62
   },
   "memoria_mib": {
-   "fixa": 860,
+   "fixa": 865,
    "total": 3064,
    "teto": 3072
   }
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.25 09:56:48",
+    "atualizado": "2026.11.25 09:59:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -981,6 +981,42 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.25 10:00:02",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.25 09:59:32",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.25 09:59:02",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.25 09:58:32",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.25 09:58:02",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.25 09:57:32",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.25 09:57:02",
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
@@ -1423,42 +1459,6 @@
      "tipo": "STOP",
      "msg": "VAMO3 stop 2.38 (limite 2.36) com 4000 ações nossas",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 10:05:01",
-     "tipo": "DECISOES",
-     "msg": "37 ações avaliadas em 566 ms, 1 com sinal (ordens enviadas na mesma passada)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 10:05:01",
-     "tipo": "ARMADA",
-     "msg": "VAMO3 compra 4000 ações, gatilho 2.48, limite 2.50, stop 2.36 em ordem separada depois da execução (envio 559 ms)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 10:04:32",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 37 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 10:04:02",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 37 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 10:03:32",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 2 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 10:03:02",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1474,7 +1474,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.25 09:56:46",
+    "atualizado": "2026.11.25 09:59:46",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-leilão (ordens no livro)",
