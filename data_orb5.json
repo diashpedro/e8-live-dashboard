@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-25T20:48:04Z",
+ "gerado": "2026-11-25T20:51:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.25 17:47:48",
+    "atualizado": "2026.11.25 17:50:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "saída",
@@ -27,9 +27,9 @@
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
-    "abertas": 1,
-    "encerradas": 0,
-    "resultado_sombra": 120.56,
+    "abertas": 0,
+    "encerradas": 1,
+    "resultado_sombra": 133.06,
     "resultado_real": 95.61,
     "operacoes": [
      {
@@ -38,13 +38,13 @@
       "gap": 0.03457,
       "vrel": 7.13,
       "rank": 0.974,
-      "estado": "aberta",
+      "estado": "encerrada",
       "lote": 2500,
       "ent": 3.86,
       "stop": 4.05,
-      "saida": 0.0,
-      "liq": 0.0,
-      "motivo": "venda (gap de alta)",
+      "saida": 3.8,
+      "liq": 0.013789,
+      "motivo": "horário",
       "real": true,
       "ent_real": 3.84
      }
@@ -1491,7 +1491,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.25 17:47:42",
+    "atualizado": "2026.11.25 17:50:42",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "saída",
