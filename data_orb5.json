@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-25T20:42:06Z",
+ "gerado": "2026-11-25T20:45:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 78,
-   "gaplim": 54
+   "orb5": 76,
+   "gaplim": 52
   },
   "memoria_mib": {
    "fixa": 1140,
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.25 17:41:48",
+    "atualizado": "2026.11.25 17:44:48",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (só saídas)",
@@ -998,6 +998,18 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BEEF3: 2500 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "CANCELADA",
+     "msg": "BEEF3 -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.25 11:16:56",
      "tipo": "STOP",
      "msg": "BEEF3 stop 4.03 (limite 4.05) com 2500 ações nossas",
@@ -1464,18 +1476,6 @@
      "tipo": "CANCELADA",
      "msg": "NATU3 -- saída 10 min antes do call (tentativa 1)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 17:45:01",
-     "tipo": "CANCELADA",
-     "msg": "PRIO3 -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.23 15:01:21",
-     "tipo": "LENTO",
-     "msg": "proteção e cancelamento (passo 2) levou 5230 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1491,7 +1491,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.25 17:41:42",
+    "atualizado": "2026.11.25 17:44:42",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1503,8 +1503,8 @@
     "leiloes": 76,
     "sinais": 19,
     "executadas": 35,
-    "resultado_sombra": -677.07,
-    "resultado_real": -2501.61,
+    "resultado_sombra": -703.07,
+    "resultado_real": -2576.63,
     "operacoes": [
      {
       "ativo": "ABEV3",
@@ -6707,6 +6707,144 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.25 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "RAIL3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "PSSA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "NATU3: 1100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "MULT3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "MGLU3: 500 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "MBRF3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "ISAE4: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "HAPV3: 800 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "EQTL3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:02",
+     "tipo": "ZERADA",
+     "msg": "EMBJ3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "EGIE3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "CURY3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "CSAN3: 1500 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "CMIG4: 400 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BRAV3: 400 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BPAC11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BEEF3: 1300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BBSE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BBDC4: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BBDC3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "BBAS3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "ASAI3: 500 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:01",
+     "tipo": "ZERADA",
+     "msg": "ABEV3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.25 10:07:32",
      "tipo": "LEILOES",
      "msg": "leilões encerrados: simulação 1 compras e 18 vendas",
@@ -7046,144 +7184,6 @@
      "quando": "2026.11.24 17:45:10",
      "tipo": "ZERADA",
      "msg": "PETR4: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "PETR3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "NATU3: 1000 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "MRVE3: 1100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:09",
-     "tipo": "ZERADA",
-     "msg": "MOTV3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:09",
-     "tipo": "ZERADA",
-     "msg": "MGLU3: 500 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:09",
-     "tipo": "ZERADA",
-     "msg": "ITSA4: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:09",
-     "tipo": "ZERADA",
-     "msg": "HAPV3: 800 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:09",
-     "tipo": "ZERADA",
-     "msg": "EQTL3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:08",
-     "tipo": "ZERADA",
-     "msg": "ENGI11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:07",
-     "tipo": "ZERADA",
-     "msg": "EMBJ3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:06",
-     "tipo": "ZERADA",
-     "msg": "DIRR3: 500 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:05",
-     "tipo": "ZERADA",
-     "msg": "CXSE3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:05",
-     "tipo": "ZERADA",
-     "msg": "CSAN3: 1500 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:04",
-     "tipo": "ZERADA",
-     "msg": "CPLE3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:02",
-     "tipo": "ZERADA",
-     "msg": "CPFE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:02",
-     "tipo": "ZERADA",
-     "msg": "CMIG4: 400 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:02",
-     "tipo": "ZERADA",
-     "msg": "CEAB3: 600 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:02",
-     "tipo": "ZERADA",
-     "msg": "BPAC11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:01",
-     "tipo": "ZERADA",
-     "msg": "BEEF3: 1300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:01",
-     "tipo": "ZERADA",
-     "msg": "B3SA3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:01",
-     "tipo": "ZERADA",
-     "msg": "AZZA3: 300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 10:07:39",
-     "tipo": "LEILOES",
-     "msg": "leilões encerrados: simulação 4 compras e 13 vendas",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 10:07:39",
-     "tipo": "LEILAO",
-     "msg": "VAMO3 abriu 2.65 às 10:07 (limites 2.59 / 2.66): simulação nada",
      "estrategia": "gaplim"
     }
    ],
