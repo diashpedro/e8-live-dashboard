@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-25T20:45:03Z",
+ "gerado": "2026-11-25T20:48:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -7,7 +7,7 @@
    "gaplim": 52
   },
   "memoria_mib": {
-   "fixa": 1140,
+   "fixa": 1141,
    "total": 3013,
    "teto": 3072
   }
@@ -19,17 +19,17 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.25 17:44:48",
+    "atualizado": "2026.11.25 17:47:48",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pregão (só saídas)",
+    "fase": "saída",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "armadas": 0,
     "abertas": 1,
     "encerradas": 0,
-    "resultado_sombra": 145.56,
+    "resultado_sombra": 120.56,
     "resultado_real": 95.61,
     "operacoes": [
      {
@@ -1491,10 +1491,10 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.25 17:44:42",
+    "atualizado": "2026.11.25 17:47:42",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pregão",
+    "fase": "saída",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
@@ -1503,8 +1503,8 @@
     "leiloes": 76,
     "sinais": 19,
     "executadas": 35,
-    "resultado_sombra": -703.07,
-    "resultado_real": -2576.63,
+    "resultado_sombra": -737.07,
+    "resultado_real": -2637.64,
     "operacoes": [
      {
       "ativo": "ABEV3",
@@ -1514,9 +1514,9 @@
       "lim_v": 16.17,
       "abertura": 16.18,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 15.91,
+      "liq": 0.016536,
       "real": true,
       "ent_real": 16.17
      },
@@ -1528,9 +1528,9 @@
       "lim_v": 9.71,
       "abertura": 9.76,
       "lote": 500,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 9.78,
+      "liq": -0.001997,
       "real": true,
       "ent_real": 9.71
      },
@@ -1556,9 +1556,9 @@
       "lim_v": 12.59,
       "abertura": 12.6,
       "lote": 300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 12.97,
+      "liq": -0.029428,
       "real": true,
       "ent_real": 12.59
      },
@@ -1584,9 +1584,9 @@
       "lim_v": 36.32,
       "abertura": 36.38,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 36.45,
+      "liq": -0.002247,
       "real": true,
       "ent_real": 36.32
      },
@@ -1598,9 +1598,9 @@
       "lim_v": 3.79,
       "abertura": 3.89,
       "lote": 1300,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 3.8,
+      "liq": 0.021391,
       "real": true,
       "ent_real": 3.79
      },
@@ -1612,9 +1612,9 @@
       "lim_v": 50.28,
       "abertura": 50.43,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 53.08,
+      "liq": -0.052909,
       "real": true,
       "ent_real": 50.28
      },
@@ -1654,9 +1654,9 @@
       "lim_v": 3.26,
       "abertura": 3.28,
       "lote": 1500,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 3.4,
+      "liq": -0.035521,
       "real": true,
       "ent_real": 3.26
      },
@@ -1724,9 +1724,9 @@
       "lim_v": 33.77,
       "abertura": 33.98,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 34.85,
+      "liq": -0.025916,
       "real": true,
       "ent_real": 33.77
      },
@@ -1752,9 +1752,9 @@
       "lim_v": 26.13,
       "abertura": 26.14,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 26.27,
+      "liq": -0.005242,
       "real": true,
       "ent_real": 26.13
      },
@@ -1766,9 +1766,9 @@
       "lim_v": 18.4,
       "abertura": 18.45,
       "lote": 200,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 17.99,
+      "liq": 0.024201,
       "real": true,
       "ent_real": 18.4
      },
@@ -1780,9 +1780,9 @@
       "lim_v": 8.87,
       "abertura": 9.0,
       "lote": 500,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 9.32,
+      "liq": -0.03546,
       "real": true,
       "ent_real": 8.87
      },
@@ -1794,9 +1794,9 @@
       "lim_v": 26.37,
       "abertura": 26.41,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 26.56,
+      "liq": -0.006329,
       "real": true,
       "ent_real": 26.37
      },
@@ -1822,9 +1822,9 @@
       "lim_v": 42.08,
       "abertura": 42.14,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 41.88,
+      "liq": 0.005829,
       "real": true,
       "ent_real": 42.08
      },
@@ -1850,9 +1850,9 @@
       "lim_v": 36.85,
       "abertura": 36.94,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 36.66,
+      "liq": 0.007255,
       "real": true,
       "ent_real": 36.85
      },
@@ -1864,9 +1864,9 @@
       "lim_v": 28.75,
       "abertura": 28.76,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 29.29,
+      "liq": -0.018715,
       "real": true,
       "ent_real": 28.75
      },
@@ -1878,9 +1878,9 @@
       "lim_v": 28.32,
       "abertura": 27.76,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 27.29,
+      "liq": -0.017571,
       "real": true,
       "ent_real": 27.89
      },
@@ -1920,9 +1920,9 @@
       "lim_v": 31.18,
       "abertura": 31.32,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 31.45,
+      "liq": -0.00477,
       "real": true,
       "ent_real": 31.18
      },
@@ -1934,9 +1934,9 @@
       "lim_v": 30.39,
       "abertura": 30.41,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 30.55,
+      "liq": -0.005228,
       "real": true,
       "ent_real": 30.39
      },
@@ -1976,9 +1976,9 @@
       "lim_v": 31.43,
       "abertura": 31.46,
       "lote": 100,
-      "estado": "aberta",
-      "saida": 0.0,
-      "liq": 0.0,
+      "estado": "encerrada",
+      "saida": 32.29,
+      "liq": -0.026684,
       "real": true,
       "ent_real": 31.43
      },
@@ -6707,6 +6707,72 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "VIVT3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "VBBR3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "VAMO3: 1900 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "USIM5: 1000 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "UGPA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "TOTS3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "TIMS3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "TAEE11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "SANB11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:04",
+     "tipo": "ZERADA",
+     "msg": "RENT3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.25 17:45:03",
+     "tipo": "ZERADA",
+     "msg": "RDOR3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.25 17:45:03",
      "tipo": "ZERADA",
      "msg": "RAIL3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
@@ -7118,72 +7184,6 @@
      "quando": "2026.11.24 17:45:11",
      "tipo": "ZERADA",
      "msg": "VBBR3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:11",
-     "tipo": "ZERADA",
-     "msg": "VAMO3: 1900 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "VALE3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "USIM5: 900 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "TOTS3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "TIMS3: 200 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "TAEE11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "SUZB3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "SANB11: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "PSSA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "POMO4: 1300 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.24 17:45:10",
-     "tipo": "ZERADA",
-     "msg": "PETR4: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
      "estrategia": "gaplim"
     }
    ],
