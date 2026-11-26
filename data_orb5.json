@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-26T13:15:03Z",
+ "gerado": "2026-11-26T13:18:04Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 12,
-   "gaplim": 47
+   "orb5": 13,
+   "gaplim": 48
   },
   "memoria_mib": {
-   "fixa": 1136,
-   "total": 3062,
+   "fixa": 1135,
+   "total": 3061,
    "teto": 3072
   }
  },
@@ -19,14 +19,14 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.26 10:14:51",
+    "atualizado": "2026.11.26 10:17:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "armadas": 4,
+    "armadas": 0,
     "abertas": 0,
     "encerradas": 0,
     "resultado_sombra": 0.0,
@@ -38,7 +38,7 @@
       "gap": 0.0406,
       "vrel": 2.64,
       "rank": 0.645,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 100,
       "ent": 0.0,
       "stop": 0.0,
@@ -54,7 +54,7 @@
       "gap": 0.01933,
       "vrel": 5.01,
       "rank": 0.789,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 0,
       "ent": 0.0,
       "stop": 0.0,
@@ -70,7 +70,7 @@
       "gap": 0.03896,
       "vrel": 2.39,
       "rank": 0.961,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 2000,
       "ent": 0.0,
       "stop": 0.0,
@@ -102,7 +102,7 @@
       "gap": 0.04317,
       "vrel": 2.21,
       "rank": 0.842,
-      "estado": "aguardando rompimento",
+      "estado": "cancelada (rompeu o outro lado)",
       "lote": 3400,
       "ent": 0.0,
       "stop": 0.0,
@@ -1589,7 +1589,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.26 10:14:46",
+    "atualizado": "2026.11.26 10:17:46",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1601,8 +1601,8 @@
     "leiloes": 76,
     "sinais": 42,
     "executadas": 51,
-    "resultado_sombra": -173.01,
-    "resultado_real": -1133.51,
+    "resultado_sombra": -482.01,
+    "resultado_real": -1432.65,
     "operacoes": [
      {
       "ativo": "ASAI3",
