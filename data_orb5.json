@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-26T12:45:05Z",
+ "gerado": "2026-11-26T12:48:05Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
@@ -7,8 +7,8 @@
    "gaplim": 106
   },
   "memoria_mib": {
-   "fixa": 855,
-   "total": 3066,
+   "fixa": 858,
+   "total": 3068,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.26 09:44:51",
+    "atualizado": "2026.11.26 09:47:51",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1508,15 +1508,15 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.26 09:44:51",
+    "atualizado": "2026.11.26 09:47:51",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-abertura",
+    "fase": "pré-leilão (ordens no livro)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "mercado_pct": null,
-    "ordens_enviadas": 0,
+    "mercado_pct": 1.911,
+    "ordens_enviadas": 76,
     "leiloes": 0,
     "sinais": 0,
     "executadas": 0,
@@ -7258,6 +7258,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.26 09:45:12",
+     "tipo": "ORDENS",
+     "msg": "76 de 76 ações com as duas ordens no livro (11256 ms)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.26 09:45:00",
      "tipo": "SINAL",
      "msg": "WIN às 9h45 171200, no fechamento das ações de ontem 167990: mercado +1.91%",
@@ -7729,12 +7735,6 @@
      "quando": "2026.11.25 09:34:40",
      "tipo": "DIA",
      "msg": "pregão 2026.11.25 preparado: 76 de 76 ações com histórico, 285 pregões de WIN até 2026.11.24, modo DEMO (ordens), saída 10 min antes do call",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.25 09:34:40",
-     "tipo": "TRAVAS",
-     "msg": "acumulado R$ 2562, queda R$ -570, dias negativos seguidos 0",
      "estrategia": "gaplim"
     }
    ],
