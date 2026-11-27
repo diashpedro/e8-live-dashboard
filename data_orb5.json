@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-27T13:06:05Z",
+ "gerado": "2026-11-27T13:09:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 87,
-   "gaplim": 72
+   "orb5": 86,
+   "gaplim": 71
   },
   "memoria_mib": {
-   "fixa": 1135,
-   "total": 3067,
+   "fixa": 1132,
+   "total": 3060,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.27 10:05:40",
+    "atualizado": "2026.11.27 10:08:40",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
@@ -1508,7 +1508,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.27 10:05:53",
+    "atualizado": "2026.11.27 10:08:53",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1517,12 +1517,26 @@
     "parado_estrategia": false,
     "mercado_pct": 3.336,
     "ordens_enviadas": 76,
-    "leiloes": 9,
-    "sinais": 4,
-    "executadas": 6,
-    "resultado_sombra": 111.66,
-    "resultado_real": 72.99,
+    "leiloes": 11,
+    "sinais": 5,
+    "executadas": 8,
+    "resultado_sombra": 104.85,
+    "resultado_real": -54.97,
     "operacoes": [
+     {
+      "ativo": "AURE3",
+      "lado": 1,
+      "ref": 13.42,
+      "lim_c": 13.32,
+      "lim_v": 13.53,
+      "abertura": 13.13,
+      "lote": 300,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 13.32
+     },
      {
       "ativo": "CXSE3",
       "lado": 0,
@@ -1536,6 +1550,20 @@
       "liq": 0.0,
       "real": true,
       "ent_real": 21.25
+     },
+     {
+      "ativo": "HYPE3",
+      "lado": 0,
+      "ref": 25.26,
+      "lim_c": 25.1,
+      "lim_v": 25.41,
+      "abertura": 25.13,
+      "lote": 100,
+      "estado": "só na demo",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 25.1
      },
      {
       "ativo": "KLBN11",
@@ -8832,6 +8860,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.27 10:06:05",
+     "tipo": "LEILAO",
+     "msg": "HYPE3 abriu 25.13 às 10:06 (limites 25.10 / 25.41): simulação nada",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.27 10:06:02",
      "tipo": "LEILAO",
      "msg": "AURE3 abriu 13.13 às 10:06 (limites 13.32 / 13.53): simulação compra",
@@ -9303,12 +9337,6 @@
      "quando": "2026.11.26 10:09:29",
      "tipo": "LEILAO",
      "msg": "PETR4 abriu 42.61 às 10:09 (limites 41.35 / 42.30): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.26 10:09:29",
-     "tipo": "LEILAO",
-     "msg": "PETR3 abriu 48.24 às 10:09 (limites 46.71 / 47.68): simulação venda",
      "estrategia": "gaplim"
     }
    ],
