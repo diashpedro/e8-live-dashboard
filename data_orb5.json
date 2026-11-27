@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-27T13:12:03Z",
+ "gerado": "2026-11-27T13:15:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 84,
-   "gaplim": 70
+   "orb5": 85,
+   "gaplim": 71
   },
   "memoria_mib": {
-   "fixa": 1130,
-   "total": 3058,
+   "fixa": 1131,
+   "total": 3059,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.27 10:11:41",
+    "atualizado": "2026.11.27 10:14:41",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão (entradas abertas)",
@@ -30,7 +30,7 @@
     "abertas": 0,
     "encerradas": 0,
     "resultado_sombra": 0.0,
-    "resultado_real": -151.38,
+    "resultado_real": -145.38,
     "operacoes": [
      {
       "ativo": "AZZA3",
@@ -1320,6 +1320,18 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.27 10:15:01",
+     "tipo": "DECISOES",
+     "msg": "1 ações avaliadas em 0 ms, 0 com sinal (ordens enviadas na mesma passada)",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.27 10:13:00",
+     "tipo": "CANCELADA",
+     "msg": "BBAS3 -- rompeu o outro lado antes",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.27 10:11:39",
      "tipo": "STOP",
      "msg": "BPAC11 stop 65.51 (limite 65.53) com 100 ações nossas",
@@ -1786,18 +1798,6 @@
      "tipo": "AQUECE",
      "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.26 10:00:31",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.26 10:00:01",
-     "tipo": "AQUECE",
-     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1813,7 +1813,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.27 10:11:53",
+    "atualizado": "2026.11.27 10:14:53",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pregão",
@@ -1822,11 +1822,11 @@
     "parado_estrategia": false,
     "mercado_pct": 3.336,
     "ordens_enviadas": 76,
-    "leiloes": 74,
-    "sinais": 43,
-    "executadas": 59,
-    "resultado_sombra": -59.04,
-    "resultado_real": -2811.25,
+    "leiloes": 75,
+    "sinais": 44,
+    "executadas": 60,
+    "resultado_sombra": 467.52,
+    "resultado_real": -2281.52,
     "operacoes": [
      {
       "ativo": "ALOS3",
@@ -2331,6 +2331,20 @@
       "liq": 0.0,
       "real": true,
       "ent_real": 5.75
+     },
+     {
+      "ativo": "MULT3",
+      "lado": -1,
+      "ref": 30.78,
+      "lim_c": 30.59,
+      "lim_v": 30.97,
+      "abertura": 31.33,
+      "lote": 100,
+      "estado": "aberta",
+      "saida": 0.0,
+      "liq": 0.0,
+      "real": true,
+      "ent_real": 30.97
      },
      {
       "ativo": "PETR3",
@@ -9879,6 +9893,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.27 10:12:14",
+     "tipo": "LEILAO",
+     "msg": "MULT3 abriu 31.33 às 10:12 (limites 30.59 / 30.97): simulação venda",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.27 10:09:14",
      "tipo": "LEILAO",
      "msg": "CMIG4 abriu 11.57 às 10:09 (limites 11.50 / 11.59): simulação nada",
@@ -10350,12 +10370,6 @@
      "quando": "2026.11.26 17:45:09",
      "tipo": "ZERADA",
      "msg": "PSSA3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.26 17:45:09",
-     "tipo": "ZERADA",
-     "msg": "PRIO3: 100 ações nossas -- saída 10 min antes do call (tentativa 1)",
      "estrategia": "gaplim"
     }
    ],
