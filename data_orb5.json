@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-27T12:54:04Z",
+ "gerado": "2026-11-27T12:57:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 87,
-   "gaplim": 73
+   "orb5": 86,
+   "gaplim": 72
   },
   "memoria_mib": {
-   "fixa": 846,
-   "total": 3054,
+   "fixa": 853,
+   "total": 3061,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.27 09:53:37",
+    "atualizado": "2026.11.27 09:56:37",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1015,6 +1015,36 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.27 09:57:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 1 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.27 09:56:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.27 09:56:01",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.27 09:55:31",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 0 ms",
+     "estrategia": "orb5"
+    },
+    {
+     "quando": "2026.11.27 09:55:05",
+     "tipo": "AQUECE",
+     "msg": "barras de hoje: 0 de 76 ações prontas, leitura em 3722 ms",
+     "estrategia": "orb5"
+    },
+    {
      "quando": "2026.11.27 09:32:37",
      "tipo": "DIA",
      "msg": "pregão 2026.11.27 preparado: 76 ações, modo DEMO (ordens), saída 10 min antes do call",
@@ -1463,36 +1493,6 @@
      "tipo": "CANCELADA",
      "msg": "MGLU3 -- saída 10 min antes do call (tentativa 1)",
      "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.24 10:23:52",
-     "tipo": "CANCELADA",
-     "msg": "CSAN3 -- rompeu o outro lado antes",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.24 10:13:20",
-     "tipo": "STOP",
-     "msg": "MGLU3 stop 9.64 (limite 9.66) com 1000 ações nossas",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.24 10:11:19",
-     "tipo": "CANCELADA",
-     "msg": "SMFT3 -- rompeu o outro lado antes",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.24 10:11:13",
-     "tipo": "STOP",
-     "msg": "AZZA3 stop 15.58 (limite 15.60) com 600 ações nossas",
-     "estrategia": "orb5"
-    },
-    {
-     "quando": "2026.11.24 10:10:25",
-     "tipo": "CANCELADA",
-     "msg": "RADL3 -- rompeu o outro lado antes",
-     "estrategia": "orb5"
     }
    ],
    "referencia": {
@@ -1508,7 +1508,7 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.27 09:53:52",
+    "atualizado": "2026.11.27 09:56:52",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-leilão (ordens no livro)",
