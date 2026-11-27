@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-27T12:33:07Z",
+ "gerado": "2026-11-27T12:36:05Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
-   "orb5": 30,
-   "gaplim": 18
+   "orb5": 28,
+   "gaplim": 16
   },
   "memoria_mib": {
-   "fixa": 836,
-   "total": 3040,
+   "fixa": 842,
+   "total": 3049,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.27 09:32:37",
+    "atualizado": "2026.11.27 09:35:37",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1508,11 +1508,11 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.27 09:25:46",
+    "atualizado": "2026.11.27 09:35:40",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "antes da preparação",
-    "call": "16:55",
+    "fase": "pré-abertura",
+    "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
     "mercado_pct": null,
@@ -8747,6 +8747,24 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.27 09:33:10",
+     "tipo": "DIA",
+     "msg": "pregão 2026.11.27 preparado: 76 de 76 ações com histórico, 285 pregões de WIN até 2026.11.26, modo DEMO (ordens), saída 10 min antes do call",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.27 09:33:10",
+     "tipo": "TRAVAS",
+     "msg": "acumulado R$ -361, queda R$ -2923, dias negativos seguidos 2",
+     "estrategia": "gaplim"
+    },
+    {
+     "quando": "2026.11.27 09:33:10",
+     "tipo": "CALL",
+     "msg": "call de fechamento previsto às 17:55: saída 17:45",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.27 00:30:45",
      "tipo": "INIT",
      "msg": "EA_GAPLIM iniciada: modo DEMO, 76 ações, magic 885099, WIN WIN$, 5000 R$ por ordem, negociação automática liberada",
@@ -9206,24 +9224,6 @@
      "quando": "2026.11.26 10:09:28",
      "tipo": "LEILAO",
      "msg": "EGIE3 abriu 25.42 às 10:09 (limites 25.06 / 25.34): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.26 10:09:28",
-     "tipo": "LEILAO",
-     "msg": "DIRR3 abriu 9.70 às 10:09 (limites 9.46 / 9.60): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.26 10:09:28",
-     "tipo": "LEILAO",
-     "msg": "CURY3 abriu 26.90 às 10:09 (limites 27.05 / 27.45): simulação compra",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.26 10:09:28",
-     "tipo": "LEILAO",
-     "msg": "CSNA3 abriu 3.59 às 10:09 (limites 3.47 / 3.56): simulação venda",
      "estrategia": "gaplim"
     }
    ],
