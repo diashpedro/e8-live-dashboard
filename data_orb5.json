@@ -1,14 +1,14 @@
 {
- "gerado": "2026-11-27T12:45:03Z",
+ "gerado": "2026-11-27T12:48:03Z",
  "saude": {
   "terminal": true,
   "heartbeat_s": {
    "orb5": 86,
-   "gaplim": 74
+   "gaplim": 72
   },
   "memoria_mib": {
-   "fixa": 843,
-   "total": 3050,
+   "fixa": 846,
+   "total": 3054,
    "teto": 3072
   }
  },
@@ -19,7 +19,7 @@
    "travas": "zera a −R$ 3.000 no dia; para com queda de R$ 10 mil ou 10 dias negativos (e, na conta real, escorregamento acima de 0,5 tick)",
    "medida": "demo",
    "status": {
-    "atualizado": "2026.11.27 09:44:37",
+    "atualizado": "2026.11.27 09:47:37",
     "modo": "demo",
     "saida": "10 min antes do call",
     "fase": "pré-abertura",
@@ -1508,15 +1508,15 @@
    "travas": "zera a −R$ 5.000 no dia (conta demo); para com queda de R$ 15 mil ou 10 dias negativos (simulação)",
    "medida": "simulacao",
    "status": {
-    "atualizado": "2026.11.27 09:44:40",
+    "atualizado": "2026.11.27 09:47:52",
     "modo": "demo",
     "saida": "10 min antes do call",
-    "fase": "pré-abertura",
+    "fase": "pré-leilão (ordens no livro)",
     "call": "17:55",
     "parado_dia": false,
     "parado_estrategia": false,
-    "mercado_pct": null,
-    "ordens_enviadas": 0,
+    "mercado_pct": 3.336,
+    "ordens_enviadas": 76,
     "leiloes": 0,
     "sinais": 0,
     "executadas": 0,
@@ -8747,6 +8747,12 @@
    },
    "eventos": [
     {
+     "quando": "2026.11.27 09:47:22",
+     "tipo": "ORDENS",
+     "msg": "76 de 76 ações com as duas ordens no livro (141520 ms)",
+     "estrategia": "gaplim"
+    },
+    {
      "quando": "2026.11.27 09:45:01",
      "tipo": "SINAL",
      "msg": "WIN às 9h45 183980, no fechamento das ações de ontem 178040: mercado +3.34%",
@@ -9218,12 +9224,6 @@
      "quando": "2026.11.26 10:09:28",
      "tipo": "LEILAO",
      "msg": "GGBR4 abriu 26.20 às 10:09 (limites 25.77 / 26.15): simulação venda",
-     "estrategia": "gaplim"
-    },
-    {
-     "quando": "2026.11.26 10:09:28",
-     "tipo": "LEILAO",
-     "msg": "ENEV3 abriu 28.21 às 10:09 (limites 27.76 / 28.12): simulação venda",
      "estrategia": "gaplim"
     }
    ],
